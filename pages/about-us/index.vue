@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <NuxtLink to="/">Home page</NuxtLink>
+        <NuxtLink to="/"></NuxtLink>
     </div>
 </template>
 <script setup>

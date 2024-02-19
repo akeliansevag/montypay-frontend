@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'theme-color' , content:'#00F7F7' }
       ]
-    }
+    },
   },
   pages: true,
   modules: [
@@ -28,13 +28,28 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxtjs/google-fonts',
     '@nuxt/image',
+    'nuxt-swiper'
   ],
   image: {
     // dir: 'assets/images'
   },
+  plugins: [
+    { src: '~/plugins/mobileCheck.js', mode: 'client' }
+  ],
   googleFonts: {
     families: {
       Manrope: '400..700'
     }
+  },
+  devServer: {
+    host: '0.0.0.0',
+    https: false,
+  },
+  swiper: {
+    // Swiper options
+    //----------------------
+    // prefix: 'Swiper',
+    // styleLang: 'css',
+    modules: ['effect-fade', 'pagination'], // all modules are imported by default
   }
 })
