@@ -137,6 +137,7 @@
             
             <div class="mt-16 mb-16">
                 <swiper-container
+                class="!items-stretch"
                 :slides-per-view="1.5"
                 :space-between="30"
                 :scrollbar="{
@@ -155,8 +156,8 @@
             
             >
 
-                    <swiper-slide class="flex flex-col" v-for="(item,index) in merchantItems" :key="index">
-                        <div class="flex-1 bg-quaternary rounded-lg p-10 text-center text-white">
+                    <swiper-slide class="flex flex-col bg-quaternary rounded-lg " v-for="(item,index) in merchantItems" :key="index">
+                        <div class="p-10 text-center text-white">
                             <p>{{item.title}}</p>
                         </div>
                     </swiper-slide>
