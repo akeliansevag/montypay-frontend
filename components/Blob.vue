@@ -30,12 +30,7 @@
 
 <style scoped lang="sass">
     .blob 
-        position: absolute
-        top: 0
-        left: 0
-        width: 60%
-        height: 100%
-        filter: blur(70px)
+        @apply absolute top-0 left-0 w-3/5 h-full blur-[70px]
         animation: move 40s infinite
 
     @keyframes move 

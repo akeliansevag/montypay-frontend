@@ -374,7 +374,7 @@
     const activeTab = ref(0);
 
     const show = (index) => {
-    activeTab.value = index;
+        activeTab.value = index;
     };
 
 </script>
