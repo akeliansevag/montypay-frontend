@@ -98,7 +98,7 @@
                     </div>
                     <div class="p-10 bg-quaternary rounded-lg flex-1">
                         <ContentBlock 
-                            title="Simple and Secure Payments"
+                            title="Simple & Secure Payments"
                             paragraph="Guests enjoy a user-friendly payment experience while businesses benefit from enhanced security."
                         />
                     </div>

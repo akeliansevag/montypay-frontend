@@ -68,7 +68,7 @@
                             priority
                             format="webp,avif" 
                             src="/images/convenience.png" 
-                            :imgAttrs="{class:'w-full  mx-auto'}" 
+                            :imgAttrs="{class:'w-full mx-auto'}" 
                         />
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                             priority
                             format="webp,avif" 
                             src="/images/real-time-reporting.png" 
-                            :imgAttrs="{class:'w-full  mx-auto'}" 
+                            :imgAttrs="{class:'w-full mx-auto'}" 
                         />
                     </div>
                 </div>

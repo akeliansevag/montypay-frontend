@@ -85,17 +85,19 @@
             format="webp,avif"
             src="/images/in-store-payments.png"
             class="w-full lg:absolute lg:top-0 lg:left-0 after:content-[''] after:absolute after:top-0 after:left-0 lg:after:bg-quaternary/30 after:w-full after:h-full"
-            :imgAttrs="{class:'w-full h-screen object-cover'}" 
+            :imgAttrs="{class:'w-full lg:h-screen object-cover'}" 
         />
         
-        <div class="container bg-quaternary lg:bg-transparent py-14 lg:py-0 lg:px-14">
-            <div class="w-full lg:w-1/2">
-                <ContentBlock
-                    title="Recurring Bills"
-                    subtitle="Automate billing and wave goodbye to manual hassles!"
-                    paragraph="Automate billing and wave goodbye to manual hassles! For subscription services, memberships, or installments, our platform handles it all. Automated payments mean your customers never miss a due date, ensuring a steady flow of revenue for your business growth."
-                    button="Get Started"
-                />
+        <div class="w-full bg-quaternary lg:bg-transparent py-14 lg:py-0">
+            <div class="container">
+                <div class="w-full lg:w-1/2">
+                    <ContentBlock
+                        title="Recurring Bills"
+                        subtitle="Automate billing and wave goodbye to manual hassles!"
+                        paragraph="Automate billing and wave goodbye to manual hassles! For subscription services, memberships, or installments, our platform handles it all. Automated payments mean your customers never miss a due date, ensuring a steady flow of revenue for your business growth."
+                        button="Get Started"
+                    />
+                </div>
             </div>
         </div>
     </section>

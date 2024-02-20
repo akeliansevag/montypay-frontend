@@ -58,7 +58,7 @@
                             priority
                             format="webp,avif" 
                             src="/images/content-managment.png" 
-                            :imgAttrs="{class:'w-full  mx-auto'}" 
+                            :imgAttrs="{class:'w-full mx-auto'}" 
                         />
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                             priority
                             format="webp,avif" 
                             src="/images/social-media-management.png" 
-                            :imgAttrs="{class:'w-full  mx-auto'}" 
+                            :imgAttrs="{class:'w-full mx-auto'}" 
                         />
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                             priority
                             format="webp,avif" 
                             src="/images/additional-services.png" 
-                            :imgAttrs="{class:'w-full  mx-auto'}" 
+                            :imgAttrs="{class:'w-full mx-auto'}" 
                         />
                     </div>
                 </div>

@@ -133,32 +133,29 @@
                 paragraph="Our merchant mobile application offers a seamless experience, providing access to comprehensive dashboard reporting and analytics. With this app, you can effortlessly:" 
                 class="text-center lg:w-1/2 mx-auto" 
             />
-
-            
             <div class="mt-16 mb-16">
                 <swiper-container
-                class="!items-stretch"
-                :slides-per-view="1.5"
-                :space-between="30"
-                :scrollbar="{
-                    el: '#scrollbar',
-                    draggable: true
-                }"
-                :breakpoints="{
-                1199: {
-                    slidesPerView: 4,
-                },
-                768: {
-                    slidesPerView: 2,
-                }
-                }"
-
-            
-            >
-
-                    <swiper-slide class="flex flex-col bg-quaternary rounded-lg " v-for="(item,index) in merchantItems" :key="index">
+                    :slides-per-view="1.5"
+                    :space-between="30"
+                    :grab-cursor="true"
+                    :scrollbar="{
+                        el: '#scrollbar',
+                        draggable: true
+                    }"
+                    :breakpoints="{
+                        1199: {
+                            slidesPerView: 4,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        }
+                    }"
+                >
+                    <swiper-slide class="flex flex-col justify-center h-auto bg-quaternary rounded-lg" v-for="(item,index) in merchantItems" :key="index">
                         <div class="p-10 text-center text-white">
-                            <p>{{item.title}}</p>
+                            <ContentBlock 
+                                :paragraph="item.title" 
+                            />
                         </div>
                     </swiper-slide>
                 </swiper-container>
@@ -166,63 +163,57 @@
             </div>
         </div>
     </section>
-
-
-    
-
-
-    
 </template>
 
 <script setup>
-import { register } from 'swiper/element/bundle';
-register();
 
-useSeoMeta({
-    title: 'White Label For PSP/Acquirer',
-    ogTitle: 'White Label For PSP/Acquirer',
-    description: 'White Label For PSP/Acquirer description',
-    ogDescription: 'White Label For PSP/Acquirer description',
-    ogImage: 'https://example.com/image.png',
-    twitterCard: 'summary_large_image',
-})
+    import { register } from 'swiper/element/bundle';
+    register();
 
+    useSeoMeta({
+        title: 'White Label For PSP/Acquirer',
+        ogTitle: 'White Label For PSP/Acquirer',
+        description: 'White Label For PSP/Acquirer description',
+        ogDescription: 'White Label For PSP/Acquirer description',
+        ogImage: 'https://example.com/image.png',
+        twitterCard: 'summary_large_image',
+    })
 
-const items = [
-    {
-        title: 'Payment Gateway'
-    },
-    {
-        title: 'Merchant Mobile App'
-    },
-    {
-        title: 'Merchant Management System'
-    },
-    {
-        title: 'QR Code Self Service Checkout'
-    }
-]
+    const items = [
+        {
+            title: 'Payment Gateway'
+        },
+        {
+            title: 'Merchant Mobile App'
+        },
+        {
+            title: 'Merchant Management System'
+        },
+        {
+            title: 'QR Code Self Service Checkout'
+        }
+    ]
 
-const merchantItems = [
-    {
-        title: 'Track transactions and monitor revenue'
-    },
-    {
-        title: 'Send invoice links'
-    },
-    {
-        title: 'Utilize the pay-by-link feature for convenient payments  anytime, anywhere'
-    },
-    {
-        title: 'Request support'
-    },
-    {
-        title: 'ITEM 5'
-    },
-    {
-        title: 'ITEM 6'
-    },
-]
+    const merchantItems = [
+        {
+            title: 'Track transactions and monitor revenue'
+        },
+        {
+            title: 'Send invoice links'
+        },
+        {
+            title: 'Utilize the pay-by-link feature for convenient payments  anytime, anywhere'
+        },
+        {
+            title: 'Request support'
+        },
+        {
+            title: 'ITEM 5'
+        },
+        {
+            title: 'ITEM 6'
+        },
+    ]
 </script>
 
 <style lang="sass">
