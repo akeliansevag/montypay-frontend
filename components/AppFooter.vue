@@ -9,7 +9,7 @@
                     <NewsLetter />
 
                     <nav class="nav">
-                        <NavItemsWrapper class="flex flex-col lg:flex-row flex-wrap gap-10 lg:gap-20 mt-14" layout="footer" />
+                        <NavItemsWrapper class="flex flex-col lg:flex-row flex-wrap gap-10 lg:gap-0 justify-between mt-14" layout="footer" />
                     </nav>
 
                     <!-- <nav class="flex flex-col lg:flex-row flex-wrap gap-10 lg:gap-20 mt-14">

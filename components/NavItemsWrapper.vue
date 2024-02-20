@@ -19,6 +19,7 @@
                     pages: [
                         { to: '/online', label: 'Online' },
                         { to: '/in-store-payments', label: 'In-store payments' },
+                        { to: '/q-check', label: 'Qcheck' },
                     ],
                 },
                 {
