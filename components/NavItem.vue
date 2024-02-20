@@ -1,7 +1,7 @@
 <template>
   <li class="flex flex-col gap-5 h-full" 
     :class="{'lg:flex-row lg:hover:text-tertiary lg:hover:border-b lg:hover:border-b-tertiary group/item': layout === 'header',
-    'lg:flex-col flex-1': layout === 'footer',
+    'lg:fl': layout === 'footer',
     'text-primary': $route.path === '/'
   }">
 
