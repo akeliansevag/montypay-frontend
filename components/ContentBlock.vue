@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-    const props = defineProps(['isBanner', 'subtitle', 'title', 'paragraph', 'button']);
+const props = defineProps(['isBanner', 'subtitle', 'title', 'paragraph', 'button']);
 </script>
 
 <style lang="">
