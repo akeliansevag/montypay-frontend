@@ -501,10 +501,13 @@ const merchant_items = [
         title: 'Request support'
     },
     {
-        title: 'ITEM 5'
+        title: 'Customize payment options based on client needs'
     },
     {
-        title: 'ITEM 6'
+        title: 'Display QR codes for efficient payments at your physical location'
+    },
+    {
+        title: 'Collect payments easily with the QR pay feature'
     },
 ]
 
