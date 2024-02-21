@@ -322,63 +322,231 @@
             </div>
         </div>
     </section>
+
+    <section class="my-16 lg:my-36">
+        <div class="container flex flex-col gap-16 lg:gap-36">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                <ContentBlock 
+                    title="Efficient Data Insights"
+                    paragraph="Gain valuable insights into your business operations with a centralized area for payments data, reporting, and more. Our rich reporting dashboard offers real-time analytics, transaction insights, and an intuitive interface. Multiple users and administrative roles further enhance your data management capabilities."
+                    class="flex-1"
+                />
+                <div class="flex-1 w-full">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/data-insights.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                <ContentBlock 
+                    title="Global Payment Collection"
+                    paragraph="Allow your merchants to collect payments globally and instantly through various channels, including telephone sales, email, social media, QR codes, invoices, and messaging. Our platform simplifies recurring and batch payments, streamlining your billing processes and reducing manual effort."
+                    class="flex-1 lg:order-1"
+                />
+                <div class="flex-1 w-full">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/global-payment.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                <ContentBlock 
+                    title="Flexible Billing and Settlement"
+                    paragraph="Customize fees for individual transactions with our premium billing platform features. Easily calculate commissions, merchant settlements, and referral partner rewards, all within a single platform."
+                    class="flex-1"
+                />
+                <div class="flex-1 w-full">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/flexible-billing.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                </div>
+            </div>
+            <div class="flex flex-col gap-8 justify-center items-center">
+                <ContentBlock 
+                    title="Intelligent Routing"
+                    paragraph="Identify cost-effective transaction routes and routes with higher acceptance rates. MontyPay's transactional traffic routing considers multiple factors such as currency, transaction origin,3D-Secure requirements, and more. This intelligent routing optimizes acquirer performance and enhances transaction success."
+                    class="text-center"
+                />
+                <div class="w-1/2">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/intelligent-routing.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                <ContentBlock 
+                    title="Live Chat Support"
+                    paragraph="Our live chat customer support is available around the clock to address any customer queries, ensuring a seamless and responsive service experience."
+                    class="flex-1"
+                />
+                <div class="flex-1 w-full">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/live-chat-support.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                <ContentBlock 
+                    title="Risk Management"
+                    paragraph="MontyPay employs an advanced risk management system that combines in-house and external scoring models to detect, analyze, and prevent potentially fraudulent transactions. Our anti-fraud modules, external risk scoring providers, 3D-Secure 2.0, and customizable anti-fraud plans work together to safeguard your business."
+                    class="flex-1 lg:order-1"
+                />
+                <div class="flex-1 w-full">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/risk-management.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                </div>
+            </div>
+            <div class="flex flex-col gap-8 justify-center items-center">
+                <ContentBlock 
+                    title="Expanded Connectivity"
+                    paragraph="With over 170 connectors, MontyPay offers a wide range of pre-made links to banks and payment options, in addition to integrating your existing ones. This extensive network ensures a continuous flow of payments and simplifies integration with banks, retailers, and Alternative Payment Methods (APMs)."
+                    class="text-center"
+                />
+            </div>
+            <div>
+                <div class="flex items-center justify-center">
+                    <span class="absolute w-full h-[2px] bg-[#d8d8d8]"></span>
+                    <h4 class="text-[#787878] text-2xl bg-white px-6 translate-y-[-3px]">With over 170 connectors</h4>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-36 gap-y-20 items-center mt-16">
+                    <div v-for="(connector,index) in connectors" :key="index">
+                        <NuxtPicture 
+                            priority
+                            format="svg" 
+                            :src="`/images/${connector.image}`"
+                            :imgAttrs="{class:'w-full mx-auto'}" 
+                        />
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                <ContentBlock 
+                    title="Cutting-Edge Technology"
+                    paragraph="MontyPay leverages the latest technology to support your business expansion into new markets, increase revenue capture, and deliver a seamless checkout experience for your customers."
+                    class="flex-1"
+                />
+                <div class="flex-1 w-full">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/cutting-edge.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script setup>
 
-    import { register } from 'swiper/element/bundle';
-    register();
+import { register } from 'swiper/element/bundle';
+register();
 
-    useSeoMeta({
-        title: 'White Label For PSP/Acquirer',
-        ogTitle: 'White Label For PSP/Acquirer',
-        description: 'White Label For PSP/Acquirer description',
-        ogDescription: 'White Label For PSP/Acquirer description',
-        ogImage: 'https://example.com/image.png',
-        twitterCard: 'summary_large_image',
-    })
+useSeoMeta({
+    title: 'White Label For PSP/Acquirer',
+    ogTitle: 'White Label For PSP/Acquirer',
+    description: 'White Label For PSP/Acquirer description',
+    ogDescription: 'White Label For PSP/Acquirer description',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 
-    const solutions_items = [
-        {
-            title: 'Payment Gateway'
-        },
-        {
-            title: 'Merchant Management System'
-        },
-        {
-            title: 'Merchant Mobile App'
-        },
-        {
-            title: 'QR Code Self Service Checkout'
-        }
-    ]
+const solutions_items = [
+    {
+        title: 'Payment Gateway'
+    },
+    {
+        title: 'Merchant Management System'
+    },
+    {
+        title: 'Merchant Mobile App'
+    },
+    {
+        title: 'QR Code Self Service Checkout'
+    }
+]
 
-    const merchant_items = [
-        {
-            title: 'Track transactions and monitor revenue'
-        },
-        {
-            title: 'Send invoice links'
-        },
-        {
-            title: 'Utilize the pay-by-link feature for convenient payments  anytime, anywhere'
-        },
-        {
-            title: 'Request support'
-        },
-        {
-            title: 'ITEM 5'
-        },
-        {
-            title: 'ITEM 6'
-        },
-    ]
+const merchant_items = [
+    {
+        title: 'Track transactions and monitor revenue'
+    },
+    {
+        title: 'Send invoice links'
+    },
+    {
+        title: 'Utilize the pay-by-link feature for convenient payments  anytime, anywhere'
+    },
+    {
+        title: 'Request support'
+    },
+    {
+        title: 'ITEM 5'
+    },
+    {
+        title: 'ITEM 6'
+    },
+]
 
-    const activeTab = ref(0);
+const connectors = [
+    {
+        image: 'google.svg'
+    },
+    {
+        image: 'shopify.svg'
+    },
+    {
+        image: 'netflix.svg'
+    },
+    {
+        image: 'creative-market.svg'
+    },
+    {
+        image: 'dropbox.svg'
+    },
+    {
+        image: 'evernote.svg'
+    },
+    {
+        image: 'spotify.svg'
+    },
+    {
+        image: 'asana.svg'
+    },
+    {
+        image: 'airbnb.svg'
+    },
+    {
+        image: 'youtube.svg'
+    },
 
-    const show = (index) => {
-        activeTab.value = index;
-    };
+]
+
+const activeTab = ref(0);
+
+const show = (index) => {
+    activeTab.value = index;
+};
 </script>
 
 <style lang="sass">
