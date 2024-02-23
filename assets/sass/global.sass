@@ -22,6 +22,11 @@ input:-webkit-autofill:active
     transition: background-color 5000s ease-in-out 0s
     box-shadow: inset 0 0 20px 20px #23232329
 
+input:-webkit-autofill,
+textarea:-webkit-autofill
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important
+    -webkit-text-fill-color: #000000 !important
+
 .mp-button
     &-primary
         @apply flex justify-center items-center gap-2 text-lg font-bold w-max bg-primary text-black py-3.5 px-6 rounded-lg transition duration-200 ease-in-out
@@ -40,6 +45,9 @@ input:-webkit-autofill:active
 
         &:hover
             @apply bg-secondary
+
+label
+    @apply text-sm font-medium
 
 h1, h2, h3, h4, h5, h6
     line-height: normal !important

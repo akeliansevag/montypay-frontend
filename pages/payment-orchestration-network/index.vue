@@ -88,7 +88,7 @@
         </div>
     </section> 
     
-    <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-[#D9D9D9]">
+    <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-[#F6F6F6]">
         <div class="container">
             <div class="flex flex-col gap-8 lg:gap-24">
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center text-center">
@@ -100,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 flexwrap gap-6 justify-center mt-16">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-center mt-16">
                 <div class="flex-1 bg-primary">
                     <div class="flex flex-col items-center p-5">
                         <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +120,7 @@
                         <h3 class="text-lg font-bold">Jordan</h3>
                     </div>
                     
-                    <hr class="w-full bg-[#D9D9D9]"/>
+                    <hr class="w-full bg-[#F6F6F6]"/>
                    
                     <div class="flex flex-col items-center gap-8 p-10">
                         <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -176,7 +176,7 @@
                         <h3 class="text-lg font-bold">Jordan</h3>
                     </div>
                     
-                    <hr class="w-full bg-[#D9D9D9]"/>
+                    <hr class="w-full bg-[#F6F6F6]"/>
                    
                     <div class="flex flex-col items-center gap-8 p-10">
                         <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +238,7 @@
                         <h3 class="text-lg font-bold">Bahrain</h3>
                     </div>
 
-                    <hr class="w-full bg-[#D9D9D9]"/>
+                    <hr class="w-full bg-[#F6F6F6]"/>
                    
                     <div class="flex flex-col items-center gap-8 p-10">
                         <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -302,7 +302,7 @@
                         <h3 class="text-lg font-bold">UAE</h3>
                     </div>
 
-                    <hr class="w-full bg-[#D9D9D9]"/>
+                    <hr class="w-full bg-[#F6F6F6]"/>
                    
                     <div class="flex flex-col items-center gap-8 p-10">
                         <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -365,7 +365,7 @@
                         <h3 class="text-lg font-bold">Nigria</h3>
                     </div>
 
-                    <hr class="w-full bg-[#D9D9D9]"/>
+                    <hr class="w-full bg-[#F6F6F6]"/>
                    
                     <div class="flex flex-col items-center gap-8 p-10">
                         <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -506,7 +506,7 @@
                         <h3 class="text-lg font-bold">EU/UK</h3>
                     </div>
 
-                    <hr class="w-full bg-[#D9D9D9]"/>
+                    <hr class="w-full bg-[#F6F6F6]"/>
                    
                     <div class="flex flex-col items-center gap-8 p-10">
                         <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -568,6 +568,27 @@
                         </svg>
 
                     </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row flex-wrap justify-center items-start lg:items-center gap-4 mt-16 w-full lg:w-11/12 mx-auto">
+                <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
+                    <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Expand your merchant acceptance geolocation
+                </h4>  
+                <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
+                    <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Decrease international charges
+                </h4>  
+                <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
+                    <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Increase revenues
+                </h4>  
+            </div>
+
+            <div class="bg-primary py-12 rounded-lg text-center mt-16">
+                <div class="w-full lg:w-3/4 px-4 mx-auto">
+                    <h5>Onboard merchants in more countries:</h5>
+                    <p>MontyPay helps you to expand your business to more countries based on a profit share model.</p>
+                    <h5 class="mt-10">Collect your merchants’ international transactions locally:</h5>
+                    <p>Collect the transactions throughMontyPay’s local acquirers.</p>
                 </div>
             </div>
         </div>

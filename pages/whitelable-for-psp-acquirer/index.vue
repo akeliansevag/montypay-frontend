@@ -18,18 +18,16 @@
                     />
                 </div>
             </div>
-
-            <div class="mt-16 text-primary text-left">
-                <div class="grid xl:grid-cols-2 2xl:grid-cols-4 gap-8 lg:gap-10">
-                    <div 
-                        v-for="(item, index) in solutions_items" 
-                        :key="index"
-                        class="flex items-center justify-center p-6 bg-quaternary rounded-lg text-center"
-                    >
-                        <ContentBlock 
-                            :title="item.title"
-                        />
-                    </div>
+            
+            <div class="grid xl:grid-cols-2 2xl:grid-cols-4 gap-8 lg:gap-10 mt-16 text-primary text-left">
+                <div 
+                    v-for="(item, index) in solutions_items" 
+                    :key="index"
+                    class="flex items-center justify-center p-6 bg-quaternary rounded-lg text-center"
+                >
+                    <ContentBlock 
+                        :title="item.title"
+                    />
                 </div>
             </div>
         </div>
