@@ -124,8 +124,8 @@
     <section id="section-7" class="py-16 lg:py-36 text-black overflow-hidden">
         <div class="container">
             <h2>Why MontyPay?</h2>
-            <div class="flex flex-col lg:flex-row">
-                <div class="w-full lg:w-2/3 mt-10">
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="w-full lg:w-3/5 mt-10">
                     <FAQs :faqs="faq" />
                     <a to="/" class="mp-button-secondary mt-10 hover:bg-black hover:text-primary">Learn More <Icon name="fa6-solid:arrow-right" class="icon" /></a>
                 </div>

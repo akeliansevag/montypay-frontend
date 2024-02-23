@@ -1,15 +1,19 @@
 <template>
-    <div v-for="(faq, index) in faqs" :key="faq.id" class="mt-5 pr-0 lg:pr-60">
-        <h3 @click="toggle(faq.id)" class="cursor-pointer text-[40px] font-light">
-            <Icon name="fa6-solid:angle-down" class="icon text-md transition-transform duration-300 ease-in-out mr-4"
+    <div class="flex flex-col gap-8 w-full xl:w-4/5">
+        <div v-for="(faq, index) in faqs" :key="faq.id" class="flex items-baseline">
+            <Icon name="fa6-solid:angle-down" class="icon text-3xl lg:text-[40px] transition-transform duration-300 ease-in-out mr-4"
                 :class="activeItemId === faq.id ? 'rotate-180' : 'rotate-0'" />
-            {{ faq.question }}
-        </h3>
-        <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
-            <div v-if="activeItemId === faq.id" class="overflow-hidden">
-                <p class="mt-5">{{ faq.answer }}</p>
+            <div class="flex-1">
+                <h3 @click="toggle(faq.id)" class="cursor-pointer">                
+                    {{ faq.question }}
+                </h3>
+                <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
+                    <div v-if="activeItemId === faq.id" class="overflow-hidden">
+                        <p class="mt-5">{{ faq.answer }}</p>
+                    </div>
+                </transition>
             </div>
-        </transition>
+        </div>
     </div>
 </template>
 
