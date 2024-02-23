@@ -34,7 +34,8 @@
                 <NuxtLink 
                   :to="page.to" 
                   class="font-normal"
-                  :class="{ 'lg:text-black lg:hover:text-tertiary' : layout === 'header'}">{{ page.label }}</NuxtLink>
+                  :class="{ 'lg:text-black lg:hover:text-tertiary' : layout === 'header'}">{{ page.label }}
+                </NuxtLink>
               </li>
             </ul>
           </li>
