@@ -1,11 +1,12 @@
 <template lang="">
     <section id="section-1" class="pt-28 lg:pt-40">
         <div class="container flex flex-col items-center">
-            <span class="bg-secondary rounded-lg p-1 text-base font-bold">{{ breadcrumbs }}</span>
-            <h1 class="mt-4">{{ title }}</h1>
-            <p class="mt-8">{{ paragraph }}</p>
-            <button class="mp-button-tertiary mt-10">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon" /></button>
+            <span v-if="breadcrumbs" class="bg-secondary rounded-lg p-1 text-base font-bold">{{ breadcrumbs }}</span>
+            <h1 v-if="title" class="mt-4">{{ title }}</h1>
+            <p v-if="paragraph" class="mt-8">{{ paragraph }}</p>
+            <button v-if="button" class="mp-button-tertiary mt-10">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon" /></button>
             <NuxtPicture 
+                v-if="image"
                 priority
                 format="webp,avif" 
                 :src="`/images/${ image }.png`" 
