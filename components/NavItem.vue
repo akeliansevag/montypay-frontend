@@ -5,7 +5,7 @@
     'text-primary': $route.path === '/'
   }">
 
-    <NuxtLink v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-5' : layout === 'header' }"><h5>{{ label }}</h5></NuxtLink>
+    <NuxtLink v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-5' : layout === 'header' }"><h5 class="nav-link">{{ label }}</h5></NuxtLink>
 
     <div v-else class="flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-5' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
       <h5>{{ label }}</h5>
@@ -33,8 +33,8 @@
               <li v-for="(page, pageIndex) in section.pages" :key="pageIndex">
                 <NuxtLink 
                   :to="page.to" 
-                  class="font-normal"
-                  :class="{ 'lg:text-black lg:hover:text-tertiary' : layout === 'header'}">{{ page.label }}
+                  class="nav-link font-normal"
+                  :class="{ 'lg:text-black lg:hover:text-tertiary' : layout === 'header'}"><h5 class="nav-link">{{ page.label }}</h5>
                 </NuxtLink>
               </li>
             </ul>
