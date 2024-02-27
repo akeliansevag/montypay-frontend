@@ -200,79 +200,18 @@
         </div>
     </section>
 
-    <!-- <section id="Our values">
-        <div class="grid-container h-full relative pt-80 pb-60 lg:py-115 text-center">
-            <div class="lg:sticky lg:inset-0 lg:h-safe-screen flex flex-col justify-center lg-max:mb-80">
-                <h2><span class="inline-flex uppercase font-mono bg-green rounded text-10 py-2 px-5">Our
-                        values</span></h2>
-                <h3 class="text-72 lg:text-200 mt-30">Our core
-                    values</h3>
-            </div>
-            <div class="lg:-mt-[100svh]">
-                <div class="h-full">
-                    <div
-                        class="relative flex [&amp;>*]:shrink-0 lg-max:gap-x-15 lg-max:h-full lg:flex-col lg-max:justify-start lg-max:items-stretch lg-max:relative lg-max:[&amp;>*]:snap-start lg-max:overflow-auto lg-max:snap-x lg-max:snap-mandatory lg-max:scroll-smooth">
-                        <div
-                            class="OurCoreValuesCard rounded-lg bg-green p-30 lg:p-40 span-w-10 lg:span-w-8 text-left lg:span-ml-6-wide">
-                            <h4 class="text-32 mb-20 lg:mb-30">Initiative</h4>
-                            <p class="lg-max:text-14">At QV, we celebrate and encourage initiative. This core value
-                                represents our drive to be proactive, innovative, and forward-thinking. Our team members are
-                                always ready to take the first step, embrace new challenges, and contribute original ideas.
-                                We believe that taking initiative is key to our growth and success, empowering us to
-                                continuously improve and excel in our field.</p>
-                        </div>
-                        <div
-                            class="OurCoreValuesCard rounded-lg bg-green p-30 lg:p-40 span-w-10 lg:span-w-8 text-left lg:self-end lg:span-mr-1-wide lg:mt-72">
-                            <h4 class="text-32 mb-20 lg:mb-30">Commitment</h4>
-                            <p class="lg-max:text-14">Commitment is at the heart of everything we do at QV. Our dedicated
-                                team consistently demonstrates a strong commitment to our goals, clients, and each other. We
-                                are committed to delivering excellence, maintaining high standards, and going the extra
-                                mile. This unwavering dedication is what fuels our progress and ensures we consistently meet
-                                and exceed expectations.</p>
-                        </div>
-                        <div
-                            class="OurCoreValuesCard rounded-lg bg-green p-30 lg:p-40 span-w-10 lg:span-w-8 text-left lg:span-ml-1-wide lg:-mt-106">
-                            <h4 class="text-32 mb-20 lg:mb-30">Discipline</h4>
-                            <p class="lg-max:text-14">Discipline is a fundamental value at QV. It reflects our focus on
-                                organization, consistency, and attention to detail. Our disciplined approach ensures that
-                                every task is approached with precision and thoroughness. This value underpins our ability
-                                to deliver reliable, high-quality outcomes and maintain a structured, efficient work
-                                environment.</p>
-                        </div>
-                        <div
-                            class="OurCoreValuesCard rounded-lg bg-green p-30 lg:p-40 span-w-10 lg:span-w-8 text-left lg:self-end lg:span-mr-3-wide lg:mt-12">
-                            <h4 class="text-32 mb-20 lg:mb-30">Humility</h4>
-                            <p class="lg-max:text-14">At QV, humility guides our interactions and decision-making processes.
-                                We believe in the power of staying grounded, listening actively, and being open to learning.
-                                Our humility allows us to appreciate diverse perspectives, acknowledge our limitations, and
-                                constantly seek improvement. It fosters a respectful, collaborative workplace where
-                                everyone’s contributions are valued.</p>
-                        </div>
-                        <div
-                            class="OurCoreValuesCard rounded-lg bg-green p-30 lg:p-40 span-w-10 lg:span-w-8 text-left lg:span-ml-3-wide lg:-mt-16">
-                            <h4 class="text-32 mb-20 lg:mb-30">Data Driven</h4>
-                            <p class="lg-max:text-14">We leverage data to inform our strategies, make informed decisions,
-                                and drive innovation. Our commitment to a data-driven approach ensures that we are always
-                                aligned with the latest trends, deeply understand our market, and can measure our impact
-                                accurately. This approach enables us to be adaptive, strategic, and effective in our
-                                operations.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    
 </template>
 
 <script setup>
-    useSeoMeta({
-        title: 'Online Payments Services',
-        ogTitle: 'Online Payments Services',
-        description: 'Online Payments Services description',
-        ogDescription: 'Online Payments Services description',
-        ogImage: 'https://example.com/image.png',
-        twitterCard: 'summary_large_image',
-    })
+useSeoMeta({
+    title: 'Online Payments Services',
+    ogTitle: 'Online Payments Services',
+    description: 'Online Payments Services description',
+    ogDescription: 'Online Payments Services description',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 </script>
 
 <style lang="">
