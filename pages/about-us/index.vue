@@ -54,7 +54,7 @@
                     <ContentBlock
                         class="mt-10"
                         title="This isn’t just business"
-                        paragraph="It's a world of financial finesse! MontyPay doesn't talk the talk; our track record of triumph speaks volumes. While others stumble with their wallets, we elevate your whole payment experience! <br><br>Our services encompass an end-to-end solution, spanning from E-Commerce development, content management, order fulfilment, and social media mastery, all the way to cutting-edge payment solutions and beyond."
+                        paragraph="It's a world of financial finesse! MontyPay doesn't talk the talk; our track record of triumph speaks volumes. While others stumble with their wallets, we elevate your whole payment experience! <br><br>Our services encompass an end-to-end solution, spanning from E-Commerce development, content management, order fulfillment, and social media mastery, all the way to cutting-edge payment solutions and beyond."
                     />
                 </div>
             </div>
