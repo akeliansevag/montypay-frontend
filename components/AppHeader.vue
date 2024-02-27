@@ -3,9 +3,11 @@
     <header class="absolute top-0 left-0 w-full z-20">
         <div class="w-full z-[3] border-b border-[#e9edf422]" :class="navVisible ? 'fixed' : ''">
             <div class="container flex justify-between items-center">
-                <NuxtLink to="/">
+                <NuxtLink to="/" class="nav-link">
                     <AppLogo :fill="navVisible || $route.path === '/' ? '#FFFFFF' : '#000000'" /> 
                 </NuxtLink>  
+
+    <NuxtLink v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-5' : layout === 'header' }"><h5>{{ label }}</h5></NuxtLink>
                 
                 <nav class="nav hidden lg:block">
                     <NavItemsWrapper layout="header" class="flex gap-8" />
@@ -38,6 +40,15 @@
     const closeNav = () => {
         navVisible.value = false
     };
+
+    onMounted(() => {
+        document.body.addEventListener("click", (e) => {
+            console.log(e.target)
+            if (e.target.classList.contains('nav-link')) {
+                closeNav()
+            }
+        });
+    });
 </script>
 
 <style lang="">
