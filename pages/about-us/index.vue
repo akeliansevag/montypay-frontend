@@ -58,7 +58,7 @@
                     />
                 </div>
             </div>
-            <div class="mt-16 lg:mt-36 overflow-hidden w-full p-20 bg-quaternary text-white text-center">
+            <div class="mt-16 lg:mt-36 overflow-hidden w-full p-10 md:p-20 bg-quaternary text-white text-center">
                 <Blob />
                 <div class="lg:w-1/2 mx-auto">
                     <ContentBlock subtitle="If you're eager to uncover your business's next stride" />
