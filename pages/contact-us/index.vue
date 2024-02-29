@@ -20,73 +20,119 @@
                     <div class="flex gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="first_name">First Name</label>
-                            <input type="text" id="first_name" placeholder="First Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.first_name" type="text" id="first_name" placeholder="First Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.first_name" class="text-red-500 text-xs">{{ errors.first_name }}</div>
                         </div>
                         <div class="flex flex-col gap-1 w-full">
                             <label for="last_name">Last Name</label>
-                            <input type="text" id="last_name" placeholder="Last Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.last_name" type="text" id="last_name" placeholder="Last Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.last_name" class="text-red-500 text-xs">{{ errors.last_name }}</div>
                         </div>
                     </div> 
 
                     <div class="flex gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="email">Work Email</label>
-                            <input type="text" id="email" placeholder="Work Email" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.email" type="text" id="email" placeholder="Work Email" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.email" class="text-red-500 text-xs">{{ errors.email }}</div>
                         </div>
                     </div> 
 
                     <div class="flex gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="mobile">Phone Number</label>
-                            <input type="text" id="mobile" placeholder="Phone Number" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.mobile" type="tel" id="mobile" placeholder="Phone Number" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.mobile" class="text-red-500 text-xs">{{ errors.mobile }}</div>
                         </div>
                     </div> 
 
-                    <div class="flex gap-8 w-full">
+                    <!-- <div class="flex gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="country">Country</label>
-                            <input type="text" id="country" placeholder="Country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.country" type="text" id="country" placeholder="Country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.country" class="text-red-500 text-xs">{{ errors.country }}</div>
+                        </div>
+                    </div> -->
+
+                    <div class="flex gap-8 w-full">
+                        <div class="flex flex-col gap-1 w-full">
+                            <label for="selected-country">Country</label>
+                            <div 
+                                
+                                @click="toggleDropdown" 
+                                class="custom-dropdown w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 cursor-pointer">
+                                <div id="selected-country" class="flex justify-between items-center gap-3" :class="{'text-[#9ca3af]': !selectedCountry.name, 'text-black': selectedCountry.name}">
+                                    <div class="flex gap-3">
+                                        <img v-if="selectedCountry.name" :src="`/images/flags/${selectedCountry.iso2}.svg`" :alt="selectedCountry.name" width="24" height="24">
+                                        {{ selectedCountry.name || placeholder }}
+                                    </div>
+                                    <Icon name="fa6-solid:angle-down" class="icon text-lg text-[#9ca3af] transition-transform duration-300 ease-in-out" :class="{'rotate-180': showDropdown}" />
+                                </div>
+                            </div>
+                            <ul 
+                                v-if="showDropdown" 
+                                ref="dropdownContainer"
+                                @scroll="handleScroll" 
+                                class="absolute top-full left-0 w-full max-h-[200px] text-base rounded-lg bg-primary text-black overflow-auto z-50"
+                            >
+                                <input v-model="searchQuery" type="text" id="search" placeholder="Search" class="sticky top-0 left-0 w-full bg-primary px-4 py-2 border-b border-b-slate-200 outline-0 z-10">
+                                <template v-for="country in filteredCountries">
+                                    <li v-if="country.status == 1" :key="country.id" @click="selectCountry(country)" class="flex gap-3 text-black p-2 hover:bg-slate-200">
+                                        <img :src="`/images/flags/${country.iso2}.svg`" :alt="country.name" width="24" height="24" />
+                                        {{ country.name }}
+                                    </li>
+                                </template>
+                            </ul>
+                            <input v-model="form.country" type="hidden" id="country">
+                            <div v-if="errors.country" class="text-red-500 text-xs">{{ errors.country }}</div>
                         </div>
                     </div>
 
                     <div class="flex gap-8 w-4full">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="company">Company Name</label>
-                            <input type="text" id="company" placeholder="Company Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.company" type="text" id="company" placeholder="Company Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.company" class="text-red-500 text-xs">{{ errors.company }}</div>
                         </div>
                     </div> 
 
                     <div class="flex gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="size">Company Size</label>
-                            <input type="text" id="size" placeholder="Company Size" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.size" type="text" id="size" placeholder="Company Size" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.size" class="text-red-500 text-xs">{{ errors.size }}</div>
                         </div>
                     </div> 
 
                     <div class="flex gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="link">Website</label>
-                            <input type="text" id="link" placeholder="Website" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <input v-model="form.link" type="text" id="link" placeholder="Website" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                            <div v-if="errors.link" class="text-red-500 text-xs">{{ errors.link }}</div>
                         </div>
                     </div> 
 
                     <div class="flex gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
-                            <label for="type">Message</label>
-                            <textarea id="type" placeholder="Leave us a message..." class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 resize-none" rows="10"></textarea>
+                            <label for="message">Message</label>
+                            <textarea v-model="form.message" id="message" placeholder="Leave us a message..." class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 resize-none" rows="10"></textarea>
+                            <div v-if="errors.message" class="text-red-500 text-xs">{{ errors.message }}</div>
                         </div>
                     </div> 
 
                     <div class="flex gap-8 w-full mt-8">
-                        <div class="flex gap-3 w-full">
-                            <input type="checkbox" id="acknowledgment">
-                            <label for="acknowledgment">You agree to our friendly privacy policy.</label>
+                        <div class="flex-col gap-3 w-full">
+                            <div class="flex gap-3 w-full">
+                                <input v-model="form.acknowledgment" type="checkbox" id="acknowledgment">
+                                <label for="acknowledgment">You agree to our friendly privacy policy.</label>
+                            </div>
+                            <div v-if="errors.acknowledgment" class="text-red-500 text-xs">{{ errors.acknowledgment }}</div>
                         </div>
                     </div> 
 
                     <div class="flex gap-8 w-full">
                         <div class="flex gap-3 w-full">
-                            <input type="submit" id="submit" class="mp-button-secondary w-full text-base" value="Become a partner">
+                            <input type="submit" id="submit" class="mp-button-secondary w-full text-base" value="Become a partner" @click.prevent="handleSubmit">
                         </div>
                     </div> 
                 </div>
@@ -279,6 +325,9 @@
 </template>
 
 <script setup>
+    import countriesData from '~/api/countries.json';
+    const emit = defineEmits();
+
     useSeoMeta({ 
         title: 'Online Payments Services',
         ogTitle: 'Online Payments Services',
@@ -289,7 +338,16 @@
     })
     
     const activeTab = ref(0);
-
+    const countries = ref([]);
+    const showDropdown = ref(false);
+    const selectedCountry = ref({});
+    const placeholder = 'Select country';
+    const filteredCountries = ref([]);
+    const searchQuery = ref('');
+    const dropdownContainer = ref(null);
+    const lastLoadedIndex = ref(0);
+    const searchFlag = ref(false);
+    
     const show = (index) => {
         activeTab.value = index;
     };
@@ -326,6 +384,177 @@
         },
     ]
 
+    const form = ref({
+        first_name: '',
+        last_name: '',
+        email: '',
+        mobile: '',
+        country: '',
+        company: '',
+        size: '',
+        link: '',
+        message: '',
+        acknowledgment: false,
+    });
+
+    const errors = ref({
+        first_name: '',
+        last_name: '',
+        email: '',
+        mobile: '',
+        country: '',
+        company: '',
+        size: '',
+        link: '',
+        message: '',
+        acknowledgment: '',
+    });
+
+    const validationRules = {
+        first_name: {
+            required: 'Please enter your first name',
+            safe: 'Your input has invalid value'
+        },
+        last_name: {
+            required: 'Please enter your last name',
+            safe: 'Your input has invalid value'
+        },
+        email: {
+            required: 'Please enter your email address',
+            email: 'Please enter a valid email address',
+            safe: 'Your input has invalid value'
+        },
+        mobile: {
+            required: 'Please enter your mobile number',
+            numeric: 'Please enter a valid numeric phone number',
+            length: 'Please enter a valid phone number',
+            safe: 'Your input has invalid value'
+        },
+        country: {
+            required: 'Please enter your country',
+            safe: 'Your input has invalid value'
+        },
+        company: {
+            required: 'Please enter your company name',
+            safe: 'Your input has invalid value'
+        },
+        size: {
+            required: 'Please enter your company size',
+            numeric: 'Please enter a valid numeric company size',
+            safe: 'Your input has invalid value'
+        },
+        link: {
+            required: 'Please enter your website',
+            url: 'Please enter a valid URL for your website',
+            safe: 'Your input has invalid value'
+        },
+        message: {
+            required: 'Please leave us a message',
+            safe: 'Your input has invalid value'
+        },
+        acknowledgment: {
+            required: 'You must agree to our privacy policy',
+            safe: 'Your input has invalid value'
+        },
+    };
+
+    const handleSubmit = async () => {
+        if (validateForm(form, errors, validationRules)) {
+            try {
+            //     const API_ENDPOINT = 'your_api_endpoint';
+            //     const formData = { /* your form data */ };
+
+            //     const response = await fetch('API_ENDPOINT', {
+            //         method: 'POST',
+            //         headers: {
+            //             'Content-Type': 'application/json',
+            //         },
+            //         body: JSON.stringify(formData),
+            //     });
+            //     if (!response.ok) {
+            //         throw new Error('Network response was not ok');
+            //     }
+            //     const data = await response.json();
+            //     console.log("Form submitted successfully:", data);
+            //     // Handle success response, such as notifying the user or redirecting
+            } catch (error) {
+                // console.error("Form submission error:", error);
+                // Handle errors, such as displaying a user-friendly error message
+            }
+        }
+    };
+
+    const toggleDropdown = () => {
+        showDropdown.value = !showDropdown.value;
+
+        // Reset country list and lastLoadedIndex when closing the dropdown
+        if (!showDropdown.value) {
+            resetDropdown();
+        }
+    };
+
+    const resetDropdown = () => {
+        countries.value = [];
+        lastLoadedIndex.value = 0;
+        filteredCountries.value = [];
+        searchFlag.value = false
+        searchQuery.value = ''
+        loadInitialCountries();
+    };
+
+    const closeDropdown = () => {
+        loadInitialCountries();
+    };
+
+    const selectCountry = (country) => {
+        selectedCountry.value = country;
+        emit('select', country);
+        showDropdown.value = false;
+    };
+
+    onMounted(() => {
+        loadInitialCountries();
+    });
+
+
+    const loadInitialCountries = () => {
+        loadNextCountries();
+    };
+
+    const loadNextCountries = () => {
+        const batchSize = 10;
+        const startIndex = lastLoadedIndex.value;
+        const endIndex = startIndex + batchSize;
+        const nextBatch = countriesData.slice(startIndex, endIndex);
+
+        countries.value = [...countries.value, ...nextBatch];
+        lastLoadedIndex.value = endIndex;
+        filteredCountries.value = countries.value;
+    };
+
+    const handleScroll = () => {
+        const container = dropdownContainer.value;
+        if (searchQuery.value === '' && container.scrollTop + container.clientHeight >= container.scrollHeight - 20) {
+            if(!searchFlag.value){
+                loadNextCountries();
+            }
+        }
+    };
+
+    const searchCountries = () => {
+        const searchResults = countriesData.filter((country) =>
+            country.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+        );
+        if(searchQuery.value != ''){
+            filteredCountries.value = searchResults;
+            searchFlag.value = true
+        }
+        else{
+            resetDropdown();
+        }
+    };
+
+    watch(searchQuery, searchCountries);
 </script>
 
 <style lang="sass" scoped>

@@ -33,9 +33,6 @@ export default defineNuxtConfig({
   image: {
     // dir: 'assets/images'
   },
-  plugins: [
-    { src: '~/plugins/mobileCheck.js', mode: 'client' }
-  ],
   googleFonts: {
     families: {
       Manrope: '400..700'

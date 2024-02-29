@@ -7,8 +7,6 @@
                     <AppLogo :fill="navVisible || $route.path === '/' ? '#FFFFFF' : '#000000'" /> 
                 </NuxtLink>  
 
-    <NuxtLink v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-5' : layout === 'header' }"><h5>{{ label }}</h5></NuxtLink>
-                
                 <nav class="nav hidden lg:block">
                     <NavItemsWrapper layout="header" class="flex gap-8" />
                 </nav>
@@ -43,7 +41,6 @@
 
     onMounted(() => {
         document.body.addEventListener("click", (e) => {
-            console.log(e.target)
             if (e.target.classList.contains('nav-link')) {
                 closeNav()
             }
