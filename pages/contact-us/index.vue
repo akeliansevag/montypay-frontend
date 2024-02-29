@@ -510,6 +510,7 @@
         selectedCountry.value = country;
         emit('select', country);
         showDropdown.value = false;
+        resetDropdown()
     };
 
     onMounted(() => {
