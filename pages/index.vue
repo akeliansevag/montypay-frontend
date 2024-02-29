@@ -3,7 +3,7 @@
         title="Discover the future of payments with MontyPay"
         paragraph="With MontyPay, you gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success."
         button="Get Started" 
-        image="hero-home" 
+        image="montypay-banner" 
     />
 
     <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
