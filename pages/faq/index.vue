@@ -1,33 +1,35 @@
 <template>
-    <Hero breadcrumbs="Solutions / Tech Services" title="FAQ"
-        paragraph="MontyPay provides an End-to-End Payment Solution for Merchants" button="Get Started"
-        image="white-label" />
+    <div>
+        <Hero breadcrumbs="Solutions / Tech Services" title="FAQ"
+            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants" button="Get Started"
+            image="white-label" />
 
-    <section class="py-16 lg:py-36">
-        <div class="container">
-            <div class="flex flex-col gap-5">
-                <div v-for="(faq, index) in faqs" :key="faq.id">
-                    <div class="rounded bg-[#F9FAFB] p-5 lg:p-10">
-                        <div class="cursor-pointer flex items-center gap-4 justify-between font-bold text-2xl"
-                            @click="toggle(faq.id)">
-                            <h5>{{ faq.question }}</h5>
-                            <span
-                                class="text-[#98A2B3] shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center border-[#98A2B3]">
-                                <Icon :name="activeItemId === faq.id ? 'fa6-solid:minus' : 'fa6-solid:plus'"
-                                    class="icon text-sm  bg-[#ffffff1a]" />
-                            </span>
-                        </div>
-
-                        <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
-                            <div v-if="activeItemId === faq.id" class="content">
-                                <ContentBlock :paragraph="faq.answer" class="mt-5" />
+        <section class="py-16 lg:py-36">
+            <div class="container">
+                <div class="flex flex-col gap-5">
+                    <div v-for="(faq, index) in faqs" :key="faq.id">
+                        <div class="rounded bg-[#F9FAFB] p-5 lg:p-10">
+                            <div class="cursor-pointer flex items-center gap-4 justify-between font-bold text-2xl"
+                                @click="toggle(faq.id)">
+                                <h5>{{ faq.question }}</h5>
+                                <span
+                                    class="text-[#98A2B3] shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center border-[#98A2B3]">
+                                    <Icon :name="activeItemId === faq.id ? 'fa6-solid:minus' : 'fa6-solid:plus'"
+                                        class="icon text-sm  bg-[#ffffff1a]" />
+                                </span>
                             </div>
-                        </transition>
+
+                            <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
+                                <div v-if="activeItemId === faq.id" class="content">
+                                    <ContentBlock :paragraph="faq.answer" class="mt-5" />
+                                </div>
+                            </transition>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </template>
 
 <script setup>

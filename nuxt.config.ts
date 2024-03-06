@@ -19,6 +19,7 @@ export default defineNuxtConfig({
         { name: 'theme-color' , content:'#00F7F7' }
       ]
     },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
   pages: true,
   modules: [

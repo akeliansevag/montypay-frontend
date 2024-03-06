@@ -1,6 +1,6 @@
 
 <template lang="">
-    <header class="absolute top-0 left-0 w-full z-20">
+    <header class="fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out">
         <div class="w-full z-[3] border-b border-[#e9edf422]" :class="navVisible ? 'fixed' : ''">
             <div class="container flex justify-between items-center">
                 <NuxtLink to="/" class="nav-link">
@@ -45,9 +45,19 @@
                 closeNav()
             }
         });
+        stickyNav();
     });
+
 </script>
 
-<style lang="">
-    
+<style lang="sass">
+    header
+        animation: sticky 1s
+
+    @keyframes sticky
+        0% 
+            top: -100px
+
+        100% 
+            top: 0
 </style>
