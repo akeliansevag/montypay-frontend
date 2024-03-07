@@ -4,7 +4,6 @@
             breadcrumbs="Global Coverage"
             title="Global Coverage"
             paragraph="MontyPay Payment Gateway spans the globe , ensuring that your business can accept payments from customers in virtually every corner of the world"
-            button="Get Started"
             image="global-coverage"
         />
 

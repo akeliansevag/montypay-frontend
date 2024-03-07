@@ -2,7 +2,7 @@
     <div>
         <Hero 
             breadcrumbs="Solutions / Payment Services"
-            title="Qcheck"
+            title="QCheck"
             paragraph="Dine Out Without Doubts! Introducing QCheck - The Future of Dining Made Easy!"
             button="Get Started"
             image="qcheck"

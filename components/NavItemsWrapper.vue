@@ -17,15 +17,16 @@
                 {
                     label: 'Payment services',
                     pages: [
-                        { to: '/online', label: 'Online' },
+                        { to: '/omnichannel-solution', label: 'Omnichannel Solution' },
+                        { to: '/online-payments', label: 'Online Payments' },
                         { to: '/in-store-payments', label: 'In-store payments' },
-                        { to: '/q-check', label: 'Qcheck' },
+                        { to: '/q-check', label: 'QCheck' },
                     ],
                 },
                 {
                     label: 'Digital services',
                     pages: [
-                        { to: '/merchant-digital-services', label: 'Merchant digital services' },
+                        { to: '/e-commerce-services', label: 'eCommerce Services' },
                     ],
                 },
                 {

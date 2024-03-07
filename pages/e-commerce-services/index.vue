@@ -2,10 +2,10 @@
     <div>
         <Hero 
             breadcrumbs="Solutions / Digital Services"
-            title="Merchant Digital Services"
+            title="Build your ecommerce website from scratch"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             button="Get Started"
-            image="merchant-digital-services"
+            image="e-commerce-services"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">

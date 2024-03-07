@@ -2,7 +2,7 @@
     <div>
         <Hero 
             breadcrumbs="Solutions / Payment Services"
-            title="Online"
+            title="Online Payments"
             paragraph="Dine Out Without Doubts! Introducing QCheck - The Future of Dining Made Easy!"
             button="Get Started"
             image="online"
@@ -64,7 +64,7 @@
 
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
-                            title="Pay By Link or QR Pay"
+                            title="Pay By Link"
                             paragraph="Let your customers shop without a hitch!<br />Whether it's a payment link on your website or a QR code in your store, it's all about convenience. A simple scan or click and transactions are complete. It's easy for both you and your customers, offering utmost convenience and simplicity."
                             class="flex-1 lg:order-1"
                         />

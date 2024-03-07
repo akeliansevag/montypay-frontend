@@ -4,7 +4,7 @@
         <div class="w-full z-[3] border-b border-[#e9edf422]" :class="navVisible ? 'fixed' : ''">
             <div class="container flex justify-between items-center">
                 <NuxtLink to="/" class="nav-link">
-                    <AppLogo :fill="navVisible || $route.path === '/' ? '#FFFFFF' : '#000000'" /> 
+                    <AppLogo :fill="navVisible || $route.path === '/' ? '#FFFFFF' : 'auto'" /> 
                 </NuxtLink>  
 
                 <nav class="nav hidden lg:block">

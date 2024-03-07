@@ -3,7 +3,6 @@
         breadcrumbs="Company"
         title="Careers"
         paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
-        button="Get Started"
         image="careers"
     />
 
