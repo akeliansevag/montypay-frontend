@@ -1,10 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Solutions / Digital Services"
             title="Build your ecommerce website from scratch"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
-            button="Get Started"
             image="e-commerce-services"
         />
 

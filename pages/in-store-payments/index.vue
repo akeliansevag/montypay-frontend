@@ -1,10 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Solutions / Payment Services"
             title="In-Store Payment"
             paragraph="Dine Out Without Doubts! Introducing QCheck - The Future of Dining Made Easy!"
-            button="Get Started"
             image="in-store-payment"
         />
 

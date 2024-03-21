@@ -1,13 +1,13 @@
 <template>
   <li class="flex flex-col gap-5 h-full" 
-    :class="{'lg:flex-row lg:hover:text-tertiary lg:hover:border-b lg:hover:border-b-tertiary group/item': layout === 'header',
+    :class="{'lg:flex-row lg:hover:text-tertiary group/item': layout === 'header',
     'lg:fl': layout === 'footer',
     'text-primary': $route.path === '/'
   }">
 
-    <NuxtLink exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-5' : layout === 'header' }"><h5 class="nav-link">{{ label }}</h5></NuxtLink>
+    <NuxtLink exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-8' : layout === 'header' }"><h5 class="nav-link">{{ label }}</h5></NuxtLink>
 
-    <div v-else class="flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-5' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
+    <div v-else class="flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-8' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
       <h5>{{ label }}</h5>
       <ClientOnly>
         <Icon 

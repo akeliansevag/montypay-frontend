@@ -1,10 +1,9 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Company"
             title="Contact Us"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
-            button="Get Started"
+            image="contact-us"
         />
 
         <section id="section-2" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-primary overflow-hidden">

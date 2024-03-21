@@ -1,9 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Global Coverage"
             title="Global Coverage"
-            paragraph="MontyPay Payment Gateway spans the globe , ensuring that your business can accept payments from customers in virtually every corner of the world"
+            paragraph="MontyPay Payment Gateway spans the globe, ensuring that your business can accept payments from customers in virtually every corner of the world"
             image="global-coverage"
         />
 

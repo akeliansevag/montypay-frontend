@@ -283,63 +283,57 @@
 </template>
 
 <script setup>
-useSeoMeta({
-    title: 'Homepage',
-    ogTitle: 'Homepage',
-    description: 'Homepage description',
-    ogDescription: 'Homepage description',
-    ogImage: 'https://example.com/image.png',
-    twitterCard: 'summary_large_image',
-})
-// useHead({
-//   bodyAttrs: {
-//     class: 'dark-header',
-//   },
-// });
-const faq = [
-    {
-        id: 1,
-        question: "Global Payments",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-    {
-        id: 2,
-        question: "Advanced Reporting",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-    {
-        id: 3,
-        question: "Merchant Mobile App",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-    {
-        id: 4,
-        question: "Omnichannel Solution",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-    {
-        id: 5,
-        question: "Higher Acceptance",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-    {
-        id: 6,
-        question: "Advanced Risk Management",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-    {
-        id: 7,
-        question: "Extensive Connectivity",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-    {
-        id: 8,
-        question: "24/7 Live Chat Support",
-        answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
-    },
-]
+    useSeoMeta({
+        title: 'Homepage',
+        ogTitle: 'Homepage',
+        description: 'Homepage description',
+        ogDescription: 'Homepage description',
+        ogImage: 'https://example.com/image.png',
+        twitterCard: 'summary_large_image',
+    })
 
-
+    const faq = [
+        {
+            id: 1,
+            question: "Global Payments",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+        {
+            id: 2,
+            question: "Advanced Reporting",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+        {
+            id: 3,
+            question: "Merchant Mobile App",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+        {
+            id: 4,
+            question: "Omnichannel Solution",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+        {
+            id: 5,
+            question: "Higher Acceptance",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+        {
+            id: 6,
+            question: "Advanced Risk Management",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+        {
+            id: 7,
+            question: "Extensive Connectivity",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+        {
+            id: 8,
+            question: "24/7 Live Chat Support",
+            answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
+        },
+    ]
 </script>
 
 <style lang="">

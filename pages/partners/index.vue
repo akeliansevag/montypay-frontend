@@ -1,10 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Company"
             title="Partners"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
-            button="Get Started"
             image="partners"
         />
 

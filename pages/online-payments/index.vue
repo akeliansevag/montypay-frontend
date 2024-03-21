@@ -1,10 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Solutions / Payment Services"
             title="Online Payments"
-            paragraph="Dine Out Without Doubts! Introducing QCheck - The Future of Dining Made Easy!"
-            button="Get Started"
+            paragraph="Experience Seamless Transactions with MontyPay's Effortless Online Payment Solutions"
             image="online"
         />
 

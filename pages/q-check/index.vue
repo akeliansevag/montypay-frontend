@@ -1,10 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Solutions / Payment Services"
             title="QCheck"
             paragraph="Dine Out Without Doubts! Introducing QCheck - The Future of Dining Made Easy!"
-            button="Get Started"
             image="qcheck"
         />
 
@@ -130,6 +128,17 @@
                             />
                         </div>
                     </div>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-20 md:gap-x-36 gap-y-20 items-center mt-16">
+                        <div v-for="(connector,index) in connectors" :key="index">
+                            <NuxtPicture 
+                                priority
+                                format="svg" 
+                                :src="`/images/${connector.image}`"
+                                :imgAttrs="{class:'w-full mx-auto'}" 
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,6 +160,33 @@
     const show = (index) => {
     activeTab.value = index;
     };
+
+    const connectors = [
+    {
+        image: 'brink-pos.png'
+    },
+    {
+        image: 'dinerware.png'
+    },
+    {
+        image: 'squirrel.png'
+    },
+    {
+        image: 'micros.png'
+    },
+    {
+        image: 'pos-itouch.png'
+    },
+    {
+        image: 'heartland-xpient.png'
+    },
+    {
+        image: 'falcons-soft.png'
+    },
+    {
+        image: 'bimpos.png'
+    },
+]
 
 </script>
 

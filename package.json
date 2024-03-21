@@ -23,6 +23,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@maxmind/geoip2-node": "^5.0.0",
     "@nuxt/image": "^1.1.0"
   }
 }

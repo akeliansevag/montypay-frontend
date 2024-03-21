@@ -1,10 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Solutions / Tech Services"
             title="White Label For PSP/Acquirer"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
-            button="Get Started"
             image="white-label-for-psp-acquirer"
         />
 

@@ -1,10 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            breadcrumbs="Solutions / Digital Services"
             title="Payment Orchestration Network"
             paragraph="MontyPay helps you to expand yourbusiness to more countries based on a profit share model."
-            button="Get Started"
             image="payment-orchestration-network"
         />
 

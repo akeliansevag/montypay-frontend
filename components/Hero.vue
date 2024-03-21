@@ -1,16 +1,16 @@
 <template lang="">
-    <section id="section-1" class="pt-28 lg:pt-40">
-        <div class="container flex flex-col items-center">
-            <span v-if="breadcrumbs" class="bg-secondary rounded-lg p-1 text-base font-bold">{{ breadcrumbs }}</span>
-            <h1 v-if="title" class="mt-4">{{ title }}</h1>
-            <p v-if="paragraph" class="mt-8">{{ paragraph }}</p>
-            <button v-if="button" class="mp-button-tertiary mt-10">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon" /></button>
+    <section id="section-1" class="py-10 lg:py-20 bg-[#D9D9D9]">
+        <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 justify-end items-center">
+            <div>
+                <h1 v-if="title">{{ title }}</h1>
+                <p v-if="paragraph" class="mt-8 w-full lg:w-3/4">{{ paragraph }}</p>
+            </div>
             <NuxtPicture 
                 v-if="image"
                 priority
                 format="webp,avif" 
                 :src="`/images/${ image }.png`" 
-                class="w-full mt-20"
+                class="w-full lg:w-2/3 ml-auto"
                 :imgAttrs="{class:'w-full rounded-lg'}" 
             />
         </div>
