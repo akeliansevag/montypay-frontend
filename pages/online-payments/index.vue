@@ -3,7 +3,7 @@
         <Hero 
             title="Online Payments"
             paragraph="Experience Seamless Transactions with MontyPay's Effortless Online Payment Solutions"
-            image="online"
+            image="online-payments"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">

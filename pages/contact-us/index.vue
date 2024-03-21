@@ -6,7 +6,7 @@
             image="contact-us"
         />
 
-        <section id="section-2" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-primary overflow-hidden">
+        <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary overflow-hidden">
             <Blob />
             
             <div class="container">
@@ -141,7 +141,7 @@
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
-                            src="/images/contact-us.png" 
+                            src="/images/become-a-partner.png" 
                             class="w-full"
                             :imgAttrs="{class:'w-full aspect-video lg:aspect-auto object-cover'}" 
                         />
