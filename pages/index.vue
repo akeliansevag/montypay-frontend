@@ -39,23 +39,33 @@
         </section>
 
         <section id="section-3" class="py-16 lg:py-36 text-black overflow-hidden">
-            <div class="container flex flex-col lg:flex-row gap-8">
-                <div class="flex flex-col gap-8 flex-1 justify-between">
-                    <ContentBlock 
-                        title="Online Payments"
-                        subtitle="Dive into the future of digital commerce with MontyPay's Online Payments!"
-                        paragraph="It's not just about transactions; it's about creating a sleek and secure payment experience for your digital venture. Whether you're running an online shop, subscription service, or a bustling digital marketplace, our robust payment gateway promises smooth sailings, offering multiple payment methods and customization to reflect your brand. Ride the waves of online competition with MontyPay's payment solutions!"
-                        button="Get Started"
-                    />
+            <div class="container">
+                <ContentBlock 
+                    title="Online Payments"
+                    paragraph="Dive into the future of digital commerce"
+                    class="text-center"
+                />
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap20 place-items-center mt-16 bg-[#D9D9D933] py-16 px-20 rounded-lg font-bold text-center">
+                    <div class="flex flex-col gap-2 items-center justify-center font-bold online w-[300px] h-[300px] py-20 px-10 bg-primary rounded-full">
+                        <span class="text-7xl">50+</span>
+                        <span>Countries</span>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center justify-center online w-[300px] h-[300px] py-20 px-10 bg-primary rounded-full">
+                        <svg width="72" height="72" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44 86.625C67.5125 86.625 86.625 67.5125 86.625 44C86.625 20.4875 67.5125 1.375 44 1.375C20.4875 1.375 1.375 20.4875 1.375 44C1.375 67.5125 20.4875 86.625 44 86.625ZM11 60.9812L28.325 60.8438C30.25 67.7875 33.4813 74.525 37.8812 80.575C26.125 78.65 16.2937 71.1562 11 60.9812ZM32.725 32.3125H54.3125C55.8937 39.875 55.8937 47.6438 54.45 55.2063L32.725 55.3438C31.1437 47.7125 31.1437 39.875 32.725 32.3125ZM43.5187 78.9938C39.1875 73.425 36.025 67.3063 34.1 60.8438L53.0062 60.7063C51.0125 67.1688 47.85 73.3563 43.5187 78.9938ZM49.0188 80.7812C53.5563 74.5938 56.7875 67.7875 58.7125 60.6375L77.2063 60.5C71.8438 71.2937 61.3938 79.0625 49.0188 80.7812ZM81.125 44C81.125 47.85 80.5062 51.5625 79.475 55L60.0188 55.1375C61.3938 47.575 61.325 39.875 59.8812 32.3125H79.2C80.4375 35.9562 81.125 39.9437 81.125 44ZM76.8625 26.8125H58.575C56.5812 19.9375 53.4188 13.2688 49.0188 7.21875C61.1875 8.86875 71.4313 16.3625 76.8625 26.8125ZM52.8688 26.8125H34.1688C36.1625 20.4875 39.2562 14.5063 43.5187 9.00625C47.7812 14.5063 50.875 20.4875 52.8688 26.8125ZM37.8812 7.425C33.55 13.4062 30.3875 19.9375 28.4625 26.8125H11.1375C16.4313 16.7063 26.1937 9.35 37.8812 7.425ZM27.1562 32.3125C25.7125 39.9437 25.7125 47.7125 27.0875 55.3438L8.73125 55.4812C7.49375 51.8375 6.875 47.9875 6.875 44C6.875 39.9437 7.5625 35.9562 8.8 32.3125H27.1562Z" fill="black"/>
+                        </svg>
+                        <span>Global Reach</span>
+                    </div>
+                    <div class="flex flex-col gap-2  items-center justify-center online w-[300px] h-[300px] py-20 px-10 bg-primary rounded-full">
+                        <span class="text-7xl">100+</span>
+                        <span>Payment Methods</span>
+                    </div>
                 </div>
-                <div class="flex-1 w-full">
-                    <NuxtPicture 
-                        priority
-                        format="webp,avif" 
-                        src="/images/online-payments.png" 
-                        :imgAttrs="{class:'w-1/2 lg:w-1/2 mx-auto'}" 
-                    />
-                </div>
+
+                <h2 class="text-2xl text-center mt-16">Features</h2>
+
+                <div class=""></div>
             </div>
         </section>
 
@@ -336,6 +346,8 @@
     ]
 </script>
 
-<style lang="">
-   
+<style lang="sass">
+    .online
+        box-shadow: 0px 4px 24px 0px #0000001A
+    
 </style>
