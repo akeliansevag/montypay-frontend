@@ -2,7 +2,7 @@
     <div>
         <Hero 
             title="QCheck"
-            paragraph="Dine Out Without Doubts! Introducing QCheck - The Future of Dining Made Easy!"
+            paragraph="Get ready for the ultimate dining revolution with QCheck, the hospitality industry's game-changing Self-Service Checkout solution!"
             image="qcheck"
         />
 
@@ -11,8 +11,8 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="Check the menu & pay the bill using the same QR!"
-                            paragraph="Get ready for the ultimate dining revolution with QCheck, the hospitality industry's game-changing Self-Service Checkout solution! Say goodbye to bill stress - your customers can now peruse the menu and settle the tab using the same QR code! That's right, a tap on their smartphone and voila - the bill is paid!<br />QCheck spells a new chapter in dining satisfaction! Revel in the ease of seamless bill splitting, gorgeous branding, tip-friendly features, and real-time reporting - all designed to elevate the dining experience and wow your guests. Step into the future of dining; QCheck, where every meal becomes an experience worth savoring!"
+                            title="The Future of Dining Made Easy! <br /> Check the menu & pay the bill using the same QR!"
+                            paragraph="QCheck spells a new chapter in dining satisfaction! Enjoy seamless bill splitting, great branding, tip-friendly features, and real-time reporting - all designed to elevate the dining experience and wow your guests."
                         />
                     </div>
 
@@ -20,117 +20,68 @@
                         priority
                         format="webp,avif" 
                         src="/images/menu-and-pay.png" 
-                        class="w-full mt-10"
+                        class="w-full mt-14"
                         :imgAttrs="{class:'w-full'}" 
                     />
                 </div>
             </div>
         </section>
 
-        <section id="section-3" class="py-16 lg:py-36">
-            <div class="container">
-                <div class="w-full lg:w-3/4 mx-auto text-center">
-                    <ContentBlock 
-                        title="QCheck"
-                        subtitle="Self-Service Checkout"
-                        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus ut erat sed consectetur. Pellentesque quis tincidunt tortor, et eleifend metus. Curabitur quis placerat est, quis hendrerit risus"
-                        button="Get Started"
-                        :center=true
-                    />
-                </div>
-
-                <div class="flex flex-col gap-7 lg:gap-14 mt-16 text-black text-left">
-                        <Blob />
-                    <div class="flex flex-col lg:flex-row gap-7 lg:gap-14 gap">
-
-                        <div class="p-10 bg-primary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Enhanced Efficiency"
-                                paragraph="MontyPay's in-store payment solutions reduce transaction times, minimizing queues, and enhancing overall operational efficiency."
-                            />
-                        </div>
-                        <div class="p-10 bg-primary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Customer Satisfaction"
-                                paragraph="Faster, secure, and convenient payment options lead to improved customer satisfaction, encouraging repeat business."
-                            />
-                        </div>
-                    </div>
-                    <div class="flex flex-col lg:flex-row gap-7 lg:gap-14">
-                        <div class="p-10 bg-primary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Data-Driven Insights"
-                                paragraph="Access to real-time transaction data allows businesses to make informed decisions, optimize inventory, and tailor marketing efforts."
-                            />
-                        </div>
-                        <div class="p-10 bg-primary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Adaptability"
-                                paragraph="Our in-store payment solutions can be customized to meet the specific needs of your business, ensuring a tailored fit."
-                            />
-                        </div>
-                    </div>
-                    <div class="flex flex-col lg:flex-row gap-7 lg:gap-14">
-                        <div class="p-10 bg-primary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Data-Driven Insights"
-                                paragraph="Access to real-time transaction data allows businesses to make informed decisions, optimize inventory, and tailor marketing efforts."
-                            />
-                        </div>
-                        <div class="p-10 flex-1">
+        <section class="mt-14 lg:mt-36">
+            <div class="container lg:px-36">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-0">
+                    <div :class="index==(services.length-1) ? 'md:col-span-2' : ''" v-for="(service,index) in services" :key="index">
+                        <div class="bg-[#efefef] rounded-[40px] p-10 min-h-[228px]">
+                            <h5 class="mb-5">{{service.title}}</h5>
+                            <p>{{service.description}}</p>
                         </div>
                     </div>
                 </div>
-
-                <ContentBlock 
-                    title="Main Benefits"
-                    class="text-center mt-16"
+                
+                <NuxtPicture
+                    format="webp"
+                    src="/images/qrcheck-plate.webp"
+                    :imgAttrs="{class: 'w-full rounded-[40px] mt-14'}"
                 />
-
-                <div class="flex flex-col gap-7 lg:gap-14 mt-16 text-white text-left">
-                    <div class="flex flex-col lg:flex-row gap-7 lg:gap-14 gap">
-                        <div class="p-10 bg-quaternary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Faster Checkout"
-                                paragraph="QCheck streamlines the payment process, reducing waiting times and improving overall efficiency."
-                            />
-                        </div>
-                        <div class="p-10 bg-quaternary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Simple & Secure Payments"
-                                paragraph="Guests enjoy a user-friendly payment experience while businesses benefit from enhanced security."
-                            />
-                        </div>
-                        <div class="p-10 bg-quaternary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Real-Time Reporting"
-                                paragraph="Access real-time transaction data for better business insights and decision-making."
-                            />
-                        </div>
-                    </div>
-                    <div class="flex flex-col lg:flex-row gap-7 lg:gap-14">
-                        <div class="p-10 bg-quaternary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Increase in Tips"
-                                paragraph="QCheck's tip-friendly features encourage guests to leave gratuities, increasing staff earnings."
-                            />
-                        </div>
-                        <div class="p-10 bg-quaternary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="No Monthly Fees"
-                                paragraph="Say goodbye to monthly fees or subscription costs."
-                            />
-                        </div>
-                        <div class="p-10 bg-quaternary rounded-lg flex-1">
-                            <ContentBlock 
-                                title="Brand Visibility"
-                                paragraph="Design the checkout experience to align with your brand identity, reinforcing brand visibility and recognition."
-                            />
+                
+                <div>
+                    <ContentBlock 
+                        title="Main Benefits"
+                        class="text-center mt-28"
+                    />
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14">
+                        <div class="border-[#d9d9d9] flex gap-6 border rounded-lg p-10 h-full" v-for="(benefit,index) in benefits" :key="index">
+                            <div>
+                                <div class="-mt-4 w-[90px] h-[90px] flex items-center justify-center rounded-full bg-[#233F94]">
+                                    <NuxtPicture 
+                                        format="svg"
+                                        :src="benefit.icon"
+                                        :imgAttrs="{class: 'w-[54px]'}"
+                                    />
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <h5 class="mb-5">{{benefit.title}}</h5>
+                                <p>{{benefit.description}}</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                
+            </div>
+            
+        </section>
 
+        <section id="section-3" class="py-14">
+            <div class="container">
+                <ContentBlock 
+                        title="Connectors"
+                        class="text-center mt-28"
+                    />
+                <div class="flex flex-col gap-7 lg:gap-14 mt-8 text-white text-left">
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-20 md:gap-x-36 gap-y-20 items-center mt-16">
-                        <div v-for="(connector,index) in connectors" :key="index">
+                        <div class="px-6" v-for="(connector,index) in connectors" :key="index">
                             <NuxtPicture 
                                 priority
                                 format="svg" 
@@ -162,31 +113,95 @@
     };
 
     const connectors = [
-    {
-        image: 'brink-pos.png'
-    },
-    {
-        image: 'dinerware.png'
-    },
-    {
-        image: 'squirrel.png'
-    },
-    {
-        image: 'micros.png'
-    },
-    {
-        image: 'pos-itouch.png'
-    },
-    {
-        image: 'heartland-xpient.png'
-    },
-    {
-        image: 'falcons-soft.png'
-    },
-    {
-        image: 'bimpos.png'
-    },
-]
+        {
+            image: 'brink-pos.png'
+        },
+        {
+            image: 'dinerware.png'
+        },
+        {
+            image: 'squirrel.png'
+        },
+        {
+            image: 'micros.png'
+        },
+        {
+            image: 'pos-itouch.png'
+        },
+        {
+            image: 'heartland-xpient.png'
+        },
+        {
+            image: 'falcons-soft.png'
+        },
+        {
+            image: 'bimpos.png'
+        },
+    ]
+
+    const services = [
+        {
+            title: 'Elevate Your Brand',
+            description: 'QCheck replaces clunky EFTPOS machines with custom-designed, branded cards, enhancing your establishment\'s identity and image.'
+        },
+        {
+            title: 'Memorable Impressions',
+            description: 'Impress your guests with a visually appealing payment method, leaving a lasting positive impression of your venue.'
+        },
+        {
+            title: 'Enhanced Efficiency',
+            description: 'Staff can focus on providing exceptional service rather than dealing with payment complexities.'
+        },
+        {
+            title: 'Faster Dining Experience',
+            description: 'QCheck accelerates the payment process, reducing waiting times and enabling quicker table turnovers.'
+        },
+        {
+            title: 'Group-Friendly',
+            description: 'QCheck seamlessly splits bills, catering to groups and parties effortlessly.'
+        },
+        {
+            title: 'Individual Control',
+            description: 'Each guest can manage their portion of the bill independently, enhancing flexibility.'
+        },
+        {
+            title: 'Increase in Tips',
+            description: 'QCheck\'s tip-friendly features have been proven to boost gratuities, further incentivizing excellent service.'
+        },
+    ]
+
+    const benefits= [
+        {
+            icon: '/images/clock-check.svg',
+            title: 'Faster Checkout',
+            description: 'QCheck streamlines the payment process, reducing waiting times and improving overall efficiency.'
+        },
+        {
+            icon: '/images/shield-dollar.svg',
+            title: 'Simple and Secure Payments',
+            description: 'Guests enjoy a user-friendly payment experience while businesses benefit from enhanced security.'
+        },
+        {
+            icon: '/images/calendar-check-01.svg',
+            title: 'Real-Time Reporting',
+            description: 'Access real-time transaction data for better business insights and decision-making.'
+        },
+        {
+            icon: '/images/line-chart-up-02.svg',
+            title: 'Increase in Tips',
+            description: 'QCheck\'s tip-friendly features encourage guests to leave gratuities, increasing staff earnings.'
+        },
+        {
+            icon: '/images/annotation-x.svg',
+            title: 'No Monthly Fees',
+            description: 'Say goodbye to monthly fees or subscription costs.'
+        },
+        {
+            icon: '/images/heart-circle.svg',
+            title: 'Brand Visibility',
+            description: 'Design the checkout experience to align with your brand identity, reinforcing brand visibility and recognition.'
+        }
+    ]
 
 </script>
 
