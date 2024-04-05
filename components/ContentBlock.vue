@@ -5,7 +5,7 @@
             <h1 v-if="title">{{ title }}</h1>
         </template>
         <template v-else>
-            <h2 v-if="title">{{ title }}</h2>
+            <h2 v-if="title" v-html="title"></h2>
             <h3 v-if="subtitle">{{ subtitle }}</h3>
         </template>
         <p v-if="paragraph" v-html="paragraph"></p>
