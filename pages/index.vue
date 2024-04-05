@@ -254,7 +254,7 @@
 
         <section id="section-4" class="text-primary lg:h-screen">
             
-            <div class="lg:absolute lg:top-0 lg:right-0 lg:w-2/3 lg:h-full flex items-center bg-quaternary lg:bg-quaternary/80 py-14 lg:py-0 md:px-14 xl:px-36">
+            <div class="lg:absolute lg:top-0 lg:right-0 lg:w-2/3 lg:h-full flex items-center bg-quaternary lg:bg-quaternary/80 py-14 lg:py-0 md:px-14 xl:px-36 z-10">
                 <div class="container">
                     <ContentBlock 
                         title="In-store Payments"
