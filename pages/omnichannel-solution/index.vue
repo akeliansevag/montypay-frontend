@@ -3,11 +3,20 @@
         <Hero 
             breadcrumbs="Solutions / Payment Services"
             title="Omnichannel Solution"
-            paragraph=""
+            paragraph="Our Omnichannel Solution allows you to manage all of your transactions in real time with advanced analytics and reporting tools."
             button="Get Started"
-            image="online"
+            image="omnichannel"
         />
     </div>
+
+    <section>
+        <div class="container">
+            <ContentBlock 
+                title="Global Payments"
+                class="text-center mt-16 lg:mt-28"
+            />
+        </div>
+    </section>
 </template>
 
 <script setup>
