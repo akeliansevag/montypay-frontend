@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="blob">
+    <div v-if="show" class="blob">
         <svg viewbox="0 0 1000 1000" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <radialGradient id="b" r="1" cx="0" cy="0">
@@ -25,7 +25,11 @@
 </template>
 
 <script setup>
+    const show = ref(false)
 
+    onMounted(() => {
+        show.value = true
+    })
 </script>
 
 <style scoped lang="sass">

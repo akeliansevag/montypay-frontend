@@ -23,16 +23,6 @@ module.exports = {
                 '8xl': '3584px',
                 '9xl': '4096px',
             },
-            animation: {
-                'blob': 'blob 40s infinite',
-            },
-            keyframes: {
-                blob: {
-                    '0%, 100%': { transform: 'translate(0) scale(2) rotate(0deg)' },
-                    '25%': { transform: 'translate(50%) scale(2.5) rotate(90deg)' },
-                    '50%': { transform: 'translate(100%) scale(3) rotate(180deg)' },
-                }
-            },
         }
     },
     important: true,

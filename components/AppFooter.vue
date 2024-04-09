@@ -1,7 +1,6 @@
 <template lang="">
     <footer class="bg-quaternary text-primary py-12 lg:py-24 overflow-hidden">
 
-        <Blob />
         
         <div class="container">
             <div class="flex flex-col lg:flex-row gap-10 justify-between">
