@@ -281,26 +281,23 @@
                                 <h2 class="text-4xl">CMS Plugins</h2>
                                 <p class="text-lg">No fuss, just solutions!Our ready-to-go plugins for popular Content Management Systems (CMS) streamline integration for merchants. Skip the heavy development work and get your payment system up and running with ease.</p>
                             </div>
-                            <div class="w-full grid grid-cols-2 gap-4 place-content-center mt-12 lg:mt-0">
+                            <div class="w-full grid grid-cols-2 gap-6 items-center place-content-center mt-12 lg:mt-0">
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
                                     src="/images/magento1.png"
-                                    class="p-3"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
                                     src="/images/magento2.png"
-                                    class="p-3"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
                                     src="/images/prestashop.png"
-                                    class="p-3"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
@@ -314,28 +311,24 @@
                                     priority
                                     format="svg" 
                                     src="/images/opencart.png"
-                                    class="p-3"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
                                     src="/images/easy-downloads.png"
-                                    class="p-3"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
                                     src="/images/nopcommerce.png"
-                                    class="p-3"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
                                     src="/images/ecomz.png"
-                                    class="p-3"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                             </div>
@@ -351,26 +344,23 @@
                                 <h2 class="text-4xl">CMS Plugins</h2>
                                 <p class="text-lg">Our iOS and Android SDKs give merchants the power to accept payments within their mobile applications. Dive into the mobile commerce trend with a secure and smooth payment process for your app users. Smooth sailing all the way!</p>
                             </div>
-                            <div class="w-full grid grid-cols-3 gap-4 place-content-center mt-12 lg:mt-0">
+                            <div class="w-full grid grid-cols-3 gap-4 align-center place-content-center mt-12 lg:mt-0">
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
-                                    src="/images/easy-downloads.png"
-                                    class="p-3"
+                                    src="/images/flutter.png"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
-                                    src="/images/nopcommerce.png"
-                                    class="p-3"
+                                    src="/images/android.png"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
-                                    src="/images/ecomz.png"
-                                    class="p-3"
+                                    src="/images/ios.png"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                             </div>
@@ -385,19 +375,17 @@
                                 <h2 class="text-4xl">Platform Intergration</h2>
                                 <p class="text-lg">Our integrations with cutting-edge platforms for loyalty programs, hotel bookings, marks just the beginning of a robust ecosystem, with many exciting partnerships on the horizon.</p>
                             </div>
-                            <div class="w-full grid grid-cols-2 gap-4 place-content-center mt-12 lg:mt-0">
+                            <div class="w-full grid grid-cols-2 gap-4 align-center place-content-center mt-12 lg:mt-0">
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
-                                    src="/images/magento1.png"
-                                    class="p-3"
+                                    src="/images/igloorooms.png"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                                 <NuxtPicture 
                                     priority
                                     format="svg" 
-                                    src="/images/magento2.png"
-                                    class="p-3"
+                                    src="/images/kangaroo.png"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
                             </div>
