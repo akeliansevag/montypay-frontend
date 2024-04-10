@@ -6,7 +6,7 @@
             image="in-store-payment"
         />
 
-        <section id="section-2" class="pt-16 lg:pt-36">
+        <!-- <section id="section-2" class="pt-16 lg:pt-36">
             <div class="container">
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
@@ -25,23 +25,54 @@
                     />
                 </div>
             </div>
-        </section>
-
-        
+        </section> -->
 
         <section id="section-3" class="pt-16 lg:pt-36">
             <div class="container">
-                <div class="w-full lg:w-3/4 mx-auto text-center">
+                <div class="w-full lg:w-3/4 mx-auto bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
                     <ContentBlock 
                         title="Smart POS"
-                        subtitle="Empower Your Business with Our Smart POS Solutions!"
-                        paragraph="Step into the era of smart payments! Our cutting-edge point-of-sale solutions are designed to elevate your business operations and enhance customer experiences. From contactless payments to real-time analytics, our Smart POS systems offer unparalleled convenience, security, and efficiency."
-                        button="Get Started"
-                        :center=true
+                        paragraph="Accept a wide range of payment methods, from credit cards to digital wallets."
+                        class="text-center"
                     />
+
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        src="/images/smart-pos.png" 
+                        class="w-full"
+                        :imgAttrs="{class:'w-full lg:w-3/4 mt-16 mx-auto'}" 
+                    />
+
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+                        <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
+                            <img src="/images/sale.svg" alt="Sales trends" width="50" height="50" />
+                            <h2 class="text-base">Sales trends</h2>
+                        </div>
+                        <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
+                            <img src="/images/file-minus.svg" alt="Valuable insights into" width="50" height="50" />
+                            <h2 class="text-base">Valuable insights into</h2>
+                        </div>
+                        <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
+                            <img src="/images/calendar-check.svg" alt="Real-time reporting" width="50" height="50" />
+                            <h2 class="text-base">Real-time reporting</h2>
+                        </div>
+                        <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
+                            <img src="/images/intersect-square.svg" alt="Seamless integration" width="50" height="50" />
+                            <h2 class="text-base">Seamless integration</h2>
+                        </div>
+                        <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
+                            <img src="/images/file-question.svg" alt="Inventory management" width="50" height="50" />
+                            <h2 class="text-base">Inventory management</h2>
+                        </div>
+                        <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
+                            <img src="/images/switch-horizontal.svg" alt="Real-time transaction data" width="50" height="50" />
+                            <h2 class="text-base">Real-time transaction data</h2>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="flex flex-col gap-8 lg:gap-24 mt-16 bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
+                <!-- <div class="flex flex-col gap-8 lg:gap-24 mt-16 bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                             title="Modern Retail Experience"
@@ -89,11 +120,11 @@
                             />
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
-        <section id="section-4" class="pt-16 lg:pt-36">
+        <!-- <section id="section-4" class="pt-16 lg:pt-36">
             <div class="container">
                 <div class="w-full lg:w-3/4 mx-auto text-center">
                     <ContentBlock 
@@ -155,7 +186,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="section-5" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-white overflow-hidden">
             <div class="container">
@@ -180,7 +211,7 @@
                             <div class="flex flex-col items-center gap-10">
                                 <div v-html="item.icon" class="bg-black p-10 rounded-full"></div>
                                     <svg width="1" height="83" viewBox="0 0 1 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="0.5" y1="83" x2="0.499996" y2="2.18557e-08" stroke="white"/>
+                                    <line v-if="index !== customer_loyalty_program.length - 1" x1="0.5" y1="83" x2="0.499996" y2="2.18557e-08" stroke="white"/>
                                 </svg>
                             </div>
 
@@ -190,129 +221,6 @@
                             />
                         </div>
                     </template>
-                    <div class="flex justify-between gap-0 lg:gap-20">
-                            <div 
-                                class="p-2 lg:p-6 rounded-t-lg cursor-pointer" 
-                                :class="{ 'bg-primary text-black': activeTab === 0 }"
-                                @click="show(0)"
-                            >
-                                <h2 class="text-sm lg:text-xl">Transforming Devices</h2>
-                            </div>
-                            <div 
-                                class="p-2 lg:p-6 rounded-t-lg cursor-pointer" 
-                                :class="{ 'bg-primary text-black': activeTab === 1 }"
-                                @click="show(1)"
-                            >
-                                <h2 class="text-sm lg:text-xl">Mobility and Flexibility</h2>
-                            </div>
-                            <div 
-                                class="p-2 lg:p-6 rounded-t-lg cursor-pointer" 
-                                :class="{ 'bg-primary text-black': activeTab === 2 }"
-                                @click="show(2)"
-                            >
-                                <h2 class="text-sm lg:text-xl">Easy Set-Up</h2>
-                            </div>
-                        </div>
-                </div>
-                
-                <div class="p-10 lg:p-20 bg-primary lg:rounded-lg">
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-48 justify-center items-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 0 }"
-                    >
-                        <ContentBlock 
-                            title="Transforming Devices"
-                            subtitle="Empower your app!"
-                            paragraph="Soft POS transforms smartphones and tablets into payment terminals. It's a cost-effective and flexible way for businesses to expand their payment options without the need for additional hardware."
-                            class="flex-1 text-black"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/transforming-devices.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-48 justify-center items-center transition-opacity ease-in-out duration-300"
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 1 }"
-                    >
-                        <ContentBlock 
-                            title="Mobility and Flexibility"
-                            subtitle="Revolutionize In-Store Payments with Our Cutting-Edge Soft POS Technology"
-                            paragraph="Soft POS is ideal for businesses on the move, such as food trucks or pop-up shops. Merchants can accept payments anywhere, providing customers with greater flexibility and convenience."
-                            class="flex-1 text-black"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/mobility-and-flexibility.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
-                    </div>
-
-                    <div 
-                        class="flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-48 justify-center items-center transition-opacity ease-in-out duration-300 "
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 2 }"
-                    >
-                        <ContentBlock 
-                            title="Easy Set-Up"
-                            subtitle="Transform Your Business with Our Soft POS Solution"
-                            paragraph="MontyPay's Soft POS solutions are easy to set up and use, with intuitive interfaces that require minimal training for staff."
-                            class="flex-1 text-black"
-                        />
-
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/easy-set-up.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center mt-16">
-                    <ContentBlock 
-                        title="Soft POS Benefits"
-                    />
-
-                    <div class="flex flex-col gap-7 lg:gap-14 mt-16 text-black text-left">
-                        <div class="flex flex-col lg:flex-row gap-7 lg:gap-14 gap">
-                            <div class="p-10 bg-primary rounded-lg flex-1">
-                                <ContentBlock 
-                                    title="Enhanced Efficiency"
-                                    paragraph="MontyPay's in-store payment solutions reduce transaction times, minimizing queues, and enhancing overall operational efficiency."
-                                />
-                            </div>
-                            <div class="p-10 bg-primary rounded-lg flex-1">
-                                <ContentBlock 
-                                    title="Customer Satisfaction"
-                                    paragraph="Faster, secure, and convenient payment options lead to improved customer satisfaction, encouraging repeat business."
-                                />
-                            </div>
-                        </div>
-                        <div class="flex flex-col lg:flex-row gap-7 lg:gap-14">
-                            <div class="p-10 bg-primary rounded-lg flex-1">
-                                <ContentBlock 
-                                    title="Data-Driven Insights"
-                                    paragraph="Access to real-time transaction data allows businesses to make informed decisions, optimize inventory, and tailor marketing efforts."
-                                />
-                            </div>
-                            <div class="p-10 bg-primary rounded-lg flex-1">
-                                <ContentBlock 
-                                    title="Adaptability"
-                                    paragraph="Our in-store payment solutions can be customized to meet the specific needs of your business, ensuring a tailored fit."
-                                />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -361,10 +269,10 @@
             paragraph: 'Seamlessly integrate the loyalty program into your existing system. No hassle, no extra work—simply leverage MontyPay\'s easy integration to set up your loyalty program swiftly.',
             icon: '<svg class="" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 7C32.1102 7 36.128 8.2188 39.5455 10.5023C42.9629 12.7857 45.6265 16.0313 47.1994 19.8286C48.7723 23.6259 49.1838 27.8043 48.382 31.8355C47.5801 35.8666 45.6009 39.5695 42.6946 42.4758C39.7883 45.3821 36.0854 47.3613 32.0542 48.1632C28.0231 48.965 23.8446 48.5535 20.0474 46.9806C16.2501 45.4077 13.0045 42.7442 10.721 39.3267C8.43756 35.9092 7.21876 31.8914 7.21876 27.7812C7.22455 22.2715 9.41586 16.9891 13.3118 13.0931C17.2078 9.1971 22.4903 7.00579 28 7ZM28 4.15625C23.3274 4.15625 18.7598 5.54183 14.8747 8.13778C10.9896 10.7337 7.96148 14.4234 6.17336 18.7404C4.38524 23.0573 3.91738 27.8075 4.82896 32.3903C5.74053 36.9731 7.9906 41.1826 11.2946 44.4866C14.5986 47.7907 18.8082 50.0407 23.391 50.9523C27.9738 51.8639 32.724 51.396 37.0409 49.6079C41.3578 47.8198 45.0475 44.7917 47.6435 40.9066C50.2394 37.0215 51.625 32.4538 51.625 27.7812C51.625 21.5155 49.136 15.5064 44.7054 11.0759C40.2749 6.64531 34.2657 4.15625 28 4.15625Z" fill="white"/><path d="M28.4733 7C29.3877 7 31.002 8.60125 32.3802 12.1144C34.0033 16.2531 34.8958 21.8181 34.8958 27.7812C34.8958 33.7444 34.0208 39.3094 32.3802 43.4481C31.002 46.9481 29.392 48.5625 28.4733 48.5625C27.5545 48.5625 25.9445 46.9613 24.5664 43.4481C22.9477 39.3094 22.0508 33.7444 22.0508 27.7812C22.0508 21.8181 22.9258 16.2531 24.5664 12.1144C25.9489 8.59688 27.5633 7 28.4733 7ZM28.4733 4.15625C23.3545 4.15625 19.207 14.735 19.207 27.7812C19.207 40.8275 23.3545 51.4062 28.4733 51.4062C33.592 51.4062 37.7395 40.8275 37.7395 27.7812C37.7395 14.735 33.592 4.15625 28.4733 4.15625Z" fill="white"/><path d="M7.72656 35.1621H49.2191" stroke="white" stroke-width="3.3" stroke-miterlimit="10"/><path d="M7.72656 20.3965H49.2191" stroke="white" stroke-width="3.3" stroke-miterlimit="10"/</svg>'
         },
-        {
-            title: 'Soft POS',
-            icon: '<svg class="" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 7C32.1102 7 36.128 8.2188 39.5455 10.5023C42.9629 12.7857 45.6265 16.0313 47.1994 19.8286C48.7723 23.6259 49.1838 27.8043 48.382 31.8355C47.5801 35.8666 45.6009 39.5695 42.6946 42.4758C39.7883 45.3821 36.0854 47.3613 32.0542 48.1632C28.0231 48.965 23.8446 48.5535 20.0474 46.9806C16.2501 45.4077 13.0045 42.7442 10.721 39.3267C8.43756 35.9092 7.21876 31.8914 7.21876 27.7812C7.22455 22.2715 9.41586 16.9891 13.3118 13.0931C17.2078 9.1971 22.4903 7.00579 28 7ZM28 4.15625C23.3274 4.15625 18.7598 5.54183 14.8747 8.13778C10.9896 10.7337 7.96148 14.4234 6.17336 18.7404C4.38524 23.0573 3.91738 27.8075 4.82896 32.3903C5.74053 36.9731 7.9906 41.1826 11.2946 44.4866C14.5986 47.7907 18.8082 50.0407 23.391 50.9523C27.9738 51.8639 32.724 51.396 37.0409 49.6079C41.3578 47.8198 45.0475 44.7917 47.6435 40.9066C50.2394 37.0215 51.625 32.4538 51.625 27.7812C51.625 21.5155 49.136 15.5064 44.7054 11.0759C40.2749 6.64531 34.2657 4.15625 28 4.15625Z" fill="white"/><path d="M28.4733 7C29.3877 7 31.002 8.60125 32.3802 12.1144C34.0033 16.2531 34.8958 21.8181 34.8958 27.7812C34.8958 33.7444 34.0208 39.3094 32.3802 43.4481C31.002 46.9481 29.392 48.5625 28.4733 48.5625C27.5545 48.5625 25.9445 46.9613 24.5664 43.4481C22.9477 39.3094 22.0508 33.7444 22.0508 27.7812C22.0508 21.8181 22.9258 16.2531 24.5664 12.1144C25.9489 8.59688 27.5633 7 28.4733 7ZM28.4733 4.15625C23.3545 4.15625 19.207 14.735 19.207 27.7812C19.207 40.8275 23.3545 51.4062 28.4733 51.4062C33.592 51.4062 37.7395 40.8275 37.7395 27.7812C37.7395 14.735 33.592 4.15625 28.4733 4.15625Z" fill="white"/><path d="M7.72656 35.1621H49.2191" stroke="white" stroke-width="3.3" stroke-miterlimit="10"/><path d="M7.72656 20.3965H49.2191" stroke="white" stroke-width="3.3" stroke-miterlimit="10"/</svg>'
-        }
+        // {
+        //     title: 'Soft POS',
+        //     icon: '<svg class="" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 7C32.1102 7 36.128 8.2188 39.5455 10.5023C42.9629 12.7857 45.6265 16.0313 47.1994 19.8286C48.7723 23.6259 49.1838 27.8043 48.382 31.8355C47.5801 35.8666 45.6009 39.5695 42.6946 42.4758C39.7883 45.3821 36.0854 47.3613 32.0542 48.1632C28.0231 48.965 23.8446 48.5535 20.0474 46.9806C16.2501 45.4077 13.0045 42.7442 10.721 39.3267C8.43756 35.9092 7.21876 31.8914 7.21876 27.7812C7.22455 22.2715 9.41586 16.9891 13.3118 13.0931C17.2078 9.1971 22.4903 7.00579 28 7ZM28 4.15625C23.3274 4.15625 18.7598 5.54183 14.8747 8.13778C10.9896 10.7337 7.96148 14.4234 6.17336 18.7404C4.38524 23.0573 3.91738 27.8075 4.82896 32.3903C5.74053 36.9731 7.9906 41.1826 11.2946 44.4866C14.5986 47.7907 18.8082 50.0407 23.391 50.9523C27.9738 51.8639 32.724 51.396 37.0409 49.6079C41.3578 47.8198 45.0475 44.7917 47.6435 40.9066C50.2394 37.0215 51.625 32.4538 51.625 27.7812C51.625 21.5155 49.136 15.5064 44.7054 11.0759C40.2749 6.64531 34.2657 4.15625 28 4.15625Z" fill="white"/><path d="M28.4733 7C29.3877 7 31.002 8.60125 32.3802 12.1144C34.0033 16.2531 34.8958 21.8181 34.8958 27.7812C34.8958 33.7444 34.0208 39.3094 32.3802 43.4481C31.002 46.9481 29.392 48.5625 28.4733 48.5625C27.5545 48.5625 25.9445 46.9613 24.5664 43.4481C22.9477 39.3094 22.0508 33.7444 22.0508 27.7812C22.0508 21.8181 22.9258 16.2531 24.5664 12.1144C25.9489 8.59688 27.5633 7 28.4733 7ZM28.4733 4.15625C23.3545 4.15625 19.207 14.735 19.207 27.7812C19.207 40.8275 23.3545 51.4062 28.4733 51.4062C33.592 51.4062 37.7395 40.8275 37.7395 27.7812C37.7395 14.735 33.592 4.15625 28.4733 4.15625Z" fill="white"/><path d="M7.72656 35.1621H49.2191" stroke="white" stroke-width="3.3" stroke-miterlimit="10"/><path d="M7.72656 20.3965H49.2191" stroke="white" stroke-width="3.3" stroke-miterlimit="10"/</svg>'
+        // }
     ]
 </script>
 
