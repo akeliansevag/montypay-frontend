@@ -80,7 +80,7 @@
         <section id="section-3" class="py-16 lg:py-36 text-black overflow-hidden">
             <div class="container">
                 <ContentBlock 
-                    title="Online Payments"
+                    title="Online Payment Services"
                     paragraph="Dive into the future of digital commerce"
                     class="text-center"
                 />
@@ -253,7 +253,7 @@
             <div class="container flex flex-col">
                 <div class="w-full lg:w-4/5 xl:w-3/5 mx-auto">
                     <ContentBlock 
-                        title="eCommerce Store"
+                        title="eCommerce Services"
                         paragraph="Build your eCommerce online store from scratch!"
                     />
                 </div>

@@ -17,26 +17,26 @@
                             :center="true"
                         />
                     </div>
-                    <div class="flex flex-col sm:flex-row flex-wrap justify-center items-start lg:items-center gap:10 lg:gap-32 w-full md:w-3/5 mx-auto mt-6">
+                    <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center lg:items-center gap:10 lg:gap-32 w-full md:w-3/5 mx-auto mt-6">
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
                             src="/images/stripe.png" 
-                            class="w-full mt-10 flex-1"
+                            class="w-1/2 lg:w-full mt-10 flex-1"
                             :imgAttrs="{class:'w-full'}" 
                         />
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
                             src="/images/paypal.png" 
-                            class="w-full mt-10 flex-1"
+                            class="w-1/2 lg:w-full mt-10 flex-1"
                             :imgAttrs="{class:'w-full'}" 
                         />
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
                             src="/images/flutterwave.png" 
-                            class="w-full mt-10 flex-1"
+                            class="w-1/2 lg:w-full mt-10 flex-1"
                             :imgAttrs="{class:'w-full'}" 
                         />
                     </div>
