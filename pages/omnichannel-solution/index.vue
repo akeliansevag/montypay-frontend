@@ -56,6 +56,54 @@
             </div>
         </div>
     </section>
+
+    <section class="py-16 lg:py-32">
+        <div class="container">
+            <ContentBlock 
+                title="Merchant Mobile App"
+                class="text-center"
+            />
+            <div class="mt-16 grid lg:grid-cols-2 gap-20 items-center">
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="bg-white p-5 rounded-lg border border-[#d9d9d9]" v-for="(item,index) in merchantMobileApp" :key="index">
+                        <div class="mb-2">
+                            <NuxtPicture format="svg" :src="item.icon" />
+                        </div>
+                        <div>
+                            <h5>{{item.title }}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="justify-self-end">
+                    <NuxtPicture format="png" src="/Device-14PM.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-32 bg-[#f6f6f6]">
+        <div class="container">
+            <ContentBlock 
+                title="Advanced Risk Managment"
+                class="text-center"
+            />
+            <div class="mt-16 grid lg:grid-cols-2 gap-20">
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="bg-white p-5 rounded-lg shadow-md" v-for="(item,index) in advancedReporting" :key="index">
+                        <div class="mb-2">
+                            <NuxtPicture format="svg" :src="item.icon" />
+                        </div>
+                        <div>
+                            <h5>{{item.title }}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <NuxtPicture class="w-full" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="/advanced-reporting.png" />
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script setup>
@@ -118,6 +166,38 @@
             title: 'Maintain a competitive edge'
 
         }
+    ];
+
+    const merchantMobileApp = [
+        {
+            icon: '/bank-note-03.svg',
+            title: 'Manage transactions'
+        },
+        {
+            icon: '/line-chart-up-02.svg',
+            title: 'Track revenue'
+        },
+        {
+            icon: '/wallet-01.svg',
+            title: 'Send invoices'
+
+        },
+        {
+            icon: '/qr-code-01.svg',
+            title: 'Leverage the Pay by Link feature'
+
+        },
+        {
+            icon: '/users-01.svg',
+            title: 'Stay in touch with your customers'
+
+        },
+        {
+            icon: '/bar-chart-04.svg',
+            title: 'Gain valuable insights'
+
+        },
+    
     ];
 </script>
 
