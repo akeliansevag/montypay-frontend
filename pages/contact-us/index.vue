@@ -130,10 +130,11 @@
                             </div>
                         </div> 
 
-                        <div class="flex gap-8 w-full">
+                        <div class="gap-8 w-full">
                             <div class="flex gap-3 w-full">
                                 <input type="submit" id="submit" class="mp-button-secondary w-full text-base" value="Become a partner" @click.prevent="handleSubmit">
                             </div>
+                            <div class="mt-5" v-if="submissionMessage">{{submissionMessage}}</div>
                         </div> 
                     </div>
 
@@ -347,6 +348,7 @@
     const dropdownContainer = ref(null);
     const lastLoadedIndex = ref(0);
     const searchFlag = ref(false);
+    const submissionMessage = ref('');
     
     const show = (index) => {
         activeTab.value = index;
@@ -430,10 +432,10 @@
             length: 'Please enter a valid phone number',
             safe: 'Your input has invalid value'
         },
-        country: {
-            required: 'Please enter your country',
-            safe: 'Your input has invalid value'
-        },
+        // country: {
+        //     required: 'Please enter your country',
+        //     safe: 'Your input has invalid value'
+        // },
         company: {
             required: 'Please enter your company name',
             safe: 'Your input has invalid value'
@@ -461,29 +463,51 @@
     const handleSubmit = async () => {
         if (validateForm(form, errors, validationRules)) {
             try {
-            //     const API_ENDPOINT = 'your_api_endpoint';
-            //     const formData = { /* your form data */ };
-
-            //     const response = await fetch('API_ENDPOINT', {
-            //         method: 'POST',
-            //         headers: {
-            //             'Content-Type': 'application/json',
-            //         },
-            //         body: JSON.stringify(formData),
-            //     });
-            //     if (!response.ok) {
-            //         throw new Error('Network response was not ok');
-            //     }
-            //     const data = await response.json();
-            //     console.log("Form submitted successfully:", data);
-            //     // Handle success response, such as notifying the user or redirecting
+                const API_ENDPOINT = 'https://montypay.backend.localhost/wp-json/contact-form-7/v1/contact-forms/9/feedback';
+                const formData = new FormData();
+                formData.append('first_name', form.value.first_name);
+                formData.append('last_name', form.value.last_name);
+                formData.append('work_email', form.value.email);
+                formData.append('phone_number', form.value.mobile);
+                formData.append('country', form.value.country);
+                formData.append('company_name', form.value.company);
+                formData.append('company_size', form.value.size);
+                formData.append('website', form.value.link);
+                formData.append('message', form.value.message);
+                formData.append('_wpcf7_unit_tag', 'rte');
+                // console.log(formData);
+                // return;
+                const response = await fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    body: formData,
+                });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                //console.log("Form submitted successfully:", data);
+                submissionMessage.value = "Thank you for your message."
+                resetForm();
+                //Handle success response, such as notifying the user or redirecting
             } catch (error) {
-                // console.error("Form submission error:", error);
+                console.error("Form submission error:", error);
                 // Handle errors, such as displaying a user-friendly error message
+                submissionMessage.value = "Error in submitting your message."
+                resetForm();
             }
         }
     };
-
+    const resetForm = () => {
+        form.value.first_name="";
+        form.value.last_name="";
+        form.value.email="";
+        form.value.mobile="";
+        form.value.country="";
+        form.value.company="";
+        form.value.size="";
+        form.value.link="";
+        form.value.message="";
+    }
     const toggleDropdown = () => {
         showDropdown.value = !showDropdown.value;
 
