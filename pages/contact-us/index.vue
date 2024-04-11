@@ -130,10 +130,11 @@
                             </div>
                         </div> 
 
-                        <div class="flex gap-8 w-full">
+                        <div class="gap-8 w-full">
                             <div class="flex gap-3 w-full">
                                 <input type="submit" id="submit" class="mp-button-secondary w-full text-base" value="Become a partner" @click.prevent="handleSubmit">
                             </div>
+                            <div class="mt-5" v-if="submissionMessage">{{submissionMessage}}</div>
                         </div> 
                     </div>
 
@@ -347,6 +348,7 @@
     const dropdownContainer = ref(null);
     const lastLoadedIndex = ref(0);
     const searchFlag = ref(false);
+    const submissionMessage = ref('');
     
     const show = (index) => {
         activeTab.value = index;
@@ -483,15 +485,29 @@
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                console.log("Form submitted successfully:", data);
+                //console.log("Form submitted successfully:", data);
+                submissionMessage.value = "Thank you for your message."
+                resetForm();
                 //Handle success response, such as notifying the user or redirecting
             } catch (error) {
                 console.error("Form submission error:", error);
                 // Handle errors, such as displaying a user-friendly error message
+                submissionMessage.value = "Error in submitting your message."
+                resetForm();
             }
         }
     };
-
+    const resetForm = () => {
+        form.value.first_name="";
+        form.value.last_name="";
+        form.value.email="";
+        form.value.mobile="";
+        form.value.country="";
+        form.value.company="";
+        form.value.size="";
+        form.value.link="";
+        form.value.message="";
+    }
     const toggleDropdown = () => {
         showDropdown.value = !showDropdown.value;
 
