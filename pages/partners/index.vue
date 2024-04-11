@@ -95,38 +95,21 @@
                             paragraph="Entrepreneurs, freelancers, agencies, and businesses of varied sizes have an opportunity to collaborate with MontyPay by referring merchants to our platform. By participating in our referral program, you become a vital part of our network, referring merchants to leverage our suite of payment solutions. As a reseller, you'll receive a share of the profits, making it a mutually beneficial partnership. This model enables you to monetize your connections and networks while empowering merchants with our cutting-edge payment services."
                         />
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-start lg:items-center gap-10 mt-6">
-                            <h4 class="flex w-full flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
-                                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M24.1245 5.5C23.9414 8.04187 22.0558 10 19.9995 10C17.9433 10 16.0545 8.0425 15.8745 5.5C15.687 2.85562 17.5226 1 19.9995 1C22.4764 1 24.312 2.90375 24.1245 5.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M19.9998 14C15.9266 14 12.0098 16.0231 11.0285 19.9631C10.8985 20.4844 11.2254 21 11.761 21H28.2391C28.7748 21 29.0998 20.4844 28.9716 19.9631C27.9904 15.96 24.0735 14 19.9998 14Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                                    <path d="M11.5006 6.62125C11.3543 8.65125 9.8306 10.25 8.1881 10.25C6.5456 10.25 5.01935 8.65188 4.8756 6.62125C4.72622 4.50938 6.20935 3 8.1881 3C10.1668 3 11.65 4.54813 11.5006 6.62125Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.8756 14.125C10.7475 13.6082 9.50499 13.4094 8.18811 13.4094C4.93811 13.4094 1.80686 15.025 1.02249 18.1719C0.919361 18.5882 1.18061 19 1.60811 19H8.62561" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-                                </svg>Entrepreneurs
+                            <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
+                                <img src="/images/entrepreneurs1.svg" alt="Entrepreneurs" width="35" height="35" />
+                                Entrepreneurs
                             </h4>  
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.62578 31.7001H31.7008V28.0001L28.8258 22.5751L27.1258 23.4751L29.7758 28.4751V29.7751H25.5258L26.5258 17.7751H5.17578L6.62578 31.7001ZM24.4508 19.7001L23.6008 29.7751H8.35078L7.30078 19.7001H24.4508Z" fill="white"/>
-                                    <path d="M22.7008 9.50005C22.7008 5.80005 19.7008 2.80005 16.0008 2.80005C12.3008 2.80005 9.30078 5.80005 9.30078 9.50005C9.30078 13.2 12.3008 16.2 16.0008 16.2C19.7008 16.2 22.7008 13.2 22.7008 9.50005ZM11.2008 9.50005C11.2008 6.85005 13.3508 4.70005 16.0008 4.70005C18.6508 4.70005 20.8008 6.85005 20.8008 9.50005C20.8008 12.15 18.6508 14.3 16.0008 14.3C13.3508 14.3 11.2008 12.15 11.2008 9.50005Z" fill="white"/>
-                                    <path d="M4.85039 23.5001L3.15039 22.6001L0.275391 28.0001V31.7001H4.50039V29.8001H2.20039V28.5001L4.85039 23.5001Z" fill="white"/>
-                                    <path d="M15.75 25.5C16.3023 25.5 16.75 25.0523 16.75 24.5C16.75 23.9477 16.3023 23.5 15.75 23.5C15.1977 23.5 14.75 23.9477 14.75 24.5C14.75 25.0523 15.1977 25.5 15.75 25.5Z" fill="white"/>
-                                </svg>Freelancers
+                                <img src="/images/freelancers.svg" alt="Freelancers" width="35" height="35" />
+                                Freelancers
                             </h4>  
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
-                                <svg width="26" height="32" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25.75 29.75H22.25V0.25H3.75V19.75H0.25V21.75H5.75V2.25H20.25V29.75H5.75V24H3.75V29.75H0.25V31.75H25.75V29.75Z" fill="white"/>
-                                    <path d="M11 6.75H9V8.75H11V6.75Z" fill="white"/>
-                                    <path d="M17 6.75H15V8.75H17V6.75Z" fill="white"/>
-                                    <path d="M11 14.25H9V16.25H11V14.25Z" fill="white"/>
-                                    <path d="M17 14.25H15V16.25H17V14.25Z" fill="white"/>
-                                    <path d="M11 21.75H9V23.75H11V21.75Z" fill="white"/>
-                                    <path d="M17 21.75H15V23.75H17V21.75Z" fill="white"/>
-                                </svg>Agencies
+                                <img src="/images/agencies.svg" alt="Agencies" width="35" height="35" />
+                                Agencies
                             </h4> 
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M26.4722 26.4726H15.1389V24.0726L15.2722 24.006C16.5389 23.4949 17.3611 22.2949 17.3611 20.9393C17.3611 19.9393 16.9167 19.006 16.1167 18.3615L13.4722 16.2504C13.1167 15.9615 12.8944 15.5393 12.8944 15.0726C12.8944 14.2282 13.5833 13.5615 14.4056 13.5615H17.3611V11.7837H15.1389V9.58374H13.3611V11.9837L13.2278 12.0282C11.9611 12.5393 11.1389 13.7393 11.1389 15.0949C11.1389 16.0949 11.5833 17.0282 12.3833 17.6726L15.0278 19.7837C15.3833 20.0726 15.6056 20.4949 15.6056 20.9615C15.6056 21.806 14.9167 22.4726 14.0944 22.4726H11.1389V24.2504H13.3611V26.4726H2.02778V15.806H0.25V28.2504H15.1389H28.25V15.806H26.4722V26.4726Z" fill="white"/>
-                                    <path d="M19.5833 0.25H8.91667V4.25H0.25V13.5833H9.36111V11.8056H2.02778V6.02778H8.91667H10.6944H26.4722V11.8056H19.5833V13.5833H28.25V4.25H19.5833V0.25ZM17.8056 4.25H10.6944V2.02778H17.8056V4.25Z" fill="white"/>
-                                </svg>Businesses
+                                <img src="/images/businesses.svg" alt="Businesses" width="35" height="35" />
+                                Businesses
                             </h4>  
                         </div>
                     </div>

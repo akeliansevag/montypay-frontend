@@ -61,7 +61,7 @@
                     <div class="lg:w-1/2 mx-auto">
                         <ContentBlock subtitle="If you're eager to uncover your business's next stride" />
                         <ContentBlock title="Connect with us at" class="mt-5" />
-                        <a class="mp-button-secondary text-white hover:text-black mx-auto mt-5" href="mailto:info@montypay.com">info@montypay.com</a>
+                        <a class="mp-button-secondary mx-auto mt-5" href="mailto:info@montypay.com">info@montypay.com</a>
                     </div>
                 </div>
                 <div class="mt-16 lg:mt-20 flex-col flex gap-5 lg:px-20">

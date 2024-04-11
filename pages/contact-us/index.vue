@@ -189,7 +189,7 @@
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
-                                src="/images/Nigeria.png" 
+                                src="/images/nigeria.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
