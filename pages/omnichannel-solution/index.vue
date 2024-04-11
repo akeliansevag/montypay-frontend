@@ -87,9 +87,12 @@
                 title="Advanced Risk Managment"
                 class="text-center"
             />
-            <div class="mt-16 grid lg:grid-cols-2 gap-20">
-                <div class="grid grid-cols-2 gap-5">
-                    <div class="bg-white p-5 rounded-lg shadow-md" v-for="(item,index) in advancedReporting" :key="index">
+            <div class=" items-center mt-16 lg:mt-24 grid lg:grid-cols-2 gap-20 max-w-[700px] m-auto">
+                <div>
+                    <NuxtPicture class="w-full" :imgAttrs="{class:'max-w-[200px] mx-auto w-full -mt-5'}"  format="svg" src="/Vector.svg" />
+                </div>
+                <div class="grid gap-5">
+                    <div class="bg-white p-5 rounded-lg shadow-md" v-for="(item,index) in advancedRiskManagement" :key="index">
                         <div class="mb-2">
                             <NuxtPicture format="svg" :src="item.icon" />
                         </div>
@@ -97,9 +100,6 @@
                             <h5>{{item.title }}</h5>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <NuxtPicture class="w-full" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="/advanced-reporting.png" />
                 </div>
             </div>
         </div>
@@ -195,6 +195,23 @@
         {
             icon: '/bar-chart-04.svg',
             title: 'Gain valuable insights'
+
+        },
+    
+    ];
+
+    const advancedRiskManagement = [
+        {
+            icon: '/lock-02.svg',
+            title: 'Guaranteed security'
+        },
+        {
+            icon: '/folder-shield.svg',
+            title: 'PCI DSS compliant'
+        },
+        {
+            icon: '/cpu-chip-01.svg',
+            title: 'Artificial Intelligence & Machine Learning'
 
         },
     
