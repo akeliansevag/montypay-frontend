@@ -46,7 +46,7 @@
                 {
                     pages: [
                         { to: '/about-us', label: 'About us' },
-                        { to: '/careers', label: 'Careers' },
+                        // { to: '/careers', label: 'Careers' },
                         { to: '/partners', label: 'Partners' },
                     ],
                 },
