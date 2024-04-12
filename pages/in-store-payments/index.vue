@@ -269,7 +269,7 @@
         {
             title: 'Seamless Integration',
             paragraph: 'Seamlessly integrate the loyalty program into your existing system. No hassle, no extra work—simply leverage MontyPay\'s easy integration to set up your loyalty program swiftly.',
-            icon: 'announcement.svg'
+            icon: 'seamless-integration.svg'
         },
         // {
         //     title: 'Soft POS',
