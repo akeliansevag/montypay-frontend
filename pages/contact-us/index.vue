@@ -463,7 +463,7 @@
     const handleSubmit = async () => {
         if (validateForm(form, errors, validationRules)) {
             try {
-                const API_ENDPOINT = 'https://montypay.backend.localhost/wp-json/contact-form-7/v1/contact-forms/9/feedback';
+                const API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
                 const formData = new FormData();
                 formData.append('first_name', form.value.first_name);
                 formData.append('last_name', form.value.last_name);
