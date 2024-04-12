@@ -139,12 +139,12 @@
                             Installements
                         </div>
                     </div>
-                    <div class="border rounded-lg h-auto py-8 px-6">
+                    <!-- <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/cryptocurrency.svg" alt="Cryptocurrency" width="30" height="30" />
                             Cryptocurrency
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
