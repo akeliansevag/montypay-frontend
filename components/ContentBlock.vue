@@ -9,12 +9,14 @@
             <h3 v-if="subtitle">{{ subtitle }}</h3>
         </template>
         <p v-if="paragraph" v-html="paragraph"></p>
-        <button v-if="button" class="mp-button-secondary" :class="{ 'self-center': center === true }">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon" /></button>
+        <NuxtLink v-if="link" :to="link">
+            <button v-if="button" class="mp-button-secondary" :class="{ 'self-center': center === true }">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon" /></button>
+        </NuxtLink>
     </div>
 </template>
 
 <script setup>
-    const props = defineProps(['isBanner', 'subtitle', 'title', 'paragraph', 'button', 'center']);
+    const props = defineProps(['isBanner', 'subtitle', 'title', 'paragraph', 'button', 'center','link']);
 </script>
 
 <style lang="">

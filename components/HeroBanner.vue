@@ -18,6 +18,7 @@
                     :paragraph="paragraph" 
                     :button="button" 
                     :isBanner=true
+                    :link="link"
                 />
             </div>
         </div>
@@ -25,7 +26,7 @@
 </template>
 
 <script setup>
-const props = defineProps(['subtitle', 'title', 'paragraph', 'button', 'image']);
+const props = defineProps(['subtitle', 'title', 'paragraph', 'button', 'image','link']);
 </script>
 
 <style scoped></style>

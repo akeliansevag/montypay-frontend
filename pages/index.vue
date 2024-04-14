@@ -3,8 +3,9 @@
         <HeroBanner class="text-primary"
             title="Beyond Payments"
             paragraph="With MontyPay, you gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success."
-            button="Get Started" 
-            image="montypay-banner" 
+            button="Contact Us" 
+            image="montypay-banner"
+            link="/contact-us"
         />
 
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
