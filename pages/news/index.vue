@@ -32,7 +32,8 @@ useSeoMeta({
 
 const pages = ref(null);
 
-const { pending, data: posts } = await useFetch('https://backend.montypay.com/wp-json/wp/v2/posts?categories=7&per_page=6&page=1', {
+const { pending, data: posts } = await useFetch('https://backend.montypay.com/wp-json/wp/v2/posts', {
+    query: { categories: '7', per_page: '4', page: '1' },
     lazy: true,
     onResponse({ request, response, options }) {
         //console.log(response.headers.get('X-WP-TotalPages'));
