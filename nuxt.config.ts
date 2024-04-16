@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [
-    '~/assets/sass/global.sass', 
+    '~/assets/sass/global.sass',
   ],
   app: {
     head: {
@@ -16,10 +16,10 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', type: 'image/png', href: '/images/apple-touch-icon-180x180.png' }
       ],
       meta: [
-        { name: 'theme-color' , content:'#00F7F7' }
+        { name: 'theme-color', content: '#00F7F7' }
       ]
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
+    //pageTransition: { name: 'page', mode: 'out-in' }
   },
   pages: true,
   modules: [
