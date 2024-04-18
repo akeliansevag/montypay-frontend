@@ -56,6 +56,8 @@
     const route = useRoute();
     const slug = route.params.slug;
 
+    
+
     const {data: post, pending, error, refresh } = await useFetch('https://backend.montypay.com/wp-json/wp/v2/posts', {
         query: { slug: slug, _embed: '1', acf_format: 'standard' },
         lazy: true,
@@ -63,10 +65,10 @@
         onResponse({ request, response, options }) {
             if(response._data){
                 useSeoMeta({
-                    title: he.decode(response._data[0].title.rendered),
-                    ogTitle: he.decode(response._data[0].title.rendered),
-                    description: he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
-                    ogDescription: he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
+                    title: () => he.decode(response._data[0].title.rendered),
+                    ogTitle: () => he.decode(response._data[0].title.rendered),
+                    description: () => he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
+                    ogDescription: () => he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
                     ogImage: response._data[0].acf.inner_image.sizes['banner-image'],
                     //twitterCard: 'summary_large_image',
                 })
