@@ -53,7 +53,13 @@
                         <ContentBlock
                             class="mt-10"
                             title="This isn’t just business"
-                            paragraph="It's a world of financial finesse! MontyPay doesn't talk the talk; our track record of triumph speaks volumes. While others stumble with their wallets, we elevate your whole payment experience! <br><br>Our services encompass an end-to-end solution, spanning from E-Commerce development, content management, order fulfillment, and social media mastery, all the way to cutting-edge payment solutions and beyond."
+                            paragraph="It's a world of financial finesse! MontyPay doesn't talk the talk; our track record of triumph speaks volumes. While others stumble with their wallets, we elevate your whole payment experience!"
+                        />
+
+                        <ContentBlock
+                            class="mt-10"
+                            title=""
+                            paragraph="Our services encompass an end-to-end solution, spanning from E-Commerce development, content management, order fulfilment, and social media mastery, all the way to cutting-edge payment solutions and beyond. If you're eager to uncover your business's next stride, connect with us at: info@montypay.com"
                         />
                     </div>
                 </div>
@@ -89,7 +95,7 @@
                         <ContentBlock
                             class=""
                             title="Our mission"
-                            paragraph="MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience. MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment type."
+                            paragraph="MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience. MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment types."
                         />
                     </div>
                 </div>
@@ -104,7 +110,7 @@
             </div>
 
             <div class="container">
-                <div class="grid lg:grid-cols-2 gap-10 lg:gap-40">
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-56">
                     <div v-for="(value, index) in values" :key="value.id" :class="(index%2)==0 ? 'lg:pt-32' : ''">
                         <div class="bg-quaternary rounded-lg px-10 lg:px-16 py-7 lg:py-10 text-white text-center">
                             <ContentBlock :title="value.title" />
@@ -137,22 +143,22 @@ const values = [
     {
         id: 1,
         title: "Transparency",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience.<br><br>MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment type."
+        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
     },
     {
         id: 2,
         title: "Innovation",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience.<br><br>MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment type."
+        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
     },
     {
         id: 3,
         title: "Flexibility",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience.<br><br>MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment type."
+        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
     },
     {
         id: 4,
         title: "Honesty & Integrity",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience.<br><br>MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment type."
+        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
     },
 ]
 
