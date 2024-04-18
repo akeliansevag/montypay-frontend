@@ -41,7 +41,7 @@
             />
             <div class="mt-16 grid lg:grid-cols-2 gap-20">
                 <div class="grid grid-cols-2 gap-5">
-                    <div class="bg-white p-5 rounded-lg shadow-md" v-for="(item,index) in advancedReporting" :key="index">
+                    <div class="bg-white p-5 rounded-lg" v-for="(item,index) in advancedReporting" :key="index">
                         <div class="mb-2">
                             <NuxtPicture format="svg" :src="item.icon" />
                         </div>
@@ -87,12 +87,12 @@
                 title="Advanced Risk Managment"
                 class="text-center"
             />
-            <div class=" items-center mt-16 lg:mt-24 grid lg:grid-cols-2 gap-20 max-w-[700px] m-auto">
+            <div class="items-center mt-16 lg:mt-14 flex flex-col gap-10 max-w-[900px] m-auto">
                 <div>
                     <NuxtPicture class="w-full" :imgAttrs="{class:'max-w-[200px] mx-auto w-full -mt-5'}"  format="svg" src="/Vector.svg" />
                 </div>
-                <div class="grid gap-5">
-                    <div class="bg-white p-5 rounded-lg shadow-md" v-for="(item,index) in advancedRiskManagement" :key="index">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="bg-white p-5 rounded-lg" v-for="(item,index) in advancedRiskManagement" :key="index">
                         <div class="mb-2">
                             <NuxtPicture format="svg" :src="item.icon" />
                         </div>
@@ -239,7 +239,7 @@
 
     const merchantMobileApp = [
         {
-            icon: '/bank-note-03.svg',
+            icon: '/images/receipt.svg',
             title: 'Manage transactions'
         },
         {

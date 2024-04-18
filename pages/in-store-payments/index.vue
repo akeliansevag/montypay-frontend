@@ -190,40 +190,43 @@
 
         <section id="section-5" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-white overflow-hidden">
             <div class="container">
-                <div class="w-full lg:w-3/4 mx-auto text-center">
-                    <ContentBlock 
-                        title="Customer Loyalty Program"
-                        subtitle="Loyalty Has Never Been More Rewarding!"
-                        paragraph="Designed to enhance shopping experiences and show appreciation for your customers' continued support, our Customer Loyalty Program unlocks a world of perks, rewards, and exclusive offers. Your customers can earn points with every purchase, enjoy special discounts, access VIP benefits... You name it!"
-                        button="Get Started"
-                        :center=true
-                    />
-                </div>
+                <div class="max-w-[800px] mx-auto">
+                    <div class="w-full">
+                        <ContentBlock 
+                            title="Customer Loyalty Program"
+                            subtitle=""
+                            paragraph="Designed to enhance shopping experiences and show appreciation for your customers' continued support, our Customer Loyalty Program unlocks a world of perks, rewards, and exclusive offers."
+                            button="Get Started"
+                        />
+                    </div>
+                    <div class="flex flex-col gap-10 mt-32 w-full">
+                        <Blob />
 
-                <div class="flex flex-col gap-10 mt-32 w-full md:w-3/4 lg:1/2 mx-auto">
-                    <Blob />
-
-                    <template  
-                        v-for="(item, index) in customer_loyalty_program" 
-                        :key="index"
-                    >
-                        <div class="flex flex-col md:flex-row gap-10 items-center md:items-start">
-                            <div class="flex flex-col items-center gap-10">
-                                <div class="flex items-center justify-center bg-black w-[130px] h-[130px] rounded-full">
-                                    <img :src="`/images/${item.icon}`" alt="eCommerce Services" width="45" height="45" />
+                        <template  
+                            v-for="(item, index) in customer_loyalty_program" 
+                            :key="index"
+                        >
+                            <div class="flex flex-col md:flex-row gap-10 items-center md:items-start">
+                                <div class="flex flex-col items-center gap-10">
+                                    <div class="flex items-center justify-center bg-black w-[130px] h-[130px] rounded-full">
+                                        <img :src="`/images/${item.icon}`" alt="eCommerce Services" width="45" height="45" />
+                                    </div>
+                                    <svg v-if="index !== customer_loyalty_program.length - 1" class="hidden md:block" width="1" height="83" viewBox="0 0 1 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.5" y1="83" x2="0.499996" y2="2.18557e-08" stroke="white"/>
+                                    </svg>
                                 </div>
-                                <svg v-if="index !== customer_loyalty_program.length - 1" class="hidden md:block" width="1" height="83" viewBox="0 0 1 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="0.5" y1="83" x2="0.499996" y2="2.18557e-08" stroke="white"/>
-                                </svg>
-                            </div>
 
-                            <ContentBlock 
-                                :title="item.title"
-                                :paragraph="item.paragraph"
-                            />
-                        </div>
-                    </template>
+                                <ContentBlock 
+                                    :title="item.title"
+                                    :paragraph="item.paragraph"
+                                />
+                            </div>
+                        </template>
+                    </div>
                 </div>
+               
+
+                
             </div>
         </section>
     </div>

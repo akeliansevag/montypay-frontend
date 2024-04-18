@@ -99,7 +99,7 @@
         <section id="section-6" class="mt-16 lg:mt-36 pt-16 pb-36 min-h-screen w-full">
             <div class="text-center mb-10 lg:sticky lg:top-1/2">
                 <div class="container">
-                    <h1>Our <br> Core Values</h1>
+                    <h1 class="sm:text-2xl md:text-5xl lg:text-7xl">CORE VALUES</h1>
                 </div>
             </div>
 
