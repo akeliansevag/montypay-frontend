@@ -157,14 +157,17 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     AMEX
                                 </div>
                             </div>
@@ -191,9 +194,11 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/blom.svg" alt="Instore Payments" width="46" height="46" />
                                     Blom
                                 </div>
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/creditlibanais.svg" alt="Instore Payments" width="46" height="46" />
                                     Credit Libanais
                                 </div>
                             </div>
@@ -208,6 +213,7 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
                             </div>
@@ -227,26 +233,32 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     AMEX
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mada.svg" alt="Instore Payments" width="46" height="46" />
                                     MADA
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/knet.svg" alt="Instore Payments" width="46" height="46" />
                                     KNET
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/unionpay.svg" alt="Instore Payments" width="46" height="46" />
                                     UnionPay
                                 </div>
                             </div>
@@ -261,6 +273,7 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/applepay.svg" alt="Instore Payments" width="46" height="46" />
                                     ApplePay
                                 </div>
                             </div>
@@ -275,10 +288,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/ni.svg" alt="Instore Payments" width="46" height="46" />
                                     NI
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/meps.svg" alt="Instore Payments" width="46" height="46" />
                                     MEPS
                                 </div>
                             </div>
@@ -293,10 +308,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
                             </div>
@@ -316,30 +333,37 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     AMEX
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/benefit.svg" alt="Instore Payments" width="46" height="46" />
                                     Benefit
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/knet.svg" alt="Instore Payments" width="46" height="46" />
                                     Knet
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mada.svg" alt="Instore Payments" width="46" height="46" />
                                     Mada
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/maestro.svg" alt="Instore Payments" width="46" height="46" />
                                     Maestro
                                 </div>
                             </div>
@@ -354,6 +378,7 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/applepay.svg" alt="Instore Payments" width="46" height="46" />
                                     ApplePay
                                 </div>
                             </div>
@@ -368,6 +393,7 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <!-- <img src="/images/afs.svg" alt="Instore Payments" width="46" height="46" /> -->
                                     AFS
                                 </div>
                             </div>
@@ -382,10 +408,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
                             </div>
@@ -405,18 +433,22 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     AMEX
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/unionpay.svg" alt="Instore Payments" width="46" height="46" />
                                     UnionPay
                                 </div>
                             </div>
@@ -431,18 +463,22 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/applepay.svg" alt="Instore Payments" width="46" height="46" />
                                     ApplePay
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/googlepay.svg" alt="Instore Payments" width="46" height="46" />
                                     GooglePay
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <!-- <img src="/images/samsungpay.svg" alt="Instore Payments" width="46" height="46" /> -->
                                     SamsungPay
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/alipay.svg" alt="Instore Payments" width="46" height="46" />
                                     AliPay
                                 </div>
                             </div>
@@ -457,10 +493,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/stripe.svg" alt="Instore Payments" width="46" height="46" />
                                     Stripe	
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <!-- <img src="/images/safexpay.svg" alt="Instore Payments" width="46" height="46" /> -->
                                     SafexPay	
                                 </div>
                             </div>
@@ -475,14 +513,17 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/bnpl.svg" alt="Instore Payments" width="46" height="46" />
                                     BNPL
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
                             </div>
@@ -502,14 +543,17 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/verve.svg" alt="Instore Payments" width="46" height="46" />
                                     Verve
                                 </div>
                             </div>
@@ -548,14 +592,17 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <!-- <img src="/images/bank-to-bank.svg" alt="Instore Payments" width="46" height="46" /> -->
                                     Bank to Bank Transfer
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
                             </div>
@@ -575,34 +622,42 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     Amex
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/diners.svg" alt="Instore Payments" width="46" height="46" />
                                     Diners
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/discover.svg" alt="Instore Payments" width="46" height="46" />
                                     Discover
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/jcb.svg" alt="Instore Payments" width="46" height="46" />
                                     JCB
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mada.svg" alt="Instore Payments" width="46" height="46" />
                                     Mada
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/knet.svg" alt="Instore Payments" width="46" height="46" />
                                     Knet
                                 </div>
                             </div>
@@ -618,11 +673,13 @@
                             <div class="flex flex-col gap-8 py-10">
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/applepay.svg" alt="Instore Payments" width="46" height="46" />
                                     ApplePay
                                 </div>
                                 
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/alipay.svg" alt="Instore Payments" width="46" height="46" />
                                     AliPay
                                 </div>
                             </div>
@@ -637,14 +694,17 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/stripe.svg" alt="Instore Payments" width="46" height="46" />
                                     Stripe
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <!-- <img src="/images/unlimit.svg" alt="Instore Payments" width="46" height="46" /> -->
                                     Unlimit
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <!-- <img src="/images/latpay.svg" alt="Instore Payments" width="46" height="46" /> -->
                                     LatPay
                                 </div>
                             </div>
@@ -659,14 +719,17 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/coinspaid.svg" alt="Instore Payments" width="46" height="46" />
                                     Coinspaid
                                 </div>
                             </div>
@@ -686,26 +749,32 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     Amex
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/diners.svg" alt="Instore Payments" width="46" height="46" />
                                     Diners
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/discover.svg" alt="Instore Payments" width="46" height="46" />
                                     Discover
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/jcb.svg" alt="Instore Payments" width="46" height="46" />
                                     JCB
                                 </div>
                             </div>
@@ -721,11 +790,13 @@
                             <div class="flex flex-col gap-8 py-10">
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/applepay.svg" alt="Instore Payments" width="46" height="46" />
                                     ApplePay
                                 </div>
                                 
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/alipay.svg" alt="Instore Payments" width="46" height="46" />
                                     AliPay
                                 </div>
                             </div>
@@ -752,10 +823,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
                             </div>
@@ -775,26 +848,32 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     Amex
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/diners.svg" alt="Instore Payments" width="46" height="46" />
                                     Diners
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/discover.svg" alt="Instore Payments" width="46" height="46" />
                                     Discover
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/jcb.svg" alt="Instore Payments" width="46" height="46" />
                                     JCB
                                 </div>
                             </div>
@@ -810,11 +889,13 @@
                             <div class="flex flex-col gap-8 py-10">
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/applepay.svg" alt="Instore Payments" width="46" height="46" />
                                     ApplePay
                                 </div>
                                 
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/alipay.svg" alt="Instore Payments" width="46" height="46" />
                                     AliPay
                                 </div>
                             </div>
@@ -841,10 +922,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
                             </div>
@@ -864,22 +947,27 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     Amex
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/knet.svg" alt="Instore Payments" width="46" height="46" />
                                     Knet
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mada.svg" alt="Instore Payments" width="46" height="46" />
                                     Mada
                                 </div>
                             </div>
@@ -894,6 +982,7 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/applepay.svg" alt="Instore Payments" width="46" height="46" />
                                     ApplePay
                                 </div>
                             </div>
@@ -908,6 +997,7 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/nbk.svg" alt="Instore Payments" width="46" height="46" />
                                     NBK
                                 </div>
                             </div>
@@ -922,10 +1012,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal
                                 </div>
                             </div>
@@ -945,26 +1037,32 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     Amex
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/jcb.svg" alt="Instore Payments" width="46" height="46" />
                                     JCB
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/discover.svg" alt="Instore Payments" width="46" height="46" />
                                     Discover
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/diners.svg" alt="Instore Payments" width="46" height="46" />
                                     Diners
                                 </div>
                             </div>
@@ -979,26 +1077,32 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/virgo.svg" alt="Instore Payments" width="46" height="46" />
                                     VIRGO
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/ovo.svg" alt="Instore Payments" width="46" height="46" />
                                     OVO
                                 </div>
 
                                 <div class="flex items-center gap-4">
-                                    SHOPEEPAY
+                                    <img src="/images/shopeepay.svg" alt="Instore Payments" width="46" height="46" />
+                                    Shopeepay
                                 </div>
 
                                 <div class="flex items-center gap-4">
-                                    DANA
+                                    <img src="/images/dana.svg" alt="Instore Payments" width="46" height="46" />
+                                    Dana
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/doku.svg" alt="Instore Payments" width="46" height="46" />
                                     Doku
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/linkaja.svg" alt="Instore Payments" width="46" height="46" />
                                     Link Aja
                                 </div>
                             </div>
@@ -1013,10 +1117,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/doku.svg" alt="Instore Payments" width="46" height="46" />
                                     Doku
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     MasterCard
                                 </div>
                             </div>
@@ -1031,26 +1137,32 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/qris.svg" alt="Instore Payments" width="46" height="46" />
                                     QR Code (QRIS)
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/banktransfers.svg" alt="Instore Payments" width="46" height="46" />
                                     Bank Transfers
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/cashpayments.svg" alt="Instore Payments" width="46" height="46" />
                                     Cash Payments 
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/bnpl.svg" alt="Instore Payments" width="46" height="46" />
                                     BNPL 
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal 
                                 </div>
                             </div>
@@ -1070,22 +1182,27 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     Amex
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/webpay.svg" alt="Instore Payments" width="46" height="46" />
                                     Webpay (in 2 countries only)
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/diners.svg" alt="Instore Payments" width="46" height="46" />
                                     Diners
                                 </div>
                             </div>
@@ -1112,6 +1229,7 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/payretailers.svg" alt="Instore Payments" width="46" height="46" />
                                     PayRetailers
                                 </div>
                             </div>
@@ -1126,22 +1244,27 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/cashpayments.svg" alt="Instore Payments" width="46" height="46" />
                                     Cash Payments
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/ewallets.svg" alt="Instore Payments" width="46" height="46" />
                                     e-wallets
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/banktransfers.svg" alt="Instore Payments" width="46" height="46" />
                                     Bank transfers (almost 100+ PM) 
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal 
                                 </div>
                             </div>
@@ -1161,18 +1284,22 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/mastercard.svg" alt="Instore Payments" width="46" height="46" />
                                     Master Card
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/visa.svg" alt="Instore Payments" width="46" height="46" />
                                     Visa
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/amex.svg" alt="Instore Payments" width="46" height="46" />
                                     Amex
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/maestro.svg" alt="Instore Payments" width="46" height="46" />
                                     Maestro
                                 </div>
                             </div>
@@ -1211,10 +1338,12 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/triplea.svg" alt="Instore Payments" width="46" height="46" />
                                     Triple A
                                 </div>
 
                                 <div class="flex items-center gap-4">
+                                    <img src="/images/paypal.svg" alt="Instore Payments" width="46" height="46" />
                                     PayPal 
                                 </div>
                             </div>

@@ -11,23 +11,50 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="Harmonize Your Transactions With MontyPay's Payment Orchestration Network"
-                            paragraph="MontyPay's Payment Orchestration Network is the backbone of your business's growth strategy when it comes to optimizing payment processes. In an increasingly interconnected world, where local preferences vary widely, having a comprehensive network of payment methods is essential to meet the diverse needs of your global customer base."
+                            title="MontyPay's Payment Orchestration Network"
+                            paragraph="Is the backbone of your business's growth strategy when it comes to optimizing payment processes."
                         />
                     </div>
 
-                    <NuxtPicture 
-                        priority
-                        format="webp,avif" 
-                        src="/images/harmonize-your-transactions.png" 
-                        class="w-full mt-10"
-                        :imgAttrs="{class:'w-full'}" 
-                    />
+                    <div class="flex gap-4 mt-16 mx-auto text-white">
+                        <div>
+                            <NuxtPicture 
+                                priority
+                                format="webp,avif" 
+                                src="/images/mp-payment-orchestration-network.png" 
+                                class="w-full mt-10"
+                                :imgAttrs="{class:'w-full'}" 
+                            />
+                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-ecenter px-20">
+                                <h5>Onboard merchants in more countries</h5>
+                            </div>
+                        </div> 
+                        
+                        <div>
+                            <NuxtPicture 
+                                priority
+                                format="webp,avif" 
+                                src="/images/mp-payment-orchestration-network.png" 
+                                class="w-full mt-10"
+                                :imgAttrs="{class:'w-full'}" 
+                            />
+                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center px-20">
+                                <h5>Collect your merchants' international transactions locally</h5>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-primary">
+            <NuxtPicture 
+                priority
+                format="webp,avif" 
+                src="/images/extensive-coverage-bg.png" 
+                class="absolute top-0 right-0 flex justify-center items-center w-full h-full"
+                :imgAttrs="{class:'w-full md:w-3/5 ms-auto'}" 
+            />
             <div class="container">
                 <div class="flex flex-col gap-8 lg:gap-24">
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
@@ -41,7 +68,7 @@
                                 priority
                                 format="webp,avif" 
                                 src="/images/extensive-coverage.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
+                                :imgAttrs="{class:'w-3/4 mx-auto'}" 
                             />
                         </div>
                     </div>
@@ -49,16 +76,18 @@
             </div>
         </section>      
 
-        <section id="section-4" class="py-16 lg:py-36">
+        <section id="section-4" class="mt-16 lg:mt-36">
             <div class="container">
                 <div class="flex flex-col gap-8 lg:gap-24">
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
-                            title="Unified Solution"
-                            paragraph="Through a single integration, we offer a consolidated gateway that connects your business to our extensive network of payment methods.<br />This integration minimizes the technical challenges typically associated with diversifying payment options, allowing your business to focus on its core operations with confidence."
-                            class="flex-1 lg:order-1"
-                        />
-                        <div class="flex-1 w-full">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
+                        <div class="w-full lg:w-2/3 lg:order-1">
+                            <ContentBlock 
+                                title="Unified Solution"
+                                paragraph="Through a single integration, we offer a consolidated gateway that connects your business to our extensive network of payment methods.<br />This integration minimizes the technical challenges typically associated with diversifying payment options, allowing your business to focus on its core operations with confidence."
+                                class="w-full lg:w-3/5 mx-auto"
+                            />
+                        </div>
+                        <div class="flex w-full lg:w-1/3">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -68,13 +97,16 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
+
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
+                        <div class="w-full lg:w-2/3">
+                            <ContentBlock 
                             title="Central Point of Contact"
-                            paragraph="MontyPay serves as the central point of contact for all your payment needs. Rather than dealing with a multitude of payment providers and their associated support systems, you benefit from a streamlined interface to manage your payment operations. This not only simplifies your payment-related tasks but also enhances the overall customer support experience you can provide."
-                            class="flex-1"
-                        />
-                        <div class="flex-1 w-full">
+                                paragraph="MontyPay serves as the central point of contact for all your payment needs. Rather than dealing with a multitude of payment providers and their associated support systems, you benefit from a streamlined interface to manage your payment operations. This not only simplifies your payment-related tasks but also enhances the overall customer support experience you can provide."
+                                class="w-full lg:w-3/5"
+                            />
+                        </div>
+                        <div class="flex w-full lg:w-1/3">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 

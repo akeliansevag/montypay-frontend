@@ -76,9 +76,9 @@
         <section id="section-3" class="py-14">
             <div class="container">
                 <ContentBlock 
-                        title="Connectors"
-                        class="text-center mt-28"
-                    />
+                    title="Connectors"
+                    class="text-center mt-28"
+                />
                 <div class="flex flex-col gap-7 lg:gap-14 mt-8 text-white text-left">
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-20 md:gap-x-36 gap-y-20 items-center mt-16">
                         <div class="px-6" v-for="(connector,index) in connectors" :key="index">
@@ -86,7 +86,7 @@
                                 priority
                                 format="svg" 
                                 :src="`/images/${connector.image}`"
-                                :imgAttrs="{class:'w-full mx-auto'}" 
+                                :imgAttrs="{class:'w-3/5 mx-auto'}" 
                             />
                         </div>
                     </div>
