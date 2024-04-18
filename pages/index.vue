@@ -52,25 +52,25 @@
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 text-center">
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
-                            <img src="/images/coins-stacked.svg" alt="Online Payment Gateway" width="30" height="30" />
+                            <img src="/images/credit-card-2.svg" alt="Online Payment Gateway" width="46" height="46" />
                         </div>
                         Online Payment Gateway
                     </div>
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
-                            <img src="/images/coins-stacked.svg" alt="Instore Payments" width="30" height="30" />
+                            <img src="/images/shopping-cart-1.svg" alt="Instore Payments" width="46" height="46" />
                         </div>
                         Instore Payments
                     </div>
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
-                            <img src="/images/coins-stacked.svg" alt="Self-Service Checkout" width="30" height="30" />
+                            <img src="/images/receipt-check-1.svg" alt="Self-Service Checkout" width="46" height="46" />
                         </div>
                         Self-Service Checkout
                     </div>
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
-                            <img src="/images/coins-stacked.svg" alt="eCommerce Services" width="30" height="30" />
+                            <img src="/images/shopping-bag-1.svg" alt="eCommerce Services" width="46" height="46" />
                         </div>
                         eCommerce Services
                     </div>

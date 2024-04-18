@@ -18,10 +18,10 @@
             </div>
         </section>
 
-        <section id="section-3" class="pt-y6 lg:py-36">
+        <section id="section-3" class="py-16 lg:py-36">
             <div class="container">
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
-                    <div>
+                    <div class="w-full xl:w-2/5">
                         <ContentBlock 
                             title="E-Commerce Development"
                             paragraph="Take control of your online content with our comprehensive Content Management solutions."
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     
-                    <div class="flex w-full lg:w-2/3">
+                    <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
@@ -78,8 +78,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center mt-16 lg:mt-32">
-                    <div class="lg:order-1">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-between items-center mt-16 lg:mt-32">
+                    <div class="w-full xl:w-2/5 lg:order-1">
                         <ContentBlock 
                             title="Content Management"
                             paragraph="Create, edit, and publish content across your website."
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                     
-                    <div class="flex w-full lg:w-2/3">
+                    <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
@@ -112,8 +112,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center mt-16 lg:mt-32">
-                    <div>
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-between items-center mt-16 lg:mt-32">
+                    <div class="w-full xl:w-2/5">
                         <ContentBlock 
                             title="Social Media Management"
                             paragraph="Strategize, create, and schedule engaging content across various platforms."
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     
-                    <div class="flex w-full lg:w-2/3">
+                    <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
@@ -150,8 +150,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center mt-16 lg:mt-32">
-                    <div class="lg:order-1">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-between items-center mt-16 lg:mt-32">
+                    <div class="w-full xl:w-2/5 lg:order-1">
                         <ContentBlock 
                             title="Payment Solutions"
                             paragraph="Ensure your business enjoys a seamless online checkout experience."
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                     
-                    <div class="flex w-full lg:w-2/3">
+                    <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
                             format="webp,avif" 
