@@ -60,6 +60,7 @@
     
     const {data: post, pending, error, refresh } = await useFetch('https://backend.montypay.com/wp-json/wp/v2/posts', {
         query: { slug: slug, _embed: '1', acf_format: 'standard' },
+        lazy: true
     });
 
     
@@ -70,10 +71,9 @@
         description: () => he.decode(post.value[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
         ogDescription: () => he.decode(post.value[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
         ogImage: () => post.value[0].acf.inner_image.sizes['banner-image'],
-        twitterCard: 'summary_large_image',
+        //twitterCard: 'summary_large_image',
     })
     
-    refresh();
 </script>
 
 <style lang="" scoped>
