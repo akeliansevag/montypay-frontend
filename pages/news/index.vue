@@ -1,7 +1,7 @@
 <template>
     <div>
         <Hero breadcrumbs="Solutions / Payment Services" title="News"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants" button="Get Started"
+            paragraph="" button="Get Started"
             image="omnichannel" />
     </div>
     <Posts category="7" detailPath="news"/>
