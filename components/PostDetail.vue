@@ -70,7 +70,7 @@
         ogTitle: () => he.decode(post.value[0].title.rendered),
         description: () => he.decode(post.value[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
         ogDescription: () => he.decode(post.value[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
-        ogImage: () => post.value[0].acf.inner_image.sizes['banner-image'],
+        ogImage: () => post.value[0].acf.inner_image.sizes.large,
         //twitterCard: 'summary_large_image',
     })
     
