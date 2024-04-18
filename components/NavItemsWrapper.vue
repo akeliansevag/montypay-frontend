@@ -49,6 +49,7 @@ const companySections = [
                     // { to: '/careers', label: 'Careers' },
                     { to: '/partners', label: 'Partners' },
                     { to: '/news', label: 'News' },
+                    { to: '/blogs', label: 'Blogs' },
                 ],
             },
         ],
