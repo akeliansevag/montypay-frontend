@@ -25,7 +25,7 @@
             </div>
             <div v-else>
                 <div v-if="post">
-                    <NuxtImg class="rounded-lg mb-10" loading="lazy" :src="post[0].acf.inner_image.sizes['banner-image']" />
+                    <NuxtImg class="w-full rounded-lg mb-10" loading="lazy" :src="post[0].acf.inner_image.sizes['banner-image']" />
                     <!-- <img class="rounded-lg mb-10" :src="post[0].acf.inner_image.sizes['banner-image']" /> -->
                     <div class="flex flex-col gap-7 max-w-[1000px]">
                         <div class="flex gap-10 text-base">
