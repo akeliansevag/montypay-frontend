@@ -54,14 +54,11 @@
     const {backPath} = defineProps(['backPath']);
     
     const route = useRoute();
-    const slug = route.params.slug;
-
-    
+    const slug = route.params.slug;    
 
     const {data: post, pending, error, refresh } = await useFetch('https://backend.montypay.com/wp-json/wp/v2/posts', {
         query: { slug: slug, _embed: '1', acf_format: 'standard' },
-        lazy: true,
-        server: false,
+        lazy:true,
         onResponse({ request, response, options }) {
             if(response._data){
                 useSeoMeta({
@@ -69,12 +66,23 @@
                     ogTitle: () => he.decode(response._data[0].title.rendered),
                     description: () => he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
                     ogDescription: () => he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
-                    ogImage: response._data[0].acf.inner_image.sizes['banner-image'],
+                    ogImage: () => response._data[0].acf.inner_image.sizes['banner-image'],
                     //twitterCard: 'summary_large_image',
                 })
             }
         },
+        onRequest({ request, options }) {
+           console.log("requested")
+        },
+        onRequestError({ request, options, error }) {
+            console.log("request error")
+        },
+        onResponseError({ request, response, options }) {
+            console.log("response error")
+        }
     });
+    
+    refresh();
 </script>
 
 <style lang="" scoped>
