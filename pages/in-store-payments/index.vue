@@ -2,7 +2,7 @@
     <div>
         <Hero 
             title="In-Store Payment"
-            paragraph="Dine Out Without Doubts! Introducing QCheck - The Future of Dining Made Easy!"
+            paragraph="Our Smart POS  enhance transaction speed, security, and overall customer satisfaction."
             image="in-store-payment"
         />
 
@@ -29,7 +29,7 @@
 
         <section id="section-3" class="pt-16 lg:pt-36">
             <div class="container">
-                <div class="w-full lg:w-3/4 mx-auto bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
+                <div class="w-full lg:w-full mx-auto bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
                     <ContentBlock 
                         title="Smart POS"
                         paragraph="Accept a wide range of payment methods, from credit cards to digital wallets."
@@ -41,7 +41,7 @@
                         format="webp,avif" 
                         src="/images/smart-pos.png" 
                         class="w-full"
-                        :imgAttrs="{class:'w-full lg:w-3/4 mt-16 mx-auto'}" 
+                        :imgAttrs="{class:'w-full lg:w-1/2 mt-16 mx-auto'}" 
                     />
 
                     <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
@@ -209,7 +209,7 @@
                     >
                         <div class="flex flex-col md:flex-row gap-10 items-center md:items-start">
                             <div class="flex flex-col items-center gap-10">
-                                <div class="flex items-center justify-center bg-black w-[130px] h-[130px] rounded-full">
+                                <div class="flex items-center justify-center bg-black w-[110px] h-[110px] rounded-full">
                                     <img :src="`/images/${item.icon}`" alt="eCommerce Services" width="45" height="45" />
                                 </div>
                                 <svg v-if="index !== customer_loyalty_program.length - 1" class="hidden md:block" width="1" height="83" viewBox="0 0 1 83" fill="none" xmlns="http://www.w3.org/2000/svg">

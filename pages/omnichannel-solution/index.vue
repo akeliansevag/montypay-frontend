@@ -87,11 +87,11 @@
                 title="Advanced Risk Managment"
                 class="text-center"
             />
-            <div class=" items-center mt-16 lg:mt-24 grid lg:grid-cols-2 gap-20 max-w-[700px] m-auto">
+            <div class="items-center mt-16 lg:mt-24 gap-20 m-auto">
                 <div>
                     <NuxtPicture class="w-full" :imgAttrs="{class:'max-w-[200px] mx-auto w-full -mt-5'}"  format="svg" src="/Vector.svg" />
                 </div>
-                <div class="grid gap-5">
+                <div class="grid grid-cols-3 gap-5 lg:mt-12 ">
                     <div class="bg-white p-5 rounded-lg shadow-md" v-for="(item,index) in advancedRiskManagement" :key="index">
                         <div class="mb-2">
                             <NuxtPicture format="svg" :src="item.icon" />
@@ -105,13 +105,16 @@
         </div>
     </section>
 
-    <section class="py-16 lg:py-32 bg-black">
-        <div class="container">
+    <section class="py-16 lg:py-32 container">
+        <div class="absolute w-full h-full top-0 left-0">
+            <NuxtPicture class="w-full" :imgAttrs="{class:'object-cover w-full h-full rounded-lg'}"  format="svg" src="images/extensive-connectivity.png" />
+        </div>
+        <div class="py-36">
             <ContentBlock 
                 title="Extensive Connectivity"
                 class="text-center text-white"
             />
-            <div class="mt-16 lg:mt-2">
+            <div class="mt-16 lg:mt-2 px-16">
                 <div class="grid md:grid-cols-4 gap-5 mt-16">
                     <div class="text-white bg-black p-5 rounded-lg border border-[#D9D9D9]" v-for="(item,index) in extensiveConnectivity" :key="index">
                         <div class="mb-2">
@@ -162,7 +165,7 @@
             <div class="mt-16 lg:mt-2">
                 <div class="grid md:grid-cols-3 gap-5 mt-16">
                     <div class="bg-white p-5 rounded-lg" v-for="(item,index) in acceptance" :key="index">
-                        <div class="mb-2">
+                        <div class="mb-16">
                             <NuxtPicture format="svg" :src="item.icon" />
                         </div>
                         <div>

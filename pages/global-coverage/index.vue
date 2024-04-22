@@ -2,7 +2,7 @@
     <div>
         <Hero 
             title="Global Coverage"
-            paragraph="MontyPay Payment Gateway spans the globe, ensuring that your business can accept payments from customers in virtually every corner of the world"
+            paragraph="With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
             image="global-coverage"
         />
 
@@ -19,22 +19,22 @@
             </div>
         </section>
 
-        <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-primary overflow-hidden">
+        <section id="section-3" class="mt-16 lg:mt-48 py-16 lg:pb-36 bg-quaternary text-primary overflowhidden">
             <div class="container">
                 <div class="flex flex-col gap-8 lg:gap-24">
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <div class="flex-1">
+                        <div class="w-full lg:w-3/5">
                             <ContentBlock 
                                 title="Competitive Pricing"
-                                paragraph="At MontyPay, we understand the importance of cost-effective payment processing. That's why we offer competitive pricing structures tailored to your specific business needs. Our transparent pricing model ensures you'll always know what you're paying for, with no hidden fees or surprises. Plus, our commitment to fair pricing means you can maximize your revenue while providing top-notch payment experiences for your customers."
+                                paragraph="We offer competitive pricing structures tailored to your specific business needs. Our transparent pricing model means you can maximize your revenue while providing top-notch payment experiences for your customers."
                             />
                             <ContentBlock 
                                 title="Countries & Customized Payment Methods"
-                                paragraph="Explore MontyPay, your ultimate global payment solution provider offering diverse payment methods tailored to various countries. Discover a world of seamless transactions and diverse payment methods uniquely designed for each country, ensuring your business thrives in the international market."
-                                class="mt-20"
+                                paragraph="Explore MontyPay, your ultimate global payment solution provider offering diverse payment methods tailored to various countries."
+                                class="mt-10 lg:mt-20"
                             />
                         </div>
-                        <div class="flex-1 w-full">
+                        <div class="w-full lg:w-2/5 lg:-mt-36">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -52,90 +52,90 @@
                 <div class="w-full lg:w-3/4 mx-auto text-center">
                     <ContentBlock 
                         title="Global Coverage"
-                        subtitle="MontyPay Payment Gateway spans the globe"
+                        subtitle="Expand Your Business Horizons Worldwide"
                     />
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-4 lg:gap-10 w-10/12 lg:w-9/12 mt-16 lg:mt-36 mx-auto">
+                <div class="flex flex-wrap justify-center gap-2 lg:gap-5 w-full lg:w-9/12 mt-16 lg:mt-36 mx-auto">
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 0 }"
                         @click="show(0)"
                     >
                         <h2 class="text-sm lg:text-xl">Lebanon</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 1 }"
                         @click="show(1)"
                     >
                         <h2 class="text-sm lg:text-xl">Jordan</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 2 }"
                         @click="show(2)"
                     >
                         <h2 class="text-sm lg:text-xl">Bahrain</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 3 }"
                         @click="show(3)"
                     >
                         <h2 class="text-sm lg:text-xl">UAE</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 4 }"
                         @click="show(4)"
                     >
                         <h2 class="text-sm lg:text-xl">Nigeria</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 5 }"
                         @click="show(5)"
                     >
                         <h2 class="text-sm lg:text-xl">EU & UK</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 6 }"
                         @click="show(6)"
                     >
                         <h2 class="text-sm lg:text-xl">Canada</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 7 }"
                         @click="show(7)"
                     >
                         <h2 class="text-sm lg:text-xl">USA</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 8 }"
                         @click="show(8)"
                     >
                         <h2 class="text-sm lg:text-xl">Kuwait</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 9 }"
                         @click="show(9)"
                     >
                         <h2 class="text-sm lg:text-xl">Indonesia</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 10 }"
                         @click="show(10)"
                     >
                         <h2 class="text-sm lg:text-xl">LATAM</h2>
                     </div>
                     <div 
-                        class="py-2 lg:py-4 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
                         :class="{ 'bg-secondary': activeTab === 11 }"
                         @click="show(11)"
                     >

@@ -103,7 +103,7 @@
             </div>
 
             <div class="container">
-                <div class="grid grid-cols-2 md:grid-cols-3 xxl:grid-cols-7 gap-4 mt-16">
+                <div class="grid grid-cols-2 md:grid-cols-3 xxl:grid-cols-6 gap-4 mt-16">
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/smart-routing.svg" alt="Smart routing and cascading" width="30" height="30" />

@@ -12,12 +12,10 @@
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
                             title="Solutions we provide"
-                            paragraph="MontyPay's White Label Payment Gateway is your passport to launching your Payment Service Provider (PSP) quickly and efficiently. With our fully brandable, SaaS white label solution, you can kickstart your payment business in as little as 3 weeks, all without incurring development costs and with minimal Time to Market. <br><br>
-                            Our gateway boasts 170+ connectors, ensuring connectivity with various payment methods and providers. We prioritize a personalized approach and high-quality support, backed by the latest technology and industry best practices."
                         />
                     </div>
                 </div>
-                
+<!--                 
                 <div class="grid xl:grid-cols-2 2xl:grid-cols-4 gap-8 lg:gap-10 mt-16 text-primary text-left">
                     <div 
                         v-for="(item, index) in solutions_items" 
@@ -27,6 +25,98 @@
                         <ContentBlock 
                             :title="item.title"
                         />
+                    </div>
+                </div> -->
+
+
+                <div class="container">
+                    <div class="grid grid-cols-2 md:grid-cols-3 xxl:grid-cols-6 gap-4 mt-16">
+                        <div class="border rounded-lg h-auto py-8 px-6">
+                            <div class="flex flex-col gap-20">
+                                <img src="/images/smart-routing.svg" alt="Smart routing and cascading" width="30" height="30" />
+                                Smart routing and cascading
+                            </div>
+                        </div>
+                        <div class="border rounded-lg h-auto py-8 px-6">
+                            <div class="flex flex-col gap-20">
+                                <img src="/images/link.svg" alt="Pay by link" width="30" height="30" />
+                                Pay by link
+                            </div>
+                        </div>
+                        <div class="border rounded-lg h-auto py-8 px-6">
+                            <div class="flex flex-col gap-20">
+                                <img src="/images/invoice.svg" alt="Customer invoicing" width="30" height="30" />
+                                Customer invoicing
+                            </div>
+                        </div>
+                        <div class="border rounded-lg h-auto py-8 px-6">
+                            <div class="flex flex-col gap-20">
+                                <img src="/images/calendar.svg" alt="Recurring bills" width="30" height="30" />
+                                Recurring bills
+                            </div>
+                        </div>
+                        <div class="border rounded-lg h-auto py-8 px-6">
+                            <div class="flex flex-col gap-20">
+                                <img src="/images/qr-code.svg" alt="Pay by ;ink" width="30" height="30" />
+                                QR Pay
+                            </div>
+                        </div>
+                        <div class="border rounded-lg h-auto py-8 px-6">
+                            <div class="flex flex-col gap-20">
+                                <img src="/images/check.svg" alt="Installements" width="30" height="30" />
+                                Installements
+                            </div>
+                        </div>
+                        <!-- <div class="border rounded-lg h-auto py-8 px-6">
+                            <div class="flex flex-col gap-20">
+                                <img src="/images/cryptocurrency.svg" alt="Cryptocurrency" width="30" height="30" />
+                                Cryptocurrency
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <NuxtPicture 
+                        priority
+                        format="webp,avif" 
+                        class="hidden lg:block"
+                        src="/images/become-a-psp.png" 
+                        :imgAttrs="{class:'w-full mx-auto'}" 
+                    />
+                    
+                    <div class="max-lg:bg-quaternary max-lg:py-16 max-lg:rounded-lg lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full flex flex-col justify-center items-center z-10">
+                        <ContentBlock 
+                            title="Our Solutions"
+                            class="text-white"
+                        />
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 lg:gap-4 mt-16 px-16">
+                            <div class="bg-white rounded-lg h-auto py-8 px-6">
+                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">1</div>
+                                <div class="flex flex-col gap-20">
+                                    Smart routing and cascading
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg h-auto py-8 px-6">
+                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">2</div>
+                                <div class="flex flex-col gap-20">
+                                    Smart routing and cascading
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg h-auto py-8 px-6">
+                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">3</div>
+                                <div class="flex flex-col gap-20">
+                                    Smart routing and cascading
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg h-auto py-8 px-6">
+                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">4</div>
+                                <div class="flex flex-col gap-20">
+                                    Smart routing and cascading
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +370,7 @@
                     paragraph="Our merchant mobile application offers a seamless experience, providing access to comprehensive dashboard reporting and analytics. With this app, you can effortlessly:" 
                     class="text-center lg:w-1/2 mx-auto" 
                 />
-                <div class="mt-16 mb-16">
+                <div class="my-16">
                     <swiper-container
                         :slides-per-view="1.5"
                         :space-between="30"
@@ -291,10 +381,10 @@
                         }"
                         :breakpoints="{
                             1199: {
-                                slidesPerView: 4,
+                                slidesPerView: 4.8,
                             },
                             768: {
-                                slidesPerView: 2,
+                                slidesPerView: 2.8,
                             }
                         }"
                     >
@@ -362,21 +452,29 @@
                         />
                     </div>
                 </div>
-                <div class="flex flex-col gap-8 justify-center items-center">
-                    <ContentBlock 
-                        title="Intelligent Routing"
-                        paragraph="Identify cost-effective transaction routes and routes with higher acceptance rates. MontyPay's transactional traffic routing considers multiple factors such as currency, transaction origin,3D-Secure requirements, and more. This intelligent routing optimizes acquirer performance and enhances transaction success."
-                        class="text-center"
-                    />
-                    <div class="w-1/2">
-                        <NuxtPicture 
-                            priority
-                            format="webp,avif" 
-                            src="/images/intelligent-routing.png" 
-                            :imgAttrs="{class:'w-full mx-auto'}" 
+            </div>
+
+            <div class="bg-quaternary text-white py-16 lg:py-36">
+                <div class="container flex flex-col gap-16 lg:gap-36">
+                    <div class="flex flex-col gap-8 justify-center items-center">
+                        <ContentBlock 
+                            title="Intelligent Routing"
+                            paragraph="Identify cost-effective transaction routes and routes with higher acceptance rates. MontyPay's transactional traffic routing considers multiple factors such as currency, transaction origin,3D-Secure requirements, and more. This intelligent routing optimizes acquirer performance and enhances transaction success."
+                            class="text-center"
                         />
+                        <div class="w-1/2">
+                            <NuxtPicture 
+                                priority
+                                format="webp,avif" 
+                                src="/images/intelligent-routing.png" 
+                                :imgAttrs="{class:'w-full mx-auto'}" 
+                            />
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="container flex flex-col gap-16 lg:gap-36 mt-16 lg:mt-36">
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
                         title="Live Chat Support"
