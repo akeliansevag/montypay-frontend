@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div v-else>
-                <div class="grid grid-cols-3 gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div v-for="(post, index) in posts" :key="index">        
                         <div class="flex flex-col gap-4">
                             <NuxtLink :to="`/${detailPath}/${post.slug}`">

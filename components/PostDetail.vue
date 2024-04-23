@@ -5,25 +5,28 @@
                 <span> < </span> 
                 <span>Back to {{backPath}}</span>
             </Nuxtlink>
-            <div v-if="pending" class="animate-pulse">
+            <div v-if="pending">
                 <div class="animate-pulse flex flex-col gap-7">
                     <div class="rounded-md h-[500px] w-full bg-[#f2f2f2]"></div>
                     <div class="rounded-md h-[20px] max-w-[300px] bg-[#f2f2f2]"></div>
                     <div class="rounded-md h-[50px] max-w-[1000px] bg-[#f2f2f2]"></div>    
                 </div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[1000px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[700px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[800px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[650px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[300px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[1000px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[600px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[900px] bg-[#f2f2f2]"></div>
-                <div class="rounded-md mt-3 h-[15px] max-w-[450px] bg-[#f2f2f2]"></div>
+                <div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[1000px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[700px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[800px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[650px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[300px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[1000px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[600px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[900px] bg-[#f2f2f2]"></div>
+                    <div class="rounded-md mt-3 h-[15px] max-w-[450px] bg-[#f2f2f2]"></div>
+                </div>
             </div>
             <div v-else>
                 <div v-if="post">
-                    <img class="rounded-lg mb-10" :src="post[0].acf.inner_image.sizes['banner-image']" />
+                    <NuxtImg class="w-full rounded-lg mb-10" loading="lazy" :src="post[0].acf.inner_image.sizes['banner-image']" />
+                    <!-- <img class="rounded-lg mb-10" :src="post[0].acf.inner_image.sizes['banner-image']" /> -->
                     <div class="flex flex-col gap-7 max-w-[1000px]">
                         <div class="flex gap-10 text-base">
                             <div>
@@ -55,34 +58,23 @@
     
     const route = useRoute();
     const slug = route.params.slug;    
-
+    
     const {data: post, pending, error, refresh } = await useFetch('https://backend.montypay.com/wp-json/wp/v2/posts', {
         query: { slug: slug, _embed: '1', acf_format: 'standard' },
-        lazy:true,
-        onResponse({ request, response, options }) {
-            if(response._data){
-                useSeoMeta({
-                    title: () => he.decode(response._data[0].title.rendered),
-                    ogTitle: () => he.decode(response._data[0].title.rendered),
-                    description: () => he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
-                    ogDescription: () => he.decode(response._data[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
-                    ogImage: () => response._data[0].acf.inner_image.sizes['banner-image'],
-                    //twitterCard: 'summary_large_image',
-                })
-            }
-        },
-        onRequest({ request, options }) {
-           console.log("requested")
-        },
-        onRequestError({ request, options, error }) {
-            console.log("request error")
-        },
-        onResponseError({ request, response, options }) {
-            console.log("response error")
-        }
+        lazy: true
     });
+
     
-    refresh();
+
+    useServerSeoMeta({
+        title: () => he.decode(post.value[0].title.rendered),
+        ogTitle: () => he.decode(post.value[0].title.rendered),
+        description: () => he.decode(post.value[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
+        ogDescription: () => he.decode(post.value[0].excerpt.rendered).replace(/<[^>]*>/g, ''),
+        ogImage: () => post.value[0].acf.inner_image.sizes.large,
+        //twitterCard: 'summary_large_image',
+    })
+    
 </script>
 
 <style lang="" scoped>
