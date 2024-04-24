@@ -1,18 +1,17 @@
 <template lang="">
-    <div>
-        <NuxtLink to="/"></NuxtLink>
-    </div>
-</template>
-<script setup>
-useSeoMeta({
-    title: 'About Us',
-    ogTitle: 'About Us',
-    description: 'About Us description',
-    ogDescription: 'About Us description',
-    ogImage: 'https://example.com/image.png',
-    twitterCard: 'summary_large_image',
-})
-</script>
-<style lang="">
-    
-</style>
+    <Page slug="privacy-policy" />
+ </template>
+ <script setup>
+ useSeoMeta({
+     title: 'Privacy Policy',
+     ogTitle: 'Privacy Policy',
+     description: 'Privacy Policy',
+     ogDescription: 'Privacy Policy',
+     ogImage: 'https://example.com/image.png',
+     twitterCard: 'summary_large_image',
+ })
+
+ </script>
+ <style lang="">
+     
+ </style>

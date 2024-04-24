@@ -1,17 +1,16 @@
 <template lang="">
-    <div>
-        <NuxtLink to="/"></NuxtLink>
-    </div>
+   <Page slug="terms-and-conditions" />
 </template>
 <script setup>
 useSeoMeta({
-    title: 'About Us',
-    ogTitle: 'About Us',
-    description: 'About Us description',
-    ogDescription: 'About Us description',
+    title: 'Terms & Conditions',
+    ogTitle: 'Terms & Conditions',
+    description: 'Terms & Conditions',
+    ogDescription: 'Terms & Conditions',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })
+
 </script>
 <style lang="">
     

@@ -101,7 +101,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="grid grid-cols-2 md:grid-cols-3 xxl:grid-cols-6 gap-4 mt-16">
                     <div class="border rounded-lg h-auto py-8 px-6">

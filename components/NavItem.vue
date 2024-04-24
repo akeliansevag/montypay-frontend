@@ -6,7 +6,9 @@
   }">
   <Blob />
 
-    <NuxtLink exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-8' : layout === 'header' }"><h5 class="nav-link">{{ label }}</h5></NuxtLink>
+    <NuxtLink :external="external" :target="target" exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-8' : layout === 'header' }">
+      <h5 class="nav-link">{{ label }}</h5>
+    </NuxtLink>
 
     <div v-else class="flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-8' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
       <h5>{{ label }}</h5>
@@ -48,7 +50,7 @@
 </template>
   
 <script setup>
-  const props = defineProps(['to', 'label', 'children', 'layout']);
+  const props = defineProps(['to', 'label', 'children', 'layout','target', 'external']);
   const hasChildren = computed(() => props.children && props.children.length);
 
   const navItemsVisible = ref(false);

@@ -31,17 +31,17 @@
                 </div>
             </div>
 
-            <!-- <hr class="border-[#e9edf422] mt-10" />
+            <hr class="border-[#e9edf422] mt-10" />
 
             <nav class="flex flex-col lg:flex-row flex-wrap gap-2.5 lg:gap-9 mt-10">
                 <NavItem to="/terms-and-conditions" label="Terms & Conditions" layout="footer" class="flex-none" />
                 <NavItem to="/privacy-policy" label="Privacy Policy" layout="footer" class="flex-none" />
                 <NavItem to="/customer-acceptance-policy" label="Customer Acceptance Policy" layout="footer" class="flex-none" />
-                <NavItem to="/data-processing-agreement" label="Data Processing Agreement" layout="footer" class="flex-none" />
-                <NavItem to="/platform-services-agreement" label="Platform Services Agreement" layout="footer" class="flex-none" />
+                <NavItem to="/Data-Processing-Agreement.pdf" label="Data Processing Agreement" layout="footer" class="flex-none" :external="true" target="_blank" />
+                <NavItem to="/Platform-Services-Agreement.pdf" label="Platform Services Agreement" layout="footer" class="flex-none" :external="true" target="_blank"  />
             </nav>
 
-            <hr class="border-[#e9edf422] mt-10" /> -->
+            <hr class="border-[#e9edf422] mt-10" />
 
             <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-10">
                 <p>© MontyPay 2024</p>
