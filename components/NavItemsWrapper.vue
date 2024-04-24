@@ -3,7 +3,7 @@
         <NavItem :layout="layout" label="Solutions" :children="solutionSections" />
         <NavItem :layout="layout" label="Company" :children="companySections" />
         <NavItem :layout="layout" to="/global-coverage" label="Global Coverage" />
-        <!-- <NavItem :layout="layout" label="Developers" :children="developerSections" /> -->
+        <NavItem :layout="layout" label="Developers" :children="developerSections" />
         <NavItem :layout="layout" to="/contact-us" label="Contact" />
     </ul>
 </template>

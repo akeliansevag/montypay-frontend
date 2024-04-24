@@ -15,3 +15,19 @@
     ul
         list-style-type: circle
         margin-left:30px
+
+
+.api-item
+        @apply sm:min-h-[270px] flex flex-col items-center bg-white px-8 py-8 border border-[#d9d9d9] rounded-lg
+
+        &-icon
+            @apply sm:h-1/2 mb-10 sm:mb-0 flex items-center
+
+        &-link-wrapper
+            @apply sm:h-1/2 flex items-end
+
+            .api-item-link
+                @apply min-w-[172px] inline-block text-center text-base text-black py-2 px-5 border border-black rounded-lg
+                
+                &:hover
+                    @apply bg-black text-white border-white
