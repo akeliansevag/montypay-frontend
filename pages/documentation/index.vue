@@ -62,7 +62,7 @@ useSeoMeta({
 const mobileSDK = [
     {
         icon: "/images/flutter.svg",
-        buttonLink: "/MontyPay-FlutterSDK.zip",
+        buttonLink: "https://backend.montypay.com/wp-content/uploads/2024/04/MontyPay-FlutterSDK.zip",
         buttonText: "Download",
     },
     {
