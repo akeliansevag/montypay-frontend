@@ -24,22 +24,19 @@
             </div>
         </section>
 
-        <section id="section-4" class="mt-16 lg:mt-36 bg-[#f6f6f6]">
+        <section id="section-4" class="mt-16 lg:mt-36 py-8 lg:py-16 bg-[#f6f6f6]" style="background-image: url('images/lines.svg')">
             <div class="container">
                 <ContentBlock
                     class="text-center lg:w-1/2 mx-auto"
                     title="Our Offices"
                     paragraph="We offer a wide range of 100+ payment methods that cover Middle East, Asia, Europe and America."
                 />
-                
             </div>
-            <NuxtPicture 
-                    priority
-                    format="webp,avif" 
-                    src="/images/our-offices.png" 
-                    class="w-full -mt-40 block"
-                    :imgAttrs="{class:'w-full'}" 
-                />
+            <div class="w-full md:w-3/4 mx-auto mt-16 lg:mt-32">
+                <div class="container">
+                    <Map />
+                </div>
+            </div>
         </section>
 
         <section id="section-5" class="pt-16 lg:pt-36">
