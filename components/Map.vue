@@ -41,7 +41,7 @@
     register(); 
     const our_offices = [
         {
-            icon: 'lb',
+            icon: 'LB',
             location: 'Beirut, Lebanon',
             address: '1st floor, Bloc E,<br />Gefinor Center',
             top: '39.8',
@@ -55,14 +55,14 @@
             left: '47.8',
         },
         {
-            icon: 'jo',
+            icon: 'JO',
             location: 'Amaan, Jordan',
             address: 'Office 501, Campbell Grey Living, <br /> Land Number 851, Al-Waibdeh <br /> - Al- Wastani Basin',
             top: '41.5',
             left: '58.3',
         },
         {
-            icon: 'ae',
+            icon: 'AE',
             location: 'Dubai, UAE',
             address: 'Unit 30, floor 20, <br /> Central Park Tower, DIFC',
             top: '46',
@@ -76,7 +76,7 @@
             left: '77',
         },
         {
-            icon: 'ng',
+            icon: 'NG',
             location: 'Lagos, Nigeria',
             address: '10th Floor, Standard Chartered HQ. <br /> No.142, Ahmadu Bello Way, <br /> Victoria Island, Eti-Osa',
             top: '54.9',
