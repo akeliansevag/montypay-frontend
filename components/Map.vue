@@ -1,8 +1,29 @@
 <template lang="">
-        <div>
-            <img src="/images/our-offices.svg" width="3072" height="1646" />
-            <div v-for="(office, index) in our_offices" :key="index" :style="{ top: `${office.top}%`, left: `${office.left}%` }" class="group absolute w-[11px] h-[11px] rounded-full bg-red-800 z-10 cursor-pointer">
-                <div class="hidden group-hover:block absolute bottom-6 left-1/2 -translate-x-1/2 w-max p-4 bg-white rounded-lg shadow-md z-10">
+            <div class="md:hidden mb-4 pl-7">
+                <swiper-container
+                        :slides-per-view="1.5"
+                        :space-between="30"
+                        :grab-cursor="true"
+                    >
+                        <swiper-slide 
+                            v-for="(office,index) in our_offices" 
+                            :key="index"
+                            class="min-h-[200px]"
+                        >
+                        <div class="bg-white flex flex-col justify-center rounded-lg shadow-md px-2 py-5 h-full">
+                            <div class="flex flex-col gap-3 items-center text-center">
+                                <img :src="`/images/${office.icon}.svg`" :alt="office.location" width="25" height="25" />
+                                <p class="font-semibold">{{ office.location }}</p>
+                                <p v-html="office.address"></p>
+                            </div>
+                        </div>
+                        </swiper-slide>
+                </swiper-container>
+            </div>
+            <div>
+            <img class="-mt-[100px] md:mt-0" src="/images/our-offices.svg" width="3072" height="1646" />
+            <div v-for="(office, index) in our_offices" :key="index" :style="{ top: `${office.top}%`, left: `${office.left}%` }" class="md:block group absolute w-[11px] h-[11px] rounded-full bg-secondary z-10 cursor-pointer">
+                <div class="hidden md:group-hover:block absolute bottom-6 left-1/2 -translate-x-1/2 w-max p-4 bg-white rounded-lg shadow-md z-10">
                     <div class="absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 w-2 h-2 bg-white rotate-45"></div>
                     <div class="flex flex-col gap-3 items-center text-center">
                         <img :src="`/images/${office.icon}.svg`" :alt="office.location" width="25" height="25" />
@@ -11,10 +32,13 @@
                     </div>
                 </div>
             </div> 
+            
         </div>
 </template>
 
 <script setup>
+    import { register } from 'swiper/element/bundle';
+    register(); 
     const our_offices = [
         {
             icon: 'lb',

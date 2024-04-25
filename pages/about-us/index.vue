@@ -33,9 +33,7 @@
                 />
             </div>
             <div class="w-full md:w-3/4 mx-auto mt-16 lg:mt-32">
-                <div class="container">
-                    <Map />
-                </div>
+                <Map />
             </div>
         </section>
 
