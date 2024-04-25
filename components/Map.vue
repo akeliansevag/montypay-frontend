@@ -1,5 +1,5 @@
 <template lang="">
-            <div class="md:hidden mb-4 pl-7">
+            <div class="md:hidden mb-4 pl-7 z-20">
                 <swiper-container
                         :slides-per-view="1.5"
                         :space-between="30"
