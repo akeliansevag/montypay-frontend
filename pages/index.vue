@@ -86,22 +86,21 @@
                     class="text-center"
                 />
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start place-items-center mt-16">
-                    <div class="flex flex-col gap-2 items-center justify-center font-bold online w-[300px] h-[300px] py-20 px-10 bg-quaternary text-primary rounded-full">
-                        <span class="text-7xl">50+</span>
-                        <span>Countries</span>
-                    </div>
-                    <div class="flex flex-col gap-2 items-center justify-center font-bold online w-[300px] h-[300px] py-20 px-10 bg-primary rounded-full">
-                        <img src="/images/globe.svg" alt="Global Reach" width="80" height="80" />
-                        <span>Global Reach</span>
-                    </div>
-                    <div class="flex flex-col gap-2  items-center justify-center font-bold online w-[300px] h-[300px] py-20 px-10 bg-quaternary text-primary rounded-full">
-                        <span class="text-7xl">100+</span>
-                        <span>Payment Methods</span>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0 items-start place-items-center mt-16 max-w-[1000px] mx-auto">
+                    <div v-for="(item,index) in online_payment_services" :key="index" class="">
+                        <div class="flex items-center justify-center">
+                            <img width="530" height="530" src="/images/blurredbg.png" class="block absolute max-w-none"/>
+                            <div :class="[item.bgColor,item.textColor]" class="w-[270px] h-[270px] flex flex-col gap-2 items-center justify-center font-bold online py-20 px-10 rounded-full">
+                                
+                                <span v-if="item.title" class="text-7xl">{{item.title}}</span>
+                                <img  v-if="item.icon" src="/images/globe.svg" alt="Global Reach" width="80" height="80" />
+                                <span>{{item.subTitle}}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container mt-40">
                 <div class="grid grid-cols-2 md:grid-cols-3 xxl:grid-cols-6 gap-4 mt-16">
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
@@ -454,6 +453,31 @@
             answer: "This self-service checkout wizardry revolutionizes how customers settle their bills at restaurants and hotels. With tip-friendly features, QCheck simplifies payments, elevates customer experience, and even boosts tips for your amazing staff. Say hello to a new age of payment methods and let QCheck set the pace!",
         },
     ]
+
+ const online_payment_services = [
+    {
+        title: "50+",
+        icon: false,
+        subTitle: "Countries",
+        bgColor: "bg-quaternary",
+        textColor: "text-primary"
+    },
+    {
+        title: false,
+        icon: '/images/globe.svg',
+        subTitle: "Global Reach",
+        bgColor: "bg-primary",
+        textColor: "text-black"
+    },
+    {
+        title: "100+",
+        icon: false,
+        subTitle: "Payment Methods",
+        bgColor: "bg-quaternary",
+        textColor: "text-primary"
+    },
+
+ ];
 </script>
 
 <style lang="sass">
