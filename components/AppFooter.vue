@@ -39,6 +39,7 @@
                 <NavItem to="/customer-acceptance-policy" label="Customer Acceptance Policy" layout="footer" class="flex-none" />
                 <NavItem to="/Data-Processing-Agreement.pdf" label="Data Processing Agreement" layout="footer" class="flex-none" :external="true" target="_blank" />
                 <NavItem to="/Platform-Services-Agreement.pdf" label="Platform Services Agreement" layout="footer" class="flex-none" :external="true" target="_blank"  />
+                <NavItem to="/Merchant-Services-Agreement.pdf" label="Merchant Services Agreement" layout="footer" class="flex-none" :external="true" target="_blank"  />
             </nav>
 
             <hr class="border-[#e9edf422] mt-10" />
