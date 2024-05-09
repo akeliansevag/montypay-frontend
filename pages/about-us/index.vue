@@ -43,7 +43,7 @@
                     <div class="w-full lg:w-2/3 pl-0 lg:pl-28">
                         <ContentBlock 
                             title="Our secret?"
-                            paragraph="Envision a symphony of flawlessly executed online transactions, a choreography of clicks and swipes gliding effortlessly through 50+ countries, embracing payment methods as diverse as a palette of colours."
+                            paragraph="Envision a symphony of flawlessly executed online transactions, a choreography of clicks and swipes gliding effortlessly through 50+ countries, embracing payment methods as diverse as a palette of colours.<br /><br />We offer a wide range of 100+ payment methods that cover Middle East, Asia, Europe and America."
                         />
                         <ContentBlock
                             class="mt-10"

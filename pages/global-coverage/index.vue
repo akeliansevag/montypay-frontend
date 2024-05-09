@@ -11,7 +11,7 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="Collect Payments anywhere around the globe!erage"
+                            title="Collect Payments anywhere around the globe!"
                             paragraph="MontyPay ensures your business can accept payments from customers in every corner of the world. We have a robust network of international partners and a presence in key markets, allowing us to facilitate transactions in multiple currencies and payment methods."
                         />
                     </div>

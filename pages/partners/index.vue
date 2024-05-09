@@ -80,7 +80,7 @@
                         :imgAttrs="{class:'w-full mx-auto'}" 
                     />
                     <ContentBlock 
-                        paragraph=" Through this synergy, MontyPay delivers cutting-edge payment solutions, leveraging the licensed partner's capabilities to offer leading payment services in the market.<br />This option provides partners with the opportunity to penetrate the market faster and to be part of a global payment provider, thereby increasing their sales."
+                        paragraph="Through this synergy, MontyPay delivers cutting-edge payment solutions, leveraging the licensed partner's capabilities to offer leading payment services in the market.<br />This option provides partners with the opportunity to penetrate the market faster and to be part of a global payment provider, thereby increasing their sales."
                     />
                 </div>
             </div>

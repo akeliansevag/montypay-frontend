@@ -1,8 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            title="Build your ecommerce website from scratch"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
+            title="eCommerce Services"
+            paragraph="MontyPay offers a seamless and holistic approach to payment processing. From website development to secure payment gateways, we provide a complete suite of services designed to empower businesses of all sizes."
             image="e-commerce-services"
         />
 

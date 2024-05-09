@@ -82,7 +82,7 @@
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
                         <ContentBlock 
                             title="Pay By Link"
-                            paragraph="Let your customers shop without a hitch!<br /><br />Whether it's a payment link on your website or a QR code in your store, it's all about convenience. A simple scan or click and transactions are complete. It's easy for both you and your customers, offering utmost convenience and simplicity."
+                            paragraph="Let your customers shop without a hitch!<br /><br />It's all about convenience, a simple click on a link and transactions are complete. It's easy for both you and your customers, offering utmost convenience and simplicity."
                             class="lg:w-2/3 lg:order-1"
                         />
                         <div class="flex w-full lg:w-1/3">
@@ -188,17 +188,17 @@
             <div class="container">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16 text-primary">
                     <div class="flex flex-col gap-8 border rounded-lg py-8 px-6 bg-quaternary">
-                        <img src="/images/currency-dollar-circle-white.svg" alt="Merchant Mobile App" width="45" height="45" />
+                        <img src="/images/phone-2.svg" alt="Merchant Mobile App" width="45" height="45" />
                         <h2 class="text-4xl">Merchant Mobile App</h2>
                         <p class="text-lg">Take your business on the go!Our intuitive app puts payment management at your fingertips. Stay closely connected with customers, monitor transactions, and track sales data from anywhere. It's like having a business superhero in your pocket!</p>
                     </div>
                     <div class="flex flex-col gap-8 border rounded-lg py-8 px-6 bg-quaternary">
-                        <img src="/images/currency-dollar-circle-white.svg" alt="Risk & Compliance" width="45" height="45" />
+                        <img src="/images/file-shield.svg" alt="Risk & Compliance" width="45" height="45" />
                         <h2 class="text-4xl">Risk & Compliance</h2>
                         <p class="text-lg">We've got your back!<br/>Our suite of tools meticulously identifies and neutralizes potential threats like fraud or chargebacks, ensuring a secure and compliant payment environment for your business to thrive.</p>
                     </div>
                     <div class="flex flex-col gap-8 border rounded-lg py-8 px-6 bg-quaternary">
-                        <img src="/images/currency-dollar-circle-white.svg" alt="Installements" width="45" height="45" />
+                        <img src="/images/bank-note.svg" alt="Installements" width="45" height="45" />
                         <h2 class="text-4xl">Installements</h2>
                         <p class="text-lg">Let's make high-ticket items affordable!<br />With flexible payment options, your customers can split their purchase into manageable payments. Tailor installment plans to suit your business goals and attract a wider customer base.</p>
                     </div>
@@ -246,24 +246,24 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16">
                     <div class="flex flex-col gap-8 border border-[#d1d1d1] rounded-lg py-8 px-6 bg-primary">
-                        <img src="/images/currency-dollar-circle.svg" alt="Merchant Mobile App" width="45" height="45" />
-                        <h2 class="text-4xl">Merchant Mobile App</h2>
-                        <p class="text-lg">Take your business on the go!Our intuitive app puts payment management at your fingertips. Stay closely connected with customers, monitor transactions, and track sales data from anywhere. It's like having a business superhero in your pocket!</p>
+                        <img src="/images/phone-3.svg" alt="Merchant Mobile App" width="45" height="45" />
+                        <h2 class="text-4xl">Mobile-Ready Checkout</h2>
+                        <p class="text-lg">Say goodbye to abandoned carts!<br />Our mobile-ready checkout guarantees a seamless payment process, ensuring customers breeze through their purchases and boosting your conversion rates!</p>
                     </div>
                     <div class="flex flex-col gap-8 border border-[#d1d1d1] rounded-lg py-8 px-6 bg-primary">
-                        <img src="/images/currency-dollar-circle.svg" alt="Merchant Mobile App" width="45" height="45" />
-                        <h2 class="text-4xl">Risk & Compliance</h2>
-                        <p class="text-lg">We've got your back!<br/>Our suite of tools meticulously identifies and neutralizes potential threats like fraud or chargebacks, ensuring a secure and compliant payment environment for your business to thrive.</p>
+                        <img src="/images/users-1.svg" alt="Host-2-Host Integration" width="45" height="45" />
+                        <h2 class="text-4xl">Host-2-Host Integration</h2>
+                        <p class="text-lg">Make it your own!<br/>With MontyPay's Host-2-Host integration, merchants can now accept payment information on their personalized payment pages. Tailor your payment experience to match your brand, strengthening the trust with your customers!</p>
                     </div>
                     <div class="flex flex-col gap-8 border border-[#d1d1d1] rounded-lg py-8 px-6 bg-primary">
-                        <img src="/images/currency-dollar-circle.svg" alt="Merchant Mobile App" width="45" height="45" />
-                        <h2 class="text-4xl">Installements</h2>
-                        <p class="text-lg">Let's make high-ticket items affordable!<br />With flexible payment options, your customers can split their purchase into manageable payments. Tailor installment plans to suit your business goals and attract a wider customer base.</p>
+                        <img src="/images/package-check.svg" alt="Social Commerce" width="45" height="45" />
+                        <h2 class="text-4xl">Social Commerce</h2>
+                        <p class="text-lg">MontyPay is not only a secure financial haven but also a thriving marketplace for freelancers and social media enthusiasts. We empower freelancers to receive payments seamlessly through our platform, enhancing convenience and ensuring that the hard work translates into tangible rewards.</p>
                     </div>
                     <div class="lg:col-span-3 gap-8 border border-[#d1d1d1] rounded-lg py-8 px-6 bg-primary">
                         <div class="flex flex-col lg:flex-row gap-12">
                             <div class="flex flex-col gap-8">
-                                <img src="/images/currency-dollar-circle.svg" alt="Merchant Mobile App" width="45" height="45" />
+                                <img src="/images/cryptocurrency-1.svg" alt="Merchant Mobile App" width="45" height="45" />
                                 <h2 class="text-4xl">CMS Plugins</h2>
                                 <p class="text-lg">No fuss, just solutions!Our ready-to-go plugins for popular Content Management Systems (CMS) streamline integration for merchants. Skip the heavy development work and get your payment system up and running with ease.</p>
                             </div>
@@ -324,7 +324,7 @@
                     <div class="lg:col-span-2 gap-8 border border-[#d1d1d1] rounded-lg py-8 px-6 bg-primary">
                         <div class="flex flex-col gap-12">
                             <div class="flex flex-col gap-8">
-                                <img src="/images/currency-dollar-circle.svg" alt="Merchant Mobile App" width="45" height="45" />
+                                <img src="/images/notification-box.svg" alt="Merchant Mobile App" width="45" height="45" />
                                 <h2 class="text-4xl">CMS Plugins</h2>
                                 <p class="text-lg">Our iOS and Android SDKs give merchants the power to accept payments within their mobile applications. Dive into the mobile commerce trend with a secure and smooth payment process for your app users. Smooth sailing all the way!</p>
                             </div>
@@ -353,7 +353,7 @@
                     <div class="gap-8 border border-[#d1d1d1] rounded-lg py-8 px-6 bg-primary">
                         <div class="flex flex-col gap-12">
                             <div class="flex flex-col gap-8">
-                                <img src="/images/currency-dollar-circle.svg" alt="Merchant Mobile App" width="45" height="45" />
+                                <img src="/images/dataflow-1.svg" alt="Merchant Mobile App" width="45" height="45" />
                                 <h2 class="text-4xl">Platform Intergration</h2>
                                 <p class="text-lg">Our integrations with cutting-edge platforms for loyalty programs, hotel bookings, marks just the beginning of a robust ecosystem, with many exciting partnerships on the horizon.</p>
                             </div>

@@ -2,7 +2,7 @@
     <div>
         <Hero 
             title="Payment Orchestration Network"
-            paragraph="MontyPay helps you to expand yourbusiness to more countries based on a profit share model."
+            paragraph="MontyPay helps you to expand your business to more countries based on a profit share model."
             image="payment-orchestration-network"
         />
 
@@ -60,7 +60,7 @@
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                             title="Extensive Coverage"
-                            paragraph="Our Payment Orchestration Network is meticulously designed to simplify the complexities associated with payment diversification.<br />It encompasses a wide array of local payment methods, including credit cards, digital wallets, and region-specific solutions.<br />This extensive coverage ensures that your business can seamlessly tap into new markets and cater to the preferences of customers around the world."
+                            paragraph="Ensure your business can seamlessly tap into new markets and cater to the preferences of customers around the world with a wide array of local payment methods, including credit cards, digital wallets, and region-specific solutions."
                             class="flex-1"
                         />
                         <div class="flex-1 w-full">
@@ -83,7 +83,7 @@
                         <div class="w-full lg:w-2/3 lg:order-1">
                             <ContentBlock 
                                 title="Unified Solution"
-                                paragraph="Through a single integration, we offer a consolidated gateway that connects your business to our extensive network of payment methods.<br />This integration minimizes the technical challenges typically associated with diversifying payment options, allowing your business to focus on its core operations with confidence."
+                                paragraph="Through a single integration, we offer a consolidated gateway that connects your business to our extensive network of payment methods. This integration minimizes the technical challenges typically associated with diversifying payment options, allowing your business to focus on its core operations with confidence."
                                 class="w-full lg:w-3/5 mx-auto"
                             />
                         </div>
@@ -102,7 +102,7 @@
                         <div class="w-full lg:w-2/3">
                             <ContentBlock 
                             title="Central Point of Contact"
-                                paragraph="MontyPay serves as the central point of contact for all your payment needs. Rather than dealing with a multitude of payment providers and their associated support systems, you benefit from a streamlined interface to manage your payment operations. This not only simplifies your payment-related tasks but also enhances the overall customer support experience you can provide."
+                                paragraph="MontyPay serves as the central point of contact for all your payment needs. Rather than dealing with a multitude of payment providers and their associated support systems, you benefit from a streamlined interface to manage your payment operations."
                                 class="w-full lg:w-3/5"
                             />
                         </div>
@@ -125,7 +125,7 @@
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center text-center">
                         <ContentBlock 
                             title="Optimize Your Entire Payment Ecosystem"
-                            paragraph="Payment orchestration is not just about expanding your payment options; it's about optimizing your entire payment ecosystem. MontyPay's expertise in this field ensures that your business can effectively leverage local payment methods, offering unparalleled convenience to your customers and, ultimately, driving sustainable growth. We recognize that the success of your business is intricately linked to your ability to provide flexible and secure payment experiences, and MontyPay is dedicated to making that a reality."
+                            paragraph="MontyPay's expertise in the field ensures that your business can effectively leverage local payment methods, offering unparalleled convenience to your customers and, ultimately, driving sustainable growth."
                             class="flex-1"
                         />
                     </div>

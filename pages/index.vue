@@ -81,8 +81,8 @@
         <section id="section-3" class="py-16 lg:py-36 text-black overflow-hidden">
             <div class="container">
                 <ContentBlock 
-                    title="Online Payment Services"
-                    paragraph="Dive into the future of digital commerce"
+                    title="Online Payments"
+                    paragraph="Dive into the future of digital commerce!"
                     class="text-center"
                 />
 
@@ -128,7 +128,7 @@
                     </div>
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
-                            <img src="/images/qr-code.svg" alt="Pay by ;ink" width="30" height="30" />
+                            <img src="/images/qr-code.svg" alt="Pay by link" width="30" height="30" />
                             QR Pay
                         </div>
                     </div>

@@ -2,7 +2,7 @@
     <div>
         <Hero 
             title="Careers"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
+            paragraph="At MontyPay, your career path is limited only by your ambition, and we are here to support you every step of the way."
             image="careers"
         />
 
@@ -11,8 +11,8 @@
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-36">
                     <div class="flex-1">
                         <ContentBlock 
-                            title="We're hiring!"
-                            subtitle="Submit your CV today and we will reach out to you once we find a position that fits your profile."
+                            title="Join us"
+                            paragraph="We are committed to nurturing talent and fostering a culture of continuous learning and growth. Join our dynamic and multicultural team, and you'll embark on a rewarding journey filled with endless opportunities to expand your horizons.<br /><br />Join us and be part of a team that values diversity, encourages collaboration, and empowers you to reach new heights in your career"
                         />
                     </div>
                     <div class="flex-1 flex flex-col gap-5">

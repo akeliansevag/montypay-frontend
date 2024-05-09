@@ -11,68 +11,49 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="Solutions we provide"
+                            title="Become a Payment Service Provider (PSP) in as little as 3 weeks"
                         />
                     </div>
                 </div>
-<!--                 
-                <div class="grid xl:grid-cols-2 2xl:grid-cols-4 gap-8 lg:gap-10 mt-16 text-primary text-left">
-                    <div 
-                        v-for="(item, index) in solutions_items" 
-                        :key="index"
-                        class="flex items-center justify-center p-6 bg-quaternary rounded-lg text-center"
-                    >
-                        <ContentBlock 
-                            :title="item.title"
-                        />
-                    </div>
-                </div> -->
-
 
                 <div class="container">
                     <div class="grid grid-cols-2 md:grid-cols-3 xxl:grid-cols-6 gap-4 mt-16">
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
-                                <img src="/images/smart-routing.svg" alt="Smart routing and cascading" width="30" height="30" />
-                                Smart routing and cascading
+                                <img src="/images/smart-routing.svg" alt="Fully brandable" width="30" height="30" />
+                                Fully brandable
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
-                                <img src="/images/link.svg" alt="Pay by link" width="30" height="30" />
-                                Pay by link
+                                <img src="/images/link.svg" alt="SaaS white label solution" width="30" height="30" />
+                                SaaS white label solution
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
-                                <img src="/images/invoice.svg" alt="Customer invoicing" width="30" height="30" />
-                                Customer invoicing
+                                <img src="/images/invoice.svg" alt="170+ connectors" width="30" height="30" />
+                                170+ connectors
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
-                                <img src="/images/calendar.svg" alt="Recurring bills" width="30" height="30" />
-                                Recurring bills
+                                <img src="/images/calendar.svg" alt="High-quality support" width="30" height="30" />
+                                High-quality support
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
-                                <img src="/images/qr-code.svg" alt="Pay by ;ink" width="30" height="30" />
-                                QR Pay
+                                <img src="/images/qr-code.svg" alt="Latest technology" width="30" height="30" />
+                                Latest technology
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
-                                <img src="/images/check.svg" alt="Installements" width="30" height="30" />
-                                Installements
+                                <img src="/images/check.svg" alt="Industry best practices" width="30" height="30" />
+                                Industry best practices
                             </div>
                         </div>
-                        <!-- <div class="border rounded-lg h-auto py-8 px-6">
-                            <div class="flex flex-col gap-20">
-                                <img src="/images/cryptocurrency.svg" alt="Cryptocurrency" width="30" height="30" />
-                                Cryptocurrency
-                            </div>
-                        </div> -->
                     </div>
                 </div>
 
@@ -95,25 +76,25 @@
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">1</div>
                                 <div class="flex flex-col gap-20">
-                                    Smart routing and cascading
+                                    Payment Getaway
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">2</div>
                                 <div class="flex flex-col gap-20">
-                                    Smart routing and cascading
+                                    Merchant Mobile App
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">3</div>
                                 <div class="flex flex-col gap-20">
-                                    Smart routing and cascading
+                                    Merchant Management System
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">4</div>
                                 <div class="flex flex-col gap-20">
-                                    Smart routing and cascading
+                                    QR Code Self Service Checkout
                                 </div>
                             </div>
                         </div>
@@ -124,6 +105,7 @@
 
         <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary">
             <div class="container">
+                <div class="w-full md:w-4/5 mx-auto">
                 <div class="flex justify-between">
                     <ContentBlock 
                         title="Centralized Data Management"
@@ -251,12 +233,13 @@
                         </div>
                     </div>
                 </div>
+
                 <div 
                     class="transition-opacity ease-in-out duration-300"
                     :class="{ 'absolute invisible opacity-0': activeTab !== 1 }"
                 >
                     <ContentBlock 
-                        paragraph=", easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management."
+                        paragraph="Our one-page, user-friendly data management tool consolidates all your payment channel data into a single, easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management."
                         class="text-primary mt-5"
                     />
                     <div class="grid lg:grid-cols-3 gap-7 mt-16">
@@ -360,6 +343,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
             </div>
         </section>
 
