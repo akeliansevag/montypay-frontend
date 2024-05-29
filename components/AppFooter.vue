@@ -37,9 +37,9 @@
                 <NavItem to="/terms-and-conditions" label="Terms & Conditions" layout="footer" class="flex-none" />
                 <NavItem to="/privacy-policy" label="Privacy Policy" layout="footer" class="flex-none" />
                 <NavItem to="/customer-acceptance-policy" label="Customer Acceptance Policy" layout="footer" class="flex-none" />
-                <NavItem to="/data-processing-agreement.pdf" label="Data Processing Agreement" layout="footer" class="flex-none" :external="true" target="_blank" />
-                <NavItem to="/platform-services-agreement.pdf" label="Platform Services Agreement" layout="footer" class="flex-none" :external="true" target="_blank"  />
-                <NavItem to="/merchant-services-agreement.pdf" label="Merchant Services Agreement" layout="footer" class="flex-none" :external="true" target="_blank"  />
+                <NavItem to="/Data-Processing-Agreement.pdf" label="Data Processing Agreement" layout="footer" class="flex-none" :external="true" target="_blank" />
+                <NavItem to="/Platform-Services-Agreement.pdf" label="Platform Services Agreement" layout="footer" class="flex-none" :external="true" target="_blank"  />
+                <NavItem to="/Merchant-Services-Agreement.pdf" label="Merchant Services Agreement" layout="footer" class="flex-none" :external="true" target="_blank"  />
             </nav>
 
             <hr class="border-[#e9edf422] mt-10" />
