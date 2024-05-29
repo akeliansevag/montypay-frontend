@@ -290,20 +290,23 @@
 
         <section id="section-5" class="py-16 lg:py-36 text-black overflow-hidden">
             <div class="container flex flex-col lg:flex-row gap-8 justify-center items-center">
-                <div class="flex-1">
+                <div class="w-full lg:w-2/5">
                     <ContentBlock 
                         title="Why MontyPay?"
                         paragraph="Gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success. Discover the future of payments with MontyPay."
-                        class="flex-1 w-full xl:w-3/5"
+                        class="w-full"
                     />
                 </div>
-                <div class="flex-1 w-full">
+                <div class="flex w-full lg:w-3/5 mx-auto">
                     <NuxtPicture 
                         priority
                         format="webp,avif" 
                         src="/images/why-montypay.png" 
                         :imgAttrs="{class:'w-full mx-auto'}" 
+                        class="block lg:hidden w-full"
                     />
+
+                    <AnimatedSVG class="hidden lg:block" />
                 </div>
             </div>
         </section>

@@ -40,10 +40,9 @@
                     <div class="api-item-icon">
                         <img :src="item.icon" />
                     </div>
-                    <div class="api-item-link-wrapper">
+                    <div v-if="buttonLink" class="api-item-link-wrapper">
                         <NuxtLink class="api-item-link" target="_blank" external :to="item.buttonLink">{{item.buttonText}}</NuxtLink>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -117,6 +116,11 @@ const ecommercePlugins = [
         icon: "/images/ecomz.svg",
         buttonLink: "/montypay_sdk-1.0.9.zip",
         buttonText: "Download",
+    },
+    {
+        icon: "/images/ecwid.svg",
+        // buttonLink: "/montypay_sdk-1.0.9.zip",
+        // buttonText: "Download",
     },
 ];
 </script>
