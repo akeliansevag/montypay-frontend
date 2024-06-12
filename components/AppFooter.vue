@@ -34,6 +34,8 @@
             <hr class="border-[#e9edf422] mt-10" />
 
             <nav class="flex flex-col lg:flex-row flex-wrap gap-2.5 lg:gap-9 mt-10">
+                <NavItem v-if="pageName=='q-check' || pageName=='qcheck-terms-and-conditions' || pageName=='qcheck-privacy-policy'" to="/qcheck-terms-and-conditions" label="QCheck - Terms & Conditions" layout="footer" class="flex-none" />
+                <NavItem v-if="pageName=='q-check' || pageName=='qcheck-terms-and-conditions' || pageName=='qcheck-privacy-policy'" to="/qcheck-privacy-policy" label="QCheck - Privacy Policy" layout="footer" class="flex-none" />
                 <NavItem to="/terms-and-conditions" label="Terms & Conditions" layout="footer" class="flex-none" />
                 <NavItem to="/privacy-policy" label="Privacy Policy" layout="footer" class="flex-none" />
                 <NavItem to="/customer-acceptance-policy" label="Customer Acceptance Policy" layout="footer" class="flex-none" />
@@ -62,7 +64,7 @@
 </template>
 
 <script setup>
-
+    const props = defineProps(['pageName'])
 </script>
 
 <style lang="">

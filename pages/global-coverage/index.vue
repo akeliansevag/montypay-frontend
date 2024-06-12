@@ -185,7 +185,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -202,7 +202,7 @@
                                     Credit Libanais
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -279,7 +279,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -297,7 +297,7 @@
                                     MEPS
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -384,7 +384,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -393,11 +393,11 @@
                         
                             <div class="flex flex-col gap-8 py-10">
                                 <div class="flex items-center gap-4">
-                                    <!-- <img src="/images/afs.svg" alt="Instore Payments" width="46" height="46" /> -->
+                                    <img src="/images/afs.svg" alt="Instore Payments" width="46" height="46" />
                                     AFS
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -484,7 +484,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -498,11 +498,11 @@
                                 </div>
 
                                 <div class="flex items-center gap-4">
-                                    <!-- <img src="/images/safexpay.svg" alt="Instore Payments" width="46" height="46" /> -->
+                                    <img src="/images/safexpay.svg" alt="Instore Payments" width="46" height="46" />
                                     SafexPay	
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -571,7 +571,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -581,7 +581,7 @@
                             <div class="flex flex-col gap-8 py-10">
                                 
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -685,7 +685,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -699,16 +699,16 @@
                                 </div>
 
                                 <div class="flex items-center gap-4">
-                                    <!-- <img src="/images/unlimit.svg" alt="Instore Payments" width="46" height="46" /> -->
+                                    <img src="/images/unlimit.svg" alt="Instore Payments" width="46" height="46" />
                                     Unlimit
                                 </div>
 
                                 <div class="flex items-center gap-4">
-                                    <!-- <img src="/images/latpay.svg" alt="Instore Payments" width="46" height="46" /> -->
+                                    <img src="/images/latpay.svg" alt="Instore Payments" width="46" height="46" />
                                     LatPay
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -802,7 +802,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -812,7 +812,7 @@
                             <div class="flex flex-col gap-8 py-10">
                                 
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -901,7 +901,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -911,7 +911,7 @@
                             <div class="flex flex-col gap-8 py-10">
                                 
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -988,7 +988,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -1001,7 +1001,7 @@
                                     NBK
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -1108,7 +1108,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -1126,7 +1126,7 @@
                                     MasterCard
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -1220,7 +1220,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -1233,7 +1233,7 @@
                                     PayRetailers
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
@@ -1317,7 +1317,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <!-- <div class="flex-1">
                             <div class="flex flex-col py-5">
                                 <h5 class="font-bold">Partners</h5>
                             </div>
@@ -1327,7 +1327,7 @@
                             <div class="flex flex-col gap-8 py-10">
                                
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex-1">
                             <div class="flex flex-col py-5">
