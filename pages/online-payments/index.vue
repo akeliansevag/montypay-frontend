@@ -317,6 +317,12 @@
                                     src="/images/ecomz.png"
                                     :imgAttrs="{class:'w-full mx-auto'}" 
                                 />
+                                <NuxtPicture 
+                                    priority
+                                    format="svg" 
+                                    src="/images/ecwid.svg"
+                                    :imgAttrs="{class:'w-full mx-auto'}" 
+                                />
                             </div>
                         </div>
                     </div>
