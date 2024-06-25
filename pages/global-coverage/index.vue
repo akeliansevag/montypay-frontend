@@ -1371,75 +1371,85 @@
 </template>
 
 <script setup>
+import { useAuth } from '~/composables/useAuth'
 
-    useSeoMeta({
-        title: 'Online Payments Services',
-        ogTitle: 'Online Payments Services',
-        description: 'Online Payments Services description',
-        ogDescription: 'Online Payments Services description',
-        ogImage: 'https://example.com/image.png',
-        twitterCard: 'summary_large_image',
-    })
+useSeoMeta({
+    title: 'Online Payments Services',
+    ogTitle: 'Online Payments Services',
+    description: 'Online Payments Services description',
+    ogDescription: 'Online Payments Services description',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 
-    const activeTab = ref(0);
+const activeTab = ref(0);
 
-    const show = (index) => {
-        activeTab.value = index;
-    };
+const show = (index) => {
+    activeTab.value = index;
+};
 
 
-    const response = ref(null);
+const response = ref(null);
 
-    const submitRequest = async () => {
+const submitRequest = async () => {
+    const accessToken = await useAuth();
+    if (!accessToken) {
+        console.error('Failed to retrieve access token');
+        return;
+    }
+
     try {
-        fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
+        const result = await fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer A21AAIZvr8fgqo73DMSQ6kXteyIs3nLgLLyL82JRZTRpi0psefMuG3Jc18B1-y5udXWW4GFSyxCwtlfkxowKdskYLuO5AEsNQ'
+                'Authorization': `Bearer ${accessToken}`
             },
-            body: JSON.stringify({ 
-                "email": "accountemail@example.com", 
-                "tracking_id": "testenterprices123122", 
-                "partner_config_override": { 
-                    "return_url": "https://testenterprises.com/merchantonboarded", 
-                    "return_url_description": "the url to return the merchant after the paypal onboarding process.", 
-                    "show_add_credit_card": true 
-                }, 
-                "operations": [ { 
-                    "operation": "API_INTEGRATION", 
-                    "api_integration_preference": { 
-                        "rest_api_integration": { 
-                            "integration_method": "PAYPAL", 
-                            "integration_type": "THIRD_PARTY", 
-                            "third_party_details": { 
-                                "features": [ "PAYMENT", "REFUND", "PARTNER_FEE" ] 
-                            } 
-                        } 
-                    } 
-                } ], 
-                "products": [ 
-                    "PAYMENT_METHODS" 
-                ], 
-                "capabilities": [ 
-                    "APPLE_PAY" 
-                ], 
-                "legal_consents": [ { 
-                    "type": "SHARE_DATA_CONSENT", 
-                    "granted": true 
-                }] 
+            body: JSON.stringify({
+                "email": "accountemail@example.com",
+                "tracking_id": "testenterprices123122",
+                "partner_config_override": {
+                    "return_url": "https://testenterprises.com/merchantonboarded",
+                    "return_url_description": "the url to return the merchant after the paypal onboarding process.",
+                    "show_add_credit_card": true
+                },
+                "operations": [{
+                    "operation": "API_INTEGRATION",
+                    "api_integration_preference": {
+                        "rest_api_integration": {
+                            "integration_method": "PAYPAL",
+                            "integration_type": "THIRD_PARTY",
+                            "third_party_details": {
+                                "features": ["PAYMENT", "REFUND", "PARTNER_FEE"]
+                            }
+                        }
+                    }
+                }],
+                "products": [
+                    "PAYMENT_METHODS"
+                ],
+                "capabilities": [
+                    "APPLE_PAY"
+                ],
+                "legal_consents": [{
+                    "type": "SHARE_DATA_CONSENT",
+                    "granted": true
+                }]
             })
         });
+
+        if (!result.ok) {
+            throw new Error('Failed to submit request');
+        }
+
+        response.value = await result.json();
     } catch (error) {
         console.error('Error:', error);
     }
-    };
-
-    
-
+};
 
 </script>
 
 <style lang="">
-    
+
 </style>
