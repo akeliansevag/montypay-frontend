@@ -1354,7 +1354,7 @@
         </section>
 
 
-        <section id="section-6" class="my-16 lg:my-36">
+        <!-- <section id="section-6" class="my-16 lg:my-36">
             <div class="container">
                 <div class="mt-16 text-primary">
                     <div class="flex flex-col gap-8 border rounded-lg py-20 px-20 bg-quaternary overflow-hidden">
@@ -1366,7 +1366,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
 </template>
 
@@ -1389,71 +1389,71 @@ const show = (index) => {
 };
 
 
-const response = ref(null);
+// const response = ref(null);
 
-const submitRequest = async () => {
-    const accessToken = await useAuth();
-    if (!accessToken) {
-        console.error('Failed to retrieve access token');
-        return;
-    }
+// const submitRequest = async () => {
+//     const accessToken = await useAuth();
+//     if (!accessToken) {
+//         console.error('Failed to retrieve access token');
+//         return;
+//     }
 
-    try {
-        const result = await fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${accessToken}`
-            },
-            body: JSON.stringify({
-                "email": "accountemail@example.com",
-                "tracking_id": "testenterprices123122",
-                "partner_config_override": {
-                    "return_url": "https://montypay.com/global-coverage",
-                    "return_url_description": "Thank you.",
-                    "show_add_credit_card": true
-                },
-                "operations": [{
-                    "operation": "API_INTEGRATION",
-                    "api_integration_preference": {
-                        "rest_api_integration": {
-                            "integration_method": "PAYPAL",
-                            "integration_type": "THIRD_PARTY",
-                            "third_party_details": {
-                                "features": ["PAYMENT", "REFUND", "PARTNER_FEE"]
-                            }
-                        }
-                    }
-                }],
-                "products": [
-                    "PAYMENT_METHODS"
-                ],
-                "capabilities": [
-                    "APPLE_PAY"
-                ],
-                "legal_consents": [{
-                    "type": "SHARE_DATA_CONSENT",
-                    "granted": true
-                }]
-            })
-        });
+//     try {
+//         const result = await fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//                 'Authorization': `Bearer ${accessToken}`
+//             },
+//             body: JSON.stringify({
+//                 "email": "accountemail@example.com",
+//                 "tracking_id": "testenterprices123122",
+//                 "partner_config_override": {
+//                     "return_url": "https://montypay.com/global-coverage",
+//                     "return_url_description": "Thank you.",
+//                     "show_add_credit_card": true
+//                 },
+//                 "operations": [{
+//                     "operation": "API_INTEGRATION",
+//                     "api_integration_preference": {
+//                         "rest_api_integration": {
+//                             "integration_method": "PAYPAL",
+//                             "integration_type": "THIRD_PARTY",
+//                             "third_party_details": {
+//                                 "features": ["PAYMENT", "REFUND", "PARTNER_FEE"]
+//                             }
+//                         }
+//                     }
+//                 }],
+//                 "products": [
+//                     "PAYMENT_METHODS"
+//                 ],
+//                 "capabilities": [
+//                     "APPLE_PAY"
+//                 ],
+//                 "legal_consents": [{
+//                     "type": "SHARE_DATA_CONSENT",
+//                     "granted": true
+//                 }]
+//             })
+//         });
 
-        if (!result.ok) {
-            throw new Error('Failed to submit request');
-        }
+//         if (!result.ok) {
+//             throw new Error('Failed to submit request');
+//         }
 
-        const responseData = await result.json();
-        response.value = responseData;
+//         const responseData = await result.json();
+//         response.value = responseData;
 
-        // Extract action_url from the response
-        const actionUrl = responseData.links.find(link => link.rel === 'action_url').href;
+//         // Extract action_url from the response
+//         const actionUrl = responseData.links.find(link => link.rel === 'action_url').href;
         
-        // Redirect to the action_url
-        window.location.href = actionUrl;  // Use window.location.href for external URL redirection
-    } catch (error) {
-        console.error('Error:', error);
-    }
-};
+//         // Redirect to the action_url
+//         window.location.href = actionUrl;  // Use window.location.href for external URL redirection
+//     } catch (error) {
+//         console.error('Error:', error);
+//     }
+// };
 
 </script>
 
