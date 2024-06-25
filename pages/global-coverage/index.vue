@@ -1409,8 +1409,8 @@ const submitRequest = async () => {
                 "email": "accountemail@example.com",
                 "tracking_id": "testenterprices123122",
                 "partner_config_override": {
-                    "return_url": "https://testenterprises.com/merchantonboarded",
-                    "return_url_description": "the url to return the merchant after the paypal onboarding process.",
+                    "return_url": "https://montypay.com/global-coverage",
+                    "return_url_description": "Thank you.",
                     "show_add_credit_card": true
                 },
                 "operations": [{
