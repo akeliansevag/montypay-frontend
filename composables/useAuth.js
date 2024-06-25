@@ -1,7 +1,7 @@
 // composables/useAuth.js
 export const useAuth = async () => {
     try {
-        const response = await fetch('https://api-m.paypal.com/v1/oauth2/token', {
+        const response = await fetch('https://api-m.sandbox.paypal.com/v1/oauth2/token', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -23,4 +23,3 @@ export const useAuth = async () => {
         return null;
     }
 };
-
