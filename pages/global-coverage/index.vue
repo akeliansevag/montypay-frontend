@@ -1399,7 +1399,7 @@ const submitRequest = async () => {
     }
 
     try {
-        const result = await fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
+        const result = await fetch('https://api-m.paypal.com/v2/customer/partner-referrals', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -1409,7 +1409,7 @@ const submitRequest = async () => {
                 "email": "accountemail@example.com",
                 "tracking_id": "testenterprices123122",
                 "partner_config_override": {
-                    "return_url": "https://testenterprises.com/merchantonboarded",
+                    "return_url": "https://montypay.com/about-us",
                     "return_url_description": "the url to return the merchant after the paypal onboarding process.",
                     "show_add_credit_card": true
                 },
@@ -1442,7 +1442,15 @@ const submitRequest = async () => {
             throw new Error('Failed to submit request');
         }
 
-        response.value = await result.json();
+        const responseData = await result.json();
+        response.value = responseData;
+
+        // Extract action_url from the response
+        const actionUrl = responseData.links.find(link => link.rel === 'action_url').href;
+        
+        // Redirect to the action_url
+        window.location.href = actionUrl;  // Use window.location.href for external URL redirection
+    
     } catch (error) {
         console.error('Error:', error);
     }

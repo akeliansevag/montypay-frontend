@@ -23,3 +23,4 @@ export const useAuth = async () => {
         return null;
     }
 };
+
