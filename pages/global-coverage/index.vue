@@ -1399,7 +1399,7 @@ const submitRequest = async () => {
     }
 
     try {
-        const result = await fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
+        const result = await fetch('https://api-m.paypal.com/v2/customer/partner-referrals', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
