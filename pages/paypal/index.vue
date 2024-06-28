@@ -36,7 +36,6 @@ const submitRequest = async () => {
                 'Authorization': `Bearer ${accessToken}`
             },
             body: JSON.stringify({
-                "email": "accountemail@example.com",
                 "tracking_id": "testenterprices123122",
                 "partner_config_override": {
                     "return_url": "https://montypay.com/global-coverage",
@@ -56,10 +55,7 @@ const submitRequest = async () => {
                     }
                 }],
                 "products": [
-                    "PAYMENT_METHODS"
-                ],
-                "capabilities": [
-                    "APPLE_PAY"
+                    "PPCP"
                 ],
                 "legal_consents": [{
                     "type": "SHARE_DATA_CONSENT",
