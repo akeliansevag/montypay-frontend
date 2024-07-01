@@ -51,7 +51,7 @@
                         </div>
                         <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
                             <img src="/images/file-minus.svg" alt="Valuable insights into" width="50" height="50" />
-                            <h2 class="text-base">Valuable insights into</h2>
+                            <h2 class="text-base">Valuable insights</h2>
                         </div>
                         <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
                             <img src="/images/calendar-check.svg" alt="Real-time reporting" width="50" height="50" />

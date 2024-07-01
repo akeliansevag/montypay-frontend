@@ -26,7 +26,10 @@
                                 :imgAttrs="{class:'w-full'}" 
                             />
                             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-ecenter px-20">
+                                <div>
                                 <h5>Onboard merchants in more countries</h5>
+                                <p>MontyPay helps you to expand your business to more countries based on a profit share model.</p>
+                                </div>
                             </div>
                         </div> 
                         
@@ -39,12 +42,18 @@
                                 :imgAttrs="{class:'w-full'}" 
                             />
                             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center px-20">
-                                <h5>Collect your merchants' international transactions locally</h5>
+                                <div>
+                                    <h5>Collect your merchants' international transactions locally</h5>
+                                    <p>Collect the transactions throughMontyPay’s local acquirers.</p>
+                                </div>
+                               
                             </div>
                         </div> 
                     </div>
                 </div>
+                
             </div>
+
         </section>
 
         <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-primary">
@@ -148,7 +157,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <h3 class="text-lg font-bold">Jordan</h3>
+                            <h3 class="text-lg font-bold">Lebanon</h3>
                         </div>
                         
                         <hr class="w-full bg-[#F6F6F6]"/>
@@ -384,7 +393,7 @@
                             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="1.25" y="1.25" width="43.5" height="43.5" rx="21.75" stroke="white" stroke-width="1.5"/>
                                 <g clip-path="url(#clip0_756_1283)">
-                                    <path d="M23 44C34.598 44 44 34.598 44 23C44 11.402 34.598 2 23 2C11.402 2 2 11.402 2 23C2 34.598 11.402 44 23 44Z" fill="#F0F0F0"/>
+                                   <path d="M23 44C34.598 44 44 34.598 44 23C44 11.402 34.598 2 23 2C11.402 2 2 11.402 2 23C2 34.598 11.402 44 23 44Z" fill="#F0F0F0"/>
                                     <path d="M2 23.0004C2 32.0297 7.69887 39.727 15.6957 42.6943V3.30664C7.69887 6.27371 2 13.9712 2 23.0004Z" fill="#6DA544"/>
                                     <path d="M44.0004 23.0004C44.0004 13.9712 38.3015 6.27371 30.3047 3.30664V42.6944C38.3015 39.727 44.0004 32.0297 44.0004 23.0004Z" fill="#6DA544"/>
                                 </g>
@@ -394,7 +403,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <h3 class="text-lg font-bold">Nigria</h3>
+                            <h3 class="text-lg font-bold">Nigeria</h3>
                         </div>
 
                         <hr class="w-full bg-[#F6F6F6]"/>
@@ -615,14 +624,7 @@
                     </h4>  
                 </div>
 
-                <div class="bg-primary py-12 rounded-lg text-center mt-16">
-                    <div class="w-full lg:w-3/4 px-4 mx-auto">
-                        <h5>Onboard merchants in more countries:</h5>
-                        <p>MontyPay helps you to expand your business to more countries based on a profit share model.</p>
-                        <h5 class="mt-10">Collect your merchants’ international transactions locally:</h5>
-                        <p>Collect the transactions throughMontyPay’s local acquirers.</p>
-                    </div>
-                </div>
+                
             </div>
         </section>  
     </div>    

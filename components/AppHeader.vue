@@ -6,14 +6,21 @@
                 <NuxtLink to="/" class="nav-link">
                     <AppLogo :fill="navVisible || $route.path === '/' ? '#FFFFFF' : 'auto'" /> 
                 </NuxtLink>  
-
-                <nav class="nav hidden lg:block">
-                    <NavItemsWrapper layout="header" class="flex gap-8" />
-                </nav>
-                
-                <div @click="toggleNav" class="menu-btn block lg:hidden py-2.5 text-3xl cursor-pointer">
-                    <Icon v-if="!navVisible" name="fa6-solid:bars" class="icon text-lg" :class="$route.path !== '/' ? 'text-black': 'text-primary'" />
-                    <Icon v-if="navVisible" name="fa6-solid:x" class="icon text-lg text-primary" />
+                <div class="flex items-center gap-4 lg:gap-7">
+                    <nav class="nav hidden lg:block">
+                        <NavItemsWrapper layout="header" class="flex gap-8" />
+                    </nav>
+                    <ul>
+                        <li class="flex items-center nav-link" :class="{'text-primary': $route.path === '/'}">
+                            <NuxtLink class="nav-link rounded-lg px-3 py-1 border" to="https://dashboard.montypay.com/login" target="_blank">
+                                <h5 class="nav-link">Log In</h5>
+                            </NuxtLink>
+                        </li>
+                    </ul>
+                    <div @click="toggleNav" class="menu-btn block lg:hidden pt-1.5 pb-2.5 text-3xl cursor-pointer">
+                        <Icon v-if="!navVisible" name="fa6-solid:bars" class="icon text-lg" :class="$route.path !== '/' ? 'text-black': 'text-primary'" />
+                        <Icon v-if="navVisible" name="fa6-solid:x" class="icon text-lg text-primary" />
+                    </div>
                 </div>
             </div>
         </div>

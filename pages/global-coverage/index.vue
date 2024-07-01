@@ -6,7 +6,7 @@
             image="global-coverage"
         />
 
-        <section id="section-2" class="pt-16 lg:pt-36">
+        <!-- <section id="section-2" class="pt-16 lg:pt-36">
             <div class="container">
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="section-6" class="py-16 lg:py-36 bg-[#F6F6F6] overflow-hidden">
             <div class="container">

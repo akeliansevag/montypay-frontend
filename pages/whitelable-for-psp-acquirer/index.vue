@@ -497,7 +497,7 @@
                         class="text-center"
                     />
                 </div>
-                <div>
+                <!-- <div>
                     <div class="flex items-center justify-center">
                         <span class="absolute w-full h-[2px] bg-[#d8d8d8]"></span>
                         <h4 class="text-[#787878] text-2xl bg-white px-6 translate-y-[-3px]">With over 170 connectors</h4>
@@ -512,7 +512,7 @@
                             />
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
                         title="Cutting-Edge Technology"

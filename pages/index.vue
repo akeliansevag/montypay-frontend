@@ -2,9 +2,9 @@
     <div>
         <HeroBanner class="text-primary"
             title="Beyond Payments"
-            paragraph="With MontyPay, you gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success."
+            paragraph="Gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success. Discover the future of payments with MontyPay."
             button="Contact Us" 
-            image="montypay-banner"
+            image="homebanner"
             link="/contact-us"
         />
 
@@ -16,6 +16,7 @@
                     <div class="flex flex-col gap-8 mt-16">
                         <ContentBlock
                             title="All-in-one Platform"
+                            paragraph="A comprehensive solution designed to streamline your operations and provide valuable insights for optimal performance."
                         />
 
                         <div class="flex items-center gap-2 font-semibold mt-8">
@@ -293,7 +294,7 @@
                 <div class="w-full lg:w-2/5">
                     <ContentBlock 
                         title="Why MontyPay?"
-                        paragraph="Gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success. Discover the future of payments with MontyPay."
+                        paragraph="MontyPay goes beyond payments to provide merchants with 360 services that not only increase revenues, but also strategically build your brand and provide it with all the needed components to excel in today’s digital market."
                         class="w-full"
                     />
                 </div>

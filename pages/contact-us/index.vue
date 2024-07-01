@@ -6,13 +6,12 @@
             image="contact-us"
         />
 
-        <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary overflow-hidden">
+        <section id="section-2" class="py-16 lg:py-24 bg-quaternary text-primary overflow-hidden">
             <Blob />
             
             <div class="container">
                 <ContentBlock 
                     title="Do you have questions?"
-                    paragraph="Are you interested in our services or have questions?<br />We would be glad to help!"
                 />
 
                 <div class="flex flex-col lg:flex-row lg:justify-between gap-8 mt-10">

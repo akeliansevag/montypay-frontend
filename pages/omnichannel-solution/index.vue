@@ -13,7 +13,8 @@
         <div class="container">
             <ContentBlock 
                 title="Global Payments"
-                class="text-center"
+                paragraph="MontyPay provides you with international payment solutions and methods that will streamline your payment processes and scale your revenues."
+                class="text-center w-full lg:w-1/2 lg:mx-auto"
             />
             <div class="mt-16 grid md:grid-cols-3 gap-7 max-w-[1000px] m-auto">
                 <div class="flex flex-col gap-5 justify-between">
@@ -37,7 +38,8 @@
         <div class="container">
             <ContentBlock 
                 title="Advanced Reporting"
-                class="text-center"
+                paragraph="A powerful tool that delivers in-depth insights and real-time data analysis to help you make informed decisions, track performance, and drive business growth."
+                class="text-center w-full lg:w-1/2 lg:mx-auto"
             />
             <div class="mt-16 grid lg:grid-cols-2 gap-20">
                 <div class="grid grid-cols-2 gap-5">
@@ -61,7 +63,8 @@
         <div class="container">
             <ContentBlock 
                 title="Merchant Mobile App"
-                class="text-center"
+                class="text-center w-full lg:w-1/2 lg:mx-auto"
+                paragraph="A comprehensive solution that offers a seamless experience for merchants, allowing them to keep track of all transactions, enhance customer experience and satisfaction, and provide seamless access to essential business tools on the go."
             />
             <div class="mt-16 grid lg:grid-cols-2 gap-20 items-center">
                 <div class="grid grid-cols-2 gap-5">
@@ -85,7 +88,8 @@
         <div class="container">
             <ContentBlock 
                 title="Advanced Risk Managment"
-                class="text-center"
+                class="text-center w-full lg:w-1/2 lg:mx-auto"
+                paragraph="Cutting-edge risk assessment tools, designed to identify and mitigate potential threats, ensuring secure and reliable transactions."
             />
             <div class="items-center mt-16 lg:mt-14 flex flex-col gap-10 max-w-[900px] m-auto">
                 <div>
@@ -105,7 +109,7 @@
         </div>
     </section>
 
-    <section class="py-16 lg:py-32 container">
+    <!-- <section class="py-16 lg:py-32 container">
         <div class="absolute w-full h-full top-0 left-0">
             <NuxtPicture class="w-full" :imgAttrs="{class:'object-cover w-full h-full rounded-lg'}"  format="svg" src="images/extensive-connectivity.png" />
         </div>
@@ -127,13 +131,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="py-16 lg:py-32">
         <div class="container">
             <ContentBlock 
                 title="24/7 Live Chat Support"
-                class="text-center"
+                class="text-center w-full lg:w-1/2 lg:mx-auto"
+                paragraph="MontyPay is by your side around the clock, you can reach out to us via"
             />
             <div class="mt-16 grid md:grid-cols-3 gap-7 max-w-[1200px] m-auto">
                 <div class="flex flex-col gap-5 justify-between">

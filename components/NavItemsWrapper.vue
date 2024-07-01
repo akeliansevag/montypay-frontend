@@ -5,6 +5,8 @@
         <NavItem :layout="layout" to="/global-coverage" label="Global Coverage" />
         <NavItem :layout="layout" label="Developers" :children="developerSections" />
         <NavItem :layout="layout" to="/contact-us" label="Contact" />
+        <NavItem :layout="layout" to="/faq" label="FAQ" />
+        
     </ul>
 </template>
 

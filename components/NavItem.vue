@@ -5,7 +5,6 @@
     'text-primary': $route.path === '/'
   }">
   <Blob />
-
     <NuxtLink :external="external" :target="target" exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-8' : layout === 'header' }">
       <h5 class="nav-link">{{ label }}</h5>
     </NuxtLink>
