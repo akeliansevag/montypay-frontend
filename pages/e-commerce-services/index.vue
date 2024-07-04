@@ -11,7 +11,7 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="MontyPay provides an End-to-End Payment Solution for Merchants"
+                            title="Discover our various End-to-End solutions for Merchants"
                         />
                     </div>
                 </div>

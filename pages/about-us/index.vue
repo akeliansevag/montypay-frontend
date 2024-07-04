@@ -2,7 +2,7 @@
     <div>
         <Hero 
             title="About us"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
+            paragraph="With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
             image="about-us"
             hero="2"
         />

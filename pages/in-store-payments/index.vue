@@ -2,30 +2,9 @@
     <div>
         <Hero 
             title="In-Store Payment"
-            paragraph="Our Smart POS  enhance transaction speed, security, and overall customer satisfaction."
+            paragraph="MontyPay is proud to unveil our cutting-edge in-store payment solutions, revolutionizing the way you shop and pay. With MontyPay, making payments in-store has never been easier or more secure."
             image="in-store-payment"
         />
-
-        <!-- <section id="section-2" class="pt-16 lg:pt-36">
-            <div class="container">
-                <div class="flex flex-col text-center">
-                    <div class="w-full md:w-3/4 mx-auto">
-                        <ContentBlock 
-                            title="Transform Your In-Store Experience with Next-Level Payment Solutions"
-                            paragraph="Consumers are seeking faster and more convenient ways to make payments in physical stores. MontyPay's In-Store Payment Solutions are designed to meet this demand head-on, offering innovative and efficient options for both businesses and customers. Our suite of in-store payment methods, including QR Pay, Smart POS, and Soft POS, brings a seamless shopping experience to your brick-and-mortar locations, enhancing transaction speed, security, and overall customer satisfaction."
-                        />
-                    </div>
-
-                    <NuxtPicture 
-                        priority
-                        format="webp,avif" 
-                        src="/images/next-level-payment-solutions.png" 
-                        class="w-full mt-10"
-                        :imgAttrs="{class:'w-full'}" 
-                    />
-                </div>
-            </div>
-        </section> -->
 
         <section id="section-3" class="pt-16 lg:pt-36">
             <div class="container">
@@ -71,122 +50,28 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="flex flex-col gap-8 lg:gap-24 mt-16 bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
-                            title="Modern Retail Experience"
-                            paragraph="Smart POS devices are designed to enhance the in-store shopping experience. They offer versatility, enabling businesses to accept a wide range of payment methods, from credit cards to digital wallets."
-                            class="flex-1"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/modern-retail-experience.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+                    <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
+                        <img src="/images/isp-st.png" />
+                        <p class="px-4">Tap to Pay for Swift Transactions</p>
                     </div>
-
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
-                            title="Real-time Reporting"
-                            paragraph="Smart POS systems provide real-time transaction data, empowering businesses with valuable insights into sales trends, inventory management, and customer behavior."
-                            class="flex-1 lg:order-1"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/real-time-reporting.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
+                    <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
+                        <img src="/images/isp-bc-wp.png" />
+                        <p class="px-4">Support for Both Card and Wallet Payments</p>
                     </div>
-
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
-                            title="Integration"
-                            paragraph="Our Smart POS devices seamlessly integrate with your existing infrastructure, ensuring a smooth transition to a more efficient and modern point-of-sale solution."
-                            class="flex-1"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/integration.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
+                    <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
+                        <img src="/images/isp-bps.png" />
+                        <p class="px-4">Bill Payment Services</p>
                     </div>
-                </div> -->
+                    <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
+                        <img src="/images/isp-mtd.png" />
+                        <p class="px-4">Rapid Response Times to Minimize Transactions Durations</p>
+                    </div>
+                </div>
+
             </div>
         </section>
-
-        <!-- <section id="section-4" class="pt-16 lg:pt-36">
-            <div class="container">
-                <div class="w-full lg:w-3/4 mx-auto text-center">
-                    <ContentBlock 
-                        title="QR Pay"
-                        subtitle="Unlock Seamless Transactions with QR Pay!"
-                        paragraph="Welcome to the future of payments! Our QR Pay solution revolutionizes the way you shop, dine, and transact by offering a swift and secure payment option right at your fingertips. With just a scan of a QR code, you can effortlessly complete transactions, manage your finances, and enjoy a seamless shopping experience like never before."
-                        button="Get Started"
-                        :center=true
-                    />
-                </div>
-
-                <div class="flex flex-col gap-8 lg:gap-24 mt-16 bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
-                            title="Effortless Transactions"
-                            paragraph="QR Pay leverages the power of QR codes to streamline in-store payments. Customers can simply scan a QR code displayed at the point of sale, confirm the transaction, and complete their purchase swiftly."
-                            class="flex-1"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/effortless-transactions.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
-                            title="Convenience"
-                            paragraph="This contactless payment method eliminates the need for physical cash or cards, making payments more convenient for both customers and businesses. It's an ideal solution for today's health-conscious consumers."
-                            class="flex-1 lg:order-1"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/convenience.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
-                        <ContentBlock 
-                            title="Security and Privacy"
-                            paragraph="QR Pay employs advanced encryption and authentication protocols to ensure the security of every transaction. Customer data is protected, reducing the risk of fraud or unauthorized access."
-                            class="flex-1"
-                        />
-                        <div class="flex-1 w-full">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/security-and-privacy.png" 
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <section id="section-5" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-white overflow-hidden">
             <div class="container">
@@ -224,9 +109,6 @@
                         </template>
                     </div>
                 </div>
-               
-
-                
             </div>
         </section>
     </div>

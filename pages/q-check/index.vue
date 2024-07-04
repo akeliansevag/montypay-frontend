@@ -60,7 +60,6 @@
                                         :imgAttrs="{class: 'w-[54px]'}"
                                     />
                                 </div>
-                                
                             </div>
                             <div>
                                 <h5 class="mb-5">{{benefit.title}}</h5>
@@ -69,9 +68,22 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <div class="flex flex-col sm:flex-row justify-between gap-14 w-full mt-40 pt-40 px-14 bg-gradient-to-b from-[#003383] to-[#0F0C22] rounded-3xl">
+                    <NuxtPicture 
+                        format="svg"
+                        src="/images/qcheck-img1.png"
+                        class="-mt-60"
+                        :imgAttrs="{class: 'w-full'}"
+                    />
+                    <NuxtPicture 
+                        format="svg"
+                        src="/images/qcheck-img2.png"
+                        class="-mb-20"
+                        :imgAttrs="{class: 'w-full'}"
+                    />
+                </div>
             </div>
-            
         </section>
 
         <section id="section-3" class="py-14">
@@ -87,7 +99,7 @@
                                 priority
                                 format="svg" 
                                 :src="`/images/${connector.image}`"
-                                :imgAttrs="{class:'w-3/5 mx-auto'}" 
+                                :imgAttrs="{class:'w-full mx-auto'}" 
                             />
                         </div>
                     </div>

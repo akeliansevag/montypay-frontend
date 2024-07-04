@@ -486,8 +486,5 @@
 
 <style lang="sass">
     .online
-        box-shadow: 0px 4px 24px 0px #0000001A
-
-    
-    
+        box-shadow: 0px 4px 24px 0px #0000001A  
 </style>

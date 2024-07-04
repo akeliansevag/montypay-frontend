@@ -3,7 +3,7 @@
         <Hero 
             breadcrumbs="Solutions / Payment Services"
             title="Omnichannel Solution"
-            paragraph="Our Omnichannel Solution allows you to manage all of your transactions in real time with advanced analytics and reporting tools."
+            paragraph="Manage all of your transactions in real time with advanced analytics and reporting tools."
             button="Get Started"
             image="omnichannel"
         />
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div>
-                    <NuxtPicture class="w-full" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="/advanced-reporting.png" />
+                    <NuxtPicture class="w-full" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="images/advanced-reporting.png" />
                 </div>
             </div>
         </div>
@@ -78,24 +78,24 @@
                     </div>
                 </div>
                 <div class="lg:justify-self-end">
-                    <NuxtPicture format="png" src="/Device-14PM.png" />
+                    <NuxtPicture format="png" src="images/merchant-mobile-app.png" />
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 lg:py-32 bg-[#f6f6f6]">
+    <section class="py-16 lg:py-32 bg-[#0f0c22]">
         <div class="container">
             <ContentBlock 
                 title="Advanced Risk Managment"
-                class="text-center w-full lg:w-1/2 lg:mx-auto"
+                class="text-center w-full lg:w-2/3 lg:mx-auto text-white"
                 paragraph="Cutting-edge risk assessment tools, designed to identify and mitigate potential threats, ensuring secure and reliable transactions."
             />
-            <div class="items-center mt-16 lg:mt-14 flex flex-col gap-10 max-w-[900px] m-auto">
+            <div class="items-center mt-16 lg:mt-14 flex gap-10 max-w-[900px] m-auto">
                 <div>
-                    <NuxtPicture class="w-full" :imgAttrs="{class:'max-w-[200px] mx-auto w-full -mt-5'}"  format="svg" src="/Vector.svg" />
+                    <NuxtPicture class="w-full" :imgAttrs="{class:'mx-auto w-full -mt-5'}"  format="svg" src="/images/advanced-risk-management.png" />
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="flex flex-col gap-5">
                     <div class="bg-white p-5 rounded-lg" v-for="(item,index) in advancedRiskManagement" :key="index">
                         <div class="mb-2">
                             <NuxtPicture format="svg" :src="item.icon" />
@@ -108,6 +108,47 @@
             </div>
         </div>
     </section>
+
+
+    <section class="py-16 lg:py-32">
+        <div class="container">
+            <ContentBlock 
+                title="Lending and Loyalty"
+                class="text-center w-full lg:w-2/3 lg:mx-auto"
+                paragraph="Boost your sales and increase your revenue with MontyPay’s exclusive loyalty program and diverse lending services."
+            />
+            <div class="grid lg:grid-cols-3 w-full lg:w-2/3 mx-auto gap-6 mt-16">
+                <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
+                    <img src="/images/ll-acs.png" />
+                    <div class="px-4">
+                        <img src="/images/credit-card-plus.svg" alt="Increased sales" width="35" height="35" />
+                        <p class="mt-4 text-base">Advanced Credit Scoringnsactions</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
+                    <img src="/images/ll-pblp.png" />
+                    <div class="px-4">
+                        <img src="/images/sticker-circle.svg" alt="Increased sales" width="35" height="35" />
+                        <p class="mt-4 text-base">Points-Based Loyalty Program</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
+                    <img src="/images/ll-tlp.png" />
+                    <div class="px-4">
+                        <img src="/images/coins-hand.svg" alt="Increased sales" width="35" height="35" />
+                        <p class="mt-4 text-base">Tailored Lending Program</p>
+                    </div>
+                </div>
+            </div>
+
+            <ContentBlock 
+                class="mt-16 text-center w-full lg:w-2/3 lg:mx-auto"
+                paragraph="Collect points through our loyalty program and meet our criteria to qualify for loans from MontyPay."
+            />
+        </div>
+    </section>
+
+    
 
     <!-- <section class="py-16 lg:py-32 container">
         <div class="absolute w-full h-full top-0 left-0">
@@ -140,9 +181,20 @@
                 class="text-center w-full lg:w-1/2 lg:mx-auto"
                 paragraph="MontyPay is by your side around the clock, you can reach out to us via"
             />
-            <div class="mt-16 grid md:grid-cols-3 gap-7 max-w-[1200px] m-auto">
-                <div class="flex flex-col gap-5 justify-between">
-                    <div class="p-5 rounded-lg border border-[#d9d9d9]" v-for="(item,index) in liveChat" :key="index">
+            <div class="mt-16 grid md:grid-cols-4 max-w-[1200px] m-auto">
+                <div class="flex flex-col gap-5 justify-center">
+                    <div class="p-5 rounded-lg border border-[#d9d9d9]" v-for="(item,index) in liveChat1" :key="index">
+                        <div class="mb-2">
+                            <NuxtPicture format="svg" :src="item.icon" class="w-full" />
+                        </div>
+                        <div>
+                            <h5>{{item.title }}</h5>
+                        </div>
+                    </div>
+                </div>
+                <NuxtPicture class="w-full col-span-2" :imgAttrs="{class:'w-full'}"  format="png" src="images/24-7-live-chat-support.png" />
+                <div class="flex flex-col gap-5 justify-center">
+                    <div class="p-5 rounded-lg border border-[#d9d9d9]" v-for="(item,index) in liveChat2" :key="index">
                         <div class="mb-2">
                             <NuxtPicture format="svg" :src="item.icon" />
                         </div>
@@ -151,36 +203,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:col-span-2">
-                    <NuxtPicture class="w-full" :imgAttrs="{class:'w-full'}"  format="png" src="/livechat.png" />
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 lg:py-32 bg-black">
-        <div class="absolute w-full h-full top-0">
-            <img src="/acceptancebg.png" class="object-cover w-full h-full"/>
-        </div>
-        <div class="container">
-            <ContentBlock 
-                title="Higher Acceptance Rate"
-                class="text-center text-white"
-            />
-            <div class="mt-16 lg:mt-2">
-                <div class="grid md:grid-cols-3 gap-5 mt-16">
-                    <div class="bg-white p-5 rounded-lg" v-for="(item,index) in acceptance" :key="index">
-                        <div class="mb-16">
-                            <NuxtPicture format="svg" :src="item.icon" />
-                        </div>
-                        <div>
-                            <h5>{{item.title }}</h5>
+       <div class="container">
+            <section class="mb-16 lg:mb-32 py-16 lg:py-32 bg-black">
+                    <div class="absolute w-full h-full top-0">
+                        <img src="/acceptancebg.png" class="object-cover w-full h-full"/>
+                    </div>
+                    <div class="w-full lg:w-2/3 mx-auto">
+                        <ContentBlock 
+                            title="Higher Acceptance Rate"
+                            class="text-center text-white"
+                        />
+                        <div class="mt-16 lg:mt-2">
+                            <div class="grid md:grid-cols-3 gap-5 mt-16">
+                                <div class="bg-white p-5 rounded-lg" v-for="(item,index) in acceptance" :key="index">
+                                    <div class="mb-16">
+                                        <NuxtPicture format="svg" :src="item.icon" />
+                                    </div>
+                                    <div>
+                                        <h5>{{item.title }}</h5>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
 </template>
 
 <script setup>
@@ -316,7 +367,7 @@
     
     ];
 
-    const liveChat = [
+    const liveChat1 = [
         {
             icon: '/phone-01.svg',
             title: 'Merchant mobile application'
@@ -325,6 +376,9 @@
             icon: '/clapperboard.svg',
             title: 'Website'
         },
+    ];
+
+    const liveChat2 = [
         {
             icon: '/grid-01.svg',
             title: 'Dashboard'
@@ -335,7 +389,6 @@
             title: 'Whatsapp'
 
         },
-    
     ];
 
     const acceptance = [
