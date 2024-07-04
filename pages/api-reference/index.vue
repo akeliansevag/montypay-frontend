@@ -4,6 +4,7 @@
             title="API References"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="api-reference"
+            hero="2"
         />
 
         <section id="section-2" class="py-16 lg:py-36">

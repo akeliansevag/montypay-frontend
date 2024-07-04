@@ -4,6 +4,7 @@
             title="Careers"
             paragraph="At MontyPay, your career path is limited only by your ambition, and we are here to support you every step of the way."
             image="careers"
+            hero="4"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">

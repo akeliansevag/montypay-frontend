@@ -4,6 +4,7 @@
             title="Payment Orchestration Network"
             paragraph="MontyPay helps you to expand your business to more countries based on a profit share model."
             image="payment-orchestration-network"
+            hero="7"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">

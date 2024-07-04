@@ -4,6 +4,7 @@
             title="Global Coverage"
             paragraph="With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
             image="global-coverage"
+            hero="1"
         />
 
         <!-- <section id="section-2" class="pt-16 lg:pt-36">

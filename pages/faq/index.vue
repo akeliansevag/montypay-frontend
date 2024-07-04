@@ -4,6 +4,7 @@
             title="FAQ"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants" button="Get Started"
             image="faq" 
+            hero="8"
         />
 
         <section class="py-16 lg:py-36">

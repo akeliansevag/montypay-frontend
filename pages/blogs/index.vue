@@ -2,7 +2,7 @@
     <div>
         <Hero breadcrumbs="Solutions / Payment Services" title="Blogs"
             paragraph="" button="Get Started"
-            image="omnichannel" />
+            image="omnichannel" hero="3"/>
     </div>
     <Posts category="8" detailPath="blogs"/>
 </template>

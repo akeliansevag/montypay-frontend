@@ -4,6 +4,7 @@
             title="Partners"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="partners"
+            hero="6"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">
