@@ -71,8 +71,8 @@
 
 	.white-circle
 		background-color: white
-		width: 99.5%
-		height: 99.5%
+		// width: 99.5%
+		// height: 99.5%
 		border-radius: 50%
 		z-index: 1
 		border: 1px solid #ECECEC

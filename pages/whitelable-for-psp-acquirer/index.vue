@@ -2,7 +2,7 @@
     <div>
         <Hero 
             title="White Label For PSP/Acquirer"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
+            paragraph="Become a Payment Service Provider (PSP) in as little as 3 weeks"
             image="white-label-for-psp-acquirer"
         />
 

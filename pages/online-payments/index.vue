@@ -6,40 +6,6 @@
             image="online-payments"
         />
 
-        <!-- <section id="section-2" class="pt-16 lg:pt-36">
-            <div class="container">
-                <div class="flex flex-col text-center">
-                    <div class="w-full md:w-3/4 mx-auto">
-                        <ContentBlock 
-                            title="Online and Mobile Checkouts"
-                            paragraph="Engage in the ultimate shopping experience with our online and mobile checkout solutions. From your website to mobile apps, customers breeze through seamless and secure transactions. "
-                        />
-                    </div>
-
-                    <div class="mt-10 font-bold">Our multiple payment methods offer:</div>
-                    
-                    <div class="flex flex-col sm:flex-row flex-wrap justify-center items-start lg:items-center gap-10 mt-6">
-                        <h4 class="flex justify-center items-center gap-2 font-semibold text-xl">
-                            <Icon name="fa6-solid:check" class="icon text-4xl p-2 bg-transparent border-2 border-quaternary rounded-full" />Risk-free payments
-                        </h4>  
-                        <h4 class="flex justify-center items-center gap-2 font-semibold text-xl">
-                            <Icon name="fa6-solid:check" class="icon text-4xl p-2 bg-transparent border-2 border-quaternary rounded-full" />Flexibility
-                        </h4>  
-                        <h4 class="flex justify-center items-center gap-2 font-semibold text-xl">
-                            <Icon name="fa6-solid:check" class="icon text-4xl p-2 bg-transparent border-2 border-quaternary rounded-full" />Trust & confidence
-                        </h4>  
-                    </div>
-
-                    <NuxtPicture 
-                        priority
-                        format="webp,avif" 
-                        src="/images/online-and-mobile-checkouts.png" 
-                        class="w-full mt-10"
-                        :imgAttrs="{class:'w-full'}" 
-                    />
-                </div>
-            </div>
-        </section> -->
 
         <section id="section-3" class="pt-16 lg:pt-36">
             <div class="container">
@@ -112,25 +78,13 @@
                             />
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="section-4" class="mt-16 lg:mt-36 lg:h-screen flex flex-col lg:flex-row items-center text-primary overflow-hidden">
-            <NuxtPicture priority
-                format="webp,avif"
-                src="/images/recurring-bills-bg.png"
-                class="w-full lg:absolute lg:top-0 lg:left-0 after:content-[''] after:absolute after:top-0 after:left-0 lg:after:bg-quaternary/30 after:w-full after:h-full"
-                :imgAttrs="{class:'w-full lg:h-screen object-cover'}" 
-            />
-            
-            <div class="w-full bg-quaternary lg:bg-transparent py-14 lg:py-0">
-                <div class="container">
+
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
-                        <ContentBlock
-                            title="Recurring Bills"
+                        <ContentBlock 
+                        title="Recurring Bills"
                             paragraph="Automate billing and wave goodbye to manual hassles! For subscription services, memberships, or installments, our platform handles it all. Automated payments mean your customers never miss a due date, ensuring a steady flow of revenue for your business growth."
-                            class="w-full lg:w-2/3"
+                            class="lg:w-2/3 lg:order-1"
                         />
                         <div class="flex w-full lg:w-1/3">
                             <NuxtPicture 
@@ -138,17 +92,11 @@
                                 format="webp,avif" 
                                 src="/images/recurring-bills.png" 
                                 class="w-full"
-                                :imgAttrs="{class:'w-full mx-auto'}" 
+                                :imgAttrs="{class:'w-full  mx-auto'}" 
                             />
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="section-5" class="pt-16 lg:pt-36">
-            <div class="container">
-                <div class="flex flex-col gap-8 lg:gap-24">
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                             title="Smart Routing & Cascading"
@@ -180,54 +128,66 @@
                             />
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="section-6" class="mt-16 lg:mt-36">
-            <div class="container">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16 text-primary">
-                    <div class="flex flex-col gap-8 border rounded-lg py-8 px-6 bg-quaternary">
-                        <img src="/images/phone-2.svg" alt="Merchant Mobile App" width="45" height="45" />
-                        <h2 class="text-4xl">Merchant Mobile App</h2>
-                        <p class="text-lg">Take your business on the go!Our intuitive app puts payment management at your fingertips. Stay closely connected with customers, monitor transactions, and track sales data from anywhere. It's like having a business superhero in your pocket!</p>
-                    </div>
-                    <div class="flex flex-col gap-8 border rounded-lg py-8 px-6 bg-quaternary">
-                        <img src="/images/file-shield.svg" alt="Risk & Compliance" width="45" height="45" />
-                        <h2 class="text-4xl">Risk & Compliance</h2>
-                        <p class="text-lg">We've got your back!<br/>Our suite of tools meticulously identifies and neutralizes potential threats like fraud or chargebacks, ensuring a secure and compliant payment environment for your business to thrive.</p>
-                    </div>
-                    <div class="flex flex-col gap-8 border rounded-lg py-8 px-6 bg-quaternary">
-                        <img src="/images/bank-note.svg" alt="Installements" width="45" height="45" />
-                        <h2 class="text-4xl">Installements</h2>
-                        <p class="text-lg">Let's make high-ticket items affordable!<br />With flexible payment options, your customers can split their purchase into manageable payments. Tailor installment plans to suit your business goals and attract a wider customer base.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-4" class="mt-16 lg:mt-36 lg:h-screen flex flex-col lg:flex-row items-center text-primary overflow-hidden">
-            <NuxtPicture priority
-                format="webp,avif"
-                src="/images/cryptocurrency-bg.png"
-                class="w-full lg:absolute lg:top-0 lg:left-0 after:content-[''] after:absolute after:top-0 after:left-0 lg:after:bg-quaternary/30 after:w-full after:h-full"
-                :imgAttrs="{class:'w-full lg:h-screen object-cover'}" 
-            />
-            
-            <div class="w-full bg-quaternary lg:bg-transparent py-14 lg:py-0">
-                <div class="container">
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
-                        <ContentBlock
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                        <ContentBlock 
                             title="Cryptocurrency"
                             paragraph="Ride the wave of the future!<br />Integrating Bitcoin, Ethereum, and more into your payment options will open doors to a global customer base.<br />Embrace cryptocurrency to stay at the forefront of financial innovation!"
-                            class="w-full lg:w-2/3"
+                            class="flex-1"
                         />
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
-                                src="/images/cryptocurrency.png" 
-                                class="w-full"
+                                src="/images/smart-routing-cascading.png" 
+                                :imgAttrs="{class:'w-full mx-auto'}" 
+                            />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                        <ContentBlock 
+                            title="Merchant Mobile App"
+                            paragraph="Take your business on the go! <br /> Our intuitive app puts payment management at your fingertips. Stay closely connected with customers, monitor transactions, and track sales data from anywhere. It's like having a business superhero in your pocket!"
+                            class="flex-1 lg:order-1"
+                        />
+                        <div class="flex-1 w-full">
+                            <NuxtPicture 
+                                priority
+                                format="webp,avif" 
+                                src="/images/merchant-mobile-app.png" 
+                                :imgAttrs="{class:'w-full mx-auto'}" 
+                            />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                        <ContentBlock 
+                            title="Risk & Compliance"
+                            paragraph="We've got your back! <br /> Our suite of tools meticulously identifies and neutralizes potential threats like fraud or chargebacks, ensuring a secure and compliant payment environment for your business to thrive.ket!"
+                            class="flex-1"
+                        />
+                        <div class="flex-1 w-full">
+                            <NuxtPicture 
+                                priority
+                                format="webp,avif" 
+                                src="/images/risk-compliance.png" 
+                                :imgAttrs="{class:'w-full  mx-auto'}" 
+                            />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
+                        <ContentBlock 
+                            title="Installments"
+                            paragraph="Let's make high-ticket items affordable! <br /> With flexible payment options, your customers can split their purchase into manageable payments. Tailor installment plans to suit your business goals and attract a wider customer base."
+                            class="flex-1 lg:order-1"
+                        />
+                        <div class="flex-1 w-full">
+                            <NuxtPicture 
+                                priority
+                                format="webp,avif" 
+                                src="/images/installments.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
                         </div>

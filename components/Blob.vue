@@ -1,5 +1,5 @@
 <template lang="">
-    <div v-if="show" class="blob">
+    <!-- <div v-if="show" class="blob">
         <svg viewbox="0 0 1000 1000" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <radialGradient id="b" r="1" cx="0" cy="0">
@@ -21,29 +21,29 @@
                 M910 661q-88 161-249 79.5t-294-28Q234 766 180 633t18-248q72-115 187-131.5t205 25Q680 320 839 410t71 251Z;"></animate>
             </path>
         </svg>
-    </div>
+    </div> -->
 </template>
 
 <script setup>
-    const show = ref(false)
+    // const show = ref(false)
 
-    onMounted(() => {
-        show.value = true
-    })
+    // onMounted(() => {
+    //     show.value = true
+    // })
 </script>
 
 <style scoped lang="sass">
-    .blob 
-        @apply absolute top-0 left-0 w-3/5 h-full blur-[70px]
-        animation: move 40s infinite
+    // .blob 
+    //     @apply absolute top-0 left-0 w-3/5 h-full blur-[70px]
+    //     animation: move 40s infinite
 
-    @keyframes move 
-        0%
-            transform: translate(0) scale(2) rotate(0deg)
-        25%
-            transform: translate(50%) scale(2.5) rotate(90deg)
-        50%
-            transform: translate(100%) scale(3) rotate(180deg)
-        100%
-            transform: translate(0) scale(2) rotate(0deg)
+    // @keyframes move 
+    //     0%
+    //         transform: translate(0) scale(2) rotate(0deg)
+    //     25%
+    //         transform: translate(50%) scale(2.5) rotate(90deg)
+    //     50%
+    //         transform: translate(100%) scale(3) rotate(180deg)
+    //     100%
+    //         transform: translate(0) scale(2) rotate(0deg)
 </style>

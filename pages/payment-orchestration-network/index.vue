@@ -11,44 +11,24 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="MontyPay's Payment Orchestration Network"
-                            paragraph="Is the backbone of your business's growth strategy when it comes to optimizing payment processes."
+                            title="MontyPay's Payment Orchestration Network is the backbone of your business's growth strategy when it comes to optimizing payment processes."
                         />
                     </div>
 
-                    <div class="flex gap-4 mt-16 mx-auto text-white">
-                        <div>
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/mp-payment-orchestration-network.png" 
-                                class="w-full mt-10"
-                                :imgAttrs="{class:'w-full'}" 
-                            />
-                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-ecenter px-20">
+                    <div class="w-full md:w-3/4 flex flex-col lg:flex-row gap-4 mt-16 mx-auto items-stretch text-white">
+                            <div class="flex-1 py-10 px-5 lg:px-20 bg-black rounded-lg">
                                 <div>
                                 <h5>Onboard merchants in more countries</h5>
                                 <p>MontyPay helps you to expand your business to more countries based on a profit share model.</p>
                                 </div>
                             </div>
-                        </div> 
                         
-                        <div>
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/mp-payment-orchestration-network.png" 
-                                class="w-full mt-10"
-                                :imgAttrs="{class:'w-full'}" 
-                            />
-                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center px-20">
+                            <div class="flex-1 py-10 px-5 lg:px-20 bg-black rounded-lg">
                                 <div>
                                     <h5>Collect your merchants' international transactions locally</h5>
-                                    <p>Collect the transactions throughMontyPay’s local acquirers.</p>
+                                    <p>Collect the transactions throughMontyPay's local acquirers.</p>
                                 </div>
-                               
                             </div>
-                        </div> 
                     </div>
                 </div>
                 
@@ -89,14 +69,14 @@
             <div class="container">
                 <div class="flex flex-col gap-8 lg:gap-24">
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
-                        <div class="w-full lg:w-2/3 lg:order-1">
+                        <div class="w-full lg:w-1/2 lg:order-1">
                             <ContentBlock 
                                 title="Unified Solution"
                                 paragraph="Through a single integration, we offer a consolidated gateway that connects your business to our extensive network of payment methods. This integration minimizes the technical challenges typically associated with diversifying payment options, allowing your business to focus on its core operations with confidence."
                                 class="w-full lg:w-3/5 mx-auto"
                             />
                         </div>
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="w-full lg:w-1/2">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -108,14 +88,14 @@
 
 
                     <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
-                        <div class="w-full lg:w-2/3">
+                        <div class="w-full lg:w-1/2">
                             <ContentBlock 
                             title="Central Point of Contact"
                                 paragraph="MontyPay serves as the central point of contact for all your payment needs. Rather than dealing with a multitude of payment providers and their associated support systems, you benefit from a streamlined interface to manage your payment operations."
                                 class="w-full lg:w-3/5"
                             />
                         </div>
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="w-full lg:w-1/2">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -126,7 +106,7 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
         
         <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-[#F6F6F6]">
             <div class="container">
@@ -138,6 +118,18 @@
                             class="flex-1"
                         />
                     </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center items-start lg:items-center gap-4 mt-16 w-full lg:w-11/12 mx-auto">
+                    <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
+                        <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Expand your merchant acceptance geolocation
+                    </h4>  
+                    <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
+                        <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Decrease international charges
+                    </h4>  
+                    <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
+                        <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Increase revenues
+                    </h4>  
                 </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-center mt-16">
@@ -612,17 +604,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row flex-wrap justify-center items-start lg:items-center gap-4 mt-16 w-full lg:w-11/12 mx-auto">
-                    <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
-                        <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Expand your merchant acceptance geolocation
-                    </h4>  
-                    <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
-                        <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Decrease international charges
-                    </h4>  
-                    <h4 class="flex justify-center items-start lg:items-center gap-2 font-semibold text-xl py-8 px-4 bg-primary rounded-lg">
-                        <Icon name="fa6-solid:check" class="icon mt-1 lg:mt-0 text-2xl p-1 text-primary bg-quaternary rounded-full" />Increase revenues
-                    </h4>  
-                </div>
+                
 
                 
             </div>
