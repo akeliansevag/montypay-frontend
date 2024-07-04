@@ -6,6 +6,7 @@
         <NavItem :layout="layout" label="Developers" :children="developerSections" />
         <NavItem :layout="layout" to="/contact-us" label="Contact" />
         <NavItem :layout="layout" to="/faq" label="FAQ" />
+        <NavItem :layout="layout" label="Legal" :children="legalSections" />
         
     </ul>
 </template>
@@ -65,6 +66,23 @@ const developerSections = [
                 pages: [
                     { to: '/documentation', label: 'Documentation' },
                     { to: '/api-reference', label: 'Api Reference' },
+                ],
+            },
+        ],
+    },
+];
+
+const legalSections = [
+    {
+        sections: [
+            {
+                pages: [
+                    { to: '/terms-and-conditions', label: 'Terms & Conditions' },
+                    { to: '/privacy-policy', label: 'Privacy Policy' },
+                    { to: '/customer-acceptance-policy', label: 'Customer Acceptance Policy' },
+                    { to: '/Data-Processing-Agreement', label: 'Data Processing Agreement' },
+                    { to: '/Platform-Services-Agreement', label: 'Platform Services Agreement' },
+                    { to: '/Merchant-Services-Agreement', label: 'Merchant Services Agreement' },
                 ],
             },
         ],
