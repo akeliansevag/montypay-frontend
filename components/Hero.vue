@@ -1,24 +1,17 @@
 <template lang="">
-    <section id="section-1" class="py-10 lg:py-20 bg-[#f2f2f2]">
-        <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 justify-end items-center">
+    <section id="section-1" class="py-10 lg:py-20 bg-quaternary relative">
+        <img v-if="hero" class="absolute top-0 left-0 w-full h-full object-cover" :src="'/images/hero-backgrounds/'+ hero +'.jpg'" alt="Hero Background" />
+        <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 justify-end items-center text-white min-h-[40vh]">
             <div>
                 <h1 v-if="title">{{ title }}</h1>
                 <p v-if="paragraph" class="mt-8 w-full lg:w-3/4 text-lg">{{ paragraph }}</p>
             </div>
-            <NuxtPicture 
-                v-if="image"
-                priority
-                format="webp,avif" 
-                :src="`/images/${ image }.png`" 
-                class="w-full lg:w-2/3 ml-auto"
-                :imgAttrs="{class:'w-full rounded-lg'}" 
-            />
         </div>
     </section>
 </template>
 
 <script setup>
-    const prop = defineProps(['breadcrumbs', 'title', 'paragraph', 'button', 'image'])
+    const prop = defineProps(['hero','breadcrumbs', 'title', 'paragraph', 'button', 'image'])
 </script>
 
 <style lang="">
