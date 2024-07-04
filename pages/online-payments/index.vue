@@ -4,6 +4,7 @@
             title="Online Payments"
             paragraph="Experience Seamless Transactions with MontyPay's Effortless Online Payment Solutions"
             image="online-payments"
+            hero="5"
         />
 
 

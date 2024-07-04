@@ -4,6 +4,7 @@
             title="Contact Us"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="contact-us"
+            hero="5"
         />
 
         <section id="section-2" class="py-16 lg:py-24 bg-quaternary text-primary overflow-hidden">

@@ -4,7 +4,7 @@
             title="QCheck"
             paragraph="Get ready for the ultimate dining revolution with QCheck, the hospitality industry's game-changing Self-Service Checkout solution!"
             image="qcheck"
-            hero="1"
+            hero="7"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">

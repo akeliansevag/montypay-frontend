@@ -3,6 +3,7 @@
             title="Documentation"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="documentation"
+            hero="6"
         />
     
     <section class="py-16 lg:py-36 bg-black text-white text-center">
