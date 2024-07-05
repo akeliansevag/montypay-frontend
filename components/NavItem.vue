@@ -1,8 +1,7 @@
 <template>
-  <li v-if="header"
+  <li
     class="flex flex-col gap-5 h-full" 
     :class="{'lg:flex-row lg:hover:text-[#09bebd] group/item': layout === 'header',
-    'lg:fl': layout === 'footer',
     'text-primary': $route.path === '/'
   }">
   <Blob />
@@ -50,7 +49,7 @@
 </template>
   
 <script setup>
-  const props = defineProps(['header', 'to', 'label', 'children', 'layout','target', 'external']);
+  const props = defineProps(['header', 'footer', 'to', 'label', 'children', 'layout','target', 'external']);
   const hasChildren = computed(() => props.children && props.children.length);
 
   const navItemsVisible = ref(false);
