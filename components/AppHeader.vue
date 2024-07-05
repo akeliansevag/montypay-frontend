@@ -11,8 +11,8 @@
                         <NavItemsWrapper layout="header" class="flex gap-8" />
                     </nav>
                     <ul>
-                        <li class="flex items-center nav-link" :class="{'text-primary': $route.path === '/'}">
-                            <NuxtLink class="nav-link rounded-lg px-3 py-1 border" to="https://dashboard.montypay.com/login" target="_blank">
+                        <li class="flex items-center nav-link">
+                            <NuxtLink class="nav-link bg-secondary rounded-lg px-4 py-2" to="https://dashboard.montypay.com/login" target="_blank">
                                 <h5 class="nav-link">Log In</h5>
                             </NuxtLink>
                         </li>

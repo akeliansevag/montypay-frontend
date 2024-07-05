@@ -12,13 +12,13 @@
             <div class="container">
                 <div class="flex flex-col gap-8 lg:gap-24">
 
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                             title="Online and Mobile Checkouts"
                             paragraph="From your website to mobile apps, let your customers breeze through seamless and secure transactions.<br /><br />Our multiple payment methods offer flexibility, ensuring convenient, risk-free payments, enhancing trust and confidence."
-                            class="w-full lg:w-2/3 lg:order-1"
+                            class="flex-1 lg:order-1"
                         />
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -29,13 +29,13 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                         title="Customer Invoice Links"
                             paragraph="Creating invoices is now a breeze!<br />Tailor professional invoices to reflect your brand, and send them directly to your clients. What's unique? Our integrated online payment feature ensures that your customers settle their invoices swiftly, enriching their experience and boosting your business cash flow."
-                            class="w-full lg:w-2/3"
+                            class="flex-1"
                         />
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -46,13 +46,13 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                             title="Pay By Link"
                             paragraph="Let your customers shop without a hitch!<br /><br />It's all about convenience, a simple click on a link and transactions are complete. It's easy for both you and your customers, offering utmost convenience and simplicity."
-                            class="lg:w-2/3 lg:order-1"
+                            class="flex-1 lg:order-1"
                         />
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -63,13 +63,13 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                         title="QR Pay"
                             paragraph="You scan it, you got it!<br /><br />With QR Pay, Customers can simply scan a QR code displayed at the point of sale, confirm the transaction, and complete their purchase swiftly. This contactless payment method eliminates the need for physical cash or cards."
-                            class="w-full lg:w-2/3"
+                            class="flex-1"
                         />
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -81,13 +81,13 @@
                     </div>
 
 
-                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-32 justify-center items-center">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                         <ContentBlock 
                         title="Recurring Bills"
                             paragraph="Automate billing and wave goodbye to manual hassles! For subscription services, memberships, or installments, our platform handles it all. Automated payments mean your customers never miss a due date, ensuring a steady flow of revenue for your business growth."
-                            class="lg:w-2/3 lg:order-1"
+                            class="flex-1 lg:order-1"
                         />
-                        <div class="flex w-full lg:w-1/3">
+                        <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
@@ -108,7 +108,7 @@
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
-                                src="/images/smart-routing-cascading.png" 
+                                src="/images/smart-routing-and-cascading.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
                         </div>
@@ -140,7 +140,7 @@
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
-                                src="/images/smart-routing-cascading.png" 
+                                src="/images/crypto-currency.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
                         </div>
@@ -172,7 +172,7 @@
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
-                                src="/images/risk-compliance.png" 
+                                src="/images/risk-and-compliance.png" 
                                 :imgAttrs="{class:'w-full  mx-auto'}" 
                             />
                         </div>

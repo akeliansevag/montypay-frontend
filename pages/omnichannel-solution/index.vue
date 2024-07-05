@@ -6,7 +6,7 @@
             paragraph="Manage all of your transactions in real time with advanced analytics and reporting tools."
             button="Get Started"
             image="omnichannel"
-            hero="4"
+            hero="8"
         />
     </div>
 
@@ -78,8 +78,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg:justify-self-end">
-                    <NuxtPicture format="png" src="images/merchant-mobile-app.png" />
+                <div>
+                    <NuxtPicture format="png" src="images/merchant-mobile-app.png" class="w-full" :imgAttrs="{class:'w-full'}" />
                 </div>
             </div>
         </div>

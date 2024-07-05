@@ -6,8 +6,8 @@
 			<div class="segment"></div>
 
 		</div>
-		<div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10 flex items-center justify-center rounded-full lg:w-[170px] lg:h-[170px] xl:w-[250px] xl:h-[250px] bg-[#f3f3f3]">
-			<img src="/images/logo.svg" alt="Logo" width="150" />
+		<div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10 flex items-center justify-center rounded-full lg:w-[170px] lg:h-[170px] xl:w-[250px] xl:h-[250px] bg-[#F4F4F4]">
+			<img src="/images/logo-small.svg" alt="Logo" width="150" />
 		</div>
 
 		<div class="segment-item absolute top-[15%] left-[15%] z-10 flex flex-col items-center justify-center gap-4" count="4">
@@ -62,6 +62,7 @@
 		padding: 20px
 
 	.circular-progress-circle 
+		border: 1px solid #ECECEC
 		position: relative
 		border-radius: 50%
 		overflow: hidden

@@ -220,16 +220,16 @@
                         <li>Seamless customer experience</li>
                     </ul>
 
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-                        <div class="flex flex-col gap-10 border rounded-lg py-5 px-4">
+                    <div class="grid grid-cols-2 lg:grid-cols-3 mt-16">
+                        <div class="flex flex-col gap-10 border-[0.5px] rounded-tl-lg rounded-bl-lg py-5 px-4">
                             <img src="/images/file-check.svg" alt="Settle bills & check menu" width="30" height="30" />
                             Settle bills & check menu
                         </div>
-                        <div class="flex flex-col gap-10 border rounded-lg py-5 px-4">
+                        <div class="flex flex-col gap-10 border-[0.5px] py-5 px-4">
                             <img src="/images/git-branch.svg" alt="Enhance brand visibility" width="30" height="30" />
                             Enhance brand visibility
                         </div>
-                        <div class="flex flex-col gap-10 border rounded-lg py-5 px-4">
+                        <div class="flex flex-col gap-10 border-[0.5px] rounded-tr-lg rounded-br-lg py-5 px-4">
                             <img src="/images/currency-dollar-circle.svg" alt="Boosts tips" width="30" height="30" />
                             Boosts tips
                         </div>

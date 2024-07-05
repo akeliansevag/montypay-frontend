@@ -1,5 +1,6 @@
 <template>
-  <li class="flex flex-col gap-5 h-full" 
+  <li v-if="header"
+    class="flex flex-col gap-5 h-full" 
     :class="{'lg:flex-row lg:hover:text-[#09bebd] group/item': layout === 'header',
     'lg:fl': layout === 'footer',
     'text-primary': $route.path === '/'
@@ -23,21 +24,21 @@
     <ul 
       v-if="hasChildren && navItemsVisible" 
       class="flex flex-col gap-8"
-      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:bg-black lg:py-16 lg:px-24 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
+      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:bg-primary lg:py-16 lg:px-24 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
       '' : layout === 'footer'}"
       
     >
       <li v-for="(child, index) in children" :key="index">
         <ul v-if="child.sections && child.sections.length" class="flex flex-col" :class="{ 'lg:flex-row gap-6 lg:gap-32' : layout === 'header', 'gap-2.5' : layout === 'footer' }">
           <li v-for="(section, sectionIndex) in child.sections" :key="sectionIndex">
-            <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="lg:text-primary text-base">{{ section.label }}</span>
+            <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="lg:text-black text-base">{{ section.label }}</span>
             <ul v-if="section.pages && section.pages.length" :class="{ 'mt-2 lg:mt-8': section.label && layout === 'header', 'gap-1.5 lg:gap-4' : layout === 'header', 'gap-2.5' : layout === 'footer'}" class="flex flex-col" >
               <li v-for="(page, pageIndex) in section.pages" :key="pageIndex">
                 <NuxtLink 
                   :to="page.to" 
                   class="nav-link font-normal"
                   exact-active-class="active"
-                  :class="{ 'lg:text-primary lg:hover:text-[#09bebd]' : layout === 'header'}"><h5 class="nav-link font-normal">{{ page.label }}</h5>
+                  :class="{ 'lg:text-black lg:hover:text-[#09bebd]' : layout === 'header'}"><h5 class="nav-link font-normal">{{ page.label }}</h5>
                 </NuxtLink>
               </li>
             </ul>
@@ -49,7 +50,7 @@
 </template>
   
 <script setup>
-  const props = defineProps(['to', 'label', 'children', 'layout','target', 'external']);
+  const props = defineProps(['header', 'to', 'label', 'children', 'layout','target', 'external']);
   const hasChildren = computed(() => props.children && props.children.length);
 
   const navItemsVisible = ref(false);
