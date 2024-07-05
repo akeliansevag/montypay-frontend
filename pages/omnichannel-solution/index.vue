@@ -6,7 +6,7 @@
             paragraph="Manage all of your transactions in real time with advanced analytics and reporting tools."
             button="Get Started"
             image="omnichannel"
-            hero="8"
+            hero="12"
         />
     </div>
 

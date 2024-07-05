@@ -4,7 +4,7 @@
             title="eCommerce Services"
             paragraph="MontyPay offers a seamless and holistic approach to payment processing. From website development to secure payment gateways, we provide a complete suite of services designed to empower businesses of all sizes."
             image="e-commerce-services"
-            hero="7"
+            hero="77"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">

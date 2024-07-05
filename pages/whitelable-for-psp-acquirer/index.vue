@@ -4,7 +4,7 @@
             title="White Label For PSP/Acquirer"
             paragraph="Become a Payment Service Provider (PSP) in as little as 3 weeks"
             image="white-label-for-psp-acquirer"
-            hero="8"
+            hero="12"
         />
 
         <section id="section-2" class="pt-16 lg:pt-36">

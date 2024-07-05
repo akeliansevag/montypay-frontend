@@ -4,7 +4,7 @@
             title="In-Store Payment"
             paragraph="MontyPay is proud to unveil our cutting-edge in-store payment solutions, revolutionizing the way you shop and pay. With MontyPay, making payments in-store has never been easier or more secure."
             image="in-store-payment"
-            hero="2"
+            hero="10"
         />
 
         <section id="section-3" class="pt-16 lg:pt-36">
