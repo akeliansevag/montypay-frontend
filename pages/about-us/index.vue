@@ -59,7 +59,7 @@
                         />
                     </div>
                 </div>
-                <div class="mt-16 lg:mt-36 overflow-hidden w-full p-10 md:p-20 bg-quaternary text-white text-center">
+                <div class="mt-16 lg:mt-36 overflow-hidden w-full p-10 md:p-20 text-white text-center bg-[url('/images/connect-with-us-bg.png')] bg-cover bg-no-repeat rounded-lg">
                     <Blob />
                     <div class="lg:w-1/2 mx-auto">
                         <ContentBlock subtitle="If you're eager to uncover your business's next stride" />
@@ -72,7 +72,7 @@
                         <div class="w-[118px] h-[118px] border-[3px] border-black  group-hover:border-white rounded-full flex items-center justify-center">
                             <svg width="50" height="38" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="group-hover:stroke-white" d="M2.83123 20.6494C2.51613 20.1505 2.35858 19.901 2.27039 19.5162C2.20414 19.2272 2.20414 18.7714 2.27039 18.4824C2.35858 18.0976 2.51613 17.8481 2.83123 17.3492C5.43511 13.2262 13.1858 2.80322 24.9974 2.80322C36.8089 2.80322 44.5596 13.2262 47.1635 17.3492C47.4786 17.8481 47.6362 18.0976 47.7244 18.4824C47.7906 18.7714 47.7906 19.2272 47.7244 19.5162C47.6362 19.901 47.4786 20.1505 47.1635 20.6494C44.5596 24.7724 36.809 35.1954 24.9974 35.1954C13.1858 35.1954 5.43511 24.7724 2.83123 20.6494Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path class="group-hover:stroke-[#00f7f7]" d="M24.9974 25.9405C28.8309 25.9405 31.9385 22.8328 31.9385 18.9993C31.9385 15.1658 28.8309 12.0581 24.9974 12.0581C21.1639 12.0581 18.0562 15.1658 18.0562 18.9993C18.0562 22.8328 21.1639 25.9405 24.9974 25.9405Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="group-hover:stroke-[#00DFDF]" d="M24.9974 25.9405C28.8309 25.9405 31.9385 22.8328 31.9385 18.9993C31.9385 15.1658 28.8309 12.0581 24.9974 12.0581C21.1639 12.0581 18.0562 15.1658 18.0562 18.9993C18.0562 22.8328 21.1639 25.9405 24.9974 25.9405Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <ContentBlock
@@ -84,7 +84,7 @@
                     <div class="group w-full bg-[#f6f6f6] p-10 rounded-lg text-center flex flex-col gap-5 items-center hover:bg-quaternary hover:text-white">
                         <div class="w-[118px] h-[118px] border-[3px] border-black group-hover:border-white rounded-full flex items-center justify-center">
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="group-hover:stroke-[#00f7f7]" d="M4.63917 37.36L11.1834 30.8158M30.816 11.1832L37.3602 4.639M30.816 30.8158L37.3602 37.36M4.63917 4.639L11.1834 11.1832M7.91128 34.0879C0.682748 26.8594 0.682748 15.1396 7.91128 7.9111C15.1398 0.682577 26.8596 0.682575 34.0881 7.9111C41.3166 15.1396 41.3166 26.8594 34.0881 34.0879C26.8596 41.3164 15.1398 41.3164 7.91128 34.0879ZM16.0915 25.9077C13.3808 23.197 13.3808 18.8021 16.0915 16.0914C18.8022 13.3807 23.1971 13.3807 25.9078 16.0914C28.6185 18.8021 28.6185 23.197 25.9078 25.9077C23.1971 28.6184 18.8022 28.6184 16.0915 25.9077Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="group-hover:stroke-[#00DFDF]" d="M4.63917 37.36L11.1834 30.8158M30.816 11.1832L37.3602 4.639M30.816 30.8158L37.3602 37.36M4.63917 4.639L11.1834 11.1832M7.91128 34.0879C0.682748 26.8594 0.682748 15.1396 7.91128 7.9111C15.1398 0.682577 26.8596 0.682575 34.0881 7.9111C41.3166 15.1396 41.3166 26.8594 34.0881 34.0879C26.8596 41.3164 15.1398 41.3164 7.91128 34.0879ZM16.0915 25.9077C13.3808 23.197 13.3808 18.8021 16.0915 16.0914C18.8022 13.3807 23.1971 13.3807 25.9078 16.0914C28.6185 18.8021 28.6185 23.197 25.9078 25.9077C23.1971 28.6184 18.8022 28.6184 16.0915 25.9077Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
 
                         </div>

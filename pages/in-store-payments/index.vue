@@ -9,7 +9,7 @@
 
         <section id="section-3" class="pt-16 lg:pt-36">
             <div class="container">
-                <div class="w-full lg:w-full mx-auto bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
+                <div class="w-full mx-auto bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
                     <ContentBlock 
                         title="Smart POS"
                         paragraph="Accept a wide range of payment methods, from credit cards to digital wallets."
@@ -24,7 +24,7 @@
                         :imgAttrs="{class:'w-full lg:w-1/2 mt-16 mx-auto'}" 
                     />
 
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+                    <div class="grid grid-cols-2 lg:grid-cols-3 w-full lg:w-3/4 mx-auto gap-6 mt-16">
                         <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
                             <img src="/images/sale.svg" alt="Sales trends" width="50" height="50" />
                             <h2 class="text-base">Sales trends</h2>

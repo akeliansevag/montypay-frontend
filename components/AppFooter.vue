@@ -1,5 +1,5 @@
 <template lang="">
-    <footer class="bg-quaternary text-primary py-12 lg:pt-24 overflow-hidden">
+    <footer class="text-primary py-12 lg:pt-24 overflow-hidden bg-[url('/images/footer-bg.png')] bg-cover bg-no-repeat">
         <div class="container">
             <div class="flex flex-col lg:flex-row gap-10 justify-between">
                 <div class="lg:flex-[4]">

@@ -52,7 +52,9 @@
                 closeNav()
             }
         });
-        stickyNav();
+        if (window.innerWidth > 1023) {
+            stickyNav();
+        }
     });
 
 </script>

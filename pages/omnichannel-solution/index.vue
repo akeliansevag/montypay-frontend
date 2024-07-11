@@ -10,7 +10,13 @@
         />
     </div>
 
-    <section class="py-16 lg:py-32">
+    <section class="mt-16 lg:mt-32">
+        <div class="container bg-[#0f0c22] rounded-lg py-20 px-14">
+            <p class="text-center w-full lg:w-2/3 lg:mx-auto text-white text-3xl">Whether in-store, online, or through mobile apps, our omnichannel approach ensures consistent, convenient, and satisfying customer experiences to maximize sales potential and cultivate customer loyalty</p>
+        </div>
+    </section>
+
+    <section class="my-16 lg:my-32">
         <div class="container">
             <ContentBlock 
                 title="Global Payments"
@@ -42,7 +48,7 @@
                 paragraph="A powerful tool that delivers in-depth insights and real-time data analysis to help you make informed decisions, track performance, and drive business growth."
                 class="text-center w-full lg:w-1/2 lg:mx-auto"
             />
-            <div class="mt-16 grid lg:grid-cols-2 gap-20">
+            <div class="mt-32 grid lg:grid-cols-2 gap-20">
                 <div class="grid grid-cols-2 gap-5">
                     <div class="bg-white p-5 rounded-lg" v-for="(item,index) in advancedReporting" :key="index">
                         <div class="mb-2">
@@ -54,7 +60,7 @@
                     </div>
                 </div>
                 <div>
-                    <NuxtPicture class="w-full" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="images/advanced-reporting.png" />
+                    <NuxtPicture class="flex ml-auto w-4/5" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="images/advanced-reporting.png" />
                 </div>
             </div>
         </div>
@@ -70,16 +76,12 @@
             <div class="mt-16 grid lg:grid-cols-2 gap-20 items-center">
                 <div class="grid grid-cols-2 gap-5">
                     <div class="bg-white p-5 rounded-lg border border-[#d9d9d9]" v-for="(item,index) in merchantMobileApp" :key="index">
-                        <div class="mb-2">
-                            <NuxtPicture format="svg" :src="item.icon" />
-                        </div>
-                        <div>
-                            <h5>{{item.title }}</h5>
-                        </div>
+                        <NuxtPicture format="svg" :src="item.icon" />
+                        <h5 class="mt-5">{{item.title }}</h5>
                     </div>
                 </div>
                 <div>
-                    <NuxtPicture format="png" src="images/merchant-mobile-app.png" class="w-full" :imgAttrs="{class:'w-full'}" />
+                    <NuxtPicture class="flex ml-auto w-4/5" format="png" src="images/merchant-mobile-app.png" :imgAttrs="{class:'w-full'}" />
                 </div>
             </div>
         </div>
@@ -116,7 +118,7 @@
             <ContentBlock 
                 title="Lending and Loyalty"
                 class="text-center w-full lg:w-2/3 lg:mx-auto"
-                paragraph="Boost your sales and increase your revenue with MontyPay’s exclusive loyalty program and diverse lending services."
+                paragraph="Boost your sales and increase your revenue with MontyPay's exclusive loyalty program and diverse lending services."
             />
             <div class="grid lg:grid-cols-3 w-full lg:w-2/3 mx-auto gap-6 mt-16">
                 <div class="flex flex-col gap-4 bg-white border pb-5 rounded-[2rem]">
@@ -208,31 +210,31 @@
         </div>
     </section>
 
-       <div class="container">
-            <section class="mb-16 lg:mb-32 py-16 lg:py-32 bg-black">
-                    <div class="absolute w-full h-full top-0">
-                        <img src="/acceptancebg.png" class="object-cover w-full h-full"/>
-                    </div>
-                    <div class="w-full lg:w-2/3 mx-auto">
-                        <ContentBlock 
-                            title="Higher Acceptance Rate"
-                            class="text-center text-white"
-                        />
-                        <div class="mt-16 lg:mt-2">
-                            <div class="grid md:grid-cols-3 gap-5 mt-16">
-                                <div class="bg-white p-5 rounded-lg" v-for="(item,index) in acceptance" :key="index">
-                                    <div class="mb-16">
-                                        <NuxtPicture format="svg" :src="item.icon" />
-                                    </div>
-                                    <div>
-                                        <h5>{{item.title }}</h5>
-                                    </div>
+    <div class="container">
+        <section class="mb-16 lg:mb-32 py-16 lg:py-32 bg-black rounded-lg">
+                <div class="absolute w-full h-full top-0">
+                    <img src="/images/acceptancebg.png" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <div class="w-full lg:w-2/3 mx-auto">
+                    <ContentBlock 
+                        title="Higher Acceptance Rate"
+                        class="text-center text-white"
+                    />
+                    <div class="mt-16 lg:mt-2">
+                        <div class="grid md:grid-cols-3 gap-5 mt-16">
+                            <div class="bg-white p-5 rounded-lg" v-for="(item,index) in acceptance" :key="index">
+                                <div class="mb-16">
+                                    <NuxtPicture format="svg" :src="item.icon" />
+                                </div>
+                                <div>
+                                    <h5>{{item.title }}</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-            </section>
-        </div>
+                </div>
+        </section>
+    </div>
 </template>
 
 <script setup>

@@ -17,17 +17,17 @@
                     </div>
 
                     <div class="w-full md:w-3/4 flex flex-col lg:flex-row gap-4 mt-16 mx-auto items-stretch text-white">
-                            <div class="flex-1 py-10 px-5 lg:px-20 bg-black rounded-lg">
+                            <div class="flex-1 py-10 px-5 lg:px-20 rounded-lg bg-[url('/images/opp-bg.png')]">
                                 <div>
-                                <h5>Onboard merchants in more countries</h5>
-                                <p>MontyPay helps you to expand your business to more countries based on a profit share model.</p>
+                                    <h5 class="text-2xl">Onboard merchants in more countries</h5>
+                                    <p class="mt-6">MontyPay helps you to expand your business to more countries based on a profit share model.</p>
                                 </div>
                             </div>
                         
-                            <div class="flex-1 py-10 px-5 lg:px-20 bg-black rounded-lg">
+                            <div class="flex-1 py-10 px-5 lg:px-20 rounded-lg bg-[url('/images/opp-bg.png')]">
                                 <div>
-                                    <h5>Collect your merchants' international transactions locally</h5>
-                                    <p>Collect the transactions throughMontyPay's local acquirers.</p>
+                                    <h5 class="text-2xl">Collect your merchants' international transactions locally</h5>
+                                    <p class="mt-6">Collect the transactions throughMontyPay's local acquirers.</p>
                                 </div>
                             </div>
                     </div>

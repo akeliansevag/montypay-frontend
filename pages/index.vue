@@ -10,8 +10,6 @@
 
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
             <div class="container">
-                
-
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
                     <div class="flex flex-col gap-8 mt-16">
                         <ContentBlock
@@ -102,7 +100,7 @@
                 </div>
             </div>
             <div class="container mt-40">
-                <div class="grid grid-cols-2 md:grid-cols-3 xxl:grid-cols-6 gap-4 mt-16">
+                <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-4 mt-16">
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/smart-routing.svg" alt="Smart routing and cascading" width="30" height="30" />
@@ -174,30 +172,29 @@
                             />
 
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-                                <div class="flex flex-col gap-10 border rounded-lg p-5">
+                                <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/coins-stacked.svg" alt="Cashless payments" width="30" height="30" />
-                                    Cashless payments
+                                    Cashless<br />payments
                                 </div>
-                                <div class="flex flex-col gap-10 border rounded-lg p-5">
+                                <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/credit-card.svg" alt="Card payments" width="30" height="30" />
-                                    Card payments
+                                    Card<br />payments
                                 </div>
-                                <div class="flex flex-col gap-10 border rounded-lg p-5">
+                                <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/qr-code-white.svg" alt="QR payments" width="30" height="30" />
-                                    QR payments
+                                    QR<br />payments
                                 </div>
-
-                                <div class="flex flex-col gap-10 border rounded-lg p-5">
+                                <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/wallet.svg" alt="Wallet payments" width="30" height="30" />
-                                    Wallet payments
+                                    Wallet<br />payments
                                 </div>
-                                <div class="flex flex-col gap-10 border rounded-lg p-5">
+                                <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/lock.svg" alt="NFC Compatible" width="30" height="30" />
-                                    NFC Compatible
+                                    NFC<br />Compatible
                                 </div>
-                                <div class="flex flex-col gap-10 border rounded-lg p-5">
+                                <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/send.svg" alt="ECR Integration" width="30" height="30" />
-                                    ECR Integration
+                                    ECR<br />Integration
                                 </div>
                             </div>
                         </div>
@@ -223,15 +220,15 @@
                     <div class="grid grid-cols-2 lg:grid-cols-3 mt-16">
                         <div class="flex flex-col gap-10 border-[0.5px] rounded-tl-lg rounded-bl-lg py-5 px-4">
                             <img src="/images/file-check.svg" alt="Settle bills & check menu" width="30" height="30" />
-                            Settle bills & check menu
+                            <span class="mt-6">Settle bills &<br />check menu</span>
                         </div>
                         <div class="flex flex-col gap-10 border-[0.5px] py-5 px-4">
                             <img src="/images/git-branch.svg" alt="Enhance brand visibility" width="30" height="30" />
-                            Enhance brand visibility
+                            <span class="mt-6">Enhance brand<br />visibility</span>
                         </div>
                         <div class="flex flex-col gap-10 border-[0.5px] rounded-tr-lg rounded-br-lg py-5 px-4">
                             <img src="/images/currency-dollar-circle.svg" alt="Boosts tips" width="30" height="30" />
-                            Boosts tips
+                            <span class="mt-6">Boosts<br />tips</span>
                         </div>
                     </div>
                 </div>
@@ -253,7 +250,7 @@
             <div class="container flex flex-col">
                 <div class="w-full lg:w-4/5 xl:w-3/5 mx-auto">
                     <ContentBlock 
-                        title="eCommerce Services"
+                        title="eCommerce Store"
                         paragraph="Build your eCommerce online store from scratch!"
                     />
                 </div>
@@ -311,94 +308,65 @@
                 </div>
             </div>
         </section>
+        <!-- :slides-per-view="5" -->
 
-        <section id="section-8" class="py-16 lg:py-36 bg-quaternary text-primary">
+        <section id="section-8" class="py-16 lg:py-36 bg-black bg-[url('/images/customer-stories-bg.png')] bg-cover bg-no-repeat">
             <div class="container">
-                <h2>Customer Stories</h2>
+                <h2 class="text-white">Customer Stories</h2>
                 <div class="mt-16">
                     <Swiper
-                        :modules="[SwiperPagination]"
-                        :slides-per-view="1"
+                        @swiper="setThumbsSwiper"
+                        :modules="[SwiperThumbs]"
+                        :watchSlidesProgress="true"
+                        :slidesPerView="5"
+                        :spaceBetween="10"
+                        :freeMode="true"
                         :loop="true"
-                        :pagination="{
-                            clickable: true,
-                            clickableClass: 'relative mt-8',
-                            bulletActiveClass: 'swiper-pagination-bullet-active bg-secondary',
-                            bulletClass: 'swiper-pagination-bullet bg-primary',
-                        }"
+                        :centeredSlides="true"
+                        :centeredSlidesBounds="true"
+                        class="mySwiper w-full lg:w-3/4 py-10"
                     >
-                        
-                    <SwiperSlide class="flex flex-col md:flex-row  gap-20">
+                        <SwiperSlide class="flex justify-center gap-20" v-for="testimonial in testimonials" :key="index">
                             <NuxtPicture 
                                 priority
                                 format="webp,avif" 
-                                src="/images/tania-travel.png" 
-                                class="w-[110px]"
+                                :src="`/images/${testimonial.icon}.png`"
+                                class="w-[110px] cursor-pointer"
                                 :imgAttrs="{class:'w-full'}" 
                             />
-                            <div>
-                            <div class="flex gap-2">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                </svg>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                </svg>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                </svg>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                </svg>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                </svg>
-                            </div>
-                            <p class="text-2xl mt-5 w-full xl:w-4/5">"I sincerely appreciate the flexibility and willingness to help that MontyPay staff show. They follow up the cases with full support even after their normal working hours"</p>
-                            <div class="flex items-center w-full gap-6 mt-10">
-                                <div class="flex flex-col gap-1">
-                                    <span class="text-xl font-bold">Tania Travel</span>
-                                    <span class="text-base">Mr. Kamal Malaeb, Accounting Manager at Tania Travel</span>
-                                </div>
-                            </div>
-                        </div>
                         </SwiperSlide>
-                        <SwiperSlide class="flex flex-col md:flex-row gap-20">
-                            <NuxtPicture 
-                                priority
-                                format="webp,avif" 
-                                src="/images/moments-innovation.png" 
-                                class="w-1/5 lg:w-1/4"
-                                :imgAttrs="{class:'w-full'}" 
-                            />
-                            <div>
-                                <div class="flex gap-2">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                    </svg>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                    </svg>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                    </svg>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                    </svg>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                    </svg>
-                                </div>
-                                <p class="text-2xl mt-5 w-full xl:w-4/5">"Since 2014 when I started hosting events I was using paypal as a #payment #gateway to tickets which was the only quick option but I was always suffering from having people buying tickets online using #creditcards. I have certainly lost a lot of opportunities. I was always looking for new options but with no luck. TODAY, indeed our life became much easier with #fintech and #payments gateways #startups in the region. In less than a second I can be integrated and start selling online. Thanks Network International and MontyPay for your help today"</p>
-                                <div class="flex items-center w-full gap-6 mt-10">
+                    </Swiper>
+
+                    <Swiper
+                        :modules="[SwiperThumbs]"
+                        :thumbs="{ swiper: thumbsSwiper }"
+                        :loop="true"
+                        :spaceBetween="10"
+                        :navigation="{
+                             nextEl: '.swiper-button-next',
+                             prevEl: '.swiper-button-prev',
+                        }"
+                        class="mt-10 mySwiper2 w-full lg:w-4/5"
+                    >
+                        <SwiperSlide class="flex flex-col md:flex-row gap-20" v-for="testimonial in testimonials" :key="index">
+                            <div class="bg-white rounded-2xl pt-10 pb-20 px-4 sm:px-10 xl:px-20" >
+                                <div class="flex justify-center items-center w-full gap-6 mt-10 text-center">
                                     <div class="flex flex-col gap-1">
-                                        <span class="text-xl font-bold">Moments Innovation</span>
-                                        <span class="text-base">Ayman Irshaid, Founder & CEO at Moments Innovation</span>
+                                        <span class="text-3xl font-bold">{{ testimonial.name }}</span>
+                                        <span class="text-lg">{{ testimonial.position }}</span>
                                     </div>
                                 </div>
+                                <div class="flex justify-center gap-2 mt-4">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" v-for="index in testimonial.stars" :key="index">
+                                        <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
+                                    </svg>
+                                </div>
+                                <p class="text-center text-xl mt-20 mx-auto">{{ testimonial.paragraph }}</p>
                             </div>
                         </SwiperSlide>
                     </Swiper>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -414,6 +382,50 @@
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })
+
+    const thumbsSwiper = ref(null);
+
+    const setThumbsSwiper = (swiper) => {
+        thumbsSwiper.value = swiper;
+    };
+    
+    const testimonials = [
+        { 
+            icon: 'tania-travel',
+            name: 'Patricia Mougharbel',
+            position: 'Marketing Manager at Garo Boyadijian',
+            stars: 5,
+            paragraph: '"The customer service at Monty Pay is exceptional, and their mobile app offers a seamless experience, providing clear explanations for all transactions. The team is incredibly helpful and responsive, always ready to address any questions. We are glad to be working together."',
+        },
+        { 
+            icon: 'default',
+            name: 'Candice Wu',
+            position: 'Head of Design, Layers',
+            stars: 5,
+            paragraph: '"Since 2014 when I started hosting events I was using paypal as a #payment #gateway to tickets which was the only quick option but I was always suffering from having people buying tickets online using #creditcards. I have certainly lost a lot of opportunities. I was always looking for new options but with no luck. TODAY, indeed our life became much easier with #fintech and #payments gateways #startups in the region. In less than a second I can be integrated and start selling online. Thanks Network International and MontyPay for your help today"',
+        },
+        { 
+            icon: 'radulf',
+            name: 'Ralph Medawar',
+            position: 'Founder and Owner of Radulf',
+            stars: 5,
+            paragraph: '"Montypay payment gateway has been an absolute game-changer for my online business. The flexibility and support from their staff made the integration process a breeze. Unlike other payment gateways, Montypay offers better deals and lower fees, which was a huge relief for me, especially coming from PayPal with its high fees. Living in Lebanon, finding a reliable and affordable payment gateway was a challenge, but Montypay exceeded my expectations. After two years of searching for a simpler and more cost-effective solution, I\'m thrilled to have finally found Montypay. I highly recommend Montypay to any business looking for a seamless payment processing experience."',
+        },
+        { 
+            icon: 'cinqo-media',
+            name: 'Nawaf Alshafei',
+            position: 'Owner & Managing Director of Cinqo Media, Bahrain',
+            stars: 5,
+            paragraph: '"I wanted to extend my sincere appreciation for the exceptional service and support you\'ve provided us. Your communication has been impeccable, making every interaction seamless and enjoyable. I\'m continually impressed by the quality of your products and services. MontyPay consistently exceeds expectations, the seamless integration, user-friendly interface, and reliability of your platform have significantly contributed to the efficiency and success of our operations. In a world where exceptional service is rare, MontyPay stands out as a beacon of excellence. Thank you for your dedication to excellence. We look forward to continuing our partnership and exploring new opportunities together."',
+        },
+        { 
+            icon: 'default',
+            name: 'Moments Innovation',
+            position: 'Ayman Irshaid, Founder & CEO at Moments Innovation   ',
+            stars: 5,
+            paragraph: '"Since 2014 when I started hosting events I was using paypal as a #payment #gateway to tickets which was the only quick option but I was always suffering from having people buying tickets online using #creditcards. I have certainly lost a lot of opportunities. I was always looking for new options but with no luck. TODAY, indeed our life became much easier with #fintech and #payments gateways #startups in the region. In less than a second I can be integrated and start selling online. Thanks Network International and MontyPay for your help today"',
+        },
+    ]
 
     const faq = [
         {
@@ -458,33 +470,42 @@
         },
     ]
 
- const online_payment_services = [
-    {
-        title: "50+",
-        icon: false,
-        subTitle: "Countries",
-        bgColor: "bg-quaternary",
-        textColor: "text-primary"
-    },
-    {
-        title: false,
-        icon: '/images/globe.svg',
-        subTitle: "Global Reach",
-        bgColor: "bg-primary",
-        textColor: "text-black"
-    },
-    {
-        title: "100+",
-        icon: false,
-        subTitle: "Payment Methods",
-        bgColor: "bg-quaternary",
-        textColor: "text-primary"
-    },
+    const online_payment_services = [
+        {
+            title: "50+",
+            icon: false,
+            subTitle: "Countries",
+            bgColor: "bg-quaternary",
+            textColor: "text-primary"
+        },
+        {
+            title: false,
+            icon: '/images/globe.svg',
+            subTitle: "Global Reach",
+            bgColor: "bg-primary",
+            textColor: "text-black"
+        },
+        {
+            title: "100+",
+            icon: false,
+            subTitle: "Payment Methods",
+            bgColor: "bg-quaternary",
+            textColor: "text-primary"
+        },
 
- ];
+    ];
 </script>
 
 <style lang="sass">
     .online
         box-shadow: 0px 4px 24px 0px #0000001A  
+
+    .swiper-slide-visible
+        scale: 0.6
+
+    .swiper-slide-thumb-active
+        scale: 1.5
+
+    .swiper-button-prev, .swiper-button-next
+        color: #FFFFFF
 </style>

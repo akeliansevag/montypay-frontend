@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', type: 'image/png', href: '/images/apple-touch-icon-180x180.png' }
       ],
       meta: [
-        { name: 'theme-color', content: '#00F7F7' }
+        { name: 'theme-color', content: '#00DFDF' }
       ]
     },
     //pageTransition: { name: 'page', mode: 'out-in' }
@@ -48,6 +48,6 @@ export default defineNuxtConfig({
     //----------------------
     // prefix: 'Swiper',
     // styleLang: 'css',
-    modules: ['effect-fade', 'pagination'], // all modules are imported by default
+    modules: ['effect-fade', 'pagination', 'thumbs', 'navigation', 'free-mode'], // all modules are imported by default
   }
 })

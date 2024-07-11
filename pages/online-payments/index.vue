@@ -197,7 +197,7 @@
             </div>
         </section>
 
-        <section id="section-6" class="py-16 lg:py-36 bg-[#ebebeb]">
+        <section id="section-6" class="py-16 lg:py-36">
             <div class="container">
                 <ContentBlock 
                     title="Plugins & SDKs"

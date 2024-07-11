@@ -10,11 +10,11 @@
 			<img src="/images/logo-small.svg" alt="Logo" width="150" />
 		</div>
 
-		<div class="segment-item absolute top-[15%] left-[15%] z-10 flex flex-col items-center justify-center gap-4" count="4">
+		<div class="segment-item absolute top-[17%] left-[18%] z-10 flex flex-col items-center justify-center gap-4" count="4">
 			<img src="/images/lending-services.svg" alt="Agencies" width="35" height="35" />
 			<span>Lending Services</span>
 		</div>
-		<div class="segment-item absolute top-[12%] left-[45%] z-10 flex flex-col items-center justify-center gap-4" count="5">
+		<div class="segment-item absolute top-[12%] left-[47%] z-10 flex flex-col items-center justify-center gap-4" count="5">
 			<img src="/images/all-in-one-solution.svg" alt="Agencies" width="35" height="35" />
 			<span>All in one solution</span>
 		</div>
