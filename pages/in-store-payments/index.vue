@@ -9,20 +9,36 @@
 
         <section id="section-3" class="pt-16 lg:pt-36">
             <div class="container">
-                <div class="w-full mx-auto bg-primary p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
+                <div class="w-full mx-auto bg-primary rounded-lg p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
                     <ContentBlock 
                         title="Smart POS"
                         paragraph="Accept a wide range of payment methods, from credit cards to digital wallets."
                         class="text-center"
                     />
 
-                    <NuxtPicture 
-                        priority
-                        format="webp,avif" 
-                        src="/images/smart-pos.png" 
-                        class="w-full"
-                        :imgAttrs="{class:'w-full lg:w-1/2 mt-16 mx-auto'}" 
-                    />
+                    <div class="flex gap-4 lg:gap-24 w-full lg:w-3/5 mx-auto justify-center">
+                        <NuxtPicture 
+                            priority
+                            format="webp,avif" 
+                            src="/images/pos1.png" 
+                            class="pos pos1 w-full"
+                            :imgAttrs="{class:'w-full mt-16 mx-auto'}" 
+                        />
+                        <NuxtPicture 
+                            priority
+                            format="webp,avif" 
+                            src="/images/pos2.png" 
+                            class="pos pos2 w-full"
+                            :imgAttrs="{class:'w-full mt-16 mx-auto'}" 
+                        />
+                        <NuxtPicture 
+                            priority
+                            format="webp,avif" 
+                            src="/images/pos3.png" 
+                            class="pos pos3 w-full"
+                            :imgAttrs="{class:'w-full mt-16 mx-auto'}" 
+                        />
+                    </div>
 
                     <div class="grid grid-cols-2 lg:grid-cols-3 w-full lg:w-3/4 mx-auto gap-6 mt-16">
                         <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
@@ -37,7 +53,7 @@
                             <img src="/images/calendar-check.svg" alt="Real-time reporting" width="50" height="50" />
                             <h2 class="text-base">Real-time reporting</h2>
                         </div>
-                        <div class="flex flex-col gap-5 border rounded-lg py-8 px-6">
+                        <div class="flex flex-col galg:w-1/p-5 border rounded-lg py-8 px-6">
                             <img src="/images/intersect-square.svg" alt="Seamless integration" width="50" height="50" />
                             <h2 class="text-base">Seamless integration</h2>
                         </div>
@@ -86,7 +102,7 @@
                         />
                     </div>
                     <div class="flex flex-col gap-10 mt-32 w-full">
-                        <Blob />
+                        <!-- <Blob /> -->
 
                         <template  
                             v-for="(item, index) in customer_loyalty_program" 
@@ -164,6 +180,23 @@
     ]
 </script>
 
-<style lang="">
+<style lang="sass">
+    .pos 
+        transform: perspective(750px) translate3d(0px, 0px, -20px)
+        transition: all 0.4s ease-in-out
+
+        &:hover 
+            transform: translate3d(0px, 0px, -20px)
+            filter: drop-shadow(-10px 0px 10px #00DFDF)
+
+    .pos1:hover 
+        filter: drop-shadow(-10px 0px 10px #00DFDF)
+
+    .pos2:hover 
+        filter: drop-shadow(0px 10px 10px #00DFDF)
+
+    .pos3:hover 
+        filter: drop-shadow(10px 0px 10px #00DFDF)
+
     
 </style>
