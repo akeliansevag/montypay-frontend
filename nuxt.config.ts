@@ -31,6 +31,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-swiper'
   ],
+  gtag: {
+    id: 'G-L7YK1FPHZ1'
+  },
   image: {
     // dir: 'assets/images'
   },
