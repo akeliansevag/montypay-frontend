@@ -5,7 +5,7 @@
         <NavItem :header="true" :footer="true" :layout="layout" to="/global-coverage" label="Global Coverage" />
         <NavItem :header="true" :footer="true" :layout="layout" label="Developers" :children="developerSections" />
         <NavItem :header="true" :footer="true" :layout="layout" to="/contact-us" label="Contact" />
-        <!-- <NavItem :header="true" :footer="true" :layout="layout" to="/faq" label="FAQ" /> -->
+        <NavItem :header="true" :footer="true" :layout="layout" to="/faq" label="FAQ" />
         <NavItem v-if="layout=='footer'" :header="false" :footer="true" :layout="layout" label="Legal" :children="legalSections" />
     </ul>
 </template>
