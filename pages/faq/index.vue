@@ -12,10 +12,10 @@
                 <div class="flex flex-col gap-14">
                     <div v-for="(faq, index) in faqs" :key="faq.title">
                         <div>
-                            <ContentBlock class="mb-5" :title="faq.title" />
-                            <div class="mb-5" v-for="(item, i) in faq.items" :key="item.id">
+                            <h2 class="mb-4 text-3xl">{{ faq.title }}</h2>
+                            <div class="mb-4" v-for="(item, i) in faq.items" :key="item.id">
                                 <div class="rounded bg-[#F9FAFB] p-5 lg:p-10">
-                                    <div class="cursor-pointer flex items-center gap-4 justify-between font-bold text-2xl"
+                                    <div class="cursor-pointer flex items-center gap-4 justify-between font-bold text-xl"
                                         @click="toggle(item.id)">
                                         <h5>{{ item.question }}</h5>
                                         <span
