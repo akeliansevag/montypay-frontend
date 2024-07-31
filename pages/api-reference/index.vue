@@ -45,8 +45,8 @@ const apis = [
     {
         title: "API Integration (POST)",
         paragraph: "This document describes integration procedures and POST protocol usage for e-commerce merchants. POST protocol implements acquiring payments (purchases) using specific API interactions.",
-        buttonLink: "/api_post_2_8.eng_.pdf",
-        buttonText: "Download PDF",
+        buttonLink: "https://docs.montypay.com/s2s_card",
+        buttonText: "Link",
     },
     {
         title: "Generating a Certificate Signing Request",
@@ -57,8 +57,8 @@ const apis = [
     {
         title: "Integration API CREDIT_VA",
         paragraph: "This document describes integration procedures and CREDIT2VIRTUAL protocol usage for e-commerce merchants. CREDIT2VIRTUAL protocol implements money transfer transactions to the customer's account, using specific API interactions.",
-        buttonLink: "/MontyPay_API_Credit_VA_Protocol_v1_1.pdf",
-        buttonText: "Download PDF",
+        buttonLink: "https://docs.montypay.com/s2s_apm#credit2virtual-request",
+        buttonText: "Link",
     },
     {
         title: "Checkout API",
@@ -69,7 +69,7 @@ const apis = [
     {
         title: "PostMan Request Sending",
         paragraph: "These step-by-step instructions describe how to send authentication requests using Postman. Result if such request is response, which contains “redirect URL”. “redirect URL” is the link used to send user to payment page (Checkout page).",
-        buttonLink: "/Postman-Request-Sending.pdf",
+        buttonLink: "/MontyPay_API_Credit_VA_Protocol_v1_1new.pdf",
         buttonText: "Download PDF",
     },
 ];
