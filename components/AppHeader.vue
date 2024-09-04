@@ -1,4 +1,3 @@
-
 <template lang="">
     <header :class="$route.path === '/' ? 'fixed' : 'sticky'" class="top-0 left-0 w-full z-30 transition-all duration-300 ease-in-out">
         <div class="w-full z-[3] border-b border-[#e9edf422]" :class="navVisible ? 'fixed' : ''">
@@ -36,26 +35,26 @@
 </template>
 
 <script setup>
-    const navVisible = ref(false);
+const navVisible = ref(false);
 
-    const toggleNav = () => {
-        navVisible.value = !navVisible.value;
-    };
+const toggleNav = () => {
+    navVisible.value = !navVisible.value;
+};
 
-    const closeNav = () => {
-        navVisible.value = false
-    };
+const closeNav = () => {
+    navVisible.value = false
+};
 
-    onMounted(() => {
-        document.body.addEventListener("click", (e) => {
-            if (e.target.classList.contains('nav-link')) {
-                closeNav()
-            }
-        });
-        if (window.innerWidth > 1023) {
-            stickyNav();
+onMounted(() => {
+    document.body.addEventListener("click", (e) => {
+        if (e.target.classList.contains('nav-link')) {
+            closeNav()
         }
     });
+    if (window.innerWidth > 1023) {
+        stickyNav();
+    }
+});
 
 </script>
 

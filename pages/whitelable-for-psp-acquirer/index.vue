@@ -77,7 +77,7 @@
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">1</div>
                                 <div class="flex flex-col gap-20">
-                                    Payment<br />Getaway
+                                    Payment<br />Gateway
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
