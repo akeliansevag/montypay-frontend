@@ -64,7 +64,7 @@ const developerSections = [
             {
                 pages: [
                     { to: '/documentation', label: 'Documentation' },
-                    { to: '/api-reference', label: 'Api Reference' },
+                    { to: '/api-reference', label: 'API Reference' },
                 ],
             },
         ],
