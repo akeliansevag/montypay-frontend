@@ -64,8 +64,6 @@
         lazy: true
     });
 
-    
-
     useServerSeoMeta({
         title: () => he.decode(post.value[0].title.rendered),
         ogTitle: () => he.decode(post.value[0].title.rendered),
