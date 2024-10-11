@@ -1,6 +1,6 @@
 <template>
   <li
-    class="flex D flex-col gap-5 h-full" 
+    class="flex flex-col gap-5 h-full" 
     :class="{
       'lg:flex-row lg:hover:text-[#09bebd] group/item': layout === 'header',
       'text-primary': $route.path === '/',
