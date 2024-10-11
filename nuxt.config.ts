@@ -1,8 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  routeRules: {
-    'https://montypay.com/wp-content/uploads/2024/02/Merchant-Services-Agreement.pdf': { redirect: 'https://montypay.com/Data-Processing-Agreement.pdf' },
-  },
   devtools: { enabled: true },
   css: [
     '~/assets/sass/global.sass',
