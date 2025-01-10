@@ -375,10 +375,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Homepage',
-        ogTitle: 'Homepage',
-        description: 'Homepage description',
-        ogDescription: 'Homepage description',
+        title: 'All in One Payments Platform',
+        ogTitle: 'All in One Payments Platform',
+        description: 'Discover the future of payments with MontyPay, a secure and user-friendly platform designed to provide valuable insights for optimal performance.',
+        ogDescription: 'Discover the future of payments with MontyPay, a secure and user-friendly platform designed to provide valuable insights for optimal performance.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

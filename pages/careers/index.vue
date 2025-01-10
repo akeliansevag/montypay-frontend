@@ -98,10 +98,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Careers',
-        ogTitle: 'Careers',
-        description: 'Careers description',
-        ogDescription: 'Careers description',
+        title: 'Careers - Submit your CV',
+        ogTitle: 'Careers - Submit your CV',
+        description: 'Explore career opportunities at MontyPay and join our dynamic and multicultural team that is here to support you every step of the way. Send your CV today!',
+        ogDescription: 'Explore career opportunities at MontyPay and join our dynamic and multicultural team that is here to support you every step of the way. Send your CV today!',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

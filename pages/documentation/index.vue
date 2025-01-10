@@ -51,10 +51,10 @@
 </template>
 <script setup>
 useSeoMeta({
-    title: 'Documentation',
-    ogTitle: 'Documentation',
-    description: 'Documentation',
-    ogDescription: 'Documentation',
+    title: 'Mobile SDK for Easy Integration',
+    ogTitle: 'Mobile SDK for Easy Integration',
+    description: 'Simplify payment integration with MontyPay\'s mobile SDK. Access detailed documentation to enhance your app\'s payment experience today!',
+    ogDescription: 'Simplify payment integration with MontyPay\'s mobile SDK. Access detailed documentation to enhance your app\'s payment experience today!',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

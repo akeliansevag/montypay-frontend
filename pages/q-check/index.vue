@@ -111,10 +111,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Online Payments Services',
-        ogTitle: 'Online Payments Services',
-        description: 'Online Payments Services description',
-        ogDescription: 'Online Payments Services description',
+        title: 'QR Code Scanner Benefits',
+        ogTitle: 'QR Code Scanner Benefits',
+        description: 'Discover the main benefits of QR code scanner with MontyPay, the dining revolution and hospitality industry\'s game changing self-service checkout solution.',
+        ogDescription: 'Discover the main benefits of QR code scanner with MontyPay, the dining revolution and hospitality industry\'s game changing self-service checkout solution.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

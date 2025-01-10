@@ -327,10 +327,10 @@
     const emit = defineEmits();
 
     useSeoMeta({ 
-        title: 'Online Payments Services',
-        ogTitle: 'Online Payments Services',
-        description: 'Online Payments Services description',
-        ogDescription: 'Online Payments Services description',
+        title: 'Contact Us if you have any questions',
+        ogTitle: 'Contact Us if you have any questions',
+        description: 'Contact us in case you have any questions about Monty Pay and its services, Fill out the form and we will make sure to get back to you as soon as possible.',
+        ogDescription: 'Contact us in case you have any questions about Monty Pay and its services, Fill out the form and we will make sure to get back to you as soon as possible.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

@@ -615,10 +615,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'About Us',
-        ogTitle: 'About Us',
-        description: 'About Us description',
-        ogDescription: 'About Us description',
+        title: 'Expand your Business with Orchestration Network',
+        ogTitle: 'Expand your Business with Orchestration Network',
+        description: 'Scale and expand your business with MontyPay\'s payment orchestration network, offering seamless global solutions. Explore new growth opportunities now!',
+        ogDescription: 'Scale and expand your business with MontyPay\'s payment orchestration network, offering seamless global solutions. Explore new growth opportunities now!',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

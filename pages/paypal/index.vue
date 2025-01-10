@@ -19,6 +19,15 @@
 <script setup>
 import { useAuth } from '~/composables/useAuth'
 
+useSeoMeta({
+    title: 'Seamless Checkout with PayPal',
+    ogTitle: 'Seamless Checkout with PayPal',
+    description: 'Connect to Paypal and enjoy seamless checkouts with MontyPay that is committed to help maximize your revenue and provide top-notch payment experiences.',
+    ogDescription: 'Connect to Paypal and enjoy seamless checkouts with MontyPay that is committed to help maximize your revenue and provide top-notch payment experiences.',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
+
 const response = ref(null);
 
 const submitRequest = async () => {

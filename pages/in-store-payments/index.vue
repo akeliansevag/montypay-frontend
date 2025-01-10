@@ -133,10 +133,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Online Payments Services',
-        ogTitle: 'Online Payments Services',
-        description: 'Online Payments Services description',
-        ogDescription: 'Online Payments Services description',
+        title: 'In-Store Payment Solutions',
+        ogTitle: 'In-Store Payment Solutions',
+        description: 'Offer a smooth checkout experience with MontyPay’s in-store payment solutions. Empower your business with efficient, secure transactions today!',
+        ogDescription: 'Offer a smooth checkout experience with MontyPay’s in-store payment solutions. Empower your business with efficient, secure transactions today!',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

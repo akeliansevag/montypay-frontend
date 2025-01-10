@@ -1368,10 +1368,10 @@
 import { useAuth } from '~/composables/useAuth'
 
 useSeoMeta({
-    title: 'Online Payments Services',
-    ogTitle: 'Online Payments Services',
-    description: 'Online Payments Services description',
-    ogDescription: 'Online Payments Services description',
+    title: 'Expand your Business',
+    ogTitle: 'Expand your Business',
+    description: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
+    ogDescription: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

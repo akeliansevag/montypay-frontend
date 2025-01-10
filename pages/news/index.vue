@@ -9,10 +9,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'News',
-    ogTitle: 'News',
-    description: 'News description',
-    ogDescription: 'News description',
+    title: 'Latest news and partnerships',
+    ogTitle: 'Latest news and partnerships',
+    description: 'Discover MontyPay\'s latest news and partnerships that is playing a huge role in delivering innovative payment solutions and customer satisfaction.',
+    ogDescription: 'Discover MontyPay\'s latest news and partnerships that is playing a huge role in delivering innovative payment solutions and customer satisfaction.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

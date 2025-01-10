@@ -203,10 +203,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Online Payments Services',
-        ogTitle: 'Online Payments Services',
-        description: 'Online Payments Services description',
-        ogDescription: 'Online Payments Services description',
+        title: 'eCommerce Payment Services',
+        ogTitle: 'eCommerce Payment Services',
+        description: 'Explore MontyPay\'s eCommerce services designed to offer a seamless and holistic approach to secure payment processing and empower businesses of all sizes.',
+        ogDescription: 'Explore MontyPay\'s eCommerce services designed to offer a seamless and holistic approach to secure payment processing and empower businesses of all sizes.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

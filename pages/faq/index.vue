@@ -44,10 +44,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'FAQ',
-        ogTitle: 'FAQ',
-        description: 'FAQ',
-        ogDescription: 'FAQ',
+        title: 'Frequently Asked Questions',
+        ogTitle: 'Frequently Asked Questions',
+        description: 'Discover all the frequently asked questions asked about people about Monty Pay regarding different topics. Visit our website to learn more. ',
+        ogDescription: 'Discover all the frequently asked questions asked about people about Monty Pay regarding different topics. Visit our website to learn more. ',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     });
