@@ -30,7 +30,7 @@
                         { icon: 'instagram', link: 'https://www.instagram.com/monty_pay' },
                         { icon: 'linkedin-in', link: 'https://www.linkedin.com/company/montypay' }
                     ]" />
-                    <CtaBoxes structured="true" link="tel:+447496312110" subtitle="" title="+ 44 749 631 21 10" icon="logos:whatsapp-icon" class="py-2 px-4 mx-auto lg:mx-0 rounded-full" />
+                    <CtaBoxes structured="true" link="https://wa.me/message/SITW3RZUGX65H1" subtitle="" title="+ 44 749 631 21 10" icon="logos:whatsapp-icon" class="py-2 px-4 mx-auto lg:mx-0 rounded-full" />
                 </div>
                 
             </div>
