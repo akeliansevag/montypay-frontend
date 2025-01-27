@@ -123,6 +123,11 @@ const ecommercePlugins = [
         buttonLink: false,
         buttonText: "Download",
     },
+    {
+        icon: "/images/high-level.png",
+        buttonLink: "https://marketplace.gohighlevel.com/integration/66e93c73340adb16801e16f4",
+        buttonText: "Connect",
+    },
 ];
 </script>
 <style lang="sass">
