@@ -71,7 +71,7 @@
         {
             icon: 'id',
             location: 'Jakarta, Indonesia',
-            address: 'Menara Prima, Bloc 6, <br /> 24th floor, Lingkar Mega Kuningan',
+            address: '9th Floor Noble House Building, <br /> Lingkar Mega Kuningan, Kuningan, <br /> Kuningan Timur, Setiabudi, <br /> Jakarta Selatan, Jakarta 12950',
             top: '62',
             left: '77',
         },
