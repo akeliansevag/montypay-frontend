@@ -120,8 +120,8 @@ const ecommercePlugins = [
     },
     {
         icon: "/images/ecwid.svg",
-        buttonLink: false,
-        buttonText: "Download",
+        buttonLink: "https://www.ecwid.com/apps/featured/montypay-payment-gateway",
+        buttonText: "Connect",
     },
     {
         icon: "/images/high-level.png",
