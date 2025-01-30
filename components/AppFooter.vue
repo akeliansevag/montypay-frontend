@@ -38,12 +38,13 @@
 
             <hr class="border-[#e9edf422] mt-10" />
 
-            <p class="text-center mt-10">© MontyPay 2024</p>
+            <p class="text-center mt-10">© MontyPay {{ date.getFullYear() }}</p>
         </div>
     </footer>
 </template>
 
 <script setup>
+    const date = new Date();
     const props = defineProps(['pageName'])
 </script>
 
