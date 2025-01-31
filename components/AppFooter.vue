@@ -38,7 +38,7 @@
 
             <hr class="border-[#e9edf422] mt-10" />
 
-            <p class="text-center mt-10">© MontyPay 2025</p>
+            <p class="text-center mt-10">© MontyPay {{ new Date().getFullYear() }}</p>
         </div>
     </footer>
 </template>
