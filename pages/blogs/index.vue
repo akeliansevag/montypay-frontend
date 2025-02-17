@@ -9,10 +9,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Blogs',
-    ogTitle: 'Blogs',
-    description: 'Blogs description',
-    ogDescription: 'Blogs description',
+    title: 'Blogs - Latest News & Trends | MontyPay',
+    ogTitle: 'Blogs - Latest News & Trends | MontyPay',
+    description: 'Stay ahead in fintech with MontyPay! Explore expert insights, industry trends, and the latest updates on digital payments, security, and financial innovation.',
+    ogDescription: 'Stay ahead in fintech with MontyPay! Explore expert insights, industry trends, and the latest updates on digital payments, security, and financial innovation.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })
