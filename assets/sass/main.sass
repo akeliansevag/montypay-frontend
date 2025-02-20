@@ -1,9 +1,9 @@
 
 .post-content
     p,h4,h3,h2
-        margin:15px 0
+        margin: 15px 0
     h4
-        font-size:30px
+        font-size: 30px
     ol
         list-style-type: decimal
         margin-top: 15px
@@ -14,20 +14,34 @@
             margin-left: 30px
     ul
         list-style-type: circle
-        margin-left:30px
-
+        margin-left: 30px
 
 .api-item
-        @apply sm:min-h-[270px] flex flex-col items-center bg-white px-8 py-8 border border-[#d9d9d9] rounded-lg
+    @apply sm:min-h-[270px] flex flex-col items-center bg-white px-8 py-8 border border-[#d9d9d9] rounded-lg
 
-        &-icon
-            @apply sm:h-1/2 mb-10 sm:mb-0 flex items-center
+    &-icon
+        @apply sm:h-1/2 mb-10 sm:mb-0 flex items-center
 
         &-link-wrapper
             @apply sm:h-1/2 flex items-end
 
             .api-item-link
                 @apply min-w-[172px] inline-block text-center text-base text-black py-2 px-5 border border-black rounded-lg
-                
+
                 &:hover
                     @apply bg-black text-white border-white
+
+.custom-list
+    li
+        margin-bottom: 3px
+        &::before
+            content: ""
+            display: inline-block
+            width: 24px
+            height: 24px
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z' stroke='%2300DFDF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+            background-size: contain
+            background-repeat: no-repeat
+            margin-right: 8px
+            vertical-align: middle
+            margin-top: -3px
