@@ -227,25 +227,7 @@ into your business and start accepting payments effortlessly!"
             </div>
         </div>
     </Section>
-    <Section>
-        <div class="container">
-            <div class="flex flex-col gap-10">
-                <h2 class="text-center">Our Payment Solutions</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1100px] mx-auto">
-                    <div v-for="item in paymentSolutions" :key="item.title" class="border border-[#D9D9D9/50] rounded-lg p-3 pb-7 shadow-md">
-                        <div class="bg-[#f6f6f6] h-[300px] p-8">
-                            <img :src="item.img" alt="Payment Solution" class="h-full w-full object-contain">
-                        </div>
-                        <div class="mt-3">
-                            <h3 class="text-lg font-bold">{{ item.title }}</h3>
-                            <p class="text-sm">{{ item.description }}</p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </Section>
+    <PaymentSolutions />
 </template>
 
 <script setup>
@@ -263,29 +245,7 @@ into your business and start accepting payments effortlessly!"
         twitterCard: 'summary_large_image',
     })
 
-    const paymentSolutions = [
-        {
-            img: '/images/soft-pos/qcheck.webp',
-            title: 'Online Payments',
-            description: 'Payment Gateway',
-        },
-        {
-            img: '/images/soft-pos/sol-2.webp',
-            title: 'In-Store Payments',
-            description: 'Smart POS',
-        },
-        {
-            img: '/images/soft-pos/sol-3.webp',
-            title: 'In-Store Payments',
-            description: 'Soft POS',
-        },
-        {
-            img: '/images/soft-pos/sol-4.webp',
-            title: 'Qcheck',
-            description: 'Pay at table',
-        },
-    ]
-
+    
     const whySoftPos = [
         {
             icon: '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21H4.6C4.03995 21 3.75992 21 3.54601 20.891C3.35785 20.7951 3.20487 20.6422 3.10899 20.454C3 20.2401 3 19.9601 3 19.4V3M21 7L15.5657 12.4343C15.3677 12.6323 15.2687 12.7313 15.1545 12.7684C15.0541 12.8011 14.9459 12.8011 14.8455 12.7684C14.7313 12.7313 14.6323 12.6323 14.4343 12.4343L12.5657 10.5657C12.3677 10.3677 12.2687 10.2687 12.1545 10.2316C12.0541 10.1989 11.9459 10.1989 11.8455 10.2316C11.7313 10.2687 11.6323 10.3677 11.4343 10.5657L7 15M21 7H17M21 7V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
