@@ -12,7 +12,7 @@
                 </div>
                 
                 <div class="lg:w-1/3">
-                    <img src="/images/smart-pos/smart-pos-1.webp" alt="Smart POS" class="lg:-mt-8 w-full">
+                    <img src="/images/smart-pos/smart-pos-1.webp" alt="MontyPay Smart POS - Image 4 | Card" class="lg:-mt-8 w-full">
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="flex justify-between items-center max-lg:flex-col max-lg:gap-14 lg:gap-20">
                 <div class="lg:w-1/3">
-                    <img class="max-lg:max-h-[500px] max-h-[800px]" src="/images/smart-pos/smart-pos-2.webp" alt="Boost Business with MontyPay’s Smart POS">
+                    <img class="max-lg:max-h-[500px] max-h-[800px]" src="/images/smart-pos/smart-pos-2.webp" alt="MontyPay Smart POS">
                 </div>
                 <div class="lg:w-2/3 flex flex-col gap-6">
                     <h2 class="text-white">Boost Business with MontyPay’s Smart POS</h2>
@@ -69,7 +69,7 @@
                     
                 </div>
                 <div class="lg:w-1/2">
-                    <img src="/images/smart-pos/retail.webp" alt="Unified Solution for Offline & Online Sales" class="w-full max-w-[500px] lg:justify-self-end">
+                    <img src="/images/smart-pos/retail.webp" alt="Retail Store" class="w-full max-w-[500px] lg:justify-self-end">
                 </div>
             </div>
         </div>
@@ -79,9 +79,9 @@
         <div class="container">
             <div class="flex max-lg:flex-col-reverse gap-10">
                 <div class="lg:w-1/2">
-                    <img v-if="activeFilter === 'F20'" src="/images/smart-pos/F20.webp" alt="" class="max-h-[550px] mx-auto">
-                    <img v-if="activeFilter === 'F210'" src="/images/smart-pos/F210.webp" alt="" class="max-h-[550px] mx-auto">
-                    <img v-if="activeFilter === 'F300'" src="/images/smart-pos/F300.webp" alt="" class="max-h-[550px] mx-auto">
+                    <img v-if="activeFilter === 'F20'" src="/images/smart-pos/F20.webp" alt="MontyPay Smart POS - Image F20" class="max-h-[550px] mx-auto">
+                    <img v-if="activeFilter === 'F210'" src="/images/smart-pos/F210.webp" alt="MontyPay Smart POS - Image F210" class="max-h-[550px] mx-auto">
+                    <img v-if="activeFilter === 'F300'" src="/images/smart-pos/F300.webp" alt="MontyPay Smart POS - Image F300" class="max-h-[550px] mx-auto">
                 </div>
                 <div class="lg:w-1/2">
                     <div class="mb-5 flex gap-5">
@@ -170,7 +170,7 @@
                     
                 </div>
                 <div class="lg:w-1/2">
-                    <img src="/images/smart-pos/unified-solution.webp" alt="Unified Solution for Offline & Online Sales" class="w-full lg:justify-self-end">
+                    <img src="/images/smart-pos/unified-solution.webp" alt="MontyPay Dashboard real-time sales performance" class="w-full lg:justify-self-end">
                 </div>
             </div>
         </div>
@@ -205,10 +205,10 @@
         activeFilter.value = filter;
     }
     useSeoMeta({
-        title: 'Soft POS: Simple & Quick In-Person Payments | MontyPay',
-        ogTitle: 'Soft POS: Simple & Quick In-Person Payments | MontyPay',
-        description: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
-        ogDescription: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
+        title: 'Smart POS Solutions for In-store Payments | MontyPay',
+        ogTitle: 'Smart POS Solutions for In-store Payments | MontyPay',
+        description: 'Discover MontyPay\'s Smart POS solutions designed to unify in-store transactions and online sales, boosting your business performance all from a single, reliable system.',
+        ogDescription: 'Discover MontyPay\'s Smart POS solutions designed to unify in-store transactions and online sales, boosting your business performance all from a single, reliable system.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

@@ -13,7 +13,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                 </div>
                 
                 <div class="lg:w-1/3">
-                    <img src="/images/soft-pos/soft-pos-1.webp" alt="Soft POS" class="lg:-mt-8 w-full">
+                    <img src="/images/soft-pos/soft-pos-1.webp" alt="MontyPay Soft POS - Image 1" class="lg:-mt-8 w-full">
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@ in-person payments from digital wallets or physical cards, and making transactio
 
     <section class="bg-quaternary lg:flex">
         <div class="lg:w-1/2 relative max-lg:h-[300px]">
-            <img src="/images/soft-pos/use-cases.webp" alt="Use Cases" class="absolute top-0 left-0 w-full h-full object-cover">
+            <img src="/images/soft-pos/use-cases.webp" alt="In-Person Payment" class="absolute top-0 left-0 w-full h-full object-cover">
         </div>
         <div class="lg:w-1/2 max-lg:px-5 max-lg:py-20 lg:px-32 lg:py-32">
             <SmallContent 
@@ -164,12 +164,12 @@ in-person payments from digital wallets or physical cards, and making transactio
                         />
                     </div>
                     <div class="lg:w-1/2">
-                        <img src="/images/soft-pos/platforms.webp" alt="Platforms" class="w-full">
+                        <img src="/images/soft-pos/platforms.webp" alt="MontyPay Soft POS Payment Successful" class="w-full">
                     </div>
                 </div>
                 <div class="flex max-lg:flex-col-reverse gap-10 lg:justify-between lg:items-center">
                     <div class="lg:w-1/2">
-                        <img src="/images/soft-pos/retailers.webp" alt="Retailers" class="w-full">
+                        <img src="/images/soft-pos/retailers.webp" alt="Customer Check out | MasterCard | Card Payment" class="w-full">
                     </div>
                     <div class="lg:w-1/2">
                         <SmallContent 
@@ -202,7 +202,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                         
                     </div>
                     <div class="lg:w-1/2">
-                        <img src="/images/soft-pos/unified-solution.webp" alt="Unified Solution for Offline & Online Sales" class="w-full max-w-[500px] lg:justify-self-end">
+                        <img src="/images/soft-pos/unified-solution.webp" alt="SoftPOS solution for online and offline sales" class="w-full max-w-[500px] lg:justify-self-end">
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@ into your business and start accepting payments effortlessly!"
                     <ArrowButton :transparent="true" text="Contact Sales" link="/contact-us" />
                 </div>
                 <div class="lg:w-1/2">
-                    <img src="/images/soft-pos/streamline.webp" alt="">
+                    <img src="/images/soft-pos/streamline.webp" alt="MontyPay Soft POS - Image 2 | MontyPay Dashboard real-time sales performance">
                 </div>
             </div>
         </div>
