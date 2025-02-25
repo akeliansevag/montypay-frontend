@@ -30,7 +30,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                 </div>
                 <div class="lg:w-2/3 flex flex-col gap-6">
                     <h2 class="text-white">Why SoftPOS?</h2>
-                    <div v-for="item in whySoftPos" :key="item.title" class="flex gap-5 backdrop-blur-[10px] bg-white/5 p-5 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all">
+                    <div v-for="item in whySoftPos" :key="item.title" class="flex gap-5 backdrop-blur-[10px] bg-white/5 p-4 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all">
                         <div>
                             <div v-html="item.icon"></div>
                         </div>
@@ -193,13 +193,13 @@ in-person payments from digital wallets or physical cards, and making transactio
                             paragraph="Get the power of our Soft POS together with our payment gateway for an all-in-one solution that streamlines your business."
                         />
                         <div class="flex flex-col gap-5 mt-10">
-                            <div v-for="item in solutions" :key="item.title" class="flex gap-5 bg-white p-6 rounded-lg border border-[#D9D9D9/80] shadow-md">
+                            <div v-for="item in solutions" :key="item.title" class="flex gap-5 bg-white p-4 rounded-lg border border-[#D9D9D9/80] shadow-md">
                                 <div>
                                     <div v-html="item.icon"></div>
                                 </div>
                                 <div>
                                     <h3 class="text-xl mb-2 font-bold">{{ item.title }}</h3>
-                                    <p class="text-lg">{{ item.description }}</p>
+                                    <p>{{ item.description }}</p>
                                 </div>
                             </div>
                         </div>

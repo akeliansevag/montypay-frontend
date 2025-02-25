@@ -33,7 +33,7 @@ in-store transactions and online sales, creating a complete view of your busines
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div v-for="(item, index) in whySmartPos" :key="item.title" 
                             :class="[
-                                'flex gap-5 backdrop-blur-[10px] bg-white/5 p-5 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all',
+                                'flex gap-5 backdrop-blur-[10px] bg-white/5 p-4 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all',
                                 index === whySmartPos.length - 1 ? 'lg:col-span-2' : ''
                             ]"
                         >
@@ -52,15 +52,19 @@ in-store transactions and online sales, creating a complete view of your busines
         </div>
     </Section>
     <Section class="relative">
-        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 right-0 -z-10" src="/images/smart-pos/bg.svg" alt="" />
+        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 right-0 -z-10 opacity-30" src="/images/smart-pos/bg.svg" alt="" />
         <div class="container">
-            <div class="flex max-lg:flex-col gap-10 lg:justify-between lg:items-center">
-                <div class="lg:w-1/2">
+            <div class="lg:1/2">
                     <SmallContent 
                         title="Built for Diverse Industries"
-                        paragraph="MontyPay’s Smart POS solutions are crafted to meet the unique demands of various sectors:"
+                        paragraph="Our Smart POS system is tailored to support high-traffic, customer-centric environments across industries.<br /> MontyPay’s Smart POS solutions are crafted to meet the unique demands of various sectors:"
                     />
-                    <div class="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
+            </div>
+            
+            <div class="flex max-lg:flex-col gap-10 lg:justify-between lg:items-start mt-10">
+                <div class="lg:w-1/2">
+                    
+                    <div class="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5">
                         <div @mouseenter="handleIndustryHover(key)" v-for="(item,key) in industries" :key="item.title" class="flex flex-col gap-3 bg-white p-4 rounded-lg border border-[#D9D9D9/80] shadow-md">
                             <div>
                                 <div v-html="item.icon"></div>
@@ -70,7 +74,7 @@ in-store transactions and online sales, creating a complete view of your busines
                             </div>
                         </div>
                     </div>
-                    <p class="mt-5">Our Smart POS system is tailored to support high-traffic, customer-centric environments across industries. </p>
+                    
                     
                 </div>
                 <div class="lg:w-1/2 flex justify-end">
@@ -84,7 +88,7 @@ in-store transactions and online sales, creating a complete view of your busines
         </div>
     </Section>
     <section class="max-lg:pb-10 lg:pb-24 relative">
-        <img src="/images/smart-pos/bg2.svg" alt="" class="absolute max-lg:hidden lg:-top-1/3 left-0 -z-10">   
+        <img src="/images/smart-pos/bg2.svg" alt="" class="absolute max-lg:hidden lg:-top-1/3 left-0 -z-10 opacity-30">   
         <div class="container">
             <div class="flex max-lg:flex-col-reverse gap-10">
                 <div class="lg:w-1/2">
@@ -156,7 +160,7 @@ in-store transactions and online sales, creating a complete view of your busines
     </section>
 
     <Section class="relative">
-        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 right-0 -z-10" src="/images/smart-pos/bg.svg" alt="" />
+        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 right-0 -z-10 opacity-40" src="/images/smart-pos/bg.svg" alt="" />
         <div class="container">
             <div class="flex max-lg:flex-col gap-10 lg:justify-between lg:items-center">
                 <div class="lg:w-1/2">
@@ -165,7 +169,7 @@ in-store transactions and online sales, creating a complete view of your busines
                         paragraph="Get the power of our Smart POS together with our payment gateway for an all-in-one solution that streamlines your business. "
                     />
                     <div class="flex flex-col gap-5 mt-10">
-                        <div v-for="item in paymentSolutions" :key="item.title" class="flex gap-3 bg-white p-6 rounded-lg border border-[#D9D9D9/80] shadow-md">
+                        <div v-for="item in paymentSolutions" :key="item.title" class="flex gap-3 bg-white p-4 rounded-lg border border-[#D9D9D9/80] shadow-md">
                             <div>
                                 <div v-html="item.icon"></div>
                             </div>
