@@ -1,7 +1,7 @@
 <template>
-    <Section>
+    <section class="py-10">
         <div class="container">
-            <div class="flex max-lg:flex-col gap-10 justify-between">
+            <div class="flex max-lg:flex-col gap-10 justify-between items-center">
                 <div class="lg:w-2/5 flex flex-col gap-5">
                     <h1>
                         Accept In-Person Payments With an iPhone or Android Device
@@ -10,32 +10,32 @@
                         With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless 
 in-person payments from digital wallets or physical cards, and making transactions quick and easy.  "
                     </p>
-                    <div>
+                    <div class="mt-3">
                         <ArrowButton text="Contact Sales" link="/contact-us" />
                     </div>
                   
                 </div>
                 
                 <div class="lg:w-2/5">
-                    <img src="/images/soft-pos/soft-pos-1.webp" alt="MontyPay Soft POS - Image 1" class="lg:-mt-8 w-full">
+                    <img src="/images/soft-pos/soft-pos-1.webp" alt="MontyPay Soft POS - Image 1" class="w-full">
                 </div>
             </div>
         </div>
-    </Section>
+    </section>
     <Section class="overflow-hidden bg-[url('/images/footer-bg.png')] bg-cover bg-no-repeat">
         <div class="container">
             <div class="flex justify-between items-center max-lg:flex-col max-lg:gap-14 lg:gap-20">
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/3">
                     <img src="/images/soft-pos/soft-pos-2.webp" alt="Why SoftPOS?" class="w-full">
                 </div>
-                <div class="lg:w-1/2 flex flex-col gap-6">
+                <div class="lg:w-2/3 flex flex-col gap-6">
                     <h2 class="text-white">Why SoftPOS?</h2>
-                    <div v-for="item in whySoftPos" :key="item.title" class="flex gap-5 backdrop-blur-[10px] bg-white/5 p-6 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all">
+                    <div v-for="item in whySoftPos" :key="item.title" class="flex gap-5 backdrop-blur-[10px] bg-white/5 p-5 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all">
                         <div>
                             <div v-html="item.icon"></div>
                         </div>
                         <div>
-                            <h3 class="text-white text-2xl mb-2 font-bold">{{ item.title }}</h3>
+                            <h3 class="text-white text-xl mb-2 font-bold">{{ item.title }}</h3>
                             <p class="text-white">{{ item.description }}</p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                     <Filter @click="handleFilterClick('Android')" text="Android" :active="activeFilter === 'Android'" />
                 </div>
                 <div v-if="activeFilter === 'iPhone'"> 
-                    <div class="flex max-lg:flex-col gap-10">
+                    <div class="flex items-center max-lg:flex-col gap-10">
                         <div class="lg:w-1/2">
                             <h2 class="mb-3 text-2xl font-bold">Tap to Pay on iPhone is now available in:</h2>
                             <p>Securely accept payments on supported iPhones with built-in Apple security, ensuring no card data is stored on the device or servers.</p>
@@ -96,7 +96,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                     </div>
                 </div>
                 <div v-if="activeFilter === 'Android'">
-                    <div class="flex max-lg:flex-col gap-10">
+                    <div class="flex items-center max-lg:flex-col gap-10">
                         <div class="lg:w-1/2">
                             <h2 class="mb-3 text-2xl font-bold">Tap to Pay on Android is now available in:</h2>
                             <p>Leverage NFC-enabled, Google-certified Android devices for broad accessibility across global markets.</p>
@@ -214,7 +214,7 @@ in-person payments from digital wallets or physical cards, and making transactio
     </Section>
     <Section class="bg-quaternary">
         <div class="container">
-            <div class="flex max-lg:flex-col gap-10">
+            <div class="flex items-center max-lg:flex-col gap-10">
                 <div class="lg:w-1/2 text-white flex flex-col gap-5">
                     <h1>Ready to streamline your payment process?</h1>
                     <p>
@@ -222,7 +222,7 @@ in-person payments from digital wallets or physical cards, and making transactio
 into your business and start accepting payments effortlessly!
                     </p>
                     <p class="text-white font-bold">Get started today!</p>
-                    <div>
+                    <div class="mt-3">
                         <ArrowButton :transparent="true" text="Contact Sales" link="/contact-us" />
                     </div>
                     

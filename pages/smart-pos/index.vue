@@ -1,7 +1,7 @@
 <template>
-    <Section>
+    <section class="py-10">
         <div class="container">
-            <div class="flex max-lg:flex-col gap-10 justify-between">
+            <div class="flex items-center max-lg:flex-col gap-10 justify-between">
                 <div class="lg:w-2/5 flex flex-col gap-5">
                     <h1>
                         Accept In-Store Payments with Our AI-Powered Smart POS
@@ -10,18 +10,18 @@
                         MontyPay’s Smart POS devices combine advanced technology with seamless functionality, making it easy to accept both card and wallet payments. Equipped with a real-time dashboard and robust reporting tools, our POS solutions unify 
 in-store transactions and online sales, creating a complete view of your business performance—all from a single, reliable system. 
                     </p>
-                    <div>
+                    <div class="mt-3">
                         <ArrowButton text="Contact Sales" link="/contact-us" />
                     </div>
                   
                 </div>
                 
                 <div class="lg:w-2/5">
-                    <img src="/images/smart-pos/smart-pos-1.webp" alt="MontyPay Smart POS - Image 4 | Card" class="lg:-mt-8 w-full">
+                    <img src="/images/smart-pos/smart-pos-1.webp" alt="MontyPay Smart POS - Image 4 | Card" class="mt-8 w-full">
                 </div>
             </div>
         </div>
-    </Section>
+    </section>
     <Section class="overflow-hidden bg-[url('/images/footer-bg.png')] bg-cover bg-no-repeat">
         <div class="container">
             <div class="flex justify-between items-center max-lg:flex-col max-lg:gap-14 lg:gap-20">
@@ -33,7 +33,7 @@ in-store transactions and online sales, creating a complete view of your busines
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div v-for="(item, index) in whySmartPos" :key="item.title" 
                             :class="[
-                                'flex gap-5 backdrop-blur-[10px] bg-white/5 p-6 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all',
+                                'flex gap-5 backdrop-blur-[10px] bg-white/5 p-5 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all',
                                 index === whySmartPos.length - 1 ? 'lg:col-span-2' : ''
                             ]"
                         >
@@ -41,7 +41,7 @@ in-store transactions and online sales, creating a complete view of your busines
                                 <div v-html="item.icon"></div>
                             </div>
                             <div>
-                                <h3 class="text-white text-2xl mb-2 font-bold">{{ item.title }}</h3>
+                                <h3 class="text-white text-xl mb-2 font-bold">{{ item.title }}</h3>
                                 <p class="text-white">{{ item.description }}</p>
                             </div>
                         </div>
@@ -61,12 +61,12 @@ in-store transactions and online sales, creating a complete view of your busines
                         paragraph="MontyPay’s Smart POS solutions are crafted to meet the unique demands of various sectors:"
                     />
                     <div class="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
-                        <div @mouseenter="handleIndustryHover(key)" v-for="(item,key) in industries" :key="item.title" class="flex flex-col gap-3 bg-white p-6 rounded-lg border border-[#D9D9D9/80] shadow-md">
+                        <div @mouseenter="handleIndustryHover(key)" v-for="(item,key) in industries" :key="item.title" class="flex flex-col gap-3 bg-white p-4 rounded-lg border border-[#D9D9D9/80] shadow-md">
                             <div>
                                 <div v-html="item.icon"></div>
                             </div>
                             <div>
-                                <h3 class="text-xl mb-2 font-bold">{{ item.title }}</h3>
+                                <h3 class="text-lg mb-2 font-bold">{{ item.title }}</h3>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ in-store transactions and online sales, creating a complete view of your busines
                     <div> 
                         <div class="flex max-lg:flex-col gap-10">
                             <div>
-                                <h2 class="mb-4 text-3xl font-bold">Device Specifications</h2>
+                                <h2 class="mb-4 mt-4 text-3xl font-bold">Device Specifications</h2>
                                 <div v-if="activeFilter === 'F20'">
                                     <p class="font-bold">Large - Flagship POS Device </p>
                                     <p class="mt-4">Our high-performance smart android POS device is crafted for businesses that demand speed, reliability, and omnichannel versatility. Powered by the robust Android 10 OS, it supports NFC, magstripe, IC cards, and QR codes, enabling seamless transactions with diverse payment methods across channels. </p>
@@ -170,7 +170,7 @@ in-store transactions and online sales, creating a complete view of your busines
                                 <div v-html="item.icon"></div>
                             </div>
                             <div>
-                                <h3 class="text-xl mb-2 font-bold">{{ item.title }}</h3>
+                                <h3 class="text-xl mb-3 font-bold">{{ item.title }}</h3>
                                 <p>{{ item.description }}</p>
                             </div>
                         </div>
@@ -187,14 +187,14 @@ in-store transactions and online sales, creating a complete view of your busines
 
     <Section class="bg-quaternary">
         <div class="container">
-            <div class="flex max-lg:flex-col gap-10">
+            <div class="flex max-lg:flex-col items-center  gap-10">
                 <div class="lg:w-1/2 text-white flex flex-col gap-5">
                     <h1>Sign up today to bring your business a full-service solution! </h1>
                     <p>
                         Accept payments both online and in-store and get powerful insights on a unified dashboard. 
                     </p>
                     <p class="text-white font-bold">Start selling smarter.</p>
-                    <div>
+                    <div class="mt-3">
                         <ArrowButton :transparent="true" text="Contact Sales" link="/contact-us" />
                     </div>
                 </div>
