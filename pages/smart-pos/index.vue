@@ -2,16 +2,21 @@
     <Section>
         <div class="container">
             <div class="flex max-lg:flex-col gap-10 justify-between">
-                <div class="lg:w-2/3">
-                  <ContentBlock 
-                    title="Accept In-Store Payments with Our AI-Powered Smart POS"
-                    paragraph="MontyPay’s Smart POS devices combine advanced technology with seamless functionality, making it easy to accept both card and wallet payments. Equipped with a real-time dashboard and robust reporting tools, our POS solutions unify in-store transactions and online sales, creating a complete view of your business performance—all from a single, reliable system. "
-                    :imgAttrs="{class:'w-full mx-auto'}" 
-                  />  
-                  <ArrowButton text="Contact Sales" link="/contact-us" />
+                <div class="lg:w-2/5 flex flex-col gap-5">
+                    <h1>
+                        Accept In-Store Payments with Our AI-Powered Smart POS
+                    </h1>
+                    <p>
+                        MontyPay’s Smart POS devices combine advanced technology with seamless functionality, making it easy to accept both card and wallet payments. Equipped with a real-time dashboard and robust reporting tools, our POS solutions unify 
+in-store transactions and online sales, creating a complete view of your business performance—all from a single, reliable system. 
+                    </p>
+                    <div>
+                        <ArrowButton text="Contact Sales" link="/contact-us" />
+                    </div>
+                  
                 </div>
                 
-                <div class="lg:w-1/3">
+                <div class="lg:w-2/5">
                     <img src="/images/smart-pos/smart-pos-1.webp" alt="MontyPay Smart POS - Image 4 | Card" class="lg:-mt-8 w-full">
                 </div>
             </div>
@@ -28,7 +33,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div v-for="(item, index) in whySmartPos" :key="item.title" 
                             :class="[
-                                'flex gap-5 backdrop-blur-[10px] bg-white/5 p-6 rounded-lg',
+                                'flex gap-5 backdrop-blur-[10px] bg-white/5 p-6 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all',
                                 index === whySmartPos.length - 1 ? 'lg:col-span-2' : ''
                             ]"
                         >
@@ -56,7 +61,7 @@
                         paragraph="MontyPay’s Smart POS solutions are crafted to meet the unique demands of various sectors:"
                     />
                     <div class="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
-                        <div v-for="item in industries" :key="item.title" class="flex flex-col gap-3 bg-white p-6 rounded-lg border border-[#D9D9D9/80] shadow-md">
+                        <div @mouseenter="handleIndustryHover(key)" v-for="(item,key) in industries" :key="item.title" class="flex flex-col gap-3 bg-white p-6 rounded-lg border border-[#D9D9D9/80] shadow-md">
                             <div>
                                 <div v-html="item.icon"></div>
                             </div>
@@ -68,8 +73,12 @@
                     <p class="mt-5">Our Smart POS system is tailored to support high-traffic, customer-centric environments across industries. </p>
                     
                 </div>
-                <div class="lg:w-1/2">
-                    <img src="/images/smart-pos/retail.webp" alt="Retail Store" class="w-full max-w-[500px] lg:justify-self-end">
+                <div class="lg:w-1/2 flex justify-end">
+                    <div class="aspect-square w-full rounded-xl relative max-w-[600px] overflow-hidden bg-black">
+                        <div class="h-full w-full absolute top-0 left-0" v-for="(item,key) in industries" :key="item.title">
+                            <img :src="item.img" :class="key === activeIndustry ? 'opacity-100' : 'opacity-0'" :alt="item.title" class="transition-opacity duration-300 w-full h-full object-cover absolute">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,14 +188,15 @@
     <Section class="bg-quaternary">
         <div class="container">
             <div class="flex max-lg:flex-col gap-10">
-                <div class="lg:w-1/2">
-                    <SmallContent 
-                        title="Sign up today to bring your business a full-service solution!  "
-                        paragraph="Accept payments both online and in-store and get powerful insights on a unified dashboard. "
-                        :dark="true"
-                    />
-                    <p class="text-white mt-10 font-bold">Start selling smarter.</p>
-                    <ArrowButton :transparent="true" text="Contact Sales" link="/contact-us" />
+                <div class="lg:w-1/2 text-white flex flex-col gap-5">
+                    <h1>Sign up today to bring your business a full-service solution! </h1>
+                    <p>
+                        Accept payments both online and in-store and get powerful insights on a unified dashboard. 
+                    </p>
+                    <p class="text-white font-bold">Start selling smarter.</p>
+                    <div>
+                        <ArrowButton :transparent="true" text="Contact Sales" link="/contact-us" />
+                    </div>
                 </div>
                 <div class="lg:w-1/2">
                     <img src="/images/smart-pos/sign-up.webp" alt="">
@@ -200,7 +210,10 @@
 
 <script setup>
     const activeFilter = ref('F20');
-   
+    const activeIndustry = ref(0);
+    const handleIndustryHover = (key) => {
+        activeIndustry.value = key;
+    }
     const handleFilterClick = (filter) => {
         activeFilter.value = filter;
     }
@@ -283,42 +296,52 @@
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M24.9996 17C24.9996 18.0609 24.5782 19.0783 23.828 19.8284C23.0779 20.5786 22.0605 21 20.9996 21C19.9387 21 18.9213 20.5786 18.1712 19.8284C17.421 19.0783 16.9996 18.0609 16.9996 17M12.6328 16.4014L11.9328 24.8014C11.7824 26.6059 11.7072 27.5082 12.0123 28.2042C12.2803 28.8157 12.7446 29.3204 13.3318 29.6382C14.0001 30 14.9054 30 16.7162 30H25.283C27.0937 30 27.9991 30 28.6674 29.6382C29.2546 29.3204 29.7189 28.8157 29.9869 28.2042C30.2919 27.5082 30.2167 26.6059 30.0664 24.8014L29.3664 16.4014C29.237 14.8488 29.1723 14.0724 28.8285 13.4849C28.5257 12.9674 28.0748 12.5526 27.5341 12.2938C26.92 12 26.141 12 24.583 12L17.4162 12C15.8582 12 15.0792 12 14.4651 12.2938C13.9243 12.5526 13.4735 12.9674 13.1707 13.4849C12.8269 14.0724 12.7622 14.8487 12.6328 16.4014Z" stroke="#2670E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             title: 'Retail & Supermarkets',
+            img: '/images/smart-pos/retail.webp'
         },
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.913 11.8717C30.913 11.3754 30.657 10.8993 30.1992 10.5484C29.7429 10.1965 29.1238 9.99963 28.4782 9.99963C25.3338 9.99963 17.7095 9.99963 14.5652 9.99963C13.9196 9.99963 13.3005 10.1965 12.8441 10.5484C12.3864 10.8993 12.1304 11.3754 12.1304 11.8717C12.1304 16.2021 12.1304 32.1973 12.1304 32.1973C12.1304 32.6402 12.5978 32.9996 13.1738 32.9996H29.8695C30.4455 32.9996 30.913 32.6402 30.913 32.1973V11.8717ZM28.826 11.8717V31.395H14.2173V11.8717C14.2173 11.8011 14.2535 11.7327 14.3189 11.6824C14.3843 11.6321 14.4733 11.6043 14.5652 11.6043H28.4782C28.57 11.6043 28.6591 11.6321 28.7245 11.6824C28.7898 11.7327 28.826 11.8011 28.826 11.8717Z" fill="#2670E9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9545 33H31.0455C31.5724 33 32 32.552 32 32C32 31.448 31.5724 31 31.0455 31H11.9545C11.4276 31 11 31.448 11 32C11 32.552 11.4276 33 11.9545 33Z" fill="#2670E9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.1933 19.5318C21.8227 19.1987 21.2231 19.1987 20.8525 19.5318C20.8525 19.5318 19.8015 20.4744 18.9616 21.6818C18.3457 22.5698 17.8638 23.5953 17.8638 24.5196C17.8638 26.3353 19.503 27.8088 21.5229 27.8088C23.5428 27.8088 25.182 26.3353 25.182 24.5196C25.182 23.5953 24.7001 22.5698 24.0842 21.6818C23.2443 20.4744 22.1933 19.5318 22.1933 19.5318ZM21.5229 21.4112C21.8151 21.7284 22.1616 22.1366 22.4753 22.5857C22.899 23.1962 23.2848 23.8841 23.2848 24.5196C23.2848 25.3939 22.4955 26.1034 21.5229 26.1034C20.5503 26.1034 19.761 25.3939 19.761 24.5196C19.761 23.8841 20.1468 23.1962 20.5705 22.5857C20.8842 22.1366 21.2307 21.7284 21.5229 21.4112Z" fill="#2670E9"/><path d="M19.4346 16.0007L23.6085 16.0007" stroke="#2670E9" stroke-width="2" stroke-linecap="round"/></svg>',
             title: 'Parking Lot & Gas Stations',
+            img: '/images/smart-pos/parking.webp'
         },
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M25.5991 30H12.4009C12.1793 30 12 30.2236 12 30.5C12 30.7764 12.1793 31 12.4009 31H25.5991C25.8207 31 26 30.7764 26 30.5C26 30.2236 25.8207 30 25.5991 30Z" fill="#2670E9" stroke="#2670E9"/><path d="M28.2143 14.449H27.5604C27.3576 12.2698 27.3576 12 24.6142 12L13.0012 12.0011C10.1809 12.0011 10.1809 12.2698 9.99951 15.0187V18.1447C9.99951 23.0275 13.9512 27 18.8078 27C22.2687 27 25.2681 24.982 26.7075 22.0562H28.2155C30.3012 22.0562 31.9995 20.3499 31.9995 18.252C31.9995 16.1552 30.3022 14.4478 28.2155 14.4478L28.2143 14.449ZM18.8077 25.88C14.5658 25.88 11.1135 22.4093 11.1135 18.1448V15.0188C11.1135 13.972 11.96 13.1211 13.0012 13.1211H24.6142C25.6554 13.1211 26.5018 13.9721 26.5018 15.0188V18.1448C26.5018 22.4093 23.0496 25.88 18.8077 25.88ZM28.2143 20.9362H27.1644C27.456 20.0579 27.6159 19.1194 27.6159 18.1449V15.569H28.2143C29.6863 15.569 30.8842 16.7733 30.8842 18.2531C30.8842 19.733 29.6863 20.9373 28.2143 20.9373V20.9362Z" fill="#2670E9" stroke="#2670E9"/></svg>',
             title: 'Cafes & Restaurants',
+            img: '/images/smart-pos/cafes.webp'
         },
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M17 23C17 23 18.5 25 21 25C23.5 25 25 23 25 23M26 18.24C25.605 18.725 25.065 19 24.5 19C23.935 19 23.41 18.725 23 18.24M19 18.24C18.605 18.725 18.065 19 17.5 19C16.935 19 16.41 18.725 16 18.24M31 21C31 26.5228 26.5228 31 21 31C15.4772 31 11 26.5228 11 21C11 15.4772 15.4772 11 21 11C26.5228 11 31 15.4772 31 21Z" stroke="#2670E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             title: 'Beauty & Wellness',
+            img: '/images/smart-pos/beauty.webp'
         }, 
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M16.5 16H19.25M16.5 20H19.25M16.5 24H19.25M22.75 16H25.5M22.75 20H25.5M22.75 24H25.5M29 30V15.2C29 14.0799 29 13.5198 28.782 13.092C28.5903 12.7157 28.2843 12.4097 27.908 12.218C27.4802 12 26.9201 12 25.8 12H16.2C15.0799 12 14.5198 12 14.092 12.218C13.7157 12.4097 13.4097 12.7157 13.218 13.092C13 13.5198 13 14.0799 13 15.2V30M31 30H11" stroke="#2670E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             title: 'Hotels',
+            img: '/images/smart-pos/hotels.webp'
         }, 
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M21 30L20.8999 29.8499C20.2053 28.808 19.858 28.287 19.3991 27.9098C18.9929 27.5759 18.5248 27.3254 18.0216 27.1726C17.4533 27 16.8271 27 15.5748 27H14.2C13.0799 27 12.5198 27 12.092 26.782C11.7157 26.5903 11.4097 26.2843 11.218 25.908C11 25.4802 11 24.9201 11 23.8V15.2C11 14.0799 11 13.5198 11.218 13.092C11.4097 12.7157 11.7157 12.4097 12.092 12.218C12.5198 12 13.0799 12 14.2 12H14.6C16.8402 12 17.9603 12 18.816 12.436C19.5686 12.8195 20.1805 13.4314 20.564 14.184C21 15.0397 21 16.1598 21 18.4M21 30V18.4M21 30L21.1001 29.8499C21.7947 28.808 22.142 28.287 22.6009 27.9098C23.0071 27.5759 23.4752 27.3254 23.9784 27.1726C24.5467 27 25.1729 27 26.4252 27H27.8C28.9201 27 29.4802 27 29.908 26.782C30.2843 26.5903 30.5903 26.2843 30.782 25.908C31 25.4802 31 24.9201 31 23.8V15.2C31 14.0799 31 13.5198 30.782 13.092C30.5903 12.7157 30.2843 12.4097 29.908 12.218C29.4802 12 28.9201 12 27.8 12H27.4C25.1598 12 24.0397 12 23.184 12.436C22.4314 12.8195 21.8195 13.4314 21.436 14.184C21 15.0397 21 16.1598 21 18.4" stroke="#2670E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             title: 'Education',
+            img: '/images/smart-pos/education.webp'
         },
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M24 13.6C24 13.0399 24 12.7599 23.891 12.546C23.7951 12.3578 23.6422 12.2049 23.454 12.109C23.2401 12 22.9601 12 22.4 12H19.6C19.0399 12 18.7599 12 18.546 12.109C18.3578 12.2049 18.2049 12.3578 18.109 12.546C18 12.7599 18 13.0399 18 13.6V16.4C18 16.9601 18 17.2401 17.891 17.454C17.7951 17.6422 17.6422 17.7951 17.454 17.891C17.2401 18 16.9601 18 16.4 18H13.6C13.0399 18 12.7599 18 12.546 18.109C12.3578 18.2049 12.2049 18.3578 12.109 18.546C12 18.7599 12 19.0399 12 19.6V22.4C12 22.9601 12 23.2401 12.109 23.454C12.2049 23.6422 12.3578 23.7951 12.546 23.891C12.7599 24 13.0399 24 13.6 24H16.4C16.9601 24 17.2401 24 17.454 24.109C17.6422 24.2049 17.7951 24.3578 17.891 24.546C18 24.7599 18 25.0399 18 25.6V28.4C18 28.9601 18 29.2401 18.109 29.454C18.2049 29.6422 18.3578 29.7951 18.546 29.891C18.7599 30 19.0399 30 19.6 30H22.4C22.9601 30 23.2401 30 23.454 29.891C23.6422 29.7951 23.7951 29.6422 23.891 29.454C24 29.2401 24 28.9601 24 28.4V25.6C24 25.0399 24 24.7599 24.109 24.546C24.2049 24.3578 24.3578 24.2049 24.546 24.109C24.7599 24 25.0399 24 25.6 24H28.4C28.9601 24 29.2401 24 29.454 23.891C29.6422 23.7951 29.7951 23.6422 29.891 23.454C30 23.2401 30 22.9601 30 22.4V19.6C30 19.0399 30 18.7599 29.891 18.546C29.7951 18.3578 29.6422 18.2049 29.454 18.109C29.2401 18 28.9601 18 28.4 18L25.6 18C25.0399 18 24.7599 18 24.546 17.891C24.3578 17.7951 24.2049 17.6422 24.109 17.454C24 17.2401 24 16.9601 24 16.4V13.6Z" stroke="#2670E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             title: 'Healthcare',
+            img: '/images/smart-pos/healthcare.webp'
         },
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M25.5991 30H12.4009C12.1793 30 12 30.2236 12 30.5C12 30.7764 12.1793 31 12.4009 31H25.5991C25.8207 31 26 30.7764 26 30.5C26 30.2236 25.8207 30 25.5991 30Z" fill="#2670E9" stroke="#2670E9"/><path d="M28.2143 14.449H27.5604C27.3576 12.2698 27.3576 12 24.6142 12L13.0012 12.0011C10.1809 12.0011 10.1809 12.2698 9.99951 15.0187V18.1447C9.99951 23.0275 13.9512 27 18.8078 27C22.2687 27 25.2681 24.982 26.7075 22.0562H28.2155C30.3012 22.0562 31.9995 20.3499 31.9995 18.252C31.9995 16.1552 30.3022 14.4478 28.2155 14.4478L28.2143 14.449ZM18.8077 25.88C14.5658 25.88 11.1135 22.4093 11.1135 18.1448V15.0188C11.1135 13.972 11.96 13.1211 13.0012 13.1211H24.6142C25.6554 13.1211 26.5018 13.9721 26.5018 15.0188V18.1448C26.5018 22.4093 23.0496 25.88 18.8077 25.88ZM28.2143 20.9362H27.1644C27.456 20.0579 27.6159 19.1194 27.6159 18.1449V15.569H28.2143C29.6863 15.569 30.8842 16.7733 30.8842 18.2531C30.8842 19.733 29.6863 20.9373 28.2143 20.9373V20.9362Z" fill="#2670E9" stroke="#2670E9"/></svg>',
             title: 'Transportation & Logistics',
+            img: '/images/smart-pos/transportation.webp'
         },
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M15.0001 20H19.0001M17.0001 18V22M24.0001 21H24.0101M27.0001 19H27.0101M19.4491 14H22.5512C25.1761 14 26.4885 14 27.5187 14.4974C28.4257 14.9354 29.1793 15.6371 29.6808 16.5106C30.2503 17.5027 30.3438 18.8118 30.5309 21.43L30.7769 24.8745C30.8975 26.5634 29.5599 28 27.8667 28C27.0008 28 26.1796 27.6154 25.6253 26.9502L25.2501 26.5C24.907 26.0882 24.7354 25.8823 24.54 25.7159C24.1305 25.3672 23.6346 25.1349 23.1045 25.0436C22.8516 25 22.5836 25 22.0476 25H19.9527C19.4167 25 19.1487 25 18.8958 25.0436C18.3656 25.1349 17.8698 25.3672 17.4602 25.7159C17.2649 25.8823 17.0933 26.0882 16.7501 26.5L16.375 26.9502C15.8206 27.6154 14.9995 28 14.1336 28C12.4404 28 11.1027 26.5634 11.2234 24.8745L11.4694 21.43C11.6564 18.8118 11.7499 17.5027 12.3195 16.5106C12.821 15.6371 13.5746 14.9354 14.4816 14.4974C15.5118 14 16.8242 14 19.4491 14Z" stroke="#2670E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             title: 'Entertainment & Gaming Centers',
+            img: '/images/smart-pos/entertainment.webp'
         },
         {
             icon: '<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#2670E9" fill-opacity="0.1"/><path d="M24.5 20.5H23.5L22 23.5L20 17.5L18.5 20.5H17.5M20.9932 14.1358C18.9938 11.7984 15.6597 11.1696 13.1547 13.31C10.6496 15.4504 10.297 19.029 12.2642 21.5604C13.7501 23.4724 17.9713 27.311 19.948 29.0749C20.3114 29.3991 20.4931 29.5613 20.7058 29.6251C20.8905 29.6805 21.0958 29.6805 21.2805 29.6251C21.4932 29.5613 21.6749 29.3991 22.0383 29.0749C24.015 27.311 28.2362 23.4724 29.7221 21.5604C31.6893 19.029 31.3797 15.4279 28.8316 13.31C26.2835 11.1922 22.9925 11.7984 20.9932 14.1358Z" stroke="#2670E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             title: 'Gyms & Health Clubs',
+            img: '/images/smart-pos/gym.webp'
         },
          
     ]

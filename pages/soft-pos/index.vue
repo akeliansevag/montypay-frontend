@@ -2,17 +2,21 @@
     <Section>
         <div class="container">
             <div class="flex max-lg:flex-col gap-10 justify-between">
-                <div class="lg:w-2/3">
-                  <ContentBlock 
-                    title="Accept In-Person Payments With an iPhone or Android Device"
-                    paragraph="With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless 
+                <div class="lg:w-2/5 flex flex-col gap-5">
+                    <h1>
+                        Accept In-Person Payments With an iPhone or Android Device
+                    </h1>
+                    <p>
+                        With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless 
 in-person payments from digital wallets or physical cards, and making transactions quick and easy.  "
-                    :imgAttrs="{class:'w-full mx-auto'}" 
-                  />  
-                  <ArrowButton text="Contact Sales" link="/contact-us" />
+                    </p>
+                    <div>
+                        <ArrowButton text="Contact Sales" link="/contact-us" />
+                    </div>
+                  
                 </div>
                 
-                <div class="lg:w-1/3">
+                <div class="lg:w-2/5">
                     <img src="/images/soft-pos/soft-pos-1.webp" alt="MontyPay Soft POS - Image 1" class="lg:-mt-8 w-full">
                 </div>
             </div>
@@ -26,7 +30,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                 </div>
                 <div class="lg:w-1/2 flex flex-col gap-6">
                     <h2 class="text-white">Why SoftPOS?</h2>
-                    <div v-for="item in whySoftPos" :key="item.title" class="flex gap-5 backdrop-blur-[10px] bg-white/5 p-6 rounded-lg">
+                    <div v-for="item in whySoftPos" :key="item.title" class="flex gap-5 backdrop-blur-[10px] bg-white/5 p-6 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all">
                         <div>
                             <div v-html="item.icon"></div>
                         </div>
@@ -211,15 +215,17 @@ in-person payments from digital wallets or physical cards, and making transactio
     <Section class="bg-quaternary">
         <div class="container">
             <div class="flex max-lg:flex-col gap-10">
-                <div class="lg:w-1/2">
-                    <SmallContent 
-                        title="Ready to streamline your payment process?"
-                        paragraph="Contact us today to learn more about integrating SoftPOS
-into your business and start accepting payments effortlessly!"
-                        :dark="true"
-                    />
-                    <p class="text-white mt-10 font-bold">Get started today!</p>
-                    <ArrowButton :transparent="true" text="Contact Sales" link="/contact-us" />
+                <div class="lg:w-1/2 text-white flex flex-col gap-5">
+                    <h1>Ready to streamline your payment process?</h1>
+                    <p>
+                        Contact us today to learn more about integrating SoftPOS
+into your business and start accepting payments effortlessly!
+                    </p>
+                    <p class="text-white font-bold">Get started today!</p>
+                    <div>
+                        <ArrowButton :transparent="true" text="Contact Sales" link="/contact-us" />
+                    </div>
+                    
                 </div>
                 <div class="lg:w-1/2">
                     <img src="/images/soft-pos/streamline.webp" alt="MontyPay Soft POS - Image 2 | MontyPay Dashboard real-time sales performance">

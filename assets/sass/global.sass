@@ -11,7 +11,7 @@
 body
     font-family: 'Manrope', sans-serif
     list-height: 1.5
-    @apply text-base lg:text-xl
+    // @apply text-base lg:text-xl
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -51,6 +51,7 @@ label
 
 h1, h2, h3, h4, h5, h6
     line-height: normal !important
+    @apply text-balance
 
 header h5, header a, footer h5, footer a, footer li
     @apply text-base leading-normal
@@ -73,8 +74,11 @@ h5
 h6
     @apply font-normal
 
+p
+    @apply text-pretty
+
 .border.rounded-lg
     transition: border-color 0.3s ease-in-out
 
 .border.rounded-lg:hover
-    border-color: rgb(0, 247, 247)
+    @apply border-[#2670E9]

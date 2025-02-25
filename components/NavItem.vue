@@ -5,7 +5,6 @@
       'lg:flex-row lg:hover:text-[#09bebd] group/item': layout === 'header',
       'text-primary': $route.path === '/',
     }">
-    <Blob />
     
     <!-- Render NuxtLink for internal links -->
     <NuxtLink
