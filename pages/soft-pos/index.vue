@@ -29,7 +29,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                     <img src="/images/soft-pos/soft-pos-2.webp" alt="Why SoftPOS?" class="w-full">
                 </div>
                 <div class="lg:w-2/3 flex flex-col gap-6">
-                    <h2 class="text-white">Why SoftPOS?</h2>
+                    <h2 class="text-white text-4xl">Why SoftPOS?</h2>
                     <div v-for="item in whySoftPos" :key="item.title" class="flex gap-5 backdrop-blur-[10px] bg-white/5 p-4 rounded-lg hover:bg-white/20 hover:backdrop-blur-[50px] transition-all">
                         <div>
                             <div v-html="item.icon"></div>
@@ -46,7 +46,7 @@ in-person payments from digital wallets or physical cards, and making transactio
     <Section class="bg-white">
         <div class="container">
             <div class="text-center max-w-[1100px] mx-auto">
-                <h2 class="mb-5">Compatible devices</h2>
+                <h2 class="mb-5 text-4xl">Compatible devices</h2>
                 <p>
                     MontyPay’s SoftPOS solution enables smooth contactless payments on iOS and Android, supporting NFC wallets such as Apple Pay, Google Pay, and Samsung Pay, as well as Visa, Mastercard, and American Express cards. 
                 </p>
@@ -191,6 +191,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                             subtitle="Use Cases"
                             title="Unified Solution for Offline & Online Sales"
                             paragraph="Get the power of our Soft POS together with our payment gateway for an all-in-one solution that streamlines your business."
+                            class="max-w-[600px]"
                         />
                         <div class="flex flex-col gap-5 mt-10">
                             <div v-for="item in solutions" :key="item.title" class="flex gap-5 bg-white p-4 rounded-lg border border-[#D9D9D9/80] shadow-md">

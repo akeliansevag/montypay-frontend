@@ -29,7 +29,7 @@ in-store transactions and online sales, creating a complete view of your busines
                     <img class="max-lg:max-h-[500px] max-h-[800px]" src="/images/smart-pos/smart-pos-2.webp" alt="MontyPay Smart POS">
                 </div>
                 <div class="lg:w-2/3 flex flex-col gap-6">
-                    <h2 class="text-white">Boost Business with MontyPay’s Smart POS</h2>
+                    <h2 class="text-white text-4xl">Boost Business with MontyPay’s Smart POS</h2>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div v-for="(item, index) in whySmartPos" :key="item.title" 
                             :class="[
@@ -58,6 +58,7 @@ in-store transactions and online sales, creating a complete view of your busines
                     <SmallContent 
                         title="Built for Diverse Industries"
                         paragraph="Our Smart POS system is tailored to support high-traffic, customer-centric environments across industries.<br /> MontyPay’s Smart POS solutions are crafted to meet the unique demands of various sectors:"
+                        class="max-w-[600px]"
                     />
             </div>
             
@@ -167,6 +168,7 @@ in-store transactions and online sales, creating a complete view of your busines
                     <SmallContent 
                         title="Unified Solution for In-Store & Online Sales "
                         paragraph="Get the power of our Smart POS together with our payment gateway for an all-in-one solution that streamlines your business. "
+                        class="max-w-[800px]"
                     />
                     <div class="flex flex-col gap-5 mt-10">
                         <div v-for="item in paymentSolutions" :key="item.title" class="flex gap-3 bg-white p-4 rounded-lg border border-[#D9D9D9/80] shadow-md">
