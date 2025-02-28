@@ -4,7 +4,7 @@
             <div class="flex flex-col gap-10">
                 <h2 class="text-center text-4xl">Our Payment Solutions</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1100px] mx-auto">
-                    <div v-for="item in paymentSolutions" :key="item.title" class="border border-[#D9D9D9/50] rounded-lg p-3 pb-7 shadow-md">
+                    <NuxtLink :to="item.link" v-for="item in paymentSolutions" :key="item.title" class="border border-[#D9D9D9/50] rounded-lg p-3 pb-7 shadow-md block">
                         <div class="bg-[#f6f6f6] h-[300px] p-8">
                             <img :alt="item.alt" :src="item.img" alt="Payment Solution" class="h-full w-full object-contain">
                         </div>
@@ -13,7 +13,7 @@
                             <p class="text-sm">{{ item.description }}</p>
                         </div>
                         
-                    </div>
+                    </NuxtLink>
                 </div>
             </div>
         </div>
@@ -27,24 +27,28 @@ const paymentSolutions = [
             title: 'Online Payments',
             description: 'Payment Gateway',
             alt: 'Online Payments',
+            link: '/online-payments'
         },
         {
             img: '/images/soft-pos/sol-2.webp',
             title: 'In-Store Payments',
             description: 'Smart POS',
-            alt: 'MontyPay Smart POS',
+            alt: 'MontyPay Smart POS',  
+            link: '/smart-pos'
         },
         {
             img: '/images/soft-pos/sol-3.webp',
             title: 'In-Store Payments',
             description: 'Soft POS',
             alt: 'MontyPay Soft POS - Image 1',
+            link: '/soft-pos'
         },
         {
             img: '/images/soft-pos/sol-4.webp',
             title: 'Qcheck',
             description: 'Pay at table',
             alt: 'QCheck',
+            link: '/q-check'
         },
     ]
 

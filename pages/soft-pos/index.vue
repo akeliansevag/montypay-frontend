@@ -8,7 +8,7 @@
                     </h1>
                     <p>
                         With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless 
-in-person payments from digital wallets or physical cards, and making transactions quick and easy.  "
+in-person payments from digital wallets or physical cards, and making transactions quick and easy.
                     </p>
                     <div class="mt-3">
                         <ArrowButton text="Contact Sales" link="/contact-us" />
