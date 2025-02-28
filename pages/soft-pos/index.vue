@@ -229,7 +229,7 @@ into your business and start accepting payments effortlessly!
                     
                 </div>
                 <div class="lg:w-1/2">
-                    <img src="/images/soft-pos/streamline.webp" alt="MontyPay Soft POS - Image 2 | MontyPay Dashboard real-time sales performance">
+                    <img src="/images/soft-pos/streamline2.webp" alt="MontyPay Soft POS - Image 2 | MontyPay Dashboard real-time sales performance">
                 </div>
             </div>
         </div>
