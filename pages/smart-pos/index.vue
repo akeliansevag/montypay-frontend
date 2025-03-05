@@ -205,7 +205,7 @@ in-store transactions and online sales, creating a complete view of your busines
                     </div>
                 </div>
                 <div class="lg:w-1/2">
-                    <img src="/images/smart-pos/sign-up.webp" alt="">
+                    <img src="/images/smart-pos/sign-up-2.webp" alt="">
                 </div>
             </div>
         </div>

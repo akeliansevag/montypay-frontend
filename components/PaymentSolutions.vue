@@ -23,28 +23,28 @@
 <script setup>
 const paymentSolutions = [
         {
-            img: '/images/soft-pos/qcheck.webp',
+            img: '/images/sol-11.webp',
             title: 'Online Payments',
             description: 'Payment Gateway',
             alt: 'Online Payments',
             link: '/online-payments'
         },
         {
-            img: '/images/soft-pos/sol-2.webp',
+            img: '/images/sol-22.webp',
             title: 'In-Store Payments',
             description: 'Smart POS',
             alt: 'MontyPay Smart POS',  
             link: '/smart-pos'
         },
         {
-            img: '/images/soft-pos/sol-3.webp',
+            img: '/images/sol-33.webp',
             title: 'In-Store Payments',
             description: 'Soft POS',
             alt: 'MontyPay Soft POS - Image 1',
             link: '/soft-pos'
         },
         {
-            img: '/images/soft-pos/sol-4.webp',
+            img: '/images/sol-44.webp',
             title: 'Qcheck',
             description: 'Pay at table',
             alt: 'QCheck',
