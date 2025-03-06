@@ -163,6 +163,11 @@
                     { name: "Apple Pay", img: "/images/applepay.svg" },
                     { name: "PayPal", img: "/images/paypal.svg" }
                 ]
+            },
+            {
+                title: "Other",
+                items: []
+                   
             }
         ]
     },
@@ -187,6 +192,11 @@
                     { name: "Apple Pay", img: "/images/applepay.svg" },
                     { name: "PayPal", img: "/images/paypal.svg" }
                 ]
+            },
+            {
+                title: "Other",
+                items: []
+                   
             }
         ]
     },
