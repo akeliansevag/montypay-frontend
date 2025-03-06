@@ -48,7 +48,7 @@
             </div>
         </section> -->
 
-        <section id="section-6" class="py-16 lg:py-36 bg-[#F6F6F6] overflow-hidden">
+        <section id="section-2" class="py-16 lg:py-36 bg-[#F6F6F6] overflow-hidden">
             <div class="container">
                 <div class="w-full lg:w-3/4 mx-auto text-center">
                     <ContentBlock 
@@ -58,1289 +58,29 @@
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-2 lg:gap-5 w-full lg:w-9/12 mt-16 lg:mt-36 mx-auto">
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 0 }"
-                        @click="show(0)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Lebanon</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 1 }"
-                        @click="show(1)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Jordan</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 2 }"
-                        @click="show(2)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Bahrain</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 3 }"
-                        @click="show(3)"
-                    >
-                        <h2 class="text-sm lg:text-xl">UAE</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 4 }"
-                        @click="show(4)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Nigeria</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 5 }"
-                        @click="show(5)"
-                    >
-                        <h2 class="text-sm lg:text-xl">EU & UK</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 6 }"
-                        @click="show(6)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Canada</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 7 }"
-                        @click="show(7)"
-                    >
-                        <h2 class="text-sm lg:text-xl">USA</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 8 }"
-                        @click="show(8)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Kuwait</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 9 }"
-                        @click="show(9)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Indonesia</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 10 }"
-                        @click="show(10)"
-                    >
-                        <h2 class="text-sm lg:text-xl">LATAM</h2>
-                    </div>
-                    <div 
-                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer" 
-                        :class="{ 'bg-secondary': activeTab === 11 }"
-                        @click="show(11)"
-                    >
-                        <h2 class="text-sm lg:text-xl">Australia</h2>
+                    <div
+                        v-for="(country, index) in paymentData"
+                        :key="index"
+                        class="py-1 lg:py-2 px-2 lg:px-6 bg-primary rounded-lg text-center cursor-pointer"
+                        :class="{ 'bg-secondary': selectedCountry === country.country }"
+                        @click="setCountry(country.country)"
+                    > 
+                        <h2 class="text-sm lg:text-xl">{{country.country}}</h2>
                     </div>
                 </div>
         
                 <div class="p-10 mt-8 lg:mt-16 bg-primary rounded-lg">
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 0 }"
-                    >
-                        <div class="flex-1">
+                    <div class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300">
+                        <div v-for="(category, index) in selectedData" :key="index" class="flex-1">
                             <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
+                                <h5 class="font-bold">{{ category.title }}</h5>
                             </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
+                            <hr class="w-full bg-[#F6F6F6]" />
                             <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
+                                <div v-for="(item, itemIndex) in category.items" :key="itemIndex" class="flex items-center gap-4">
+                                    <img :src="item.img" :alt="item.name" width="70" height="46" />
+                                    {{ item.name }}
                                 </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    AMEX
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mymonty.svg" alt="MyMonty" width="70" height="46" />
-                                    MyMonty
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/blom.svg" alt="Blom" width="70" height="46" />
-                                    Blom
-                                </div>
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/creditlibanais.svg" alt="Credit Libanais" width="70" height="46" />
-                                    Credit Libanais
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 1 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="MasterCard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    AMEX
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mada.svg" alt="MADA" width="70" height="46" />
-                                    MADA
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/knet.svg" alt="Knet" width="70" height="46" />
-                                    KNET
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/unionpay.svg" alt="UnionPay" width="70" height="46" />
-                                    UnionPay
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/applepay.svg" alt="ApplePay" width="70" height="46" />
-                                    ApplePay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/ni.svg" alt="NI" width="70" height="46" />
-                                    NI
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/meps.svg" alt="MEPS" width="70" height="46" />
-                                    MEPS
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 2 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    AMEX
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/benefit.svg" alt="Benefit" width="70" height="46" />
-                                    Benefit
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/knet.svg" alt="Knet" width="70" height="46" />
-                                    Knet
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mada.svg" alt="MADA" width="70" height="46" />
-                                    MADA
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/maestro.svg" alt="Maestro" width="70" height="46" />
-                                    Maestro
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/applepay.svg" alt="ApplePay" width="70" height="46" />
-                                    ApplePay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/afs.svg" alt="AFS" width="70" height="46" />
-                                    AFS
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 3 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    AMEX
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/unionpay.svg" alt="Union Pay" width="70" height="46" />
-                                    UnionPay
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/applepay.svg" alt="ApplePay" width="70" height="46" />
-                                    ApplePay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/googlepay.svg" alt="Google Pay" width="70" height="46" />
-                                    GooglePay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <!-- <img src="/images/samsungpay.svg" alt="Samsung Pay" width="70" height="46" /> -->
-                                    SamsungPay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/alipay.svg" alt="AliPay" width="70" height="46" />
-                                    AliPay
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/stripe.svg" alt="Stripe" width="70" height="46" />
-                                    Stripe	
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/safexpay.svg" alt="SafeXPay" width="70" height="46" />
-                                    SafexPay	
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/bnpl.svg" alt="BNPL" width="70" height="46" />
-                                    BNPL
-                                </div>
-
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 4 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/verve.svg" alt="Verve" width="70" height="46" />
-                                    Verve
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <!-- <img src="/images/bank-to-bank.svg" alt="Instore Payments" width="70" height="46" /> -->
-                                    Bank to Bank Transfer
-                                </div>
-
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 5 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    Amex
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/diners.svg" alt="Diners" width="70" height="46" />
-                                    Diners
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/discover.svg" alt="Discover" width="70" height="46" />
-                                    Discover
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/jcb.svg" alt="JCB" width="70" height="46" />
-                                    JCB
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mada.svg" alt="MADA" width="70" height="46" />
-                                    MADA
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/knet.svg" alt="Knet" width="70" height="46" />
-                                    Knet
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/applepay.svg" alt="ApplePay" width="70" height="46" />
-                                    ApplePay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/alipay.svg" alt="AliPay" width="70" height="46" />
-                                    AliPay
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/stripe.svg" alt="stripe" width="70" height="46" />
-                                    Stripe
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/unlimit.svg" alt="Unlimit" width="70" height="46" />
-                                    Unlimit
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/latpay.svg" alt="LatPay" width="70" height="46" />
-                                    LatPay
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/coinspaid.svg" alt="Coinspaid" width="70" height="46" />
-                                    Coinspaid
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 6 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    Amex
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/diners.svg" alt="Diners" width="70" height="46" />
-                                    Diners
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/discover.svg" alt="Discover" width="70" height="46" />
-                                    Discover
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/jcb.svg" alt="JCB" width="70" height="46" />
-                                    JCB
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/applepay.svg" alt="ApplePay" width="70" height="46" />
-                                    ApplePay
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/alipay.svg" alt="AliPay" width="70" height="46" />
-                                    AliPay
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 7 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    Amex
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/diners.svg" alt="Diners" width="70" height="46" />
-                                    Diners
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/discover.svg" alt="Discover" width="70" height="46" />
-                                    Discover
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/jcb.svg" alt="JCB" width="70" height="46" />
-                                    JCB
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/applepay.svg" alt="ApplePay" width="70" height="46" />
-                                    ApplePay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/alipay.svg" alt="AliPay" width="70" height="46" />
-                                    AliPay
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 8 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    Amex
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/knet.svg" alt="Knet" width="70" height="46" />
-                                    Knet
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mada.svg" alt="MADA" width="70" height="46" />
-                                    MADA
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/applepay.svg" alt="ApplePay" width="70" height="46" />
-                                    ApplePay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/nbk.svg" alt="NBK" width="70" height="46" />
-                                    NBK
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 9 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    Amex
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/jcb.svg" alt="JCB" width="70" height="46" />
-                                    JCB
-                                </div>
-                                
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/discover.svg" alt="Discover" width="70" height="46" />
-                                    Discover
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/diners.svg" alt="Diners" width="70" height="46" />
-                                    Diners
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal 
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/virgo.svg" alt="Virgo" width="70" height="46" />
-                                    Virgo
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/ovo.svg" alt="OVO" width="70" height="46" />
-                                    OVO
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/shopeepay.svg" alt="ShopeePay" width="70" height="46" />
-                                    Shopeepay
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/dana.svg" alt="DANA" width="70" height="46" />
-                                    Dana
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/doku.svg" alt="Doku" width="70" height="46" />
-                                    Doku
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/linkaja.svg" alt="Link Aja" width="70" height="46" />
-                                    Link Aja
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/doku.svg" alt="DOKU" width="70" height="46" />
-                                    Doku
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    MasterCard
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/qris.svg" alt="QR Code (QRIS)" width="70" height="46" />
-                                    QR Code (QRIS)
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/banktransfers.svg" alt="Bank Transfers" width="70" height="46" />
-                                    Bank Transfers
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/cashpayments.svg" alt="Cash Payments" width="70" height="46" />
-                                    Cash Payments 
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/bnpl.svg" alt="BNPL" width="70" height="46" />
-                                    BNPL 
-                                </div>
-
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 10 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    Amex
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/webpay.svg" alt="Webpay (in 2 countries only)" width="70" height="46" />
-                                    Webpay (in 2 countries only)
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/diners.svg" alt="Diners" width="70" height="46" />
-                                    Diners
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal 
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/payretailers.svg" alt="PayRetailers" width="70" height="46" />
-                                    PayRetailers
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/cashpayments.svg" alt="Cash Payments" width="70" height="46" />
-                                    Cash Payments
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/ewallets.svg" alt="E-wallets" width="70" height="46" />
-                                    E-wallets
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/banktransfers.svg" alt="Bank transfers (almost 100+ PM)" width="70" height="46" />
-                                    Bank transfers (almost 100+ PM)
-                                </div>
-
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="flex flex-col lg:flex-row gap-8 md:gap-4 justify-center transition-opacity ease-in-out duration-300" 
-                        :class="{ 'absolute invisible opacity-0': activeTab !== 11 }"
-                    >
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Cards</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/mastercard.svg" alt="Mastercard" width="70" height="46" />
-                                    Mastercard
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/visa.svg" alt="Visa" width="70" height="46" />
-                                    Visa
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/amex.svg" alt="Amex" width="70" height="46" />
-                                    Amex
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/maestro.svg" alt="Maestro" width="70" height="46" />
-                                    Maestro
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Digital Wallets</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <div class="flex items-center gap-4">
-                                    <img src="/images/paypal.svg" alt="PayPal" width="70" height="46" />
-                                    PayPal 
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Partners</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                               
-                            </div>
-                        </div> -->
-
-                        <div class="flex-1">
-                            <div class="flex flex-col py-5">
-                                <h5 class="font-bold">Other</h5>
-                            </div>
-                            
-                            <hr class="w-full bg-[#F6F6F6]"/>
-                        
-                            <div class="flex flex-col gap-8 py-10">
-                                <!-- <div class="flex items-center gap-4">
-                                    <img src="/images/triplea.svg" alt="Triple A" width="70" height="46" />
-                                    Triple A
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -1365,89 +105,458 @@
 </template>
 
 <script setup>
-import { useAuth } from '~/composables/useAuth'
+    import { useAuth } from '~/composables/useAuth'
 
-useSeoMeta({
-    title: 'Expand your Business',
-    ogTitle: 'Expand your Business',
-    description: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
-    ogDescription: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
-    ogImage: 'https://example.com/image.png',
-    twitterCard: 'summary_large_image',
-})
+    useSeoMeta({
+        title: 'Expand your Business',
+        ogTitle: 'Expand your Business',
+        description: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
+        ogDescription: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
+        ogImage: 'https://example.com/image.png',
+        twitterCard: 'summary_large_image',
+    })
 
-const activeTab = ref(0);
+    const paymentData = [
+    {
+        country: "Lebanon",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { name: "Mastercard", img: "/images/mastercard.svg" },
+                    { name: "Visa", img: "/images/visa.svg" },
+                    { name: "AMEX", img: "/images/amex.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { name: "MyMonty", img: "/images/mymonty.svg" },
+                    { name: "Whish", img: "/images/whish.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { name: "Cryptocurrency", img: "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "Jordan",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { name: "Mastercard", img: "/images/mastercard.svg" },
+                    { name: "Visa", img: "/images/visa.svg" },
+                    { name: "AMEX", img: "/images/amex.svg" },
+                    { name: "Mada", img: "/images/mada.svg" },
+                    { name: "Knet", img: "/images/knet.svg" },
+                    { name: "UnionPay", img: "/images/unionpay.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { name: "Apple Pay", img: "/images/applepay.svg" },
+                    { name: "PayPal", img: "/images/paypal.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "Bahrain",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { name: "Mastercard", img: "/images/mastercard.svg" },
+                    { name: "Visa", img: "/images/visa.svg" },
+                    { name: "AMEX", img: "/images/amex.svg" },
+                    { name: "Benefit", img: "/images/benefit.svg" },
+                    { name: "Knet", img: "/images/knet.svg" },
+                    { name: "Mada", img: "/images/mada.svg" },
+                    { name: "Maestro", img: "/images/maestro.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { name: "Apple Pay", img: "/images/applepay.svg" },
+                    { name: "PayPal", img: "/images/paypal.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "UAE",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "UnionPay", "img": "/images/unionpay.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                    { "name": "PayPal", "img": "/images/paypal.svg" },
+                    { "name": "Google Pay", "img": "/images/googlepay.svg" },
+                    { "name": "Samsung Pay", "img": "/images/samsungpay.svg" },
+                    { "name": "Alipay", "img": "/images/alipay.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "BNPL", "img": "/images/bnpl.svg" },
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "Nigeria",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "Verve", "img": "/images/verve.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "PayPal", "img": "/images/paypal.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "Bank Transfers", "img": "/images/bank-transfers.svg" },
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "EU & UK",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "Diners", "img": "/images/diners.svg" },
+                    { "name": "Discover", "img": "/images/discover.svg" },
+                    { "name": "JCB", "img": "/images/jcb.svg" },
+                    { "name": "Mada", "img": "/images/mada.svg" },
+                    { "name": "Knet", "img": "/images/knet.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                    { "name": "PayPal", "img": "/images/paypal.svg" },
+                    { "name": "Alipay", "img": "/images/alipay.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "Canada",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "Diners", "img": "/images/diners.svg" },
+                    { "name": "Discover", "img": "/images/discover.svg" },
+                    { "name": "JCB", "img": "/images/jcb.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                    { "name": "PayPal", "img": "/images/paypal.svg" },
+                    { "name": "Alipay", "img": "/images/alipay.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "USA",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "Diners", "img": "/images/diners.svg" },
+                    { "name": "Discover", "img": "/images/discover.svg" },
+                    { "name": "JCB", "img": "/images/jcb.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                    { "name": "PayPal", "img": "/images/paypal.svg" },
+                    { "name": "Alipay", "img": "/images/alipay.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "Kuwait",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "Knet", "img": "/images/knet.svg" },
+                    { "name": "Mada", "img": "/images/mada.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                    { "name": "PayPal", "img": "/images/paypal.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: []
+            }
+        ]
+    },
+    {
+        country: "Indonesia",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "JCB", "img": "/images/jcb.svg" },
+                    { "name": "Discover", "img": "/images/discover.svg" },
+                    { "name": "Diners", "img": "/images/diners.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "PayPal", "img": "/images/paypal.svg" },
+                    { "name": "Virgo", "img": "/images/virgo.svg" },
+                    { "name": "OVO", "img": "/images/ovo.svg" },
+                    { "name": "ShopeePay", "img": "/images/shopeepay.svg" },
+                    { "name": "Dana", "img": "/images/dana.svg" },
+                    { "name": "Doku", "img": "/images/doku.svg" },
+                    { "name": "LinkAja", "img": "/images/linkaja.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "QR Code (QRIS)", "img": "/images/qris.svg" },
+                    { "name": "Bank Transfers", "img": "/images/bank-transfer.svg" },
+                    { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
+                    { "name": "BNPL", "img": "/images/bnpl.svg" },
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "LATAM",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "WebPay (in 2 countries only)", "img": "/images/webpay.svg" },
+                    { "name": "Diners", "img": "/images/diners.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "PayPal", "img": "/images/paypal.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
+                    { "name": "E-Wallets", "img": "/images/ewallets.svg" },
+                    { "name": "Bank Transfers (almost 100+ PM)", "img": "/images/bank-transfers.svg" },
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "Australia",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" },
+                    { "name": "AMEX", "img": "/images/amex.svg" },
+                    { "name": "Maestro", "img": "/images/maestro.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: [
+                    { "name": "PayPal", "img": "/images/paypal.svg" }
+                ]
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    },
+    {
+        country: "Qatar",
+        categories: [
+            {
+                title: "Cards",
+                items: [
+                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                    { "name": "Visa", "img": "/images/visa.svg" }
+                ]
+            },
+            {
+                title: "Digital Wallets",
+                items: []
+            },
+            {
+                title: "Other",
+                items: [
+                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                ]
+            }
+        ]
+    }
+    ];
 
-const show = (index) => {
-    activeTab.value = index;
-};
+    const selectedCountry = ref(paymentData[0].country);
+    const selectedData = ref(paymentData.find(c => c.country === selectedCountry.value)?.categories || []);
+
+    const setCountry = (country) => {
+    selectedCountry.value = country;
+    selectedData.value = paymentData.find(c => c.country === country).categories || [];
+    };
 
 
-// const response = ref(null);
+    // const response = ref(null);
 
-// const submitRequest = async () => {
-//     const accessToken = await useAuth();
-//     if (!accessToken) {
-//         console.error('Failed to retrieve access token');
-//         return;
-//     }
+    // const submitRequest = async () => {
+    //     const accessToken = await useAuth();
+    //     if (!accessToken) {
+    //         console.error('Failed to retrieve access token');
+    //         return;
+    //     }
 
-//     try {
-//         const result = await fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Authorization': `Bearer ${accessToken}`
-//             },
-//             body: JSON.stringify({
-//                 "email": "accountemail@example.com",
-//                 "tracking_id": "testenterprices123122",
-//                 "partner_config_override": {
-//                     "return_url": "https://montypay.com/global-coverage",
-//                     "return_url_description": "Thank you.",
-//                     "show_add_credit_card": true
-//                 },
-//                 "operations": [{
-//                     "operation": "API_INTEGRATION",
-//                     "api_integration_preference": {
-//                         "rest_api_integration": {
-//                             "integration_method": "PAYPAL",
-//                             "integration_type": "THIRD_PARTY",
-//                             "third_party_details": {
-//                                 "features": ["PAYMENT", "REFUND", "PARTNER_FEE"]
-//                             }
-//                         }
-//                     }
-//                 }],
-//                 "products": [
-//                     "PAYMENT_METHODS"
-//                 ],
-//                 "capabilities": [
-//                     "APPLE_PAY"
-//                 ],
-//                 "legal_consents": [{
-//                     "type": "SHARE_DATA_CONSENT",
-//                     "granted": true
-//                 }]
-//             })
-//         });
+    //     try {
+    //         const result = await fetch('https://api-m.sandbox.paypal.com/v2/customer/partner-referrals', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //                 'Authorization': `Bearer ${accessToken}`
+    //             },
+    //             body: JSON.stringify({
+    //                 "email": "accountemail@example.com",
+    //                 "tracking_id": "testenterprices123122",
+    //                 "partner_config_override": {
+    //                     "return_url": "https://montypay.com/global-coverage",
+    //                     "return_url_description": "Thank you.",
+    //                     "show_add_credit_card": true
+    //                 },
+    //                 "operations": [{
+    //                     "operation": "API_INTEGRATION",
+    //                     "api_integration_preference": {
+    //                         "rest_api_integration": {
+    //                             "integration_method": "PAYPAL",
+    //                             "integration_type": "THIRD_PARTY",
+    //                             "third_party_details": {
+    //                                 "features": ["PAYMENT", "REFUND", "PARTNER_FEE"]
+    //                             }
+    //                         }
+    //                     }
+    //                 }],
+    //                 "products": [
+    //                     "PAYMENT_METHODS"
+    //                 ],
+    //                 "capabilities": [
+    //                     "APPLE_PAY"
+    //                 ],
+    //                 "legal_consents": [{
+    //                     "type": "SHARE_DATA_CONSENT",
+    //                     "granted": true
+    //                 }]
+    //             })
+    //         });
 
-//         if (!result.ok) {
-//             throw new Error('Failed to submit request');
-//         }
+    //         if (!result.ok) {
+    //             throw new Error('Failed to submit request');
+    //         }
 
-//         const responseData = await result.json();
-//         response.value = responseData;
+    //         const responseData = await result.json();
+    //         response.value = responseData;
 
-//         // Extract action_url from the response
-//         const actionUrl = responseData.links.find(link => link.rel === 'action_url').href;
-        
-//         // Redirect to the action_url
-//         window.location.href = actionUrl;  // Use window.location.href for external URL redirection
-//     } catch (error) {
-//         console.error('Error:', error);
-//     }
-// };
+    //         // Extract action_url from the response
+    //         const actionUrl = responseData.links.find(link => link.rel === 'action_url').href;
+            
+    //         // Redirect to the action_url
+    //         window.location.href = actionUrl;  // Use window.location.href for external URL redirection
+    //     } catch (error) {
+    //         console.error('Error:', error);
+    //     }
+    // };
 
 </script>
 
