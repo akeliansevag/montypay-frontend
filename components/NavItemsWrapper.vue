@@ -21,7 +21,9 @@ const solutionSections = [
                 pages: [
                     { to: '/omnichannel-solution', label: 'Omnichannel Solution' },
                     { to: '/online-payments', label: 'Online Payments' },
-                    { to: '/in-store-payments', label: 'In-store payments' },
+                    { to: '/smart-pos', label: 'Smart POS' },
+                    { to: '/soft-pos', label: 'Soft POS' },
+                    // { to: '/in-store-payments', label: 'In-store payments' },
                     { to: '/q-check', label: 'QCheck' },
                 ],
             },
