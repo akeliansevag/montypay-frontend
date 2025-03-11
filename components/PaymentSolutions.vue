@@ -47,7 +47,7 @@ const paymentSolutions = [
             img: '/images/sol-44.webp',
             title: 'Qcheck',
             description: 'Pay at table',
-            alt: 'QCheck',
+            alt: 'Q Check',
             link: '/q-check'
         },
     ]

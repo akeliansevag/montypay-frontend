@@ -3,8 +3,8 @@
         <div class="container">
             <div class="flex max-lg:flex-col gap-10 justify-between items-center">
                 <div class="lg:w-2/5 flex flex-col gap-5">
-                    <h1>
-                        Accept In-Person Payments With an iPhone or Android Device
+                    <h1 class="text-balance">
+                        Soft POS: Effortless Payment Transactions 
                     </h1>
                     <p>
                         With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless 
@@ -91,7 +91,7 @@ in-person payments from digital wallets or physical cards, and making transactio
                             
                         </div>
                         <div class="lg:w-1/2">
-                            <img src="/images/soft-pos/iphone-visual.webp" alt="" class="w-full">
+                            <img src="/images/soft-pos/iphone-visual.webp" alt="MontyPay Soft POS Payment Successful" class="w-full">
                         </div>
                     </div>
                 </div>
@@ -168,12 +168,12 @@ in-person payments from digital wallets or physical cards, and making transactio
                         />
                     </div>
                     <div class="lg:w-1/2">
-                        <img src="/images/soft-pos/platforms.webp" alt="MontyPay Soft POS Payment Successful" class="w-full">
+                        <img src="/images/soft-pos/platforms.webp" alt="Contactless Payment" class="w-full">
                     </div>
                 </div>
                 <div class="flex max-lg:flex-col-reverse gap-10 lg:justify-between lg:items-center">
                     <div class="lg:w-1/2">
-                        <img src="/images/soft-pos/retailers.webp" alt="Customer Check out | MasterCard | Card Payment" class="w-full">
+                        <img src="/images/soft-pos/retailers.webp" alt="Customer Check out" class="w-full">
                     </div>
                     <div class="lg:w-1/2">
                         <SmallContent 

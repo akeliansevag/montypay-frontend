@@ -3,8 +3,8 @@
         <div class="container">
             <div class="flex items-center max-lg:flex-col gap-10 justify-between">
                 <div class="lg:w-2/5 flex flex-col gap-5">
-                    <h1>
-                        Accept In-Store Payments with Our AI-Powered Smart POS
+                    <h1 class="text-balance">
+                        Benefits of Smart POS to Businesses
                     </h1>
                     <p>
                         MontyPay’s Smart POS devices combine advanced technology with seamless functionality, making it easy to accept both card and wallet payments. Equipped with a real-time dashboard and robust reporting tools, our POS solutions unify 
@@ -17,7 +17,7 @@ in-store transactions and online sales, creating a complete view of your busines
                 </div>
                 
                 <div class="lg:w-2/5">
-                    <img src="/images/smart-pos/smart-pos-1.webp" alt="MontyPay Smart POS - Image 4 | Card" class="mt-8 w-full">
+                    <img src="/images/smart-pos/smart-pos-1.webp" alt="MontyPay Smart POS - Image 4" class="mt-8 w-full">
                 </div>
             </div>
         </div>
