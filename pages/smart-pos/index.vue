@@ -224,8 +224,8 @@ in-store transactions and online sales, creating a complete view of your busines
         activeFilter.value = filter;
     }
     useSeoMeta({
-        title: 'Smart POS Solutions for In-store Payments | MontyPay',
-        ogTitle: 'Smart POS Solutions for In-store Payments | MontyPay',
+        title: 'Smart POS Solutions for In-store Payments',
+        ogTitle: 'Smart POS Solutions for In-store Payments',
         description: 'Discover MontyPay\'s Smart POS solutions designed to unify in-store transactions and online sales, boosting your business performance all from a single, reliable system.',
         ogDescription: 'Discover MontyPay\'s Smart POS solutions designed to unify in-store transactions and online sales, boosting your business performance all from a single, reliable system.',
         ogImage: 'https://example.com/image.png',

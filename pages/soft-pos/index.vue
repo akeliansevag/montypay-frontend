@@ -244,8 +244,8 @@ into your business and start accepting payments effortlessly!
         activeFilter.value = filter;
     }
     useSeoMeta({
-        title: 'Soft POS: Simple & Quick In-Person Payments | MontyPay',
-        ogTitle: 'Soft POS: Simple & Quick In-Person Payments | MontyPay',
+        title: 'Soft POS: Simple & Quick In-Person Payments',
+        ogTitle: 'Soft POS: Simple & Quick In-Person Payments',
         description: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
         ogDescription: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
         ogImage: 'https://example.com/image.png',
