@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      titleTemplate: '%s - MontyPay',
+      titleTemplate: '%s | MontyPay',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/images/favicon-64x64.png' },
         { rel: 'icon', type: 'image/x-icon', href: '/images/favicon-32x32.png' },

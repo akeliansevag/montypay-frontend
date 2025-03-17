@@ -14,14 +14,14 @@
             />
             <NuxtLink class="mt-5 inline-block text-[#00DFDF] underline" to="https://github.com/MontyPayAPI" target="_blank" external>https://github.com/MontyPayAPI </NuxtLink>
         </div>
-        <div class="container max-w-[1000px] mt-14">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div class="container max-w-[1000px] mx-auto mt-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 max-w-[700px] mx-auto gap-8">
                 <div class="api-item" v-for="(item,index) in mobileSDK" :key="index">
                     <div class="api-item-icon">
                         <img :src="item.icon" />
                     </div>
                     <div class="api-item-link-wrapper">
-                        <NuxtLink class="api-item-link" target="_blank" external :to="item.buttonLink">{{item.buttonText}}</NuxtLink>
+                        <NuxtLink class="api-item-link text-black" target="_blank" external :to="item.buttonLink">{{item.buttonText}}</NuxtLink>
                     </div>
                     
                 </div>
@@ -60,11 +60,11 @@ useSeoMeta({
 })
 
 const mobileSDK = [
-    {
-        icon: "/images/flutter.svg",
-        buttonLink: "https://backend.montypay.com/wp-content/uploads/2024/04/MontyPay-FlutterSDK.zip",
-        buttonText: "Download",
-    },
+    // {
+    //     icon: "/images/flutter.svg",
+    //     buttonLink: "https://backend.montypay.com/wp-content/uploads/2024/04/MontyPay-FlutterSDK.zip",
+    //     buttonText: "Download",
+    // },
     {
         icon: "/images/android.svg",
         buttonLink: "https://github.com/MontypayApi/MontyPay-android-sdk",
