@@ -90,7 +90,7 @@ const ecommercePlugins = [
     },
     {
         icon: "/images/prestashop.svg",
-        buttonLink: "/prestashop1.0.2.zip",
+        buttonLink: "/prestashop.zip",
         buttonText: "Download",
     },
     {
