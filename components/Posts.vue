@@ -19,8 +19,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div v-for="(post, index) in posts" :key="index">        
                         <div class="flex flex-col gap-4">
-                            <NuxtLink :to="`/${detailPath}/${post.slug}`">
-                                <img class="rounded-lg" :src="post._embedded['wp:featuredmedia'][0].media_details.sizes?.large?.source_url" />
+                            <NuxtLink class="block rounded-lg overflow-hidden aspect-[25/18] relative" :to="`/${detailPath}/${post.slug}`">
+                                <img class="w-full h-full absolute object-cover" :src="post._embedded['wp:featuredmedia'][0].media_details.sizes?.large?.source_url" />
                             </NuxtLink>
                             <div class="flex gap-10 text-base">
                                 <div>
