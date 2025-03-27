@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <h4 class="text-center">Subscribe to our newsletter</h4>
+        <h4>Subscribe to our newsletter</h4>
         <div class="flex flex-column gap-8 w-full">
             <div class="flex gap-8 w-full">
                 <input v-model="form.newsletterEmail" type="text" id="newsletter-email" class="w-full py-5 bg-transparent border-b border-b-primary outline-0" placeholder="Write your email here" />
