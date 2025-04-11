@@ -542,8 +542,8 @@ register();
 useSeoMeta({
     title: 'White Label For PSP/Acquirer',
     ogTitle: 'White Label For PSP/Acquirer',
-    description: 'White Label For PSP/Acquirer description',
-    ogDescription: 'White Label For PSP/Acquirer description',
+    description: 'Become a payment service provider with MontyPay’s White-Label PSP Acquirer. Fully customizable, secure, and designed to scale your business.',
+    ogDescription: 'Become a payment service provider with MontyPay’s White-Label PSP Acquirer. Fully customizable, secure, and designed to scale your business.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

@@ -127,10 +127,10 @@ import { register } from 'swiper/element/bundle';
 register();
 
 useSeoMeta({
-    title: 'White Label For PSP/Acquirer',
-    ogTitle: 'White Label For PSP/Acquirer',
-    description: 'White Label For PSP/Acquirer description',
-    ogDescription: 'White Label For PSP/Acquirer description',
+    title: 'About MontyPay | A Global Payment Service Provider',
+    ogTitle: 'About MontyPay | A Global Payment Service Provider',
+    description: 'Discover MontyPay’s mission to simplify global payments with secure, innovative solutions. Learn more about our vision, values, and commitment to excellence.',
+    ogDescription: 'Discover MontyPay’s mission to simplify global payments with secure, innovative solutions. Learn more about our vision, values, and commitment to excellence.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 });

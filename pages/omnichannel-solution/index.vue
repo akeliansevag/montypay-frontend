@@ -241,8 +241,8 @@
     useSeoMeta({
         title: 'Omnichannel Solution',
         ogTitle: 'Omnichannel Solution',
-        description: 'Omnichannel Solution description',
-        ogDescription: 'Omnichannel Solution description',
+        description: 'Streamline transactions with MontyPay’s Omnichannel Solution. Offer customers a seamless, secure, and efficient payment experience across all platforms.',
+        ogDescription: 'Streamline transactions with MontyPay’s Omnichannel Solution. Offer customers a seamless, secure, and efficient payment experience across all platforms.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })
