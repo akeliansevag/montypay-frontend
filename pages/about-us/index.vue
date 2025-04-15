@@ -139,22 +139,22 @@ const values = [
     {
         id: 1,
         title: "Transparency",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
+        description: "We are committed to providing clear, straightforward information, ensuring that our clients have a full understanding of our services, processes, and fees, with no hidden terms."
     },
     {
         id: 2,
         title: "Innovation",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
+        description: "We continuously invest in advanced technologies and provide our clients with cutting-edge, efficient solutions that meet their evolving needs."
     },
     {
         id: 3,
         title: "Flexibility",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
+        description: "We offer flexible solutions tailored to the specific needs of each customer, providing adaptable and scalable options to suit a variety of business and personal financial needs."
     },
     {
         id: 4,
         title: "Honesty & Integrity",
-        description: "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience."
+        description: "We are committed to upholding the highest ethical standards, ensuring that every interaction and transaction is conducted with fairness, accountability, and respect for our clients."
     },
 ]
 
