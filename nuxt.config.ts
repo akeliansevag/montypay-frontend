@@ -27,18 +27,27 @@ export default defineNuxtConfig({
           r.src=n;var u=t.getElementsByTagName(s)[0];
           u.parentNode.insertBefore(r,u);})(window,document,
           'https://sc-static.net/scevent.min.js');
-          
+
           snaptr('init', '69f3c661-d3e9-4c72-856d-b28e2d6ce2ff', {
             user_email: '__INSERT_USER_EMAIL__'
           });
-          
+
           snaptr('track', 'PAGE_VIEW');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
+        },
+        {
+          hid: 'metricool',
+          innerHTML: `function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");
+          c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,
+          b.appendChild(c)}loadScript(function(){beTracker.t({hash:"414e65d87ddbb126f1541ba3cdadf48b"})});`,
           type: 'text/javascript',
           charset: 'utf-8'
         }
       ],
       __dangerouslyDisableSanitizersByTagID: {
-        'snap-pixel': ['innerHTML']
+        'snap-pixel': ['innerHTML'],
+        'metricool': ['innerHTML']
       }
     },
     //pageTransition: { name: 'page', mode: 'out-in' }
