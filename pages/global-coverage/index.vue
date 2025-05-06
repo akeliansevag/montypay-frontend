@@ -482,7 +482,9 @@
                 },
                 {
                     title: "Digital Wallets",
-                    items: []
+                    items: [
+                        { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                    ]
                 },
                 {
                     title: "Other",
