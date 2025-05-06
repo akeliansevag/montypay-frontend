@@ -117,380 +117,407 @@
     })
 
     const paymentData = [
-    {
-        country: "Lebanon",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { name: "Mastercard", img: "/images/mastercard.svg" },
-                    { name: "Visa", img: "/images/visa.svg" },
-                    { name: "AMEX", img: "/images/amex.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { name: "MyMonty", img: "/images/mymonty.svg" },
-                    { name: "Whish", img: "/images/whish.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { name: "Cryptocurrency", img: "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "Jordan",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { name: "Mastercard", img: "/images/mastercard.svg" },
-                    { name: "Visa", img: "/images/visa.svg" },
-                    { name: "AMEX", img: "/images/amex.svg" },
-                    { name: "Mada", img: "/images/mada.svg" },
-                    { name: "Knet", img: "/images/knet.svg" },
-                    { name: "UnionPay", img: "/images/unionpay.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { name: "Apple Pay", img: "/images/applepay.svg" },
-                    { name: "PayPal", img: "/images/paypal.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: []
-                   
-            }
-        ]
-    },
-    {
-        country: "Bahrain",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { name: "Mastercard", img: "/images/mastercard.svg" },
-                    { name: "Visa", img: "/images/visa.svg" },
-                    { name: "AMEX", img: "/images/amex.svg" },
-                    { name: "Benefit", img: "/images/benefit.svg" },
-                    { name: "Knet", img: "/images/knet.svg" },
-                    { name: "Mada", img: "/images/mada.svg" },
-                    { name: "Maestro", img: "/images/maestro.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { name: "Apple Pay", img: "/images/applepay.svg" },
-                    { name: "PayPal", img: "/images/paypal.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: []
-                   
-            }
-        ]
-    },
-    {
-        country: "UAE",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "UnionPay", "img": "/images/unionpay.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
-                    { "name": "PayPal", "img": "/images/paypal.svg" },
-                    { "name": "Google Pay", "img": "/images/googlepay.svg" },
-                    { "name": "Samsung Pay", "img": "/images/samsungpay.svg" },
-                    { "name": "Alipay", "img": "/images/alipay.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "BNPL", "img": "/images/bnpl.svg" },
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "Nigeria",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "Verve", "img": "/images/verve.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "PayPal", "img": "/images/paypal.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "Bank Transfers", "img": "/images/bank-transfers.svg" },
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "EU & UK",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "Diners", "img": "/images/diners.svg" },
-                    { "name": "Discover", "img": "/images/discover.svg" },
-                    { "name": "JCB", "img": "/images/jcb.svg" },
-                    { "name": "Mada", "img": "/images/mada.svg" },
-                    { "name": "Knet", "img": "/images/knet.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
-                    { "name": "PayPal", "img": "/images/paypal.svg" },
-                    { "name": "Alipay", "img": "/images/alipay.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "Canada",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "Diners", "img": "/images/diners.svg" },
-                    { "name": "Discover", "img": "/images/discover.svg" },
-                    { "name": "JCB", "img": "/images/jcb.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
-                    { "name": "PayPal", "img": "/images/paypal.svg" },
-                    { "name": "Alipay", "img": "/images/alipay.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "USA",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "Diners", "img": "/images/diners.svg" },
-                    { "name": "Discover", "img": "/images/discover.svg" },
-                    { "name": "JCB", "img": "/images/jcb.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
-                    { "name": "PayPal", "img": "/images/paypal.svg" },
-                    { "name": "Alipay", "img": "/images/alipay.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "Kuwait",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "Knet", "img": "/images/knet.svg" },
-                    { "name": "Mada", "img": "/images/mada.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "Apple Pay", "img": "/images/applepay.svg" },
-                    { "name": "PayPal", "img": "/images/paypal.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: []
-            }
-        ]
-    },
-    {
-        country: "Indonesia",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "JCB", "img": "/images/jcb.svg" },
-                    { "name": "Discover", "img": "/images/discover.svg" },
-                    { "name": "Diners", "img": "/images/diners.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "PayPal", "img": "/images/paypal.svg" },
-                    { "name": "Virgo", "img": "/images/virgo.svg" },
-                    { "name": "OVO", "img": "/images/ovo.svg" },
-                    { "name": "ShopeePay", "img": "/images/shopeepay.svg" },
-                    { "name": "Dana", "img": "/images/dana.svg" },
-                    { "name": "Doku", "img": "/images/doku.svg" },
-                    { "name": "LinkAja", "img": "/images/linkaja.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "QR Code (QRIS)", "img": "/images/qris.svg" },
-                    { "name": "Bank Transfers", "img": "/images/bank-transfer.svg" },
-                    { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
-                    { "name": "BNPL", "img": "/images/bnpl.svg" },
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "LATAM",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "WebPay (in 2 countries only)", "img": "/images/webpay.svg" },
-                    { "name": "Diners", "img": "/images/diners.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "PayPal", "img": "/images/paypal.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
-                    { "name": "E-Wallets", "img": "/images/ewallets.svg" },
-                    { "name": "Bank Transfers (almost 100+ PM)", "img": "/images/bank-transfers.svg" },
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "Australia",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" },
-                    { "name": "AMEX", "img": "/images/amex.svg" },
-                    { "name": "Maestro", "img": "/images/maestro.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: [
-                    { "name": "PayPal", "img": "/images/paypal.svg" }
-                ]
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    },
-    {
-        country: "Qatar",
-        categories: [
-            {
-                title: "Cards",
-                items: [
-                    { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                    { "name": "Visa", "img": "/images/visa.svg" }
-                ]
-            },
-            {
-                title: "Digital Wallets",
-                items: []
-            },
-            {
-                title: "Other",
-                items: [
-                    { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-                ]
-            }
-        ]
-    }
+        {
+            country: "Lebanon",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { name: "Mastercard", img: "/images/mastercard.svg" },
+                        { name: "Visa", img: "/images/visa.svg" },
+                        { name: "AMEX", img: "/images/amex.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { name: "MyMonty", img: "/images/mymonty.svg" },
+                        { name: "Whish", img: "/images/whish.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { name: "Cryptocurrency", img: "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "Jordan",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { name: "Mastercard", img: "/images/mastercard.svg" },
+                        { name: "Visa", img: "/images/visa.svg" },
+                        { name: "AMEX", img: "/images/amex.svg" },
+                        { name: "Mada", img: "/images/mada.svg" },
+                        { name: "Knet", img: "/images/knet.svg" },
+                        { name: "UnionPay", img: "/images/unionpay.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { name: "Apple Pay", img: "/images/applepay.svg" },
+                        { name: "PayPal", img: "/images/paypal.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: []
+                    
+                }
+            ]
+        },
+        {
+            country: "Bahrain",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { name: "Mastercard", img: "/images/mastercard.svg" },
+                        { name: "Visa", img: "/images/visa.svg" },
+                        { name: "AMEX", img: "/images/amex.svg" },
+                        { name: "Benefit", img: "/images/benefit.svg" },
+                        { name: "Knet", img: "/images/knet.svg" },
+                        { name: "Mada", img: "/images/mada.svg" },
+                        { name: "Maestro", img: "/images/maestro.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { name: "Apple Pay", img: "/images/applepay.svg" },
+                        { name: "PayPal", img: "/images/paypal.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: []
+                    
+                }
+            ]
+        },
+        {
+            country: "UAE",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "UnionPay", "img": "/images/unionpay.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                        { "name": "PayPal", "img": "/images/paypal.svg" },
+                        { "name": "Google Pay", "img": "/images/googlepay.svg" },
+                        { "name": "Samsung Pay", "img": "/images/samsungpay.svg" },
+                        { "name": "Alipay", "img": "/images/alipay.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "BNPL", "img": "/images/bnpl.svg" },
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "Nigeria",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "Verve", "img": "/images/verve.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "PayPal", "img": "/images/paypal.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "Bank Transfers", "img": "/images/bank-transfers.svg" },
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "EU & UK",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "Diners", "img": "/images/diners.svg" },
+                        { "name": "Discover", "img": "/images/discover.svg" },
+                        { "name": "JCB", "img": "/images/jcb.svg" },
+                        { "name": "Mada", "img": "/images/mada.svg" },
+                        { "name": "Knet", "img": "/images/knet.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                        { "name": "PayPal", "img": "/images/paypal.svg" },
+                        { "name": "Alipay", "img": "/images/alipay.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "Canada",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "Diners", "img": "/images/diners.svg" },
+                        { "name": "Discover", "img": "/images/discover.svg" },
+                        { "name": "JCB", "img": "/images/jcb.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                        { "name": "PayPal", "img": "/images/paypal.svg" },
+                        { "name": "Alipay", "img": "/images/alipay.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "USA",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "Diners", "img": "/images/diners.svg" },
+                        { "name": "Discover", "img": "/images/discover.svg" },
+                        { "name": "JCB", "img": "/images/jcb.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                        { "name": "PayPal", "img": "/images/paypal.svg" },
+                        { "name": "Alipay", "img": "/images/alipay.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "Kuwait",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "Knet", "img": "/images/knet.svg" },
+                        { "name": "Mada", "img": "/images/mada.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                        { "name": "PayPal", "img": "/images/paypal.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: []
+                }
+            ]
+        },
+        {
+            country: "Indonesia",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "JCB", "img": "/images/jcb.svg" },
+                        { "name": "Discover", "img": "/images/discover.svg" },
+                        { "name": "Diners", "img": "/images/diners.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "PayPal", "img": "/images/paypal.svg" },
+                        { "name": "Virgo", "img": "/images/virgo.svg" },
+                        { "name": "OVO", "img": "/images/ovo.svg" },
+                        { "name": "ShopeePay", "img": "/images/shopeepay.svg" },
+                        { "name": "Dana", "img": "/images/dana.svg" },
+                        { "name": "Doku", "img": "/images/doku.svg" },
+                        { "name": "LinkAja", "img": "/images/linkaja.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "QR Code (QRIS)", "img": "/images/qris.svg" },
+                        { "name": "Bank Transfers", "img": "/images/bank-transfer.svg" },
+                        { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
+                        { "name": "BNPL", "img": "/images/bnpl.svg" },
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "LATAM",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "WebPay (in 2 countries only)", "img": "/images/webpay.svg" },
+                        { "name": "Diners", "img": "/images/diners.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "PayPal", "img": "/images/paypal.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
+                        { "name": "E-Wallets", "img": "/images/ewallets.svg" },
+                        { "name": "Bank Transfers (almost 100+ PM)", "img": "/images/bank-transfers.svg" },
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "Australia",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "Maestro", "img": "/images/maestro.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "PayPal", "img": "/images/paypal.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "Qatar",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "QPAY", "img": "/images/qpay.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: []
+                },
+                {
+                    title: "Other",
+                    items: [
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
+        {
+            country: "Saudi Arabia",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "Amex", "img": "/images/amex.svg" },
+                        { "name": "Mada", "img": "/images/mada.svg" }
+                    ]
+                },
+                {
+                    title: "Digital Wallets",
+                    items: [
+                        { "name": "Apple Pay", "img": "/images/applepay.svg" },
+                        { "name": "Google Pay", "img": "/images/googlepay.svg" }
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                    ]
+                }
+            ]
+        }
     ];
 
     const selectedCountry = ref(paymentData[0].country);
