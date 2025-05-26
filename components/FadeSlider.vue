@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <h2 v-if="title" class="text-2xl">{{ title }}</h2>
+        <p class="mt-4" v-if="subtitle">{{ subtitle }}</p>
         <div :class="reverse && 'flex-row-reverse'" class="flex mt-10 rounded-xl overflow-hidden max-lg:flex-col  lg:h-[500px]">
             <div class="lg:w-1/2 bg-gradient-to-r from-[#E6EBF3] to-[#E6F1F6] max-lg:py-10 lg:py-16">
                 <div v-if="data" class="flex flex-col justify-center h-full">
@@ -25,11 +26,11 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:w-1/2 bg-gradient-to-r from-[#D2EAF1] to-[#E7F2F7] max-lg:px-10 lg:px-16 max-lg:py-10 lg:py-16 overflow-hidden">
+            <div class="lg:w-1/2 bg-gradient-to-r from-[#D2EAF1] to-[#E7F2F7] max-lg:px-10 lg:px-16 max-lg:py-10 lg:py-16 overflow-hidden" :class="noPadding && 'lg:!pb-0 max-lg:!pb-0'">
                 <div v-if="data" class="w-full h-full relative">
-                    <Transition name="fade" mpde="out-in">
-                        <div class="lg:top-1/2 lg:-translate-y-1/2" v-if="data[selectedIndex]" :key="selectedIndex">
-                            <img class="mx-auto object-contain" :src="data[selectedIndex].image" :alt="data[selectedIndex].title" />
+                    <Transition name="fade" mode="out-in">
+                        <div class="w-full flex flex-col justify-center h-full" v-if="data[selectedIndex]" :key="selectedIndex">
+                            <img :class="noPadding && '-mb-2'" class="mx-auto object-contain" :src="data[selectedIndex].image" :alt="data[selectedIndex].title" />
                         </div> 
                     </Transition>
                                                           
@@ -41,7 +42,7 @@
 
 <script setup>
     const selectedIndex = ref(0);
-    const props = defineProps(['reverse','title','data']);
+    const props = defineProps(['reverse','title','data','subtitle','noPadding']);
 
     const handleClick = (index) => {
         selectedIndex.value = index

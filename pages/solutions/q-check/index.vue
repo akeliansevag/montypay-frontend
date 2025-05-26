@@ -38,7 +38,7 @@
         <div class="separator"></div>
     </div>
 
-    <FadeSlider title="It’s All Just One Scan Away " reverse="true"/>
+    <FadeSlider :data="sliderTwo" noPadding="true" subtitle="Create a modern, quick, and enjoyable dining experience with QCheck’s intuitive features." title="It’s All Just One Scan Away " reverse="true"/>
     <div class="container">
         <div class="separator"></div>
     </div>
@@ -80,8 +80,33 @@ const sliderOne = [
         image: '/multiple-payment-options.webp',
         category: 'Flexible',
     },
+];
 
-
+const sliderTwo = [
+    {
+        title: 'Scan the QR Code',
+        description: 'One code, two benefits! Guests can view your menu and pay the bill without waiting',
+        image: '/scan-the-qr-code.webp',
+        category: 'Scan',
+    },
+    {
+        title: 'Split the Bill',
+        description: 'Simplify group payments with itemized or equal division options',
+        image: '/split-the-bill.webp',
+        category: 'Split',
+    },
+    {
+        title: 'Add a Tip',
+        description: 'Triple staff tips with an easy in-app tipping option during payment',
+        image: '/add-a-tip.webp',
+        category: 'Tip',
+    },
+    {
+        title: 'Pay the Bill',
+        description: 'Offer secure and versatile payment methods for fast, smooth transactions',
+        image: '/pay-the-bill.webp',
+        category: 'Pay',
+    },
 ];
 </script>
 
