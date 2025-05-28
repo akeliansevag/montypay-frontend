@@ -42,6 +42,45 @@
     <div class="container">
         <div class="separator"></div>
     </div>
+
+
+    <FadeSliderTwo :data="sliderThree" title="Integration and Onboarding" subtitle="Getting started with QCheck is quick and hassle-free:"/>
+    <div class="container">
+        <div class="separator"></div>
+    </div>
+    
+    <section class="max-lg:pb-10 lg:pb-20">
+        <div class="container">
+            <h2 class="text-2xl">Connectors</h2>
+            <div class="flex max-lg:flex-wrap items-center gap-10  mt-8">
+                <div v-for="(connector,index) in connectors">
+                    <img :src="connector.image" :alt="connector.title" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="max-lg:pb-10 lg:pb-20">
+        <div class="container">
+            <h2 class="text-2xl">Why QCheck?</h2>
+            <div>
+                <div class="table-wrapper">
+                    <table class="custom-table">
+                        <tr v-for="(row,index) in why">
+                            <th v-if="index==0" v-for="(col,ind) in row">
+                                {{ col }}
+                            </th>
+                            <td v-else v-for="(col,ind) in row">
+                                {{ col }}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>        
+        </div>
+    </section>
+    
     
 </template>
 
@@ -55,6 +94,45 @@ useSeoMeta({
     twitterCard: 'summary_large_image',
 })
 
+const why = [
+    ['Feature','QCheck','Traditional Checkout'],
+    ['Wait time','Less than 2 minutes','10+ minutes'],
+    ['Bill splitting','Division and itemized','Manual'],
+    ['Payment options','Diverse','Limited'],
+    ['Tipping','Increase tips','Average tips'],
+    ['Integration','Seamless POS integration','Basic integration'],
+    ['Customer satisfaction','High','Average']
+]
+const connectors = [
+    {
+        title: 'DinerWare',
+        image: '/dinerware.webp'
+    },
+    {
+        title: 'Micros',
+        image: '/micros.webp'
+    },
+    {
+        title: 'Brink POS',
+        image: '/brink-pos.webp'
+    },
+    {
+        title: 'Heartland Xpient',
+        image: '/heartland-xpient.webp'
+    },
+    {
+        title: 'NCR',
+        image: '/ncr.webp'
+    },
+    {
+        title: 'Maitred',
+        image: '/maitred.webp'
+    },
+    {
+        title: 'POS iTouch',
+        image: '/positouch.webp'
+    },
+]
 const sliderOne = [
     {
         title: 'Faster Checkout',
@@ -108,6 +186,43 @@ const sliderTwo = [
         category: 'Pay',
     },
 ];
+
+const sliderThree = [
+    {
+        title: 'Sync Your POS',
+        description: 'Our team ensures seamless integration with your existing POS system',
+        image: '/integration-1.webp',
+    },
+    {
+        title: 'Staff Training',
+        description: 'Comprehensive training equips your team to use QCheck effortlessly. ',
+        image: '/integration-2.webp',
+    },
+    {
+        title: 'Fast Customer Checkout',
+        description: 'Your guests can immediately enjoy faster, smoother checkouts.',
+        image: '/integration-3.webp',
+    }
+];
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="sass" scoped>
+    .table-wrapper
+        @apply max-lg:overflow-x-auto
+    .custom-table
+        @apply shadow-xl w-full rounded-xl mt-10 max-lg:min-w-[1000px]
+        th
+            @apply text-left font-bold text-2xl p-8
+        td
+            @apply px-8 py-4
+        tr:nth-child(even)
+            @apply bg-[#DFE3EF]
+        tr:nth-child(odd)
+            @apply bg-[#E9ECF4]
+        th:first-child
+            @apply bg-white
+        tr td:first-child
+            @apply font-bold bg-white 
+        tr td:nth-child(2)
+            @apply flex gap-2 items-center before:content-['✓'] before:bg-gradient-to-r before:from-[#003383] before:to-[#00DFDF] before:w-5 before:h-5 before:rounded-full before:text-white before:flex before:justify-center before:items-center before:shrink-0
+</style>
