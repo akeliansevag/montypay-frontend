@@ -52,7 +52,7 @@
     <section class="max-lg:pb-10 lg:pb-20">
         <div class="container">
             <h2 class="text-2xl">Connectors</h2>
-            <div class="flex max-lg:flex-wrap items-center gap-10  mt-8">
+            <div class="flex max-lg:flex-wrap items-center  gap-10  mt-8 lg:justify-between">
                 <div v-for="(connector,index) in connectors">
                     <img :src="connector.image" :alt="connector.title" />
                 </div>
@@ -210,11 +210,13 @@ const sliderThree = [
     .table-wrapper
         @apply max-lg:overflow-x-auto
     .custom-table
-        @apply shadow-xl w-full rounded-xl mt-10 max-lg:min-w-[1000px]
+        @apply shadow-xl w-full rounded-xl overflow-hidden mt-10 max-lg:min-w-[1000px]
         th
             @apply text-left font-bold text-2xl p-8
         td
             @apply px-8 py-4
+        tr:last-child td
+            @apply pb-8
         tr:nth-child(even)
             @apply bg-[#DFE3EF]
         tr:nth-child(odd)
