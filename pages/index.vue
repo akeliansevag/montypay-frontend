@@ -496,7 +496,7 @@
     ];
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     .online
         box-shadow: 0px 4px 24px 0px #0000001A  
 

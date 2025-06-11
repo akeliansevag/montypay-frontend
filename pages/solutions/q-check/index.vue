@@ -81,7 +81,9 @@
         </div>
     </section>
     
-    
+    <Accordion :data="faq" title="All You Need to Know" /> 
+    <BlueSection title="It’s All Just One Scan Away" subtitle="Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features" buttonText="Request a demo" buttonLink="/contact-us" image="/its-just-one-scan-away.webp"/>
+    <PaymentSolutions />
 </template>
 
 <script setup>
@@ -93,6 +95,29 @@ useSeoMeta({
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })
+
+const faq = [
+    {
+        question: 'How does QCheck handle bill splitting?',
+        answer: 'Guests can divide their bills equally or itemize them with ease.'
+    },
+    {
+        question: 'What payment methods are supported?',
+        answer: 'QCheck supports 100+ payment methods, including card and wallet payments.'
+    },
+    {
+        question: 'How secure are the transactions?',
+        answer: 'QCheck ensures the highest level of security with PCI DSS compliance and encryption.'
+    },
+    {
+        question: 'Does QCheck integrate with existing POS systems?',
+        answer: 'Yes, it integrates seamlessly for uninterrupted operations.'
+    },
+    {
+        question: 'Is support available for setup and staff training?',
+        answer: 'Absolutely! We provide complete onboarding and training support to ensure success.'
+    }
+]
 
 const why = [
     ['Feature','QCheck','Traditional Checkout'],
