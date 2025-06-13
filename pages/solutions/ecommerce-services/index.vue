@@ -85,27 +85,31 @@ useSeoMeta({
 const faq = [
     {
         question: 'Can I customize the design of my online store?',
-        answer: 'Absolutely. We build a website that reflects your brand’s personality and vision '
+        answer: 'Absolutely. We build a website that reflects your brand’s personality and vision'
     },
     {
         question: 'How can I accept payments on my e-commerce store?',
-        answer: 'QCheck supports 100+ payment methods, including card and wallet payments.'
+        answer: 'With MontyPay’s integrated, secure payment gateway, you can accept payments with ease.'
     },
     {
         question: 'Is my checkout secure?',
-        answer: 'QCheck ensures the highest level of security with PCI DSS compliance and encryption.'
+        answer: 'Yes, MontyPay is PCI DSS-certified, ensuring top-tier security.'
     },
     {
         question: 'Can I integrate more than one language?',
-        answer: 'Yes, it integrates seamlessly for uninterrupted operations.'
+        answer: 'Yes, we offer multi-language support for a truly global reach.'
     },
     {
         question: 'Can I use multiple currencies?',
-        answer: 'Absolutely! We provide complete onboarding and training support to ensure success.'
+        answer: 'Definitely! We support payments in multiple currencies to cater to customers around the world.'
+    },
+    {
+        question: 'Is the website mobile-friendly?',
+        answer: 'Absolutely! We ensure your website is fully responsive, providing a seamless experience across all devices.'
     },
     {
         question: 'How many payment options are supported?',
-        answer: 'Absolutely! We provide complete onboarding and training support to ensure success.'
+        answer: 'Over 100, including credit cards, digital wallets, and even cryptocurrency.'
     }
 ]
 
