@@ -111,11 +111,14 @@ onMounted(() => {
       })
 
       cards.forEach((card, i) => {
-        tl.from(card, {
-          yPercent: 100,
-          ease:     'linear',
-          duration
-        }, i * duration)
+        if(i>0){
+          tl.from(card, {
+            yPercent: 100,
+            ease:     'linear',
+            duration
+          }, i * duration)
+        }
+        
       })
     },
 
