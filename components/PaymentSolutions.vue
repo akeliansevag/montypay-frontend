@@ -2,7 +2,7 @@
     <Section>
         <div class="container">
             <div class="flex flex-col gap-10">
-                <h2 class="text-center text-2xl">Our Payment Solutions</h2>
+                <h2 class="text-center text-3xl">Our Payment Solutions</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1100px] mx-auto">
                     <NuxtLink :to="item.link" v-for="item in paymentSolutions" :key="item.title" class="border border-[#D9D9D9/50] rounded-lg p-3 pb-7 shadow-md block">
                         <div class="bg-[#f6f6f6] h-[300px] p-8">

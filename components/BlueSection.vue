@@ -4,7 +4,7 @@
         <div class="container">
             <div class="flex items-center justify-between max-lg:flex-col gap-10">
                 <div class="flex flex-col gap-7 w-full">
-                    <h2 class="text-2xl" v-if="title">{{ title }}</h2>
+                    <h2 class="text-3xl" v-if="title">{{ title }}</h2>
                     <p v-if="subtitle">{{ subtitle }}</p>
                     <div>
                         <NuxtLink class="mp-button-quad inline-block" v-if="buttonText" :href="buttonLink">{{ buttonText }}</NuxtLink>

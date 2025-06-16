@@ -1,7 +1,7 @@
 <template>
     <section class="bg-[#E9ECF4] lg:py-24 max-lg:py-10">
         <div class="container">
-            <h2 class="text-2xl text-center mb-8" v-if="title">{{ title }}</h2>
+            <h2 class="text-3xl text-center mb-8" v-if="title">{{ title }}</h2>
             <div v-if="data" class="flex flex-col gap-5 max-w-[1050px] mx-auto">
                 <div v-for="(item,index) in data" :key="index" class="rounded-xl overflow-hidden transition-all" :class="openIndex===index && 'bg-[#DFE3EF]'">
                     <div @click="setOpenIndex(index)" class="px-7 pt-5 pb-3 cursor-pointer flex justify-between gap-10 items-center">
