@@ -23,12 +23,13 @@
                     <p class=" font-normal mt-10"><strong>MontyPay’s merchant mobile app</strong> ensures you’re always in control. It’s all right there, in the <strong>palm of your hand.</strong> </p>
                 </div>
                 <div class="w-full">
-                    <div ref="containerRef" class="relative w-full aspect-video">
+                    <div ref="containerRef" class="h-auto">
                         <ClientOnly>
                             <spline-viewer
-                                url="https://prod.spline.design/l4YnsdzfdrnAIkin/scene.splinecode%22"
+                                url="https://prod.spline.design/l4YnsdzfdrnAIkin/scene.splinecode"
                                 events-target="local"
                                 ref="splineRef"
+                                class="h-[1000px] w-full object-contain"
                             ></spline-viewer>                            
                         </ClientOnly>
                     </div>
