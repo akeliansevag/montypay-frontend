@@ -11,7 +11,7 @@
                         </div>
                     </div>
                     <div ref="answers" :style="getStyle(index)" class="px-7 overflow-hidden transition-all">
-                        <p class="pb-5">{{ item.answer }}</p>
+                        <p class="pb-5" v-html="item.answer" />
                     </div>
                 </div>
             </div>

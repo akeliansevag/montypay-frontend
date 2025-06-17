@@ -80,7 +80,7 @@
         </div>
     </section>
 
-     <section class="relative max-lg:py-10 lg:py-24">
+    <section class="relative max-lg:py-10 lg:py-24">
         <div class="container">
             <h2 class="text-3xl font-bold">Fast Integration and Onboarding</h2>
             <p class="lg:w-1/2 mt-6">Get started in no time! Our onboarding process ensures you’re up and running immediately. Focus on growing your business while we handle the heavy lifting behind the scenes.</p>
@@ -153,6 +153,77 @@
         </div>
     </section>
 
+    <MerchantMobileApp />
+
+    <section class="max-lg:py-10 lg:py-24 bg-white">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold">Omnichannel Reporting and Analytics</h2>
+                <h3 class="text-xl font-bold mt-6">Your business at a glance</h3>
+                <p class="lg:w-2/3 mt-6 mx-auto">Manage your business effortlessly with real-time insights across online and in-store sales. Access a unified dashboard or mobile app to track trends, transactions, and customer behavior for smarter, faster decisions.</p>
+            </div>
+            <div class="flex max-lg:flex-col gap-7 lg:mt-24 max-lg:mt-10">
+                <div class="w-full bg-[#E9ECF4D9] lg:min-h-[360px] rounded-md p-8 items-center justify-center flex">
+                    <div class="flex flex-col gap-10">
+                        <img class="mx-auto max-w-[400px] drop-shadow-xl w-full" src="/omnichannel-solution.webp" alt="Omnichannel Solution">
+                        <h3 class="text-2xl text-center font-bold">Omnichannel Solution</h3>
+                    </div>
+                </div>
+                <div class="w-full bg-[#E9ECF4D9] lg:min-h-[360px] rounded-md p-8 items-center justify-center flex">
+                    <div class="flex flex-col gap-10">
+                        <img class="mx-auto max-w-[400px] w-full" src="/unified-solution2.webp" alt="Unified Solution">
+                        <h3 class="text-2xl text-center font-bold">Unified Solution</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="max-lg:pb-10 lg:pb-24 bg-white relative overflow-hidden">
+        <img src="/shape-bg.svg" alt="Shapte" class="absolute top-0 lg:-right-[200px] max-lg:hidden">
+        <div class="container">
+            <div class="flex max-lg:flex-col gap-6">
+                <div class="w-full">
+                    <h2 class="text-3xl font-bold">Unified Solution for In-Store & Online Sales </h2>
+                    <p class="mt-6">Get the power of our Smart POS together with our payment gateway for an all-in-one solution that streamlines your business. </p>
+
+                    <div class="flex flex-col gap-7 mt-7">
+                        <div class="flex max-lg:flex-col gap-5 p-8 bg-white rounded-xl border border-[#D9D9D980] drop-shadow-sm" v-for="(solution,inx) in solutions" :key="inx">
+                            <div>
+                                <img :src="solution.icon" :alt="solution.title"/>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold leading-none mb-2">{{ solution.title }}</h4>
+                                <p>{{ solution.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class=" font-normal mt-10">A perfect pairing for growing businesses that want simplicity and efficiency across all sales channels. </p>
+                </div>
+                <div class="w-full">
+                    <img class="w-full" src="/unified-solution-for.webp" alt="Unified Solution">
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="lg:py-24 max-lg:py-10 bg-[#0F0C22] relative text-white">
+        <img src="/blue-bg-2.webp" alt="BG" class="top-0 left-0 w-full h-full absolute object-cover">
+        <div class="container">
+            <h2 class="text-3xl font-bold">More Perks or We Back You Up </h2>
+            <div class="mt-10 flex max-lg:flex-col gap-7 max-lg:gap-10">
+                <div v-for="(perk,ind) in perks" :key="ind">
+                    <img :src="perk.icon" :alt="perk.title"/>
+                    <h3 class="text-xl font-bold mt-4">{{ perk.title }}</h3>
+                    <p class="mt-4">{{ perk.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <Accordion :data="faq" title="All You Need to Know" /> 
     
     <BlueSection title="Let’s Grow Your Business Together " subtitle="MontyPay is here to provide a seamless, secure, and global solution tailored to your needs. Whether you're a startup or an enterprise, we’ve got the tools to help you succeed. Contact us now and grow your business with MontyPay." buttonText="Request a demo" buttonLink="/contact-us" image="/lets-grow-your-business-together.webp"/>
@@ -171,6 +242,42 @@
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })
+
+    const perks = [
+        {
+            icon: '/risk-management.svg',
+            title: 'Risk Management and Fraud Prevention',
+            description: 'We’ve got you covered with PCI DSS Level 1 compliance and advanced fraud detection tools. Minimize risks like chargebacks and fraud, so you can focus on running your business with peace of mind.'
+        },
+        {
+            icon: '/dedicated-support.svg',
+            title: 'Dedicated Support',
+            description: 'You’re never alone. Our 24/7 technical support is here to guide you every step of the way. Chat with our support team for instant help while you surf through your dashboard. '
+        },
+        {
+            icon: '/loyalty-and-lending.svg',
+            title: 'Loyalty and Lending Services',
+            description: 'Reward your business with every transaction. Our point-based loyalty program lets you earn rewards for online and in-store payments, enjoy cashback offers, and even build a credit score for potential loans.'
+        },
+    ]
+
+    const solutions = [
+        {
+            icon: '/seamless-sales.svg',
+            title: 'Seamless Sales',
+            description: 'Accept payments online and offline, covering all customer touchpoints.'
+        },
+        {
+            icon: '/unified-dashboard.svg',
+            title: 'Unified Dashboard',
+            description: 'Monitor and manage your sales, transactions, and customer data from one place.'
+        },
+        {
+            icon: '/effortless-cross-channel.svg',
+            title: 'Effortless Cross-Channel Management',
+            description: 'Stay in control with real-time insights into your online and offline performance.'
+        },
+    ]
 
     const sliderFour = [
         {
@@ -197,28 +304,40 @@
 
     const faq = [
         {
-            question: 'Can I customize the design of my online store?',
-            answer: 'Absolutely. We build a website that reflects your brand’s personality and vision '
+            question: 'What payment methods does MontyPay support?',
+            answer: 'MontyPay supports 100+ payment methods, including major credit cards, digital wallets, and local payment options, ensuring flexibility for you and your customers.'
         },
         {
-            question: 'How can I accept payments on my e-commerce store?',
-            answer: 'QCheck supports 100+ payment methods, including card and wallet payments.'
+            question: 'Is MontyPay secure for online transactions?',
+            answer: 'Absolutely! MontyPay is PCI DSS Level 1 v4 compliant and equipped with advanced fraud detection to ensure the highest level of security.'
         },
         {
-            question: 'Is my checkout secure?',
-            answer: 'QCheck ensures the highest level of security with PCI DSS compliance and encryption.'
+            question: 'Can MontyPay integrate with my existing website or e-commerce platform?',
+            answer: 'Yes, integration is simple with our multiple plugins designed for popular CMS platforms. Check out our <a href="/documentation" class="underline">CMS plugins page</a> for more details.'
         },
         {
-            question: 'Can I integrate more than one language?',
-            answer: 'Yes, it integrates seamlessly for uninterrupted operations.'
+            question: 'How long does it take to process payments?',
+            answer: 'Payments are processed instantly for a seamless customer experience.'
         },
         {
-            question: 'Can I use multiple currencies?',
-            answer: 'Absolutely! We provide complete onboarding and training support to ensure success.'
+            question: 'Does MontyPay support multi-currency payments?',
+            answer: 'Yes, MontyPay accepts payments in multiple currencies, including crypto, allowing you to expand your business globally without limits.'
         },
         {
-            question: 'How many payment options are supported?',
-            answer: 'Absolutely! We provide complete onboarding and training support to ensure success.'
+            question: 'What kind of analytics and reporting does MontyPay offer?',
+            answer: 'MontyPay provides real-time reporting and insights through a unified dashboard, helping you track transactions, sales trends, and customer behavior with ease.'
+        },
+        {
+            question: 'Can MontyPay handle recurring payments or subscriptions?',
+            answer: 'Yes, MontyPay supports automated recurring billing, perfect for subscription services or installment plans.'
+        },
+        {
+            question: 'Does MontyPay offer solutions for in-store payments?',
+            answer: 'Absolutely! Our omnichannel solution ensures a seamless experience across both online and in-store sales.'
+        },
+        {
+            question: 'How do I get started with MontyPay?',
+            answer: 'Getting started is quick and easy with our streamlined onboarding process. You’ll be up and running in no time, contact us to begin!'
         }
     ]
 

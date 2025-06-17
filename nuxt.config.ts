@@ -43,6 +43,10 @@ export default defineNuxtConfig({
           b.appendChild(c)}loadScript(function(){beTracker.t({hash:"414e65d87ddbb126f1541ba3cdadf48b"})});`,
           type: 'text/javascript',
           charset: 'utf-8'
+        },
+        {
+          src: 'https://unpkg.com/@splinetool/viewer/build/spline-viewer.js',
+          type: 'module'
         }
       ],
       __dangerouslyDisableSanitizersByTagID: {
