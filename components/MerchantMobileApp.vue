@@ -26,7 +26,7 @@
                     <div ref="containerRef" class="relative w-full aspect-video">
                         <ClientOnly>
                             <spline-viewer
-                                url="https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode"
+                                url="https://prod.spline.design/l4YnsdzfdrnAIkin/scene.splinecode%22"
                                 events-target="local"
                                 ref="splineRef"
                             ></spline-viewer>                            
