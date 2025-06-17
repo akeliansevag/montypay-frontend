@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" ref="containerRef">
         <div class="lg:h-[500px] px-10 max-lg:py-10 lg:py-24 w-full text-white relative rounded-3xl overflow-hidden">
             <div class="w-full h-full absolute top-0 left-0 bg-[#233F94CC] z-10"></div>
             <Transition name="fade" mode="out-in">
@@ -34,10 +34,42 @@
 <script setup>
     const selectedIndex = ref(0);
     const props = defineProps(['data','title','subtitle']);
+    const containerRef = ref(null);
+
+
+    let interval = null;
+
+    const startInterval = () => {
+        interval = setInterval(() => {
+            selectedIndex.value = (selectedIndex.value + 1) % props.data.length;
+        }, 4000);
+    };
+
+    const stopInterval = () => {
+        clearInterval(interval);
+    };
+
 
     const handleClick = (index) => {
         selectedIndex.value = index
     }
+
+    onMounted(() => {
+        startInterval();
+
+        if (containerRef.value) {
+            containerRef.value.addEventListener('mouseenter', stopInterval);
+            containerRef.value.addEventListener('mouseleave', startInterval);
+        }
+    });
+
+    onBeforeUnmount(() => {
+        stopInterval();
+        if (containerRef.value) {
+            containerRef.value.removeEventListener('mouseenter', stopInterval);
+            containerRef.value.removeEventListener('mouseleave', startInterval);
+        }
+    });
 </script>
 
 <style lang="sass" scoped>
