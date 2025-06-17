@@ -23,26 +23,23 @@
                                     </div>
                                 </swiper-slide>
                             </swiper>
-
-                            
                         </div>
-                        
                     </div>
                     <div :id="uniqueId" class="custom-pagination mt-6 flex justify-center"></div>
                 </div>
-                <div class="lg:w-1/2 bg-gradient-to-r from-[#D2EAF1] to-[#E7F2F7] max-lg:px-10 lg:px-16 max-lg:py-10 lg:py-16 overflow-hidden" :class="noPadding && 'lg:!pb-0 max-lg:!pb-0'">
-                        <swiper
-                                :modules="[EffectFade,Controller]"
-                                effect="fade"
-                                :fadeEffect="{ crossFade: true }"
-                                class="w-full h-full"
-                                @swiper="setSecondSwiper"
-                                :controller="{ control: firstSwiper }"
-                        >
-                            <swiper-slide v-for="(d,ind) in data" :key="ind" class="flex items-center h-full flex-col justify-center">
-                                <img class="w-full h-full object-contain" :src="d.image" :alt="d.title">
-                            </swiper-slide>
-                        </swiper>
+                <div class="lg:w-1/2 bg-gradient-to-r from-[#D2EAF1] to-[#E7F2F7] max-lg:px-4 lg:px-6 max-lg:py-4 lg:py-6 overflow-hidden" :class="noPadding && 'lg:!pb-0 max-lg:!pb-0'">
+                    <swiper
+                        :modules="[EffectFade,Controller]"
+                        effect="fade"
+                        :fadeEffect="{ crossFade: true }"
+                        class="w-full h-full"
+                        @swiper="setSecondSwiper"
+                        :controller="{ control: firstSwiper }"
+                    >
+                        <swiper-slide v-for="(d,ind) in data" :key="ind" class="flex items-center h-full flex-col justify-center">
+                            <img class="w-full" :src="d.image" :alt="d.title">
+                        </swiper-slide>
+                    </swiper>
                 </div>
             </div>
         </div>

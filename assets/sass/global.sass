@@ -5,6 +5,13 @@
 @import 'main'
 @import 'keyframes'
 
+$space-sm: 16rem
+$stack-cards-gap: 3rem
+
+:root
+    --space-sm:  #{$space-sm}
+    --stack-cards-gap:  #{$stack-cards-gap}
+
 *
     position: relative
 
@@ -45,7 +52,8 @@ textarea:-webkit-autofill
 
         &:hover
             @apply bg-secondary
-    &-quad
+            
+    &-quaternary
         background: linear-gradient(89.6deg, #003383 5.21%, #00DFDF 134.35%)
         @apply text-white rounded-lg px-5 py-3 text-center
 

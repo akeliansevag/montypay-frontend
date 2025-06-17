@@ -7,7 +7,7 @@
                     <h2 class="text-3xl" v-if="title">{{ title }}</h2>
                     <p v-if="subtitle">{{ subtitle }}</p>
                     <div>
-                        <NuxtLink class="mp-button-quad inline-block" v-if="buttonText" :href="buttonLink">{{ buttonText }}</NuxtLink>
+                        <NuxtLink class="mp-button-quaternary inline-block" v-if="buttonText" :href="buttonLink">{{ buttonText }}</NuxtLink>
                     </div>
                     
                 </div>

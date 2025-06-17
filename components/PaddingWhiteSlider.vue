@@ -1,6 +1,6 @@
 <template>
     <ClientOnly>
-        <section class="relative lg:py-16 max-lg:16 bg-[#0E153A]">
+        <section class="relative py-16 bg-[#0E153A]">
             <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 left-0 w-full h-full object-cover" alt="blue-bg"/>
             <div class="ml-container-align">
                 <h2 class="text-white text-3xl font-bold">{{ title }}</h2>
@@ -28,7 +28,7 @@
                                     }"
                             >
                                 <swiper-slide v-for="(da,indx) in data" :key="indx" class="h-auto flex">
-                                    <div class="bg-white p-4 rounded-xl flex flex-col justify-between">
+                                    <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between">
                                         <div>
                                             <h4 class="text-xl font-bold mt-4">{{ da.title }}</h4>
                                             <p class="mt-4">{{ da.description }}</p>

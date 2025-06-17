@@ -79,7 +79,7 @@ const items = [
 
 onMounted(() => {
   const cards    = stackContainer.value.querySelectorAll('.stack-item')
-  const margin   = 30    // px between stacked cards
+  const margin   = 40    // px between stacked cards
   const duration = 1     // each animation lasts 1s
 
   ScrollTrigger.matchMedia({

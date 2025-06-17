@@ -16,14 +16,9 @@
                     </p>
                     <div>
                         <div class="relative">
-                            <input required type="text" placeholder="What's your restaurant's name?"
-                                class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
-                            <button
-                                class="mp-button-quad lg:absolute max-lg:mt-1 max-lg:w-full lg:right-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2">
-                                Request a Demo
-                            </button>
+                            <input required type="text" placeholder="What's your restaurant's name?" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
+                            <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:right-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
                         </div>
-
                     </div>
                 </div>
                 <div class="lg:w-[35%]">
@@ -38,7 +33,7 @@
         <div class="separator"></div>
     </div>
 
-    <FadeSlider :data="sliderTwo" noPadding="true" subtitle="Create a modern, quick, and enjoyable dining experience with QCheck’s intuitive features." title="It’s All Just One Scan Away " reverse="true"/>
+    <FadeSlider :data="sliderTwo" noPadding="true" subtitle="Create a modern, quick, and enjoyable dining experience with QCheck’s intuitive features." title="It’s All Just One Scan Away" reverse="true"/>
     <div class="container">
         <div class="separator"></div>
     </div>
@@ -52,9 +47,12 @@
     <section class="max-lg:pb-10 lg:pb-20">
         <div class="container">
             <h2 class="text-2xl">Connectors</h2>
-            <div class="flex max-lg:flex-wrap items-center  gap-10  mt-8 lg:justify-between">
-                <div v-for="(connector,index) in connectors">
-                    <img :src="connector.image" :alt="connector.title" />
+
+            <div class="marquee overflow-hidden">
+                <div class="wrapper grid grid-flow-col auto-cols-[12rem] lg:auto-cols-[20rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
+                    <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
+                        <img :src="marquee.image" :alt="marquee.title" />
+                    </template>
                 </div>
             </div>
         </div>
@@ -158,6 +156,9 @@ const connectors = [
         image: '/positouch.webp'
     },
 ]
+
+const duplicatedMarqueeList = computed(() => [...connectors, ...connectors, ...connectors]);
+
 const sliderOne = [
     {
         title: 'Faster Checkout',

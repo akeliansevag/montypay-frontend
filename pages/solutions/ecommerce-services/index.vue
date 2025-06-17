@@ -3,7 +3,7 @@
 
         <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
 
-        <div class="ml-container-align">
+        <div class="ml-container-align with-padding">
             <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-7 lg:mt-10">
                     <h1>
@@ -17,7 +17,7 @@
                 
                 </div>
                 <div class="lg:w-[50%] flex justify-end">
-                    <img src="/ecommerce-banner.webp" alt="QCheck Banner Image" />
+                    <img src="/ecommerce-banner.webp" alt="ecommerce Banner Image" />
                 </div>
             </div>
         </div>
@@ -33,10 +33,13 @@
         <div class="container">
             <h2 class="text-2xl">What We Bring to the Table</h2>
             <p class="mt-4">We transform your vision into reality by building custom websites from scratch in less than a month, designed to meet your unique business needs. With full customization options, you can tailor your online store to reflect your brand and cater to global audiences.</p>
-            <img class="mx-auto" src="/what-we-bring-to-the-table.webp" alt="What we bring to the table" />
+            <img class="mt-10 mx-auto drop-shadow-2xl" src="/what-we-bring-to-the-table.webp" alt="What we bring to the table" />
         </div>
-        <div class="separator mt-0"></div>
     </section>
+
+    <div class="container">
+        <div class="separator"></div>
+    </div>
 
     <FadeSwiper :reverse="true" :data="sliderTwo" :noPadding="true" title="Master Your Content" subtitle="Take full control of your website’s content and updates:"/>
 
@@ -58,9 +61,12 @@
     <div class="lg:py-16 max-lg:py-10">
         <div class="container">
             <h2 class="text-2xl font-bold text-center">Our Clients</h2>
-            <div class="mt-10 flex flex-wrap items-center justify-center gap-5">
-                <div v-for="client in clients">
-                    <img :src="client" alt="Client" />
+
+            <div class="marquee1 overflow-hidden mt-10">
+                <div class="wrapper grid grid-flow-col auto-cols-[8rem] lg:auto-cols-[20rem] justify-items-center items-center mt-10 animate-[marquee1_20s_linear_infinite] lg:animate-[marquee1lg_20s_linear_infinite]">
+                    <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
+                        <img :src="marquee" alt="Client" />
+                    </template>
                 </div>
             </div>
 
@@ -213,6 +219,8 @@ const sliderFour = [
 const clients = [
     '/ozey.webp','/leiak.webp','/marios.webp', '/lost.webp', '/beydee.webp'
 ]
+const duplicatedMarqueeList = computed(() => [...clients, ...clients, ...clients]);
+
 
 </script>
 

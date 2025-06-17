@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <div class="lg:h-[500px] px-10 max-lg:py-10 lg:py-24 w-full  text-white relative">
+        <div class="lg:h-[500px] px-10 max-lg:py-10 lg:py-24 w-full text-white relative rounded-3xl overflow-hidden">
             <div class="w-full h-full absolute top-0 left-0 bg-[#233F94CC] z-10"></div>
             <Transition name="fade" mode="out-in">
-                <div class="w-full h-full absolute top-0 left-0 z-0" v-if="data[selectedIndex]" :key="selectedIndex">
+                <div class="w-full h-full absolute top-0 left-0 z-0 rounded-3xl overflow-hidden" v-if="data[selectedIndex]" :key="selectedIndex">
                     <img class="w-full h-full object-cover" :src="data[selectedIndex].image" :alt="data[selectedIndex].title"/>
                 </div>
             </Transition>

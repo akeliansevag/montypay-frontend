@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                         </Transition>
-                        <div class="flex gap-5 max-lg:mt-10 lg:mt-20 max-lg:flex-wrap px-10">
+                        <div class="flex gap-5 max-lg:mt-10 lg:mt-20 max-lg:flex-wrap lg:px-16 max-lg:px-10">
                             <button @click="handleClick(index)" v-for="(item,index) in data" :key="index" class="filter-button" :class="selectedIndex===index && 'active'">
                                 {{ item.category }}
                             </button>
@@ -26,14 +26,13 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:w-1/2 bg-gradient-to-r from-[#D2EAF1] to-[#E7F2F7] max-lg:px-10 lg:px-16 max-lg:py-10 lg:py-16 overflow-hidden" :class="noPadding && 'lg:!pb-0 max-lg:!pb-0'">
-                <div v-if="data" class="w-full h-full relative">
+            <div class="lg:w-1/2 bg-gradient-to-r from-[#D2EAF1] to-[#E7F2F7] overflow-hidden" :class="noPadding && 'lg:!pb-0 max-lg:!pb-0'">
+                <div v-if="data" class="flex flex-col w-full h-full relative">
                     <Transition name="fade" mode="out-in">
-                        <div class="w-full flex flex-col justify-center h-full" v-if="data[selectedIndex]" :key="selectedIndex">
-                            <img :class="noPadding && '-mb-2'" class="mx-auto object-contain" :src="data[selectedIndex].image" :alt="data[selectedIndex].title" />
+                        <div class="w-full mt-auto" v-if="data[selectedIndex]" :key="selectedIndex">
+                            <img class="mx-auto" :src="data[selectedIndex].image" :alt="data[selectedIndex].title" /><!-- :class="noPadding && '-mb-2'" -->
                         </div> 
                     </Transition>
-                                                          
                 </div>
             </div>
         </div>
