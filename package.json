@@ -25,7 +25,7 @@
   "dependencies": {
     "@maxmind/geoip2-node": "^5.0.0",
     "@nuxt/image": "^1.1.0",
-    "@splinetool/viewer": "^1.10.8",
+    "@splinetool/viewer": "^1.10.10",
     "gsap": "^3.13.0",
     "he": "^1.2.0",
     "node-fetch": "^3.3.2"

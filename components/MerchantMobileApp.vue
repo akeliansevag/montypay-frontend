@@ -22,15 +22,17 @@
                     </div>
                     <p class=" font-normal mt-10"><strong>MontyPay’s merchant mobile app</strong> ensures you’re always in control. It’s all right there, in the <strong>palm of your hand.</strong> </p>
                 </div>
-                <div class="w-full">
-                    <div ref="containerRef" class="h-auto">
+                <div class="w-full h-full">
+                    <div class="">
+                        <!-- url="https://prod.spline.design/YjilrVqHEgRC0AGl/scene.splinecode" -->
                         <ClientOnly>
-                            <spline-viewer
-                                url="https://prod.spline.design/l4YnsdzfdrnAIkin/scene.splinecode"
-                                events-target="local"
-                                ref="splineRef"
-                                class="h-[1000px] w-full object-contain"
-                            ></spline-viewer>                            
+                            <div ref="containerRef" class="w-full h-full relative">
+                                <spline-viewer
+                                    v-if="ready"
+                                    url="https://prod.spline.design/l4YnsdzfdrnAIkin/scene.splinecode"
+                                    style="width: 100%; height: 100%; display: block"
+                                />
+                            </div>                         
                         </ClientOnly>
                     </div>
                 </div>
@@ -40,7 +42,7 @@
 </template>
 
 <script setup>
-const needs = [
+    const needs = [
         {
             icon: '/track-your-sales.svg',
             title: 'Track Your Sales',
@@ -68,9 +70,46 @@ const needs = [
         }
     ]
 
-    const splineRef = ref(null)
-    const containerRef = ref(null)
+    const containerRef = ref(null);
+    const ready = ref(false);
+    let resizeObserver = null;
+    let timeout = null;
 
+    onMounted(async () => {
+        await import('@splinetool/viewer');
+        ready.value = true;
+    });
+
+    const styleCanvas = () => {
+        const viewer = document.querySelector('spline-viewer');
+        if (viewer?.shadowRoot) {
+            const canvas = viewer.shadowRoot.querySelector('canvas');
+            if (canvas) {
+                canvas.style.width = '100%';
+                canvas.style.height = '100%';
+                canvas.style.cursor = 'default';
+                canvas.style.pointerEvents = 'none';
+            }
+        }
+    };
+
+    watch(ready, (isReady) => {
+        if (!isReady) return;
+
+        timeout = setTimeout(styleCanvas, 100);
+
+        if (containerRef.value) {
+            resizeObserver = new ResizeObserver(() => {
+                styleCanvas();
+            });
+            resizeObserver.observe(containerRef.value);
+        }
+    });
+
+    onBeforeUnmount(() => {
+        if (resizeObserver) resizeObserver.disconnect();
+            if (timeout) clearTimeout(timeout);
+    });
     
 </script>
 

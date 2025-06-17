@@ -2,7 +2,7 @@
     <ClientOnly>
         <section class="relative py-16 bg-[#0E153A]">
             <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 left-0 w-full h-full object-cover" alt="blue-bg"/>
-            <div class="ml-container-align">
+            <div class="container">
                 <h2 class="text-white text-3xl font-bold">{{ title }}</h2>
             </div>
             
@@ -34,7 +34,7 @@
                                             <p class="mt-4">{{ da.description }}</p>
                                         </div>
                                         
-                                        <div class="bg-[#E6EEF5] rounded-2xl max-lg:h-[200px] lg:h-[300px] p-5 flex items-center justify-center mt-7">
+                                        <div class="bg-[#E6EEF5] rounded-2xl max-lg:h-[200px] lg:h-[300px] flex items-center justify-center mt-7">
                                             <img class="w-full h-full object-contain" :src="da.image" :alt="da.title" />
                                         </div>
                                         

@@ -44,10 +44,7 @@ export default defineNuxtConfig({
           type: 'text/javascript',
           charset: 'utf-8'
         },
-        {
-          src: 'https://unpkg.com/@splinetool/viewer/build/spline-viewer.js',
-          type: 'module'
-        }
+       
       ],
       __dangerouslyDisableSanitizersByTagID: {
         'snap-pixel': ['innerHTML'],

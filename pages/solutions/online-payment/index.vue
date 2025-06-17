@@ -205,9 +205,7 @@
                     <img class="w-full" src="/unified-solution-for.webp" alt="Unified Solution">
                 </div>
             </div>
-            
         </div>
-
     </section>
 
     <section class="lg:py-24 max-lg:py-10 bg-[#0F0C22] relative text-white">
@@ -281,24 +279,29 @@
 
     const sliderFour = [
         {
-            title: 'Unified Payments Across All Channels ',
-            description: 'Forget juggling multiple payment systems. MontyPay centralizes online, in-store, and mobile payments, ensuring a smooth, frictionless checkout experience for your customers while making it easier to manage transactions. ',
-            image: '/unified-payments.webp',
+            title: 'Fast, Smooth Transactions',
+            description: 'Process payments in record time so your customers stay happy, and your cash flow keeps moving. ',
+            image: '/fast-smooth-transaction.webp',
         },
         {
-            title: 'Consistent Experience. Happier Customers',
-            description: 'A smooth checkout experience across all channels builds trust, keeps customers coming back, and makes your business shine.',
-            image: '/consistent-experience.webp',
+            title: 'Advanced Security You Can Trust.',
+            description: 'Protect every transaction with PCI DSS Level 1 v4 compliance and cutting-edge fraud detection to keep your business and customers safe.',
+            image: '/advanced-security-you-can-trust.webp',
         },
         {
-            title: 'Global Payments at Hand’s Reach',
-            description: 'Accept payments from anywhere with 100+ methods including cards, digital wallets, QR codes, and pay-by-link, with support for multiple currencies. Your business can reach the world.',
-            image: '/global-payments.webp',
+            title: '100+ Payment Methods, Multiple Currencies',
+            description: 'Let your customers pay their way, whatever the currency, while you expand globally without the hassle.',
+            image: '/100-payment-methods-mutliple-currencies.webp',
         },
         {
-            title: 'Multi-User Access for Smarter Teamwork',
-            description: 'Empower your staff with customizable administrative roles and multiple user access. From finance teams to customer service, ensure the right people have the right access to manage transactions efficiently.',
-            image: '/multi-user-access.webp',
+            title: 'Build Trust, Boost Satisfaction',
+            description: 'Offer a reliable, seamless payment experience that keeps your customers coming back.',
+            image: '/build-trust-boost-satisfaction.webp',
+        },
+        {
+            title: 'Powerful Insights, Smarter Decisions',
+            description: 'Track and analyze your performance with advanced reporting tools, helping you grow confidently.',
+            image: '/powerful-insights-smarter-decisions.webp',
         }
     ];
 
