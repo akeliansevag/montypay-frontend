@@ -4,9 +4,9 @@
         <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
 
         <div class="ml-container-align with-padding">
-            <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
-                <div class="lg:w-[40%] flex flex-col gap-12">
-                    <h1 class="text-5xl !leading-[1.5]">Build Your Website <br /> And Start <span class="text-[#233F94]">Selling Online</span> <br />in Less Than 30 Days</h1>
+            <div class="flex max-lg:flex-col max-lg:gap-8 lg:justify-between">
+                <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Build Your Website <br /> And Start <span class="text-[#233F94]">Selling Online</span> <br />in Less Than 30 Days</h1>
                     <p class="text-xl">Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.</p>
                 </div>
                 <div class="lg:w-[50%] flex justify-end">

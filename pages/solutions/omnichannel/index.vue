@@ -4,9 +4,9 @@
         <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
 
         <div class="container">
-            <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
-                <div class="lg:w-[40%] flex flex-col gap-12">
-                    <h1 class="text-5xl !leading-[1.5]">All Your Payments.<br />One Single Platform.</h1>
+            <div class="flex max-lg:flex-col max-lg:gap-8 lg:justify-between">
+                <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">All Your Payments.<br />One Single Platform.</h1>
                     <p class="text-xl">Bring all your online, in-store, and mobile transactions into one seamless platform. Withreal-time insights, advanced reporting, and effortless management, you’ll deliver consistent, exceptional customer experiences while bringing your sales channels to their full potential.</p>
                     <div class="">
                         <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a demo</NuxtLink>
