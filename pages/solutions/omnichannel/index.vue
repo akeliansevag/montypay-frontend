@@ -7,7 +7,7 @@
             <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-7 lg:mt-10">
                     <h1>
-                        All Your Payments. One Single Platform.
+                        All Your Payments.<br />One Single Platform.
                     </h1>
                     <p>
                         Bring all your online, in-store, and mobile transactions into one seamless platform. Withreal-time insights, advanced reporting, and effortless management, you’ll deliver consistent, exceptional customer experiences while bringing your sales channels to their full potential.
@@ -57,7 +57,7 @@
 
                         <div class="lg:w-1/3 white-box">
                             <h4>Customer insights to improve service & loyalty </h4>
-                            <img class="w-2/3" src="/customer-insights.webp" alt="">
+                            <img class="w-2/3 mt-16" src="/customer-insights.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,6 @@
                     </div>
                 </div>
                 
-                
                 <div>
                     <div class="max-w-[800px]">
                         <h3 class="text-xl font-bold mt-10">Works Everywhere You Do</h3>
@@ -307,6 +306,26 @@ const sliderFour = [
         title: 'Multi-User Access for Smarter Teamwork',
         description: 'Empower your staff with customizable administrative roles and multiple user access. From finance teams to customer service, ensure the right people have the right access to manage transactions efficiently.',
         image: '/multi-user-access.webp',
+    },
+    {
+        title: 'Always Stay in the Loop',
+        description: 'Never miss an important update. Get real-time alerts on transactions, approvals, chargebacks, and fraud warnings, to better manage operations, respond quickly, and always stay one step ahead. ',
+        image: '/always-stay-in-the-loop.webp',
+    },
+    {
+        title: 'Build Real Loyalty',
+        description: 'Reward your customers with our integrated loyalty program, turning one-time shoppers into repeat customers.',
+        image: '/build-real-loyalty.webp',
+    },
+    {
+        title: 'Access Financial Support',
+        description: 'When you find yourself in need of a boost, our lending services help your business grow and thrive with the extra support it deserves.<br />Tailored credit scoring for financing eligibility and Custom lending programs to scale your business',
+        image: '/access-financial-support.webp',
+    },
+    {
+        title: 'Always Here When You Need Us',
+        description: 'You\'re never alone, our expert support team is available 24/7 via live chat on the app, dashboard, or website for instant help and technical guidance.',
+        image: '/always-here-when-you-need-us.webp',
     }
 ];
 </script>

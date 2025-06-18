@@ -1,5 +1,5 @@
 <template>
-    <section class="relative">
+    <section class="relative max-lg:py-10 lg:py-20">
 
         <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0" />
 
@@ -14,11 +14,9 @@
                         tool. Whether guests are scanning to browse your menu
                         or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.
                     </p>
-                    <div>
-                        <div class="relative">
-                            <input required type="text" placeholder="What's your restaurant's name?" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
-                            <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:right-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
-                        </div>
+                    <div class="relative mt-10">
+                        <input required type="text" placeholder="What's your restaurant's name?" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
+                        <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:right-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
                     </div>
                 </div>
                 <div class="lg:w-[35%]">
@@ -49,7 +47,7 @@
             <h2 class="text-2xl">Connectors</h2>
 
             <div class="marquee overflow-hidden">
-                <div class="wrapper grid grid-flow-col auto-cols-[12rem] lg:auto-cols-[20rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
+                <div class="wrapper grid grid-flow-col auto-cols-[12rem] lg:auto-cols-[15rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
                     <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
                         <img :src="marquee.image" :alt="marquee.title" />
                     </template>
@@ -80,7 +78,9 @@
     </section>
     
     <Accordion :data="faq" title="All You Need to Know" /> 
+    
     <BlueSection title="It’s All Just One Scan Away" subtitle="Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features" buttonText="Request a demo" buttonLink="/contact-us" image="/its-just-one-scan-away.webp"/>
+    
     <PaymentSolutions />
 </template>
 

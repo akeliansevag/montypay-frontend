@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                         </Transition>
-                        <div class="flex gap-5 max-lg:mt-10 lg:mt-20 max-lg:flex-wrap lg:px-16 max-lg:px-10">
+                        <div class="flex gap-4 max-lg:mt-10 lg:mt-20 max-lg:flex-wrap lg:px-16 max-lg:px-10">
                             <button @click="handleClick(index)" v-for="(item,index) in data" :key="index" class="filter-button" :class="selectedIndex===index && 'active'">
                                 {{ item.category }}
                             </button>
@@ -50,7 +50,7 @@
 
 <style lang="sass" scoped>
 .filter-button
-  @apply text-[#233F94] font-bold text-center py-2 border rounded-full border-[#233F94] bg-transparent lg:w-full px-4
+  @apply text-[#233F94] font-bold text-center py-2 px-4 border rounded-full border-[#233F94] bg-transparent lg:min-w-[80px]
 
   &.active, &:hover
     @apply text-white bg-gradient-to-r from-[#013383] to-[#01B0C6] border border-white

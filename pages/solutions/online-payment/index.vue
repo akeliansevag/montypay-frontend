@@ -1,6 +1,6 @@
 <template>
    <section class="relative max-lg:py-10 lg:py-24">
-        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
+        <NuxtImg src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
 
         <div class="ml-container-align">
             <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
@@ -88,17 +88,17 @@
 
             <div class="flex flex-col lg:flex-row gap-6 mt-6">
                 <div class="lg:w-1/3 flex flex-col gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
-                    <img class="flex-shrink-0" src="/images/mobile-ready-checkout.svg" alt="Mobile-Ready Checkout" width="121" height="121" />
+                    <NuxtImg class="flex-shrink-0" src="/images/mobile-ready-checkout.svg" alt="Mobile-Ready Checkout" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">Mobile-Ready Checkout</h3>
                     <p class="text-xl">Say goodbye to abandoned carts! <br /> Our mobile-ready checkout guarantees a seamless payment process, ensuring customers breeze through their purchases and boosting your conversion rates!</p>
                 </div>
                 <div class="lg:w-1/3 flex flex-col gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
-                    <img class="flex-shrink-0" src="/images/host-to-host-integration.svg" alt="Host to Host Integration" width="121" height="121" />
+                    <NuxtImg class="flex-shrink-0" src="/images/host-to-host-integration.svg" alt="Host to Host Integration" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">Host 2 Host Integration</h3>
                     <p class="text-xl">Make it your own! <br /> With MontyPay's Host-2-Host integration, merchants can now accept payment information on their personalized payment pages. Tailor your payment experience to match your brand, strengthening the trust with your customers!</p>
                 </div>
                 <div class="lg:w-1/3 flex flex-col gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
-                    <img class="flex-shrink-0" src="/images/social-commerce.svg" alt="Social Commerce" width="121" height="121" />
+                    <NuxtImg class="flex-shrink-0" src="/images/social-commerce.svg" alt="Social Commerce" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">Social Commerce</h3>
                     <p class="text-xl">MontyPay is not only a secure financial haven but also a thriving marketplace for freelancers and social media enthusiasts. We empower freelancers to receive payments seamlessly through our platform, enhancing convenience and ensuring that the hard work translates into tangible rewards.</p>
                 </div>
@@ -106,21 +106,21 @@
 
             <div class="flex flex-col lg:flex-row gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl mt-6">
                 <div class="flex flex-col gap-6 lg:w-3/5">
-                    <img class="flex-shrink-0" src="/images/cms-plugins.svg" alt="CMS Plugins" width="121" height="121" />
+                    <NuxtImg class="flex-shrink-0" src="/images/cms-plugins.svg" alt="CMS Plugins" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">CMS Plugins</h3>
                     <p class="lg:w-1/2 text-xl">MaNo fuss, just solutions! <br /> Our ready-to-go plugins for popular Content Management Systems (CMS) streamline integration for merchants. Skip the heavy development work and get your payment system up and running with ease.</p>
                 </div>
                 
                 <div class="lg:w-2/5 grid grid-cols-3 place-items-center gap-4 lg:gap-8">
-                    <img src="/images/magento1.svg" alt="Magento 1.9" width="139" height="139">
-                    <img src="/images/magento2.svg" alt="Magento 2" width="139" height="139">
-                    <img src="/images/prestashop.svg" alt="Prestashop" width="139" height="139">
-                    <img src="/images/woocommerce.svg" alt="Woo Commerce" width="139" height="139">
-                    <img src="/images/opencart.svg" alt="Opencart" width="139" height="139">
-                    <img src="/images/easy-digital-downloads.svg" alt="Easy Digital Downloads" width="139" height="139">
-                    <img src="/images/nopcommerce.svg" alt="NopCommerce" width="139" height="139">
-                    <img src="/images/ecomz.svg" alt="Ecomz" width="139" height="139">
-                    <img src="/images/ecwid.svg" alt="ECWID" width="139" height="139">
+                    <NuxtImg src="/images/magento1.svg" alt="Magento 1.9" width="139" height="139" />
+                    <NuxtImg src="/images/magento2.svg" alt="Magento 2" width="139" height="139" />
+                    <NuxtImg src="/images/prestashop.svg" alt="Prestashop" width="139" height="139" />
+                    <NuxtImg src="/images/woocommerce.svg" alt="Woo Commerce" width="139" height="139" />
+                    <NuxtImg src="/images/opencart.svg" alt="Opencart" width="139" height="139" />
+                    <NuxtImg src="/images/easy-digital-downloads.svg" alt="Easy Digital Downloads" width="139" height="139" />
+                    <NuxtImg src="/images/nopcommerce.svg" alt="NopCommerce" width="139" height="139" />
+                    <NuxtImg src="/images/ecomz.svg" alt="Ecomz" width="139" height="139" />
+                    <NuxtImg src="/images/ecwid.svg" alt="ECWID" width="139" height="139" />
                 </div>
 
             </div>
@@ -128,25 +128,25 @@
             <div class="flex flex-col lg:flex-row gap-6 mt-6">
                 <div class="lg:w-3/5 flex flex-col justify-between gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <div class="flex flex-col gap-6">
-                        <img class="flex-shrink-0" src="/images/mobile-sdk.svg" alt="Mobile-Ready Checkout" width="121" height="121" />
+                        <NuxtImg class="flex-shrink-0" src="/images/mobile-sdk.svg" alt="Mobile-Ready Checkout" width="121" height="121" />
                         <h3 class="text-2xl font-semibold">Mobile-Ready Checkout</h3>
                         <p class="text-xl">Say goodbye to abandoned carts! <br /> Our mobile-ready checkout guarantees a seamless payment process, ensuring customers breeze through their purchases and boosting your conversion rates!</p>
                     </div>
                     <div class="grid grid-cols-3 place-items-center gap-4 lg:gap-8 mt-6">
-                        <img src="/images/flutter.svg" alt="flutter" width="210" height="90">
-                        <img src="/images/android.svg" alt="Android" width="210" height="90">
-                        <img src="/images/ios.svg" alt="IOS" width="210" height="90">
+                        <NuxtImg src="/images/flutter.svg" alt="flutter" width="210" height="90" />
+                        <NuxtImg src="/images/android.svg" alt="Android" width="210" height="90" />
+                        <NuxtImg src="/images/ios.svg" alt="IOS" width="210" height="90" />
                     </div>
                 </div>
                 <div class="lg:w-2/5 flex flex-col justify-between gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <div class="flex flex-col gap-6">
-                        <img class="flex-shrink-0" src="/images/platform-integration.svg" alt="Platform Integration" width="121" height="121" />
+                        <NuxtImg class="flex-shrink-0" src="/images/platform-integration.svg" alt="Platform Integration" width="121" height="121" />
                         <h3 class="text-2xl font-semibold">Platform Integration</h3>
                         <p class="text-xl">Our integrations with cutting-edge platforms for loyalty programs, hotel bookings, marks just the beginning of a robust ecosystem, with many exciting partnerships on the horizon.</p>
                     </div>
                     <div class="grid grid-cols-2 place-items-center gap-4 lg:gap-8 mt-6">
-                        <img src="/images/igloorooms.svg" alt="IglooRooms" width="210" height="90">
-                        <img src="/images/kangaroo.svg" alt="Kangaroo" width="210" height="90">
+                        <NuxtImg src="/images/igloorooms.svg" alt="IglooRooms" width="210" height="90" />
+                        <NuxtImg src="/images/kangaroo.svg" alt="Kangaroo" width="210" height="90" />
                     </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@
     </section>
 
     <section class="max-lg:pb-10 lg:pb-24 bg-white relative overflow-hidden">
-        <img src="/shape-bg.svg" alt="Shapte" class="absolute top-0 lg:-right-[200px] max-lg:hidden">
+        <NuxtImg src="/shape-bg.svg" alt="Shapte" class="absolute top-0 lg:-right-[200px] max-lg:hidden" />
         <div class="container">
             <div class="flex max-lg:flex-col gap-6">
                 <div class="w-full">
