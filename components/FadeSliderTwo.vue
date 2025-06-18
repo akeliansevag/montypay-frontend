@@ -9,8 +9,8 @@
             </Transition>
             <div class="flex flex-col gap-10 items-center justify-between h-full max-w-[550px] mx-auto relative z-20">
                 <div class="text-center">
-                    <h2 v-if="title" class="text-2xl mb-1">{{ title }}</h2>
-                    <p v-if="subtitle">{{ subtitle }}</p>
+                    <h2 v-if="title" class="text-3xl mb-1">{{ title }}</h2>
+                    <p class="text-xl" v-if="subtitle">{{ subtitle }}</p>
                 </div>
                 <div class="flex gap-3"  v-if="data">
                     <div v-for="(item,index) in data">

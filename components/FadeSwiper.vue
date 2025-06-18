@@ -1,9 +1,9 @@
 <template>
     <ClientOnly>
         <div class="container">
-            <h2 v-if="title" class="text-2xl">{{ title }}</h2>
-            <p class="mt-4" v-if="subtitle">{{ subtitle }}</p>
-            <div :class="reverse && 'flex-row-reverse'" class="flex mt-10 rounded-xl overflow-hidden max-lg:flex-col  lg:h-[500px]">
+            <h2 v-if="title" class="text-3xl">{{ title }}</h2>
+            <p class="text-xl mt-4" v-if="subtitle">{{ subtitle }}</p>
+            <div :class="reverse && 'flex-row-reverse'" class="flex mt-12 rounded-xl overflow-hidden max-lg:flex-col  lg:h-[500px]">
                 <div class="lg:w-1/2 bg-gradient-to-r from-[#E6EBF3] to-[#E6F1F6] max-lg:py-10 lg:py-16">
                     <div v-if="data" class="flex flex-col justify-center h-full p-4">
                         <div class="relative">
@@ -17,9 +17,9 @@
                                     :autoplay="{ delay: 3000, pauseOnMouseEnter: true}"
                             >
                                 <swiper-slide v-for="(da,indx) in data" :key="indx">
-                                    <div class="max-w-[300px] mx-auto">
-                                        <h3 class="text-2xl font-bold mb-2">{{ da.title }}</h3>
-                                        <p>{{ da.description }}</p>
+                                    <div class="max-w-[400px] mx-auto">
+                                        <h3 class="text-3xl font-bold mb-2">{{ da.title }}</h3>
+                                        <p class="text-xl">{{ da.description }}</p>
                                     </div>
                                 </swiper-slide>
                             </swiper>

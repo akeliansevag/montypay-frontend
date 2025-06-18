@@ -4,11 +4,11 @@
         <div class="container">
             <h2 class="text-3xl font-bold">Merchant Mobile App </h2>
             <h3 class="text-xl font-bold mt-6">Your Business, Always in Your Hands</h3>
-            <p class="lg:w-1/2 mt-6">With the MontyPay Merchant Mobile App, you can run your business no matter where you are. Packed with powerful tools and a user-friendly design, it’s like carrying your entire business in your pocket. </p>
+            <p class="lg:w-2/3 text-xl mt-6">With the MontyPay Merchant Mobile App, you can run your business no matter where you are. Packed with powerful tools and a user-friendly design, it’s like carrying your entire business in your pocket. </p>
 
-            <div class="flex max-lg:flex-col items-center justify-between gap-10 mt-7">
+            <div class="flex max-lg:flex-col items-center justify-between gap-10 mt-12">
                 <div class="w-full">
-                    <h3 class="text-xl font-bold mt-6">It Has Everything You Need: </h3>
+                    <h3 class="text-xl font-bold">It Has Everything You Need: </h3>
                     <div class="flex flex-col gap-7 mt-7">
                         <div class="flex max-lg:flex-col gap-5 p-8 bg-[#FFFFFF0D] rounded-xl backdrop-blur-md" v-for="(need,inx) in needs" :key="inx">
                             <div>
@@ -20,7 +20,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class=" font-normal mt-10"><strong>MontyPay’s merchant mobile app</strong> ensures you’re always in control. It’s all right there, in the <strong>palm of your hand.</strong> </p>
+                    <p class="text-xl font-normal mt-10"><strong>MontyPay’s merchant mobile app</strong> ensures you’re always in control. It’s all right there, in the <strong>palm of your hand.</strong> </p>
                 </div>
                 <div class="w-full h-full">
                     <div class="">

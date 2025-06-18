@@ -5,16 +5,10 @@
 
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-1 lg:justify-between">
-                <div class="lg:w-[50%] flex flex-col gap-7 my-10">
-                    <h1>
-                        QCheck: The Self-Service Checkout Solution That Works for You
-                    </h1>
-                    <p>
-                        Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout
-                        tool. Whether guests are scanning to browse your menu
-                        or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.
-                    </p>
-                    <div class="relative mt-10">
+                <div class="lg:w-[50%] flex flex-col gap-12">
+                    <h1 class="text-5xl !leading-[1.5]">QCheck: The Self-Service Checkout Solution That Works for You</h1>
+                    <p class="text-xl">Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout tool. Whether guests are scanning to browse your menu or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.</p>
+                    <div class="relative">
                         <input required type="text" placeholder="What's your restaurant's name?" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
                         <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:right-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
                     </div>

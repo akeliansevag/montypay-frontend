@@ -1,20 +1,13 @@
 <template>
-    <section class="relative max-lg:py-10 lg:py-24">
+    <section class="relative max-lg:py-10 lg:py-20">
 
         <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
 
         <div class="ml-container-align with-padding">
             <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
-                <div class="lg:w-[40%] flex flex-col gap-7 lg:mt-10">
-                    <h1>
-                        Build Your Website 
-                        And Start <span class="text-[#233F94]">Selling Online</span>
-                        in Less Than 30 Days
-                    </h1>
-                    <p>
-                        Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.
-                    </p>
-                
+                <div class="lg:w-[40%] flex flex-col gap-12">
+                    <h1 class="text-5xl !leading-[1.5]">Build Your Website <br /> And Start <span class="text-[#233F94]">Selling Online</span> <br />in Less Than 30 Days</h1>
+                    <p class="text-xl">Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.</p>
                 </div>
                 <div class="lg:w-[50%] flex justify-end">
                     <img src="/ecommerce-banner.webp" alt="ecommerce Banner Image" />
@@ -31,9 +24,9 @@
 
     <section>
         <div class="container">
-            <h2 class="text-2xl">What We Bring to the Table</h2>
-            <p class="mt-4">We transform your vision into reality by building custom websites from scratch in less than a month, designed to meet your unique business needs. With full customization options, you can tailor your online store to reflect your brand and cater to global audiences.</p>
-            <img class="mt-10 mx-auto drop-shadow-2xl" src="/what-we-bring-to-the-table.webp" alt="What we bring to the table" />
+            <h2 class="text-3xl">What We Bring to the Table</h2>
+            <p class="text-xl mt-4">We transform your vision into reality by building custom websites from scratch in less than a month, designed to meet your unique business needs. With full customization options, you can tailor your online store to reflect your brand and cater to global audiences.</p>
+            <img class="mt-12 mx-auto drop-shadow-2xl" src="/what-we-bring-to-the-table.webp" alt="What we bring to the table" />
         </div>
     </section>
 
@@ -63,7 +56,7 @@
             <h2 class="text-2xl font-bold text-center">Our Clients</h2>
 
             <div class="marquee1 overflow-hidden mt-10">
-                <div class="wrapper grid grid-flow-col auto-cols-[8rem] lg:auto-cols-[20rem] justify-items-center items-center mt-10 animate-[marquee1_20s_linear_infinite] lg:animate-[marquee1lg_20s_linear_infinite]">
+                <div class="wrapper grid grid-flow-col auto-cols-[8rem] lg:auto-cols-[18rem] justify-items-center items-center mt-10 animate-[marquee1_20s_linear_infinite] lg:animate-[marquee1lg_20s_linear_infinite]">
                     <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
                         <img :src="marquee" alt="Client" />
                     </template>

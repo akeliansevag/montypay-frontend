@@ -1,21 +1,16 @@
 <template>
-    <section class="relative max-lg:py-10 lg:py-24">
+    <section class="relative max-lg:py-10 lg:py-20">
 
         <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
 
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
-                <div class="lg:w-[40%] flex flex-col gap-7 lg:mt-10">
-                    <h1>
-                        All Your Payments.<br />One Single Platform.
-                    </h1>
-                    <p>
-                        Bring all your online, in-store, and mobile transactions into one seamless platform. Withreal-time insights, advanced reporting, and effortless management, you’ll deliver consistent, exceptional customer experiences while bringing your sales channels to their full potential.
-                    </p>
-                    <div>
+                <div class="lg:w-[40%] flex flex-col gap-12">
+                    <h1 class="text-5xl !leading-[1.5]">All Your Payments.<br />One Single Platform.</h1>
+                    <p class="text-xl">Bring all your online, in-store, and mobile transactions into one seamless platform. Withreal-time insights, advanced reporting, and effortless management, you’ll deliver consistent, exceptional customer experiences while bringing your sales channels to their full potential.</p>
+                    <div class="">
                         <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a demo</NuxtLink>
                     </div>
-                    
                 </div>
                 <div class="lg:w-[50%] flex justify-end">
                     <img src="/omnichannel-banner.webp" alt="Omnichannel Banner Image" />
@@ -28,35 +23,35 @@
     
     <section class="lg:py-16 max-lg:py-10 bg-[#E9ECF4D9]">
         <div class="container">
-            <h2 class="text-2xl font-bold">Your Business, But Smarter</h2>
+            <h2 class="text-3xl font-bold">Your Business, But Smarter</h2>
 
             <div class="flex flex-col lg:gap-16 max-lg:gap-10">
 
                 <div>
                     <div class="max-w-[800px]">
-                        <h3 class="text-xl font-bold mt-10">Know Your Business Better</h3>
-                        <p class="mt-4">Success starts with understanding your business. Our advanced reporting tools give you real-time insights into in-store and online transactions, sales trends, and customer behavior with our centralized dashboard, helping you make informed decisions and refine your strategies. </p>               
+                        <h3 class="text-2xl font-bold mt-10">Know Your Business Better</h3>
+                        <p class="text-xl mt-4">Success starts with understanding your business. Our advanced reporting tools give you real-time insights into in-store and online transactions, sales trends, and customer behavior with our centralized dashboard, helping you make informed decisions and refine your strategies. </p>               
                     </div>
-                    <div class="flex max-lg:flex-col gap-7 mt-10">
+                    <div class="flex max-lg:flex-col gap-7 mt-12">
                         <div class="lg:w-1/3 blue-box">
-                            <h4>Live sales data & transaction tracking </h4>
+                            <h4 class="text-2xl">Live sales data & transaction tracking </h4>
                             <img src="/live-sales-data.webp" alt="">
                         </div>
 
                         <div class="lg:w-2/3 white-box">
-                            <h4>Performance analytics for smarter decision-making </h4>
+                            <h4 class="text-2xl">Performance analytics for smarter decision-making </h4>
                             <img class="w-4/5" src="/performance-analytics.webp" alt="">
                         </div>
                     </div>
 
                     <div class="flex max-lg:flex-col gap-7 mt-7">
                         <div class="lg:w-2/3 white-box">
-                            <h4>Web & mobile dashboards for 24/7 access  </h4>
+                            <h4 class="text-2xl">Web & mobile dashboards for 24/7 access  </h4>
                             <img class="w-2/3" src="/web-and-mobile-dashboards.webp"alt="">
                         </div>
 
                         <div class="lg:w-1/3 white-box">
-                            <h4>Customer insights to improve service & loyalty </h4>
+                            <h4 class="text-2xl">Customer insights to improve service & loyalty </h4>
                             <img class="w-2/3 mt-16" src="/customer-insights.webp" alt="">
                         </div>
                     </div>
@@ -64,24 +59,23 @@
 
                 <div>
                     <div class="max-w-[800px]">
-                        <h3 class="text-xl font-bold mt-10">Merchant Mobile App – Business in Your Hands </h3>
-                        <p class="mt-4">Stay connected wherever you are. MontyPay’s Merchant Mobile App lets you manage transactions, track revenue, and access business tools on the go.</p>               
+                        <h3 class="text-2xl font-bold mt-10">Merchant Mobile App – Business in Your Hands </h3>
+                        <p class="text-xl mt-4">Stay connected wherever you are. MontyPay’s Merchant Mobile App lets you manage transactions, track revenue, and access business tools on the go.</p>               
                     </div>
-                    <div class="mt-7 flex gap-7 max-lg:flex-col">
+                    <div class="mt-12 flex gap-7 max-lg:flex-col">
                         <div class="flex flex-col gap-7">
                             <div class="white-box lg:h-1/2">
-                                <h4>Monitor transactions in real time</h4>
+                                <h4 class="text-2xl">Monitor transactions in real time</h4>
                                 <div class="image-wrapper">
                                     <img src="/monitor-transaction-in-real-time.webp" />
                                 </div>
                                 
                             </div>
                             <div class="white-box lg:h-1/2">
-                                <h4>Generate & send invoices instantly</h4>
+                                <h4 class="text-2xl">Generate & send invoices instantly</h4>
                                 <div class="image-wrapper pb-14">
                                     <img src="/generate-and-send-invoices.webp" alt="">
                                 </div>
-                                
                             </div>
                         </div>
 
@@ -91,18 +85,16 @@
 
                         <div class="flex flex-col gap-7">
                             <div class="white-box lg:h-full">
-                                <div class="flex max-lg:flex-col">
-                                    <h4 class="lg:w-1/2">Accept payments via Pay by Link & QR codes </h4>
+                                <div class="flex max-lg:flex-col gap-8">
+                                    <h4 class="text-2xl lg:w-1/2">Accept payments via Pay by Link & QR codes </h4>
                                     <img class="lg:w-1/2 mt-0" src="/accept-payments-via-pay.webp" />     
                                 </div>
-                                
                             </div>
                             <div class="white-box lg:h-full">
-                                <h4>Stay connected with customers & sales data </h4>
+                                <h4 class="text-2xl">Stay connected with customers & sales data </h4>
                                 <div>
                                     <img class="max-w-[300px] mx-auto" src="/stay-connected-with-customers.webp" alt="">
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -110,41 +102,38 @@
 
                 <div>
                     <div class="max-w-[800px]">
-                        <h3 class="text-xl font-bold mt-10">Seamless Payment Options for Every Business</h3>
-                        <p class="mt-4">Accept a variety of payment methods effortlessly, including: </p>               
+                        <h3 class="text-3xl font-bold mt-10">Seamless Payment Options for Every Business</h3>
+                        <p class="text-xl mt-4">Accept a variety of payment methods effortlessly, including: </p>               
                     </div>
-                    <div class="mt-7">
+                    <div class="mt-12">
                         <div class="flex max-lg:flex-col gap-7">
                             <div class="white-box w-full">
-                                <h4>Credit & debit cards </h4>
+                                <h4 class="text-2xl">Credit & debit cards </h4>
                                 <div class="image-wrapper">
                                     <img class="max-w-[400px] mx-auto" src="/credit-and-debit-cards.webp" alt="" />
                                 </div>
-                                
                             </div>
                             <div class="white-box w-full">
-                                <h4>Digital wallets </h4>
+                                <h4 class="text-2xl">Digital wallets </h4>
                                 <div class="image-wrapper">
                                     <img class="max-w-[400px] mx-auto" src="/digital-wallets.webp" alt="" />
                                 </div>
-                                
                             </div>
                         </div>
 
                         <div class="flex max-lg:flex-col gap-7 mt-7">
                             <div class="white-box w-full lg:w-2/3">
-                                <h4>QR code payments & Pay by Link  for remote transactions </h4>
+                                <h4 class="text-2xl">QR code payments & Pay by Link  for remote transactions </h4>
                                 <div class="image-wrapper">
                                     <img class="lg:w-4/5" src="/qr-code-payments.webp" alt="" />
                                 </div>
                                 
                             </div>
                             <div class="white-box w-full lg:w-1/3">
-                                <h4>Multi-currency support for cross-border payments </h4>
+                                <h4 class="text-2xl">Multi-currency support for cross-border payments </h4>
                                 <div class="image-wrapper">
                                     <img class="max-w-[350px] mx-auto" src="/multi-currency-support.webp" alt="" />
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -152,10 +141,10 @@
 
                 <div>
                     <div class="max-w-[800px]">
-                        <h3 class="text-xl font-bold mt-10">Turn Any Device into a Payment Terminal </h3>
-                        <p class="mt-4">With Soft POS technology, your smartphone or tablet becomes a fully functional payment terminal. Accept in-store payments instantly and give your customers more ways to pay with payment links, invoices, or QR codes, without any extra hardware.  </p>               
+                        <h3 class="text-3xl font-bold mt-10">Turn Any Device into a Payment Terminal </h3>
+                        <p class="text-xl mt-4">With Soft POS technology, your smartphone or tablet becomes a fully functional payment terminal. Accept in-store payments instantly and give your customers more ways to pay with payment links, invoices, or QR codes, without any extra hardware.  </p>               
                     </div>
-                    <div class="mt-7">
+                    <div class="mt-12">
                         <div class="flex max-lg:flex-col gap-7 mt-7">
                             <div class="white-box w-full flex items-center justify-center lg:w-2/3">
                                 <img class="max-w-[600px] mx-auto" src="/two-phones.webp" alt="" />
@@ -169,19 +158,19 @@
 
                 <div>
                     <div class="max-w-[800px]">
-                        <h3 class="text-xl font-bold mt-10">Security You Can Trust</h3>
-                        <p class="mt-4">MontyPay ensures every transaction is secure and compliant, so you can protect your business without the risks. </p>               
+                        <h3 class="text-3xl font-bold mt-10">Security You Can Trust</h3>
+                        <p class="text-xl mt-4">MontyPay ensures every transaction is secure and compliant, so you can protect your business without the risks. </p>               
                     </div>
-                    <div class="mt-7">
+                    <div class="mt-12">
                        <div class="flex max-lg:flex-col gap-7">
                             <div class="white-box w-full">
-                                <h4>PCI DSS Level 1 compliance </h4>
+                                <h4 class="text-2xl">PCI DSS Level 1 compliance </h4>
                                 <div class="image-wrapper">
                                     <img class="max-w-[400px]" src="/shopping-card.webp" alt="">    
                                 </div>
                             </div>
                             <div class="white-box w-full">
-                                <h4>Intelligent routing for cost-efficient, high-acceptance transactions </h4>
+                                <h4 class="text-2xl">Intelligent routing for cost-efficient, high-acceptance transactions </h4>
                                 <div class="image-wrapper">
                                     <img class="lg:w-4/5" src="/intelligent-routing.webp" alt="">
                                 </div>          
@@ -189,14 +178,14 @@
                        </div>
                        <div class="flex max-lg:flex-col gap-7 mt-7">
                             <div class="white-box w-full">
-                                <h4>3D Secure 2.0 authentication for extra protection </h4>
+                                <h4 class="text-2xl">3D Secure 2.0 authentication for extra protection </h4>
                                 <div class="image-wrapper">
                                     <img class="lg:w-4/5" src="/3d-secure.webp" alt="">  
                                 </div>
                                 
                             </div>
                             <div class="white-box w-full">
-                                <h4>Advanced fraud detection using AI & machine learning </h4>
+                                <h4 class="text-2xl">Advanced fraud detection using AI & machine learning </h4>
                                 <div class="image-wrapper">
                                     <img class="lg:w-4/5" src="/advanced-fraud.webp" alt="">
                                 </div>                     
@@ -207,25 +196,25 @@
                 
                 <div>
                     <div class="max-w-[800px]">
-                        <h3 class="text-xl font-bold mt-10">Works Everywhere You Do</h3>
-                        <p class="mt-4">MontyPay integrates effortlessly with your existing POS systems, e-commerce platforms, and mobile applications, so you don’t have to change how you work. Just plug in and start optimizing. </p>               
+                        <h3 class="text-3xl font-bold mt-10">Works Everywhere You Do</h3>
+                        <p class="text-xl mt-4">MontyPay integrates effortlessly with your existing POS systems, e-commerce platforms, and mobile applications, so you don’t have to change how you work. Just plug in and start optimizing. </p>               
                     </div>
-                    <div class="mt-7">
+                    <div class="mt-12">
                        <div class="flex max-lg:flex-col gap-7">
                             <div class="white-box w-full pb-14">
-                                <h4>Connect to your existing systems hassle-free </h4>
+                                <h4 class="text-2xl">Connect to your existing systems hassle-free </h4>
                                 <div class="image-wrapper">
                                     <img class="lg:w-4/5" src="/connect-to-you-existing.webp" alt="">    
                                 </div>
                             </div>
                             <div class="white-box w-full pb-14">
-                                <h4>Expand globally with 100+ payment methods</h4>
+                                <h4 class="text-2xl">Expand globally with 100+ payment methods</h4>
                                 <div class="image-wrapper">
                                     <img class="lg:w-4/5" src="/expand-globally.webp" alt="">
                                 </div>          
                             </div>
                             <div class="white-box w-full pb-14">
-                                <h4>Automate processes & reduce manual work </h4>
+                                <h4 class="text-2xl">Automate processes & reduce manual work </h4>
                                 <div class="image-wrapper">
                                     <img class="lg:w-4/5" src="/automate-processes.webp" alt="">
                                 </div>          
@@ -332,7 +321,7 @@ const sliderFour = [
 
 <style lang="css" scoped>
    .white-box{
-     @apply bg-white p-6 rounded-lg overflow-hidden flex flex-col;
+     @apply bg-white p-8 rounded-lg overflow-hidden flex flex-col;
    }
    .white-box .image-wrapper{
     @apply flex flex-col items-center justify-center h-full;

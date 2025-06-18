@@ -1,18 +1,13 @@
 <template>
-    <section class="relative max-lg:py-10 lg:pt-12">
+    <section class="relative max-lg:py-10 lg:py-20">
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-5 lg:justify-between">
-                <div class="lg:w-[40%] flex flex-col gap-7 lg:mt-10">
-                    <h1>
-                        Payment Orchestration Network
-                    </h1>
-                    <p>
-                        Bring all your payment methods, gateways, and currencies into one easy-to-manage platform. Whether you’re growing globally or streamlining locally, we’re here to help you handle payments like a pro, boost approvals, and keep things running smoothly. Goodbye to payment chaos!
-                    </p>
+                <div class="lg:w-[40%] flex flex-col gap-12">
+                    <h1 class="text-5xl !leading-[1.5]">Payment Orchestration Network</h1>
+                    <p class="text-xl">Bring all your payment methods, gateways, and currencies into one easy-to-manage platform. Whether you’re growing globally or streamlining locally, we’re here to help you handle payments like a pro, boost approvals, and keep things running smoothly. Goodbye to payment chaos!</p>
                     <div>
                         <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a demo</NuxtLink>
                     </div>
-                    
                 </div>
                 <div class="lg:w-[60%] flex justify-end">
                     <img src="/payment-orchestration-network-banner.webp" alt="Omnichannel Banner Image" />
@@ -25,20 +20,15 @@
         <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 left-0 w-full h-full object-cover" alt="blue-bg"/>
         <div class="container">
             <div class="max-w-[800px]">
-                <h2 class="text-white text-2xl font-bold">Go Global Without the Growing Pains</h2>
-                <p class="text-white mt-7">Expanding your business should be exciting, not exhausting. MontyPay’s Payment
-        Orchestration Network takes the complexity out of global payments, helping you scale
-        seamlessly, onboard merchants anywhere, and process cross-border transactions like a pro.</p>   
+                <h2 class="text-white text-3xl font-bold">Go Global Without the Growing Pains</h2>
+                <p class="text-xl text-white mt-7">Expanding your business should be exciting, not exhausting. MontyPay’s Payment Orchestration Network takes the complexity out of global payments, helping you scale seamlessly, onboard merchants anywhere, and process cross-border transactions like a pro.</p>   
             </div>
 
-            <div class="flex max-lg:flex-col gap-7 lg:mt-10 max-lg:mt-7">
+            <div class="flex max-lg:flex-col gap-7 mt-12">
                 <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between w-full">
                     <div>
-                        <h4 class="text-xl font-bold mt-4">Smarter Payments, Higher Profits</h4>
-                        <p class="mt-4">Boost your acceptance rates and lower transaction costs with intelligent payment
-orchestration. By dynamically routing transactions across multiple payment
-methods and providers in 50+ countries, we optimize every payment for maximum
-efficiency and profitability.</p>
+                        <h4 class="text-2xl font-bold mt-4">Smarter Payments, Higher Profits</h4>
+                        <p class="mt-4">Boost your acceptance rates and lower transaction costs with intelligent payment orchestration. By dynamically routing transactions across multiple payment methods and providers in 50+ countries, we optimize every payment for maximum efficiency and profitability.</p>
                     </div>
                     
                     <div class="bg-[#E6EEF5] rounded-2xl max-lg:h-[200px] lg:h-[300px] p-5 flex items-center justify-center mt-7">
@@ -49,7 +39,7 @@ efficiency and profitability.</p>
 
                 <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between w-full">
                     <div>
-                        <h4 class="text-xl font-bold mt-4">Think Global, Transact Local</h4>
+                        <h4 class="text-2xl font-bold mt-4">Think Global, Transact Local</h4>
                         <p class="mt-4">Reduce fees and increase approval rates by routing transactions through MontyPay’s network of local acquirers, ensuring a smooth and compliant payment experience.</p>
                     </div>
                     
@@ -61,7 +51,7 @@ efficiency and profitability.</p>
 
                 <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between w-full">
                     <div>
-                        <h4 class="text-xl font-bold mt-4">Payments in Every Language</h4>
+                        <h4 class="text-2xl font-bold mt-4">Payments in Every Language</h4>
                         <p class="mt-4">With 100+ payment methods, multi-currency support, and region-specific solutions, your business is ready for any market, anywhere. You can cater to diverse customer preferences while optimizing operational efficiency.</p>
                     </div>
                     
@@ -78,7 +68,7 @@ efficiency and profitability.</p>
                         <img class="w-full h-full object-contain" src="/wherever-you-do-business.webp"  />
                     </div>
                     <div class="w-full">
-                        <p>Wherever you do business, <strong>frictionless expansion, optimized payments,</strong> and a <strong>seamless merchant experience</strong> are at hand’s reach.</p>
+                        <p class="text-xl lg:p-12">Wherever you do business, <strong>frictionless expansion, optimized payments,</strong> and a <strong>seamless merchant experience</strong> are at hand’s reach.</p>
                     </div>
                 </div>
             </div>
@@ -89,15 +79,15 @@ efficiency and profitability.</p>
     <!-- <PinnedSection /> -->
     <section class="relative max-lg:py-16 lg:py-24 bg-white">
         <div class="container">
-            <h2 class="lg:sticky lg:top-32 text-2xl text-center">Payment Orchestration as It Should Be</h2>
-            <div class="max-lg:flex max-lg:flex-col max-lg:gap-7 lg:stack-cards lg:js-stack-cards mt-20">
+            <h2 class="lg:sticky lg:top-32 text-3xl text-center">Payment Orchestration as It Should Be</h2>
+            <div class="max-lg:flex max-lg:flex-col max-lg:gap-7 stack-cards js-stack-cards mt-20">
                 <div v-for="(item, index) in items" :key="index" class="lg:js-stack-cards__item lg:sticky lg:top-[var(--space-sm)] lg:origin-[center_top] bg-[#E9EEF5] flex max-lg:flex-col gap-7 items-center justify-between p-5 rounded-lg">
                     <div class="bg-[#ffffff]/40 p-3 rounded-lg w-full h-full">
                         <img class="w-full h-full object-contain" :src="item.image" :alt="item.title" />
                     </div>
-                    <div class="w-full">
-                        <h4 class="text-xl font-bold">{{ item.title }}</h4>
-                        <p class="mt-2">{{ item.description }}</p>
+                    <div class="w-full px-4 lg:px-12">
+                        <h4 class="text-2xl font-bold">{{ item.title }}</h4>
+                        <p class="text-xl mt-2">{{ item.description }}</p>
                     </div>
                 </div>
             </div>

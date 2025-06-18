@@ -7,7 +7,7 @@
             </div>
             
             <div class="ml-container-align">
-                <div class="mt-10">
+                <div class="mt-12">
                     <div v-if="data">
                         <div class="relative">
                             <swiper
@@ -30,7 +30,7 @@
                                 <swiper-slide v-for="(da,indx) in data" :key="indx" class="h-auto flex">
                                     <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between">
                                         <div>
-                                            <h4 class="text-xl font-bold mt-4">{{ da.title }}</h4>
+                                            <h4 class="text-2xl font-bold mt-4">{{ da.title }}</h4>
                                             <p class="mt-4">{{ da.description }}</p>
                                         </div>
                                         
