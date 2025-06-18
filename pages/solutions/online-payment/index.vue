@@ -87,24 +87,24 @@
             <h3 class="text-xl font-bold mt-6">Plugins & SDKs</h3>
 
             <div class="flex flex-col lg:flex-row gap-6 mt-12">
-                <div class="lg:w-1/3 flex flex-col gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
+                <div class="lg:w-1/3 flex flex-col gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <img class="flex-shrink-0" src="/images/mobile-ready-checkout.svg" alt="Mobile-Ready Checkout" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">Mobile-Ready Checkout</h3>
                     <p class="text-xl">Say goodbye to abandoned carts! <br /> Our mobile-ready checkout guarantees a seamless payment process, ensuring customers breeze through their purchases and boosting your conversion rates!</p>
                 </div>
-                <div class="lg:w-1/3 flex flex-col gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
+                <div class="lg:w-1/3 flex flex-col gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <img class="flex-shrink-0" src="/images/host-to-host-integration.svg" alt="Host to Host Integration" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">Host 2 Host Integration</h3>
                     <p class="text-xl">Make it your own! <br /> With MontyPay's Host-2-Host integration, merchants can now accept payment information on their personalized payment pages. Tailor your payment experience to match your brand, strengthening the trust with your customers!</p>
                 </div>
-                <div class="lg:w-1/3 flex flex-col gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
+                <div class="lg:w-1/3 flex flex-col gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <img class="flex-shrink-0" src="/images/social-commerce.svg" alt="Social Commerce" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">Social Commerce</h3>
                     <p class="text-xl">MontyPay is not only a secure financial haven but also a thriving marketplace for freelancers and social media enthusiasts. We empower freelancers to receive payments seamlessly through our platform, enhancing convenience and ensuring that the hard work translates into tangible rewards.</p>
                 </div>
             </div>
 
-            <div class="flex flex-col lg:flex-row gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl mt-6">
+            <div class="flex flex-col lg:flex-row gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl mt-6">
                 <div class="flex flex-col gap-6 lg:w-3/5">
                     <img class="flex-shrink-0" src="/images/cms-plugins.svg" alt="CMS Plugins" width="121" height="121" />
                     <h3 class="text-2xl font-semibold">CMS Plugins</h3>
@@ -126,7 +126,7 @@
             </div>
 
             <div class="flex flex-col lg:flex-row gap-6 mt-6">
-                <div class="lg:w-3/5 flex flex-col justify-between gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
+                <div class="lg:w-3/5 flex flex-col justify-between gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <div class="flex flex-col gap-6">
                         <img class="flex-shrink-0" src="/images/mobile-sdk.svg" alt="Mobile-Ready Checkout" width="121" height="121" />
                         <h3 class="text-2xl font-semibold">Mobile-Ready Checkout</h3>
@@ -138,7 +138,7 @@
                         <img src="/images/ios.svg" alt="IOS" width="210" height="90" />
                     </div>
                 </div>
-                <div class="lg:w-2/5 flex flex-col justify-between gap-6 p-4 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
+                <div class="lg:w-2/5 flex flex-col justify-between gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <div class="flex flex-col gap-6">
                         <img class="flex-shrink-0" src="/images/platform-integration.svg" alt="Platform Integration" width="121" height="121" />
                         <h3 class="text-2xl font-semibold">Platform Integration</h3>

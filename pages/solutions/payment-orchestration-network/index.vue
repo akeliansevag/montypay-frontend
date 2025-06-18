@@ -85,7 +85,7 @@
                     <div class="bg-[#ffffff]/40 p-3 rounded-lg w-full h-full">
                         <img class="w-full h-full object-contain" :src="item.image" :alt="item.title" />
                     </div>
-                    <div class="w-full px-4 lg:px-12">
+                    <div class="w-full lg:px-12">
                         <h4 class="text-2xl font-bold">{{ item.title }}</h4>
                         <p class="text-xl mt-2">{{ item.description }}</p>
                     </div>
