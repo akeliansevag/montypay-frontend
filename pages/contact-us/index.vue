@@ -59,7 +59,7 @@
                                 <label for="selected-country">Country</label>
                                 <div 
                                     @click="toggleDropdown" 
-                                    class="custom-dropdown w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 cursor-pointer">
+                                    class="custom-dropdown flex w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 cursor-pointer">
                                     <div id="selected-country" class="flex justify-between items-center gap-3" :class="{'text-[#9ca3af]': !selectedCountry.name, 'text-black': selectedCountry.name}">
                                         <div class="flex gap-3">
                                             <img v-if="selectedCountry.name" :src="`/images/flags/${selectedCountry.iso2}.svg`" :alt="selectedCountry.name" width="24" height="24">

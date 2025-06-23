@@ -1,7 +1,7 @@
 <template>
     <section class="relative max-lg:py-10 lg:py-20">
         <div class="container">
-            <div class="flex max-lg:flex-col max-lg:gap-8 lg:justify-between">
+            <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Payment Orchestration Network</h1>
                     <p class="text-xl">Bring all your payment methods, gateways, and currencies into one easy-to-manage platform. Whether you’re growing globally or streamlining locally, we’re here to help you handle payments like a pro, boost approvals, and keep things running smoothly. Goodbye to payment chaos!</p>
@@ -9,7 +9,7 @@
                         <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a demo</NuxtLink>
                     </div>
                 </div>
-                <div class="lg:w-[60%] flex justify-end">
+                <div class="lg:w-[60%]">
                     <img src="/payment-orchestration-network-banner.webp" alt="Omnichannel Banner Image" />
                 </div>
             </div>
