@@ -112,14 +112,14 @@
                 </div>
                 
                 <div class="lg:w-2/5 grid grid-cols-3 place-items-center gap-4 lg:gap-8">
-                    <img src="/images/magento1.svg" alt="Magento 1.9" width="139" height="139" />
                     <img src="/images/magento2.svg" alt="Magento 2" width="139" height="139" />
                     <img src="/images/prestashop.svg" alt="Prestashop" width="139" height="139" />
+                    <img src="/images/highlevel.svg" alt="Highlevel" width="139" height="139" />
                     <img src="/images/woocommerce.svg" alt="Woo Commerce" width="139" height="139" />
                     <img src="/images/opencart.svg" alt="Opencart" width="139" height="139" />
                     <img src="/images/easy-digital-downloads.svg" alt="Easy Digital Downloads" width="139" height="139" />
                     <img src="/images/nopcommerce.svg" alt="NopCommerce" width="139" height="139" />
-                    <img src="/images/ecomz.svg" alt="Ecomz" width="139" height="139" />
+                    <img src="/images/shopify.svg" alt="Shopify" width="139" height="139" />
                     <img src="/images/ecwid.svg" alt="ECWID" width="139" height="139" />
                 </div>
 
