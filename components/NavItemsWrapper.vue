@@ -19,7 +19,7 @@ const solutionSections = [
             {
                 label: 'Payment services',
                 pages: [
-                    { to: '/omnichannel-solution', label: 'Omnichannel Solution' },
+                    { to: '/omnichannel', label: 'Omnichannel Solution' },
                     { to: '/online-payments', label: 'Online Payments' },
                     { to: '/smart-pos', label: 'Smart POS' },
                     { to: '/soft-pos', label: 'Soft POS' },
@@ -30,13 +30,13 @@ const solutionSections = [
             {
                 label: 'Digital services',
                 pages: [
-                    { to: '/e-commerce-services', label: 'eCommerce Services' },
+                    { to: '/ecommerce-services', label: 'eCommerce Services' },
                 ],
             },
             {
                 label: 'Tech services',
                 pages: [
-                    { to: '/payment-orchestration-network', label: 'Payment orchestration network' },
+                    { to: '/payment-orchestration-network', label: 'Payment Orchestration Network' },
                     { to: '/whitelable-for-psp-acquirer', label: 'Whitelabel For PSP/Acquirer' },
                 ],
             },
@@ -49,7 +49,7 @@ const companySections = [
         sections: [
             {
                 pages: [
-                    { to: '/about-us', label: 'About us' },
+                    { to: '/about-us', label: 'About Us' },
                     // { to: '/careers', label: 'Careers' },
                     { to: '/partners', label: 'Partners' },
                     { to: '/news', label: 'News' },
