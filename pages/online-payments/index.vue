@@ -126,27 +126,29 @@
             </div>
 
             <div class="flex flex-col lg:flex-row gap-6 mt-6">
-                <div class="lg:w-3/5 flex flex-col justify-between gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
+                <div class="lg:w-1/2 flex flex-col justify-between gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <div class="flex flex-col gap-6">
                         <img class="flex-shrink-0" src="/images/mobile-sdk.svg" alt="Mobile-Ready Checkout" width="121" height="121" />
                         <h3 class="text-2xl font-semibold">Mobile-Ready Checkout</h3>
                         <p class="text-xl">Say goodbye to abandoned carts! <br /> Our mobile-ready checkout guarantees a seamless payment process, ensuring customers breeze through their purchases and boosting your conversion rates!</p>
                     </div>
-                    <div class="grid grid-cols-3 place-items-center gap-4 lg:gap-8 mt-6">
+                    <div class="grid grid-cols-3 place-items-center gap-2 lg:gap-4 mt-6">
                         <img src="/images/flutter.svg" alt="flutter" width="210" height="90" />
                         <img src="/images/android.svg" alt="Android" width="210" height="90" />
                         <img src="/images/ios.svg" alt="IOS" width="210" height="90" />
                     </div>
                 </div>
-                <div class="lg:w-2/5 flex flex-col justify-between gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
+                <div class="lg:w-1/2 flex flex-col justify-between gap-6 p-4 max-lg:pb-12 lg:p-8 bg-[#E9ECF4D9] rounded-xl">
                     <div class="flex flex-col gap-6">
                         <img class="flex-shrink-0" src="/images/platform-integration.svg" alt="Platform Integration" width="121" height="121" />
                         <h3 class="text-2xl font-semibold">Platform Integration</h3>
                         <p class="text-xl">Our integrations with cutting-edge platforms for loyalty programs, hotel bookings, marks just the beginning of a robust ecosystem, with many exciting partnerships on the horizon.</p>
                     </div>
-                    <div class="grid grid-cols-2 place-items-center gap-4 lg:gap-8 mt-6">
+                    <div class="grid grid-cols-4 place-items-center gap-2 mt-6">
                         <img src="/images/igloorooms.svg" alt="IglooRooms" width="210" height="90" />
                         <img src="/images/kangaroo.svg" alt="Kangaroo" width="210" height="90" />
+                        <img src="/images/quickseat.svg" alt="QuickSeat" width="210" height="90" />
+                        <img src="/images/suppy.svg" alt="Suppy" width="210" height="90" />
                     </div>
                 </div>
             </div>
