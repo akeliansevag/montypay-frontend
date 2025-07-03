@@ -47,7 +47,7 @@
     <ul
       v-if="hasChildren && navItemsVisible"
       class="flex flex-col gap-8"
-      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:bg-primary lg:py-16 lg:px-24 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
+      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:bg-primary lg:py-8 lg:px-12 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
       '' : layout === 'footer'}"
     >
       <li v-for="(child, index) in children" :key="index">

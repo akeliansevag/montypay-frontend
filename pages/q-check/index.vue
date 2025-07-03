@@ -1,223 +1,250 @@
-<template lang="">
-    <div>
-        <Hero 
-            title="QCheck"
-            paragraph="Get ready for the ultimate dining revolution with QCheck, the hospitality industry's game-changing Self-Service Checkout solution!"
-            image="qcheck"
-            hero="14"
-        />
+<template>
+    <section class="relative max-lg:py-10 lg:py-20">
 
-        <section id="section-2" class="pt-16 lg:pt-36">
-            <div class="container">
-                <div class="flex flex-col text-center">
-                    <div class="w-full md:w-3/4 mx-auto">
-                        <ContentBlock 
-                            title="The Future of Dining Made Easy! <br /> Check the menu & pay the bill using the same QR!"
-                            paragraph="QCheck spells a new chapter in dining satisfaction! Enjoy seamless bill splitting, great branding, tip-friendly features, and real-time reporting - all designed to elevate the dining experience and wow your guests."
-                        />
-                    </div>
+        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0" />
 
-                    <NuxtPicture 
-                        priority
-                        format="webp,avif" 
-                        src="/images/menu-and-pay.png" 
-                        class="w-full mt-14"
-                        :imgAttrs="{class:'w-full'}" 
-                    />
+        <div class="container">
+            <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
+                <div class="lg:w-[50%] flex flex-col gap-6 lg:gap-12">
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">QCheck: The Self-Service Checkout Solution That Works for You</h1>
+                    <p class="text-xl">Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout tool. Whether guests are scanning to browse your menu or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.</p>
+                    <!-- <div class="relative">
+                        <input required type="text" placeholder="" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
+                        <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:right-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
+                    </div> -->
+                </div>
+                <div class="lg:w-[35%]">
+                    <img src="/qcheck-banner.webp" alt="QCheck Banner Image" />
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="mt-14 lg:mt-36">
-            <div class="container lg:px-36">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-0">
-                    <div :class="index==(services.length-1) ? 'md:col-span-2' : ''" v-for="(service,index) in services" :key="index">
-                        <div class="bg-[#efefef] rounded-[40px] p-10 min-h-[228px]">
-                            <h5 class="mb-5">{{service.title}}</h5>
-                            <p>{{service.description}}</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <NuxtPicture
-                    format="webp"
-                    src="/images/qrcheck-plate.webp"
-                    :imgAttrs="{class: 'w-full rounded-[40px] mt-14'}"
-                />
-                
-                <div>
-                    <ContentBlock 
-                        title="Main Benefits"
-                        class="text-center mt-28"
-                    />
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14">
-                        <div class="border-[#d9d9d9] flex gap-6 border rounded-lg p-10 h-full" v-for="(benefit,index) in benefits" :key="index">
-                            <div>
-                                <div class="-mt-4 w-[90px] h-[90px] flex items-center justify-center rounded-full bg-[#233F94]">
-                                    <NuxtPicture 
-                                        format="svg"
-                                        :src="benefit.icon"
-                                        :imgAttrs="{class: 'w-[54px]'}"
-                                    />
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="mb-5">{{benefit.title}}</h5>
-                                <p>{{benefit.description}}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row justify-between gap-14 w-full mt-40 pt-40 px-14 bg-gradient-to-b from-[#003383] to-[#0F0C22] rounded-3xl">
-                    <NuxtPicture 
-                        format="svg"
-                        src="/images/qcheck-img1.png"
-                        class="-mt-60"
-                        :imgAttrs="{class: 'w-full'}"
-                    />
-                    <NuxtPicture 
-                        format="svg"
-                        src="/images/qcheck-img2.png"
-                        class="-mb-20"
-                        :imgAttrs="{class: 'w-full'}"
-                    />
-                </div>
-            </div>
-        </section>
-
-        <section id="section-3" class="py-14">
-            <div class="container">
-                <ContentBlock 
-                    title="Connectors"
-                    class="text-center mt-28"
-                />
-                <div class="flex flex-col gap-7 lg:gap-14 mt-8 text-white text-left">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-20 md:gap-x-36 gap-y-20 items-center mt-16">
-                        <div class="px-6" v-for="(connector,index) in connectors" :key="index">
-                            <NuxtPicture 
-                                priority
-                                format="svg" 
-                                :src="`/images/${connector.image}`"
-                                :imgAttrs="{class:'w-full mx-auto'}" 
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <FadeSlider :data="sliderOne" title="Starts With a Scan. Ends With a Smile."/>
+    <div class="container">
+        <div class="separator"></div>
     </div>
+
+    <FadeSlider :data="sliderTwo" noPadding="true" subtitle="Create a modern, quick, and enjoyable dining experience with QCheck’s intuitive features." title="It’s All Just One Scan Away" reverse="true"/>
+    <div class="container">
+        <div class="separator"></div>
+    </div>
+
+
+    <FadeSliderTwo :data="sliderThree" title="Integration and Onboarding" subtitle="Getting started with QCheck is quick and hassle-free:"/>
+    <div class="container">
+        <div class="separator"></div>
+    </div>
+    
+    <section class="max-lg:pb-10 lg:pb-20">
+        <div class="container">
+            <h2 class="text-2xl">Connectors</h2>
+
+            <div class="marquee overflow-hidden">
+                <div class="wrapper grid grid-flow-col auto-cols-[12rem] lg:auto-cols-[15rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
+                    <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
+                        <img :src="marquee.image" :alt="marquee.title" />
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="max-lg:pb-10 lg:pb-20">
+        <div class="container">
+            <h2 class="text-2xl">Why QCheck?</h2>
+            <div>
+                <div class="table-wrapper">
+                    <table class="custom-table">
+                        <tr v-for="(row,index) in why">
+                            <th v-if="index==0" v-for="(col,ind) in row">
+                                {{ col }}
+                            </th>
+                            <td v-else v-for="(col,ind) in row">
+                                {{ col }}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>        
+        </div>
+    </section>
+    
+    <Accordion :data="faq" title="All You Need to Know" /> 
+    
+    <BlueSection title="It’s All Just One Scan Away" subtitle="Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features" buttonText="Request a demo" buttonLink="/contact-us" image="/its-just-one-scan-away.webp"/>
+    
+    <PaymentSolutions />
 </template>
 
 <script setup>
-    useSeoMeta({
-        title: 'QR Code Scanner Benefits',
-        ogTitle: 'QR Code Scanner Benefits',
-        description: 'Discover the main benefits of QR code scanner with MontyPay, the dining revolution and hospitality industry\'s game changing self-service checkout solution.',
-        ogDescription: 'Discover the main benefits of QR code scanner with MontyPay, the dining revolution and hospitality industry\'s game changing self-service checkout solution.',
-        ogImage: 'https://example.com/image.png',
-        twitterCard: 'summary_large_image',
-    })
-    
-    const activeTab = ref(0);
+useSeoMeta({
+    title: 'QCheck',
+    ogTitle: 'QCheck',
+    description: 'QCheck ',
+    ogDescription: 'QCheck ',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 
-    const show = (index) => {
-    activeTab.value = index;
-    };
+const faq = [
+    {
+        question: 'How does QCheck handle bill splitting?',
+        answer: 'Guests can divide their bills equally or itemize them with ease.'
+    },
+    {
+        question: 'What payment methods are supported?',
+        answer: 'QCheck supports 100+ payment methods, including card and wallet payments.'
+    },
+    {
+        question: 'How secure are the transactions?',
+        answer: 'QCheck ensures the highest level of security with PCI DSS compliance and encryption.'
+    },
+    {
+        question: 'Does QCheck integrate with existing POS systems?',
+        answer: 'Yes, it integrates seamlessly for uninterrupted operations.'
+    },
+    {
+        question: 'Is support available for setup and staff training?',
+        answer: 'Absolutely! We provide complete onboarding and training support to ensure success.'
+    }
+]
 
-    const connectors = [
-        {
-            image: 'brink-pos.png'
-        },
-        {
-            image: 'dinerware.png'
-        },
-        {
-            image: 'squirrel.png'
-        },
-        {
-            image: 'micros.png'
-        },
-        {
-            image: 'pos-itouch.png'
-        },
-        {
-            image: 'heartland-xpient.png'
-        },
-        {
-            image: 'falcons-soft.png'
-        },
-        {
-            image: 'bimpos.png'
-        },
-    ]
+const why = [
+    ['Feature','QCheck','Traditional Checkout'],
+    ['Wait time','Less than 2 minutes','10+ minutes'],
+    ['Bill splitting','Division and itemized','Manual'],
+    ['Payment options','Diverse','Limited'],
+    ['Tipping','Increase tips','Average tips'],
+    ['Integration','Seamless POS integration','Basic integration'],
+    ['Customer satisfaction','High','Average']
+]
+const connectors = [
+    {
+        title: 'DinerWare',
+        image: '/dinerware.webp'
+    },
+    {
+        title: 'Micros',
+        image: '/micros.webp'
+    },
+    {
+        title: 'Brink POS',
+        image: '/brink-pos.webp'
+    },
+    {
+        title: 'Heartland Xpient',
+        image: '/heartland-xpient.webp'
+    },
+    {
+        title: 'NCR',
+        image: '/ncr.webp'
+    },
+    {
+        title: 'Maitred',
+        image: '/maitred.webp'
+    },
+    {
+        title: 'POS iTouch',
+        image: '/positouch.webp'
+    },
+]
 
-    const services = [
-        {
-            title: 'Elevate Your Brand',
-            description: 'QCheck replaces clunky EFTPOS machines with custom-designed, branded cards, enhancing your establishment\'s identity and image.'
-        },
-        {
-            title: 'Memorable Impressions',
-            description: 'Impress your guests with a visually appealing payment method, leaving a lasting positive impression of your venue.'
-        },
-        {
-            title: 'Enhanced Efficiency',
-            description: 'Staff can focus on providing exceptional service rather than dealing with payment complexities.'
-        },
-        {
-            title: 'Faster Dining Experience',
-            description: 'QCheck accelerates the payment process, reducing waiting times and enabling quicker table turnovers.'
-        },
-        {
-            title: 'Group-Friendly',
-            description: 'QCheck seamlessly splits bills, catering to groups and parties effortlessly.'
-        },
-        {
-            title: 'Individual Control',
-            description: 'Each guest can manage their portion of the bill independently, enhancing flexibility.'
-        },
-        {
-            title: 'Increase in Tips',
-            description: 'QCheck\'s tip-friendly features have been proven to boost gratuities, further incentivizing excellent service.'
-        },
-    ]
+const duplicatedMarqueeList = computed(() => [...connectors, ...connectors, ...connectors]);
 
-    const benefits= [
-        {
-            icon: '/images/clock-check.svg',
-            title: 'Faster Checkout',
-            description: 'QCheck streamlines the payment process, reducing waiting times and improving overall efficiency.'
-        },
-        {
-            icon: '/images/shield-dollar.svg',
-            title: 'Simple and Secure Payments',
-            description: 'Guests enjoy a user-friendly payment experience while businesses benefit from enhanced security.'
-        },
-        {
-            icon: '/images/calendar-check-01.svg',
-            title: 'Real-Time Reporting',
-            description: 'Access real-time transaction data for better business insights and decision-making.'
-        },
-        {
-            icon: '/images/line-chart-up-02.svg',
-            title: 'Increase in Tips',
-            description: 'QCheck\'s tip-friendly features encourage guests to leave gratuities, increasing staff earnings.'
-        },
-        {
-            icon: '/images/annotation-x.svg',
-            title: 'No Monthly Fees',
-            description: 'Say goodbye to monthly fees or subscription costs.'
-        },
-        {
-            icon: '/images/heart-circle.svg',
-            title: 'Brand Visibility',
-            description: 'Design the checkout experience to align with your brand identity, reinforcing brand visibility and recognition.'
-        }
-    ]
+const sliderOne = [
+    {
+        title: 'Faster Checkout',
+        description: 'Save up to 17 minutes per table for faster turnover with QCheck\'s seamless pay-at-table experience.',
+        image: '/faster-checkout.webp',
+        category: 'Faster',
+    },
+    {
+        title: 'Seamless Experience',
+        description: 'Ensure a frictionless journey from menu browsing to bill payment, leaving guests happy and operations smooth.',
+        image: '/seamless-experience.webp',
+        category: 'Seamless',
+    },
+    {
+        title: 'Simple and Secure Payments',
+        description: 'Offer confidence and peace of mind with multiple secure payment options, from mobile wallets to cards.',
+        image: '/simple-and-secure-payments.webp',
+        category: 'Secure',
+    },
+    {
+        title: 'Multiple Payment Options',
+        description: 'Give guests flexibility with wallet payments, card payments, and many more, all in one hassle-free process',
+        image: '/multiple-payment-options.webp',
+        category: 'Flexible',
+    },
+];
 
+const sliderTwo = [
+    {
+        title: 'Scan the QR Code',
+        description: 'One code, two benefits! Guests can view your menu and pay the bill without waiting',
+        image: '/scan-the-qr-code.webp',
+        category: 'Scan',
+    },
+    {
+        title: 'Split the Bill',
+        description: 'Simplify group payments with itemized or equal division options',
+        image: '/split-the-bill.webp',
+        category: 'Split',
+    },
+    {
+        title: 'Add a Tip',
+        description: 'Triple staff tips with an easy in-app tipping option during payment',
+        image: '/add-a-tip.webp',
+        category: 'Tip',
+    },
+    {
+        title: 'Pay the Bill',
+        description: 'Offer secure and versatile payment methods for fast, smooth transactions',
+        image: '/pay-the-bill.webp',
+        category: 'Pay',
+    },
+];
+
+const sliderThree = [
+    {
+        title: 'Sync Your POS',
+        description: 'Our team ensures seamless integration with your existing POS system',
+        image: '/integration-1.webp',
+    },
+    {
+        title: 'Staff Training',
+        description: 'Comprehensive training equips your team to use QCheck effortlessly. ',
+        image: '/integration-2.webp',
+    },
+    {
+        title: 'Fast Customer Checkout',
+        description: 'Your guests can immediately enjoy faster, smoother checkouts.',
+        image: '/integration-3.webp',
+    }
+];
 </script>
 
-<style lang="">
-    
+<style lang="sass" scoped>
+    .table-wrapper
+        @apply max-lg:overflow-x-auto
+    .custom-table
+        @apply shadow-xl w-full rounded-xl overflow-hidden mt-10 max-lg:min-w-[1000px]
+        th
+            @apply text-left font-bold text-2xl p-8
+        td
+            @apply px-8 py-4
+        tr:last-child td
+            @apply pb-8
+        tr:nth-child(even)
+            @apply bg-[#DFE3EF]
+        tr:nth-child(odd)
+            @apply bg-[#E9ECF4]
+        th:first-child
+            @apply bg-white
+        tr td:first-child
+            @apply font-bold bg-white 
+        tr td:nth-child(2)
+            @apply flex gap-2 items-center before:content-['✓'] before:bg-gradient-to-r before:from-[#003383] before:to-[#00DFDF] before:w-5 before:h-5 before:rounded-full before:text-white before:flex before:justify-center before:items-center before:shrink-0
 </style>
