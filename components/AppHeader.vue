@@ -12,7 +12,7 @@
                     <ul>
                         <li class="flex items-center nav-link">
                             <NuxtLink class="nav-link bg-secondary rounded-lg px-4 py-2" to="https://dashboard.montypay.com/login" target="_blank">
-                                <h5 class="nav-link">Log In</h5>
+                                <h5 class="nav-link text-quaternary">Log In</h5>
                             </NuxtLink>
                         </li>
                     </ul>

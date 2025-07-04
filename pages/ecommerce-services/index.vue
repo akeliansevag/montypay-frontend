@@ -8,6 +8,9 @@
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Build Your Website <br /> And Start <span class="text-[#233F94]">Selling Online</span> <br />in Less Than 30 Days</h1>
                     <p class="text-xl">Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.</p>
+                    <div>
+                        <NuxtLink to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">Launch Your eCommerce Website Today!</NuxtLink>  
+                    </div>
                 </div>
                 <div class="lg:w-[50%]">
                     <img src="/ecommerce-banner.webp" alt="ecommerce Banner Image" />
@@ -41,6 +44,9 @@
     </div>
 
     <PaddingSlider :data="sliderThree" title="Create, Captivate, Convert" subtitle="Pair your e-commerce platform with expert social media services and high-quality visual content:"/>
+    <div class="container mt-12">
+        <NuxtLink to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">Start Selling Online Now</NuxtLink>  
+    </div>
 
     <div class="container">
         <div class="separator"></div>
@@ -67,7 +73,7 @@
         
     </div>
     
-    <BlueSection title="Ready to Transform Your Online Presence?" subtitle="Let’s bring your vision to life! Reach out to us today, and let’s get started building your e-commerce platform with MontyPay. Your future customers are waiting." buttonText="Request a demo" buttonLink="/contact-us" image="/ready-to-transform.webp"/>
+    <BlueSection title="Ready to Transform Your Online Presence?" subtitle="Let’s bring your vision to life! Reach out to us today, and let’s get started building your e-commerce platform with MontyPay. Your future customers are waiting." buttonText="Request a demo" buttonLink="https://prechecklist.montypay.com/website/" target="_blank" image="/ready-to-transform.webp"/>
     
     <PaymentSolutions />
 </template>

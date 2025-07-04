@@ -46,14 +46,14 @@
     <!-- Handling child sections -->
     <ul
       v-if="hasChildren && navItemsVisible"
-      class="flex flex-col gap-8"
-      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:bg-primary lg:py-8 lg:px-12 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
+      class="navigation flex flex-col gap-8"
+      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:py-8 lg:px-12 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
       '' : layout === 'footer'}"
     >
       <li v-for="(child, index) in children" :key="index">
         <ul v-if="child.sections && child.sections.length" class="flex flex-col" :class="{ 'lg:flex-row gap-6 lg:gap-32' : layout === 'header', 'gap-2.5' : layout === 'footer' }">
           <li v-for="(section, sectionIndex) in child.sections" :key="sectionIndex">
-            <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="lg:text-black text-base">{{ section.label }}</span>
+            <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="lg:text-white text-base">{{ section.label }}</span>
             <ul v-if="section.pages && section.pages.length" :class="{ 'mt-2 lg:mt-8': section.label && layout === 'header', 'gap-1.5 lg:gap-4' : layout === 'header', 'gap-2.5' : layout === 'footer'}" class="flex flex-col" >
               <li v-for="(page, pageIndex) in section.pages" :key="pageIndex">
                 <NuxtLink
@@ -61,7 +61,7 @@
                   :to="page.to"
                   class="nav-link font-normal"
                   exact-active-class="active"
-                  :class="{ 'lg:text-black lg:hover:text-[#09bebd]' : layout === 'header'}"
+                  :class="{ 'lg:text-white lg:hover:text-[#09bebd]' : layout === 'header'}"
                 >
                   <h5 class="nav-link font-normal">{{ page.label }}</h5>
                 </NuxtLink>
@@ -73,7 +73,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="nav-link font-normal"
-                  :class="{ 'lg:text-black lg:hover:text-[#09bebd]' : layout === 'header'}"
+                  :class="{ 'lg:text-white lg:hover:text-[#09bebd]' : layout === 'header'}"
                 >
                   <h5 class="nav-link font-normal">{{ page.label }}</h5>
                 </a>
@@ -121,5 +121,10 @@ onBeforeUnmount(() => {
 <style scoped lang="sass">
   .active h5 
     color: #09bebd !important
+
+  ul.navigation
+    -webkit-backdrop-filter: blur(25px)
+    backdrop-filter: blur(25px)
+    background-color: hsla(248, 48%, 9%, .8)
   
 </style>
