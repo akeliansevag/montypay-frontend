@@ -122,7 +122,7 @@ onBeforeUnmount(() => {
   .active h5 
     color: #09bebd !important
 
-  ul.navigation
+  header ul.navigation
     -webkit-backdrop-filter: blur(25px)
     backdrop-filter: blur(25px)
     background-color: hsla(248, 48%, 9%, .8)
