@@ -73,7 +73,7 @@
     
     <Accordion :data="faq" title="All You Need to Know" /> 
     
-    <BlueSection title="It’s All Just One Scan Away" subtitle="Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features" buttonText="Request a demo" buttonLink="/contact-us" image="/its-just-one-scan-away.webp"/>
+    <BlueSection title="It’s All Just One Scan Away" subtitle="Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features" buttonText="Request a Demo" buttonLink="/contact-us" image="/its-just-one-scan-away.webp"/>
     
     <PaymentSolutions />
 </template>

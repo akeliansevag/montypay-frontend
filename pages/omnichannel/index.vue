@@ -9,7 +9,7 @@
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">All Your Payments.<br />One Single Platform.</h1>
                     <p class="text-xl">Bring all your online, in-store, and mobile transactions into one seamless platform. Withreal-time insights, advanced reporting, and effortless management, you’ll deliver consistent, exceptional customer experiences while bringing your sales channels to their full potential.</p>
                     <div class="">
-                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a demo</NuxtLink>
+                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a Demo</NuxtLink>
                     </div>
                 </div>
                 <div class="lg:w-[50%]">
@@ -237,7 +237,7 @@
 
     <Accordion :data="faq" title="All You Need to Know" /> 
     
-    <BlueSection title="Let’s make payments simple!" subtitle="Unify your payments, maximize efficiency, and deliver unforgettable customer experiences with MontyPay’s Omnichannel solution." buttonText="Request a demo" buttonLink="/contact-us" image="/many-phones.webp"/>
+    <BlueSection title="Let’s make payments simple!" subtitle="Unify your payments, maximize efficiency, and deliver unforgettable customer experiences with MontyPay’s Omnichannel solution." buttonText="Request a Demo" buttonLink="/contact-us" image="/many-phones.webp"/>
    
    <PaymentSolutions />
 </template>

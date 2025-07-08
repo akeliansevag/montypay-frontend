@@ -8,7 +8,7 @@
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Accept Payments <br />Anywhere</h1>
                     <p class="text-xl">Get paid easily, whether online or in person, and reach customers worldwide. MontyPay makes payments smooth, secure, and hassle-free, so you can focus on growing your business, big or small.</p>
                     <div class="">
-                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a demo</NuxtLink>
+                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a Demo</NuxtLink>
                     </div>
                 </div>
                 <div class="lg:w-[50%]">
@@ -226,7 +226,7 @@
 
     <Accordion :data="faq" title="All You Need to Know" /> 
     
-    <BlueSection title="Let’s Grow Your Business Together " subtitle="MontyPay is here to provide a seamless, secure, and global solution tailored to your needs. Whether you're a startup or an enterprise, we’ve got the tools to help you succeed. Contact us now and grow your business with MontyPay." buttonText="Request a demo" buttonLink="/contact-us" image="/lets-grow-your-business-together.webp"/>
+    <BlueSection title="Let’s Grow Your Business Together " subtitle="MontyPay is here to provide a seamless, secure, and global solution tailored to your needs. Whether you're a startup or an enterprise, we’ve got the tools to help you succeed. Contact us now and grow your business with MontyPay." buttonText="Request a Demo" buttonLink="/contact-us" image="/lets-grow-your-business-together.webp"/>
 
     <PaymentSolutions />
 

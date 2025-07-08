@@ -6,7 +6,7 @@
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Payment Orchestration Network</h1>
                     <p class="text-xl">Bring all your payment methods, gateways, and currencies into one easy-to-manage platform. Whether you’re growing globally or streamlining locally, we’re here to help you handle payments like a pro, boost approvals, and keep things running smoothly. Goodbye to payment chaos!</p>
                     <div>
-                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a demo</NuxtLink>
+                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a Demo</NuxtLink>
                     </div>
                 </div>
                 <div class="lg:w-[60%]">
@@ -94,7 +94,7 @@
         </div>
     </section>
     
-    <BlueSection title="Optimize Your Entire Payment Ecosystem Today" subtitle="Let MontyPay’s Payment Orchestration Network do the heavy lifting. Manage, optimize, and grow, all from one platform designed to make your life simpler." buttonText="Request a demo" buttonLink="/contact-us" image="/optimize-your-entire-payment.webp"/>
+    <BlueSection title="Optimize Your Entire Payment Ecosystem Today" subtitle="Let MontyPay’s Payment Orchestration Network do the heavy lifting. Manage, optimize, and grow, all from one platform designed to make your life simpler." buttonText="Request a Demo" buttonLink="/contact-us" image="/optimize-your-entire-payment.webp"/>
     <PaymentSolutions />
     <Accordion :data="faq" title="All You Need to Know" /> 
 </template>

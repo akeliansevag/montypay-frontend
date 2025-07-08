@@ -73,7 +73,7 @@
         
     </div>
     
-    <BlueSection title="Ready to Transform Your Online Presence?" subtitle="Let’s bring your vision to life! Reach out to us today, and let’s get started building your e-commerce platform with MontyPay. Your future customers are waiting." buttonText="Request a demo" buttonLink="https://prechecklist.montypay.com/website" target="_blank" image="/ready-to-transform.webp"/>
+    <BlueSection title="Ready to Transform Your Online Presence?" subtitle="Let’s bring your vision to life! Reach out to us today, and let’s get started building your e-commerce platform with MontyPay. Your future customers are waiting." buttonText="Request a Demo" buttonLink="https://prechecklist.montypay.com/website" target="_blank" image="/ready-to-transform.webp"/>
     
     <PaymentSolutions />
 </template>
