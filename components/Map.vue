@@ -43,7 +43,7 @@
         {
             icon: 'LB',
             location: 'Beirut, Lebanon',
-            address: '1st floor, Bloc E,<br />Gefinor Center',
+            address: '3rd Floor, Bloc A, <br />Gefinor Center, Beirut, Lebanon',
             top: '39.8',
             left: '57.7',
         },
