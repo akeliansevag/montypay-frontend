@@ -494,6 +494,14 @@
         },
 
     ];
+
+    useHead(() => {
+        return {
+            bodyAttrs: {
+                class: 'homepage'
+            }
+        }
+    })
 </script>
 
 <style lang="sass" scoped>

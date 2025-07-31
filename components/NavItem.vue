@@ -2,7 +2,7 @@
   <li
     class="flex flex-col gap-5 h-full" 
     :class="{
-      'lg:flex-row lg:hover:text-[#09bebd] group/item': layout === 'header',
+      'lg:flex-row lg:hover:text-[#003383] group/item': layout === 'header',
       'text-primary': $route.path === '/',
     }">
     
@@ -11,9 +11,10 @@
       v-if="!isExternal(to) && !hasChildren"
       :to="to"
       exact-active-class="active"
-      class="nav-link"
+      class="relative nav-link"
       :class="{ 'lg:py-8' : layout === 'header' }"
     >
+      <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
     </NuxtLink>
 
@@ -23,16 +24,16 @@
       :href="to"
       target="_blank"
       rel="noopener noreferrer"
-      class="nav-link"
+      class="relative nav-link"
       :class="{ 'lg:py-8' : layout === 'header' }"
     >
+      <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
     </a>
 
-    <div v-else class="flex justify-between items-center gap-2 cursor-pointer"
-         :class="{'lg:py-8' : layout === 'header' }"
-         @click="isMobile() ? toggleNavItems() :  null">
+    <div v-else class="relative flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-8' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
       <h5>{{ label }}</h5>
+      <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <ClientOnly>
         <Icon 
           v-if="(layout === 'header' || (layout === 'footer' && isMobile()))" 
@@ -47,23 +48,27 @@
     <ul
       v-if="hasChildren && navItemsVisible"
       class="navigation flex flex-col gap-8"
-      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:py-8 lg:px-12 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
+      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max xl:-translate-x-1/2 lg:translate-y-px lg:py-8 lg:px-4 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
       '' : layout === 'footer'}"
     >
       <li v-for="(child, index) in children" :key="index">
-        <ul v-if="child.sections && child.sections.length" class="flex flex-col" :class="{ 'lg:flex-row gap-6 lg:gap-32' : layout === 'header', 'gap-2.5' : layout === 'footer' }">
-          <li v-for="(section, sectionIndex) in child.sections" :key="sectionIndex">
-            <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="lg:text-white text-base">{{ section.label }}</span>
+        <ul v-if="child.sections && child.sections.length" class="flex flex-col" :class="{ 'lg:flex-row gap-6 lg:gap-8' : layout === 'header', 'gap-2.5' : layout === 'footer' }">
+          <li v-for="(section, sectionIndex) in child.sections" :key="sectionIndex" :class="{ 'xl:min-w-[300px]' : layout === 'header'  }">
+            <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="link-color flex items-center gap-2 text-base" :class="{ 'px-4' : section.label }">
+              <span v-html="section.icon" class="no-fill"></span>
+              {{ section.label }}
+            </span>
             <ul v-if="section.pages && section.pages.length" :class="{ 'mt-2 lg:mt-8': section.label && layout === 'header', 'gap-1.5 lg:gap-4' : layout === 'header', 'gap-2.5' : layout === 'footer'}" class="flex flex-col" >
-              <li v-for="(page, pageIndex) in section.pages" :key="pageIndex">
+              <li v-for="(page, pageIndex) in section.pages" :key="pageIndex" class="group">
                 <NuxtLink
                   v-if="!isExternal(page.to)"
                   :to="page.to"
                   class="nav-link font-normal"
                   exact-active-class="active"
-                  :class="{ 'lg:text-white lg:hover:text-[#09bebd]' : layout === 'header'}"
+                  :class="{ 'nav-link-color link-color flex justify-between items-center py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
-                  <h5 class="nav-link font-normal">{{ page.label }}</h5>
+                  <h6 class="nav-link font-normal">{{ page.label }}</h6>
+                  <Icon v-if="layout === 'header'" name="fa6-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
                 </NuxtLink>
                 
                 <!-- Handle external links for children pages -->
@@ -73,9 +78,10 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="nav-link font-normal"
-                  :class="{ 'lg:text-white lg:hover:text-[#09bebd]' : layout === 'header'}"
+                  :class="{ 'nav-link-color link-color flex justify-between items-center py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
-                  <h5 class="nav-link font-normal">{{ page.label }}</h5>
+                  <h6 class="nav-link font-normal">{{ page.label }}</h6>
+                  <Icon v-if="layout === 'header'" name="fa6-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
                 </a>
               </li>
             </ul>
@@ -87,6 +93,7 @@
 </template>
 
 <script setup>
+const route = useRoute()
 const props = defineProps(['header', 'footer', 'to', 'label', 'children', 'layout', 'target', 'external']);
 const hasChildren = computed(() => props.children && props.children.length);
 const navItemsVisible = ref(false);
@@ -116,15 +123,76 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize);
 });
+
+useHead(() => {
+  const darkRoutes = [
+    '/omnichannel',
+    '/online-payments',
+    '/smart-pos',
+    '/soft-pos',
+    '/q-check',
+    '/ecommerce-services',
+    '/payment-orchestration-network',
+  ]
+
+  const bodyClass = darkRoutes.includes(route.path) ? 'dark-nav' : 'light-nav'
+
+  return {
+    bodyAttrs: {
+      class: bodyClass
+    }
+  }
+})
 </script>
 
-<style scoped lang="sass">
-  .active h5 
-    color: #09bebd !important
+<style lang="sass">
+  body.dark-nav 
+    .no-fill svg path
+      fill: none !important
 
-  header ul.navigation
-    -webkit-backdrop-filter: blur(25px)
-    backdrop-filter: blur(25px)
-    background-color: hsla(248, 48%, 9%, .8)
-  
+    .active h6 
+      @apply text-white
+
+    header .navigation
+      @apply bg-[#0C0B1D]
+
+      svg path
+        @apply stroke-white
+
+      .nav-link-color
+        @apply hover:bg-[#6CA4FF1A]
+
+        &.active 
+          @apply bg-[#6CA4FF1A]
+
+        &.link-color
+          @apply lg:text-gray-500 lg:hover:text-white
+
+      .link-color
+        @apply lg:text-white
+
+  body.light-nav 
+    .no-fill svg path
+      fill: none !important
+      
+    .active h6 
+      @apply text-[#003383]
+
+    header .navigation
+      @apply bg-white
+
+      svg path
+        @apply stroke-[#003383]
+
+      .nav-link-color
+        @apply hover:bg-gray-100
+
+        &.active
+          @apply bg-gray-100
+
+        &.link-color
+          @apply lg:text-gray-500 lg:hover:text-black
+
+      .link-color
+        @apply lg:text-[#003383]
 </style>
