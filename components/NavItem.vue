@@ -166,7 +166,7 @@ useHead(() => {
           @apply bg-[#6CA4FF1A]
 
         &.link-color
-          @apply lg:text-gray-500 lg:hover:text-white
+          @apply lg:text-gray-300 lg:hover:text-white
 
       .link-color
         @apply lg:text-white
@@ -191,7 +191,7 @@ useHead(() => {
           @apply bg-gray-100
 
         &.link-color
-          @apply lg:text-gray-500 lg:hover:text-black
+          @apply lg:text-gray-700 lg:hover:text-black
 
       .link-color
         @apply lg:text-[#003383]
