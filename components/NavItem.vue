@@ -53,7 +53,7 @@
     >
       <li v-for="(child, index) in children" :key="index">
         <ul v-if="child.sections && child.sections.length" class="flex flex-col" :class="{ 'lg:flex-row gap-6 lg:gap-8' : layout === 'header', 'gap-2.5' : layout === 'footer' }">
-          <li v-for="(section, sectionIndex) in child.sections" :key="sectionIndex" :class="{ 'xl:min-w-[300px]' : layout === 'header'  }">
+          <li v-for="(section, sectionIndex) in child.sections" :key="sectionIndex">
             <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="link-color flex items-center gap-2 text-base" :class="{ 'px-4' : section.label }">
               <span v-html="section.icon" class="no-fill"></span>
               {{ section.label }}
@@ -65,7 +65,7 @@
                   :to="page.to"
                   class="nav-link font-normal"
                   exact-active-class="active"
-                  :class="{ 'nav-link-color link-color flex justify-between items-center py-2 px-4 rounded-sm' : layout === 'header' }"
+                  :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
                   <Icon v-if="layout === 'header'" name="fa6-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
@@ -78,7 +78,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="nav-link font-normal"
-                  :class="{ 'nav-link-color link-color flex justify-between items-center py-2 px-4 rounded-sm' : layout === 'header' }"
+                  :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
                   <Icon v-if="layout === 'header'" name="fa6-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
