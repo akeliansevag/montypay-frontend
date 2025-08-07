@@ -132,7 +132,8 @@
                     title: "Digital Wallets",
                     items: [
                         { name: "MyMonty", img: "/images/mymonty.svg" },
-                        { name: "Whish", img: "/images/whish.svg" }
+                        { name: "Whish", img: "/images/whish.svg" },
+                        { name: "OMT", img: "/images/omt.svg" }
                     ]
                 },
                 {
