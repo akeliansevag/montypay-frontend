@@ -133,13 +133,13 @@
                     items: [
                         { name: "MyMonty", img: "/images/mymonty.svg" },
                         { name: "Whish", img: "/images/whish.svg" },
-                        { name: "OMT", img: "/images/omt.svg" }
                     ]
                 },
                 {
                     title: "Other",
                     items: [
-                        { name: "Cryptocurrency", img: "/images/crypto.svg" }
+                        { name: "Cryptocurrency", img: "/images/crypto.svg" },
+                        { name: "OMT", img: "/images/omt.svg" }
                     ]
                 }
             ]
