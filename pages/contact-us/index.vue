@@ -529,6 +529,7 @@
 
     const selectCountry = (country) => {
         selectedCountry.value = country;
+        form.value.country = selectedCountry.value;
         emit('select', country);
         showDropdown.value = false;
         resetDropdown()

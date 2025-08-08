@@ -47,7 +47,7 @@
     <!-- Handling child sections -->
     <ul
       v-if="hasChildren && navItemsVisible"
-      class="navigation flex flex-col gap-8"
+      class="navigation flex flex-col gap-8 shadow-md"
       :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max xl:-translate-x-1/2 lg:translate-y-px lg:py-8 lg:px-4 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
       '' : layout === 'footer'}"
     >
@@ -146,7 +146,7 @@ useHead(() => {
 </script>
 
 <style lang="sass">
-  body.dark-nav 
+  body.light-nav 
     .no-fill svg path
       fill: none !important
 
@@ -171,7 +171,7 @@ useHead(() => {
       .link-color
         @apply lg:text-white
 
-  body.light-nav 
+  body.dark-nav 
     .no-fill svg path
       fill: none !important
       
