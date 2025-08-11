@@ -151,19 +151,19 @@ useHead(() => {
       fill: none !important
 
     .active h6 
-      @apply text-white
+      @apply lg:text-white
 
     header .navigation
-      @apply bg-[#0C0B1D]
+      @apply lg:bg-[#0C0B1D]
 
       svg path
-        @apply stroke-white
+        @apply lg:stroke-white
 
       .nav-link-color
-        @apply hover:bg-[#6CA4FF1A]
+        @apply lg:hover:bg-[#6CA4FF1A]
 
         &.active 
-          @apply bg-[#6CA4FF1A]
+          @apply lg:bg-[#6CA4FF1A]
 
         &.link-color
           @apply lg:text-gray-300 lg:hover:text-white
@@ -176,23 +176,34 @@ useHead(() => {
       fill: none !important
       
     .active h6 
-      @apply text-[#003383]
+      @apply lg:text-[#003383]
 
     header .navigation
-      @apply bg-white
+      @apply lg:bg-white
 
       svg path
-        @apply stroke-[#003383]
+        @apply lg:stroke-[#003383]
 
       .nav-link-color
-        @apply hover:bg-gray-100
+        @apply lg:hover:bg-gray-100
 
         &.active
-          @apply bg-gray-100
+          @apply lg:bg-gray-100
 
         &.link-color
           @apply lg:text-gray-700 lg:hover:text-black
 
       .link-color
         @apply lg:text-[#003383]
+
+  @media (min-width: 1024px) 
+    body.homepage
+      nav
+        ul
+          li:hover
+            color: white !important 
+      
+    
+  
+          
 </style>
