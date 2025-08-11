@@ -813,50 +813,84 @@
     const industrySelect = ref(null)
 
     const handleSubmit = async () => {
-        if (validateForm(form, errors, validationRules)) {
-            try {
-                const API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
+  if (validateForm(form, errors, validationRules)) {
+    try {
+      const WP_API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
 
-                // Get labels from selected options via refs
-                const countryLabel = countrySelect.value.options[countrySelect.value.selectedIndex]?.text || ''
-                const productLabel = productSelect.value.options[productSelect.value.selectedIndex]?.text || ''
-                const industryLabel = industrySelect.value.options[industrySelect.value.selectedIndex]?.text || ''
+      // Get labels from selected options via refs
+      const countryLabel = countrySelect.value.options[countrySelect.value.selectedIndex]?.text || '';
+      const productLabel = productSelect.value.options[productSelect.value.selectedIndex]?.text || '';
+      const industryLabel = industrySelect.value.options[industrySelect.value.selectedIndex]?.text || '';
 
-                const formData = new FormData();
-                formData.append('first_name', form.value.first_name);
-                formData.append('last_name', form.value.last_name);
-                formData.append('work_email', form.value.email);
-                formData.append('phone_number', form.value.mobile);
-                formData.append('country', countryLabel);
-                formData.append('industry', industryLabel);
-                formData.append('product', productLabel);
-                formData.append('company_name', form.value.company);
-                formData.append('company_size', form.value.size);
-                formData.append('website', form.value.link);
-                formData.append('message', form.value.message);
-                formData.append('_wpcf7_unit_tag', 'rte');
-                // console.log(formData);
-                // return;
-                const response = await fetch(API_ENDPOINT, {
-                    method: 'POST',
-                    body: formData,
-                });
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                //console.log("Form submitted successfully:", data);
-                submissionMessage.value = "Thank you for your message."
-                resetForm();
-                //Handle success response, such as notifying the user or redirecting
-            } catch (error) {
-                console.error("Form submission error:", error);
-                // Handle errors, such as displaying a user-friendly error message
-                submissionMessage.value = "Error in submitting your message."
-                resetForm();
-            }
-        }
-    };
+      // Prepare WordPress form data
+      const formData = new FormData();
+      formData.append('first_name', form.value.first_name);
+      formData.append('last_name', form.value.last_name);
+      formData.append('work_email', form.value.email);
+      formData.append('phone_number', form.value.mobile);
+      formData.append('country', countryLabel);
+      formData.append('industry', industryLabel);
+      formData.append('product', productLabel);
+      formData.append('company_name', form.value.company);
+      formData.append('company_size', form.value.size);
+      formData.append('website', form.value.link);
+      formData.append('message', form.value.message);
+      formData.append('_wpcf7_unit_tag', 'rte');
+
+      // 1. Submit to WordPress Headless
+      const wpResponse = await fetch(WP_API_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!wpResponse.ok) {
+        throw new Error('WordPress submission failed');
+      }
+
+      const wpData = await wpResponse.json();
+      // WordPress submission successful
+
+      // 2. Submit to Azure Logic App API
+      const azureAPI = 'https://prod-61.westeurope.logic.azure.com:443/workflows/9a1e9d104f5e400a93bdc1e0b6662244/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=B1cs4iVBu_y7YSEKOIgP_AABezC1BkBnpg1mgSBOqMU';
+
+      // Prepare JSON payload similar to your curl example
+      const azurePayload = {
+        campaignid: "01ff0d67-1f6d-f011-b4cc-6045bdf5135a",
+        source: "7649cc6d-7ad6-ec11-a7b5-6045bd951f1b",
+        industry: form.value.industy,  // ideally your UUID or value attribute, not label
+        country: form.value.country,
+        product: form.value.product,
+        companyname: form.value.company,
+        email: form.value.email,
+        fullname: form.value.first_name + ' ' + form.value.last_name,
+        mobile: form.value.mobile
+      };
+
+      const azureResponse = await fetch(azureAPI, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': '#@%^)WTP$$06', // Add your API key here if any
+        },
+        body: JSON.stringify(azurePayload)
+      });
+
+      if (!azureResponse.ok) {
+        throw new Error('Azure API submission failed');
+      }
+
+      const azureData = await azureResponse.json();
+
+      submissionMessage.value = "Thank you for your message.";
+      resetForm();
+
+    } catch (error) {
+      console.error("Form submission error:", error);
+      submissionMessage.value = "Error in submitting your message.";
+      resetForm();
+    }
+  }
+};
     const resetForm = () => {
         form.value.first_name="";
         form.value.last_name="";
