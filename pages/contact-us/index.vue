@@ -57,7 +57,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="country">Country</label>
-                                <select :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                     <option value="">Select Country</option>
                                     <option value="bad6f426-35d7-ef11-8eea-7c1e5229a00a">Abkhazia</option>
                                     <option value="a85e89c2-4d74-ec11-8942-0022488312af">Afghanistan</option>
@@ -345,7 +345,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="selected-country">Industry</label>
-                                <select v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="w-full text-base px-4 py-2 bg-primary rounded-lg outline-0">
+                                <select ref="industrySelect" v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="w-full text-base px-4 py-2 bg-primary rounded-lg outline-0">
                                     <option value="">Select Industry</option>
                                     <option value="A6236539-7AE8-EF11-9342-000D3A216302">Tobacco</option>
                                     <option value="9C6999E4-5D07-ED11-82E5-000D3A2236D3">Telecommunications</option>
@@ -464,7 +464,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="product">Product</label>
-                                <select :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <select ref="productSelect" :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                     <option value="">Select Product</option>
                                     <option value="fd4f2661-1f5e-ef11-bfe2-000d3aab2548">MontyPay Point of Sale</option>
                                     <option value="13ca892e-79da-ec11-bb3d-000d3a22e2cf">MontyPay Payment Gateway</option>
@@ -808,18 +808,28 @@
         },
     };
 
+    const countrySelect = ref(null)
+    const productSelect = ref(null)
+    const industrySelect = ref(null)
+
     const handleSubmit = async () => {
         if (validateForm(form, errors, validationRules)) {
             try {
                 const API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
+
+                // Get labels from selected options via refs
+                const countryLabel = countrySelect.value.options[countrySelect.value.selectedIndex]?.text || ''
+                const productLabel = productSelect.value.options[productSelect.value.selectedIndex]?.text || ''
+                const industryLabel = industrySelect.value.options[industrySelect.value.selectedIndex]?.text || ''
+
                 const formData = new FormData();
                 formData.append('first_name', form.value.first_name);
                 formData.append('last_name', form.value.last_name);
                 formData.append('work_email', form.value.email);
                 formData.append('phone_number', form.value.mobile);
-                formData.append('country', form.value.country);
-                formData.append('industry', form.value.industry);
-                formData.append('product', form.value.product);
+                formData.append('country', countryLabel);
+                formData.append('industry', industryLabel);
+                formData.append('product', productLabel);
                 formData.append('company_name', form.value.company);
                 formData.append('company_size', form.value.size);
                 formData.append('website', form.value.link);
