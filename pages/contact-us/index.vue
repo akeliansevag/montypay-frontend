@@ -829,7 +829,7 @@
       formData.append('work_email', form.value.email);
       formData.append('phone_number', form.value.mobile);
       formData.append('country', countryLabel);
-      formData.append('industry', industryLabel);
+      formData.append('industry', industryLabel); 
       formData.append('product', productLabel);
       formData.append('company_name', form.value.company);
       formData.append('company_size', form.value.size);
