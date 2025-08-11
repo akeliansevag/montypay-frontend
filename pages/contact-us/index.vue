@@ -517,7 +517,7 @@
 
                         <div class="gap-8 w-full">
                             <div class="flex gap-3 w-full">
-                                <input type="submit" id="submit" class="mp-button-secondary w-full text-base" value="Contact us" @click.prevent="handleSubmit">
+                                <input type="submit" id="submit" class="mp-button-secondary w-full text-base" :value="submitting ? 'Submitting...' : 'Contact Us'" @click.prevent="handleSubmit">
                             </div>
                             <div class="mt-5" v-if="submissionMessage">{{submissionMessage}}</div>
                         </div> 
@@ -721,7 +721,7 @@
     })
     
     const submissionMessage = ref('');
-
+    const submitting = ref(false);
     const form = ref({
         first_name: '',
         last_name: '',
@@ -815,6 +815,7 @@
     const handleSubmit = async () => {
   if (validateForm(form, errors, validationRules)) {
     try {
+      submitting.value = true;
       const WP_API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
 
       // Get labels from selected options via refs
@@ -857,7 +858,7 @@
       const azurePayload = {
         campaignid: "01ff0d67-1f6d-f011-b4cc-6045bdf5135a",
         source: "7649cc6d-7ad6-ec11-a7b5-6045bd951f1b",
-        industry: form.value.industy,  // ideally your UUID or value attribute, not label
+        industry: form.value.industry,  // ideally your UUID or value attribute, not label
         country: form.value.country,
         product: form.value.product,
         companyname: form.value.company,
@@ -882,11 +883,13 @@
       const azureData = await azureResponse.json();
 
       submissionMessage.value = "Thank you for your message.";
+      submitting.value = false;
       resetForm();
 
     } catch (error) {
       console.error("Form submission error:", error);
       submissionMessage.value = "Error in submitting your message.";
+      submitting.value = false;
       resetForm();
     }
   }
