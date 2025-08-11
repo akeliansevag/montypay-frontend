@@ -56,37 +56,423 @@
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="selected-country">Country</label>
-                                <div 
-                                    @click="toggleDropdown" 
-                                    class="custom-dropdown flex w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 cursor-pointer">
-                                    <div id="selected-country" class="flex justify-between items-center gap-3" :class="{'text-[#9ca3af]': !selectedCountry.name, 'text-black': selectedCountry.name}">
-                                        <div class="flex gap-3">
-                                            <img v-if="selectedCountry.name" :src="`/images/flags/${selectedCountry.iso2}.svg`" :alt="selectedCountry.name" width="24" height="24">
-                                            {{ selectedCountry.name || placeholder }}
-                                        </div>
-                                        <Icon name="fa6-solid:angle-down" class="icon text-lg text-[#9ca3af] transition-transform duration-300 ease-in-out" :class="{'rotate-180': showDropdown}" />
-                                    </div>
-                                </div>
-                                <ul 
-                                    v-if="showDropdown" 
-                                    ref="dropdownContainer"
-                                    @scroll="handleScroll" 
-                                    class="absolute top-full left-0 w-full max-h-[200px] text-base rounded-lg bg-primary text-black overflow-auto z-50"
-                                >
-                                    <input v-model="searchQuery" type="text" id="search" placeholder="Search" class="sticky top-0 left-0 w-full bg-primary px-4 py-2 border-b border-b-slate-200 outline-0 z-10">
-                                    <template v-for="country in filteredCountries">
-                                        <li v-if="country.status == 1" :key="country.id" @click="selectCountry(country)" class="flex gap-3 text-black p-2 hover:bg-slate-200">
-                                            <img :src="`/images/flags/${country.iso2}.svg`" :alt="country.name" width="24" height="24" />
-                                            {{ country.name }}
-                                        </li>
-                                    </template>
-                                </ul>
-                                <input v-model="form.country" type="hidden" id="country">
+                                <label for="country">Country</label>
+                                <select :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                    <option value="">Select Country</option>
+                                    <option value="bad6f426-35d7-ef11-8eea-7c1e5229a00a">Abkhazia</option>
+                                    <option value="a85e89c2-4d74-ec11-8942-0022488312af">Afghanistan</option>
+                                    <option value="3fefc1ba-9391-ed11-aad1-0022487fe028">Aland islands</option>
+                                    <option value="9ff5bdda-9e82-ec11-8d20-000d3a24a6ca">Albania</option>
+                                    <option value="ed7e83d5-f7df-ec11-bb3c-002248823392">Algeria</option>
+                                    <option value="ba3aaf6b-7d95-ed11-aad1-0022487feb37">American Samoa</option>
+                                    <option value="cf1f8ccb-2ae6-ec11-bb3c-000d3ac25ae3">Andorra</option>
+                                    <option value="073e12d8-5e74-ec11-8942-002248831b1e">Angola</option>
+                                    <option value="8bc0ab1a-a5e1-ec11-bb3c-002248823392">Anguilla</option>
+                                    <option value="9f528cb3-f108-ee11-8f6e-0022487fe7cf">Antarctica</option>
+                                    <option value="b2aa8742-ebd7-ef11-8eea-0022487feb28">Antigua and Barbuda</option>
+                                    <option value="1e2fcdbb-2e3a-f011-b4cc-7ced8d13c302">Antigua and Barbuda</option>
+                                    <option value="9257840c-180c-ed11-82e4-000d3a20a9f7">Apac</option>
+                                    <option value="b60abd21-3883-ec11-8d20-000d3a24a6ca">Argentina</option>
+                                    <option value="741f6052-6a74-ec11-8942-002248831b1e">Armenia</option>
+                                    <option value="4f46870e-3907-ed11-82e5-000d3a20d451">Aruba</option>
+                                    <option value="b4aa8742-ebd7-ef11-8eea-0022487feb28">Ascension Island</option>
+                                    <option value="a7d0b6f9-fcdc-ec11-bb3d-000d3a22e2cf">Australia</option>
+                                    <option value="0b35c98e-b37e-ec11-8d20-002248812398">Austria</option>
+                                    <option value="7244870f-f479-ec11-8942-000d3a4b5177">Azerbaijan</option>
+                                    <option value="3fb5b9a8-c2dc-ec11-bb3d-000d3a22e2cf">Bahamas</option>
+                                    <option value="a061ad59-c9e0-ec11-bb3c-0022488145ec">Bahrain</option>
+                                    <option value="8663cbd2-dc79-ec11-8942-000d3a4b5177">Bangladesh</option>
+                                    <option value="9db7f0e4-a4e1-ec11-bb3c-002248823392">Barbados</option>
+                                    <option value="a3221bb9-bae0-ec11-bb3c-0022488145ec">Belarus</option>
+                                    <option value="ae4fc829-e89a-ec11-b3fe-000d3a4c472e">Belgium</option>
+                                    <option value="c8f6f8c5-6174-ec11-8942-002248831b1e">Belize</option>
+                                    <option value="28a400d1-8777-ec11-8942-000d3a4b5177">Benin</option>
+                                    <option value="f5a9b6ca-a4e1-ec11-bb3c-002248823392">Bermuda</option>
+                                    <option value="d62ac926-b57e-ec11-8d20-002248812398">Bhutan</option>
+                                    <option value="a214adf5-7d77-ec11-8942-000d3a4b5177">Bolivia</option>
+                                    <option value="051fb3e7-0d8c-ed11-81ad-0022487fe7cf">Bonnaire</option>
+                                    <option value="16cfe66d-1830-ed11-9db1-00224881f077">Bosnia and Herzegovina</option>
+                                    <option value="066acb9c-3078-ec11-8942-000d3a4b5177">Botswana</option>
+                                    <option value="3f16afb4-7d95-ed11-aad1-0022487feb37">Bouvet Island</option>
+                                    <option value="c59188d3-0879-ec11-8942-000d3a4a8b9a">Brazil</option>
+                                    <option value="465ba4d6-7d95-ed11-aad1-0022487feb37">British Indian Ocean Territory</option>
+                                    <option value="d9bc33f0-7d95-ed11-aad1-0022487feb37">Brunei Darussalam</option>
+                                    <option value="040d2526-1579-ec11-8942-000d3a4b5177">Bulgaria</option>
+                                    <option value="ca4e9723-2275-ec11-8942-0022488312af">Burkina Faso</option>
+                                    <option value="ff70a1ba-7e77-ec11-8942-000d3a4b5177">Burundi</option>
+                                    <option value="42c25be4-37d8-ec11-a7b5-6045bd951f1b">Cambodia</option>
+                                    <option value="f4d42e20-b8e0-ec11-bb3c-0022488145ec">Cameroon</option>
+                                    <option value="8f7288dc-6c74-ec11-8942-002248831b1e">Canada</option>
+                                    <option value="51f0ff0e-5d78-ec11-8942-000d3a4b5177">Cape Verde</option>
+                                    <option value="292e729f-3f30-ed11-9db1-00224881f077">Capricorn</option>
+                                    <option value="5628ff05-4807-ed11-82e5-000d3a20d451">Caribbean</option>
+                                    <option value="b73dbd57-30f2-ec11-bb3d-000d3aaa4c17">Cayman Islands</option>
+                                    <option value="c40dd24f-3478-ec11-8942-000d3a4a8b9a">Central African Republic</option>
+                                    <option value="49468fdf-7132-ed11-9db1-0022487fe3c0">Central Asia</option>
+                                    <option value="acc91016-e7d7-ef11-8eea-000d3aa8d1e2">Ceuta</option>
+                                    <option value="e9bcb811-837e-ec11-8d20-002248812398">Chad</option>
+                                    <option value="d99b6bc8-c3dc-ec11-bb3d-000d3a22e2cf">Chile</option>
+                                    <option value="f410953a-5474-ec11-8942-0022488312af">China</option>
+                                    <option value="c3d423fd-8195-ed11-aad1-0022487feb37">Christmas Island</option>
+                                    <option value="74305676-0027-ef11-840b-000d3a49e4db">CIS</option>
+                                    <option value="a00c2803-8295-ed11-aad1-0022487feb37">Cocos (Keeling) Islands</option>
+                                    <option value="faea2328-c2dc-ec11-bb3d-000d3a22e2cf">Colombia</option>
+                                    <option value="babecc7b-5378-ec11-8942-000d3a4a8b9a">Comoros</option>
+                                    <option value="33f27a09-8295-ed11-aad1-0022487feb37">Congo</option>
+                                    <option value="8663990f-8295-ed11-aad1-0022487feb37">Cook Islands</option>
+                                    <option value="f6d20355-2f79-ec11-8942-000d3a4b5177">Costa Rica</option>
+                                    <option value="24a13a90-4f74-ec11-8942-0022488312af">Croatia</option>
+                                    <option value="77715f5c-bae0-ec11-bb3c-0022488145ec">Cuba</option>
+                                    <option value="102b77a6-9191-ed11-aad1-0022487fe028">Curacao</option>
+                                    <option value="5170b7f8-227d-ec11-8d20-002248812c6a">Cyprus</option>
+                                    <option value="aec91016-e7d7-ef11-8eea-000d3aa8d1e2">Cyprus, Northern</option>
+                                    <option value="4487ddde-c2dc-ec11-bb3d-000d3a22e2cf">Czech Republic</option>
+                                    <option value="568d0ee7-3da1-ec11-b3fe-000d3a455a94">Democratic Republic of the Congo</option>
+                                    <option value="bf52a73b-6d78-ec11-8942-000d3a4a8b9a">Denmark</option>
+                                    <option value="b0c91016-e7d7-ef11-8eea-000d3aa8d1e2">Diego Garcia</option>
+                                    <option value="1baef8b3-b6e0-ec11-bb3c-0022488145ec">Djibouti</option>
+                                    <option value="80fa511f-8295-ed11-aad1-0022487feb37">Dominica</option>
+                                    <option value="b0f0e4d4-f079-ec11-8942-000d3a4b5177">Dominican Republic</option>
+                                    <option value="f63e5625-8295-ed11-aad1-0022487feb37">East Timor</option>
+                                    <option value="0922894c-ad7a-ec11-8942-000d3a4a8b9a">Ecuador</option>
+                                    <option value="13fca6b2-ff78-ec11-8942-000d3a4b5177">Egypt</option>
+                                    <option value="c3eec408-bae0-ec11-bb3c-0022488145ec">El Salvador</option>
+                                    <option value="589dfac0-1c7d-ec11-8d20-002248812c6a">Equatorial Guinea</option>
+                                    <option value="e0cc30ad-ffe2-ec11-bb3c-002248823392">Eritrea</option>
+                                    <option value="86da772d-5c78-ec11-8942-000d3a4b5177">Estonia</option>
+                                    <option value="48890023-d007-ed11-82e5-000d3a2236d3">Eswatini</option>
+                                    <option value="076ae599-2ed0-ec11-a7b5-000d3abf584c">Ethiopia</option>
+                                    <option value="b6aa8742-ebd7-ef11-8eea-0022487feb28">European Union</option>
+                                    <option value="6804a2be-f308-ed11-82e5-000d3a20d451">Falkland Islands</option>
+                                    <option value="0caa5657-1b7d-ec11-8d20-002248812c6a">Faroe Islands</option>
+                                    <option value="c4f02f38-8295-ed11-aad1-0022487feb37">Federated States of Micronesia</option>
+                                    <option value="282c7f4c-cae0-ec11-bb3c-0022488145ec">Fiji</option>
+                                    <option value="d4435119-5474-ec11-8942-0022488312af">Finland</option>
+                                    <option value="725549b9-cb79-ec11-8942-000d3a4b5177">France</option>
+                                    <option value="60d58442-e89a-ec11-b3fe-000d3a4c472e">French Guiana</option>
+                                    <option value="39e937ff-f905-ed11-82e5-000d3a2236d3">French Polynesia</option>
+                                    <option value="2256ee3e-8295-ed11-aad1-0022487feb37">French Southern Territories</option>
+                                    <option value="f9446b71-f279-ec11-8942-000d3a4b5177">Gabon</option>
+                                    <option value="9463f07d-bbe0-ec11-bb3c-0022488145ec">Gambia</option>
+                                    <option value="9830b7cc-09e0-ec11-bb3c-002248823392">Georgia</option>
+                                    <option value="ee08df68-1a7d-ec11-8d20-002248812c6a">Germany</option>
+                                    <option value="9d34428b-3478-ec11-8942-000d3a4b5177">Ghana</option>
+                                    <option value="a1454145-8194-ec11-b3fe-000d3abe5d2e">Gibraltar</option>
+                                    <option value="1a4087bf-64d0-ec11-a7b5-000d3abf584c">Global</option>
+                                    <option value="c4af1042-4996-ec11-b3fe-000d3abe5d2e">Greece</option>
+                                    <option value="ccc33c71-2912-ed11-b83d-000d3a484a48">Greenland</option>
+                                    <option value="2d946017-9291-ed11-aad1-0022487fe028">Grenada</option>
+                                    <option value="f53c2245-8295-ed11-aad1-0022487feb37">Guadeloupe</option>
+                                    <option value="fe3c2245-8295-ed11-aad1-0022487feb37">Guam</option>
+                                    <option value="097a5f9b-187d-ec11-8d20-002248812c6a">Guatemala</option>
+                                    <option value="f56c684b-30f2-ec11-bb3d-000d3aaa4c17">Guernsey</option>
+                                    <option value="3cd4f072-0be0-ec11-bb3c-002248823392">Guinea</option>
+                                    <option value="a0e292c5-0ae0-ec11-bb3c-002248823392">Guinea-Bissau</option>
+                                    <option value="962f5645-5f03-ed11-82e5-000d3a22583f">Guyana</option>
+                                    <option value="6880b2d7-b6e0-ec11-bb3c-0022488145ec">Haiti</option>
+                                    <option value="bbf7ca4b-8295-ed11-aad1-0022487feb37">Heard Island and McDonald Islands</option>
+                                    <option value="fc8b7b44-b77e-ec11-8d20-002248812398">Honduras</option>
+                                    <option value="b7766356-c2dc-ec11-bb3d-000d3a22e2cf">Hong Kong</option>
+                                    <option value="7d4586b2-5f78-ec11-8942-000d3a4a8b9a">Hungary</option>
+                                    <option value="47cd946b-f379-ec11-8942-000d3a4b5177">Iceland</option>
+                                    <option value="f69635b7-2ed0-ec11-a7b5-000d3abf584c">India</option>
+                                    <option value="565ef284-3699-ec11-b3fe-000d3a4c472e">Indonesia</option>
+                                    <option value="f220aaf4-bfe0-ec11-bb3c-0022488145ec">Iran</option>
+                                    <option value="b5938814-c9e0-ec11-bb3c-0022488145ec">Iraq</option>
+                                    <option value="128664be-f379-ec11-8942-000d3a4b5177">Ireland</option>
+                                    <option value="03dac970-30f2-ec11-bb3d-000d3aaa4c17">Isle of Man</option>
+                                    <option value="4e208bf3-c1dc-ec11-bb3d-000d3a22e2cf">Italy</option>
+                                    <option value="5c760cec-5378-ec11-8942-000d3a4a8b9a">Ivory Coast</option>
+                                    <option value="f10a8efa-3a07-ed11-82e5-000d3a20d451">Jamaica</option>
+                                    <option value="cdbb4f09-c3e0-ec11-bb3c-0022488145ec">Japan</option>
+                                    <option value="4840e4cd-c1e0-ec11-bb3c-0022488145ec">Jersey</option>
+                                    <option value="3699ce76-d193-ec11-b3fe-000d3aac79cb">Jordan</option>
+                                    <option value="097ba037-c97a-ec11-8942-000d3a4b5177">Kazakhstan</option>
+                                    <option value="cf614137-f79d-ec11-b3fe-000d3a4b018f">Kenya</option>
+                                    <option value="3178998c-c87a-ec11-8942-000d3a4b5177">Kiribati</option>
+                                    <option value="7395132b-6d74-ec11-8942-002248831b1e">Kosovo</option>
+                                    <option value="ca82156f-fb78-ec11-8942-000d3a4b5177">Kuwait</option>
+                                    <option value="b11fec47-c07a-ec11-8942-000d3a4b5177">Kyrgyzstan</option>
+                                    <option value="9ee5eba5-d4a9-ec11-b3fe-000d3aaeb701">Laos</option>
+                                    <option value="031936d9-be3f-ed11-9db0-0022487feb37">LATAM</option>
+                                    <option value="e976cea3-9ce5-ec11-bb3c-000d3ac25ae3">Latin America</option>
+                                    <option value="e7e8c125-0279-ec11-8942-000d3a4b5177">Latvia</option>
+                                    <option value="3791cdf8-5878-ec11-8940-000d3a4b5b9d">Lebanon</option>
+                                    <option value="997b6688-bee0-ec11-bb3c-002248823392">Lesotho</option>
+                                    <option value="14d33aa9-be7a-ec11-8942-000d3a4b5177">Liberia</option>
+                                    <option value="40346ce3-2475-ec11-8942-0022488312af">Libya</option>
+                                    <option value="8c0f8376-bd7a-ec11-8942-000d3a4b5177">Liechtenstein</option>
+                                    <option value="57700591-5b78-ec11-8942-000d3a4b5177">Lithuania</option>
+                                    <option value="8dba7a63-c1dc-ec11-bb3d-000d3a22e2cf">Luxembourg</option>
+                                    <option value="721bd4c5-f208-ee11-8f6e-0022487fe7cf">Macau</option>
+                                    <option value="6c5d26c3-92a6-ec11-b3fe-000d3a4b26de">Macedonia</option>
+                                    <option value="a27e4ccc-bde0-ec11-bb3c-002248823392">Madagascar</option>
+                                    <option value="3cc3db09-cae0-ec11-bb3c-0022488145ec">Malawi</option>
+                                    <option value="376f5a75-4ab9-ec11-983f-000d3a28bef8">Malaysia</option>
+                                    <option value="f84a7d54-cbe0-ec11-bb3c-0022488145ec">Maldives</option>
+                                    <option value="ae4702ab-18e0-ec11-bb3c-002248823392">Mali</option>
+                                    <option value="30e704be-bb7a-ec11-8942-000d3a4b5177">Malta</option>
+                                    <option value="caf3f360-8295-ed11-aad1-0022487feb37">Marshall Islands</option>
+                                    <option value="98275567-8295-ed11-aad1-0022487feb37">Martinique</option>
+                                    <option value="ac87dbf9-2e75-ec11-8942-0022488312af">Mauritania</option>
+                                    <option value="b87c7016-c1e0-ec11-bb3c-0022488145ec">Mauritius</option>
+                                    <option value="b8aa8742-ebd7-ef11-8eea-0022487feb28">Mayotte</option>
+                                    <option value="baaa8742-ebd7-ef11-8eea-0022487feb28">Melilla</option>
+                                    <option value="9e5be42b-c3dc-ec11-bb3d-000d3a22e2cf">Mexico</option>
+                                    <option value="c69039ea-f208-ee11-8f6e-0022487fe7cf">Micronesia</option>
+                                    <option value="a4cfe4f4-327d-ec11-8d20-002248812398">Moldova</option>
+                                    <option value="42fbf6cd-f179-ec11-8942-000d3a4b5177">Monaco</option>
+                                    <option value="c3d91de6-7074-ec11-8942-002248831b1e">Mongolia</option>
+                                    <option value="00ea04f8-f479-ec11-8942-000d3a4b5177">Montenegro</option>
+                                    <option value="07b9a8cc-9291-ed11-aad1-0022487fe028">Montserrat</option>
+                                    <option value="3819197c-b07a-ec11-8942-000d3a4b5177">Morocco</option>
+                                    <option value="ddefa63e-fe79-ec11-8942-000d3a4b5177">Mozambique</option>
+                                    <option value="c91858e3-f7df-ec11-bb3c-002248823392">Myanmar</option>
+                                    <option value="d606d6b3-1d04-ed11-82e5-000d3a22583f">Namibia</option>
+                                    <option value="08285567-8295-ed11-aad1-0022487feb37">Nauru</option>
+                                    <option value="babbe4a3-8a93-ec11-b3fe-000d3abe5d2e">Nepal</option>
+                                    <option value="a0c0b5dd-bedc-ec11-bb3d-000d3a22e2cf">Netherlands</option>
+                                    <option value="bcaa8742-ebd7-ef11-8eea-0022487feb28">Netherlands Antilles</option>
+                                    <option value="beaa8742-ebd7-ef11-8eea-0022487feb28">Netherlands, Caribbean</option>
+                                    <option value="1eff8e20-f308-ee11-8f6e-0022487fe7cf">new caledonia</option>
+                                    <option value="11bc8d2b-fe9a-ec11-b3fe-000d3a4c472e">New Zealand</option>
+                                    <option value="0708277e-1ce0-ec11-bb3c-002248823392">Nicaragua</option>
+                                    <option value="b584bff5-4d78-ec11-8942-000d3a4b5177">Niger</option>
+                                    <option value="3b17e213-1188-ec11-8d20-000d3aa9e644">Nigeria</option>
+                                    <option value="33e097bf-34f6-ed11-8849-0022487fe028">Nile Region</option>
+                                    <option value="bc6b076e-8295-ed11-aad1-0022487feb37">Niue</option>
+                                    <option value="c66b076e-8295-ed11-aad1-0022487feb37">Norfolk Island</option>
+                                    <option value="3c394b5a-8295-ed11-aad1-0022487feb37">North Korea</option>
+                                    <option value="65776476-8295-ed11-aad1-0022487feb37">Northern Mariana Islands</option>
+                                    <option value="460089a2-c0e0-ec11-bb3c-0022488145ec">Norway</option>
+                                    <option value="98ce2d60-87e5-ec11-bb3c-000d3ac25ae3">Oman</option>
+                                    <option value="db004b1a-4707-ed11-82e5-000d3a20d451">Pacific Region</option>
+                                    <option value="1939f107-2fd0-ec11-a7b5-000d3abf584c">Pakistan</option>
+                                    <option value="de403f45-7b06-ed11-82e5-000d3a20d451">Palau</option>
+                                    <option value="815af979-4d74-ec11-8942-0022488312af">Palestine</option>
+                                    <option value="2d6612e7-cae0-ec11-bb3c-0022488145ec">Panama</option>
+                                    <option value="c46903dc-fb79-ec11-8942-000d3a4b5177">Papua New Guinea</option>
+                                    <option value="95db7dcc-c9e0-ec11-bb3c-0022488145ec">Paraguay</option>
+                                    <option value="1eeb5d96-bc7d-ec11-8d20-002248812398">Peru</option>
+                                    <option value="feb04b5e-2fd0-ec11-a7b5-000d3abf584c">Philippines</option>
+                                    <option value="f2f5dc82-8295-ed11-aad1-0022487feb37">Pitcairn</option>
+                                    <option value="247b87e4-f47c-ec11-8d20-002248812398">Poland</option>
+                                    <option value="ef2ae639-f679-ec11-8942-000d3a4b5177">Portugal</option>
+                                    <option value="c0aa8742-ebd7-ef11-8eea-0022487feb28">Proper</option>
+                                    <option value="8ac9f03e-2a75-ec11-8942-0022488312af">Puerto Rico</option>
+                                    <option value="6c47e851-4278-ec11-8942-000d3a4b5177">Qatar</option>
+                                    <option value="e3853bf2-a8e1-ec11-bb3c-002248823392">Reunion</option>
+                                    <option value="dfca01d6-5778-ec11-8942-000d3a4b5177">Romania</option>
+                                    <option value="bd27f57c-c3dc-ec11-bb3d-000d3a22e2cf">Russia</option>
+                                    <option value="ff08f354-bbe0-ec11-bb3c-0022488145ec">Rwanda</option>
+                                    <option value="024e8389-8295-ed11-aad1-0022487feb37">S. Georgia and S. Sandwich Islands</option>
+                                    <option value="074e8389-8295-ed11-aad1-0022487feb37">Saint Helena</option>
+                                    <option value="f68e11eb-9291-ed11-aad1-0022487fe028">Saint Kitts and Nevis</option>
+                                    <option value="a33dc290-8295-ed11-aad1-0022487feb37">Saint Lucia</option>
+                                    <option value="8a896d24-1830-ed11-9db1-00224881f077">Saint Martin</option>
+                                    <option value="ab3dc290-8295-ed11-aad1-0022487feb37">Saint Pierre and Miquelon</option>
+                                    <option value="ee5fe797-8295-ed11-aad1-0022487feb37">Saint Vincent and the Grenadines</option>
+                                    <option value="00265ed2-cae0-ec11-bb3c-0022488145ec">Samoa</option>
+                                    <option value="8b5d6699-f308-ee11-8f6e-0022487fe7cf">San Marino</option>
+                                    <option value="f266e87b-bde0-ec11-bb3c-002248823392">Sao Tome and Principe</option>
+                                    <option value="0f8f0f0c-c37a-ec11-8942-000d3a4b5177">Saudi Arabia</option>
+                                    <option value="35e5aa60-3279-ec11-8942-000d3a4b5177">Senegal</option>
+                                    <option value="332eb01b-f779-ec11-8942-000d3a4b5177">Serbia</option>
+                                    <option value="76c3a06f-c2e0-ec11-bb3c-0022488145ec">Seychelles</option>
+                                    <option value="d51871c5-af7a-ec11-8942-000d3a4a8b9a">Sierra Leone</option>
+                                    <option value="0c5111d5-af93-ec11-b3fe-000d3aac79cb">Singapore</option>
+                                    <option value="c2aa8742-ebd7-ef11-8eea-0022487feb28">Sint Maarten</option>
+                                    <option value="a3c6cddb-f308-ee11-8f6e-0022487fe7cf">Slovakia</option>
+                                    <option value="3c0874a4-eb7c-ec11-8d20-002248812398">Slovenia</option>
+                                    <option value="2a5cf09d-8295-ed11-aad1-0022487feb37">Solomon Islands</option>
+                                    <option value="aea987d8-2c75-ec11-8942-0022488312af">Somalia</option>
+                                    <option value="6a8485a2-bddc-ec11-bb3d-000d3a22e2cf">South Africa</option>
+                                    <option value="36b250dc-b1dc-ec11-bb3d-000d3a22ed85">South Korea</option>
+                                    <option value="c4aa8742-ebd7-ef11-8eea-0022487feb28">South Ossetia</option>
+                                    <option value="05d44f49-1f04-ed11-82e5-000d3a22583f">South Sudan</option>
+                                    <option value="edff1cdd-9f7a-ec11-8942-000d3a4a8b9a">Spain</option>
+                                    <option value="dcab0e79-2fd0-ec11-a7b5-000d3abf584c">Sri Lanka</option>
+                                    <option value="759421c9-3779-ec11-8942-000d3a4a8b9a">Sudan</option>
+                                    <option value="04e3bf3f-5e03-ed11-82e5-000d3a22583f">Suriname</option>
+                                    <option value="3befc1ba-9391-ed11-aad1-0022487fe028">Svalbart and Jan Mayen</option>
+                                    <option value="2bbe96a4-8295-ed11-aad1-0022487feb37">Swaziland</option>
+                                    <option value="95411bab-fddc-ec11-bb3d-000d3a22e2cf">Sweden</option>
+                                    <option value="cbbfc544-3479-ec11-8942-000d3a4a8b9a">Switzerland</option>
+                                    <option value="bc87d72c-f50b-ed11-82e4-000d3a20a9f7">Syria</option>
+                                    <option value="2662f61a-4878-ec11-8942-000d3a4b5177">Taiwan</option>
+                                    <option value="4e67a8b8-3079-ec11-8942-000d3a4a8b9a">Tajikistan</option>
+                                    <option value="f2cec731-f679-ec11-8942-000d3a4a8b9a">Tanzania</option>
+                                    <option value="31b95845-2c75-ec11-8942-0022488312af">Thailand</option>
+                                    <option value="1fb0ff77-a9e0-ec11-bb3c-0022488145ec">Timor-Leste</option>
+                                    <option value="858a8565-a8e0-ec11-bb3c-0022488145ec">Togna</option>
+                                    <option value="4899970b-4a78-ec11-8942-000d3a4b5177">Togo</option>
+                                    <option value="c6aa8742-ebd7-ef11-8eea-0022487feb28">Tokelau</option>
+                                    <option value="6dd2deeb-8ed3-ed11-a7c7-0022487fee57">Tonga</option>
+                                    <option value="c8aa8742-ebd7-ef11-8eea-0022487feb28">Transnistria</option>
+                                    <option value="e80b8066-aae0-ec11-bb3c-0022488145ec">Trinidad and Tobago</option>
+                                    <option value="caaa8742-ebd7-ef11-8eea-0022487feb28">Tristan da Cunha</option>
+                                    <option value="25bd2b8b-ae7a-ec11-8942-000d3a4a8b9a">Tunisia</option>
+                                    <option value="a0fff655-f879-ec11-8942-000d3a4b5177">Turkey</option>
+                                    <option value="d93be5e4-2f79-ec11-8942-000d3a4a8b9a">Turkmenistan</option>
+                                    <option value="28daa860-9391-ed11-aad1-0022487fe028">Turks and Caicos Islands</option>
+                                    <option value="5e258faa-8295-ed11-aad1-0022487feb37">Tuvalu</option>
+                                    <option value="3991cdf8-5878-ec11-8940-000d3a4b5b9d">UAE</option>
+                                    <option value="b7a4a606-2e79-ec11-8942-000d3a4a8b9a">Uganda</option>
+                                    <option value="6397498e-6c74-ec11-8942-002248831b1e">Ukraine</option>
+                                    <option value="d68307e0-1a7d-ec11-8d20-002248812398">United Kingdom</option>
+                                    <option value="ccaa8742-ebd7-ef11-8eea-0022487feb28">United Nations</option>
+                                    <option value="ac4c90af-e89a-ec11-b3fe-000d3a4c472e">United States</option>
+                                    <option value="40026932-fedc-ec11-bb3d-000d3a22e2cf">Uruguay</option>
+                                    <option value="e18acca9-a5e0-ec11-bb3c-0022488145ec">Uzbekistan</option>
+                                    <option value="8a258faa-8295-ed11-aad1-0022487feb37">Vanuatu</option>
+                                    <option value="f49a15b2-8295-ed11-aad1-0022487feb37">Vatican City State (Holy See)</option>
+                                    <option value="989c0f76-a5e0-ec11-bb3c-0022488145ec">Venezuela</option>
+                                    <option value="eecbf0a3-2fd0-ec11-a7b5-000d3abf584c">Vietnam</option>
+                                    <option value="0b9b15b2-8295-ed11-aad1-0022487feb37">Virgin Islands (British)</option>
+                                    <option value="d31346b8-8295-ed11-aad1-0022487feb37">Virgin Islands (U.S.)</option>
+                                    <option value="09c02030-f408-ee11-8f6e-0022487fe7cf">Wallis and Futuna Islands</option>
+                                    <option value="b9d353be-8295-ed11-aad1-0022487feb37">Western Sahara</option>
+                                    <option value="33c88232-f3e7-ec11-bb3c-000d3ac25719">Yemen</option>
+                                    <option value="c1d353be-8295-ed11-aad1-0022487feb37">Yugoslavia</option>
+                                    <option value="4483e64d-d3a9-ec11-b3fe-000d3aaeb701">Zambia</option>
+                                    <option value="34654baa-f579-ec11-8942-000d3a4a8b9a">Zimbabwe</option>
+                                </select>
+                                
                                 <div v-if="errors.country" class="text-red-500 text-xs">{{ errors.country }}</div>
                             </div>
                         </div>
 
+                        <div class="flex gap-8 w-full">
+                            <div class="flex flex-col gap-1 w-full">
+                                <label for="selected-country">Industry</label>
+                                <select v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="w-full text-base px-4 py-2 bg-primary rounded-lg outline-0">
+                                    <option value="">Select Industry</option>
+                                    <option value="A6236539-7AE8-EF11-9342-000D3A216302">Tobacco</option>
+                                    <option value="9C6999E4-5D07-ED11-82E5-000D3A2236D3">Telecommunications</option>
+                                    <option value="B2E5A5BB-C774-EF11-A670-000D3A28C269">Manufacturing</option>
+                                    <option value="E2D77CC4-C874-EF11-A670-000D3A28C269">Healthcare</option>
+                                    <option value="C145085E-C974-EF11-A670-000D3A28C269">Energy & Utilities</option>
+                                    <option value="0078191D-CA74-EF11-A670-000D3A28C269">Real Estate & Property</option>
+                                    <option value="2A92AE9D-CA74-EF11-A670-000D3A28C269">Legal & Law</option>
+                                    <option value="6B414534-078A-EF11-AC20-000D3A29EEF0">Arts</option>
+                                    <option value="64480E72-C47F-EF11-AC21-000D3A2B0907">Ticketing</option>
+                                    <option value="9B31F60B-1324-F011-8C4E-000D3A2BCC60">Marketplace</option>
+                                    <option value="4BDF1E81-39E5-EF11-9342-000D3A2E470A">Cell Phone Store</option>
+                                    <option value="509F0531-46E9-EF11-9342-000D3A2E470A">Dentist</option>
+                                    <option value="C655DE97-C674-EF11-A670-000D3A2EFDA0">Marketing & Advertising</option>
+                                    <option value="AA7DBCBA-BEE8-EF11-9342-000D3A3A8D8B">Gaming Store</option>
+                                    <option value="72314CAF-61F0-EF11-9342-000D3A3A8D8B">Gallery</option>
+                                    <option value="95887B85-C774-EF11-A670-000D3A4571C2">Technology & Software</option>
+                                    <option value="CF3445E0-C774-EF11-A670-000D3A4571C2">Automotive</option>
+                                    <option value="C35D126E-CA74-EF11-A670-000D3A477048">Government & Institutions</option>
+                                    <option value="44F2952D-0048-EF11-BFE3-000D3A49E4DB">Airlines</option>
+                                    <option value="1DA1C677-ED9A-EC11-B3FE-000D3A4C472E">Gift Center</option>
+                                    <option value="9715EDB4-4799-EC11-B3FE-000D3A4C4A21">Sports</option>
+                                    <option value="6D478453-5D60-EF11-BFE2-000D3AA991C7">E-commerce</option>
+                                    <option value="7BD01D42-2E6C-EF11-BFE2-000D3AA991C7">Skin Care</option>
+                                    <option value="606E654D-516C-EF11-BFE2-000D3AA991C7">Personal Care</option>
+                                    <option value="6C181768-C674-EF11-A670-000D3AACDBAF">Finance</option>
+                                    <option value="ADE51EA6-C874-EF11-A670-000D3AAE64B5">Logistics & Transportation</option>
+                                    <option value="2CE98C03-C874-EF11-A670-000D3ABDF55A">Food & Beverage</option>
+                                    <option value="C7AA914A-F429-EE11-BDF4-0022487FE0E0">Restaurant</option>
+                                    <option value="046D053A-E37C-EC11-8D20-002248812398">Agriculture / Flower Shop</option>
+                                    <option value="003C0D5A-E47C-EC11-8D20-002248812398">NGO</option>
+                                    <option value="3A7FF6AE-3D75-EC11-8940-002248831B2F">Retail</option>
+                                    <option value="407FF6AE-3D75-EC11-8940-002248831B2F">FinTech</option>
+                                    <option value="3BB48A36-4A74-EC11-8940-002248831DF1">Entertainment</option>
+                                    <option value="42CA9CA9-22D1-EC11-A7B5-002248854965">Construction & Maintenance</option>
+                                    <option value="5A7E5508-A94A-F011-877A-00224887CF50">money machine</option>
+                                    <option value="05987E94-F83A-F011-B4CC-00224887CF50">Industrial Stoves</option>
+                                    <option value="E3A53E67-C874-EF11-A670-6045BD8D1605">Consulting & Business Services</option>
+                                    <option value="DCF09AE7-C974-EF11-A670-6045BD8D1605">Fitness & Wellness</option>
+                                    <option value="D4A8626B-7DE4-EF11-8EEA-6045BD8EAAFF">Cosmetics and Perfume</option>
+                                    <option value="9724DE45-C874-EF11-A670-6045BD8F58A2">Fashion & Beauty</option>
+                                    <option value="12A08D2E-C974-EF11-A670-6045BD8F58A2">Education & Training</option>
+                                    <option value="5D03644E-CA74-EF11-A670-6045BD8F58A2">Security & Safety</option>
+                                    <option value="A898D44D-DDE9-EF11-9342-6045BD92AB15">Facility Management</option>
+                                    <option value="853F252C-E3E9-EF11-9342-6045BD92AB15">Car Rental</option>
+                                    <option value="62061F80-6DF3-EF11-BE1F-6045BD93D971">Roastery</option>
+                                    <option value="578E662A-A851-F011-877B-6045BD93E162">pool</option>
+                                    <option value="6C7DE7CF-AF51-F011-877B-6045BD93E162">alcohol shop</option>
+                                    <option value="238A984A-732A-F011-8C4E-6045BD93E162">Beach resort</option>
+                                    <option value="21DA3407-5932-F011-8C4E-6045BD93E162">Clinical Nutrition</option>
+                                    <option value="296324B0-1F15-F011-998A-6045BD93E162">Winery</option>
+                                    <option value="DBA94709-DDFF-EF11-BAE3-6045BD93E162">Insurance Company</option>
+                                    <option value="29811659-8308-F011-BAE3-6045BD93E162">Electric Shop</option>
+                                    <option value="E98BFB0D-31F4-EF11-BE1F-6045BD93E162">Others</option>
+                                    <option value="10C2F0EE-B7F5-EF11-BE1F-6045BD93E162">Travel Agency</option>
+                                    <option value="DB8E5CC9-B363-F011-BEC3-6045BD93E162">Dance Academy</option>
+                                    <option value="B104F484-7735-F011-8C4E-6045BD971DB4">Physical Therapist</option>
+                                    <option value="57CC77AF-E8F8-EF11-BAE2-6045BD971DB4">Plastic Surgeon</option>
+                                    <option value="3B0AB197-EB03-F011-BAE3-6045BD971DB4">Bakery</option>
+                                    <option value="10866CE6-050B-F011-BAE3-6045BD971DB4">Car Service</option>
+                                    <option value="27CA71C2-81F2-EF11-BE1F-6045BD971DB4">Vet Clinic</option>
+                                    <option value="4E03AFE5-85F2-EF11-BE1F-6045BD971DB4">Non-profit Association</option>
+                                    <option value="B417F1C5-17ED-EF11-9342-6045BD9BC58B">Furniture</option>
+                                    <option value="D716227B-F1F4-EF11-BE1F-6045BD9BF8CD">Art Gallery</option>
+                                    <option value="B6BF5FA1-3D9B-EF11-8A69-6045BD9D049A">Electronics</option>
+                                    <option value="21C2C858-CC91-EF11-8A69-6045BD9FC756">Baby Accessories</option>
+                                    <option value="AA554535-D066-F011-BEC2-6045BDF2695F">Medical Equipment</option>
+                                    <option value="5AF03280-CA74-EF11-A670-6045BDF39BC3">Hospitality & Tourism</option>
+                                    <option value="18DBC29D-4D4B-F011-877A-6045BDF407F0">nightclub</option>
+                                    <option value="01D22AFF-544B-F011-877A-6045BDF407F0">spa</option>
+                                    <option value="24944586-1B4C-F011-877A-6045BDF407F0">painting</option>
+                                    <option value="3A777C34-424C-F011-877A-6045BDF407F0">diet center</option>
+                                    <option value="B5DAB72D-F04C-F011-877A-6045BDF407F0">mobile shop</option>
+                                    <option value="859F945A-1F24-F011-8C4E-6045BDF407F0">Accessories</option>
+                                    <option value="287DF679-2C2B-F011-8C4E-6045BDF407F0">Architect</option>
+                                    <option value="C74E4C27-7F13-F011-998A-6045BDF407F0">Liquor shop</option>
+                                    <option value="1185614D-7F13-F011-998A-6045BDF407F0">Gaming lounge</option>
+                                    <option value="4150B9A3-9D6B-F011-B4CC-6045BDF407F0">Charity</option>
+                                    <option value="2E10AF66-CEF8-EF11-BAE2-6045BDF407F0">Laundry</option>
+                                    <option value="BBB2C0E9-53FB-EF11-BAE2-6045BDF407F0">Event Plan</option>
+                                    <option value="44A717D2-2A03-F011-BAE3-6045BDF407F0">Dental product</option>
+                                    <option value="39E5EE2E-DD66-F011-BEC3-6045BDF407F0">Hospitals</option>
+                                    <option value="E3C88D60-EC62-F011-BEC2-6045BDF41D4A">Interior Design</option>
+                                    <option value="E3A49FE1-C874-EF11-A670-7C1E5225CB9E">Non-Profit & Social Services</option>
+                                    <option value="B03F7551-0319-F011-9989-7C1E5228AC38">Freight services</option>
+                                    <option value="93039771-EB62-F011-BEC3-7C1E5228DAAE">polyclinic</option>
+                                    <option value="92880769-F1ED-EF11-9341-7C1E52514F16">Library</option>
+                                    <option value="119922F3-2BE5-EF11-9342-7C1E525D81BD">Jewelry</option>
+                                    <option value="9A2A83E8-32E5-EF11-9342-7C1E525D81BD">Beauty & Personal Care</option>
+                                    <option value="521BD92C-36E5-EF11-9342-7C1E525D81BD">Grocery Store</option>
+                                    <option value="760D5B8D-1457-F011-BEC1-7C1E525E56B8">Plastic Surgery</option>
+                                    <option value="0445A12F-F923-F011-8C4D-7C1E5270CF18">Sportswear</option>
+                                    <option value="036F7477-FA23-F011-8C4D-7C1E5270CF18">Cosmetics</option>
+                                    <option value="9E01BBA2-34ED-EF11-9341-7C1E5272B6CA">Clothing</option>
+                                    <option value="67F5B8DC-3DF0-EF11-9341-7C1E5272B6CA">Ticketing Services</option>
+                                    <option value="A0A6AA8A-FD24-F011-8C4D-7C1E52755FD6">Music Academy</option>
+                                    <option value="54AE2B22-0B24-F011-8C4D-7C1E5282B22A">Phone accessories</option>
+                                    <option value="A0E86159-F32E-F011-8C4E-7C1E528574A3">eSIM & Travel data</option>
+                                    <option value="EC4B2989-AFF9-EF11-BAE2-7CED8D0AE3B8">Gym</option>
+                                    <option value="A80157B7-C846-F011-877A-7CED8D13C302">resto bar</option>
+                                    <option value="A4897EA4-8847-F011-877A-7CED8D13C302">gaz station</option>
+                                    <option value="686B6AB8-8947-F011-877A-7CED8D13C302">optical shop</option>
+                                    <option value="7D3840F1-8947-F011-877A-7CED8D13C302">coffee shop</option>
+                                    <option value="1D6A4A42-B058-F011-877B-7CED8D13C302">dental clinic</option>
+                                    <option value="44A2B25C-3824-F011-8C4D-7CED8D13C302">Cafe</option>
+                                    <option value="1AAEA316-701F-F011-9989-7CED8D13C302">Hotel</option>
+                                    <option value="D54BD264-C116-F011-998A-7CED8D13C302">Flowershop</option>
+                                    <option value="CAF733B1-4FFE-EF11-BAE2-7CED8D13C302">Medical Equipment</option>
+                                    <option value="51F7EC6B-DC5B-F011-BEC2-7CED8D13C302">Engineering Services</option>
+                                    <option value="4E7F13C4-5E5D-F011-BEC2-7CED8D13C302">organic product</option>
+                                </select>
+                                <div v-if="errors.industry" class="text-red-500 text-xs">{{ errors.industry }}</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-8 w-full">
+                            <div class="flex flex-col gap-1 w-full">
+                                <label for="product">Product</label>
+                                <select :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                    <option value="">Select Product</option>
+                                    <option value="fd4f2661-1f5e-ef11-bfe2-000d3aab2548">MontyPay Point of Sale</option>
+                                    <option value="13ca892e-79da-ec11-bb3d-000d3a22e2cf">MontyPay Payment Gateway</option>
+                                    
+                                </select>
+                                <div v-if="errors.product" class="text-red-500 text-xs">{{ errors.product }}</div>
+                            </div>
+                        </div>
                         <div class="flex gap-8 w-4full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="company">Company Name</label>
@@ -323,7 +709,6 @@
 </template>
 
 <script setup>
-    import countriesData from '~/api/countries.json';
     const emit = defineEmits();
 
     useSeoMeta({ 
@@ -335,53 +720,7 @@
         twitterCard: 'summary_large_image',
     })
     
-    const activeTab = ref(0);
-    const countries = ref([]);
-    const showDropdown = ref(false);
-    const selectedCountry = ref({});
-    const placeholder = 'Select country';
-    const filteredCountries = ref([]);
-    const searchQuery = ref('');
-    const dropdownContainer = ref(null);
-    const lastLoadedIndex = ref(0);
-    const searchFlag = ref(false);
     const submissionMessage = ref('');
-    
-    const show = (index) => {
-        activeTab.value = index;
-    };
-
-    const refferal_items = [
-        {
-            paragraph: '<strong>24/7</strong> support from a dedicated Account Manager',
-            icon: '<svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65 48.7C65 40.4 58.3 33.7 50 33.7C41.7 33.7 35 40.4 35 48.7C35 55.6 39.6 61.2999 45.9 63.0999L50.1 67.5999L54.3 63.0999C60.4 61.2999 65 55.5 65 48.7Z" fill="#00DFDF"/><path d="M76.3992 40.7H75.6992C72.1992 29.5 61.7992 21.7 49.9992 21.7C38.1992 21.7 27.6992 29.5 24.2992 40.7H23.5992C21.1992 40.7 19.1992 42.6999 19.1992 45.0999V53C19.1992 55.4 21.1992 57.4 23.5992 57.4H27.9992C28.5992 57.4 29.0992 56.8999 29.0992 56.2999V41.7999C29.0992 41.1999 28.5992 40.7 27.9992 40.7H26.5992C29.9992 30.7 39.3992 23.9 49.9992 23.9C60.5992 23.9 70.0992 30.7 73.3992 40.7H71.9992C71.3992 40.7 70.8992 41.1999 70.8992 41.7999V56.4C70.8992 57 71.3992 57.5 71.9992 57.5H73.0992C69.9992 65.5 62.8992 71.5 54.3992 73C53.7992 71.0999 51.9992 69.8 49.9992 69.8C47.3992 69.8 45.2992 71.9 45.2992 74.5C45.2992 77.0999 47.3992 79.1999 49.9992 79.1999C52.3992 79.1999 54.2992 77.3999 54.5992 75.1999C64.1992 73.4999 72.1992 66.7 75.3992 57.5H76.2992C78.6992 57.5 80.6992 55.5 80.6992 53.0999V45.2C80.7992 42.7 78.7992 40.7 76.3992 40.7ZM26.8992 55.2999H23.5992C22.3992 55.2999 21.3992 54.2999 21.3992 53.0999V45.2C21.3992 44 22.3992 43 23.5992 43H26.8992V55.2999ZM49.9992 77.0999C48.5992 77.0999 47.4992 76 47.4992 74.5999C47.4992 73.1999 48.5992 72.0999 49.9992 72.0999C51.3992 72.0999 52.4992 73.1999 52.4992 74.5999C52.4992 75.8999 51.3992 77.0999 49.9992 77.0999ZM78.5992 53.0999C78.5992 54.2999 77.5992 55.2999 76.3992 55.2999H74.9992C74.7992 55.2999 74.6992 55.2999 74.4992 55.2999H73.0992V42.9H76.3992C77.5992 42.9 78.5992 43.8999 78.5992 45.0999V53.0999Z" fill="#0F0C22"/><path d="M58.2992 48.7C58.2992 48.1 57.7992 47.6 57.1992 47.6H42.7992C42.1992 47.6 41.6992 48.1 41.6992 48.7C41.6992 49.3 42.1992 49.8 42.7992 49.8H57.2992C57.8992 49.8 58.2992 49.3 58.2992 48.7Z" fill="#0F0C22"/><path d="M54.1996 43.4C54.7996 43.4 55.2996 42.8999 55.2996 42.2999C55.2996 41.6999 54.7996 41.2 54.1996 41.2H45.6996C45.0996 41.2 44.5996 41.6999 44.5996 42.2999C44.5996 42.8999 45.0996 43.4 45.6996 43.4H54.1996Z" fill="#0F0C22"/><path d="M54.1996 56.2C54.7996 56.2 55.2996 55.7 55.2996 55.1C55.2996 54.5 54.7996 54 54.1996 54H45.6996C45.0996 54 44.5996 54.5 44.5996 55.1C44.5996 55.7 45.0996 56.2 45.6996 56.2H54.1996Z" fill="#0F0C22"/></svg>',
-        },
-        {
-            paragraph: 'Offer your customers top-notch <strong>products and services</strong>',
-            icon: '<svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M79.6 49.5H57.9C56.3 49.5 55 48.2 55 46.6V21.4C55 19.8 56.3 18.5 57.9 18.5H79.5C81.1 18.4 82.4 19.6 82.4 21.2V46.5C82.5 48.1 81.2 49.5 79.6 49.5Z" fill="#00DFDF"/><path d="M34.9808 58.8553C35.2166 59.0911 35.5703 59.209 35.924 59.209H36.0419C36.3956 59.209 36.7492 58.9732 36.985 58.6195L43.8231 49.1877C44.2947 48.5983 44.1768 47.773 43.4694 47.3014C42.8799 46.8298 42.0546 46.9477 41.583 47.6551L35.5703 55.79L32.6229 52.8425C32.1513 52.371 31.2081 52.371 30.7365 52.8425C30.2649 53.3141 30.2649 54.2573 30.7365 54.7289L34.9808 58.8553Z" fill="#0F0C22"/><path d="M52.4309 77.1293C53.0204 76.5399 53.2561 75.7146 52.9025 74.7714L49.1298 65.4575C50.0729 65.1039 50.8982 64.5144 51.6056 63.6891C52.9025 62.0385 52.9025 59.9164 51.8414 58.1479C51.2519 57.0869 51.6056 55.79 52.6667 55.0826C54.4351 53.9036 55.2604 51.8994 54.7888 49.8951C54.3172 47.773 52.6667 46.3582 50.4266 46.0045C49.1298 45.8866 48.3045 44.8256 48.3045 43.5287C48.4224 41.4066 47.3613 39.6381 45.475 38.6949C43.4707 37.7518 41.2307 37.9875 39.5801 39.5202C38.6369 40.3455 37.1043 40.4634 36.1611 39.6381C34.5105 38.2233 32.1526 37.8697 30.2662 38.8128C28.3799 39.756 27.3188 41.6424 27.4367 43.6466C27.5546 44.9435 26.6114 46.0045 25.4325 46.1224C23.1924 46.3582 21.5419 47.773 21.0703 49.8951C20.5987 51.8994 21.424 54.0215 23.1924 55.2005C24.2535 55.9079 24.6072 57.0869 24.0177 58.1479C22.9566 59.9164 23.0745 62.0385 24.3714 63.6891C25.3146 64.8681 26.6114 65.5754 28.0262 65.6933L24.7251 74.8893C24.3714 75.8325 24.6072 76.6578 25.1967 77.2472C25.5504 77.6009 26.1398 78.1904 27.083 78.1904C27.3188 78.1904 27.6725 78.1904 28.1441 77.8367L31.0915 76.6578L32.5063 79.4873C32.86 80.4305 33.8032 81.0199 34.8642 81.0199C35.9253 81.0199 36.8685 80.4305 37.2222 79.4873L38.7548 75.4788L40.2875 79.2515C40.6412 80.1947 41.5843 80.902 42.6454 80.902C43.7065 80.902 44.6497 80.3126 45.0034 79.3694L46.3002 76.5399L49.2477 77.7188C49.7192 78.0725 50.1908 78.0725 50.3087 78.0725C51.4877 78.0725 52.0772 77.483 52.4309 77.1293ZM26.3756 62.0385C26.1398 61.6848 25.5504 60.7417 26.2577 59.4448C27.5546 57.2048 26.8472 54.3752 24.6072 52.9605C23.5461 52.2531 23.4282 51.3099 23.664 50.4846C23.8998 49.5415 24.6072 48.952 25.6683 48.8341C28.3799 48.4804 30.2662 46.1224 30.0304 43.5287C29.9126 42.5855 30.502 41.7603 31.3273 41.2887C32.1526 40.935 33.3316 40.8171 34.2747 41.7603C36.279 43.4108 39.3443 43.4108 41.3486 41.6424C42.2917 40.8171 43.4707 40.935 44.296 41.2887C45.2392 41.7603 45.7107 42.5855 45.5928 43.5287C45.3571 46.1224 47.3613 48.4804 49.955 48.8341C51.0161 48.952 51.8414 49.6594 52.0772 50.6025C52.313 51.5457 51.9593 52.371 51.0161 52.9605C48.7761 54.4931 48.0687 57.3226 49.3655 59.6806C49.8371 60.5059 49.8371 61.3312 49.2477 62.1564C48.7761 62.8638 47.715 63.4533 46.4181 63.0996C43.8244 62.3922 40.9949 63.6891 40.0517 66.047C39.5801 67.226 38.4011 67.5797 37.5759 67.5797C36.5148 67.5797 35.6895 66.9902 35.3358 66.047C34.3926 64.1607 32.5063 62.9817 30.502 62.9817C30.0304 62.9817 29.5589 63.0996 29.0873 63.2175C27.9083 63.3354 26.8472 62.7459 26.3756 62.0385ZM34.9821 78.0725L33.3316 74.6535C33.0958 74.1819 32.7421 73.7103 31.681 73.7103H31.3273L27.5546 75.243L30.9736 65.4575C31.9168 65.5754 32.7421 66.047 33.0958 66.8723C33.6853 68.5229 35.1 69.5839 36.7506 69.9376L37.458 71.9419L34.9821 78.0725ZM46.3002 73.5924H45.9465C45.0034 73.5924 44.5318 74.1819 44.4139 74.6535L42.8812 77.9546L40.0517 71.2345L39.5801 69.8197C40.9949 69.3481 42.1738 68.2871 42.7633 66.8723C43.117 65.8112 44.6497 65.2217 45.8286 65.5754C45.9465 65.5754 46.1823 65.6933 46.3002 65.6933L50.0729 75.1251L46.3002 73.5924Z" fill="#0F0C22"/><path d="M17.4148 42.7034C18.1221 42.7034 18.7116 42.114 18.7116 41.4066V35.6296H24.4886C25.196 35.6296 25.7854 35.0401 25.7854 34.3328C25.7854 33.6254 25.196 33.0359 24.4886 33.0359H17.2969C16.5895 33.0359 16 33.6254 16 34.3328V41.5245C16 41.9961 16.7074 42.7034 17.4148 42.7034Z" fill="#0F0C22"/><path d="M24.6051 82.7884H18.8281V76.8935C18.8281 76.1862 18.2386 75.5967 17.5312 75.5967C16.8239 75.5967 16.2344 76.1862 16.2344 76.8935V84.2032C16.2344 84.9105 16.8239 85.5 17.5312 85.5H24.723C25.4303 85.5 26.0198 84.9105 26.0198 84.2032C25.9019 83.3779 25.3124 82.7884 24.6051 82.7884Z" fill="#0F0C22"/><path d="M59.1514 32.8H51.8418C51.1344 32.8 50.5449 33.3895 50.5449 34.0969C50.5449 34.8043 51.1344 35.3938 51.8418 35.3938H57.7366V41.1707C57.7366 41.8781 58.3261 42.4676 59.0335 42.4676C59.7409 42.4676 60.3304 41.8781 60.3304 41.1707V33.979C60.4483 33.3895 59.8588 32.8 59.1514 32.8Z" fill="#0F0C22"/><path d="M59.1507 75.4788C58.4433 75.4788 57.8538 76.0682 57.8538 76.7756V82.6705H51.959C51.2516 82.6705 50.6621 83.26 50.6621 83.9673C50.6621 84.6747 51.2516 85.2642 51.959 85.2642H59.2686C59.976 85.2642 60.5655 84.6747 60.5655 83.9673V76.6577C60.4476 76.0682 59.8581 75.4788 59.1507 75.4788Z" fill="#0F0C22"/><path d="M78.4392 27.2C78.3392 26.8 78.0392 26.6 77.6392 26.5L73.6392 25.8L71.6392 22.1C71.4392 21.8 71.1392 21.5 70.7392 21.5C70.3392 21.5 70.0392 21.7 69.8392 22.1L67.8392 25.8L63.8392 26.5C63.4392 26.6 63.1392 26.8 63.0392 27.2C62.9392 27.6 63.0392 28 63.2392 28.2L66.0392 31.2L65.4392 35.2C65.3392 35.6 65.5392 36 65.8392 36.2C66.1392 36.4 66.5392 36.5 66.9392 36.3L70.7392 34.5L74.5392 36.3C74.6392 36.4 74.8392 36.4 75.0392 36.4C75.2392 36.4 75.4392 36.3 75.6392 36.2C75.9392 36 76.1392 35.6 76.0392 35.2L75.4392 31.2L78.2392 28.2C78.4392 28 78.5392 27.6 78.4392 27.2ZM73.5392 30.2C73.3392 30.4 73.2392 30.7 73.2392 31.1L73.6392 33.7L71.2392 32.5C71.1392 32.4 70.9392 32.4 70.7392 32.4C70.5392 32.4 70.4392 32.4 70.2392 32.5L67.8392 33.7L68.2392 31.1C68.2392 30.8 68.1392 30.5 67.9392 30.2L66.1392 28.2L68.7392 27.7C69.0392 27.6 69.3392 27.4 69.4392 27.2L70.7392 24.8L72.0392 27.2C72.2392 27.5 72.4392 27.7 72.7392 27.7L75.3392 28.2L73.5392 30.2Z" fill="#0F0C22"/></svg>',
-        },
-        {
-            paragraph: 'Receive valuable <strong>training</strong> from MontyPay’s  expert tech team',
-            icon: '<svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M48.2992 25.4V47.9001C48.2992 49.1001 47.8992 50.2 47.1992 51.1C46.5992 51.8 45.7992 52.4001 44.8992 52.7001C44.3992 52.9001 43.7992 53 43.1992 53H26.2992C23.4992 53 21.1992 50.7001 21.1992 47.9001V25.4C21.1992 22.6 23.4992 20.3 26.2992 20.3H43.1992C46.0992 20.3 48.2992 22.6 48.2992 25.4Z" fill="#00DFDF"/><path d="M71.9988 44.6C71.9988 45.3 71.4988 45.7 70.8988 45.7H57.8988C57.1988 45.7 56.7988 45.2 56.7988 44.6C56.7988 43.9 57.2988 43.5 57.8988 43.5H70.8988C71.4988 43.4 71.9988 43.9 71.9988 44.6Z" fill="#0F0C22"/><path d="M71.9996 50.8C71.9996 51.5 71.4996 51.9 70.8996 51.9H64.6996C63.9996 51.9 63.5996 51.4 63.5996 50.8C63.5996 50.1 64.0996 49.7 64.6996 49.7H70.8996C71.4996 49.6 71.9996 50.1 71.9996 50.8Z" fill="#0F0C22"/><path d="M44.8984 34.9V52.8C45.7984 52.5 46.5984 51.9 47.1984 51.2V34.9C47.1984 34.2 47.6984 33.8 48.2984 33.8V31.5C46.3984 31.5 44.8984 32.9 44.8984 34.9Z" fill="#0F0C22"/><path d="M75.3988 31.5H48.2988V33.8H75.3988C75.9988 33.8 76.4988 34.3 76.4988 34.9V68.3H49.3988C48.5988 68.3 47.7988 68.5 47.0988 68.9V51.1C46.4988 51.8 45.6988 52.4 44.7988 52.7V72.6V72.7C44.7988 75.2 46.7988 77.2 49.2988 77.2H62.9988V79.5C62.9988 79.8 63.1988 80.2 63.4988 80.4C63.7988 80.6 64.1988 80.6 64.4988 80.5L67.3988 79.6C67.4988 79.6 67.5988 79.6 67.6988 79.6L70.5988 80.6C70.8988 80.7 71.2988 80.6 71.5988 80.5C71.8988 80.3 72.0988 79.8 72.0988 79.5V77.2H76.5988C77.7988 77.2 78.8988 76.2 78.8988 74.9V34.9C78.6988 33 77.1988 31.5 75.3988 31.5ZM76.4988 75H71.9988V72.7C71.9988 72 71.4988 71.6 70.8988 71.6C70.1988 71.6 69.7988 72.1 69.7988 72.7V78L67.7988 77.3C67.5988 77.2 67.4988 77.2 67.2988 77.3L65.2988 78V72.7C65.2988 72 64.7988 71.6 64.1988 71.6C63.4988 71.6 63.0988 72.1 63.0988 72.7V75H49.6988C48.5988 75 47.4988 74.2 47.2988 73.1C46.9988 71.7 48.0988 70.5 49.3988 70.5H76.4988V75Z" fill="#0F0C22"/><path d="M32.075 38.2688C32.275 38.4688 32.575 38.5687 32.875 38.5687H32.975C33.275 38.5687 33.575 38.3687 33.775 38.0687L39.875 29.1687C40.175 28.6687 40.075 27.9687 39.575 27.6687C39.075 27.3687 38.375 27.4688 38.075 27.9688L32.775 35.7688L29.975 32.9688C29.575 32.5688 28.875 32.4688 28.375 32.9688C27.875 33.4688 27.875 34.0687 28.375 34.5687L32.075 38.2688Z" fill="#0F0C22"/></svg>',
-        },
-        {
-            paragraph: '<strong>Get paid</strong> for your referrals upon closing a deal Code Self Service Checkout',
-            icon: '<svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M80 43.1451V24.9369C80 22.8044 77.8504 21.082 75.189 21H58.9134C56.252 21 54.1024 22.7224 54 24.8549V43.0631C54 45.1956 56.1496 46.918 58.811 47H74.9843C77.748 47 80 45.2776 80 43.1451Z" fill="#00DFDF"/><path d="M68.9002 37.2001C68.7002 37.3001 68.4002 37.4001 68.1002 37.4001C67.9002 37.4001 67.7002 37.4001 67.4002 37.3001C67.2002 37.2001 67.0002 37.1001 66.8002 37.0001C66.6002 36.8001 66.5002 36.6001 66.4002 36.4001C66.3002 35.9001 65.8002 35.5001 65.3002 35.4001H65.0002C64.9002 35.4001 64.7002 35.4001 64.6002 35.4001C64.0002 35.5001 63.7002 36.1001 63.8002 36.7001C63.8002 36.9001 63.9002 37.1001 64.0002 37.3001C64.2002 37.8001 64.6002 38.2001 65.1002 38.5001C65.5002 38.8001 66.0002 39.0001 66.5002 39.2001C66.8002 39.3001 67.1002 39.3001 67.4002 39.4001V39.5001V40.4001C67.4002 40.8001 67.7002 41.1001 68.1002 41.1001C68.5002 41.1001 68.8002 40.8001 68.8002 40.4001V39.5001V39.4001C69.3002 39.4001 69.8002 39.3001 70.3002 39.1001C71.5002 38.6001 72.3002 37.4001 72.2002 36.1001C72.2002 35.5001 72.0002 34.8001 71.7002 34.3001C71.4002 33.8001 70.9002 33.4001 70.4002 33.1001C69.8002 32.7001 69.1002 32.4001 68.5002 32.2001C68.2002 32.1001 67.8002 31.9001 67.5002 31.7001C67.3002 31.6001 67.1002 31.4001 67.0002 31.2001C66.9002 31.0001 66.9002 30.7001 66.9002 30.5001C66.9002 30.3001 66.9002 30.0001 67.0002 29.8001C67.1002 29.6001 67.2002 29.4001 67.4002 29.3001C67.8002 29.1001 68.3002 29.0001 68.7002 29.2001C68.9002 29.3001 69.0002 29.4001 69.2002 29.6001C69.3002 29.8001 69.5002 29.9001 69.5002 30.1001C69.6002 30.6001 70.0002 30.9001 70.5002 30.9001H71.0002C71.1002 30.9001 71.2002 30.9001 71.4002 30.9001C72.0002 30.8001 72.3002 30.2001 72.2002 29.6001C72.2002 29.5001 72.1002 29.4001 72.1002 29.2001C71.9002 28.7001 71.6002 28.3001 71.3002 28.0001C70.9002 27.7001 70.5002 27.4001 70.0002 27.2001C69.7002 27.1001 69.4002 27.0001 69.1002 27.0001V25.9001C69.1002 25.5001 68.8002 25.2001 68.4002 25.2001C68.0002 25.2001 67.7002 25.5001 67.7002 25.9001V27.0001C67.2002 27.0001 66.7002 27.2001 66.2002 27.4001C65.5002 27.5001 65.0002 28.0001 64.7002 28.5001C64.4002 29.0001 64.2002 29.7001 64.2002 30.3001C64.2002 30.9001 64.3002 31.6001 64.7002 32.1001C65.0002 32.6001 65.5002 33.0001 66.0002 33.3001C66.6002 33.6001 67.3002 33.9001 68.0002 34.2001C68.3002 34.3001 68.6002 34.5001 68.9002 34.7001C69.1002 34.8001 69.3002 35.0001 69.4002 35.3001C69.5002 35.5001 69.6002 35.8001 69.6002 36.1001C69.6002 36.3001 69.5002 36.6001 69.4002 36.8001C69.2002 36.9001 69.1002 37.1001 68.9002 37.2001Z" fill="#0F0C22"/><path d="M76.4 78H71.8C72.2 71.7001 73.1 42.4001 60 36.9001C59.9 36.8001 59.7 36.8 59.6 36.8H24.4C20.9 37.3 20.5 40.4001 20.5 42.7001C20.5 43.3001 21 43.8 21.6 43.8H30.3C38.2 53.5 36.2 73.6 35.7 78.1H30.4C29.8 78.1 29.3 78.6 29.3 79.2C29.3 79.8 29.8 80.3001 30.4 80.3001H36.7H70.9H76.6C77.2 80.3001 77.7 79.8 77.7 79.2C77.7 78.6 77 78 76.4 78ZM22.6 41.6C22.8 39.4 23.8 38.9001 25.4 38.9001C26 38.9001 27.4 40.4 28.4 41.6H22.6ZM37.7 78C38.3 72.9001 40.1 53.3 32.1 42.8L31.7 42.3L31.1 41.6L30.9 41.3C30.2 40.4 29.5 39.6001 28.8 38.9001H59.4C71 44.1001 70 72.3 69.7 78H37.7Z" fill="#0F0C22"/><path d="M43.7004 50.5001C43.7004 49.9001 43.2004 49.4001 42.6004 49.4001H40.5004C39.9004 49.4001 39.4004 49.9001 39.4004 50.5001C39.4004 51.1001 39.9004 51.6001 40.5004 51.6001H42.6004C43.2004 51.6001 43.7004 51.1001 43.7004 50.5001Z" fill="#0F0C22"/><path d="M44.7 66.3H42.6C42 66.3 41.5 66.8 41.5 67.4C41.5 68 42 68.5 42.6 68.5H44.7C45.3 68.5 45.8 68 45.8 67.4C45.8 66.8 45.3 66.3 44.7 66.3Z" fill="#0F0C22"/><path d="M44.7 57.9H42.6C42 57.9 41.5 58.4 41.5 59C41.5 59.6 42 60.1 42.6 60.1H44.7C45.3 60.1 45.8 59.6 45.8 59C45.8 58.4 45.3 57.9 44.7 57.9Z" fill="#0F0C22"/><path d="M62.7008 50.5001C62.7008 49.9001 62.2008 49.4001 61.6008 49.4001H47.9008C47.3008 49.4001 46.8008 49.9001 46.8008 50.5001C46.8008 51.1001 47.3008 51.6001 47.9008 51.6001H61.6008C62.2008 51.6001 62.7008 51.1001 62.7008 50.5001Z" fill="#0F0C22"/><path d="M63.7004 66.3H50.0004C49.4004 66.3 48.9004 66.8 48.9004 67.4C48.9004 68 49.4004 68.5 50.0004 68.5H63.7004C64.3004 68.5 64.8004 68 64.8004 67.4C64.8004 66.8 64.3004 66.3 63.7004 66.3Z" fill="#0F0C22"/><path d="M63.7004 57.9001H50.0004C49.4004 57.9001 48.9004 58.4001 48.9004 59.0001C48.9004 59.6001 49.4004 60.1001 50.0004 60.1001H63.7004C64.3004 60.1001 64.8004 59.6001 64.8004 59.0001C64.8004 58.4001 64.3004 57.9001 63.7004 57.9001Z" fill="#0F0C22"/></svg>',
-        }
-    ]
-
-    const partner_type_items = [
-        {
-            title: 'Referral Program for merchants',
-            paragraph: 'By joining this program, you become our valuable partner with access to numerous benefits. We offer you customized and adequate induction and training to carry a smooth business transition to online payment. We make sure you optimize the use of our products & platform to modernize your business and increase your sales. Our account managers are ready to assist and support you 24/7 for any business or technical inquiry. By referring other merchants to us, you get to benefit from our cash rewards and loyalty program.',
-            icon: '<svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_738_5756)"><circle cx="50.5" cy="50" r="50" fill="#F6F6F6"/><path d="M35.2004 81.3C43.9265 81.3 51.0004 74.226 51.0004 65.5C51.0004 56.7739 43.9265 49.7 35.2004 49.7C26.4743 49.7 19.4004 56.7739 19.4004 65.5C19.4004 74.226 26.4743 81.3 35.2004 81.3Z" fill="#00DFDF"/><path d="M37.7 42.5L50.3 49.8C50.5 49.9 50.7 50 50.9 50C51.1 50 51.3 49.9 51.5 49.8L64.1 42.5C64.5 42.3 64.7 41.8 64.7 41.4V26.8C64.7 26.3 64.5 25.9 64.1 25.7L51.5 18.4C51.1 18.2 50.6 18.2 50.2 18.4L37.6 25.7C37.2 25.9 37 26.4 37 26.8V41.4C37.1 41.9 37.3 42.3 37.7 42.5ZM39.7 27.6L51 21L62.3 27.6V40.7L51 47.3L39.7 40.7V27.6Z" fill="#0F0C22"/><path d="M35.7996 64L30.0996 60.7C29.6996 60.5 29.1996 60.5 28.7996 60.7L23.1996 64C22.7996 64.2 22.5996 64.7 22.5996 65.1V71.7C22.5996 72.2 22.7996 72.6001 23.1996 72.8001L28.8996 76.1C29.0996 76.2 29.2996 76.3001 29.4996 76.3001C29.6996 76.3001 29.8996 76.2 30.0996 76.1L35.7996 72.8001C36.1996 72.6001 36.3996 72.1 36.3996 71.7V65.1C36.4996 64.7 36.1996 64.3 35.7996 64ZM33.8996 71L29.4996 73.5L25.0996 71V65.9L29.4996 63.4L33.8996 65.9V71Z" fill="#0F0C22"/><path d="M57.2996 64L51.5996 60.7C51.1996 60.5 50.6996 60.5 50.2996 60.7L44.6996 64C44.2996 64.2 44.0996 64.7 44.0996 65.1V71.7C44.0996 72.2 44.2996 72.6001 44.6996 72.8001L50.3996 76.1C50.5996 76.2 50.7996 76.3001 50.9996 76.3001C51.1996 76.3001 51.3996 76.2 51.5996 76.1L57.2996 72.8001C57.6996 72.6001 57.8996 72.1 57.8996 71.7V65.1C57.9996 64.7 57.6996 64.3 57.2996 64ZM55.3996 71L50.9996 73.5L46.5996 71V65.9L50.9996 63.4L55.3996 65.9V71Z" fill="#0F0C22"/><path d="M78.7996 64L73.0996 60.7C72.6996 60.5 72.1996 60.5 71.7996 60.7L66.1996 64C65.7996 64.2 65.5996 64.7 65.5996 65.1V71.7C65.5996 72.2 65.7996 72.6001 66.1996 72.8001L71.8996 76.1C72.0996 76.2 72.2996 76.3001 72.4996 76.3001C72.6996 76.3001 72.8996 76.2 73.0996 76.1L78.7996 72.8001C79.1996 72.6001 79.3996 72.1 79.3996 71.7V65.1C79.4996 64.7 79.1996 64.3 78.7996 64ZM76.8996 71L72.4996 73.5L68.0996 71V65.9L72.4996 63.4L76.8996 65.9V71Z" fill="#0F0C22"/><path d="M41.2992 58.6L45.5992 54.3C46.0992 53.8 46.0992 53 45.5992 52.5C45.0992 52 44.2992 52 43.7992 52.5L41.6992 54.6V48.7C41.6992 48 41.0992 47.4 40.3992 47.4C39.6992 47.4 39.0992 48 39.0992 48.7V54.6L36.9992 52.5C36.4992 52 35.6992 52 35.1992 52.5C34.6992 53 34.6992 53.8 35.1992 54.3L39.4992 58.6C39.5992 58.7 39.6992 58.8 39.8992 58.9C40.0992 59 40.1992 59 40.3992 59C40.5992 59 40.6992 59 40.8992 58.9C41.0992 58.8 41.1992 58.7 41.2992 58.6Z" fill="#0F0C22"/><path d="M62.5004 58.6L66.8004 54.3C67.3004 53.8 67.3004 53 66.8004 52.5C66.3004 52 65.5004 52 65.0004 52.5L62.9004 54.6V48.7C62.9004 48 62.3004 47.4 61.6004 47.4C60.9004 47.4 60.3004 48 60.3004 48.7V54.6L58.2004 52.5C57.7004 52 56.9004 52 56.4004 52.5C55.9004 53 55.9004 53.8 56.4004 54.3L60.7004 58.6C60.7004 58.6 60.7004 58.6 60.8004 58.6C60.9004 58.7 61.0004 58.8 61.2004 58.8C61.4004 58.9 61.5004 58.9 61.7004 58.9C61.9004 58.9 62.0004 58.9 62.2004 58.8C62.2004 58.8 62.3004 58.7 62.5004 58.6Z" fill="#0F0C22"/><path d="M59.4737 39.543C59.579 38.0737 58.7366 36.6045 57.3677 35.9749C56.7358 35.6601 56.104 35.4502 55.3669 35.2403H55.2616C54.8404 35.1353 54.5245 35.0304 54.1033 34.9255L53.7874 34.8205C55.051 33.4562 55.5775 31.6722 55.3669 29.8882C55.2616 27.6844 53.3662 26.0053 51.2602 26.0053H50.9443C48.9435 25.9003 47.1534 27.3695 46.7322 29.3635C46.6269 30.203 46.6269 31.1475 46.7322 31.987C46.9428 33.0365 47.4693 34.0859 48.2064 34.8205L47.8905 34.9255L46.9428 35.1353C46.2057 35.3452 45.4686 35.5551 44.8368 35.8699C43.3626 36.4996 42.4149 37.9688 42.5202 39.543C42.5202 40.6973 42.5202 41.9566 42.5202 43.5308C42.4149 44.1605 42.7308 44.6852 43.2573 45H43.3626H43.9944C44.5209 44.6852 44.9421 44.1605 44.8368 43.5308C44.8368 43.0061 44.8368 42.3764 44.8368 41.9566C44.8368 41.222 44.8368 40.3825 44.8368 39.6479C44.7315 38.8083 45.258 37.9688 46.1004 37.7589C47.364 37.3391 48.6277 37.1293 49.9966 36.9194C51.6814 36.7095 53.3662 36.9194 55.051 37.3391C55.4722 37.4441 55.9987 37.654 56.4199 37.8639C56.9464 38.1787 57.3676 38.7034 57.2623 39.3331C57.2623 39.9627 57.2623 40.5924 57.2623 41.222C57.2623 41.8517 57.2623 42.6912 57.2623 43.3209C57.157 43.9506 57.473 44.5802 57.8942 44.8951H57.9995H58.7366H58.8419C59.3684 44.5802 59.579 43.9506 59.4737 43.3209C59.4737 42.1665 59.4737 40.8023 59.4737 39.543ZM49.0489 29.4684C49.3648 28.6289 50.1019 28.1042 50.9443 28.2091H51.2602C52.2079 28.2091 53.0503 28.8388 53.1556 29.7832C53.1556 29.9931 53.1556 30.203 53.1556 30.308C53.1556 30.4129 53.1556 30.4129 53.1556 30.4129C53.1556 31.3574 52.8397 32.3019 52.2079 33.0365C51.892 33.4563 51.4708 33.6661 50.9443 33.6661C50.5231 33.6661 50.1019 33.4563 49.786 33.0365C48.8382 32.1969 48.6276 30.7277 49.0489 29.4684Z" fill="#0F0C22"/></g><defs><clipPath id="clip0_738_5756"><rect width="100" height="100" fill="white" transform="translate(0.5)"/></clipPath></defs></svg>',
-        },
-        {
-            title: 'PSP/Acquirer',
-            paragraph: 'Enroll now in our very strategic and trendy PSP/Acquirer’s partnership program and offer to your clients access to our fast-growing global network present in more than 50 countries across the world. This partnership provides the best payments options to your existing clients and help you acquire new ones. It instantly saves you time and resources to reach global acceptance.',
-            icon: '<svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_738_5773)"><circle cx="50.5" cy="50" r="50" fill="#F6F6F6"/><path d="M50.5 60C56.0228 60 60.5 55.5228 60.5 50C60.5 44.4772 56.0228 40 50.5 40C44.9772 40 40.5 44.4772 40.5 50C40.5 55.5228 44.9772 60 50.5 60Z" fill="#00DFDF"/><path d="M63.6988 58.4999L62.0988 56.1999C62.4988 55.4999 62.7988 54.7999 62.9988 53.9999L65.7988 53.4999C66.2988 53.3999 66.6988 52.9999 66.6988 52.3999V47.7999C66.6988 47.2999 66.2988 46.7999 65.7988 46.6999L62.9988 46.1999C62.7988 45.3999 62.4988 44.6999 62.0988 43.9999L63.6988 41.6999C63.9988 41.2999 63.8988 40.6999 63.5988 40.2999L60.2988 36.9999C59.8988 36.5999 59.3988 36.5999 58.8988 36.8999L56.5988 38.4999C55.8988 38.0999 55.1988 37.7999 54.3988 37.5999L53.8988 34.7999C53.7988 34.2999 53.3988 33.8999 52.7988 33.8999H48.1988C47.6988 33.8999 47.1988 34.2999 47.0988 34.7999L46.5988 37.5999C45.7988 37.7999 45.0988 38.0999 44.3988 38.4999L42.0988 36.8999C41.6988 36.5999 41.0988 36.6999 40.6988 36.9999L37.3988 40.2999C36.9988 40.6999 36.9988 41.1999 37.2988 41.6999L38.8988 43.9999C38.4988 44.6999 38.1988 45.3999 37.9988 46.1999L35.1988 46.6999C34.6988 46.7999 34.2988 47.1999 34.2988 47.7999V52.3999C34.2988 52.8999 34.6988 53.3999 35.1988 53.4999L37.9988 53.9999C38.1988 54.7999 38.4988 55.4999 38.8988 56.1999L37.2988 58.4999C36.9988 58.8999 37.0988 59.4999 37.3988 59.8999L40.6988 63.1999C41.0988 63.5999 41.5988 63.5999 42.0988 63.2999L44.3988 61.6999C45.0988 62.0999 45.7988 62.3999 46.5988 62.5999L47.0988 65.3999C47.1988 65.8999 47.5988 66.2999 48.1988 66.2999H52.7988C53.2988 66.2999 53.7988 65.8999 53.8988 65.3999L54.3988 62.5999C55.1988 62.3999 55.8988 62.0999 56.5988 61.6999L58.8988 63.2999C59.2988 63.5999 59.8988 63.4999 60.2988 63.1999L63.5988 59.8999C63.9988 59.4999 63.9988 58.8999 63.6988 58.4999ZM61.0988 52.6999C60.7988 53.6999 60.3988 54.6999 59.8988 55.5999C59.6988 55.9999 59.6988 56.3999 59.8988 56.7999L61.3988 58.9999L59.3988 60.9999L57.1988 59.4999C56.8988 59.2999 56.3988 59.2999 55.9988 59.4999C55.0988 59.9999 54.0988 60.3999 53.0988 60.6999C52.6988 60.7999 52.3988 61.0999 52.2988 61.4999L51.8988 63.9999H49.0988L48.5988 61.3999C48.4988 60.9999 48.1988 60.6999 47.7988 60.5999C46.7988 60.2999 45.7988 59.8999 44.8988 59.3999C44.4988 59.1999 44.0988 59.1999 43.6988 59.3999L41.4988 60.8999L39.4988 58.8999L40.9988 56.6999C41.1988 56.3999 41.1988 55.8999 40.9988 55.4999C40.4988 54.5999 40.0988 53.5999 39.7988 52.5999C39.6988 52.1999 39.3988 51.8999 38.9988 51.7999L36.4988 51.3999V48.5999L39.0988 48.0999C39.4988 47.9999 39.7988 47.6999 39.8988 47.2999C40.1988 46.2999 40.5988 45.2999 41.0988 44.3999C41.2988 43.9999 41.2988 43.5999 41.0988 43.1999L39.5988 40.9999L41.5988 38.9999L43.7988 40.4999C44.0988 40.6999 44.5988 40.6999 44.9988 40.4999C45.8988 39.9999 46.8988 39.5999 47.8988 39.2999C48.2988 39.1999 48.5988 38.8999 48.6988 38.4999L49.1988 35.8999H51.9988L52.4988 38.4999C52.5988 38.8999 52.8988 39.1999 53.2988 39.2999C54.2988 39.5999 55.2988 39.9999 56.1988 40.4999C56.5988 40.6999 56.9988 40.6999 57.3988 40.4999L59.5988 38.9999L61.5988 40.9999L60.0988 43.1999C59.8988 43.4999 59.8988 43.9999 60.0988 44.3999C60.5988 45.2999 60.9988 46.2999 61.2988 47.2999C61.3988 47.6999 61.6988 47.9999 62.0988 48.0999L64.6988 48.5999V51.3999L62.0988 51.8999C61.5988 51.9999 61.2988 52.2999 61.0988 52.6999Z" fill="#0F0C22"/><path d="M49.4 28.6V30.7C49.4 31.3 49.9 31.7999 50.5 31.7999C51.1 31.7999 51.6 31.3 51.6 30.7V28.6C53.6 28.1 55 26.4 55 24.2C55 21.7 53 19.7 50.5 19.7C48 19.7 46 21.7 46 24.2C46 26.4 47.5 28.1 49.4 28.6ZM50.5 21.9C51.8 21.9 52.8 22.9 52.8 24.2C52.8 25.5 51.8 26.5 50.5 26.5C49.2 26.5 48.2 25.5 48.2 24.2C48.2 22.9 49.2 21.9 50.5 21.9Z" fill="#0F0C22"/><path d="M51.6 71.4V69.3C51.6 68.7 51.1 68.2 50.5 68.2C49.9 68.2 49.4 68.7 49.4 69.3V71.4C47.4 71.9 46 73.6 46 75.8C46 78.3 48 80.3 50.5 80.3C53 80.3 55 78.3 55 75.8C55 73.6 53.5 71.9 51.6 71.4ZM50.5 78.1C49.2 78.1 48.2 77.1 48.2 75.8C48.2 74.5 49.2 73.5 50.5 73.5C51.8 73.5 52.8 74.5 52.8 75.8C52.8 77.1 51.8 78.1 50.5 78.1Z" fill="#0F0C22"/><path d="M76.2992 45.5C74.1992 45.5 72.3992 47 71.8992 48.9H69.7992C69.1992 48.9 68.6992 49.4 68.6992 50C68.6992 50.6 69.1992 51.1 69.7992 51.1H71.8992C72.3992 53.1 74.0992 54.5 76.2992 54.5C78.7992 54.5 80.7992 52.5 80.7992 50C80.7992 47.5 78.6992 45.5 76.2992 45.5ZM76.2992 52.3C74.9992 52.3 73.9992 51.3 73.9992 50C73.9992 48.7 74.9992 47.7 76.2992 47.7C77.5992 47.7 78.5992 48.7 78.5992 50C78.5992 51.3 77.4992 52.3 76.2992 52.3Z" fill="#0F0C22"/><path d="M29.0992 51.1H31.1992C31.7992 51.1 32.2992 50.6 32.2992 50C32.2992 49.4 31.7992 48.9 31.1992 48.9H29.0992C28.5992 46.9 26.8992 45.5 24.6992 45.5C22.1992 45.5 20.1992 47.5 20.1992 50C20.1992 52.5 22.1992 54.5 24.6992 54.5C26.8992 54.5 28.5992 53 29.0992 51.1ZM24.6992 52.3C23.3992 52.3 22.3992 51.3 22.3992 50C22.3992 48.7 23.3992 47.7 24.6992 47.7C25.9992 47.7 26.9992 48.7 26.9992 50C26.9992 51.3 25.9992 52.3 24.6992 52.3Z" fill="#0F0C22"/><path d="M64.1992 37.4C64.4992 37.4 64.7992 37.3 64.9992 37.1L66.4992 35.6C67.1992 36 67.9992 36.3 68.7992 36.3C69.9992 36.3 71.0992 35.9 71.9992 35C73.7992 33.2 73.7992 30.4 71.9992 28.6C70.1992 26.8 67.3992 26.8 65.5992 28.6C64.7992 29.4 64.2992 30.6 64.2992 31.8C64.2992 32.6 64.4992 33.4 64.9992 34.1L63.4992 35.6C63.0992 36 63.0992 36.7 63.4992 37.1C63.5992 37.3 63.8992 37.4 64.1992 37.4ZM67.0992 30.1C67.5992 29.6 68.1992 29.4 68.7992 29.4C69.3992 29.4 69.9992 29.6 70.4992 30.1C71.3992 31 71.3992 32.5 70.4992 33.4C69.5992 34.3 68.0992 34.3 67.1992 33.4C66.7992 33 66.4992 32.4 66.4992 31.7C66.4992 31 66.5992 30.6 67.0992 30.1Z" fill="#0F0C22"/><path d="M36.1 62.8999L34.6 64.3999C32.9 63.3999 30.6 63.5999 29.1 65.0999C27.3 66.8999 27.3 69.6999 29.1 71.4999C30 72.3999 31.1 72.7999 32.3 72.7999C33.5 72.7999 34.6 72.3999 35.5 71.4999C37 69.9999 37.2 67.6999 36.2 65.9999L37.7 64.4999C38.1 64.0999 38.1 63.3999 37.7 62.9999C37.3 62.5999 36.5 62.4999 36.1 62.8999ZM33.9 69.8999C33 70.7999 31.5 70.7999 30.6 69.8999C29.7 68.9999 29.7 67.4999 30.6 66.5999C31.1 66.0999 31.7 65.8999 32.3 65.8999C32.9 65.8999 33.5 66.0999 34 66.5999C34.9 67.4999 34.9 68.8999 33.9 69.8999Z" fill="#0F0C22"/><path d="M66.3996 64.4001L64.8996 62.9001C64.4996 62.5001 63.7996 62.5001 63.3996 62.9001C62.9996 63.3001 62.9996 64.0001 63.3996 64.4001L64.8996 65.9001C64.4996 66.6001 64.1996 67.4001 64.1996 68.2001C64.1996 69.4001 64.6996 70.5001 65.4996 71.4001C66.3996 72.3001 67.4996 72.7001 68.6996 72.7001C69.8996 72.7001 70.9996 72.3001 71.8996 71.4001C73.6996 69.6001 73.6996 66.8001 71.8996 65.0001C70.3996 63.5001 68.0996 63.3001 66.3996 64.4001ZM70.3996 69.9001C69.4996 70.8001 67.9996 70.8001 67.0996 69.9001C66.6996 69.5001 66.3996 68.9001 66.3996 68.2001C66.3996 67.6001 66.5996 67.0001 67.0996 66.5001C67.5996 66.0001 68.1996 65.8001 68.7996 65.8001C69.3996 65.8001 69.9996 66.0001 70.4996 66.5001C71.2996 67.5001 71.2996 68.9001 70.3996 69.9001Z" fill="#0F0C22"/><path d="M32.3 36.3C33.1 36.3 33.9 36.1 34.6 35.6L36.1 37.1C36.3 37.3 36.6 37.4 36.9 37.4C37.2 37.4 37.5 37.3 37.7 37.1C38.1 36.7 38.1 36 37.7 35.6L36.2 34.1C37.2 32.4 37 30.1 35.5 28.6C33.7 26.8 30.9 26.8 29.1 28.6C27.3 30.4 27.3 33.2 29.1 35C30 35.8 31.1 36.3 32.3 36.3ZM30.6 30.1C31.1 29.6 31.7 29.4 32.3 29.4C32.9 29.4 33.5 29.6 34 30.1C34.9 31 34.9 32.5 34 33.4C33.1 34.3 31.6 34.3 30.7 33.4C29.7 32.5 29.7 31.1 30.6 30.1Z" fill="#0F0C22"/><path d="M43.8 59.1179C44.5 58.9179 44.6 58.3179 44.6 57.8179C44.6 57.3179 44.6 56.7179 44.6 56.1179C44.6 55.4179 44.6 54.6179 44.6 53.9179C44.6 53.3179 44.9 52.7179 45.4 52.5179C45.8 52.3179 46.2 52.1179 46.6 51.9179C48.4 51.4179 50.2 51.2179 52.1 51.5179C53.2 51.7179 54.3 51.9179 55.3 52.3179C56 52.5179 56.4 53.2179 56.3 53.9179C56.3 54.8179 56.3 55.8179 56.3 56.7179C56.3 57.0179 56.3 57.4179 56.3 57.7179C56.3 58.1179 56.4 58.5179 56.7 58.8179C56.9 59.0179 57.1 59.1179 57.4 59.1179C58.1 59.1179 58.5 58.6179 58.5 57.7179C58.5 57.3179 58.5 56.8179 58.5 56.3179C58.5 55.4179 58.5 54.5179 58.5 53.6179C58.6 52.3179 57.9 51.1179 56.8 50.4179C56.1 50.0179 55.4 49.7179 54.7 49.5179C54.3 49.4179 53.9 49.3179 53.5 49.2179L53.2 49.3179C54.4 48.0179 55 46.2179 54.7 44.4179C54.4 42.3179 52.6 40.8179 50.5 41.0179H50.4C48.3 40.9179 46.5 42.5179 46.4 44.6179C46.1 46.3179 46.6 48.0179 47.8 49.3179L47 49.5179C46.2 49.7179 45.5 50.0179 44.8 50.2179C43.7 50.7179 42.8 51.6179 42.5 52.8179V58.3179V58.4179C42.7 58.9179 43.3 59.2179 43.8 59.1179ZM52.4 44.4179C52.7 45.5179 52.5 46.7179 51.8 47.6179C51.5 48.0179 51.1 48.3179 50.6 48.3179C50.1 48.3179 49.6 48.0179 49.3 47.6179C48.8 47.0179 48.5 46.2179 48.5 45.3179C48.4 44.6179 48.7 43.9179 49.2 43.4179C49.8 43.0179 50.6 42.9179 51.2 43.1179C51.9 43.3179 52.3 43.8179 52.4 44.4179Z" fill="#0F0C22"/></g><defs><clipPath id="clip0_738_5773"><rect width="100" height="100" fill="white" transform="translate(0.5)"/></clipPath></defs></svg>',
-        },
-    ]
 
     const form = ref({
         first_name: '',
@@ -389,6 +728,8 @@
         email: '',
         mobile: '',
         country: '',
+        industry: '',
+        product: '',
         company: '',
         size: '',
         link: '',
@@ -402,6 +743,8 @@
         email: '',
         mobile: '',
         country: '',
+        industry: '',
+        product: '',
         company: '',
         size: '',
         link: '',
@@ -429,10 +772,18 @@
             length: 'Please enter a valid phone number',
             safe: 'Your input has invalid value'
         },
-        // country: {
-        //     required: 'Please enter your country',
-        //     safe: 'Your input has invalid value'
-        // },
+        country: {
+            required: 'Please select a country',
+            safe: 'Your input has invalid value'
+        },
+        industry: {
+            required: 'Please select an industry',
+            safe: 'Your input has invalid value'
+        },
+        product: {
+            required: 'Please select a product',
+            safe: 'Your input has invalid value'
+        },
         company: {
             required: 'Please enter your company name',
             safe: 'Your input has invalid value'
@@ -467,6 +818,8 @@
                 formData.append('work_email', form.value.email);
                 formData.append('phone_number', form.value.mobile);
                 formData.append('country', form.value.country);
+                formData.append('industry', form.value.industry);
+                formData.append('product', form.value.product);
                 formData.append('company_name', form.value.company);
                 formData.append('company_size', form.value.size);
                 formData.append('website', form.value.link);
@@ -500,87 +853,18 @@
         form.value.email="";
         form.value.mobile="";
         form.value.country="";
+        form.value.industry="";
+        form.value.product="";
         form.value.company="";
         form.value.size="";
         form.value.link="";
         form.value.message="";
     }
-    const toggleDropdown = () => {
-        showDropdown.value = !showDropdown.value;
 
-        // Reset country list and lastLoadedIndex when closing the dropdown
-        if (!showDropdown.value) {
-            resetDropdown();
-        }
-    };
-
-    const resetDropdown = () => {
-        countries.value = [];
-        lastLoadedIndex.value = 0;
-        filteredCountries.value = [];
-        searchFlag.value = false
-        searchQuery.value = ''
-        loadInitialCountries();
-    };
-
-    const closeDropdown = () => {
-        loadInitialCountries();
-    };
-
-    const selectCountry = (country) => {
-        selectedCountry.value = country;
-        form.value.country = selectedCountry.value;
-        emit('select', country);
-        showDropdown.value = false;
-        resetDropdown()
-    };
-
-    onMounted(() => {
-        loadInitialCountries();
-    });
-
-
-    const loadInitialCountries = () => {
-        loadNextCountries();
-    };
-
-    const loadNextCountries = () => {
-        const batchSize = 10;
-        const startIndex = lastLoadedIndex.value;
-        const endIndex = startIndex + batchSize;
-        const nextBatch = countriesData.slice(startIndex, endIndex);
-
-        countries.value = [...countries.value, ...nextBatch];
-        lastLoadedIndex.value = endIndex;
-        filteredCountries.value = countries.value;
-    };
-
-    const handleScroll = () => {
-        const container = dropdownContainer.value;
-        if (searchQuery.value === '' && container.scrollTop + container.clientHeight >= container.scrollHeight - 20) {
-            if(!searchFlag.value){
-                loadNextCountries();
-            }
-        }
-    };
-
-    const searchCountries = () => {
-        const searchResults = countriesData.filter((country) =>
-            country.name.toLowerCase().includes(searchQuery.value.toLowerCase())
-        );
-        if(searchQuery.value != ''){
-            filteredCountries.value = searchResults;
-            searchFlag.value = true
-        }
-        else{
-            resetDropdown();
-        }
-    };
-
-    watch(searchQuery, searchCountries);
 </script>
 
 <style lang="sass" scoped>
     .location
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 70%)
+
 </style>
