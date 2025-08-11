@@ -851,36 +851,36 @@
       const wpData = await wpResponse.json();
       // WordPress submission successful
 
-      // 2. Submit to Azure Logic App API
-      const azureAPI = 'https://prod-61.westeurope.logic.azure.com:443/workflows/9a1e9d104f5e400a93bdc1e0b6662244/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=B1cs4iVBu_y7YSEKOIgP_AABezC1BkBnpg1mgSBOqMU';
+     
+    //   const azureAPI = 'https://prod-61.westeurope.logic.azure.com:443/workflows/9a1e9d104f5e400a93bdc1e0b6662244/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=B1cs4iVBu_y7YSEKOIgP_AABezC1BkBnpg1mgSBOqMU';
 
-      // Prepare JSON payload similar to your curl example
-      const azurePayload = {
-        campaignid: "01ff0d67-1f6d-f011-b4cc-6045bdf5135a",
-        source: "7649cc6d-7ad6-ec11-a7b5-6045bd951f1b",
-        industry: form.value.industry,  // ideally your UUID or value attribute, not label
-        country: form.value.country,
-        product: form.value.product,
-        companyname: form.value.company,
-        email: form.value.email,
-        fullname: form.value.first_name + ' ' + form.value.last_name,
-        mobile: form.value.mobile
-      };
+     
+    //   const azurePayload = {
+    //     campaignid: "01ff0d67-1f6d-f011-b4cc-6045bdf5135a",
+    //     source: "7649cc6d-7ad6-ec11-a7b5-6045bd951f1b",
+    //     industry: form.value.industry,  
+    //     country: form.value.country,
+    //     product: form.value.product,
+    //     companyname: form.value.company,
+    //     email: form.value.email,
+    //     fullname: form.value.first_name + ' ' + form.value.last_name,
+    //     mobile: form.value.mobile
+    //   };
 
-      const azureResponse = await fetch(azureAPI, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': '#@%^)WTP$$06', // Add your API key here if any
-        },
-        body: JSON.stringify(azurePayload)
-      });
+    //   const azureResponse = await fetch(azureAPI, {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       'x-api-key': '#@%^)WTP$$06', 
+    //     },
+    //     body: JSON.stringify(azurePayload)
+    //   });
 
-      if (!azureResponse.ok) {
-        throw new Error('Azure API submission failed');
-      }
+    //   if (!azureResponse.ok) {
+    //     throw new Error('Azure API submission failed');
+    //   }
 
-      const azureData = await azureResponse.json();
+    //   const azureData = await azureResponse.json();
 
       submissionMessage.value = "Thank you for your message.";
       submitting.value = false;
