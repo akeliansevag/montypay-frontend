@@ -520,6 +520,58 @@
                     ]
                 }
             ]
+        },
+        {
+            country: "Ghana",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "Amex", "img": "/images/amex.svg" },
+                    ]
+                },
+                {
+                    title: "Mobile Money",
+                    items: [
+                        { "name": "Airtel Money", "img": "/images/airtel-money.svg" },
+                        { "name": "Tigo", "img": "/images/tigo.svg" },
+                        { "name": "MTN", "img": "/images/mtn.svg" },
+                        { "name": "Mpesa", "img": "/images/mpesa.svg" },
+                        { "name": "Vodafone", "img": "/images/vodafone.svg" },
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                    ]
+                }
+            ]
+        },
+        {
+            country: "South Africa",
+            categories: [
+                {
+                    title: "Cards",
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "Amex", "img": "/images/amex.svg" },
+                    ]
+                },
+                {
+                    title: "EFT",
+                    items: [
+                        { "name": "Electronic Funds Transfer", "img": "/images/eft.svg" },
+                    ]
+                },
+                {
+                    title: "Other",
+                    items: [
+                    ]
+                }
+            ]
         }
     ];
 
