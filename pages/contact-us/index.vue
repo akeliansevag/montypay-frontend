@@ -907,7 +907,7 @@
         form.value.link="";
         form.value.message="";
     }
-
+//ads
 </script>
 
 <style lang="sass" scoped>
