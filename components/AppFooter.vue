@@ -4,7 +4,7 @@
             <div class="flex flex-col lg:flex-row gap-10 justify-between">
                 <div class="lg:flex-[4]">
                     <NewsLetter />
-                    <nav class="nav">
+                    <nav  aria-label="Footer" class="nav">
                         <NavItemsWrapper class="flex flex-col lg:flex-row flex-wrap gap-10 lg:gap-0 justify-between mt-14" layout="footer" />
                     </nav>
                 </div>

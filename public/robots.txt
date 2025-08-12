@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /_nuxt/
+Allow: /assets/
+Sitemap: https://montypay.com/sitemap.xml

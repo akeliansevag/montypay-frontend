@@ -6,7 +6,7 @@
                     <AppLogo :fill="navVisible || $route.path === '/' ? '#FFFFFF' : 'auto'" /> 
                 </NuxtLink>  
                 <div class="flex items-center gap-4 lg:gap-7">
-                    <nav class="nav hidden lg:block">
+                    <nav aria-label="Primary" class="nav hidden lg:block">
                         <NavItemsWrapper layout="header" class="flex gap-8" />
                     </nav>
                     <ul>
@@ -26,7 +26,7 @@
 
         <!-- <div v-if="navVisible" @click="closeNav" class="block lg:hidden fixed top-0 left-0 w-screen h-screen bg-black z-[1] opacity-70"></div> -->
 
-        <nav class="nav block lg:hidden fixed top-0 left-0 h-screen w-full text-primary bg-quaternary transition-transform duration-300 ease-in-out z-[2]" :class="{ '-translate-x-full': !navVisible }">
+        <nav aria-label="Primary" class="nav block lg:hidden fixed top-0 left-0 h-screen w-full text-primary bg-quaternary transition-transform duration-300 ease-in-out z-[2]" :class="{ '-translate-x-full': !navVisible }">
             <div class="container">  
                 <NavItemsWrapper layout="header" class="flex flex-col gap-8 mt-20" />
             </div>
