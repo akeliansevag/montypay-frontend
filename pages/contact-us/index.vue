@@ -468,6 +468,7 @@
                                     <option value="">Select Product</option>
                                     <option value="fd4f2661-1f5e-ef11-bfe2-000d3aab2548">MontyPay Point of Sale</option>
                                     <option value="13ca892e-79da-ec11-bb3d-000d3a22e2cf">MontyPay Payment Gateway</option>
+                                    <option value="Website Development">Website Development</option>
                                     
                                 </select>
                                 <div v-if="errors.product" class="text-red-500 text-xs">{{ errors.product }}</div>
