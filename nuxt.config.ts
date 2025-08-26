@@ -73,11 +73,28 @@ export default defineNuxtConfig({
           type: 'text/javascript',
           charset: 'utf-8'
         },
+        {
+          hid: 'google-ads-src',
+          src: 'https://www.googletagmanager.com/gtag/js?id=AW-17262217251',
+          async: true
+        },
+        {
+          hid: 'google-ads-inline',
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17262217251');
+          `,
+          type: 'text/javascript',
+          charset: 'utf-8'
+        }
        
       ],
       __dangerouslyDisableSanitizersByTagID: {
         'snap-pixel': ['innerHTML'],
-        'metricool': ['innerHTML']
+        'metricool': ['innerHTML'],
+        'google-ads-inline': ['innerHTML']
       }
     },
     //pageTransition: { name: 'page', mode: 'out-in' }
