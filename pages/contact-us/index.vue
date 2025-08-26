@@ -57,7 +57,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="country">Country</label>
-                                <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                     <option value="">Select Country</option>
                                     <option value="bad6f426-35d7-ef11-8eea-7c1e5229a00a">Abkhazia</option>
                                     <option value="a85e89c2-4d74-ec11-8942-0022488312af">Afghanistan</option>
@@ -345,7 +345,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="selected-country">Industry</label>
-                                <select ref="industrySelect" v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="w-full text-base px-4 py-2 bg-primary rounded-lg outline-0">
+                                <select ref="industrySelect" v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="custom-select w-full text-base px-4 py-2 bg-primary rounded-lg outline-0">
                                     <option value="">Select Industry</option>
                                     <option value="A6236539-7AE8-EF11-9342-000D3A216302">Tobacco</option>
                                     <option value="9C6999E4-5D07-ED11-82E5-000D3A2236D3">Telecommunications</option>
@@ -464,7 +464,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="product">Product</label>
-                                <select ref="productSelect" :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <select ref="productSelect" :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                     <option value="">Select Product</option>
                                     <option value="fd4f2661-1f5e-ef11-bfe2-000d3aab2548">MontyPay Point of Sale</option>
                                     <option value="13ca892e-79da-ec11-bb3d-000d3a22e2cf">MontyPay Payment Gateway</option>
