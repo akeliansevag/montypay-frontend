@@ -44,6 +44,11 @@
       </ClientOnly>
     </div>
 
+    <!-- fallback for crawlers / no JS -->
+    <noscript>
+      <a :href="to" class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100">{{ label }}</a>
+    </noscript>
+
     <!-- Handling child sections -->
     <ul
       v-if="hasChildren && navItemsVisible"
@@ -83,6 +88,11 @@
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
                   <Icon v-if="layout === 'header'" name="fa6-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
                 </a>
+                
+                <!-- fallback for crawlers / no JS -->
+                <noscript>
+                  <a :href="page.to" class="nav-link font-normal" :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }">{{ page.label }}</a>
+                </noscript>
               </li>
             </ul>
           </li>
