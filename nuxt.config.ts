@@ -49,6 +49,14 @@ export default defineNuxtConfig({
       ],
       script: [
         {
+          hid: 'gtm',
+          innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-M75G7JM7');`
+        },
+        {
           hid: 'snap-pixel',
           innerHTML: `(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
           {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
@@ -88,13 +96,13 @@ export default defineNuxtConfig({
           `,
           type: 'text/javascript',
           charset: 'utf-8'
-        }
-       
+        },
       ],
       __dangerouslyDisableSanitizersByTagID: {
         'snap-pixel': ['innerHTML'],
         'metricool': ['innerHTML'],
-        'google-ads-inline': ['innerHTML']
+        'google-ads-inline': ['innerHTML'],
+        gtm: ['innerHTML']
       }
     },
     //pageTransition: { name: 'page', mode: 'out-in' }
