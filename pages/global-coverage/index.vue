@@ -38,7 +38,7 @@
                         <div class="w-full lg:w-2/5 lg:-mt-36">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/competitive-pricing.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />

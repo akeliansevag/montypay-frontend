@@ -19,21 +19,21 @@
                     <div class="flex gap-4 lg:gap-24 w-full lg:w-3/5 mx-auto justify-center">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/pos1.png" 
                             class="pos pos1 w-full"
                             :imgAttrs="{class:'w-full mt-16 mx-auto'}" 
                         />
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/pos2.png" 
                             class="pos pos2 w-full"
                             :imgAttrs="{class:'w-full mt-16 mx-auto'}" 
                         />
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/pos3.png" 
                             class="pos pos3 w-full"
                             :imgAttrs="{class:'w-full mt-16 mx-auto'}" 

@@ -18,7 +18,7 @@
                 <template v-if="layout === 'full'">
                     <NuxtPicture 
                         priority
-                        format="webp,avif" 
+                        format="webp" 
                         :src="`/images/${ image }.png`" 
                         :imgAttrs="{class:'w-full'}" 
                         :class="`w-full lg:w-1/2 order-${image_order}`"

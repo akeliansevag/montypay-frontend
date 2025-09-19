@@ -21,7 +21,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/online-and-mobile-checkouts.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full mx-auto'}" 
@@ -38,7 +38,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/customer-invoice-links.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full mx-auto'}" 
@@ -55,7 +55,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/pay-by-link.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full  mx-auto'}" 
@@ -72,7 +72,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/qr-pay.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full mx-auto'}" 
@@ -90,7 +90,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/recurring-bills.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full  mx-auto'}" 
@@ -107,7 +107,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/smart-routing-and-cascading.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
@@ -123,7 +123,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/advanced-reporting.png" 
                                 :imgAttrs="{class:'w-full  mx-auto'}" 
                             />
@@ -139,7 +139,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/crypto-currency.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
@@ -155,7 +155,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/merchant-mobile-app.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
@@ -171,7 +171,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/risk-and-compliance.png" 
                                 :imgAttrs="{class:'w-full  mx-auto'}" 
                             />
@@ -187,7 +187,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/installments.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />

@@ -527,7 +527,7 @@
                     <div class="w-full lg:w-1/3 mt-16 lg:mt-0">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/become-a-partner.png" 
                             class="w-full"
                             :imgAttrs="{class:'w-full aspect-video lg:aspect-auto object-cover'}" 
@@ -549,7 +549,7 @@
                         <div>
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/uk.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
@@ -575,7 +575,7 @@
                         <div>
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/nigeria.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
@@ -601,7 +601,7 @@
                         <div>
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/lebanon.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
@@ -627,7 +627,7 @@
                         <div>
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/jordan.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
@@ -653,7 +653,7 @@
                         <div>
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/uae.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
@@ -679,7 +679,7 @@
                         <div>
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/indonesia.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
@@ -705,7 +705,7 @@
                         <div>
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/ksa.png" 
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 

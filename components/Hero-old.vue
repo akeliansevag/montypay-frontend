@@ -8,7 +8,7 @@
             <NuxtPicture 
                 v-if="image"
                 priority
-                format="webp,avif" 
+                format="webp" 
                 :src="`/images/${ image }.png`" 
                 class="w-full lg:w-2/3 ml-auto"
                 :imgAttrs="{class:'w-full rounded-lg'}" 

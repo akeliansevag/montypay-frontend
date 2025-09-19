@@ -41,7 +41,7 @@
                     </div>
 
                     <NuxtPicture priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/all-in-one-platform.png" 
                         class="w-full lg:w-3/5"
                         :imgAttrs="{class:'w-full h-full object-cover'}" 
@@ -151,7 +151,7 @@
             <div class="flex">
                 <div class="hidden lg:block w-full lg:w-2/5">
                     <NuxtPicture priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/in-store-payments-left.png" 
                         class="w-full lg:w-2/3"
                         :imgAttrs="{class:'w-full h-full object-cover'}" 
@@ -159,7 +159,7 @@
                 </div>
                 <div class="w-full lg:w-3/5">
                     <NuxtPicture priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/in-store-payments-right.png" 
                         class="w-full lg:w-2/3"
                         :imgAttrs="{class:'w-full aspect-video lg:aspect-auto lg:h-full object-cover'}" 
@@ -235,7 +235,7 @@
                 <div class="flex-1 w-full">
                     <NuxtPicture 
                         priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/q-check.png" 
                         :imgAttrs="{class:'w-full mx-auto'}" 
                     />
@@ -277,7 +277,7 @@
                 <div class="flex-1 w-full mt-32">
                     <NuxtPicture 
                         priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/e-commerce-store.png" 
                         class="w-full"
                         :imgAttrs="{class:'w-full mx-auto'}" 
@@ -298,7 +298,7 @@
                 <div class="flex w-full lg:w-3/5 mx-auto">
                     <NuxtPicture 
                         priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/why-montypay.png" 
                         :imgAttrs="{class:'w-full mx-auto'}" 
                         class="block lg:hidden w-full"
@@ -329,7 +329,7 @@
                         <SwiperSlide class="flex justify-center gap-20" v-for="testimonial in testimonials" :key="index">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 :src="`/images/${testimonial.icon}.png`"
                                 class="w-[110px] cursor-pointer"
                                 :imgAttrs="{class:'w-full'}" 

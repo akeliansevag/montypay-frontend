@@ -19,7 +19,7 @@
 
                     <NuxtPicture 
                         priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/menu-and-pay.png" 
                         class="w-full mt-14"
                         :imgAttrs="{class:'w-full'}" 

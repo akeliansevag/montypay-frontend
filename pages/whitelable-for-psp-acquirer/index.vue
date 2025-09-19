@@ -61,7 +61,7 @@
                 <div class="mt-16 text-center">
                     <NuxtPicture 
                         priority
-                        format="webp,avif" 
+                        format="webp" 
                         class="hidden lg:block"
                         src="/images/become-a-psp.png" 
                         :imgAttrs="{class:'w-full mx-auto'}" 
@@ -399,7 +399,7 @@
                     <div class="flex-1 w-full">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/efficient-data-insights.png" 
                             :imgAttrs="{class:'w-full mx-auto'}" 
                         />
@@ -414,7 +414,7 @@
                     <div class="flex-1 w-full">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/global-payment-collection.png" 
                             :imgAttrs="{class:'w-full mx-auto'}" 
                         />
@@ -429,7 +429,7 @@
                     <div class="flex-1 w-full">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/flexible-billing-and-settlement.png" 
                             :imgAttrs="{class:'w-full mx-auto'}" 
                         />
@@ -448,7 +448,7 @@
                         <div class="w-1/2">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/intelligent-routing.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
@@ -467,7 +467,7 @@
                     <div class="flex-1 w-full">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/live-chat-support.png" 
                             :imgAttrs="{class:'w-full mx-auto'}" 
                         />
@@ -482,7 +482,7 @@
                     <div class="flex-1 w-full">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/risk-management.png" 
                             :imgAttrs="{class:'w-full mx-auto'}" 
                         />
@@ -513,7 +513,7 @@
                     <div class="flex-1 w-full">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/cutting-edge-technology.png" 
                             :imgAttrs="{class:'w-full mx-auto'}" 
                         />

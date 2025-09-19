@@ -21,21 +21,21 @@
                     <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center lg:items-center gap:10 lg:gap-32 w-full md:w-3/5 mx-auto mt-6">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/stripe.png" 
                             class="w-1/2 lg:w-full mt-10 flex-1"
                             :imgAttrs="{class:'w-full'}" 
                         />
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/paypal.png" 
                             class="w-1/2 lg:w-full mt-10 flex-1"
                             :imgAttrs="{class:'w-full'}" 
                         />
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/flutterwave.png" 
                             class="w-1/2 lg:w-full mt-10 flex-1"
                             :imgAttrs="{class:'w-full'}" 
@@ -47,7 +47,7 @@
 
         <section id="section-3" class="mt-16 lg:mt-36 lg:h-screen flex flex-col lg:flex-row items-center text-primary overflow-hidden">
             <NuxtPicture priority
-                format="webp,avif"
+                format="webp"
                 src="/images/api-orchestration.png"
                 class="w-full lg:absolute lg:top-0 lg:left-0"
                 :imgAttrs="{class:'w-full lg:h-screen object-cover'}" 
@@ -75,7 +75,7 @@
                     
                     <NuxtPicture 
                         priority
-                        format="webp,avif" 
+                        format="webp" 
                         src="/images/strategic-co-partnership-initiative.png" 
                         class="w-full lg:w-1/2 mx-auto"
                         :imgAttrs="{class:'w-full mx-auto'}" 
@@ -251,7 +251,7 @@
                     <div class="w-full lg:w-1/3 mt-16 lg:mt-0">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/become-a-partner.png" 
                             class="w-full"
                             :imgAttrs="{class:'w-full aspect-video lg:aspect-auto object-cover'}" 

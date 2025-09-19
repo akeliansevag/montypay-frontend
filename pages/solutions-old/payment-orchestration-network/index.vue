@@ -40,7 +40,7 @@
         <section id="section-3" class="mt-16 lg:mt-36 py-16 lg:py-36 bg-quaternary text-primary">
             <NuxtPicture 
                 priority
-                format="webp,avif" 
+                format="webp" 
                 src="/images/extensive-coverage-bg.png" 
                 class="absolute top-0 right-0 flex justify-center items-center w-full h-full"
                 :imgAttrs="{class:'w-full md:w-3/5 ms-auto'}" 
@@ -56,7 +56,7 @@
                         <div class="flex-1 w-full">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/extensive-coverage.png" 
                                 :imgAttrs="{class:'w-3/4 mx-auto'}" 
                             />
@@ -80,7 +80,7 @@
                         <div class="w-full lg:w-1/2">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/unified-solution.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />
@@ -99,7 +99,7 @@
                         <div class="w-full lg:w-1/2">
                             <NuxtPicture 
                                 priority
-                                format="webp,avif" 
+                                format="webp" 
                                 src="/images/central-point-of-contact.png" 
                                 :imgAttrs="{class:'w-full mx-auto'}" 
                             />

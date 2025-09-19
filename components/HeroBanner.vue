@@ -6,7 +6,7 @@
         <div class="container flex flex-col lg:flex-row items-center gap-20">
             <div class="w-full lg:w-1/2 order-1 lg:order-none mb-10 lg:mb-0">
                 <NuxtPicture priority
-                    format="webp,avif" 
+                    format="webp" 
                     :src="`/images/${ image }.webp`" 
                     :imgAttrs="{class:'w-full lg:h-full lg:w-auto'}" 
                 />

@@ -71,7 +71,7 @@
                     <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/e-commerce-development.png" 
                             class="w-full"
                             :imgAttrs="{class:'w-full mx-auto'}" 
@@ -105,7 +105,7 @@
                     <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/content-management.png" 
                             class="w-full"
                             :imgAttrs="{class:'w-full mx-auto'}" 
@@ -143,7 +143,7 @@
                     <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/social-media-management.png" 
                             class="w-full"
                             :imgAttrs="{class:'w-full mx-auto'}" 
@@ -189,7 +189,7 @@
                     <div class="flex w-full xl:w-2/5">
                         <NuxtPicture 
                             priority
-                            format="webp,avif" 
+                            format="webp" 
                             src="/images/payment-solutions.png" 
                             class="w-full"
                             :imgAttrs="{class:'w-full mx-auto'}" 
