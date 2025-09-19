@@ -26,7 +26,7 @@
                 <div class="hidden md:group-hover:block absolute bottom-6 left-1/2 -translate-x-1/2 w-max p-4 bg-white rounded-lg shadow-md z-10">
                     <div class="absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 w-2 h-2 bg-white rotate-45"></div>
                     <div class="flex flex-col gap-3 items-center text-center">
-                        <img :src="`/images/${office.icon}.svg`" :alt="office.location" width="25" height="25" />
+                        <img :src="`/images/flags/${office.icon}.svg`" :alt="office.location" width="25" height="25" />
                         <p class="font-semibold">{{ office.location }}</p>
                         <p v-html="office.address"></p>
                     </div>
@@ -48,7 +48,7 @@
             left: '57.7',
         },
         {
-            icon: 'gb',
+            icon: 'UK',
             location: 'London, UK',
             address: 'Beaumont Bridge House, <br /> 181 Queen Victoria Street',
             top: '26',
@@ -69,7 +69,7 @@
             left: '63.2',
         },
         {
-            icon: 'id',
+            icon: 'ID',
             location: 'Jakarta, Indonesia',
             address: '9th Floor Noble House Building, <br /> Lingkar Mega Kuningan, Kuningan, <br /> Kuningan Timur, Setiabudi, <br /> Jakarta Selatan, Jakarta 12950',
             top: '62',
@@ -81,6 +81,13 @@
             address: '10th Floor, Standard Chartered HQ. <br /> No.142, Ahmadu Bello Way, <br /> Victoria Island, Eti-Osa',
             top: '54.9',
             left: '49.8',
+        },
+        {
+            icon: 'SA',
+            location: 'Riyadh, KSA',
+            address: 'Al Olaya Street, Building #62, <br /> 1st Floor, Riyadh, KSA',
+            top: '50',
+            left: '61',
         }
     ];
 </script>
