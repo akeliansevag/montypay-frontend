@@ -12,7 +12,7 @@
                         >
                         <div class="bg-white flex flex-col justify-center rounded-lg shadow-md px-2 py-5 h-full">
                             <div class="flex flex-col gap-3 items-center text-center">
-                                <img :src="`/images/${office.icon}.svg`" :alt="office.location" width="25" height="25" />
+                                <img :src="`/images/flags/${office.icon}.svg`" :alt="office.location" width="25" height="25" />
                                 <p class="font-semibold">{{ office.location }}</p>
                                 <p v-html="office.address"></p>
                             </div>
