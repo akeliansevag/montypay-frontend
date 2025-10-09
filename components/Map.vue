@@ -78,7 +78,7 @@
         {
             icon: 'NG',
             location: 'Lagos, Nigeria',
-            address: '10th Floor, Standard Chartered HQ. <br /> No.142, Ahmadu Bello Way, <br /> Victoria Island, Eti-Osa',
+            address: '1st floor, Sigma Base, <br /> 7/9 Molade Okoya Thomas Street, <br /> Victoria Island, Lagos State, Nigeria.',
             top: '54.9',
             left: '49.8',
         },
