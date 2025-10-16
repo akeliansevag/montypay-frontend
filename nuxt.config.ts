@@ -97,6 +97,12 @@ export default defineNuxtConfig({
           type: 'text/javascript',
           charset: 'utf-8'
         },
+        {
+          hid: 'ahrefs-analytics',
+          src: 'https://analytics.ahrefs.com/analytics.js',
+          'data-key': 'DeLgwDhxUECTmZwzhIc7KA',
+          async: true
+        }
       ],
       __dangerouslyDisableSanitizersByTagID: {
         'snap-pixel': ['innerHTML'],
