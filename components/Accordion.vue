@@ -1,4 +1,4 @@
-<template>
+<template> 
     <section class="bg-[#E9ECF4] lg:py-24 max-lg:py-10">
         <div class="container">       
             <h2 class="text-3xl text-center mb-8" v-if="title">{{ title }}</h2>
