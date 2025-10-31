@@ -382,36 +382,67 @@
                 {
                     title: "Cards",
                     items: [
-                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
-                        { "name": "Visa", "img": "/images/visa.svg" },
-                        { "name": "AMEX", "img": "/images/amex.svg" },
-                        { "name": "JCB", "img": "/images/jcb.svg" },
-                        { "name": "Discover", "img": "/images/discover.svg" },
-                        { "name": "Diners", "img": "/images/diners.svg" }
+                        { "name": "", "img": "/images/mastercard.svg" },
+                        { "name": "", "img": "/images/visa.svg" },
+                        { "name": "", "img": "/images/amex.svg" },
+                        { "name": "", "img": "/images/jcb.svg" },
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: "eWallet",
                     items: [
-                        { "name": "PayPal", "img": "/images/paypal.svg" },
-                        { "name": "Virgo", "img": "/images/virgo.svg" },
-                        { "name": "OVO", "img": "/images/ovo.svg" },
-                        { "name": "ShopeePay", "img": "/images/shopeepay.svg" },
-                        { "name": "Dana", "img": "/images/dana.svg" },
-                        { "name": "Doku", "img": "/images/doku.svg" },
-                        { "name": "LinkAja", "img": "/images/linkaja.svg" }
+                        { "name": "", "img": "/images/doku.svg" },
+                        { "name": "", "img": "/images/e-wallets.svg" },
+                        { "name": "", "img": "/images/linkaja.svg" },
+                        { "name": "", "img": "/images/shopeepay.svg" },
+                        { "name": "", "img": "/images/ovo.svg" },
+                        { "name": "", "img": "/images/dana.svg" },
+                        { "name": "", "img": "/images/qris.svg" },
                     ]
                 },
                 {
-                    title: "Other",
+                    title: "Cash",
                     items: [
-                        { "name": "QR Code (QRIS)", "img": "/images/qris.svg" },
-                        { "name": "Bank Transfers", "img": "/images/bank-transfer.svg" },
-                        { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
-                        { "name": "BNPL", "img": "/images/bnpl.svg" },
-                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                        { "name": "", "img": "/images/alfa-mart.svg" },
+                        { "name": "", "img": "/images/indomaret.svg" },
+                        { "name": "", "img": "/images/alfa-midi.svg" },
+                        { "name": "", "img": "/images/lawson.svg" },
+                        { "name": "", "img": "/images/dandan.svg" },
                     ]
-                }
+                },
+                {
+                    title: "Virtual Account",
+                    items: [
+                        { "name": "", "img": "/images/bca.svg" },
+                        { "name": "", "img": "/images/mandiri.svg" },
+                        { "name": "", "img": "/images/bank-bri.svg" },
+                        { "name": "", "img": "/images/bni.svg" },
+                        { "name": "", "img": "/images/doku.svg" },
+                        { "name": "", "img": "/images/permata-bank.svg" },
+                        { "name": "", "img": "/images/bnc.svg" },
+                        { "name": "", "img": "/images/danamon.svg" },
+                        { "name": "", "img": "/images/bsi.svg" },
+                        { "name": "", "img": "/images/cimb-niaga.svg" },
+                    ]
+                },
+                {
+                    title: "Direct Debit",
+                    items: [
+                        { "name": "", "img": "/images/bri.svg" },
+                        { "name": "", "img": "/images/allo-bank.svg" },
+                        { "name": "", "img": "/images/mandiri.svg" },
+                        { "name": "", "img": "/images/octo-cash.svg" },
+                    ]
+                },
+                {
+                    title: "Pay Later (BNPL)",
+                    items: [
+                        { "name": "", "img": "/images/ceria.svg" },
+                        { "name": "", "img": "/images/kredivo.svg" },
+                        { "name": "", "img": "/images/akulaku.svg" },
+                        { "name": "", "img": "/images/indodana.svg" },
+                    ]
+                },
             ]
         },
         {
