@@ -17,8 +17,8 @@
                         </li>
                     </ul>
                     <div @click="toggleNav" class="menu-btn block lg:hidden pt-1.5 pb-2.5 text-3xl cursor-pointer">
-                        <Icon v-if="!navVisible" name="fa6-solid:bars" class="icon text-lg" :class="$route.path !== '/' ? 'text-black': 'text-primary'" />
-                        <Icon v-if="navVisible" name="fa6-solid:x" class="icon text-lg text-primary" />
+                        <Icon v-if="!navVisible" name="fa7-solid:bars" class="icon text-lg" :class="$route.path !== '/' ? 'text-black': 'text-primary'" />
+                        <Icon v-if="navVisible" name="fa7-solid:x" class="icon text-lg text-primary" />
                     </div>
                 </div>
             </div>

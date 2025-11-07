@@ -20,8 +20,8 @@
                                         <h5>{{ item.question }}</h5>
                                         <span
                                             class="text-[#98A2B3] shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center border-[#98A2B3]">
-                                            <Icon :name="activeItemId === item.id ? 'fa6-solid:minus' : 'fa6-solid:plus'"
-                                                class="icon text-sm  bg-[#ffffff1a]" />
+                                            <Icon :name="activeItemId === item.id ? 'fa7-solid:minus' : 'fa7-solid:plus'"
+                                                class="icon text-sm" />
                                         </span>
                                     </div>
 

@@ -7,7 +7,7 @@
     }">
     
     <!-- Render NuxtLink for internal links -->
-    <NuxtLink
+    <NuxtLinkLocale
       v-if="!isExternal(to) && !hasChildren"
       :to="to"
       exact-active-class="active"
@@ -16,7 +16,7 @@
     >
       <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <!-- Render <a> tag for external links (like PDFs) -->
     <a
@@ -37,7 +37,7 @@
       <ClientOnly>
         <Icon 
           v-if="(layout === 'header' || (layout === 'footer' && isMobile()))" 
-          name="fa6-solid:angle-down"
+          name="fa7-solid:angle-down"
           class="icon text-sm transition-transform duration-300 ease-in-out"
           :class="{ 'rotate-180' : navItemsVisible && isMobile() }"
         />
@@ -45,10 +45,11 @@
     </div>
 
     <!-- fallback for crawlers / no JS -->
-    <noscript>
-      <a :href="to" class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100">{{ label }}</a>
-    </noscript>
-
+     <ClientOnly>
+      <noscript>
+        <a :href="to" class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100">{{ label }}</a>
+      </noscript>
+    </ClientOnly>
     <!-- Handling child sections -->
     <ul
       v-if="hasChildren && navItemsVisible"
@@ -65,7 +66,7 @@
             </span>
             <ul v-if="section.pages && section.pages.length" :class="{ 'mt-2 lg:mt-8': section.label && layout === 'header', 'gap-1.5 lg:gap-4' : layout === 'header', 'gap-2.5' : layout === 'footer'}" class="flex flex-col" >
               <li v-for="(page, pageIndex) in section.pages" :key="pageIndex" class="group">
-                <NuxtLink
+                <NuxtLinkLocale
                   v-if="!isExternal(page.to)"
                   :to="page.to"
                   class="nav-link font-normal"
@@ -73,8 +74,8 @@
                   :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
-                  <Icon v-if="layout === 'header'" name="fa6-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
-                </NuxtLink>
+                  <Icon v-if="layout === 'header'" name="fa7-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
+                </NuxtLinkLocale>
                 
                 <!-- Handle external links for children pages -->
                 <a
@@ -86,13 +87,15 @@
                   :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
-                  <Icon v-if="layout === 'header'" name="fa6-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
+                  <Icon v-if="layout === 'header'" name="fa7-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
                 </a>
                 
                 <!-- fallback for crawlers / no JS -->
-                <noscript>
-                  <a :href="page.to" class="nav-link font-normal" :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }">{{ page.label }}</a>
-                </noscript>
+                <ClientOnly>
+                  <noscript>
+                    <a :href="page.to" class="nav-link font-normal" :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }">{{ page.label }}</a>
+                  </noscript>
+                </ClientOnly>
               </li>
             </ul>
           </li>

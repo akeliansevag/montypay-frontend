@@ -8,6 +8,10 @@
             link="/contact-us"
         />
 
+        
+        <!-- <NuxtLinkLocale to="/">{{ $t(`Hello`) }}</NuxtLinkLocale>
+        <LanguageSwitcher /> -->
+
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
             <div class="container">
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
@@ -314,59 +318,81 @@
             <div class="container">
                 <h2 class="text-white">Customer Stories</h2>
                 <div class="mt-16">
-                    <Swiper
-                        @swiper="setThumbsSwiper"
-                        :modules="[SwiperThumbs]"
-                        :watchSlidesProgress="true"
-                        :slidesPerView="5"
-                        :spaceBetween="10"
-                        :freeMode="true"
-                        :loop="true"
-                        :centeredSlides="true"
-                        :centeredSlidesBounds="true"
-                        class="mySwiper w-full lg:w-3/4 py-10"
-                    >
-                        <SwiperSlide class="flex justify-center gap-20" v-for="testimonial in testimonials" :key="index">
-                            <NuxtPicture 
+                    <ClientOnly>
+                        <!-- THUMBS SWIPER -->
+                        <swiper-container
+                            class="thumbsSwiper w-full lg:w-3/4 py-10"
+                            space-between="10"
+                            free-mode="true"
+                            watch-slides-progress="true"
+                            centered-slides="true"
+                            centered-slides-bounds="true"
+                            :breakpoints="{
+                                320: { slidesPerView: 3 },
+                                1024: { slidesPerView: 5 }
+                            }"
+                        >
+                            <swiper-slide
+                                v-for="(testimonial, index) in testimonials"
+                                :key="index"
+                                class="flex justify-center gap-20"
+                            >
+                            <NuxtPicture
                                 priority
-                                format="webp" 
+                                format="webp"
                                 :src="`/images/${testimonial.icon}.png`"
                                 class="w-[110px] cursor-pointer"
-                                :imgAttrs="{class:'w-full'}" 
+                                :img-attrs="{ class: 'w-full' }"
                             />
-                        </SwiperSlide>
-                    </Swiper>
+                            </swiper-slide>
+                        </swiper-container>
+                    </ClientOnly>
 
-                    <Swiper
-                        :modules="[SwiperThumbs]"
-                        :thumbs="{ swiper: thumbsSwiper }"
-                        :loop="true"
-                        :spaceBetween="10"
-                        :navigation="{
-                             nextEl: '.swiper-button-next',
-                             prevEl: '.swiper-button-prev',
-                        }"
-                        class="mt-10 mySwiper2 w-full lg:w-4/5"
-                    >
-                        <SwiperSlide class="flex flex-col md:flex-row gap-20" v-for="testimonial in testimonials" :key="index">
-                            <div class="bg-white rounded-2xl pt-10 pb-20 px-4 sm:px-10 xl:px-20" >
-                                <div class="flex justify-center items-center w-full gap-6 mt-10 text-center">
-                                    <div class="flex flex-col gap-1">
-                                        <span class="text-3xl font-bold">{{ testimonial.name }}</span>
-                                        <span class="text-lg">{{ testimonial.position }}</span>
+                    <div class="h-full relative">
+                        <ClientOnly>
+                        <!-- MAIN SWIPER -->
+                            <swiper-container
+                                class="mainSwiper mt-10 w-full lg:w-4/5"
+                                thumbs-swiper=".thumbsSwiper"
+                                space-between="10"
+                                navigation-next-el=".swiper-button-next"
+                                navigation-prev-el=".swiper-button-prev"
+                            >
+                                <swiper-slide
+                                    v-for="(testimonial, index) in testimonials"
+                                    :key="index"
+                                    class="flex flex-col md:flex-row gap-20"
+                                >
+                                    <div class="bg-white rounded-2xl pt-10 pb-20 px-4 sm:px-10 xl:px-20">
+                                        <div class="flex justify-center items-center w-full gap-6 mt-10 text-center">
+                                            <div class="flex flex-col gap-1">
+                                                <span class="text-3xl font-bold">{{ testimonial.name }}</span>
+                                                <span class="text-lg">{{ testimonial.position }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center gap-2 mt-4">
+                                            <svg v-for="index in testimonial.stars" :key="index"width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B" />
+                                            </svg>
+                                        </div>
+                                        <p class="text-center text-xl mt-10 mx-auto">{{ testimonial.paragraph }}</p>
                                     </div>
-                                </div>
-                                <div class="flex justify-center gap-2 mt-4">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" v-for="index in testimonial.stars" :key="index">
-                                        <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B"/>
-                                    </svg>
-                                </div>
-                                <p class="text-center text-xl mt-10 mx-auto">{{ testimonial.paragraph }}</p>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                                </swiper-slide>
+                            </swiper-container>
+                        </ClientOnly>
+
+                        
+                        <div class="swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 rotate-180">
+                            <svg width="33" height="59" viewBox="0 0 33 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.80566 55.6069L29.2062 29.2064L2.80566 2.80593" stroke="white" stroke-width="5.61176" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next absolute top-1/2 -translate-y-1/2 right-0">
+                            <svg width="33" height="59" viewBox="0 0 33 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.80566 55.6069L29.2062 29.2064L2.80566 2.80593" stroke="white" stroke-width="5.61176" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -508,12 +534,31 @@
     .online
         box-shadow: 0px 4px 24px 0px #0000001A  
 
-    .swiper-slide-visible
-        scale: 0.6
+    /* Allow scaled slides to be visible */
+    .mySwiper
+        overflow: visible !important
 
+    .swiper-slide
+        transition: transform 0.3s ease
+        transform-origin: center center
+
+    /* Smaller non-active slides */
+    .swiper-slide-visible
+        transform: scale(0.6)
+
+    /* Larger active thumb */
     .swiper-slide-thumb-active
-        scale: 1.5
+        transform: scale(1.1)
+        z-index: 5 // make sure it appears on top
 
     .swiper-button-prev, .swiper-button-next
         color: #FFFFFF
+        transition: opacity 0.2s ease
+
+    .swiper-button-prev:hover, .swiper-button-next:hover
+        opacity: 0.6
+
+    .thumbsSwiper::part(container)
+        overflow: visible !important
+
 </style>

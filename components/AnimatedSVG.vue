@@ -46,7 +46,7 @@
 		document.querySelectorAll('.segment-item').forEach(item => {
 			item.addEventListener('mouseover', () => {
 				let count = item.getAttribute('count')
-				console.log(count)
+				// console.log(count)
 				document.querySelector('.segment').style.transform = 'rotate(' + count * 51.42 + 'deg) skew(38deg)'
 			});
 		});
