@@ -7,7 +7,6 @@
             image="homebanner"
             link="/contact-us"
         />
-
         
         <!-- <NuxtLinkLocale to="/">{{ $t(`Hello`) }}</NuxtLinkLocale>
         <LanguageSwitcher /> -->
