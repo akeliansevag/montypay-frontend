@@ -739,7 +739,7 @@
     const emit = defineEmits();
 
     const RECAPTCHA_SITE_KEY = '6Le6TscrAAAAAIzSW6d0-jC_oUhqcFGAkXRb87Mc';
-    const MP_API_URL = 'https://montypay-api-qa.montypaydev.com/core/api/v1/MPContactUs';
+    const MP_API_URL = 'https://mm-apis.montypay.com/core/api/v1/MPContactUs';
     const MP_API_HEADERS = {
         Tenant: '07a429ef-1c34-4170-b30a-174952f580ea',
         LanguageCode: 'en'
