@@ -1,2 +1,7 @@
 node_modules
 .nuxt
+.output
+.git
+*.log
+Dockerfile*
+README.md
