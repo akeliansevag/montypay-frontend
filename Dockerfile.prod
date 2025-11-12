@@ -1,28 +1,16 @@
-# ---- Build stage ----
-FROM node:22-alpine AS builder
-WORKDIR /app
+FROM node:22-alpine
 
-RUN apk add --no-cache libc6-compat python3 make g++
+WORKDIR /frontend
 
-COPY package.json package-lock.json* ./
-# Use ci if lock exists, otherwise install
-RUN if [ -f package-lock.json ]; then npm ci; else npm install --no-audit --no-fund; fi
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm install
 
 COPY . .
 
-ENV NODE_OPTIONS=--max-old-space-size=4096
-ENV NITRO_PRESET=node-server
-ENV NODE_ENV=production
-
 RUN npm run build
 
-# ---- Runtime stage ----
-FROM node:22-alpine AS runner
-WORKDIR /app
-RUN apk add --no-cache libc6-compat
-ENV NODE_ENV=production
-
-COPY --from=builder /app/.output ./.output
-
 EXPOSE 3000
-CMD ["node", ".output/server/index.mjs"]
+
+CMD [ "npm","run","start" ]
