@@ -741,7 +741,7 @@
     const RECAPTCHA_SITE_KEY = '6Le6TscrAAAAAIzSW6d0-jC_oUhqcFGAkXRb87Mc';
     const MP_API_URL = 'https://mm-apis.montypay.com/core/api/v1/MPContactUs';
     const MP_API_HEADERS = {
-        Tenant: '07a429ef-1c34-4170-b30a-174952f580ea',
+        Tenant: 'd2ed2d13-09ea-4311-923e-21fae0f7c063',
         LanguageCode: 'en'
     };
     useSeoMeta({ 
