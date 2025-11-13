@@ -4,35 +4,35 @@ export default defineNuxtConfig({
   css: [
     '~/assets/sass/global.sass',
   ],
-  // ssr: true,
-  // nitro: {
-  //   prerender: {
-  //     routes: [
-  //       '/', '/omnichannel', '/online-payments', '/smart-pos', '/soft-pos',
-  //       '/q-check', '/about-us', '/partners', '/news', '/blogs',
-  //       '/global-coverage', '/documentation', '/api-reference',
-  //       '/contact-us', '/faq', '/html-sitemap'
-  //     ]
-  //   }
-  // },
-  // routeRules: {
-  //   '/': { ssr: true },
-  //   '/omnichannel': { ssr: true },
-  //   '/online-payments': { ssr: true },
-  //   '/smart-pos': { ssr: true },
-  //   '/soft-pos': { ssr: true },
-  //   '/q-check': { ssr: true },
-  //   '/about-us': { ssr: true },
-  //   '/partners': { ssr: true },
-  //   '/news': { ssr: true },
-  //   '/blogs': { ssr: true },
-  //   '/global-coverage': { ssr: true },
-  //   '/documentation': { ssr: true },
-  //   '/api-reference': { ssr: true },
-  //   '/contact-us': { ssr: true },
-  //   '/faq': { ssr: true },
-  //   '/html-sitemap': { ssr: true }
-  // },
+  ssr: true,
+  nitro: {
+    prerender: {
+      routes: [
+        '/', '/omnichannel', '/online-payments', '/smart-pos', '/soft-pos',
+        '/q-check', '/about-us', '/partners', '/news', '/blogs',
+        '/global-coverage', '/documentation', '/api-reference',
+        '/contact-us', '/faq', '/html-sitemap'
+      ]
+    }
+  },
+  routeRules: {
+    '/': { ssr: true },
+    '/omnichannel': { ssr: true },
+    '/online-payments': { ssr: true },
+    '/smart-pos': { ssr: true },
+    '/soft-pos': { ssr: true },
+    '/q-check': { ssr: true },
+    '/about-us': { ssr: true },
+    '/partners': { ssr: true },
+    '/news': { ssr: true },
+    '/blogs': { ssr: true },
+    '/global-coverage': { ssr: true },
+    '/documentation': { ssr: true },
+    '/api-reference': { ssr: true },
+    '/contact-us': { ssr: true },
+    '/faq': { ssr: true },
+    '/html-sitemap': { ssr: true }
+  },
   app: {
     head: {
       charset: 'utf-8',

@@ -8,7 +8,7 @@
             link="/contact-us"
         />
         
-        <!-- <NuxtLinkLocale to="/">{{ $t(`Hello`) }}</NuxtLinkLocale>
+        <!-- <NuxtLink to="/">{{ $t(`Hello`) }}</NuxtLink>
         <LanguageSwitcher /> -->
 
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
