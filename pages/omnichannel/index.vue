@@ -244,10 +244,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Omnichannel',
-    ogTitle: 'Omnichannel',
-    description: 'Omnichannel ',
-    ogDescription: 'Omnichannel',
+    title: 'Omnichannel Payments | Unified Commerce Experience',
+    ogTitle: 'Omnichannel Payments | Unified Commerce Experience',
+    description: 'Connect online, in-store, and mobile payments into one seamless journey. MontyPay\'s Omnichannel solution enhances customer experience.',
+    ogDescription: 'Connect online, in-store, and mobile payments into one seamless journey. MontyPay\'s Omnichannel solution enhances customer experience.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

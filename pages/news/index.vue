@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Hero breadcrumbs="Solutions / Payment Services" title="News"
+        <Hero breadcrumbs="Solutions / Payment Services" title="Latest News & Announcements"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants" button="Get Started"
             image="omnichannel" hero="11"/>
     </div>
@@ -9,10 +9,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Latest news and partnerships',
-    ogTitle: 'Latest news and partnerships',
-    description: 'Discover MontyPay\'s latest news and partnerships that is playing a huge role in delivering innovative payment solutions and customer satisfaction.',
-    ogDescription: 'Discover MontyPay\'s latest news and partnerships that is playing a huge role in delivering innovative payment solutions and customer satisfaction.',
+    title: 'MontyPay News | Latest Updates & Partnerships',
+    ogTitle: 'MontyPay News | Latest Updates & Partnerships',
+    description: 'Stay updated with MontyPay’s latest news, product releases, partnerships, and milestones shaping the future of digital payments.',
+    ogDescription: 'Stay updated with MontyPay’s latest news, product releases, partnerships, and milestones shaping the future of digital payments.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

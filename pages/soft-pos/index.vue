@@ -244,10 +244,10 @@ into your business and start accepting payments effortlessly!
         activeFilter.value = filter;
     }
     useSeoMeta({
-        title: 'Soft POS: Simple & Quick In-Person Payments',
-        ogTitle: 'Soft POS: Simple & Quick In-Person Payments',
-        description: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
-        ogDescription: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
+        title: 'Soft POS Solutions | Tap-to-Phone Payments',
+        ogTitle: 'Soft POS Solutions | Tap-to-Phone Payments',
+        description: 'Enable secure tap-to-phone payments with MontyPay’s Soft POS. Accept contactless cards and wallets using any NFC-enabled smartphone.',
+        ogDescription: 'Enable secure tap-to-phone payments with MontyPay’s Soft POS. Accept contactless cards and wallets using any NFC-enabled smartphone.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

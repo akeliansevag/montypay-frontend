@@ -224,10 +224,10 @@ in-store transactions and online sales, creating a complete view of your busines
         activeFilter.value = filter;
     }
     useSeoMeta({
-        title: 'Smart POS Solutions for In-store Payments',
-        ogTitle: 'Smart POS Solutions for In-store Payments',
-        description: 'Discover MontyPay\'s Smart POS solutions designed to unify in-store transactions and online sales, boosting your business performance all from a single, reliable system.',
-        ogDescription: 'Discover MontyPay\'s Smart POS solutions designed to unify in-store transactions and online sales, boosting your business performance all from a single, reliable system.',
+        title: 'Smart POS Devices | Advanced In-Store Payment Terminals',
+        ogTitle: 'Smart POS Devices | Advanced In-Store Payment Terminals',
+        description: 'MontyPay’s Smart POS terminals offer fast, secure, and feature-rich in-store payments for retailers, restaurants, and service providers.',
+        ogDescription: 'MontyPay’s Smart POS terminals offer fast, secure, and feature-rich in-store payments for retailers, restaurants, and service providers.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

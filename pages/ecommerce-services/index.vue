@@ -80,10 +80,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'eCommerce Services',
-    ogTitle: 'eCommerce Services',
-    description: 'eCommerce Services ',
-    ogDescription: 'eCommerce Services',
+    title: 'E-Commerce Payment Services for Online Businesses',
+    ogTitle: 'E-Commerce Payment Services for Online Businesses',
+    description: 'Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.',
+    ogDescription: 'Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

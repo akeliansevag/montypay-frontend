@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Hero 
-            title="Partners"
+            title="MontyPay Partnership Programs"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="partners"
             hero="14"
@@ -272,10 +272,10 @@
 
 <script setup>
     useSeoMeta({ 
-        title: 'Partnership and Co-Partnership Models',
-        ogTitle: 'Partnership and Co-Partnership Models',
-        description: 'Discover the partnerships MontyPay have with Acquirers, PSPs, Wallets, and other payment providers to seamlessly integrate their payment connections globally.',
-        ogDescription: 'Discover the partnerships MontyPay have with Acquirers, PSPs, Wallets, and other payment providers to seamlessly integrate their payment connections globally.',
+        title: 'Partner Programs | Co-Branding & Payment Partnerships',
+        ogTitle: 'Partner Programs | Co-Branding & Payment Partnerships',
+        description: 'Explore MontyPay’s partnership models designed for banks, PSPs, ISOs, and businesses looking to expand global payment capabilities.',
+        ogDescription: 'Explore MontyPay’s partnership models designed for banks, PSPs, ISOs, and businesses looking to expand global payment capabilities.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

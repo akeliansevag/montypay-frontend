@@ -8,7 +8,7 @@
             link="/contact-us"
         />
         
-        <!-- <NuxtLinkLocale to="/">{{ $t(`Hello`) }}</NuxtLinkLocale>
+        <!-- <NuxtLinkLocale to="/">{{ t(`Hello`) }}</NuxtLinkLocale>
         <LanguageSwitcher /> -->
 
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
@@ -399,11 +399,13 @@
 </template>
 
 <script setup>
+    const { t } = useI18n()
+
     useSeoMeta({
-        title: 'All in One Payments Platform',
-        ogTitle: 'All in One Payments Platform',
-        description: 'Discover the future of payments with MontyPay, a secure and user-friendly platform designed to provide valuable insights for optimal performance.',
-        ogDescription: 'Discover the future of payments with MontyPay, a secure and user-friendly platform designed to provide valuable insights for optimal performance.',
+        title: 'All-in-One Payment Platform | Global Payment Solutions',
+        ogTitle: 'All-in-One Payment Platform | Global Payment Solutions',
+        description: 'MontyPay provides secure, scalable solutions for online payments, in-store payments, and multi-channel commerce with global coverage.',
+        ogDescription: 'MontyPay provides secure, scalable solutions for online payments, in-store payments, and multi-channel commerce with global coverage.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

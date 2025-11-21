@@ -235,10 +235,10 @@
 <script setup>
 
     useSeoMeta({
-        title: 'Online Payments',
-        ogTitle: 'Online Payments',
-        description: 'Online Payments ',
-        ogDescription: 'Online Payments',
+        title: 'Online Payment Solutions | Global Payment Processing',
+        ogTitle: 'Online Payment Solutions | Global Payment Processing',
+        description: 'Accept online payments with MontyPay’s secure gateway. Support cards, wallets, and local payment methods across global markets.',
+        ogDescription: 'Accept online payments with MontyPay’s secure gateway. Support cards, wallets, and local payment methods across global markets.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

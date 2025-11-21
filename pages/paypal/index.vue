@@ -20,10 +20,10 @@
 import { useAuth } from '~/composables/useAuth'
 
 useSeoMeta({
-    title: 'Seamless Checkout with PayPal',
-    ogTitle: 'Seamless Checkout with PayPal',
-    description: 'Connect to Paypal and enjoy seamless checkouts with MontyPay that is committed to help maximize your revenue and provide top-notch payment experiences.',
-    ogDescription: 'Connect to Paypal and enjoy seamless checkouts with MontyPay that is committed to help maximize your revenue and provide top-notch payment experiences.',
+    title: 'PayPal Integration | Seamless Online Checkout',
+    ogTitle: 'PayPal Integration | Seamless Online Checkout',
+    description: 'Boost conversions with MontyPay’s PayPal integration. Offer customers a fast, secure, and convenient checkout experience across your online store.',
+    ogDescription: 'Boost conversions with MontyPay’s PayPal integration. Offer customers a fast, secure, and convenient checkout experience across your online store.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

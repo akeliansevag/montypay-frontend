@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Hero 
-            title="White Label For PSP/Acquirer"
+            title="White Label Solutions for PSPs & Acquirers"
             paragraph="Become a Payment Service Provider (PSP) in as little as 3 weeks"
             image="white-label-for-psp-acquirer"
             hero="12"
@@ -537,10 +537,10 @@ import { register } from 'swiper/element/bundle';
 register();
 
 useSeoMeta({
-    title: 'White Label For PSP/Acquirer',
-    ogTitle: 'White Label For PSP/Acquirer',
-    description: 'Become a payment service provider with MontyPay’s White-Label PSP Acquirer. Fully customizable, secure, and designed to scale your business.',
-    ogDescription: 'Become a payment service provider with MontyPay’s White-Label PSP Acquirer. Fully customizable, secure, and designed to scale your business.',
+    title: 'White-Label Payment Solutions for PSPs & Acquirers',
+    ogTitle: 'White-Label Payment Solutions for PSPs & Acquirers',
+    description: 'Launch your own branded payment solution with MontyPay’s white-label platform for PSPs and acquirers - complete with global coverage and full customization.',
+    ogDescription: 'Launch your own branded payment solution with MontyPay’s white-label platform for PSPs and acquirers - complete with global coverage and full customization.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

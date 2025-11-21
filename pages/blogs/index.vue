@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Hero breadcrumbs="Solutions / Payment Services" title="Blogs"
+        <Hero breadcrumbs="Solutions / Payment Services" title="MontyPay Blog"
             paragraph="" button="Get Started"
             image="omnichannel" hero="33"/>
     </div>
@@ -9,10 +9,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Blogs - Latest News & Trends | MontyPay',
-    ogTitle: 'Blogs - Latest News & Trends | MontyPay',
-    description: 'Stay ahead in fintech with MontyPay! Explore expert insights, industry trends, and the latest updates on digital payments, security, and financial innovation.',
-    ogDescription: 'Stay ahead in fintech with MontyPay! Explore expert insights, industry trends, and the latest updates on digital payments, security, and financial innovation.',
+    title: 'MontyPay Blog | Payment Trends, Insights & Updates',
+    ogTitle: 'MontyPay Blog | Payment Trends, Insights & Updates',
+    description: 'Explore expert insights, fintech trends, and product updates on the MontyPay Blog. Stay informed about the digital payments industry.',
+    ogDescription: 'Explore expert insights, fintech trends, and product updates on the MontyPay Blog. Stay informed about the digital payments industry.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

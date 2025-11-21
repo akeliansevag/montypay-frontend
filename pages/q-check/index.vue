@@ -80,10 +80,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'QCheck',
-    ogTitle: 'QCheck',
-    description: 'QCheck ',
-    ogDescription: 'QCheck ',
+    title: 'QCheck Verification | Secure Customer Screening',
+    ogTitle: 'QCheck Verification | Secure Customer Screening',
+    description: 'QCheck helps businesses verify customer identities quickly and securely. Enhance trust and protect your payment operations with MontyPay.',
+    ogDescription: 'QCheck helps businesses verify customer identities quickly and securely. Enhance trust and protect your payment operations with MontyPay.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

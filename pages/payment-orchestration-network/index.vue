@@ -101,10 +101,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Payment Orchestration Network',
-        ogTitle: 'Payment Orchestration Network',
-        description: 'Payment Orchestration Network ',
-        ogDescription: 'Payment Orchestration Network',
+        title: 'Payment Orchestration Network for Global Businesses',
+        ogTitle: 'Payment Orchestration Network for Global Businesses',
+        description: 'Streamline your payments with MontyPay’s orchestration network—unify gateways, reduce failures, optimize routing, and scale globally with one platform.',
+        ogDescription: 'Streamline your payments with MontyPay’s orchestration network—unify gateways, reduce failures, optimize routing, and scale globally with one platform.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })
