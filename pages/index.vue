@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <HeroBanner class="text-primary"
-            title="Beyond Payments"
+            title="All-in-One Payment Platform"
             paragraph="Gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success. Discover the future of payments with MontyPay."
             button="Contact Us" 
             image="homebanner"

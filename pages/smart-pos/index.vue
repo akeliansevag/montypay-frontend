@@ -3,17 +3,11 @@
         <div class="container">
             <div class="flex items-center max-lg:flex-col gap-10 justify-between">
                 <div class="lg:w-2/5 flex flex-col gap-5">
-                    <h1 class="text-balance">
-                        Benefits of Smart POS to Businesses
-                    </h1>
-                    <p>
-                        MontyPay’s Smart POS devices combine advanced technology with seamless functionality, making it easy to accept both card and wallet payments. Equipped with a real-time dashboard and robust reporting tools, our POS solutions unify 
-in-store transactions and online sales, creating a complete view of your business performance—all from a single, reliable system. 
-                    </p>
+                    <h1 class="text-balance">Smart POS Solutions</h1>
+                    <p>MontyPay’s Smart POS devices combine advanced technology with seamless functionality, making it easy to accept both card and wallet payments. Equipped with a real-time dashboard and robust reporting tools, our POS solutions unify in-store transactions and online sales, creating a complete view of your business performance—all from a single, reliable system.</p>
                     <div class="mt-3">
                         <ArrowButton text="Contact Sales" link="/contact-us" />
                     </div>
-                  
                 </div>
                 
                 <div class="lg:w-2/5">
