@@ -468,7 +468,7 @@
                                     <option value="">Select Product</option>
                                     <option value="fd4f2661-1f5e-ef11-bfe2-000d3aab2548">MontyPay Point of Sale</option>
                                     <option value="13ca892e-79da-ec11-bb3d-000d3a22e2cf">MontyPay Payment Gateway</option>
-                                    <option value="Website Development">Website Development</option>
+                                    <option value="445c00f9-8e97-f011-b4cb-6045bd888ebe">Website Development</option>
                                     
                                 </select>
                                 <div v-if="errors.product" class="text-red-500 text-xs">{{ errors.product }}</div>
@@ -738,6 +738,12 @@
 <script setup>
     const emit = defineEmits();
 
+    const RECAPTCHA_SITE_KEY = '6Le6TscrAAAAAIzSW6d0-jC_oUhqcFGAkXRb87Mc';
+    const MP_API_URL = 'https://mm-apis.montypay.com/core/api/v1/MPContactUs';
+    const MP_API_HEADERS = {
+        Tenant: 'd2ed2d13-09ea-4311-923e-21fae0f7c063',
+        LanguageCode: 'en'
+    };
     useSeoMeta({ 
         title: 'Contact MontyPay | Sales & Support Assistance',
         ogTitle: 'Contact MontyPay | Sales & Support Assistance',
@@ -760,7 +766,9 @@
                     gtag('js', new Date());
                     gtag('config', 'AW-17262217251');
                 `
-            }
+            },
+            // reCAPTCHA v3
+            { src: `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`, async: true, defer: true }
         ]
     })
     
@@ -856,6 +864,27 @@
     const productSelect = ref(null)
     const industrySelect = ref(null)
 
+    // very small validator (feel free to swap with your existing one)
+    
+    async function getRecaptchaToken() {
+        // waits until the script is ready
+        await new Promise((resolve) => {
+            if (window.grecaptcha && window.grecaptcha.ready) return resolve();
+            const check = setInterval(() => {
+            if (window.grecaptcha && window.grecaptcha.ready) {
+                clearInterval(check);
+                resolve();
+            }
+            }, 50);
+        });
+        return new Promise((resolve, reject) => {
+            window.grecaptcha.ready(() => {
+            window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'contact' })
+                .then(resolve)
+                .catch(reject);
+            });
+        });
+    }
     const handleSubmit = async () => {
   if (validateForm(form, errors, validationRules)) {
     try {
@@ -894,6 +923,39 @@
 
       const wpData = await wpResponse.json();
       // WordPress submission successful
+
+
+      // 2) Get reCAPTCHA token and submit to MontyPay API with IDs
+      const recaptchaToken = await getRecaptchaToken();
+      const apiPayload = {
+        CampaignId: '',
+        FirstName: form.value.first_name,
+        LastName: form.value.last_name,
+        WorkEmail: form.value.email,
+        PhoneNumber: form.value.mobile,
+        Country: form.value.country,     // ID value
+        CompanyName: form.value.company,
+        CompanySize: form.value.size,
+        Industry: form.value.industry,   // ID value
+        Website: form.value.link,
+        Message: form.value.message,
+        Product: form.value.product      // ID (or string for "Website Development")
+     };
+
+     const apiRes = await fetch(MP_API_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            ...MP_API_HEADERS,
+            RecaptchaToken: recaptchaToken
+        },
+        body: JSON.stringify(apiPayload)
+        });
+
+        if (!apiRes.ok) {
+            const msg = await safeText(apiRes);
+            throw new Error(`MontyPay API error: ${apiRes.status} ${msg}`);
+    }
 
       submissionMessage.value = "Thank you for your message.";
       submitting.value = false;

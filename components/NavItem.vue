@@ -7,7 +7,7 @@
     }">
     
     <!-- Render NuxtLink for internal links -->
-    <NuxtLinkLocale
+    <NuxtLink
       v-if="!isExternal(to) && !hasChildren"
       :to="to"
       exact-active-class="active"
@@ -16,7 +16,7 @@
     >
       <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
-    </NuxtLinkLocale>
+    </NuxtLink>
 
     <!-- Render <a> tag for external links (like PDFs) -->
     <a
@@ -66,7 +66,7 @@
             </span>
             <ul v-if="section.pages && section.pages.length" :class="{ 'mt-2 lg:mt-8': section.label && layout === 'header', 'gap-1.5 lg:gap-4' : layout === 'header', 'gap-2.5' : layout === 'footer'}" class="flex flex-col" >
               <li v-for="(page, pageIndex) in section.pages" :key="pageIndex" class="group">
-                <NuxtLinkLocale
+                <NuxtLink
                   v-if="!isExternal(page.to)"
                   :to="page.to"
                   class="nav-link font-normal"
@@ -75,7 +75,7 @@
                 >
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
                   <Icon v-if="layout === 'header'" name="fa7-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
-                </NuxtLinkLocale>
+                </NuxtLink>
                 
                 <!-- Handle external links for children pages -->
                 <a
