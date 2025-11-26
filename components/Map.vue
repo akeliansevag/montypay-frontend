@@ -55,7 +55,7 @@
         },
         {
             icon: 'JO',
-            location: 'Amaan, Jordan',
+            location: 'Amman, Jordan',
             address: 'Office 501, Campbell Grey Living, <br /> Land Number 851, Al-Waibdeh <br /> - Al- Wastani Basin',
             top: '41.5',
             left: '58.3',
