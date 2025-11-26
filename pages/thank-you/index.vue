@@ -9,7 +9,14 @@
 </template>
 
 <script setup>
-
+useSeoMeta({
+    title: 'Thank You',
+    ogTitle: 'Thank You',
+    description: 'Thank You',
+    ogDescription: 'Thank You',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 </script>
 
 <style lang="scss" scoped>
