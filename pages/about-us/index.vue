@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Hero 
-            title="About us"
+            title="About MontyPay"
             paragraph="With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
             image="about-us"
             hero="111"
@@ -127,10 +127,10 @@ import { register } from 'swiper/element/bundle';
 register();
 
 useSeoMeta({
-    title: 'About MontyPay | A Global Payment Service Provider',
-    ogTitle: 'About MontyPay | A Global Payment Service Provider',
-    description: 'Discover MontyPay’s mission to simplify global payments with secure, innovative solutions. Learn more about our vision, values, and commitment to excellence.',
-    ogDescription: 'Discover MontyPay’s mission to simplify global payments with secure, innovative solutions. Learn more about our vision, values, and commitment to excellence.',
+    title: 'About MontyPay | Global Payment Technology Provider',
+    ogTitle: 'About MontyPay | Global Payment Technology Provider',
+    description: 'Learn about MontyPay’s mission, global presence, and innovative payment solutions that empower merchants with secure and scalable technology.',
+    ogDescription: 'Learn about MontyPay’s mission, global presence, and innovative payment solutions that empower merchants with secure and scalable technology.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 });

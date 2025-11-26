@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Hero 
-            title="Contact Us"
+            title="Contact MontyPay"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="contact-us"
             hero="55"
@@ -745,10 +745,10 @@
         LanguageCode: 'en'
     };
     useSeoMeta({ 
-        title: 'Contact Us if you have any questions',
-        ogTitle: 'Contact Us if you have any questions',
-        description: 'Contact us in case you have any questions about Monty Pay and its services, Fill out the form and we will make sure to get back to you as soon as possible.',
-        ogDescription: 'Contact us in case you have any questions about Monty Pay and its services, Fill out the form and we will make sure to get back to you as soon as possible.',
+        title: 'Contact MontyPay | Sales & Support Assistance',
+        ogTitle: 'Contact MontyPay | Sales & Support Assistance',
+        description: 'Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.',
+        ogDescription: 'Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

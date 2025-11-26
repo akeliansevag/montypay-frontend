@@ -1,14 +1,16 @@
 <template lang="">
     <div>
         <HeroBanner class="text-primary"
-            title="Beyond Payments"
+            title="All-in-One Payment Platform"
             paragraph="Gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success. Discover the future of payments with MontyPay."
             button="Contact Us" 
             image="homebanner"
             link="/contact-us"
         />
         
-        <!-- <NuxtLink to="/">{{ $t(`Hello`) }}</NuxtLink>
+
+        <!-- <NuxtLinkLocale to="/">{{ t(`Hello`) }}</NuxtLinkLocale>
+        <NuxtLink to="/">{{ $t(`Hello`) }}</NuxtLink>
         <LanguageSwitcher /> -->
 
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
@@ -399,11 +401,13 @@
 </template>
 
 <script setup>
+    const { t } = useI18n()
+
     useSeoMeta({
-        title: 'All in One Payments Platform',
-        ogTitle: 'All in One Payments Platform',
-        description: 'Discover the future of payments with MontyPay, a secure and user-friendly platform designed to provide valuable insights for optimal performance.',
-        ogDescription: 'Discover the future of payments with MontyPay, a secure and user-friendly platform designed to provide valuable insights for optimal performance.',
+        title: 'All-in-One Payment Platform | Global Payment Solutions',
+        ogTitle: 'All-in-One Payment Platform | Global Payment Solutions',
+        description: 'MontyPay provides secure, scalable solutions for online payments, in-store payments, and multi-channel commerce with global coverage.',
+        ogDescription: 'MontyPay provides secure, scalable solutions for online payments, in-store payments, and multi-channel commerce with global coverage.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

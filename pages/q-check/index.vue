@@ -6,7 +6,7 @@
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[50%] flex flex-col gap-6 lg:gap-12">
-                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">QCheck: The Self-Service Checkout Solution That Works for You</h1>
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">QCheck Customer Verification</h1>
                     <p class="text-xl">Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout tool. Whether guests are scanning to browse your menu or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.</p>
                     <!-- <div class="relative">
                         <input required type="text" placeholder="" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
@@ -80,10 +80,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'QCheck',
-    ogTitle: 'QCheck',
-    description: 'QCheck ',
-    ogDescription: 'QCheck ',
+    title: 'QCheck Verification | Secure Customer Screening',
+    ogTitle: 'QCheck Verification | Secure Customer Screening',
+    description: 'QCheck helps businesses verify customer identities quickly and securely. Enhance trust and protect your payment operations with MontyPay.',
+    ogDescription: 'QCheck helps businesses verify customer identities quickly and securely. Enhance trust and protect your payment operations with MontyPay.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

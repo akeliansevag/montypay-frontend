@@ -10,7 +10,13 @@
 </template>
 
 
-<script setup lang="ts">
+<script setup>
+    useHead({
+        meta: [
+            { name: "robots", content: "noindex, nofollow" }
+        ]
+    })
+
     const links = [
         { label: 'Home', href: '/' },
         { label: 'Omnichannel', href: '/omnichannel' },

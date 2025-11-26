@@ -1,6 +1,6 @@
 <template lang="">
      <Hero 
-            title="Documentation"
+            title="Developer Documentation"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="documentation"
             hero="66"
@@ -51,10 +51,10 @@
 </template>
 <script setup>
 useSeoMeta({
-    title: 'Mobile SDK for Easy Integration',
-    ogTitle: 'Mobile SDK for Easy Integration',
-    description: 'Simplify payment integration with MontyPay\'s mobile SDK. Access detailed documentation to enhance your app\'s payment experience today!',
-    ogDescription: 'Simplify payment integration with MontyPay\'s mobile SDK. Access detailed documentation to enhance your app\'s payment experience today!',
+    title: 'Developer Documentation | SDKs & API Integration',
+    ogTitle: 'Developer Documentation | SDKs & API Integration',
+    description: 'Explore MontyPay’s developer documentation for SDKs, APIs, and integration guides designed to help businesses launch payments quickly and securely.',
+    ogDescription: 'Explore MontyPay’s developer documentation for SDKs, APIs, and integration guides designed to help businesses launch payments quickly and securely.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

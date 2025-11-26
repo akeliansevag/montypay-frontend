@@ -1,7 +1,7 @@
 <template>
     <div>
         <Hero 
-            title="FAQ"
+            title="Frequently Asked Questions"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants" button="Get Started"
             image="faq" 
             hero="88"
@@ -44,10 +44,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Frequently Asked Questions',
-        ogTitle: 'Frequently Asked Questions',
-        description: 'Discover all the frequently asked questions asked about people about Monty Pay regarding different topics. Visit our website to learn more. ',
-        ogDescription: 'Discover all the frequently asked questions asked about people about Monty Pay regarding different topics. Visit our website to learn more. ',
+        title: 'MontyPay FAQ | Answers to Common Payment Questions',
+        ogTitle: 'MontyPay FAQ | Answers to Common Payment Questions',
+        description: 'Find clear answers to the most frequently asked questions about MontyPay’s payment solutions, integrations, features, pricing, and merchant support.',
+        ogDescription: 'Find clear answers to the most frequently asked questions about MontyPay’s payment solutions, integrations, features, pricing, and merchant support.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     });

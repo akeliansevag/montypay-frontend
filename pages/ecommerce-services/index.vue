@@ -6,7 +6,7 @@
         <div class="ml-container-align with-padding">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
-                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Build Your Website <br /> And Start <span class="text-[#233F94]">Selling Online</span> <br />in Less Than 30 Days</h1>
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">E-Commerce Payment Services</h1>
                     <p class="text-xl">Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.</p>
                     <div>
                         <NuxtLink to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">Launch Your eCommerce Website Today!</NuxtLink>  
@@ -80,10 +80,10 @@
 
 <script setup>
 useSeoMeta({
-    title: 'eCommerce Services',
-    ogTitle: 'eCommerce Services',
-    description: 'eCommerce Services ',
-    ogDescription: 'eCommerce Services',
+    title: 'E-Commerce Payment Services for Online Businesses',
+    ogTitle: 'E-Commerce Payment Services for Online Businesses',
+    description: 'Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.',
+    ogDescription: 'Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })

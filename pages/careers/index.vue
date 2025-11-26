@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Hero 
-            title="Careers"
+            title="MontyPay Careers"
             paragraph="At MontyPay, your career path is limited only by your ambition, and we are here to support you every step of the way."
             image="careers"
             hero="44"
@@ -98,10 +98,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'Careers - Submit your CV',
-        ogTitle: 'Careers - Submit your CV',
-        description: 'Explore career opportunities at MontyPay and join our dynamic and multicultural team that is here to support you every step of the way. Send your CV today!',
-        ogDescription: 'Explore career opportunities at MontyPay and join our dynamic and multicultural team that is here to support you every step of the way. Send your CV today!',
+        title: 'Careers at MontyPay | Join Our Global Fintech Team',
+        ogTitle: 'Careers at MontyPay | Join Our Global Fintech Team',
+        description: 'Explore career opportunities at MontyPay and join a fast-growing global fintech company shaping the future of payments. Apply now and grow with us.',
+        ogDescription: 'Explore career opportunities at MontyPay and join a fast-growing global fintech company shaping the future of payments. Apply now and grow with us.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

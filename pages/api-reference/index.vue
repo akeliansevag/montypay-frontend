@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Hero 
-            title="API References"
+            title="API Reference"
             paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
             image="api-reference"
             hero="22"
@@ -33,10 +33,10 @@
 <script setup>
 
 useSeoMeta({
-    title: 'API Reference',
-    ogTitle: 'API Reference',
-    description: 'API Reference',
-    ogDescription: 'API Reference',
+    title: 'API Reference | Developer Integration Guide',
+    ogTitle: 'API Reference | Developer Integration Guide',
+    description: 'Explore MontyPay’s API reference for developers—featuring integration guides, endpoints, authentication methods, and payment flow documentation.',
+    ogDescription: 'Explore MontyPay’s API reference for developers—featuring integration guides, endpoints, authentication methods, and payment flow documentation.',
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 });

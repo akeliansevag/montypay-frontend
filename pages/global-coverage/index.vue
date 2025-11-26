@@ -108,10 +108,10 @@
     import { useAuth } from '~/composables/useAuth'
 
     useSeoMeta({
-        title: 'Expand your Business',
-        ogTitle: 'Expand your Business',
-        description: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
-        ogDescription: 'Expand your business horizons worldwide confidently with our global coverage and serve customers in diverse markets without any barriers.',
+        title: 'Global Payment Coverage for Merchants Worldwide',
+        ogTitle: 'Global Payment Coverage for Merchants Worldwide',
+        description: 'Explore MontyPay’s global payment coverage, enabling businesses to expand internationally with localized payment methods and worldwide acquiring connections.',
+        ogDescription: 'Explore MontyPay’s global payment coverage, enabling businesses to expand internationally with localized payment methods and worldwide acquiring connections.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

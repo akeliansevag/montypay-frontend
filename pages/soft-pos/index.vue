@@ -3,17 +3,11 @@
         <div class="container">
             <div class="flex max-lg:flex-col gap-10 justify-between items-center">
                 <div class="lg:w-2/5 flex flex-col gap-5">
-                    <h1 class="text-balance">
-                        Soft POS: Effortless Payment Transactions 
-                    </h1>
-                    <p>
-                        With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless 
-in-person payments from digital wallets or physical cards, and making transactions quick and easy.
-                    </p>
+                    <h1 class="text-balance">Soft POS Payment Solution</h1>
+                    <p>With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless in-person payments from digital wallets or physical cards, and making transactions quick and easy.</p>
                     <div class="mt-3">
                         <ArrowButton text="Contact Sales" link="/contact-us" />
                     </div>
-                  
                 </div>
                 
                 <div class="lg:w-2/5">
@@ -244,10 +238,10 @@ into your business and start accepting payments effortlessly!
         activeFilter.value = filter;
     }
     useSeoMeta({
-        title: 'Soft POS: Simple & Quick In-Person Payments',
-        ogTitle: 'Soft POS: Simple & Quick In-Person Payments',
-        description: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
-        ogDescription: 'Discover the benefits of MontyPay\'s Soft POS. Accept In-Store payments with an Iphone or Android device and transform your business in a simple tap.',
+        title: 'Soft POS Solutions | Tap-to-Phone Payments',
+        ogTitle: 'Soft POS Solutions | Tap-to-Phone Payments',
+        description: 'Enable secure tap-to-phone payments with MontyPay’s Soft POS. Accept contactless cards and wallets using any NFC-enabled smartphone.',
+        ogDescription: 'Enable secure tap-to-phone payments with MontyPay’s Soft POS. Accept contactless cards and wallets using any NFC-enabled smartphone.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

@@ -5,7 +5,7 @@
         <div class="ml-container-align">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
-                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Accept Payments <br />Anywhere</h1>
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Online Payment Solutions</h1>
                     <p class="text-xl">Get paid easily, whether online or in person, and reach customers worldwide. MontyPay makes payments smooth, secure, and hassle-free, so you can focus on growing your business, big or small.</p>
                     <div class="">
                         <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a Demo</NuxtLink>
@@ -235,10 +235,10 @@
 <script setup>
 
     useSeoMeta({
-        title: 'Online Payments',
-        ogTitle: 'Online Payments',
-        description: 'Online Payments ',
-        ogDescription: 'Online Payments',
+        title: 'Online Payment Solutions | Global Payment Processing',
+        ogTitle: 'Online Payment Solutions | Global Payment Processing',
+        description: 'Accept online payments with MontyPay’s secure gateway. Support cards, wallets, and local payment methods across global markets.',
+        ogDescription: 'Accept online payments with MontyPay’s secure gateway. Support cards, wallets, and local payment methods across global markets.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })

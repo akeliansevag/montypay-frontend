@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Hero 
-            title="In-Store Payment"
+            title="In-Store Payment Solutions"
             paragraph="MontyPay is proud to unveil our cutting-edge in-store payment solutions, revolutionizing the way you shop and pay. With MontyPay, making payments in-store has never been easier or more secure."
             image="in-store-payment"
             hero="10"
@@ -133,10 +133,10 @@
 
 <script setup>
     useSeoMeta({
-        title: 'In-Store Payment Solutions',
-        ogTitle: 'In-Store Payment Solutions',
-        description: 'Offer a smooth checkout experience with MontyPay’s in-store payment solutions. Empower your business with efficient, secure transactions today!',
-        ogDescription: 'Offer a smooth checkout experience with MontyPay’s in-store payment solutions. Empower your business with efficient, secure transactions today!',
+        title: 'In-Store Payment Solutions | POS Terminals & Retail Payments',
+        ogTitle: 'In-Store Payment Solutions | POS Terminals & Retail Payments',
+        description: 'Accept secure in-store payments with MontyPay’s POS terminals, supporting cards, wallets, QR, and contactless transactions.',
+        ogDescription: 'Accept secure in-store payments with MontyPay’s POS terminals, supporting cards, wallets, QR, and contactless transactions.',
         ogImage: 'https://example.com/image.png',
         twitterCard: 'summary_large_image',
     })
