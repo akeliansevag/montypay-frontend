@@ -322,7 +322,7 @@
                     <ClientOnly>
                         <!-- THUMBS SWIPER -->
                         <swiper-container
-                            class="thumbsSwiper w-full lg:w-3/4 py-10"
+                            class="thumbsSwiper w-full lg:w-3/4 py-10 overflow-hidden"
                             space-between="10"
                             free-mode="true"
                             watch-slides-progress="true"
@@ -338,13 +338,13 @@
                                 :key="index"
                                 class="flex justify-center gap-20"
                             >
-                            <NuxtPicture
-                                priority
-                                format="webp"
-                                :src="`/images/${testimonial.icon}.png`"
-                                class="w-[110px] cursor-pointer"
-                                :img-attrs="{ class: 'w-full' }"
-                            />
+                                <NuxtPicture
+                                    priority
+                                    format="webp"
+                                    :src="`/images/${testimonial.icon}.png`"
+                                    class="w-[110px] cursor-pointer"
+                                    :img-attrs="{ class: 'w-full' }"
+                                />
                             </swiper-slide>
                         </swiper-container>
                     </ClientOnly>
@@ -364,7 +364,7 @@
                                     :key="index"
                                     class="flex flex-col md:flex-row gap-20"
                                 >
-                                    <div class="bg-white rounded-2xl pt-10 pb-20 px-4 sm:px-10 xl:px-20">
+                                    <div class="w-full bg-white rounded-2xl pt-10 pb-20 px-4 sm:px-10 xl:px-20">
                                         <div class="flex justify-center items-center w-full gap-6 mt-10 text-center">
                                             <div class="flex flex-col gap-1">
                                                 <span class="text-3xl font-bold">{{ testimonial.name }}</span>
@@ -376,7 +376,7 @@
                                                 <path d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z" fill="#FEC84B" />
                                             </svg>
                                         </div>
-                                        <p class="text-center text-xl mt-10 mx-auto">{{ testimonial.paragraph }}</p>
+                                        <p class="text-center text-xl mt-10 mx-auto" v-html="testimonial.paragraph"></p>
                                     </div>
                                 </swiper-slide>
                             </swiper-container>
@@ -419,6 +419,48 @@
     };
     
     const testimonials = [
+        { 
+            icon: 'leia-k',
+            name: 'Leïa Khalaf',
+            position: 'Founder and Creative Director',
+            stars: 5,
+            paragraph: '"I’m the founder and Creative Director of Leïa K, an everyday fine jewelry brand. My website is hosted by Montypay, and they’ve been exceptional, consistently delivering excellent service. Their team is proactive, responsive, and quick to resolve any issues."',
+        },
+        { 
+            icon: 'cali-fragrances',
+            name: 'Carla Simonian',
+            position: 'Owner',
+            stars: 5,
+            paragraph: '"It was an amazing experience so far. Thank you so much, and special thanks to the team for always assisting me."',
+        },
+        { 
+            icon: 'dr-charles-shaer',
+            name: 'Charles shaer',
+            position: 'Owner',
+            stars: 5,
+            paragraph: '"MontyPay is very professional providing the best rates, flawless transactions, no issues or impediments using all their payment solutions online, locally, and internationally, and they facilitate everything down to the core.<br />Must also note that the customer support and client relations are exceptional, management and staff help make the whole experience smooth."',
+        },
+        { 
+            icon: 'padel-house',
+            name: 'Rayan Aouad',
+            position: 'Chairman of the Board of Directors',
+            stars: 5,
+            paragraph: '"Easy to use<br />Friendly employees<br />Easy on boarding"',
+        },
+        { 
+            icon: 'high-motion-tourism-llc',
+            name: 'Olga Utkina',
+            position: 'General Manager',
+            stars: 5,
+            paragraph: '"My company uses Monty pay for a long time. It’s very useful and convenient app. Fast customer support makes me feel safe."',
+        },
+        { 
+            icon: 'drops',
+            name: 'Nada el Hassan',
+            position: 'Owner',
+            stars: 5,
+            paragraph: '"MontyPay is fantastic!<br />The platform is easy to use, secure and accessible for all types of businesses. Their customer service is top-notch too. I highly recommend"',
+        },
         { 
             icon: 'tania-travel',
             name: 'Patricia Mougharbel',
