@@ -435,7 +435,7 @@
         },
         { 
             icon: 'dr-charles-shaer',
-            name: 'Charles Shaer',
+            name: 'Charles shaer',
             position: 'Owner',
             stars: 5,
             paragraph: '"MontyPay is very professional providing the best rates, flawless transactions, no issues or impediments using all their payment solutions online, locally, and internationally, and they facilitate everything down to the core.<br />Must also note that the customer support and client relations are exceptional, management and staff help make the whole experience smooth."',
