@@ -304,7 +304,7 @@
             </div>
         </section>
 
-        <section id="section-7" class="pt-16 lg:pt-36 bg-quaternary overflow-hidden text-primary lg:text-center">
+        <!-- <section id="section-7" class="pt-16 lg:pt-36 bg-quaternary overflow-hidden text-primary lg:text-center">
 
             <Blob />
 
@@ -345,7 +345,7 @@
                     />
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="section-8" class="py-16 lg:py-36 text-black overflow-hidden">
             <div class="container flex flex-col lg:flex-row gap-8 justify-center items-center">
