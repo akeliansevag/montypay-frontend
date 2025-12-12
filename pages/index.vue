@@ -8,11 +8,6 @@
             link="/contact-us"
         />
         
-
-        <!-- <NuxtLinkLocale to="/">{{ t(`Hello`) }}</NuxtLinkLocale>
-        <NuxtLink to="/">{{ $t(`Hello`) }}</NuxtLink>
-        <LanguageSwitcher /> -->
-
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
             <div class="container">
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
@@ -248,7 +243,68 @@
             </div>
         </section>
 
-        <section id="section-6" class="pt-16 lg:pt-36 bg-quaternary overflow-hidden text-primary lg:text-center">
+        <section id="section-6" class="py-16 lg:py-36 text-white overflow-hidden bg-[url('/images/build-your-brand-bg.png')] bg-cover bg-no-repeat">
+            <div class="container">
+                <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+                    <NuxtPicture priority
+                        format="webp" 
+                        src="/images/build-your-brand.png" 
+                        class="w-full order-2 md:order-1"
+                        :imgAttrs="{class:'w-full h-full object-cover'}" 
+                    />
+
+                    <div class="order-1 md:order-2 flex flex-col gap-8 mt-16">
+                        <ContentBlock
+                            title="Build Your Brand Online With <br /> Your Trusted <img class='max-lg:w-[120px] inline -mt-2 mx-2' src='/images/shopify-logo.svg' alt='Shopify Logo' width='184' height='53' /> Partner "
+                            paragraph="MontyPay brings merchants and businesses online by creating powerful commerce experiences that grow brand presence and make it accessible to customers worldwide."
+                        />
+                        
+                        <div class="flex items-start gap-2 mt-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z" fill="white"/>
+                                <path d="M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z" fill="white"/>
+                                <path d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z" fill="white"/>
+                                <path d="M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" fill="white"/>
+                            </svg>
+                            <div class="w-full md:w-4/5">
+                                <h5 class="font-semibold">Website Audit & Cost Analysis</h5>
+                                <p>Clear insights, structured evaluation, and accurate cost planning</p>
+                            </div>
+                        </div>  
+                        <div class="flex items-start gap-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 4V20C18.1 20 19 19.1 19 18V6C19 4.9 18.1 4 17 4ZM13 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H13C14.1 22 15 21.1 15 20V4C15 2.9 14.1 2 13 2ZM13 20H4V4H13V20ZM21 6V18C21.83 18 22.5 17.33 22.5 16.5V7.5C22.5 6.67 21.83 6 21 6Z" fill="white"/>
+                            </svg>
+                            <div class="w-full md:w-4/5">
+                                <h5 class="font-semibold">B2B & B2C Website Design</h5>
+                                <p>Modern, conversion-driven Shopify stores tailored to unique business needs.</p>
+                            </div>  
+                        </div>  
+                        <div class="flex items-start gap-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.89 11.1C11.11 10.51 10.25 10.14 10.25 9.2C10.25 8.18 11.36 7.81 12.06 7.81C13.37 7.81 13.85 8.8 13.96 9.15L15.54 8.48C15.39 8.03 14.72 6.56 13 6.24V5H11V6.26C8.52 6.82 8.51 9.12 8.51 9.22C8.51 11.49 10.76 12.13 11.86 12.53C13.44 13.09 14.14 13.6 14.14 14.56C14.14 15.69 13.09 16.17 12.16 16.17C10.34 16.17 9.82 14.3 9.76 14.08L8.1 14.75C8.73 16.94 10.38 17.53 11 17.71V19H13V17.76C13.4 17.67 15.9 17.17 15.9 14.54C15.9 13.15 15.29 11.93 12.89 11.1ZM3 21H1V15H7V17H4.52C6.13 19.41 8.88 21 12 21C14.3869 21 16.6761 20.0518 18.364 18.364C20.0518 16.6761 21 14.3869 21 12H23C23 18.08 18.08 23 12 23C8.28 23 4.99 21.15 3 18.33V21ZM1 12C1 5.92 5.92 1 12 1C15.72 1 19.01 2.85 21 5.67V3H23V9H17V7H19.48C17.87 4.59 15.12 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12H1Z" fill="white"/>
+                            </svg>
+                            <div class="w-full md:w-4/5">
+                                <h5 class="font-semibold">Payment Gateway Integration</h5>
+                                <p>Fast, reliable, multi-currency checkout powered by MontyPay</p>
+                            </div>  
+                        </div>  
+                        <div class="flex items-start gap-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.8125 18.5625H4.6875V3.9375C4.6875 3.83437 4.60312 3.75 4.5 3.75H3.1875C3.08437 3.75 3 3.83437 3 3.9375V20.0625C3 20.1656 3.08437 20.25 3.1875 20.25H20.8125C20.9156 20.25 21 20.1656 21 20.0625V18.75C21 18.6469 20.9156 18.5625 20.8125 18.5625ZM6.75 16.6875H8.0625C8.16563 16.6875 8.25 16.6031 8.25 16.5V13.125C8.25 13.0219 8.16563 12.9375 8.0625 12.9375H6.75C6.64687 12.9375 6.5625 13.0219 6.5625 13.125V16.5C6.5625 16.6031 6.64687 16.6875 6.75 16.6875ZM10.3125 16.6875H11.625C11.7281 16.6875 11.8125 16.6031 11.8125 16.5V9C11.8125 8.89687 11.7281 8.8125 11.625 8.8125H10.3125C10.2094 8.8125 10.125 8.89687 10.125 9V16.5C10.125 16.6031 10.2094 16.6875 10.3125 16.6875ZM13.875 16.6875H15.1875C15.2906 16.6875 15.375 16.6031 15.375 16.5V10.8281C15.375 10.725 15.2906 10.6406 15.1875 10.6406H13.875C13.7719 10.6406 13.6875 10.725 13.6875 10.8281V16.5C13.6875 16.6031 13.7719 16.6875 13.875 16.6875ZM17.4375 16.6875H18.75C18.8531 16.6875 18.9375 16.6031 18.9375 16.5V7.125C18.9375 7.02187 18.8531 6.9375 18.75 6.9375H17.4375C17.3344 6.9375 17.25 7.02187 17.25 7.125V16.5C17.25 16.6031 17.3344 16.6875 17.4375 16.6875Z" fill="white"/>
+                            </svg>
+                            <div class="w-full md:w-4/5">
+                                <h5 class="font-semibold">Full-Service Digital Growth</h5>
+                                <p>Performance marketing, content creation, SEO, and social media management to strengthen brand presence and drive sales.</p>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-7" class="pt-16 lg:pt-36 bg-quaternary overflow-hidden text-primary lg:text-center">
 
             <Blob />
 
@@ -291,7 +347,7 @@
             </div>
         </section>
 
-        <section id="section-5" class="py-16 lg:py-36 text-black overflow-hidden">
+        <section id="section-8" class="py-16 lg:py-36 text-black overflow-hidden">
             <div class="container flex flex-col lg:flex-row gap-8 justify-center items-center">
                 <div class="w-full lg:w-2/5">
                     <ContentBlock 
@@ -315,7 +371,7 @@
         </section>
         <!-- :slides-per-view="5" -->
 
-        <section id="section-8" class="py-16 lg:py-36 bg-black bg-[url('/images/customer-stories-bg.png')] bg-cover bg-no-repeat">
+        <section id="section-9" class="py-16 lg:py-36 bg-black bg-[url('/images/customer-stories-bg.png')] bg-cover bg-no-repeat">
             <div class="container">
                 <h2 class="text-white">Customer Stories</h2>
                 <div class="mt-16">
@@ -401,8 +457,6 @@
 </template>
 
 <script setup>
-    const { t } = useI18n()
-
     useSeoMeta({
         title: 'All-in-One Payment Platform | Global Payment Solutions',
         ogTitle: 'All-in-One Payment Platform | Global Payment Solutions',
