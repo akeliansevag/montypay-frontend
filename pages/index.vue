@@ -60,7 +60,7 @@
                             <img src="/images/shopping-cart-1.svg" alt="Instore Payments" width="46" height="46" />
                         </div>
                         Instore Payments
-                    </div>
+                    </div> 
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
                             <img src="/images/receipt-check-1.svg" alt="Self-Service Checkout" width="46" height="46" />
