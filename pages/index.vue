@@ -243,7 +243,7 @@
             </div>
         </section>
 
-        <section id="section-6" class="py-16 lg:py-36 text-white overflow-hidden bg-[url('/images/build-your-brand-bg.png')] bg-cover bg-no-repeat">
+        <section id="section-6" class="max-lg:py-16 lg:py-36 text-white overflow-hidden bg-[url('/images/build-your-brand-bg.png')] bg-cover bg-no-repeat">
             <div class="container">
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
                     <NuxtPicture priority
@@ -253,7 +253,7 @@
                         :imgAttrs="{class:'w-full h-full object-cover'}" 
                     />
 
-                    <div class="order-1 md:order-2 flex flex-col gap-8 mt-16">
+                    <div class="order-1 md:order-2 flex flex-col gap-8 lg:mt-16">
                         <ContentBlock
                             title="Build Your Brand Online With <br /> Your Trusted <img class='max-lg:w-[120px] inline -mt-2 mx-2' src='/images/shopify-logo.svg' alt='Shopify Logo' width='184' height='53' /> Partner "
                             paragraph="MontyPay brings merchants and businesses online by creating powerful commerce experiences that grow brand presence and make it accessible to customers worldwide."
