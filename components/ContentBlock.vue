@@ -2,7 +2,7 @@
    <div class="flex flex-col justify-center gap-8 z-10">
         <template v-if="isBanner">
             <h2 v-if="subtitle">{{ subtitle }}</h2>
-            <h1 v-if="title">{{ title }}</h1>
+            <h1 v-if="title" v-html="title"></h1>
         </template>
         <template v-else>
             <h2 v-if="title" v-html="title"></h2>
