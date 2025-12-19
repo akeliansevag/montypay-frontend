@@ -49,6 +49,22 @@ export default defineNuxtConfig({
       ],
       script: [
         {
+          hid: 'ga4-src',
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-NY9X93T6HL',
+          async: true
+        },
+        {
+          hid: 'ga4-inline',
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NY9X93T6HL');
+          `,
+          type: 'text/javascript',
+          charset: 'utf-8'
+        },
+        {
           hid: 'gtm',
           innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
