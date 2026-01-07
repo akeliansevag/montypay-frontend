@@ -53,7 +53,7 @@ const companySections = [
             {
                 pages: [
                     { to: '/about-us', label: 'About Us' },
-                    // { to: '/careers', label: 'Careers' },
+                    { to: '/careers', label: 'Careers' },
                     { to: '/partners', label: 'Partners' },
                     { to: '/news', label: 'News' },
                     { to: '/blogs', label: 'Blogs' },

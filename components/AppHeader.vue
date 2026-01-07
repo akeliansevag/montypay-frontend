@@ -17,7 +17,7 @@
                         </li>
                         
                     </ul>
-                    <div :class="{'text-primary': $route.path === '/' || $route.path === '/ar'}">
+                    <!-- <div :class="{'text-primary': $route.path === '/' || $route.path === '/ar'}">
                         <h5
                             v-for="lang in otherLocale"
                             :key="lang"
@@ -27,7 +27,7 @@
                         >
                             | {{ lang === 'en' ? 'EN' : 'AR' }}
                         </h5>
-                    </div>
+                    </div> -->
 
                     <div @click="toggleNav" class="menu-btn block lg:hidden pt-1.5 pb-2.5 text-3xl cursor-pointer">
                         <Icon v-if="!navVisible" name="fa7-solid:bars" class="icon text-lg" :class="$route.path !== '/' ? 'text-black': 'text-primary'" />

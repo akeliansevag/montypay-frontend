@@ -436,6 +436,15 @@
 				"Description": "Unify your payments, maximize efficiency, and deliver unforgettable customer experiences with MontyPay’s Omnichannel solution.",
 				"Image": "",
 				"Image Alt": ""
+			},
+			"Seo": {
+				"Title": "",
+				"Description": "",
+				"Og Title": "",
+				"Og Description": "",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
 			}
 		},	
 		"Online Payments": {
@@ -710,6 +719,15 @@
 						"Answer": "Getting started is quick and easy with our streamlined onboarding process. You’ll be up and running in no time, contact us to begin!"
 					}
 				]
+			},
+			"Seo": {
+				"Title": "",
+				"Description": "",
+				"Og Title": "",
+				"Og Description": "",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
 			}
 		},
 		"Smart Pos": {
@@ -889,6 +907,15 @@
 				"Description 1": "Accept payments both online and in-store and get powerful insights on a unified dashboard.",
 				"Description 2": "Start selling smarter.",
 				"Image Alt": "Unified Solution for In-Store & Online Sales"
+			},
+			"Seo": {
+				"Title": "",
+				"Description": "",
+				"Og Title": "",
+				"Og Description": "",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
 			}
 		},
 		"Soft Pos": {
@@ -919,6 +946,15 @@
 				"Title": "Compatible devices",
 				"Description 1": "MontyPay’s SoftPOS solution enables smooth contactless payments on iOS and Android, supporting NFC wallets such as Apple Pay, Google Pay, and Samsung Pay, as well as Visa, Mastercard, and American Express cards.",
 				"Image Alt": "Unified Solution for In-Store & Online Sales"
+			},
+			"Seo": {
+				"Title": "",
+				"Description": "",
+				"Og Title": "",
+				"Og Description": "",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
 			}
 		},
 		"Error": {
