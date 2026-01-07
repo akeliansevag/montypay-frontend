@@ -1,6 +1,6 @@
 <template>
     <section class="relative max-lg:py-10 lg:py-24 bg-[#0F0C22] text-white">
-        <img src="/pattern-bg-2.webp" alt="BG Pattern" class="absolute top-0 left-0 object-cover w-full h-full"/>
+        <img src="/pattern-bg-2.webp" alt="BG Pattern" class="absolute top-0 start-0 object-cover w-full h-full"/>
         <div class="container">
             <h2 class="text-3xl font-bold">Merchant Mobile App </h2>
             <h3 class="text-xl font-bold mt-6">Your Business, Always in Your Hands</h3>

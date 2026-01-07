@@ -92,7 +92,7 @@
                     title="Connectors"
                     class="text-center mt-28"
                 />
-                <div class="flex flex-col gap-7 lg:gap-14 mt-8 text-white text-left">
+                <div class="flex flex-col gap-7 lg:gap-14 mt-8 text-white text-start">
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-20 md:gap-x-36 gap-y-20 items-center mt-16">
                         <div class="px-6" v-for="(connector,index) in connectors" :key="index">
                             <NuxtPicture 

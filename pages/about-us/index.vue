@@ -10,7 +10,7 @@
         <section id="section-2" class="pt-16 lg:pt-36">
             <div class="container">
                 <div class="flex flex-col">
-                    <div class="w-full lg:w-2/3 pl-0 lg:pl-28">
+                    <div class="w-full lg:w-2/3 ps-0 lg:ps-28">
                         <ContentBlock 
                             title="MontyPay is a global payment service provider"
                             paragraph="Pioneering cutting-edge solutions across the world. Think of us as the unrivaled conductor orchestrating international financial prowess!"
@@ -41,7 +41,7 @@
         <section id="section-5" class="pt-16 lg:pt-36">
             <div class="container">
                 <div class="flex flex-col">
-                    <div class="w-full lg:w-2/3 pl-0 lg:pl-28">
+                    <div class="w-full lg:w-2/3 ps-0 lg:ps-28">
                         <ContentBlock 
                             title="Our secret?"
                             paragraph="Envision a symphony of flawlessly executed online transactions, a choreography of clicks and swipes gliding effortlessly through 50+ countries, embracing payment methods as diverse as a palette of colours.<br /><br />We offer a wide range of 100+ payment methods that cover Middle East, Asia, Europe and America."

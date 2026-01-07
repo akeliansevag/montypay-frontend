@@ -67,7 +67,7 @@
                         :imgAttrs="{class:'w-full mx-auto'}" 
                     />
                     
-                    <div class="max-lg:bg-quaternary max-lg:py-16 max-lg:rounded-lg lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full flex flex-col justify-center items-center z-10">
+                    <div class="max-lg:bg-quaternary max-lg:py-16 max-lg:rounded-lg lg:absolute lg:top-0 lg:start-0 lg:w-full lg:h-full flex flex-col justify-center items-center z-10">
                         <ContentBlock 
                             title="Our Solutions"
                             class="text-white"
@@ -75,25 +75,25 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 lg:gap-4 mt-16 px-60">
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
-                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">1</div>
+                                <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">1</div>
                                 <div class="flex flex-col gap-20">
                                     Payment<br />Gateway
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
-                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">2</div>
+                                <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">2</div>
                                 <div class="flex flex-col gap-20">
                                     Merchant<br />Mobile App
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
-                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">3</div>
+                                <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">3</div>
                                 <div class="flex flex-col gap-20">
                                     Merchant<br />Management System
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
-                                <div class="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">4</div>
+                                <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">4</div>
                                 <div class="flex flex-col gap-20">
                                     QR Code Self Service Checkout
                                 </div>

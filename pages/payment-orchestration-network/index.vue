@@ -17,7 +17,7 @@
     </section>
 
     <section class="relative lg:py-16 max-lg:py-16 bg-[#0E153A]">
-        <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 left-0 w-full h-full object-cover" alt="blue-bg"/>
+        <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 start-0 w-full h-full object-cover" alt="blue-bg"/>
         <div class="container">
             <div class="max-w-[800px]">
                 <h2 class="text-white text-3xl font-bold">Go Global Without the Growing Pains</h2>

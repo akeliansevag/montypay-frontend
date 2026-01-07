@@ -1,12 +1,12 @@
 <template>
     <ClientOnly>
         <section class="relative py-16 bg-[#0E153A]">
-            <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 left-0 w-full h-full object-cover" alt="blue-bg"/>
+            <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 start-0 w-full h-full object-cover" alt="blue-bg"/>
             <div class="container">
                 <h2 class="text-white text-3xl font-bold">{{ title }}</h2>
             </div>
             
-            <div class="ml-container-align">
+            <div class="ms-container-align">
                 <div class="mt-12">
                     <div v-if="data">
                         <div class="relative">

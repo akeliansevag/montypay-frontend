@@ -1,6 +1,6 @@
 <template>
     <section class="lg:py-12 max-lg:py-6 bg-[#19162A] text-white relative">
-        <img src="/blue-section-bg.webp" alt="Background Shapes" class="absolute top-0 left-0 object-cover w-full h-full z-0"/>
+        <img src="/blue-section-bg.webp" alt="Background Shapes" class="absolute top-0 start-0 object-cover w-full h-full z-0"/>
         <div class="container">
             <div class="flex items-center justify-between max-lg:flex-col gap-10">
                 <div class="flex flex-col gap-12 w-full">

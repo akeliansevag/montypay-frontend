@@ -137,7 +137,7 @@
 
     <section class="bg-quaternary lg:flex">
         <div class="lg:w-1/2 relative max-lg:h-[300px]">
-            <img src="/images/soft-pos/use-cases.webp" alt="In-Person Payment" class="absolute top-0 left-0 w-full h-full object-cover">
+            <img src="/images/soft-pos/use-cases.webp" alt="In-Person Payment" class="absolute top-0 start-0 w-full h-full object-cover">
         </div>
         <div class="lg:w-1/2 max-lg:px-5 max-lg:py-20 lg:px-32 lg:py-32">
             <SmallContent 

@@ -95,8 +95,8 @@
                         
                         <h2 class="text-4xl">Seamless Checkout with PayPal</h2>
                         <p class="w-full md:w-3/5 text-lg">At MontyPay, we understand the importance of cost-effective payment processing. That's why we offer competitive pricing structures tailored to your specific business needs. Our transparent pricing model ensures you'll always know what you're paying for, with no hidden fees or surprises. Plus, our commitment to fair pricing means you can maximize your revenue while providing top-notch payment experiences for your customers.</p>
-                        <button @click="submitRequest" class="mp-button-secondary px-16">Connect to PayPal <Icon name="fa7-solid:arrow-right" class="icon" /></button>
-                        <img src="/images/paypal-1.svg" alt="Paypal" class="md:absolute md:bottom-20 md:right-20" width="" height="" />
+                        <button @click="submitRequest" class="mp-button-secondary px-16">Connect to PayPal <Icon name="fa7-solid:arrow-right" class="icon rtl:rotate-180 transition-transform" /></button>
+                        <img src="/images/paypal-1.svg" alt="Paypal" class="md:absolute md:bottom-20 md:end-20" width="" height="" />
                     </div>
                 </div>
             </div>

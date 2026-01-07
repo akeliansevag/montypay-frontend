@@ -1,4 +1,4 @@
-<template lang="">
+<template lang="" dir="ltr">
 	<div class="circular-progress text-center text-base lg:text-base 2xl:text-xl mx-auto">
 		<div class="circular-progress-circle lg:w-[40vw] lg:h-[40vw]">
 			<!-- 51.42deg -->
@@ -66,9 +66,10 @@
 		position: relative
 		border-radius: 50%
 		overflow: hidden
-		display: flex
 		align-items: center
 		justify-content: center
+
+		@apply flex ltr:flex-row rtl:flex-row-reverse
 
 	.white-circle
 		background-color: white

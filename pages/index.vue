@@ -8,6 +8,9 @@
             link="/contact-us"
         />
         
+        <!-- <NuxtLinkLocale to="/">{{ t(`Pages.Homepage.Banner.Title`) }}</NuxtLinkLocale>
+        <NuxtLink to="/">{{ $t(`Pages.Homepage.Banner.Title`) }}</NuxtLink> -->
+
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
             <div class="container">
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
@@ -60,7 +63,7 @@
                             <img src="/images/shopping-cart-1.svg" alt="Instore Payments" width="46" height="46" />
                         </div>
                         Instore Payments
-                    </div> 
+                    </div>
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
                             <img src="/images/receipt-check-1.svg" alt="Self-Service Checkout" width="46" height="46" />
@@ -164,7 +167,7 @@
                         class="w-full lg:w-2/3"
                         :imgAttrs="{class:'w-full aspect-video lg:aspect-auto lg:h-full object-cover'}" 
                     />
-                    <div class="lg:absolute lg:top-0 lg:right-0 w-full lg:h-full flex items-center text-primary bg-quaternary lg:bg-quaternary/80 py-14 lg:py-0 md:px-14 xl:px-36 z-10">
+                    <div class="lg:absolute lg:top-0 lg:end-0 w-full lg:h-full flex items-center text-primary bg-quaternary lg:bg-quaternary/80 py-14 lg:py-0 md:px-14 xl:px-36 z-10">
                         <div class="container">
                             <ContentBlock 
                                 title="In-store Payments"
@@ -243,7 +246,7 @@
             </div>
         </section>
 
-        <section id="section-6" class="max-lg:py-16 lg:py-36 text-white overflow-hidden bg-[url('/images/build-your-brand-bg.png')] bg-cover bg-no-repeat">
+        <section id="section-6" class="py-16 lg:py-36 text-white overflow-hidden bg-[url('/images/build-your-brand-bg.png')] bg-cover bg-no-repeat">
             <div class="container">
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
                     <NuxtPicture priority
@@ -253,7 +256,7 @@
                         :imgAttrs="{class:'w-full h-full object-cover'}" 
                     />
 
-                    <div class="order-1 md:order-2 flex flex-col gap-8 lg:mt-16">
+                    <div class="order-1 md:order-2 flex flex-col gap-8 mt-16">
                         <ContentBlock
                             title="Build Your Brand Online With <br /> Your Trusted <img class='max-lg:w-[120px] inline -mt-2 mx-2' src='/images/shopify-logo.svg' alt='Shopify Logo' width='184' height='53' /> Partner "
                             paragraph="MontyPay brings merchants and businesses online by creating powerful commerce experiences that grow brand presence and make it accessible to customers worldwide."
@@ -304,50 +307,7 @@
             </div>
         </section>
 
-        <!-- <section id="section-7" class="pt-16 lg:pt-36 bg-quaternary overflow-hidden text-primary lg:text-center">
-
-            <Blob />
-
-            <div class="container flex flex-col">
-                <div class="w-full lg:w-4/5 xl:w-3/5 mx-auto">
-                    <ContentBlock 
-                        title="eCommerce Store"
-                        paragraph="Build your eCommerce online store from scratch!"
-                    />
-                </div>
-
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-                    <div class="flex justify-center gap-4 border border-secondary rounded-lg py-6 px-3">
-                        <img src="/images/clock-check.svg" alt="24/7 support" width="30" height="30" />
-                        24/7 support
-                    </div>
-                    <div class="flex justify-center gap-4 border border-secondary rounded-lg py-6 px-3">
-                        <img src="/images/users.svg" alt="Dedicated team" width="30" height="30" />
-                        Dedicated team
-                    </div>
-                    <div class="flex justify-center gap-4 border border-secondary rounded-lg py-6 px-3">
-                        <img src="/images/refresh.svg" alt="High-response rate" width="30" height="30" />
-                        High-response rate
-                    </div>
-                    <div class="flex justify-center gap-4 border border-secondary rounded-lg py-6 px-3">
-                        <img src="/images/code-circle.svg" alt="3rd party integration" width="30" height="30" />
-                        3rd party integration
-                    </div>
-                </div>
-
-                <div class="flex-1 w-full mt-32">
-                    <NuxtPicture 
-                        priority
-                        format="webp" 
-                        src="/images/e-commerce-store.png" 
-                        class="w-full"
-                        :imgAttrs="{class:'w-full mx-auto'}" 
-                    />
-                </div>
-            </div>
-        </section> -->
-
-        <section id="section-8" class="py-16 lg:py-36 text-black overflow-hidden">
+        <section id="section-7" class="py-16 lg:py-36 text-black overflow-hidden">
             <div class="container flex flex-col lg:flex-row gap-8 justify-center items-center">
                 <div class="w-full lg:w-2/5">
                     <ContentBlock 
@@ -369,9 +329,8 @@
                 </div>
             </div>
         </section>
-        <!-- :slides-per-view="5" -->
 
-        <section id="section-9" class="py-16 lg:py-36 bg-black bg-[url('/images/customer-stories-bg.png')] bg-cover bg-no-repeat">
+        <section id="section-8" class="py-16 lg:py-36 bg-black bg-[url('/images/customer-stories-bg.png')] bg-cover bg-no-repeat">
             <div class="container">
                 <h2 class="text-white">Customer Stories</h2>
                 <div class="mt-16">
@@ -439,12 +398,12 @@
                         </ClientOnly>
 
                         
-                        <div class="swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 rotate-180">
+                        <div class="swiper-button-prev absolute top-1/2 -translate-y-1/2 start-0 rotate-180">
                             <svg width="33" height="59" viewBox="0 0 33 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.80566 55.6069L29.2062 29.2064L2.80566 2.80593" stroke="white" stroke-width="5.61176" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <div class="swiper-button-next absolute top-1/2 -translate-y-1/2 right-0">
+                        <div class="swiper-button-next absolute top-1/2 -translate-y-1/2 end-0">
                             <svg width="33" height="59" viewBox="0 0 33 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.80566 55.6069L29.2062 29.2064L2.80566 2.80593" stroke="white" stroke-width="5.61176" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -457,6 +416,8 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
+
     useSeoMeta({
         title: 'All-in-One Payment Platform | Global Payment Solutions',
         ogTitle: 'All-in-One Payment Platform | Global Payment Solutions',

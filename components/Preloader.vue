@@ -21,7 +21,7 @@
 
 <style scoped lang="sass">
 	.preloader 
-		@apply fixed top-0 left-0 w-full h-full z-50 flex items-center justify-center bg-black bg-no-repeat bg-center
+		@apply fixed top-0 start-0 w-full h-full z-50 flex items-center justify-center bg-black bg-no-repeat bg-center
 		display: -webkit-box
 		display: -ms-flexbox
 		-webkit-box-align: center

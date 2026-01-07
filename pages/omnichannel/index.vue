@@ -1,7 +1,7 @@
 <template>
     <section class="relative max-lg:py-10 lg:py-20">
 
-        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
+        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 end-0 top-0" />
 
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
@@ -227,7 +227,7 @@
     </section>
 
     <section class="relative lg:py-24 max-lg:py-10">
-        <div class="absolute -top-40 right-0 opacity-50 -z-10">
+        <div class="absolute -top-40 end-0 opacity-50 -z-10">
             <img src="/shape.svg" class="w-full" alt="">
         </div>
         <div class="container">

@@ -44,7 +44,7 @@
 
                         <div class="flex gap-8 w-full mt-10">
                             <div class="flex flex-col gap-3 w-full">
-                                <input v-on:change="handleFileUpload" type="file" id="file_upload" class="absolute top-0 left-0 opacity-0">
+                                <input v-on:change="handleFileUpload" type="file" id="file_upload" class="absolute top-0 start-0 opacity-0">
                                 <label for="file_upload" class="inline-block py-4 px-5 bg-[#f6f6f6] rounded-lg text-center font-semibold cursor-pointer">{{ fileUploadLabel }}</label>
                                 <div v-if="errors.file_upload" class="text-red-500 text-xs">{{ errors.file_upload }}</div>
                             </div>

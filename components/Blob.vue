@@ -34,7 +34,7 @@
 
 <style scoped lang="sass">
     .blob 
-        @apply absolute top-0 left-0 w-3/5 h-full blur-[70px]
+        @apply absolute top-0 start-0 w-3/5 h-full blur-[70px]
         animation: move 40s infinite
 
     @keyframes move 

@@ -2,7 +2,7 @@
   <li
     class="flex flex-col gap-5 h-full" 
     :class="{'lg:flex-row lg:hover:text-[#09bebd] group/item': layout === 'header',
-    'text-primary': $route.path === '/'
+    'text-primary': $route.path === '/'  || $route.path === '/ar'
   }">
   <Blob />
     <NuxtLink :external="external" :target="target" exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-8' : layout === 'header' }">
@@ -23,7 +23,7 @@
     <ul 
       v-if="hasChildren && navItemsVisible" 
       class="flex flex-col gap-8"
-      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max lg:-translate-x-1/2 lg:translate-y-px lg:bg-primary lg:py-16 lg:px-24 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
+      :class="{ 'lg:absolute lg:top-full lg:start-0 lg:flex-row lg:w-max lg:ltr:-translate-x-1/2 rtl:translate-x-1/2 lg:translate-y-px lg:bg-primary lg:py-16 lg:px-24 ms-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
       '' : layout === 'footer'}"
       
     >

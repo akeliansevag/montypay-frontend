@@ -10,7 +10,7 @@
                 priority
                 format="webp" 
                 :src="`/images/${ image }.png`" 
-                class="w-full lg:w-2/3 ml-auto"
+                class="w-full lg:w-2/3 ms-auto"
                 :imgAttrs="{class:'w-full rounded-lg'}" 
             />
         </div>

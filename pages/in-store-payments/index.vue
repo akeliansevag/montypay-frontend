@@ -9,7 +9,7 @@
 
         <section id="section-3" class="pt-16 lg:pt-36">
             <div class="container">
-                <div class="w-full mx-auto bg-primary rounded-lg p-4 lg:p-20 before:content('') before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:left-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
+                <div class="w-full mx-auto bg-primary rounded-lg p-4 lg:p-20 before:content('') before:absolute before:top-0 before:end-0 before:w-[300px] before:h-[300px] before:lg:w-[600px] before:lg:h-[600px] before:bg-secondary before:blur-3xl before:-z-10 after:content('') after:absolute after:bottom-0 after:start-0 after:w-[300px] after:h-[300px] after:lg:w-[600px] after:lg:h-[600px] after:bg-secondary after:blur-3xl after:-z-10">
                     <ContentBlock 
                         title="Smart POS"
                         paragraph="Accept a wide range of payment methods, from credit cards to digital wallets."

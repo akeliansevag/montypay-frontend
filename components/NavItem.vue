@@ -3,20 +3,20 @@
     class="flex flex-col gap-5 h-full" 
     :class="{
       'lg:flex-row lg:hover:text-[#003383] group/item': layout === 'header',
-      'text-primary': $route.path === '/',
+      'text-primary': $route.path === '/' || $route.path === '/ar',
     }">
     
-    <!-- Render NuxtLink for internal links -->
-    <NuxtLink
+    <!-- Render NuxtLinkLocale for internal links -->
+    <NuxtLinkLocale
       v-if="!isExternal(to) && !hasChildren"
       :to="to"
       exact-active-class="active"
       class="relative nav-link"
       :class="{ 'lg:py-8' : layout === 'header' }"
     >
-      <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
+      <div class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <!-- Render <a> tag for external links (like PDFs) -->
     <a
@@ -27,13 +27,13 @@
       class="relative nav-link"
       :class="{ 'lg:py-8' : layout === 'header' }"
     >
-      <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
+      <div class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
     </a>
 
     <div v-else class="relative flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-8' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
       <h5>{{ label }}</h5>
-      <div class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
+      <div class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <ClientOnly>
         <Icon 
           v-if="(layout === 'header' || (layout === 'footer' && isMobile()))" 
@@ -47,14 +47,14 @@
     <!-- fallback for crawlers / no JS -->
      <ClientOnly>
       <noscript>
-        <a :href="to" class="link-line absolute bottom-[-1px] left-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100">{{ label }}</a>
+        <a :href="to" class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100">{{ label }}</a>
       </noscript>
     </ClientOnly>
     <!-- Handling child sections -->
     <ul
       v-if="hasChildren && navItemsVisible"
       class="navigation flex flex-col gap-8 shadow-md"
-      :class="{ 'lg:absolute lg:top-full lg:left-0 lg:flex-row lg:w-max xl:-translate-x-1/2 lg:translate-y-px lg:py-8 lg:px-4 ml-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
+      :class="{ 'lg:absolute lg:top-full lg:start-0 lg:flex-row lg:w-max xl:ltr:-translate-x-1/2 rtl:translate-x-1/2 lg:translate-y-px lg:py-8 lg:px-4 ms-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
       '' : layout === 'footer'}"
     >
       <li v-for="(child, index) in children" :key="index">
@@ -66,7 +66,7 @@
             </span>
             <ul v-if="section.pages && section.pages.length" :class="{ 'mt-2 lg:mt-8': section.label && layout === 'header', 'gap-1.5 lg:gap-4' : layout === 'header', 'gap-2.5' : layout === 'footer'}" class="flex flex-col" >
               <li v-for="(page, pageIndex) in section.pages" :key="pageIndex" class="group">
-                <NuxtLink
+                <NuxtLinkLocale
                   v-if="!isExternal(page.to)"
                   :to="page.to"
                   class="nav-link font-normal"
@@ -74,8 +74,8 @@
                   :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
-                  <Icon v-if="layout === 'header'" name="fa7-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
-                </NuxtLink>
+                  <Icon v-if="layout === 'header'" name="fa7-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 rtl:rotate-180 transition-transform" />
+                </NuxtLinkLocale>
                 
                 <!-- Handle external links for children pages -->
                 <a
@@ -87,7 +87,7 @@
                   :class="{ 'nav-link-color link-color flex justify-between items-center gap-6 py-2 px-4 rounded-sm' : layout === 'header' }"
                 >
                   <h6 class="nav-link font-normal">{{ page.label }}</h6>
-                  <Icon v-if="layout === 'header'" name="fa7-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100" />
+                  <Icon v-if="layout === 'header'" name="fa7-solid:angle-right" class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 rtl:rotate-180 transition-transform" />
                 </a>
                 
                 <!-- fallback for crawlers / no JS -->

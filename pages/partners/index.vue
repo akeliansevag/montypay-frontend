@@ -49,7 +49,7 @@
             <NuxtPicture priority
                 format="webp"
                 src="/images/api-orchestration.png"
-                class="w-full lg:absolute lg:top-0 lg:left-0"
+                class="w-full lg:absolute lg:top-0 lg:start-0"
                 :imgAttrs="{class:'w-full lg:h-screen object-cover'}" 
             />
             

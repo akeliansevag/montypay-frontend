@@ -8,7 +8,7 @@
           <Icon name="fa6-solid:angle-down" class="icon text-sm" />
       </template>
       
-      <ul v-if="hasChildren" class="absolute top-full left-0 flex gap-8 w-max -translate-x-1/2 translate-y-px bg-primary p-6 rounded-b-lg invisible group/edit group-hover/item:visible">
+      <ul v-if="hasChildren" class="absolute top-full start-0 flex gap-8 w-max ltr:-translate-x-1/2 rtl:translate-x-1/2 translate-y-px bg-primary p-6 rounded-b-lg invisible group/edit group-hover/item:visible">
         <li v-for="(child, index) in children" :key="index">
           <ul v-if="child.sections && child.sections.length" class="flex gap-8">
             <li v-for="(section, sectionIndex) in child.sections" :key="sectionIndex">

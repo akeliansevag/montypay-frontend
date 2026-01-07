@@ -1,7 +1,7 @@
 <template>
     <section class="relative max-lg:py-10 lg:py-20">
 
-        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0" />
+        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 end-0" />
 
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
@@ -9,8 +9,8 @@
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">QCheck Customer Verification</h1>
                     <p class="text-xl">Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout tool. Whether guests are scanning to browse your menu or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.</p>
                     <!-- <div class="relative">
-                        <input required type="text" placeholder="" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pr-[170px] shadow-md" />
-                        <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:right-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
+                        <input required type="text" placeholder="" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pe-[170px] shadow-md" />
+                        <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:end-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
                     </div> -->
                 </div>
                 <div class="lg:w-[35%]">
@@ -232,7 +232,7 @@ const sliderThree = [
     .custom-table
         @apply shadow-xl w-full rounded-xl overflow-hidden mt-10 max-lg:min-w-[1000px]
         th
-            @apply text-left font-bold text-2xl p-8
+            @apply text-start font-bold text-2xl p-8
         td
             @apply px-8 py-4
         tr:last-child td

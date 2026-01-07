@@ -544,7 +544,7 @@
                     class="text-center mt-16"
                 />
 
-                <div class="flex flex-col gap-7 lg:gap-14 mt-16 text-white text-left md:w-4/5 mx-auto">
+                <div class="flex flex-col gap-7 lg:gap-14 mt-16 text-white text-start md:w-4/5 mx-auto">
                     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-14">
                         <div>
                             <NuxtPicture 
@@ -554,7 +554,7 @@
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
-                            <div class="location w-full absolute bottom-0 left-0 py-8 px-6 rounded-lg">
+                            <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
                                 <h5>United Kingdom</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
@@ -580,7 +580,7 @@
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
-                            <div class="location w-full absolute bottom-0 left-0 py-8 px-6 rounded-lg">
+                            <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
                                 <h5>Nigeria</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
@@ -606,7 +606,7 @@
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
-                            <div class="location w-full absolute bottom-0 left-0 py-8 px-6 rounded-lg">
+                            <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
                                 <h5>Lebanon</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
@@ -632,7 +632,7 @@
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
-                            <div class="location w-full absolute bottom-0 left-0 py-8 px-6 rounded-lg">
+                            <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
                                 <h5>Jordan</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
@@ -658,7 +658,7 @@
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
-                            <div class="location w-full absolute bottom-0 left-0 py-8 px-6 rounded-lg">
+                            <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
                                 <h5>United Arab Emirates</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
@@ -684,7 +684,7 @@
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
-                            <div class="location w-full absolute bottom-0 left-0 py-8 px-6 rounded-lg">
+                            <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
                                 <h5>Indonesia</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
@@ -710,7 +710,7 @@
                                 class="w-full"
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
-                            <div class="location w-full absolute bottom-0 left-0 py-8 px-6 rounded-lg">
+                            <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
                                 <h5>KSA</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">

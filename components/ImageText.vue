@@ -1,5 +1,5 @@
 <template lang="">
-    <!-- <div v-if="image_position === 'full'" class="absolute top-0 right-0 w-1/2 h-full bg-black opacity-50"></div> -->
+    <!-- <div v-if="image_position === 'full'" class="absolute top-0 end-0 w-1/2 h-full bg-black opacity-50"></div> -->
     <div class="container">
         <div :class="[ 'flex gap-12 w-full', 
                 layout === 'full' 
@@ -27,12 +27,12 @@
                 
                 <h2>{{ title }}</h2>
                 <p>{{ paragraph }}</p>
-                <button v-if="layout === 'half'" class="mp-button-secondary">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon" /></button>
+                <button v-if="layout === 'half'" class="mp-button-secondary">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon rtl:rotate-180 transition-transform" /></button>
             </div>
 
             <template v-if="layout === 'half' && image_position != 'full'">
                 <div class="flex-1 hidden lg:block">
-                    <div class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] border-[200px] border-[#74F1C4] rounded-full bg-transparent blur-2xl"></div>
+                    <div class="absolute top-0 end-0 ltr:translate-x-1/2 rtl:-translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] border-[200px] border-[#74F1C4] rounded-full bg-transparent blur-2xl"></div>
                 </div>
             </template>
         </div>

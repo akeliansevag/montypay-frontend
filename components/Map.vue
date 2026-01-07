@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="md:hidden mb-4 pl-7 z-20">
+    <div class="md:hidden mb-4 ps-7 z-20">
         <swiper-container
             :slides-per-view="1.5"
             :space-between="30"
@@ -23,8 +23,8 @@
     <div>
         <img class="-mt-[100px] md:mt-0" src="/images/our-offices.svg" width="3072" height="1646" />
         <div v-for="(office, index) in our_offices" :key="index" :style="{ top: `${office.top}%`, left: `${office.left}%` }" class="md:block group absolute w-[11px] h-[11px] rounded-full bg-secondary z-10 cursor-pointer">
-            <div class="hidden md:group-hover:block absolute bottom-6 left-1/2 -translate-x-1/2 w-max p-4 bg-white rounded-lg shadow-md z-10">
-                <div class="absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 w-2 h-2 bg-white rotate-45"></div>
+            <div class="hidden md:group-hover:block absolute bottom-6 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-max p-4 bg-white rounded-lg shadow-md z-10">
+                <div class="absolute bottom-0 start-1/2 translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-2 h-2 bg-white rotate-45"></div>
                 <div class="flex flex-col gap-3 items-center text-center">
                     <img :src="`/images/flags/${office.icon}.svg`" :alt="office.location" width="25" height="25" />
                     <p class="font-semibold">{{ office.location }}</p>

@@ -42,7 +42,7 @@
                 priority
                 format="webp" 
                 src="/images/extensive-coverage-bg.png" 
-                class="absolute top-0 right-0 flex justify-center items-center w-full h-full"
+                class="absolute top-0 end-0 flex justify-center items-center w-full h-full"
                 :imgAttrs="{class:'w-full md:w-3/5 ms-auto'}" 
             />
             <div class="container">

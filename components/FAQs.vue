@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col gap-8 w-full xl:w-4/5">
         <div v-for="(faq, index) in faqs" :key="faq.id" class="flex items-baseline">
-            <Icon name="fa6-solid:angle-down" class="icon text-3xl lg:text-[40px] transition-transform duration-300 ease-in-out mr-4"
+            <Icon name="fa6-solid:angle-down" class="icon text-3xl lg:text-[40px] transition-transform duration-300 ease-in-out me-4"
                 :class="activeItemId === faq.id ? 'rotate-180' : 'rotate-0'" />
             <div class="flex-1">
                 <h3 @click="toggle(faq.id)" class="cursor-pointer">                

@@ -4,7 +4,7 @@
             <h2 v-if="title" class="text-3xl">{{ title }}</h2>
             <p class="text-xl mt-4" v-if="subtitle">{{ subtitle }}</p>
         </div>
-        <div class="ml-container-align">
+        <div class="ms-container-align">
             <div class="mt-12">
                 <div v-if="data">
                     <div class="relative">

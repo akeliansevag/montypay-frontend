@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div>
-                    <NuxtPicture class="flex ml-auto w-4/5" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="images/advanced-reporting.png" />
+                    <NuxtPicture class="flex ms-auto w-4/5" :imgAttrs="{class:'w-full -mt-5'}"  format="png" src="images/advanced-reporting.png" />
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div>
-                    <NuxtPicture class="flex ml-auto w-4/5" format="png" src="images/merchant-mobile-app.png" :imgAttrs="{class:'w-full'}" />
+                    <NuxtPicture class="flex ms-auto w-4/5" format="png" src="images/merchant-mobile-app.png" :imgAttrs="{class:'w-full'}" />
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
     
 
     <!-- <section class="py-16 lg:py-32 container">
-        <div class="absolute w-full h-full top-0 left-0">
+        <div class="absolute w-full h-full top-0 start-0">
             <NuxtPicture class="w-full" :imgAttrs="{class:'object-cover w-full h-full rounded-lg'}"  format="svg" src="images/extensive-connectivity.png" />
         </div>
         <div class="py-36">

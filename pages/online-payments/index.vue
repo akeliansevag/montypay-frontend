@@ -1,8 +1,8 @@
 <template>
    <section class="relative max-lg:py-10 lg:py-20">
-        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 right-0 top-0" />
+        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 end-0 top-0" />
 
-        <div class="ml-container-align">
+        <div class="ms-container-align">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Online Payment Solutions</h1>
@@ -183,7 +183,7 @@
     </section>
 
     <section class="max-lg:pb-10 lg:pb-24 bg-white relative overflow-hidden">
-        <img src="/shape-bg.svg" alt="Shapte" class="absolute top-0 lg:-right-[200px] max-lg:hidden" />
+        <img src="/shape-bg.svg" alt="Shapte" class="absolute top-0 lg:-end-[200px] max-lg:hidden" />
         <div class="container">
             <div class="flex max-lg:flex-col gap-6">
                 <div class="w-full">
@@ -211,7 +211,7 @@
     </section>
 
     <section class="lg:py-24 max-lg:py-10 bg-[#0F0C22] relative text-white">
-        <img src="/blue-bg-2.webp" alt="BG" class="top-0 left-0 w-full h-full absolute object-cover">
+        <img src="/blue-bg-2.webp" alt="BG" class="top-0 start-0 w-full h-full absolute object-cover">
         <div class="container">
             <h2 class="text-3xl font-bold">More Perks or We Back You Up </h2>
             <div class="mt-10 flex max-lg:flex-col gap-7 max-lg:gap-10">

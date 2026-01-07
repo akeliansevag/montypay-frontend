@@ -1,6 +1,6 @@
 <template lang="">
     <section id="section-1" class="py-10 lg:py-20 bg-quaternary relative">
-        <img v-if="hero" class="absolute top-0 left-0 w-full h-full object-cover" :src="'/images/hero-backgrounds/'+ hero +'.jpg'" alt="Hero Background" />
+        <img v-if="hero" class="absolute top-0 start-0 w-full h-full object-cover" :src="'/images/hero-backgrounds/'+ hero +'.jpg'" alt="Hero Background" />
         <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 justify-end items-center text-white min-h-[40vh]">
             <div>
                 <h1 v-if="title">{{ title }}</h1>
