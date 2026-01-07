@@ -14,7 +14,7 @@
       class="relative nav-link"
       :class="{ 'lg:py-8' : layout === 'header' }"
     >
-      <div class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
+      <div class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
     </NuxtLinkLocale>
 
@@ -27,13 +27,13 @@
       class="relative nav-link"
       :class="{ 'lg:py-8' : layout === 'header' }"
     >
-      <div class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
+      <div class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <h5 class="nav-link">{{ label }}</h5>
     </a>
 
     <div v-else class="relative flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-8' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
       <h5>{{ label }}</h5>
-      <div class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
+      <div class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
       <ClientOnly>
         <Icon 
           v-if="(layout === 'header' || (layout === 'footer' && isMobile()))" 
@@ -47,7 +47,7 @@
     <!-- fallback for crawlers / no JS -->
      <ClientOnly>
       <noscript>
-        <a :href="to" class="link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100">{{ label }}</a>
+        <a :href="to" class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100">{{ label }}</a>
       </noscript>
     </ClientOnly>
     <!-- Handling child sections -->

@@ -76,9 +76,9 @@ onMounted(() => {
             closeNav()
         }
     });
-    if (window.innerWidth > 1023) {
+    // if (window.innerWidth > 1023) {
         stickyNav();
-    }
+    // }
 });
 
 </script>
