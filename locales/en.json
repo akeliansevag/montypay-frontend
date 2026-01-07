@@ -45,11 +45,20 @@
 			"Contact Sales": "Contact Sales"
 		},
 		"Labels": {
-			"First Name": "First Name"
+			"First Name": "First Name",
+			"Last Name": "Last Name",
+			"Email": "Email",
+			"Cover Letter": "Cover Letter",
+			"Upload your CV": "Upload your CV",
+			"Send": "Send"
+			
 		},
 		"Placeholders": {
 			"First Name": "First Name",
-			"Email": "Enter Your Email"
+			"Last Name": "Last Name",
+			"Email": "Email",
+			"Cover Letter": "Cover Letter",
+			"Upload your CV": "Upload your CV"
 		},
 		"Messages": {
 			"Errors": {
@@ -81,7 +90,9 @@
 				"Upload Valid File": "Please upload at least one valid file.",
 				"Validation Failed": "Please ensure all required fields are correctly filled and try submitting again.",
 				"Api Response Validation Failed": "Error in submitting your message. Please try again later",
-				"Api Failed": "Error in submitting your message. Please try again later"
+				"Api Failed": "Error in submitting your message. Please try again later",
+				"Cover Letter": "Please write a cover letter",
+				"Upload your CV": "Please upload a file"
 			},
 			"Success": {
 				"Newsletter": "Thank you for subscribing.",
@@ -944,14 +955,738 @@
 			},
 			"Section 3": {
 				"Title": "Compatible devices",
-				"Description 1": "MontyPay’s SoftPOS solution enables smooth contactless payments on iOS and Android, supporting NFC wallets such as Apple Pay, Google Pay, and Samsung Pay, as well as Visa, Mastercard, and American Express cards.",
-				"Image Alt": "Unified Solution for In-Store & Online Sales"
+				"Description": "MontyPay’s SoftPOS solution enables smooth contactless payments on iOS and Android, supporting NFC wallets such as Apple Pay, Google Pay, and Samsung Pay, as well as Visa, Mastercard, and American Express cards.",
+				"Image Alt": "Unified Solution for In-Store & Online Sales",
+				"Filter iPhone": "iPhone",
+				"Filter Android": "Android",
+				"iPhone Title": "Tap to Pay on iPhone is now available in:",
+				"iPhone Description": "Securely accept payments on supported iPhones with built-in Apple security, ensuring no card data is stored on the device or servers.",
+				"iPhone Countries 1": ["United States","United Kingdom","Canada","Australia","Ireland","Austria"],
+				"iPhone Countries 2": ["Netherlands","France","Germany","Sweden","Czech Republic","Italy"],
+				"iPhone Image": "iphone-visual.webp",
+				"Android Title": "Tap to Pay on Android is now available in:",
+				"Android Description": "Leverage NFC-enabled, Google-certified Android devices for broad accessibility across global markets.",
+				"Android Countries 1": ["United States","United Kingdom","Canada","Australia","Ireland","Austria","Belgium","Czech Republic","Italy","Finland","Norway","New Zealand"],
+				"Android Countries 2": ["Netherlands","France","Denmark","Switzerland","Germany","Sweden","Luxembourg","Portugal","Spain","Singapore","Malaysia"],
+				"Android Image": "android-visual.webp"
+			},
+			"Section 4": {
+				"Subtitle": "Use Cases",
+				"Title": "Streamlined, In-Person Payments",
+				"Description": "MontyPay’s SoftPOS allows businesses to easily accept contactless payments on the go. Seamlessly manage both online and in-person payments from one integrated platform, without the need for traditional POS systems."
+			},
+			"Section 5": {
+				"Subtitle": "Use Cases",
+				"Title": "Platforms",
+				"Description": "Broaden your reach with mobile payment options through MontyPay's SoftPOS. Ideal for dynamic environments like farmers markets, events, pop-up shops, food trucks, and after-service payments such as home repairs and landscaping, as well as businesses like delivery services, gas stations, and more.",
+				"Image": "platforms.webp"
+			},
+			"Section 6": {
+				"Subtitle": "Use Cases",
+				"Title": "Retailers",
+				"Description": "Enhance the in-store experience with flexible checkout options. </br> Equip your team to serve customers anywhere, reducing lines and enabling smoother seasonal or high traffic purchasing.",
+				"Image": "retailers.webp"
+			},
+			"Section 7": {
+				"Subtitle": "Use Cases",
+				"Title": "Unified Solution for Offline & Online Sales",
+				"Description": "Get the power of our Soft POS together with our payment gateway for an all-in-one solution that streamlines your business.",
+				"Image": "unified-solution.webp",
+				"List Items": [
+					{
+						"Title": "Boost Sales & Expand Reach",
+						"Description": "Drive more revenue by accepting fast, in-person payments on smartphones. Tap into more markets and make transactions seamless, fast, and modern, meeting the needs of today’s digital-savvy shoppers."
+					},
+					{
+						"Title": "Quick Setup, Cost-Effective Solution",
+						"Description": "Get started fast! MontyPay’s SoftPOS app enables payments in minutes with an easy setup. Maximize accessibility and cut costs by transforming smartphones into payment devices, eliminating the need for extra hardware."
+					},
+					{
+						"Title": "Flexible Payments Options Anywhere",
+						"Description": "Accept payments seamlessly in dynamic settings like pop-ups, markets, and events with no extra hardware needed. Deliver a faster checkout experience, enhancing customer satisfaction and loyalty for repeat business."
+					}
+				]
+			},
+			"Section 8": {
+				"Title": "Ready to streamline your payment process?",
+				"Description": "Contact us today to learn more about integrating SoftPOS into your business and start accepting payments effortlessly!",
+				"Description 2": "Get started today!",
+				"Image": "streamline2.webp"
 			},
 			"Seo": {
 				"Title": "",
 				"Description": "",
 				"Og Title": "",
 				"Og Description": "",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"QCheck": {
+			"Banner": {
+				"Title": "QCheck Customer Verification",
+				"Description": "Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout tool. Whether guests are scanning to browse your menu or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.",
+				"Image Alt": "QCheck Banner Image",
+				"Image:": "qcheck-banner.webp"
+			},
+			"Section 2": {
+				"Title": "Starts With a Scan. Ends With a Smile.",
+				"Items": [
+					{
+						"Title": "Faster Checkout",
+						"Description": "Save up to 17 minutes per table for faster turnover with QCheck's seamless pay-at-table experience.",
+						"Image": "faster-checkout.webp",
+						"Category": "Faster"
+					},
+					{
+						"Title": "Seamless Experience",
+						"Description": "Ensure a frictionless journey from menu browsing to bill payment, leaving guests happy and operations smooth.",
+						"Image": "seamless-experience.webp",
+						"Category": "Seamless"
+					},
+					{
+						"Title": "Simple and Secure Payments",
+						"Description": "Offer confidence and peace of mind with multiple secure payment options, from mobile wallets to cards.",
+						"Image": "simple-and-secure-payments.webp",
+						"Category": "Secure"
+					},
+					{
+						"Title": "Multiple Payment Options",
+						"Description": "Give guests flexibility with wallet payments, card payments, and many more, all in one hassle-free process",
+						"Image": "multiple-payment-options.webp",
+						"Category": "Flexible"
+					}
+				]
+			},
+			"Section 3": {
+				"Title": "It’s All Just One Scan Away",
+				"Description": "Create a modern, quick, and enjoyable dining experience with QCheck’s intuitive features.",
+				"Items": [
+					{
+						"Title": "Scan the QR Code",
+						"Description": "One code, two benefits! Guests can view your menu and pay the bill without waiting",
+						"Image": "scan-the-qr-code.webp",
+						"Category": "Scan"
+					},
+					{
+						"Title": "Split the Bill",
+						"Description": "Simplify group payments with itemized or equal division options",
+						"Image": "split-the-bill.webp",
+						"Category": "Split"
+					},
+					{
+						"Title": "Add a Tip",
+						"Description": "Triple staff tips with an easy in-app tipping option during payment",
+						"Image": "add-a-tip.webp",
+						"Category": "Tip"
+					},
+					{
+						"Title": "Pay the Bill",
+						"Description": "Offer secure and versatile payment methods for fast, smooth transactions",
+						"Image": "pay-the-bill.webp",
+						"Category": "Pay"
+					}
+				]
+			},
+			"Section 4": {
+				"Title": "Integration and Onboarding",
+				"Description": "Getting started with QCheck is quick and hassle-free:",
+				"Items": [
+					{
+						"Title": "Sync Your POS",
+						"Description": "Our team ensures seamless integration with your existing POS system",
+						"Image": "integration-1.webp"
+					},
+					{
+						"Title": "Staff Training",
+						"Description": "Comprehensive training equips your team to use QCheck effortlessly.",
+						"Image": "integration-2.webp"
+					},
+					{
+						"Title": "Fast Customer Checkout",
+						"Description": "Your guests can immediately enjoy faster, smoother checkouts.",
+						"Image": "integration-3.webp"
+					}
+				]
+			},
+			"Section 5": {
+				"Title": "Connectors"
+			},
+			"Section 6": {
+				"Title": "Why QCheck?",
+				"Items": [
+					["Feature","QCheck","Traditional Checkout"],
+					["Wait time","Less than 2 minutes","10+ minutes"],
+					["Bill splitting","Division and itemized","Manual"],
+					["Payment options","Diverse","Limited"],
+					["Tipping","Increase tips","Average tips"],
+					["Integration","Seamless POS integration","Basic integration"],
+					["Customer satisfaction","High","Average"]
+				]
+			},
+			"Section 7": {
+				"Title": "All You Need to Know",
+				"Items": [
+					{
+						"Question": "How does QCheck handle bill splitting?",
+						"Answer": "Guests can divide their bills equally or itemize them with ease."
+					},
+					{
+						"Question": "What payment methods are supported?",
+						"Answer": "QCheck supports 100+ payment methods, including card and wallet payments."
+					},
+					{
+						"Question": "How secure are the transactions?",
+						"Answer": "QCheck ensures the highest level of security with PCI DSS compliance and encryption."
+					},
+					{
+						"Question": "Does QCheck integrate with existing POS systems?",
+						"Answer": "Yes, it integrates seamlessly for uninterrupted operations."
+					},
+					{
+						"Question": "Is support available for setup and staff training?",
+						"Answer": "Absolutely! We provide complete onboarding and training support to ensure success."
+					}
+				]
+			},
+			"Section 8": {
+				"Title": "It’s All Just One Scan Away",
+				"Description": "Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features",
+				"Image": "its-just-one-scan-away.webp"
+			},
+			"Seo": {
+				"Title": "QCheck Verification | Secure Customer Screening",
+				"Description": "QCheck helps businesses verify customer identities quickly and securely. Enhance trust and protect your payment operations with MontyPay.",
+				"Og Title": "QCheck Verification | Secure Customer Screening",
+				"Og Description": "QCheck helps businesses verify customer identities quickly and securely. Enhance trust and protect your payment operations with MontyPay.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"eCommerce Services": {
+			"Banner": {
+				"Title": "E-Commerce Payment Services",
+				"Description": "Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.",
+				"Button Text": "Launch Your eCommerce Website Today!",
+				"Image Alt": "ecommerce Banner Image",
+				"Image:": "ecommerce-banner.webp"
+			},
+			"Section 2": {
+				"Title": "Reach Your Businesses' Full Potential",
+				"Description": "Stay ahead of the competition with an e-commerce platform that unlocks endless opportunities for your business:",
+				"Items": [
+					{
+						"Title": "24/7 Availability",
+						"Description": "Your store never sleeps, ready to serve customers globally",
+						"Image": "24-7-availability.webp"
+					},
+					{
+						"Title": "Broaden Your Reach",
+						"Description": "Attract a wider audience beyond your local market",
+						"Image": "broaden-your-reach.webp"
+					},
+					{
+						"Title": "Boost Sales",
+						"Description": "Leverage analytics and targeted strategies to convert visitors into loyal customers",
+						"Image": "boost-sales.webp"
+					},
+					{
+						"Title": "Enhanced Brand Visibility",
+						"Description": "Create a memorable online presence that reflects your brand’s unique identity",
+						"Image": "enhanced-brand-visibility.webp"
+					},
+					{
+						"Title": "Simplified Operations",
+						"Description": "Manage inventory, track orders, and monitor sales in one place.",
+						"Image": "simplified-operations.webp"
+					},
+					{
+						"Title": "Delight Your Customers",
+						"Description": "Secure, intuitive, and mobile-friendly shopping tailored to your customers’ needs.",
+						"Image": "delight-your-customers.webp"
+					}
+				]
+			},
+			"Section 3": {
+				"Title": "What We Bring to the Table",
+				"Description": "We transform your vision into reality by building custom websites from scratch in less than a month, designed to meet your unique business needs. With full customization options, you can tailor your online store to reflect your brand and cater to global audiences.",
+				"Image": "what-we-bring-to-the-table.webp",
+				"Alt": "What we bring to the table"
+			},
+			"Section 4": {
+				"Title": "Master Your Content",
+				"Description": "Take full control of your website’s content and updates:",
+				"Items": [
+					{
+						"Title": "Enjoy intuitive controls to keep your site fresh and updated",
+						"Image": "enjoy-intuitive-controls.webp"
+					},
+					{
+						"Title": "Improve SEO and increase visibility with built-in optimization tools.",
+						"Image": "improve-seo.webp"
+					},
+					{
+						"Title": "Easily create, edit, and publish content",
+						"Image": "easily-create.webp"
+					}
+				]
+			},
+			"Section 5": {
+				"Title": "Create, Captivate, Convert",
+				"Description": "Pair your e-commerce platform with expert social media services and high-quality visual content:",
+				"Button Text": "Start Selling Online Now",
+				"Items": [
+					{
+						"Title": "Develop engaging, brand-aligned content.",
+						"Image": "develop-engaging.webp"
+					},
+					{
+						"Title": "Boost visibility and engagement across platforms.",
+						"Image": "boost-visibility.webp"
+					},
+					{
+						"Title": "Create marketing assets to tell your story and captivate your audience.",
+						"Image": "create-marketing.webp"
+					},
+					{
+						"Title": "Build a photo library showcasing your products in the best light, with professional imagery and videography.",
+						"Image": "build-a-photo-library.webp"
+					},
+					{
+						"Title": "Engage and convert shoppers with stunning imagery and professional videography.",
+						"Image": "engage-and-convert.webp"
+					}
+				]
+			},
+			"Section 6": {
+				"Title": "Tap Into the Power of Payments",
+				"Description": "MontyPay’s seamless payment solutions ensure your customers can check out quickly and securely:",
+				"Items": [
+					{
+						"Title": "Accept over 100 payment options, including cards, wallets, and cryptocurrencies",
+						"Image": "accept-over-100.webp"
+					},
+					{
+						"Title": "Enable mobile payments for convenience",
+						"Image": "enable-mobile-payments.webp"
+					},
+					{
+						"Title": "Offer flexible payment methods like pay-by-link, QR codes, and recurring billing",
+						"Image": "offer-flexible-payment-methods.webp"
+					},
+					{
+						"Title": "Enjoy reliable, secure transactions backed by PCI DSS compliance",
+						"Image": "enjoy-reliable.webp"
+					},
+					{
+						"Title": "Integrate into your website to start collecting payments immediately.",
+						"Image": "integrate-into-your-website.webp"
+					}
+				]
+			},
+			"Section 7": {
+				"Title": "All You Need to Know",
+				"Items": [
+					{
+						"Question": "Can I customize the design of my online store?",
+						"Answer": "Absolutely. We build a website that reflects your brand’s personality and vision"
+					},
+					{
+						"Question": "How can I accept payments on my e-commerce store?",
+						"Answer": "With MontyPay’s integrated, secure payment gateway, you can accept payments with ease."
+					},
+					{
+						"Question": "Is my checkout secure?",
+						"Answer": "Yes, MontyPay is PCI DSS-certified, ensuring top-tier security."
+					},
+					{
+						"Question": "Can I integrate more than one language?",
+						"Answer": "Yes, we offer multi-language support for a truly global reach."
+					},
+					{
+						"Question": "Can I use multiple currencies?",
+						"Answer": "Definitely! We support payments in multiple currencies to cater to customers around the world."
+					},
+					{
+						"Question": "Is the website mobile-friendly?",
+						"Answer": "Absolutely! We ensure your website is fully responsive, providing a seamless experience across all devices."
+					},
+					{
+						"Question": "How many payment options are supported?",
+						"Answer": "Over 100, including credit cards, digital wallets, and even cryptocurrency."
+					}
+				]
+			},
+			"Section 8": {
+				"Title": "Our Clients"
+			},
+			"Section 9": {
+				"Title": "Ready to Transform Your Online Presence?",
+				"Description": "Let’s bring your vision to life! Reach out to us today, and let’s get started building your e-commerce platform with MontyPay. Your future customers are waiting."
+			},
+			"Seo": {
+				"Title": "E-Commerce Payment Services for Online Businesses",
+				"Description": "Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.",
+				"Og Title": "E-Commerce Payment Services for Online Businesses",
+				"Og Description": "Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Payment Orchestration Network": {
+			"Banner": {
+				"Title": "Payment Orchestration Network",
+				"Description": "Bring all your payment methods, gateways, and currencies into one easy-to-manage platform. Whether you’re growing globally or streamlining locally, we’re here to help you handle payments like a pro, boost approvals, and keep things running smoothly. Goodbye to payment chaos!",
+				"Image Alt": "Banner Image",
+				"Image:": "payment-orchestration-network-banner.webp"
+			},
+			"Section 2": {
+				"Title": "Go Global Without the Growing Pains",
+				"Description": "Expanding your business should be exciting, not exhausting. MontyPay’s Payment Orchestration Network takes the complexity out of global payments, helping you scale seamlessly, onboard merchants anywhere, and process cross-border transactions like a pro.",
+				"Items": [
+					{
+						"Title": "Smarter Payments, Higher Profits",
+						"Description": "Boost your acceptance rates and lower transaction costs with intelligent payment orchestration. By dynamically routing transactions across multiple payment methods and providers in 50+ countries, we optimize every payment for maximum efficiency and profitability.",
+						"Image": "smarter-payments.webp"
+					},
+					{
+						"Title": "Think Global, Transact Local",
+						"Description": "Reduce fees and increase approval rates by routing transactions through MontyPay’s network of local acquirers, ensuring a smooth and compliant payment experience.",
+						"Image": "think-global.webp"
+					},
+					{
+						"Title": "Payments in Every Language",
+						"Description": "With 100+ payment methods, multi-currency support, and region-specific solutions, your business is ready for any market, anywhere. You can cater to diverse customer preferences while optimizing operational efficiency.",
+						"Image": "payments-in-every-language.webp"
+					},
+					{
+						"Description": "Wherever you do business, <strong>frictionless expansion, optimized payments,</strong> and a <strong>seamless merchant experience</strong> are at hand’s reach.",
+						"Image": "wherever-you-do-business.webp"
+						
+					}
+				]
+			},
+			"Section 3": {
+				"Title": "Payment Orchestration as It Should Be",
+				"Items": [
+					{
+						"Image": "everything-in-one-place.webp",
+						"Title": "Everything in One Place",
+						"Description": "No more hopping around! Manage all payments across gateways, currencies, and methods on a single platform."
+					},
+					{
+						"Image": "smarter-transactions.webp",
+						"Title": "Smarter Transactions",
+						"Description": "Our intelligent routing sends payments through the best-performing gateways,reducing failures and keeping customers happy."
+					},
+					{
+						"Image": "unified-solution.webp",
+						"Title": "Unified Solution",
+						"Description": "A single integration connects your business to our extensive network of payment methods. Simplify your operations, minimize technical challenges, and focus on your growth."
+					},
+					{
+						"Image": "security-you-can-count-on.webp",
+						"Title": "Security You Can Count On",
+						"Description": "Advanced fraud detection tools safeguard every transaction, so you can focus on growing your business without worrying about risks."
+					},
+					{
+						"Image": "real-time-insights.webp",
+						"Title": "Real Time Insights",
+						"Description": "Get clear, actionable data on your transactions and performance from analytics and advanced reporting tools to make smarter decisions and drive growth."
+					},
+					{
+						"Image": "/central-point-of-contact.webp",
+						"Title": "Central Point of Contact",
+						"Description": "With MontyPay as your single point of contact, you can leave behind the hassle of managing multiple payment providers. Enjoy a streamlined interface to oversee all your payment operations effortlessly."
+					}
+				]
+			},
+			"Section 4": {
+				"Title": "Optimize Your Entire Payment Ecosystem Today",
+				"Description": "Let MontyPay’s Payment Orchestration Network do the heavy lifting. Manage, optimize, and grow, all from one platform designed to make your life simpler.",
+				"Image": "optimize-your-entire-payment.webp"
+			},
+			"Section 5": {
+				"Title": "All You Need to Know",
+				"Items": [
+					{
+						"Question": "What is payment orchestration?",
+						"Answer": "It’s a way to simplify and optimize your payments. MontyPay’s Payment Orchestration Network manages and processes payments across multiple gateways, currencies, and methods from one place."
+					},
+					{
+						"Question": "How does MontyPay improve payment success rates?",
+						"Answer": "Our intelligent routing picks the best-performing gateway for every transaction, ensuring more approvals and fewer declines."
+					},
+					{
+						"Question": "What payment methods and currencies are supported?",
+						"Answer": "We’ve got over 100 options for you, including cards, wallets, and multi-currency support."
+					},
+					{
+						"Question": "How does the solution help prevent fraud?",
+						"Answer": "Our platform includes advanced fraud detection tools, ensuring transactions are secure and risks are minimized."
+					},
+					{
+						"Question": "How do I get started?",
+						"Answer": "It’s easy! Just reach out to our team, and we’ll guide you through the onboarding process step by step."
+					}
+				]
+			},
+			"Seo": {
+				"Title": "E-Commerce Payment Services for Online Businesses",
+				"Description": "Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.",
+				"Og Title": "E-Commerce Payment Services for Online Businesses",
+				"Og Description": "Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Whitelabel For PSP Acquirer": {
+			"Banner": {
+				"Title": "White Label Solutions for PSPs & Acquirers",
+				"Description": "Become a Payment Service Provider (PSP) in as little as 3 weeks",
+				"Image Alt": "Banner Image",
+				"Image:": "white-label-for-psp-acquirer"
+			},
+			"Section 2": {
+				"Title": "Become a Payment Service Provider (PSP) in as little as 3 weeks",
+				"Items": [
+					"Fully brandable", "SaaS white label solution", "170+ connectors", "High-quality support", "Latest technology", "Industry best practices"
+				]
+			},
+			"Section 3": {
+				"Title": "Our Solutions",
+				"Items": [
+					"Payment<br />Gateway", "Merchant<br />Mobile App", "Merchant<br />Management System", "QR Code Self Service Checkout"
+				]
+			},
+			"Section 4": {
+				"Title 1": "Centralized Data Management",
+				"Description 1": "Our one-page, user-friendly data management tool consolidates all your payment channel data into a single, easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management.",
+				"Items 1": [
+					{
+						"Title": "MontyPay's Merchant Management System offers you unparalleled control and efficiency."
+					},
+					{
+						"Title" : "Operational Control",
+						"Description": "Manage and monitor your operations effortlessly, streamlining tasks and processes for maximum efficiency."
+					},
+					{
+						"Title": "Data-Driven Insights",
+						"Description": "Manage and monitor your operations effortlessly, streamlining tasks and processes for maximum efficiency."
+					},
+					{
+						"Title": "Scalability",
+						"Description": "Access the tools needed to scale your business efficiently, adapting to your evolving needs."
+					},
+					{
+						"Title": "Customization",
+						"Description": "Tailor the system to your unique business requirements, ensuring it aligns seamlessly with your brand identitys."
+					}
+				],
+				"Title 2": "QCheck",
+				"Description 2": "Our one-page, user-friendly data management tool consolidates all your payment channel data into a single, easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management.",
+				"Items 2": [
+					{
+						"Title": "MontyPay's QCheck revolutionizes dining experiences."
+					},
+					{
+						"Title": "Efficiency Boost",
+						"Description": "Enhance efficiency with seamless bill settlements, reducing table turnover time."
+					},
+					{
+						"Title": "Bill Splitting",
+						"Description": "Streamline the bill-splitting process, making it easier for groups to divide expenses."
+					},
+					{
+						"Title": "Increased Tips",
+						"Description": "Witness a significant increase in tips, providing a financial incentive for your staff."
+					},
+					{
+						"Title": "Enhanced Reputation",
+						"Description": "Make your establishment the talk of the town with improved dining experiences."
+					}
+					
+				]
+			},
+			"Section 5": {
+				"Title": "Merchant Mobile Application",
+				"Description": "Our merchant mobile application offers a seamless experience, providing access to comprehensive dashboard reporting and analytics. With this app, you can effortlessly:",
+				"Items": [
+					{
+						"Title": "Track transactions and monitor revenue"
+					},
+					{
+						"Title": "Send invoice links"
+					},
+					{
+						"Title": "Utilize the pay-by-link feature for convenient payments  anytime, anywhere"
+					},
+					{
+						"Title": "Request support"
+					},
+					{
+						"Title": "Customize payment options based on client needs"
+					},
+					{
+						"Title": "Display QR codes for efficient payments at your physical location"
+					},
+					{
+						"Title": "Collect payments easily with the QR pay feature"
+					}
+				]
+			},
+			"Section 6": {
+				"Title": "Efficient Data Insights",
+				"Description": "Gain valuable insights into your business operations with a centralized area for payments data, reporting, and more. Our rich reporting dashboard offers real-time analytics, transaction insights, and an intuitive interface. Multiple users and administrative roles further enhance your data management capabilities.",
+				"Image": "efficient-data-insights.png"
+			},
+			"Section 7": {
+				"Title": "Global Payment Collection",
+				"Description": "Allow your merchants to collect payments globally and instantly through various channels, including telephone sales, email, social media, QR codes, invoices, and messaging. Our platform simplifies recurring and batch payments, streamlining your billing processes and reducing manual effort.",
+				"Image": "global-payment-collection.png"
+			},
+			"Section 8": {
+				"Title": "Flexible Billing and Settlement",
+				"Description": "Customize fees for individual transactions with our premium billing platform features. Easily calculate commissions, merchant settlements, and referral partner rewards, all within a single platform.",
+				"Image": "flexible-billing-and-settlement.png"
+			},
+			"Section 9": {
+				"Title": "Intelligent Routing",
+				"Description": "Identify cost-effective transaction routes and routes with higher acceptance rates. MontyPay's transactional traffic routing considers multiple factors such as currency, transaction origin,3D-Secure requirements, and more. This intelligent routing optimizes acquirer performance and enhances transaction success.",
+				"Image": "intelligent-routing.png"
+			},
+			"Section 10": {
+				"Title": "Live Chat Support",
+				"Description": "Our live chat customer support is available around the clock to address any customer queries, ensuring a seamless and responsive service experience.",
+				"Image": "live-chat-support.png"
+			},
+			"Section 11": {
+				"Title": "Risk Management",
+				"Description": "MontyPay employs an advanced risk management system that combines in-house and external scoring models to detect, analyze, and prevent potentially fraudulent transactions. Our anti-fraud modules, external risk scoring providers, 3D-Secure 2.0, and customizable anti-fraud plans work together to safeguard your business.",
+				"Image": "risk-management.png"
+			},
+			"Section 12": {
+				"Title": "Cutting-Edge Technology",
+				"Description": "MontyPay leverages the latest technology to support your business expansion into new markets, increase revenue capture, and deliver a seamless checkout experience for your customers.",
+				"Image": "cutting-edge-technology.png"
+			},
+			"Section 13": {
+				"Title": "Expanded Connectivity",
+				"Description": "With over 170 connectors, MontyPay offers a wide range of pre-made links to banks and payment options, in addition to integrating your existing ones. This extensive network ensures a continuous flow of payments and simplifies integration with banks, retailers, and Alternative Payment Methods (APMs)."
+			},
+			"Seo": {
+				"Title": "E-Commerce Payment Services for Online Businesses",
+				"Description": "Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.",
+				"Og Title": "E-Commerce Payment Services for Online Businesses",
+				"Og Description": "Empower your online store with MontyPay’s e-commerce payment services—secure checkout, global payment methods, and seamless customer experiences.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"About Us": {
+			"Banner": {
+				"Title": "About MontyPay",
+				"Description": "With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
+			},
+			"Section 2": {
+				"Title": "MontyPay is a global payment service provider",
+				"Description": "Pioneering cutting-edge solutions across the world. Think of us as the unrivaled conductor orchestrating international financial prowess!"
+			},
+			"Section 3": {
+				"Title": "Based in the UK",
+				"Description": "Our headquarters are merely the tip of the iceberg. Our payment dominion stretches across the globe, with strategic outposts in Lebanon, Jordan, the UAE, Indonesia, and Nigeria, ensuring our proximity to where currencies clash and transactions flare."
+			},
+			"Section 4": {
+				"Title": "Our Offices",
+				"Description": "We offer a wide range of 100+ payment methods that cover Middle East, Asia, Europe and America."
+			},
+			"Section 5": {
+				"Title": "Our secret?",
+				"Description": "Envision a symphony of flawlessly executed online transactions, a choreography of clicks and swipes gliding effortlessly through 50+ countries, embracing payment methods as diverse as a palette of colours.<br /><br />We offer a wide range of 100+ payment methods that cover Middle East, Asia, Europe and America."
+			},
+			"Section 6": {
+				"Title": "This isn’t just business",
+				"Description": "It's a world of financial finesse! MontyPay doesn't talk the talk; our track record of triumph speaks volumes. While others stumble with their wallets, we elevate your whole payment experience!",
+				"Description 1": "Our services encompass an end-to-end solution, spanning from E-Commerce development, content management, order fulfilment, and social media mastery, all the way to cutting-edge payment solutions and beyond. If you're eager to uncover your business's next stride, connect with us at: info{'@'}montypay.com"
+			},
+			"Section 7": {
+				"Title": "If you're eager to uncover your business's next stride",
+				"Title 1": "Connect with us at",
+				"Button Text": "info{'@'}montypay.com",
+				"Button Link": "info{'@'}montypay.com"
+			},
+			"Section 8": {
+				"Title 1": "Our vision",
+				"Description 1": "To offer a simple global payment gateway to all merchants. To provide merchants with the best payment gateway experience.",
+				"Title 2": "Our mission",
+				"Description 2": "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience. MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment types."
+			},
+			"Section 9": {
+				"Title": "CORE VALUES",
+				"Items": [
+					{
+						"id": 1,
+						"Title": "Transparency",
+						"Description": "We are committed to providing clear, straightforward information, ensuring that our clients have a full understanding of our services, processes, and fees, with no hidden terms."
+					},
+					{
+						"id": 2,
+						"Title": "Innovation",
+						"Description": "We continuously invest in advanced technologies and provide our clients with cutting-edge, efficient solutions that meet their evolving needs."
+					},
+					{
+						"id": 3,
+						"Title": "Flexibility",
+						"Description": "We offer flexible solutions tailored to the specific needs of each customer, providing adaptable and scalable options to suit a variety of business and personal financial needs."
+					},
+					{
+						"id": 4,
+						"Title": "Honesty & Integrity",
+						"Description": "We are committed to upholding the highest ethical standards, ensuring that every interaction and transaction is conducted with fairness, accountability, and respect for our clients."
+					}
+				]
+			},
+			"Seo": {
+				"Title": "About MontyPay | Global Payment Technology Provider",
+				"Description": "Learn about MontyPay’s mission, global presence, and innovative payment solutions that empower merchants with secure and scalable technology.",
+				"Og Title": "About MontyPay | Global Payment Technology Provider",
+				"Og Description": "Learn about MontyPay’s mission, global presence, and innovative payment solutions that empower merchants with secure and scalable technology.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Careers": {
+			"Banner": {
+				"Title": "MontyPay Careers",
+				"Description": "At MontyPay, your career path is limited only by your ambition, and we are here to support you every step of the way."
+			},
+			"Section 2": {
+				"Title": "Join us",
+				"Description": "We are committed to nurturing talent and fostering a culture of continuous learning and growth. Join our dynamic and multicultural team, and you'll embark on a rewarding journey filled with endless opportunities to expand your horizons.<br /><br />Join us and be part of a team that values diversity, encourages collaboration, and empowers you to reach new heights in your career"
+			},
+			"Section 3": {
+				"Title": "We're hiring",
+				"Subtitle": "Submit your CV today and we will reach out to you once we find a position that fits your profile.",
+				"Paragraph": "Be part of a team that values diversity, encourages collaboration, and empowers you to reach new heights in your career.<br><br>At MontyPay, we are committed to nurturing talent and fostering a culture of continuous learning and growth. Join our dynamic and multicultural team, and you'll embark on a rewarding journey filled with endless opportunities to expand your horizons.",
+				"Image": "join-us.webp"
+			},
+			"Section 4": {
+				"Title": "Our values guide our actions.",
+				"Items": [
+					"Care","Innovation","Transparency","Honesty","Integrity","Flexibility","Excellence"
+				]
+			},
+			"Seo": {
+				"Title": "Careers at MontyPay | Join Our Global Fintech Team",
+				"Description": "Explore career opportunities at MontyPay and join a fast-growing global fintech company shaping the future of payments. Apply now and grow with us.",
+				"Og Title": "Careers at MontyPay | Join Our Global Fintech Team",
+				"Og Description": "Explore career opportunities at MontyPay and join a fast-growing global fintech company shaping the future of payments. Apply now and grow with us.",
 				"Twitter Title": "",
 				"Twitter Description": "",
 				"Default Message": ""
@@ -1001,6 +1736,59 @@
 				"Description": "Pay at table",
 				"Image": "",
 				"Image Alt": ""
+			}
+		]
+	},
+	"Map": {
+		"Items": [
+			{
+				"Icon": "LB",
+				"Location": "Beirut, Lebanon",
+				"Address": "3rd Floor, Bloc A, <br />Gefinor Center, Beirut, Lebanon",
+				"Top": "39.8",
+				"Left": "57.7"
+			},
+			{
+				"Icon": "UK",
+				"Location": "London, UK",
+				"Address": "Beaumont Bridge House, <br /> 181 Queen Victoria Street",
+				"Top": "26",
+				"Left": "47.8"
+			},
+			{
+				"Icon": "JO",
+				"Location": "Amman, Jordan",
+				"Address": "Office 501, Campbell Grey Living, <br /> Land Number 851, Al-Waibdeh <br /> - Al- Wastani Basin",
+				"Top": "41.5",
+				"Left": "58.3"
+			},
+			{
+				"Icon": "AE",
+				"Location": "Dubai, UAE",
+				"Address": "Unit 30, floor 20, <br /> Central Park Tower, DIFC",
+				"Top": "46",
+				"Left": "63.2"
+			},
+			{
+				"Icon": "ID",
+				"Location": "Jakarta, Indonesia",
+				"Address": "9th Floor Noble House Building, <br /> Lingkar Mega Kuningan, Kuningan, <br /> Kuningan Timur, Setiabudi, <br /> Jakarta Selatan, Jakarta 12950",
+				"Top": "62",
+				"Left": "77"
+			},
+			{
+				"Icon": "NG",
+				"Location": "Lagos, Nigeria",
+				"Address": "1st floor, Sigma Base, <br /> 7/9 Molade Okoya Thomas Street, <br /> Victoria Island, Lagos State, Nigeria.",
+				"Top": "54.9",
+				"Left": "49.8"
+			},
+			{
+				"Icon": "SA",
+				"Location": "Riyadh, KSA",
+				"Address": "Al Olaya Street, Building #62, <br /> 1st Floor, Riyadh, KSA",
+				"Top": "50",
+				"Left": "61"
 			}
 		]
 	},
