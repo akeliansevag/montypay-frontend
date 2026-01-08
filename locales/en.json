@@ -42,7 +42,11 @@
 			"Log In": "Log In",
 			"Contact Us": "Contact Us",
 			"Request a Demo": "Request a Demo",
-			"Contact Sales": "Contact Sales"
+			"Contact Sales": "Contact Sales",
+			"Link": "Link",
+			"Download": "Download",
+			"Connect": "Connect",
+			"Download PDF": "Download PDF"
 		},
 		"Labels": {
 			"First Name": "First Name",
@@ -50,15 +54,33 @@
 			"Email": "Email",
 			"Cover Letter": "Cover Letter",
 			"Upload your CV": "Upload your CV",
-			"Send": "Send"
-			
+			"Send": "Send",
+			"Work Email": "Work Email",
+			"Phone Number": "Phone Number",
+			"Country": "Country",
+			"Industry": "Industry",
+			"Product": "Product",
+			"Company Name": "Company Name",
+			"Company Size": "Company Size",
+			"Website": "Website",
+			"Message": "Message",
+			"Privacy Policy": "Privacy Policy"
 		},
 		"Placeholders": {
 			"First Name": "First Name",
 			"Last Name": "Last Name",
 			"Email": "Email",
 			"Cover Letter": "Cover Letter",
-			"Upload your CV": "Upload your CV"
+			"Upload your CV": "Upload your CV",
+			"Work Email": "Work Email",
+			"Phone Number": "Phone Number",
+			"Country": "Select Country",
+			"Industry": "Select Industry",
+			"Product": "Select Product",
+			"Company Name": "Company Name",
+			"Company Size": "Company Size",
+			"Website": "Website",
+			"Message": "Leave us a message..."
 		},
 		"Messages": {
 			"Errors": {
@@ -72,7 +94,14 @@
 					"Profession": "Please enter your profession",
 					"Subject": "Please enter your subject",
 					"Message": "Please enter your message",
-					"File": "Please upload at least one valid file"
+					"File": "Please upload at least one valid file",
+					"Phone Number": "Please enter your phone number",
+					"Industry": "Please select an industry",
+					"Product": "Please select a product",
+					"Company Name": "Please enter your company name",
+					"Company Size": "Please enter your company size",
+					"Website": "Please enter your website",
+					"Privacy Policy": "You must agree to our privacy policy"
 				},
 				"Safe": "Your input has invalid value",
 				"Valid Email": "Please enter a valid email address",
@@ -1687,6 +1716,417 @@
 				"Description": "Explore career opportunities at MontyPay and join a fast-growing global fintech company shaping the future of payments. Apply now and grow with us.",
 				"Og Title": "Careers at MontyPay | Join Our Global Fintech Team",
 				"Og Description": "Explore career opportunities at MontyPay and join a fast-growing global fintech company shaping the future of payments. Apply now and grow with us.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Partners": {
+			"Banner": {
+				"Title": "MontyPay Partnership Programs",
+				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+			},
+			"Section 2":{
+				"Title": "ISO Partnership Model",
+				"Description": "MontyPay welcomes partnerships with Acquirers, PSPs, Wallets, and other payment providers to seamlessly integrate their payment connections within the countries they cover. In this model, MontyPay acts as a trusted intermediary between the connectors and merchants. Our platform is already trusted by over 15 global partners, including renowned names such as Stripe, Paypal, and Flutterwave."
+			},
+			"Section 3": {
+				"Title": "API Orchestration",
+				"Description": "Acquirers, PSPs, Wallets, and other payment providers can establish partnerships with MontyPay to access our robust payment orchestration via a single API. Partners gain direct entry to our expansive network spanning over 50 countries across different regions, enabling rapid global expansion and access to diverse payment methods through a unified integration."
+			},
+			"Section 4": {
+				"Title": "Strategic Co-partnership Initiative",
+				"Description": "MontyPay offers a co-partnership model tailored for Acquirers and PSPs seeking strategic collaborations. Partners contribute their licenses and back-office operations, while MontyPay provides technical expertise, sales, and marketing investments.",
+				"Image": "strategic-co-partnership-initiative.png",
+				"Description 2": "Through this synergy, MontyPay delivers cutting-edge payment solutions, leveraging the licensed partner's capabilities to offer leading payment services in the market.<br />This option provides partners with the opportunity to penetrate the market faster and to be part of a global payment provider, thereby increasing their sales."
+			},
+			"Section 5": {
+				"Title": "Referral Reseller Program",
+				"Description": "Entrepreneurs, freelancers, agencies, and businesses of varied sizes have an opportunity to collaborate with MontyPay by referring merchants to our platform. By participating in our referral program, you become a vital part of our network, referring merchants to leverage our suite of payment solutions. As a reseller, you'll receive a share of the profits, making it a mutually beneficial partnership. This model enables you to monetize your connections and networks while empowering merchants with our cutting-edge payment services.",
+				"Items": [
+					"Entrepreneurs","Freelancers","Agencies","Businesses"
+				]
+			},
+			"Seo": {
+				"Title": "Partner Programs | Co-Branding & Payment Partnerships",
+				"Description": "Explore MontyPay’s partnership models designed for banks, PSPs, ISOs, and businesses looking to expand global payment capabilities.",
+				"Og Title": "Partner Programs | Co-Branding & Payment Partnerships",
+				"Og Description": "Explore MontyPay’s partnership models designed for banks, PSPs, ISOs, and businesses looking to expand global payment capabilities.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"News": {
+			"Banner": {
+				"Title": "Latest News & Announcements",
+				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+			},
+			"Seo": {
+				"Title": "MontyPay News | Latest Updates & Partnerships",
+				"Description": "Stay updated with MontyPay’s latest news, product releases, partnerships, and milestones shaping the future of digital payments.",
+				"Og Title": "MontyPay News | Latest Updates & Partnerships",
+				"Og Description": "Stay updated with MontyPay’s latest news, product releases, partnerships, and milestones shaping the future of digital payments.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Blogs": {
+			"Banner": {
+				"Title": "MontyPay Blog"
+			},
+			"Seo": {
+				"Title": "MontyPay Blog | Payment Trends, Insights & Updates",
+				"Description": "Explore expert insights, fintech trends, and product updates on the MontyPay Blog. Stay informed about the digital payments industry.",
+				"Og Title": "MontyPay Blog | Payment Trends, Insights & Updates",
+				"Og Description": "Explore expert insights, fintech trends, and product updates on the MontyPay Blog. Stay informed about the digital payments industry.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Global Coverage": {
+			"Banner": {
+				"Title": "Global Coverage",
+				"Description": "With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
+			},
+			"Section 2": {
+				"Title": "Global Coverage",
+				"Description": "Expand Your Business Horizons Worldwide",
+				"Cards": "Cards",
+				"Digital Wallets": "Digital Wallets",
+				"Other": "Other",
+				"eWallet": "eWallet",
+				"Cash": "Cash",
+				"Virtual Account": "Virtual Account",
+				"Direct Debit": "Direct Debit",
+				"Pay Later (BNPL)": "Pay Later (BNPL)",
+				"Lebanon": "Lebanon",
+				"Jordan": "Jordan",
+				"Bahrain": "Bahrain",
+				"UAE": "UAE",
+				"Nigeria": "Nigeria",
+				"EU & UK": "EU & UK",
+				"Canada": "Canada",
+				"USA": "USA",
+				"Kuwait": "Kuwait",
+				"Indonesia": "Indonesia",
+				"LATAM": "LATAM",
+				"Australia": "Australia",
+				"Qatar": "Qatar",
+				"Saudi Arabia": "Saudi Arabia",
+				"Ghana": "Ghana",
+				"South Africa": "South Africa"
+			},
+			"Seo": {
+				"Title": "Global Payment Coverage for Merchants Worldwide",
+				"Description": "Explore MontyPay’s global payment coverage, enabling businesses to expand internationally with localized payment methods and worldwide acquiring connections.",
+				"Og Title": "Global Payment Coverage for Merchants Worldwide",
+				"Og Description": "Explore MontyPay’s global payment coverage, enabling businesses to expand internationally with localized payment methods and worldwide acquiring connections.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Documentation": {
+			"Banner": {
+				"Title": "Developer Documentation",
+				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+			},
+			"Section 2": {
+				"Title": "Mobile SDK",
+				"Description": "MontyPay offers implementation of in-app payments for any smart device – smart watches, wearables, smart TV – you name it, with an easy integration into Mobile apps. <br>It allows a simplified payment experience, by allowing clients to pay on the spot while using your application. We’ve implemented all of our extensive payment experience into the development of a smooth mobile-friendly checkout, to decrease your card abandonment rate."
+			},
+			"Section 3": {
+				"Title": "Ecommerce Plugins"
+			},
+			"Seo": {
+				"Title": "Developer Documentation | SDKs & API Integration",
+				"Description": "Explore MontyPay’s developer documentation for SDKs, APIs, and integration guides designed to help businesses launch payments quickly and securely.",
+				"Og Title": "Developer Documentation | SDKs & API Integration",
+				"Og Description": "Explore MontyPay’s developer documentation for SDKs, APIs, and integration guides designed to help businesses launch payments quickly and securely.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"API Reference": {
+			"Banner": {
+				"Title": "API Reference",
+				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+			},
+			"Section 2": {
+				"Items": [
+					{
+						"Title": "API Integration (POST)",
+						"Paragraph": "This document describes integration procedures and POST protocol usage for e-commerce merchants. POST protocol implements acquiring payments (purchases) using specific API interactions."
+						
+					},
+					{
+						"Title": "Generating a Certificate Signing Request",
+						"Paragraph": "Here are the steps or how-to to create a Certificate Signing Request (CSR). The example is given specifically for Centos based systems."
+						
+					},
+					{
+						"Title": "Integration API CREDIT_VA",
+						"Paragraph": "This document describes integration procedures and CREDIT2VIRTUAL protocol usage for e-commerce merchants. CREDIT2VIRTUAL protocol implements money transfer transactions to the customer's account, using specific API interactions."
+						
+					},
+					{
+						"Title": "Checkout API",
+						"Paragraph": "Checkout service is a fast and easy way to create a secure payment page. It enables the collection and submission of payments, and their forwarding for processing. To use the checkout service in your Website, you must integrate it using the Checkout API. The API requires to send request data in json format and responds back with json return url string."
+						
+					},
+					{
+						"Title": "PostMan Request Sending",
+						"Paragraph": "These step-by-step instructions describe how to send authentication requests using Postman. Result if such request is response, which contains “redirect URL”. “redirect URL” is the link used to send user to payment page (Checkout page)."
+					}
+				]
+			},
+			"Seo": {
+				"Title": "API Reference | Developer Integration Guide",
+				"Description": "Explore MontyPay’s API reference for developers—featuring integration guides, endpoints, authentication methods, and payment flow documentation.",
+				"Og Title": "API Reference | Developer Integration Guide",
+				"Og Description": "Explore MontyPay’s API reference for developers—featuring integration guides, endpoints, authentication methods, and payment flow documentation.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"Contact Us": {
+			"Banner": {
+				"Title": "Contact MontyPay",
+				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+			},
+			"Section 2": {
+				"Title": "Do you have questions?"
+			},
+			"Seo": {
+				"Title": "Contact MontyPay | Sales & Support Assistance",
+				"Description": "Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.",
+				"Og Title": "Contact MontyPay | Sales & Support Assistance",
+				"Og Description": "Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.",
+				"Twitter Title": "",
+				"Twitter Description": "",
+				"Default Message": ""
+			}
+		},
+		"FAQ": {
+			"Banner": {
+				"Title": "Frequently Asked Questions",
+				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+			},
+			"Section 2": {
+				"Items": [
+					{
+						"Title" : "General",
+						"Items" : [
+							{
+								"id": 1,
+								"Question" : "Who can use MontyPay services?",
+								"Answer": "MontyPay allows any registered business to sign up and receive payments through various channels like websites, pay links, and mobile apps. However, businesses engaging in certain activities or failing compliance and risk checks may not be accepted."
+							},
+							{
+								"id": 2,
+								"Question" : "Do I have to be PCI compliant to accept payments through MontyPay payment services?",
+								"Answer": "No, you can still take payments using MontyPay since our platform is PCI compliant. All transaction data processed through our platform is safeguarded within our secure network."
+							},
+							{
+								"id": 3,
+								"Question" : "How can I get started with MontyPay Services?",
+								"Answer": "Feel free to reach out by using the 'Contact Us' section on the website or sending an email to info{'@'}montypay.com. Our representatives will get in touch with you for further information."
+							},
+							{
+								"id": 4,
+								"Question" : "Do you have customer support?",
+								"Answer": "Our customer support is reachable through whatsapp on +44 7496 312110 and support{'@'}montypay.com or through our chat widgets available on the website and merchants dashboard/mobile app."
+							},
+							{
+								"id": 5,
+								"Question" : "What is a Dashboard and why do I need it?",
+								"Answer": "A dashboard is a live screen providing a complete overview of key performance indicators (KPIs) for your business in real-time."
+							}
+						]
+					},
+					{
+						"Title" : "Compliance",
+						"Items" : [
+							{
+								"id": 6,
+								"Question" : "How does MontyPay ensure compliance with Anti-Money Laundering (AML) regulations?",
+								"Answer": "MontyPay prioritizes AML compliance through robust procedures, including customer due diligence during onboarding, ongoing transaction monitoring, and reporting of suspicious activities to relevant authorities. Our team undergoes regular AML training, and we continuously update our policies to align with evolving regulatory requirements. By implementing strong AML measures, we strive to maintain a secure and compliant environment for financial transactions."
+							},
+							{
+								"id": 7,
+								"Question" : "How does MontyPay handle security, protect sensitive information, and ensure compliance with industry regulations and standards?",
+								"Answer": "MontyPay places a high priority on security through the implementation of industry-leading measures. This includes robust encryption protocols, such as SSL, to secure data transmission, multi-layered infrastructure security, and regular security audits. In terms of compliance, we adhere to industry standards like PCI DSS and conduct regular audits to validate our compliance. We stay aligned with regulatory updates, by promptly adjusting our practices to ensure ongoing adherence to all relevant standards and regulations."
+							},
+							{
+								"id": 8,
+								"Question" : "What is MontyPay's Acceptable Use Policy?",
+								"Answer": "MontyPay's Acceptable Use Policy outlines activities and products not allowed with its services, as they may appear illegal or inappropriate. If MontyPay suspects a violation of its Customer Acceptance Policy, it may take corrective action, like terminating accounts. For more details, check MontyPay's Customer Acceptance Policy <a href='https://montypay.com/customer-acceptance-policy/'>https://montypay.com/customer-acceptance-policy/</a>"
+							}
+						]
+					},
+					{
+						"Title" : "Onboarding and Payments",
+						"Items" : [
+							{
+								"id": 9,
+								"Question" : "What’s the next step once I have submitted the complete requirements?",
+								"Answer": "After receiving all the necessary documents, we will check them against our internal policies and share the documentation with the acquiring bank. This process typically takes about 48 hours."
+							},
+							{
+								"id": 10,
+								"Question" : "How long does the acquiring bank need to review my application and grant the approval?",
+								"Answer": "The application process takes about 10-15 working days when all required documents are submitted. However, in exceptional cases requiring additional risk and compliance review, it might take longer."
+							},
+							{
+								"id": 11,
+								"Question" : "Can I use MontyPay on more than one website under the same legal entity?",
+								"Answer": "You can do so if the activities of the websites align with the entity's policies. If the websites belong to different domains, a distinct onboarding process will be applicable."
+							},
+							{
+								"id": 12,
+								"Question" : "Which E-commerce platforms does MontyPay support?",
+								"Answer": "MontyPay is compatible with a variety of E-commerce platforms such as Magento, Woocommerce, Prestashop, nopCommerce, opencart, ecomz, thewebaddicts and easydigitaldownloads. Any other new platform can be assessed and developed."
+							},
+							{
+								"id": 13,
+								"Question" : "Which Mobile SDKs do MontyPay support?",
+								"Answer": "Montypay supports IOS, Android, and Flutter."
+							},
+							{
+								"id": 14,
+								"Question" : "Does MontyPay support Insite/InApp payments?",
+								"Answer": "Yes, both are supported when the merchant website or App are secure."
+							},
+							{
+								"id": 15,
+								"Question" : "Do you provide technical API documentation for initiating integration and testing on my sandbox account?",
+								"Answer": "Documentation is available on MontyPay website through <a href='https://montypay.com/api-reference/'>https://montypay.com/api-reference/</a>"
+							},
+							{
+								"id": 16,
+								"Question" : "Do you accept non 3DS cards?",
+								"Answer": "Acceptance of non-3DS is restricted to specific merchants and jurisdictions."
+							},
+							{
+								"id": 17,
+								"Question" : "Does MontyPay support Crypto payments?",
+								"Answer": "Yes, it does."
+							},
+							{
+								"id": 18,
+								"Question" : "Does MontyPay offer multiple payment methods?",
+								"Answer": "MontyPay's worldwide presence enables merchants to accept all local and international payment methods accessible in the country of their incorporation."
+							},
+							{
+								"id": 19,
+								"Question" : "Can I deactivate my account at any time?",
+								"Answer": "The merchant can initiate an account deactivation request at any time, provided all outstanding dues are settled. The merchant will continue to be responsible for processed transactions even after the account is closed. Termination clauses are outlined in the merchant agreement."
+							},
+							{
+								"id": 20,
+								"Question" : "Does MontyPay offer the payment links service to the customers?",
+								"Answer": "Yes, it does."
+							},
+							{
+								"id": 21,
+								"Question" : "Can I deactivate my account at any time?",
+								"Answer": "The merchant can initiate an account deactivation request at any time, provided all outstanding dues are settled. The merchant will continue to be responsible for processed transactions even after the account is closed. Termination clauses are outlined in the merchant agreement."
+							},
+							{
+								"id": 22,
+								"Question" : "How easy is to integrate with MontyPay?",
+								"Answer": "MontyPay's payment integration is crafted to accommodate all programming languages, and merchants can receive sample codes in their preferred language."
+							},
+							{
+								"id": 23,
+								"Question" : "Does MontyPay provide Tokenization service?",
+								"Answer": "Yes, it does."
+							},
+							{
+								"id": 24,
+								"Question" : "Does MontyPay offer recurring services?",
+								"Answer": "Yes, it does."
+							},
+							{
+								"id": 25,
+								"Question" : "Does MontyPay offer website development and digital services?",
+								"Answer": "Yes, MontyPay offers website development, marketing, and digital services."
+							}
+						]
+					},
+					{
+						"Title" : "Refunds & Settlements",
+						"Items" : [
+							{
+								"id" : 26,
+								"Question" : "How long is the settlement period?",
+								"Answer": "The settlement period will be set depending on the acquirer bank."
+							},
+							{
+								"id" : 27,
+								"Question" : "How do I know what my settlement period is?",
+								"Answer": "MontyPay operates in multiple countries, and as a result, the settlement period varies from one country to another. The specific settlement period for each merchant is outlined in their initial proposal."
+							},
+							{
+								"id" : 28,
+								"Question" : "How long does it take for a refund to reach the customer?",
+								"Answer": "Refunds are expected to be completed within 7 to 15 working days or more depending on the Issuer/Acquirer bank responsiveness."
+							}
+						]
+					},
+					{
+						"Title" : "Website Development",
+						"Items" : [
+							{
+								"id" : 29,
+								"Question" : "Can you develop and deliver a fully functional website?",
+								"Answer": "Yes, we can."
+							},
+							{
+								"id" : 30,
+								"Question" : "What does MontyPay’s website development process entail?",
+								"Answer": "MontyPay's process for website development begins with an initial consultation to comprehend the merchant's requirements. It then progresses through design mock-ups, development, incorporating client feedback, and concludes with deployment, following thorough testing to guarantee a smooth user experience."
+							},
+							{
+								"id" : 31,
+								"Question" : "Does MontyPay offer responsive design for mobile devices?",
+								"Answer": "MontyPay’s websites are designed to be fully responsive, ensuring optimal viewing and functionality across various devices including smartphones, tablets, and desktops."
+							},
+							{
+								"id" : 32,
+								"Question" : "How does MontyPay ensure the security of the website?",
+								"Answer": "MontyPay prioritizes website security by implementing industry-standard security protocols, SSL certificates, regular updates, and robust measures to protect against vulnerabilities and cyber threats."
+							},
+							{
+								"id" : 33,
+								"Question" : "Can MontyPay integrate e-commerce functionalities into the website?",
+								"Answer": "MontyPay is specialized in e-commerce development and can integrate secure payment gateways, shopping carts, and inventory management systems tailored to your business needs."
+							},
+							{
+								"id" : 34,
+								"Question" : "Does MontyPay offer support after launching the websites?",
+								"Answer": "MontyPay provides comprehensive post-launch support, including training, troubleshooting, and ongoing technical assistance to ensure that the merchants’ websites function optimally."
+							},
+							{
+								"id" : 35,
+								"Question" : "What sets MontyPay's development services apart from others?",
+								"Answer": "Our team stands out in the industry due to our expertise, unwavering commitment to client satisfaction, meticulous attention to detail, and our pledge to deliver innovative, high-quality websites tailored to the unique requirements of each client."
+							}
+
+						]
+					}
+				]
+			},
+			"Seo": {
+				"Title": "MontyPay FAQ | Answers to Common Payment Questions",
+				"Description": "Find clear answers to the most frequently asked questions about MontyPay’s payment solutions, integrations, features, pricing, and merchant support.",
+				"Og Title": "MontyPay FAQ | Answers to Common Payment Questions",
+				"Og Description": "Find clear answers to the most frequently asked questions about MontyPay’s payment solutions, integrations, features, pricing, and merchant support.",
 				"Twitter Title": "",
 				"Twitter Description": "",
 				"Default Message": ""
