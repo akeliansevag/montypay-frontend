@@ -215,23 +215,23 @@
                         class="flex-1"
                     />
                     <ul class="mt-8 text-base list-inside list-disc">
-                        <li>{{t('Pages.Homepage.Section 4.Title')}}</li>
-                        <li>Simple & secure payments</li>
-                        <li>Seamless customer experience</li>
+                        <li>{{t('Pages.Homepage.Section 5.List Items 1.Item 1')}}</li>
+                        <li>{{t('Pages.Homepage.Section 5.List Items 1.Item 2')}}</li>
+                        <li>{{t('Pages.Homepage.Section 5.List Items 1.Item 3')}}</li>
                     </ul>
 
                     <div class="grid grid-cols-2 lg:grid-cols-3 mt-16">
                         <div class="flex flex-col gap-10 border-[0.5px] rounded-tl-lg rounded-bl-lg py-5 px-4">
                             <img src="/images/file-check.svg" alt="Settle bills & check menu" width="30" height="30" />
-                            <span class="mt-6">Settle bills &<br />check menu</span>
+                            <span class="mt-6" v-html="t('Pages.Homepage.Section 5.List Items 2.Item 1')" />
                         </div>
                         <div class="flex flex-col gap-10 border-[0.5px] py-5 px-4">
                             <img src="/images/git-branch.svg" alt="Enhance brand visibility" width="30" height="30" />
-                            <span class="mt-6">Enhance brand<br />visibility</span>
+                            <span class="mt-6" v-html="t('Pages.Homepage.Section 5.List Items 2.Item 2')" />
                         </div>
                         <div class="flex flex-col gap-10 border-[0.5px] rounded-tr-lg rounded-br-lg py-5 px-4">
                             <img src="/images/currency-dollar-circle.svg" alt="Boosts tips" width="30" height="30" />
-                            <span class="mt-6">Boosts<br />tips</span>
+                            <span class="mt-6" v-html="t('Pages.Homepage.Section 5.List Items 2.Item 3')" />
                         </div>
                     </div>
                 </div>
@@ -258,8 +258,8 @@
 
                     <div class="order-1 md:order-2 flex flex-col gap-8 mt-16">
                         <ContentBlock
-                            title="Build Your Brand Online With <br /> Your Trusted <img class='max-lg:w-[120px] inline -mt-2 mx-2' src='/images/shopify-logo.svg' alt='Shopify Logo' width='184' height='53' /> Partner "
-                            paragraph="MontyPay brings merchants and businesses online by creating powerful commerce experiences that grow brand presence and make it accessible to customers worldwide."
+                            :title="t('Pages.Homepage.Section 6.Title')"
+                            :paragraph="t('Pages.Homepage.Section 6.Description')"
                         />
                         
                         <div class="flex items-start gap-2 mt-8">
@@ -271,8 +271,8 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" fill="white"/>
                             </svg>
                             <div class="w-full md:w-4/5">
-                                <h5 class="font-semibold">Website Audit & Cost Analysis</h5>
-                                <p>Clear insights, structured evaluation, and accurate cost planning</p>
+                                <h5 class="font-semibold">{{ t('Pages.Homepage.Section 6.List Items 1[0].Title') }}</h5>
+                                <p>{{ t('Pages.Homepage.Section 6.List Items 1[0].Description') }}</p>
                             </div>
                         </div>  
                         <div class="flex items-start gap-2">
@@ -280,8 +280,8 @@
                                 <path d="M17 4V20C18.1 20 19 19.1 19 18V6C19 4.9 18.1 4 17 4ZM13 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H13C14.1 22 15 21.1 15 20V4C15 2.9 14.1 2 13 2ZM13 20H4V4H13V20ZM21 6V18C21.83 18 22.5 17.33 22.5 16.5V7.5C22.5 6.67 21.83 6 21 6Z" fill="white"/>
                             </svg>
                             <div class="w-full md:w-4/5">
-                                <h5 class="font-semibold">B2B & B2C Website Design</h5>
-                                <p>Modern, conversion-driven Shopify stores tailored to unique business needs.</p>
+                                <h5 class="font-semibold">{{ t('Pages.Homepage.Section 6.List Items 1[1].Title') }}</h5>
+                                <p>{{ t('Pages.Homepage.Section 6.List Items 1[1].Description') }}</p>
                             </div>  
                         </div>  
                         <div class="flex items-start gap-2">
@@ -289,8 +289,8 @@
                                 <path d="M12.89 11.1C11.11 10.51 10.25 10.14 10.25 9.2C10.25 8.18 11.36 7.81 12.06 7.81C13.37 7.81 13.85 8.8 13.96 9.15L15.54 8.48C15.39 8.03 14.72 6.56 13 6.24V5H11V6.26C8.52 6.82 8.51 9.12 8.51 9.22C8.51 11.49 10.76 12.13 11.86 12.53C13.44 13.09 14.14 13.6 14.14 14.56C14.14 15.69 13.09 16.17 12.16 16.17C10.34 16.17 9.82 14.3 9.76 14.08L8.1 14.75C8.73 16.94 10.38 17.53 11 17.71V19H13V17.76C13.4 17.67 15.9 17.17 15.9 14.54C15.9 13.15 15.29 11.93 12.89 11.1ZM3 21H1V15H7V17H4.52C6.13 19.41 8.88 21 12 21C14.3869 21 16.6761 20.0518 18.364 18.364C20.0518 16.6761 21 14.3869 21 12H23C23 18.08 18.08 23 12 23C8.28 23 4.99 21.15 3 18.33V21ZM1 12C1 5.92 5.92 1 12 1C15.72 1 19.01 2.85 21 5.67V3H23V9H17V7H19.48C17.87 4.59 15.12 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12H1Z" fill="white"/>
                             </svg>
                             <div class="w-full md:w-4/5">
-                                <h5 class="font-semibold">Payment Gateway Integration</h5>
-                                <p>Fast, reliable, multi-currency checkout powered by MontyPay</p>
+                                <h5 class="font-semibold">{{ t('Pages.Homepage.Section 6.List Items 1[2].Title') }}</h5>
+                                <p>{{ t('Pages.Homepage.Section 6.List Items 1[2].Description') }}</p>
                             </div>  
                         </div>  
                         <div class="flex items-start gap-2">
@@ -298,8 +298,8 @@
                                 <path d="M20.8125 18.5625H4.6875V3.9375C4.6875 3.83437 4.60312 3.75 4.5 3.75H3.1875C3.08437 3.75 3 3.83437 3 3.9375V20.0625C3 20.1656 3.08437 20.25 3.1875 20.25H20.8125C20.9156 20.25 21 20.1656 21 20.0625V18.75C21 18.6469 20.9156 18.5625 20.8125 18.5625ZM6.75 16.6875H8.0625C8.16563 16.6875 8.25 16.6031 8.25 16.5V13.125C8.25 13.0219 8.16563 12.9375 8.0625 12.9375H6.75C6.64687 12.9375 6.5625 13.0219 6.5625 13.125V16.5C6.5625 16.6031 6.64687 16.6875 6.75 16.6875ZM10.3125 16.6875H11.625C11.7281 16.6875 11.8125 16.6031 11.8125 16.5V9C11.8125 8.89687 11.7281 8.8125 11.625 8.8125H10.3125C10.2094 8.8125 10.125 8.89687 10.125 9V16.5C10.125 16.6031 10.2094 16.6875 10.3125 16.6875ZM13.875 16.6875H15.1875C15.2906 16.6875 15.375 16.6031 15.375 16.5V10.8281C15.375 10.725 15.2906 10.6406 15.1875 10.6406H13.875C13.7719 10.6406 13.6875 10.725 13.6875 10.8281V16.5C13.6875 16.6031 13.7719 16.6875 13.875 16.6875ZM17.4375 16.6875H18.75C18.8531 16.6875 18.9375 16.6031 18.9375 16.5V7.125C18.9375 7.02187 18.8531 6.9375 18.75 6.9375H17.4375C17.3344 6.9375 17.25 7.02187 17.25 7.125V16.5C17.25 16.6031 17.3344 16.6875 17.4375 16.6875Z" fill="white"/>
                             </svg>
                             <div class="w-full md:w-4/5">
-                                <h5 class="font-semibold">Full-Service Digital Growth</h5>
-                                <p>Performance marketing, content creation, SEO, and social media management to strengthen brand presence and drive sales.</p>
+                                <h5 class="font-semibold">{{ t('Pages.Homepage.Section 6.List Items 1[3].Title') }}</h5>
+                                <p>{{ t('Pages.Homepage.Section 6.List Items 1[3].Description') }}</p>
                             </div>  
                         </div>  
                     </div>
@@ -311,8 +311,8 @@
             <div class="container flex flex-col lg:flex-row gap-8 justify-center items-center">
                 <div class="w-full lg:w-2/5">
                     <ContentBlock 
-                        title="Why MontyPay?"
-                        paragraph="MontyPay goes beyond payments to provide merchants with 360 services that not only increase revenues, but also strategically build your brand and provide it with all the needed components to excel in today’s digital market."
+                        :title="t('Pages.Homepage.Section 7.Title')"
+                        :paragraph="t('Pages.Homepage.Section 7.Description')"
                         class="w-full"
                     />
                 </div>
@@ -332,7 +332,7 @@
 
         <section id="section-8" class="py-16 lg:py-36 bg-black bg-[url('/images/customer-stories-bg.png')] bg-cover bg-no-repeat">
             <div class="container">
-                <h2 class="text-white">Customer Stories</h2>
+                <h2 class="text-white">{{t('Pages.Homepage.Section 8.Title')}}</h2>
                 <div class="mt-16">
                     <ClientOnly>
                         <!-- THUMBS SWIPER -->

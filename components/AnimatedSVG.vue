@@ -12,36 +12,37 @@
 
 		<div class="segment-item absolute top-[17%] left-[18%] z-10 flex flex-col items-center justify-center gap-4" count="4">
 			<img src="/images/lending-services.svg" alt="Agencies" width="35" height="35" />
-			<span>Lending Services</span>
+			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 2') }}</span>
 		</div>
 		<div class="segment-item absolute top-[12%] left-[47%] z-10 flex flex-col items-center justify-center gap-4" count="5">
 			<img src="/images/all-in-one-solution.svg" alt="Agencies" width="35" height="35" />
-			<span>All in one solution</span>
+			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 3') }}</span>
 		</div>
 		<div class="segment-item absolute top-[30%] left-[68%] z-10 flex flex-col items-center justify-center gap-4" count="6">
 			<img src="/images/higher-acceptance.svg" alt="Agencies" width="35" height="35" />
-			<span>Higher acceptance</span>
+			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 4') }}</span>
 		</div>
 		<div class="segment-item absolute top-[56%] left-[68%] z-10 flex flex-col items-center justify-center gap-4" count="0">
 			<img src="/images/global-coverage.svg" alt="Agencies" width="35" height="35" />
-			<span>Global coverage</span>
+			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 5') }}</span>
 		</div>
 		<div class="segment-item absolute top-[75%] left-[46%] z-10 flex flex-col items-center justify-center gap-4" count="1">
 			<img src="/images/risk-management.svg" alt="Agencies" width="35" height="35" />
-			<span>Risk management</span>
+			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 6') }}</span>
 		</div>
 		<div class="segment-item absolute top-[70%] left-[20%] z-10 flex flex-col items-center justify-center gap-4" count="2">
 			<img src="/images/24-7-support.svg" alt="Agencies" width="35" height="35" />
-			<span>24/7 support</span>
+			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 7') }}</span>
 		</div>
 		<div class="segment-item absolute top-[43%] left-[6%] z-10 flex flex-col items-center justify-center gap-4" count="3">
 			<img src="/images/loyalty-program-1.svg" alt="Agencies" width="35" height="35" />
-			<span>Loyalty program</span>
+			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 1') }}</span>
 		</div>
 	</div>
 </template>
 
 <script setup>
+	const { t, locale, setLocale } = useI18n()
 	onMounted(() => {
 		document.querySelectorAll('.segment-item').forEach(item => {
 			item.addEventListener('mouseover', () => {
