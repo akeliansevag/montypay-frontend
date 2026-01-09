@@ -12,7 +12,7 @@
                     <ul class="flex gap-2">
                         <li class="flex items-center nav-link">
                             <NuxtLinkLocale class="nav-link bg-secondary rounded-lg px-4 py-2" to="https://portal.montypay.com/" target="_blank">
-                                <h5 class="nav-link">Log In</h5>
+                                <h5 class="nav-link">{{ t('General.Buttons.Log In')}}</h5>
                             </NuxtLinkLocale>
                         </li>
                         
@@ -49,11 +49,11 @@
 
 <script setup>
 // Initialize i18n
-const { locale, setLocale } = useI18n()
+const { t, locale, setLocale } = useI18n()
 
 // Computed array of the other locale
 const otherLocale = computed(() => (locale.value === 'en' ? ['ar'] : ['en']))
-
+const i18nCookie = ref('')
 // Function to switch locale
 const changeLocale = (localeCode) => {
     setLocale(localeCode); // Change the locale using i18n

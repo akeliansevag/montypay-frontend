@@ -1,9 +1,9 @@
 <template lang="">
     <div>
         <HeroBanner class="text-primary"
-            title="All-in-One Payment Platform"
-            paragraph="Gain access to cutting-edge technology, a secure and user-friendly platform, and a team dedicated to your success. Discover the future of payments with MontyPay."
-            button="Contact Us" 
+            :title="t('Pages.Homepage.Banner.Title')"
+            :paragraph="t('Pages.Homepage.Banner.Description')"
+            :button="t('General.Buttons.Contact Us')" 
             image="homebanner"
             link="/contact-us"
         />
@@ -16,30 +16,30 @@
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
                     <div class="flex flex-col gap-8 mt-16">
                         <ContentBlock
-                            title="All-in-one Platform"
-                            paragraph="A comprehensive solution designed to streamline your operations and provide valuable insights for optimal performance."
+                            :title="t('Pages.Homepage.Section 2.Title')"
+                            :paragraph="t('Pages.Homepage.Section 2.Description')"
                         />
 
                         <div class="flex items-center gap-2 font-semibold mt-8">
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.125 7.875C13.125 5.45875 15.0838 3.5 17.5 3.5C19.9162 3.5 21.875 5.45875 21.875 7.875V10.5H23.625C26.0712 10.5 27.2943 10.5 28.2591 10.8996C29.5455 11.4325 30.5675 12.4545 31.1004 13.7409C31.5 14.7057 31.5 15.9288 31.5 18.375H34.125C36.5412 18.375 38.5 20.3338 38.5 22.75C38.5 25.1662 36.5412 27.125 34.125 27.125H31.5V30.1C31.5 33.0403 31.5 34.5104 30.9278 35.6334C30.4244 36.6213 29.6213 37.4244 28.6335 37.9278C27.5104 38.5 26.0403 38.5 23.1 38.5H21.875V35.4375C21.875 33.2629 20.1121 31.5 17.9375 31.5C15.7629 31.5 14 33.2629 14 35.4375V38.5H11.9C8.95972 38.5 7.48959 38.5 6.36655 37.9278C5.3787 37.4244 4.57555 36.6213 4.07222 35.6334C3.5 34.5104 3.5 33.0403 3.5 30.1V27.125H6.125C8.54125 27.125 10.5 25.1662 10.5 22.75C10.5 20.3338 8.54125 18.375 6.125 18.375H3.5C3.5 15.9288 3.5 14.7057 3.89963 13.7409C4.43248 12.4545 5.45451 11.4325 6.74091 10.8996C7.70571 10.5 8.92881 10.5 11.375 10.5H13.125V7.875Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>Omnichannel solution
+                            </svg>{{ t('Pages.Homepage.Section 2.List Items 1.Item 1') }}
                         </div>  
                         <div class="flex items-center gap-2 font-semibold">
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.25 7H13.65C10.7097 7 9.23959 7 8.11655 7.57222C7.1287 8.07555 6.32555 8.8787 5.82222 9.86655C5.25 10.9896 5.25 12.4597 5.25 15.4V28.35C5.25 31.2903 5.25 32.7604 5.82222 33.8835C6.32555 34.8713 7.1287 35.6744 8.11655 36.1778C9.23959 36.75 10.7097 36.75 13.65 36.75H26.6C29.5403 36.75 31.0104 36.75 32.1335 36.1778C33.1213 35.6744 33.9244 34.8713 34.4278 33.8835C35 32.7604 35 31.2903 35 28.35V22.75M22.75 29.75H12.25M26.25 22.75H12.25M35.2123 6.78769C37.2626 8.83794 37.2626 12.1621 35.2123 14.2123C33.1621 16.2626 29.8379 16.2626 27.7877 14.2123C25.7374 12.1621 25.7374 8.83794 27.7877 6.78769C29.8379 4.73744 33.1621 4.73744 35.2123 6.78769Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>Real-time advanced reporting
+                            </svg>{{ t('Pages.Homepage.Section 2.List Items 1.Item 2') }}
                         </div>  
                         <div class="flex items-center gap-2 font-semibold">
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M36.7496 20.125C36.7496 28.3402 30.0898 35 21.8746 35C19.9902 35 18.1877 34.6496 16.5286 34.0104C16.2253 33.8936 16.0736 33.8351 15.953 33.8073C15.8344 33.78 15.7485 33.7686 15.6268 33.7639C15.5032 33.7592 15.3675 33.7732 15.0961 33.8013L6.13429 34.7277C5.27986 34.816 4.85265 34.8601 4.60064 34.7064C4.38115 34.5725 4.23164 34.3489 4.19185 34.0949C4.14616 33.8032 4.35031 33.4254 4.7586 32.6696L7.621 27.3714C7.85673 26.9351 7.9746 26.7169 8.02798 26.5072C8.0807 26.3 8.09345 26.1506 8.07659 25.9375C8.05951 25.7217 7.96484 25.4408 7.77549 24.8791C7.27232 23.3863 6.99959 21.7875 6.99959 20.125C6.99959 11.9098 13.6594 5.25 21.8746 5.25C30.0898 5.25 36.7496 11.9098 36.7496 20.125Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8692 15.6612C20.2947 13.8432 17.6691 13.3542 15.6964 15.0189C13.7237 16.6836 13.446 19.467 14.9951 21.4359C15.9549 22.6557 18.3639 24.8835 20.058 26.4022C20.6803 26.96 20.9914 27.2389 21.3649 27.3513C21.6852 27.4477 22.0532 27.4477 22.3735 27.3513C22.7469 27.2389 23.0581 26.96 23.6804 26.4022C25.3745 24.8835 27.7835 22.6557 28.7432 21.4359C30.2924 19.467 30.0486 16.6661 28.042 15.0189C26.0353 13.3717 23.4437 13.8432 21.8692 15.6612Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>Loyalty program
+                            </svg>{{ t('Pages.Homepage.Section 2.List Items 1.Item 3') }}
                         </div>  
                         <div class="flex items-center gap-2 font-semibold">
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M36.75 36.75H8.05C7.06991 36.75 6.57986 36.75 6.20552 36.5593C5.87623 36.3915 5.60852 36.1238 5.44074 35.7945C5.25 35.4201 5.25 34.9301 5.25 33.95V5.25M36.75 12.25L27.2399 21.7601C26.8934 22.1066 26.7202 22.2798 26.5204 22.3447C26.3447 22.4018 26.1553 22.4018 25.9796 22.3447C25.7798 22.2798 25.6066 22.1066 25.2601 21.7601L21.9899 18.49C21.6434 18.1434 21.4702 17.9702 21.2704 17.9053C21.0947 17.8482 20.9053 17.8482 20.7296 17.9053C20.5298 17.9702 20.3566 18.1434 20.0101 18.4899L12.25 26.25M36.75 12.25H29.75M36.75 12.25V19.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>Smart analytics
+                            </svg>{{ t('Pages.Homepage.Section 2.List Items 1.Item 4') }}
                         </div>  
                     </div>
 
@@ -56,25 +56,25 @@
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
                             <img src="/images/credit-card-2.svg" alt="Online Payment Gateway" width="46" height="46" />
                         </div>
-                        Online Payment Gateway
+                        {{ t('Pages.Homepage.Section 2.List Items 2.Item 1') }}
                     </div>
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
                             <img src="/images/shopping-cart-1.svg" alt="Instore Payments" width="46" height="46" />
                         </div>
-                        Instore Payments
+                        {{ t('Pages.Homepage.Section 2.List Items 2.Item 2') }}
                     </div>
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
                             <img src="/images/receipt-check-1.svg" alt="Self-Service Checkout" width="46" height="46" />
                         </div>
-                        Self-Service Checkout
+                        {{ t('Pages.Homepage.Section 2.List Items 2.Item 3') }}
                     </div>
                     <div class="flex flex-col gap-6 items-center border border-[#d9d9d925] rounded-lg py-8 px-6">
                         <div class="p-6 bg-[#d9d9d925] rounded-full">
                             <img src="/images/shopping-bag-1.svg" alt="eCommerce Services" width="46" height="46" />
                         </div>
-                        eCommerce Services
+                        {{ t('Pages.Homepage.Section 2.List Items 2.Item 4') }}
                     </div>
                 </div>
             </div>
@@ -83,8 +83,8 @@
         <section id="section-3" class="py-16 lg:py-36 text-black overflow-hidden">
             <div class="container">
                 <ContentBlock 
-                    title="Online Payments"
-                    paragraph="Dive into the future of digital commerce!"
+                    :title="t('Pages.Homepage.Section 3.Title')"
+                    :paragraph="t('Pages.Homepage.Section 3.Description')"
                     class="text-center"
                 />
 
@@ -107,37 +107,37 @@
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/smart-routing.svg" alt="Smart routing and cascading" width="30" height="30" />
-                            Smart routing and cascading
+                            {{ t("Pages.Homepage.Section 3.List Items 2.Item 1") }}
                         </div>
                     </div>
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/link.svg" alt="Pay by link" width="30" height="30" />
-                            Pay by link
+                            {{ t("Pages.Homepage.Section 3.List Items 2.Item 2") }}
                         </div>
                     </div>
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/invoice.svg" alt="Customer invoicing" width="30" height="30" />
-                            Customer invoicing
+                            {{ t("Pages.Homepage.Section 3.List Items 2.Item 3") }}
                         </div>
                     </div>
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/calendar.svg" alt="Recurring bills" width="30" height="30" />
-                            Recurring bills
+                            {{ t("Pages.Homepage.Section 3.List Items 2.Item 4") }}
                         </div>
                     </div>
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/qr-code.svg" alt="Pay by link" width="30" height="30" />
-                            QR Pay
+                           {{ t("Pages.Homepage.Section 3.List Items 2.Item 5") }}
                         </div>
                     </div>
                     <div class="border rounded-lg h-auto py-8 px-6">
                         <div class="flex flex-col gap-20">
                             <img src="/images/check.svg" alt="Installements" width="30" height="30" />
-                            Installements
+                            {{ t("Pages.Homepage.Section 3.List Items 2.Item 6") }}
                         </div>
                     </div>
                     <!-- <div class="border rounded-lg h-auto py-8 px-6">
@@ -170,34 +170,34 @@
                     <div class="lg:absolute lg:top-0 lg:end-0 w-full lg:h-full flex items-center text-primary bg-quaternary lg:bg-quaternary/80 py-14 lg:py-0 md:px-14 xl:px-36 z-10">
                         <div class="container">
                             <ContentBlock 
-                                title="In-store Payments"
-                                paragraph="Speed up sales & reduce queue times!"
+                                :title="t('Pages.Homepage.Section 4.Title')"
+                                :paragraph="t('Pages.Homepage.Section 4.Description')"
                             />
 
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
                                 <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/coins-stacked.svg" alt="Cashless payments" width="30" height="30" />
-                                    Cashless<br />payments
+                                    <span v-html="t('Pages.Homepage.Section 4.List Items 1.Item 1')" />
                                 </div>
                                 <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/credit-card.svg" alt="Card payments" width="30" height="30" />
-                                    Card<br />payments
+                                    <span v-html="t('Pages.Homepage.Section 4.List Items 1.Item 2')" />
                                 </div>
                                 <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/qr-code-white.svg" alt="QR payments" width="30" height="30" />
-                                    QR<br />payments
+                                    <span v-html="t('Pages.Homepage.Section 4.List Items 1.Item 3')" />
                                 </div>
                                 <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/wallet.svg" alt="Wallet payments" width="30" height="30" />
-                                    Wallet<br />payments
+                                    <span v-html="t('Pages.Homepage.Section 4.List Items 1.Item 4')" />
                                 </div>
                                 <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/lock.svg" alt="NFC Compatible" width="30" height="30" />
-                                    NFC<br />Compatible
+                                    <span v-html="t('Pages.Homepage.Section 4.List Items 1.Item 5')" />
                                 </div>
                                 <div class="flex flex-col justify-between gap-10 border rounded-lg p-5 aspect-square">
                                     <img src="/images/send.svg" alt="ECR Integration" width="30" height="30" />
-                                    ECR<br />Integration
+                                    <span v-html="t('Pages.Homepage.Section 4.List Items 1.Item 6')" />
                                 </div>
                             </div>
                         </div>
@@ -210,12 +210,12 @@
             <div class="container flex flex-col lg:flex-row gap-8 justify-center items-center">
                 <div class="flex-1 w-full">
                     <ContentBlock 
-                        title="QCheck"
-                        paragraph="The game-changer in the hospitality industry!"
+                        :title="t('Pages.Homepage.Section 5.Title')"
+                        :paragraph="t('Pages.Homepage.Section 5.Description')"
                         class="flex-1"
                     />
                     <ul class="mt-8 text-base list-inside list-disc">
-                        <li>Fast checkouts - Save 17 min. per table</li>
+                        <li>{{t('Pages.Homepage.Section 4.Title')}}</li>
                         <li>Simple & secure payments</li>
                         <li>Seamless customer experience</li>
                     </ul>
@@ -558,23 +558,23 @@
 
     const online_payment_services = [
         {
-            title: "50+",
+            title: t("Pages.Homepage.Section 3.List Items 1.Item 1"),
             icon: false,
-            subTitle: "Countries",
+            subTitle: t("Pages.Homepage.Section 3.List Items 1.Item 2"),
             bgColor: "bg-quaternary",
             textColor: "text-primary"
         },
         {
             title: false,
             icon: '/images/globe.svg',
-            subTitle: "Global Reach",
+            subTitle: t("Pages.Homepage.Section 3.List Items 1.Item 3"),
             bgColor: "bg-primary",
             textColor: "text-black"
         },
         {
-            title: "100+",
+            title: t("Pages.Homepage.Section 3.List Items 1.Item 4"),
             icon: false,
-            subTitle: "Payment Methods",
+            subTitle: t("Pages.Homepage.Section 3.List Items 1.Item 5"),
             bgColor: "bg-quaternary",
             textColor: "text-primary"
         },

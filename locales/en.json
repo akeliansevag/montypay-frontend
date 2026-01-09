@@ -5,13 +5,13 @@
 			"Arabic": "Arabic"
 		},
 		"Links": {
-			"Solutions": "ظسي لشيب شيبل",
+			"Solutions": "Solutions",
 			"Payment services": "Payment services",
 			"Omnichannel Solutions": "Omnichannel Solutions",
 			"Online Payments": "Online Payments",
 			"Smart Pos": "Smart Pos",
-			"soft Pos": "soft Pos",
-			"qcheck": "Qcheck",
+			"Soft Pos": "soft Pos",
+			"Qcheck": "Qcheck",
 			"Digital services": "Digital services",
 			"eCommerce Services": "eCommerce Services",
 			"Tech services": "Tech services",
@@ -33,7 +33,9 @@
 			"Customer Acceptance Policy": "Customer Acceptance Policy",
 			"Data Processing Agreement": "Data Processing Agreement",
 			"Platform Services Agreement": "Platform Services Agreement",
-			"Merchant Services Agreement": "Merchant Services Agreement"
+			"Merchant Services Agreement": "Merchant Services Agreement",
+			"Legal": "Legal",
+			"Careers": "Careers"
 		},
 		"Alts": {
 			"Logo": "MyMonty Logo"
