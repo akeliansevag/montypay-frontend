@@ -965,86 +965,86 @@
 		},
 		"Soft Pos": {
 			"Banner": {
-				"Title": "Soft POS Payment Solution",
-				"Description": "With MontyPay’s SoftPOS, accepting payments is as simple as a tap. Transform compatible smartphones and tablets into payment terminals, enabling contactless in-person payments from digital wallets or physical cards, and making transactions quick and easy.",
+				"Title": "حل الدفع عبر الهاتف الذكي",
+				"Description": "مع MontyPay حل الدفع عبر الهاتف الذكي، أصبح قبول المدفوعات سهلاً بنقرة واحدة فقط. حوّل الهواتف الذكية والأجهزة اللوحية المتوافقة إلى نقاط دفع، وتمكّن من إجراء المدفوعات بدون تلامس باستخدام المحافظ الرقمية أو البطاقات البنكية، مما يجعل المعاملات سريعة وسهلة.",
 				"Image Alt": "Soft POS Payment Solution"
 			},
 			"Section 2": {
-				"Title": "Why SoftPOS?",
+				"Title": "لماذا الدفع عبر الهاتف الذكي ؟ ",
 				"Image Alt": "Why SoftPOS",
 				"Cards 1": [
 					{
-						"Title": "Boost Sales & Expand Reach",
-						"Description": "Drive more revenue by accepting fast, in-person payments on smartphones. Tap into more markets and make transactions seamless, fast, and modern, meeting the needs of today’s digital-savvy shoppers."
+						"Title": "زيادة المبيعات وتوسيع الوصول",
+						"Description": "حقق المزيد من الإيرادات من خلال قبول المدفوعات الحضورية السريعة عبر الهواتف الذكية. توسّع في أسواق جديدة واجعل المعاملات سلسة وسريعة وعصرية لتلبية احتياجات المتسوقين الرقميين اليوم."
 					},
 					{
-						"Title": "Quick Setup, Cost-Effective Solution",
-						"Description": "Get started fast! MontyPay’s SoftPOS app enables payments in minutes with an easy setup. Maximize accessibility and cut costs by transforming smartphones into payment devices, eliminating the need for extra hardware."
+						"Title": "إعداد سريع وحل منخفض التكلفة",
+						"Description": "ابدأ بسرعة! يتيح لك تطبيق الدفع عبر الهاتف الذكي من MontyPay قبول المدفوعات خلال دقائق بعملية إعداد سهلة. عزّز إمكانية الوصول وخفّض التكاليف عبر تحويل الهواتف الذكية إلى أجهزة دفع دون الحاجة لأي معدات إضافية"
 					},
 					{
-						"Title": "Flexible Payments Options Anywhere",
-						"Description": "Accept payments seamlessly in dynamic settings like pop-ups, markets, and events with no extra hardware needed. Deliver a faster checkout experience, enhancing customer satisfaction and loyalty for repeat business."
+						"Title": "خيارات دفع مرنة في أي مكان",
+						"Description": "اقبل المدفوعات بسهولة في المواقع المتغيرة مثل المتاجر المؤقتة والأسواق والفعاليات دون الحاجة لأي أجهزة إضافية. قدّم تجربة دفع أسرع تعزز رضا العملاء وتشجعهم على العودة مجددًا."
 					}
 				]
 			},
 			"Section 3": {
-				"Title": "Compatible devices",
-				"Description": "MontyPay’s SoftPOS solution enables smooth contactless payments on iOS and Android, supporting NFC wallets such as Apple Pay, Google Pay, and Samsung Pay, as well as Visa, Mastercard, and American Express cards.",
+				"Title": "الأجهزة المتوافقة",
+				"Description": "تتيح لك خاصية الدفع عبر الهاتف الذكي من MontyPay إجراء مدفوعات سلسة عبر تقنية اللاتلامس على أجهزة iOS وAndroid، مع دعم محافظ NFC مثل Apple Pay وGoogle Pay وSamsung Pay، بالإضافة إلى بطاقات Visa وMastercard وAmerican Express",
 				"Image Alt": "Unified Solution for In-Store & Online Sales",
 				"Filter iPhone": "iPhone",
 				"Filter Android": "Android",
-				"iPhone Title": "Tap to Pay on iPhone is now available in:",
-				"iPhone Description": "Securely accept payments on supported iPhones with built-in Apple security, ensuring no card data is stored on the device or servers.",
-				"iPhone Countries 1": ["United States","United Kingdom","Canada","Australia","Ireland","Austria"],
-				"iPhone Countries 2": ["Netherlands","France","Germany","Sweden","Czech Republic","Italy"],
+				"iPhone Title": "ميزة Tap to Pay على iPhone متوفرة الآن في:",
+				"iPhone Description": "يمكنك قبول المدفوعات بأمان على أجهزة iPhone المدعومة بفضل نظام الأمان المدمج من Apple، مع ضمان عدم تخزين أي بيانات خاصة بالبطاقات على الجهاز أو على الخوادم.",
+				"iPhone Countries 1": ["الولايات المتحدة","المملكة المتحدة","كندا","أستراليا","إيرلندا","النمسا"],
+				"iPhone Countries 2": ["هولندا","فرنسا","ألمانيا","السويد","جمهورية التشيك","إيطاليا"],
 				"iPhone Image": "iphone-visual.webp",
-				"Android Title": "Tap to Pay on Android is now available in:",
-				"Android Description": "Leverage NFC-enabled, Google-certified Android devices for broad accessibility across global markets.",
-				"Android Countries 1": ["United States","United Kingdom","Canada","Australia","Ireland","Austria","Belgium","Czech Republic","Italy","Finland","Norway","New Zealand"],
-				"Android Countries 2": ["Netherlands","France","Denmark","Switzerland","Germany","Sweden","Luxembourg","Portugal","Spain","Singapore","Malaysia"],
+				"Android Title": "ميزة Tap to Pay على Android متوفرة الآن في:",
+				"Android Description": "استفد من أجهزة Android المزوّدة بتقنية NFC والمعتمدة من Google لضمان وصول واسع في الأسواق العالمية.",
+				"Android Countries 1": ["الولايات المتحدة","المملكة المتحدة","كندا","أستراليا","إيرلندا","النمسا","بلجيكا","جمهورية التشيك","إيطاليا","فنلندا","النرويج","نيوزيلندا"],
+				"Android Countries 2": ["هولندا","فرنسا","الدنمارك","سويسرا","ألمانيا","السويد","لوكسمبورغ","البرتغال","إسبانيا","سنغافورة","ماليزيا"],
 				"Android Image": "android-visual.webp"
 			},
 			"Section 4": {
-				"Subtitle": "Use Cases",
-				"Title": "Streamlined, In-Person Payments",
-				"Description": "MontyPay’s SoftPOS allows businesses to easily accept contactless payments on the go. Seamlessly manage both online and in-person payments from one integrated platform, without the need for traditional POS systems."
+				"Subtitle": "حالات الاستخدام",
+				"Title": "مدفوعات حضورية أكثر سلاسة",
+				"Description": "يتيح الدفع عبر الهاتف الذكي من MontyPay للشركات قبول المدفوعات اللاتلامسية بسهولة أثناء التنقل. يمكنك إدارة المدفوعات الإلكترونية والحضورية من خلال منصة موحّدة متكاملة، دون الحاجة إلى أنظمة نقاط البيع التقليدية."
 			},
 			"Section 5": {
-				"Subtitle": "Use Cases",
-				"Title": "Platforms",
-				"Description": "Broaden your reach with mobile payment options through MontyPay's SoftPOS. Ideal for dynamic environments like farmers markets, events, pop-up shops, food trucks, and after-service payments such as home repairs and landscaping, as well as businesses like delivery services, gas stations, and more.",
+				"Subtitle": "حالات الاستخدام",
+				"Title": "المنصّات",
+				"Description": "وسّع نطاق أعمالك مع خيارات الدفع عبر الهاتف المحمول من خلال SoftPOS من MontyPay. حل مثالي للبيئات الديناميكية مثل أسواق المزارعين، الفعاليات، المتاجر المؤقتة (Pop-up shops)، شاحنات الطعام، ومدفوعات ما بعد الخدمة مثل إصلاح المنازل وأعمال تنسيق الحدائق، بالإضافة إلى أعمال مثل خدمات التوصيل، محطات الوقود، وغيرها الكثير.",
 				"Image": "platforms.webp"
 			},
 			"Section 6": {
-				"Subtitle": "Use Cases",
-				"Title": "Retailers",
-				"Description": "Enhance the in-store experience with flexible checkout options. </br> Equip your team to serve customers anywhere, reducing lines and enabling smoother seasonal or high traffic purchasing.",
+				"Subtitle": "حالات الاستخدام",
+				"Title": "قطاع التجزئة",
+				"Description": "عزّز تجربة الشراء داخل المتجر من خلال خيارات دفع مرنة عند نقاط الدفع. زوّد فريقك بالقدرة على خدمة العملاء في أي مكان، مما يقلّل الازدحام ويجعل عمليات الشراء أكثر سلاسة في المواسم أو فترات الذروة.",
 				"Image": "retailers.webp"
 			},
 			"Section 7": {
-				"Subtitle": "Use Cases",
-				"Title": "Unified Solution for Offline & Online Sales",
-				"Description": "Get the power of our Soft POS together with our payment gateway for an all-in-one solution that streamlines your business.",
+				"Subtitle": "حالات الاستخدام",
+				"Title": "حل موحّد للمبيعات عبر الإنترنت وخارجها",
+				"Description": "احصل على قوة نظام الدفع عبر الهاتف الذكي مع بوابة الدفع الخاصة بنا في حل واحد شامل يسهّل عمليات عملك.",
 				"Image": "unified-solution.webp",
 				"List Items": [
 					{
-						"Title": "Boost Sales & Expand Reach",
-						"Description": "Drive more revenue by accepting fast, in-person payments on smartphones. Tap into more markets and make transactions seamless, fast, and modern, meeting the needs of today’s digital-savvy shoppers."
+						"Title": "زيادة المبيعات وتوسيع نطاق الوصول",
+						"Description": "حقق المزيد من الإيرادات من خلال قبول المدفوعات الحضورية السريعة عبر الهواتف الذكية. توسع في أسواق جديدة واجعل المعاملات سلسة وسريعة وعصرية لتلبية احتياجات المتسوقين الرقميين اليوم."
 					},
 					{
-						"Title": "Quick Setup, Cost-Effective Solution",
-						"Description": "Get started fast! MontyPay’s SoftPOS app enables payments in minutes with an easy setup. Maximize accessibility and cut costs by transforming smartphones into payment devices, eliminating the need for extra hardware."
+						"Title": "إعداد سريع وحل منخفض التكلفة",
+						"Description": "ابدأ بسرعة! تطبيق الدفع عبر الهاتف الذكي من MontyPay يتيح قبول المدفوعات خلال دقائق بعملية إعداد بسيطة. عزّز إمكانية الوصول وخفّض التكاليف عبر تحويل الهواتف الذكية إلى أجهزة دفع دون الحاجة لأي معدات إضافية."
 					},
 					{
-						"Title": "Flexible Payments Options Anywhere",
-						"Description": "Accept payments seamlessly in dynamic settings like pop-ups, markets, and events with no extra hardware needed. Deliver a faster checkout experience, enhancing customer satisfaction and loyalty for repeat business."
+						"Title": "خيارات دفع مرنة في أي مكان",
+						"Description": "اقبل المدفوعات بسهولة في البيئات المتغيرة مثل المتاجر المؤقتة، الأسواق، والفعاليات دون الحاجة لأي أجهزة إضافية. قدّم تجربة دفع أسرع تعزز رضا العملاء وتزيد من احتمالية عودتهم مرة أخرى."
 					}
 				]
 			},
 			"Section 8": {
-				"Title": "Ready to streamline your payment process?",
-				"Description": "Contact us today to learn more about integrating SoftPOS into your business and start accepting payments effortlessly!",
-				"Description 2": "Get started today!",
+				"Title": "هل أنت مستعد لتبسيط عملية الدفع لديك؟",
+				"Description": "تواصل معنا اليوم لتعرف المزيد عن كيفية دمج الدفع عبر الهاتف الذكي في عملك وابدأ قبول المدفوعات بسهولة ودون تعقيد!",
+				"Description 2": "ابدأ الآن!",
 				"Image": "streamline2.webp"
 			},
 			"Seo": {
