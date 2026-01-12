@@ -133,6 +133,8 @@
                     items: [
                         { name: "MyMonty", img: "/images/mymonty.svg" },
                         { name: "Whish", img: "/images/whish.svg" },
+                        { name: "Mojo", img: "/images/mojo.svg" },
+                        { name: "Matensa", img: "/images/matensa.svg" }
                     ]
                 },
                 {
