@@ -44,7 +44,7 @@
 			"Log In": "تسجيل الدخول",
 			"Contact Us": "تواصل معنا",
 			"Request a Demo": "اطلب عرضًا تجريبيًا",
-			"Contact Sales": "Contact Sales",
+			"Contact Sales": "تواصل مع فريق المبيعات",
 			"Link": "Link",
 			"Download": "Download",
 			"Connect": "Connect",
@@ -777,180 +777,180 @@
 		},
 		"Smart Pos": {
 			"Banner": {
-				"Title": "Smart POS Solutions",
-				"Description": "MontyPay’s Smart POS devices combine advanced technology with seamless functionality, making it easy to accept both card and wallet payments. Equipped with a real-time dashboard and robust reporting tools, our POS solutions unify in-store transactions and online sales, creating a complete view of your business performance—all from a single, reliable system.",
+				"Title": "حلول Smart POS",
+				"Description": "توفر أجهزة Smart POS من MontyPay مزيجًا من التكنولوجيا المتقدمة والسهولة في الاستخدام، مما يجعل قبول مدفوعات البطاقات والمحافظ الرقمية أكثر سلاسة. ومع لوحة تحكّم فورية وأدوات تقارير قوية، توحّد حلول الـPOS معاملات المتجر والمبيعات عبر الإنترنت، لتمنحك رؤية شاملة لأداء عملك — كل ذلك من خلال نظام واحد موثوق.",
 				"Image Alt": "Smart POS Solutions"
 			},
 			"Section 2": {
-				"Title": "Boost Business with MontyPay’s Smart POS",
+				"Title": "عزّز أعمالك مع أجهزة Smart POS من MontyPay",
 				"Description": "",
 				"Image Alt": "Boost Business with MontyPay’s Smart POS",
 				"Cards 1": [
 					{
-						"Title": "Lending Opportunities",
-						"Description": "Get access to funding after building a 6-month history with MontyPay, helping you invest in growth and manage cash flow."
+						"Title": "فرص التمويل",
+						"Description": "احصل على إمكانية الوصول إلى التمويل بعد بناء سجل لمدة 6 أشهر مع MontyPay، مما يساعدك على الاستثمار في النمو وإدارة التدفق النقدي."
 					},
 					{
-						"Title": "Flexible Payments",
-						"Description": "Accept a wide range of payment options, from credit cards to digital wallets, supporting customer convenience."
+						"Title": "مدفوعات مرنة",
+						"Description": "اقبل مجموعة واسعة من طرق الدفع، من البطاقات المصرفية إلى المحافظ الرقمية، لدعم راحة العملاء"
 					},
 					{
-						"Title": "Split Payments",
-						"Description": "Allow customers to split transactions effortlessly, improving their experience."
+						"Title": "مدفوعات مرنة",
+						"Description": "اسمح للعملاء بتقسيم الدفعات بسهولة، مما يحسّن تجربتهم."
 					},
 					{
-						"Title": "Comprehensive Dashboard",
-						"Description": "Track sales and access real-time reporting to optimize operations."
+						"Title": "لوحة تحكّم شاملة",
+						"Description": "تابع المبيعات واطّلع على تقارير فورية لمساعدتك في تحسين عملياتك."
 					},
 					{
-						"Title": "Loyalty Program",
-						"Description": "Build customer loyalty with customizable rewards."
+						"Title": "برنامج الولاء",
+						"Description": "ابنِ ولاء العملاء من خلال مكافآت قابلة للتخصيص."
 					},
 					{
-						"Title": "Local 24/7 Support",
-						"Description": "Rely on around-the-clock assistance for uninterrupted service."
+						"Title": "دعم محلي 24/7",
+						"Description": "اعتمد على دعم متواصل على مدار الساعة لضمان خدمة دون انقطاع."
 					},
 					{
-						"Title": "Buy Now, Pay Later (BNPL)",
-						"Description": "Boost sales by offering flexible payment plans."
+						"Title": "الشراء الآن والدفع لاحقًا",
+						"Description": "عزّز المبيعات من خلال تقديم خطط دفع مرنة."
 					},
 					{
-						"Title": "System Integration",
-						"Description": "Seamlessly connect with cash registers and inventory management systems."
+						"Title": "تكامل الأنظمة",
+						"Description": "اتصل بسهولة مع صناديق الدفع وأنظمة إدارة المخزون."
 					},
 					{
-						"Title": "Value-Added Services",
-						"Description": "Expand your business by offering popular extras like eSIMs, streaming subscriptions (Netflix, Anghami), gaming vouchers (PUBG Mobile, Xbox), and mobile top-ups—all directly from your POS."
+						"Title": "خدمات مضافة",
+						"Description": "وسّع نطاق عملك من خلال تقديم خدمات إضافية مثل بطاقات eSIM، اشتراكات البث (Netflix, Anghami)، بطاقات الألعاب (PUBG Mobile, Xbox)، وشحن الرصيد—وكل ذلك مباشرة من جهاز POS."
 					}
 				]
 			},
 			"Section 3": {
-				"Title": "Built for Diverse Industries",
-				"Description": "Our Smart POS system is tailored to support high-traffic, customer-centric environments across industries. <br /> MontyPay’s Smart POS solutions are crafted to meet the unique demands of various sectors:",
+				"Title": "مصمّم لمختلف الصناعات",
+				"Description": "تم تصميم نظام Smart POS لدينا لدعم بيئات عالية الحركة وتركز على العملاء عبر مختلف الصناعات. حلول Smart POS من MontyPay مصممة لتلبية المتطلبات الفريدة لمختلف القطاعات:",
 				"Image Alt": "Built for Diverse Industries",
 				"Cards 1": [
 					{
-						"Title": "Retail & Supermarkets"
+						"Title": "التجزئة والسوبرماركت"
 					},
 					{
-						"Title": "Parking Lot & Gas Stations"
+						"Title": "مواقف السيارات ومحطات الوقود"
 					},
 					{
-						"Title": "Cafes & Restaurants"
+						"Title": "المقاهي والمطاعم"
 					},
 					{
-						"Title": "Beauty & Wellness"
+						"Title": "الجمال والعافية"
 					},
 					{
-						"Title": "Hotels"
+						"Title": "الفنادق"
 					},
 					{
-						"Title": "Education"
+						"Title": "التعليم"
 					},
 					{
-						"Title": "Healthcare"
+						"Title": "الرعاية الصحية"
 					},
 					{
-						"Title": "Transportation & Logistics"
+						"Title": "النقل والخدمات اللوجستية"
 					},
 					{
-						"Title": "Entertainment & Gaming Centers"
+						"Title": "مراكز الترفيه والألعاب"
 					},
 					{
-						"Title": "Gyms & Health Clubs"
+						"Title": "الصالات الرياضية والنوادي الصحية"
 					}
 				]
 			},
 			"Section 4": {
-				"Title": "Device Specifications",
+				"Title": "مواصفات الجهاز",
 				"Cards 1": [
 					{
 						"Title": "F20",
-						"Sub Title": "Large - Flagship POS Device",
-						"Description 1": "Our high-performance smart android POS device is crafted for businesses that demand speed, reliability, and omnichannel versatility. Powered by the robust Android 10 OS, it supports NFC, magstripe, IC cards, and QR codes, enabling seamless transactions with diverse payment methods across channels.",
+						"Sub Title": "جهاز POS رئيسي كبير الحجم",
+						"Description 1": "جهاز Smart Android POS عالي الأداء مصمّم للشركات التي تتطلب السرعة، الموثوقية، والقدرة على العمل عبر قنوات متعددة. مدعوم بنظام Android 10 القوي، يدعم NFC، بطاقات الشريط الممغنط (Magstripe)، البطاقات الذكية (IC Cards)، ورموز QR، مما يمكّن من إجراء معاملات سلسة باستخدام طرق دفع متنوعة عبر جميع القنوات.",
 						"List Items": [
 							{
-								"Item 1": "Quad-Core Processor (4 x 1.3GHz) for fast, smooth operation"
+								"Item 1": "معالج رباعي النوى (4 × 1.3GHz) لتشغيل سريع وسلس"
 							},
 							{
-								"Item 2": "Wi-Fi, 4G, and Bluetooth connectivity for flexible use"
+								"Item 2": "اتصال Wi-Fi و4G وBluetooth لاستخدام مرن"
 							},
 							{
-								"Item 3": "High-speed printer for quick receipts"
+								"Item 3": "طابعة عالية السرعة لإصدار الإيصالات بسرعة"
 							},
 							{
-								"Item 4": "Long-lasting battery"
+								"Item 4": "بطارية طويلة العمر"
 							}
 						],
-						"Description 2": "Perfect for businesses needing robust, all-in-one payment solutions.",
+						"Description 2": "مثالي للأعمال التي تحتاج إلى حلول دفع قوية وشاملة في جهاز واحد.",
 						"Image Alt": "Large - Flagship POS Device"
 					},
 					{
 						"Title": "F210",
-						"Sub Title": "Medium - Smart, Compact, and Cost-Effective POS Terminal",
-						"Description 1": "A sleek and affordable POS device designed for businesses looking for efficiency, security, and omnichannel payment capabilities. Powered by Android 10 and a high-performance Quad-Core processor, the F210 ensures fast transactions, seamless connectivity, and a user-friendly experience.",
+						"Sub Title": "جهاز POS متوسط الحجم – ذكي، مدمج وفعّال من حيث التكلفة",
+						"Description 1": "جهاز POS أنيق وميسور التكلفة مصمّم للشركات التي تبحث عن الكفاءة، الأمان، وقدرات الدفع عبر القنوات المتعددة. مدعوم بنظام Android 10 ومعالج رباعي النوى عالي الأداء، يضمن جهاز F210 معاملات سريعة، اتصال سلس، وتجربة مستخدم سهلة",
 						"List Items": [
 							{
-								"Item 1": "5-inch HD touchscreen for a clear and responsive interface"
+								"Item 1": "شاشة لمس HD بحجم 5 بوصات لواجهة واضحة وسريعة الاستجابة"
 							},
 							{
-								"Item 2": "Wi-Fi, 4G, 3G, and Bluetooth for reliable connectivity anywhere"
+								"Item 2": "اتصال Wi-Fi و4G و3G وBluetooth لتغطية موثوقة في أي مكان"
 							},
 							{
-								"Item 3": "High-speed thermal printer for smooth, quick receipts (58mm roll size)"
+								"Item 3": "طابعة حرارية عالية السرعة لإصدار الإيصالات بسلاسة وسرعة (حجم اللفة 58مم)"
 							},
 							{
-								"Item 4": "LonAdvanced security & multi-card support including NFC, IC, magstripe, and QR payments"
+								"Item 4": "أمان متقدم ودعم متعدد البطاقات بما في ذلك NFC، البطاقات الذكية (IC)، البطاقات الممغنطة (Magstripe)، ودفع QR"
 							}
 						],
-						"Description 2": "Ideal for retail, hospitality, and service industries that need a compact yet powerful payment solution without compromising on performance.",
+						"Description 2": "مثالي لقطاع التجزئة، الضيافة، والخدمات التي تحتاج إلى حل دفع مدمج وقوي دون التضحية بالأداء",
 						"Image Alt": "Medium - Smart, Compact, and Cost-Effective POS Terminal"
 					},
 					{
 						"Title": "F300",
-						"Sub Title": "Small - Compact & Reliable POS Device",
-						"Description 1": "A compact, pocket-sized POS solution designed for businesses on the move. It offers reliable connectivity for seamless transactions with 4G/3G/2G, Wi-Fi, and Bluetooth 4.2. Powered by a Quad-Core processor, it provides fast performance across various payment methods.",
+						"Sub Title": "جهاز POS صغير الحجم – مدمج وموثوق",
+						"Description 1": "حل POS مدمج بحجم الجيب، مصمّم للشركات المتنقلة. يوفّر اتصالًا موثوقًا لإجراء معاملات سلسة عبر 4G/3G/2G، Wi-Fi، وBluetooth 4.2. مدعوم بمعالج رباعي النوى، ليقدّم أداءً سريعًا مع مختلف طرق الدفع",
 						"List Items": [
 							{
-								"Item 1": "Smaller, smarter design for efficient use in diverse environments"
+								"Item 1": "تصميم أصغر وأكثر ذكاءً للاستخدام الفعّال في بيئات متنوعة"
 							},
 							{
-								"Item 2": "Proven durability with reliability tests for harsh conditions"
+								"Item 2": "متانة مثبتة مع اختبارات موثوقية لتحمّل الظروف القاسية"
 							},
 							{
-								"Item 3": "Perfect for restaurants, retail, transportation, and public utilities"
+								"Item 3": "مثالي للمطاعم، التجزئة، النقل، والمرافق العامة"
 							}
 						],
-						"Description 2": "Great for businesses seeking portability without sacrificing performance.",
+						"Description 2": "مثالي للأعمال التي تبحث عن قابلية التنقل دون التضحية بالأداء",
 						"Image Alt": "Small - Compact & Reliable POS Device"
 					}
 				]
 				
 			},
 			"Section 5": {
-				"Title": "Unified Solution for In-Store & Online Sales",
-				"Description 1": "Get the power of our Smart POS together with our payment gateway for an all-in-one solution that streamlines your business.",
+				"Title": "حل موحّد للمبيعات داخل المتجر وعبر الإنترنت",
+				"Description 1": "احصل على قوة جهاز نقاط البيع الذكي مع بوابة الدفع في حل شامل واحد يبسط إدارة عملك",
 				"Image Alt": "Unified Solution for In-Store & Online Sales",
 				"Cards 1": [
 					{
-						"Title": "Seamless Sales",
-						"Description": "Accept payments online and offline, covering all customer touchpoints. "
+						"Title": "مبيعات سلسة",
+						"Description": "اقبل المدفوعات عبر الإنترنت وخارجها، مع تغطية جميع نقاط تواصل العملاء."
 					},
 					{
-						"Title": "Unified Dashboard",
-						"Description": "Monitor and manage your sales, transactions, and customer data from one place."
+						"Title": "لوحة تحكّم موحّدة",
+						"Description": "راقب وأدِر مبيعاتك ومعاملاتك وبيانات العملاء من مكان واحد."
 					},
 					{
-						"Title": "Effortless Cross-Channel Management",
-						"Description": "Stay in control with real-time insights into your online and offline performance."
+						"Title": "إدارة سهلة عبر جميع القنوات",
+						"Description": "ابقَ مسيطراً مع رؤى فورية لأداء المبيعات على الإنترنت وفي المتجر."
 					}
 				],
-				"Description 2": "A perfect pairing for growing businesses that want simplicity and efficiency across all sales channels."
+				"Description 2": "حل مثالي للأعمال النامية التي تبحث عن البساطة والكفاءة عبر جميع قنوات البيع."
 			},
 			"Section 6": {
-				"Title": "Sign up today to bring your business a full-service solution!",
-				"Description 1": "Accept payments both online and in-store and get powerful insights on a unified dashboard.",
-				"Description 2": "Start selling smarter.",
+				"Title": "سجّل اليوم لتوفّر لعملك حلاً متكاملاً!",
+				"Description 1": "اقبل المدفوعات عبر الإنترنت وداخل المتجر، واحصل على رؤى قوية من خلال لوحة تحكّم موحّدة",
+				"Description 2": "ابدأ البيع بذكاء.",
 				"Image Alt": "Unified Solution for In-Store & Online Sales"
 			},
 			"Seo": {
