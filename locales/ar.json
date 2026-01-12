@@ -490,276 +490,280 @@
 		},	
 		"Online Payments": {
 			"Banner": {
-				"Title": "Online Payment Solutions",
-				"Description": "Get paid easily, whether online or in person, and reach customers worldwide. MontyPay makes payments smooth, secure, and hassle-free, so you can focus on growing your business, big or small.",
+				"Title": "حلول الدفع الإلكتروني",
+				"Description": "احصل على مستحقاتك بسهولة، سواء عبر الإنترنت أو شخصيًا، ووصل إلى العملاء حول العالم. مونتي باي يجعل الدفع سلسًا، آمنًا، وخاليًا من التعقيدات، لتتفرغ لنمو عملك، صغيرًا كان أو كبيرًا.",
 				"Image Alt": "Online Payment Solutions"
 			},
 			"Section 2": {
-				"Title": "More Than Payments. Real Business Growth.",
+				"Title": "أكثر من مجرد مدفوعات. إنها نموّ حقيقي لعملك.",
 				"Description": "",
-				"Image Alt": "More Than Payments. Real Business Growth.",
+				"Image Alt": "أكثر من مجرد مدفوعات. إنها نموّ حقيقي لعملك.",
 				"Cards": [
 					{
-						"Title": "Fast, Smooth Transactions",
-						"Description": "Process payments in record time so your customers stay happy, and your cash flow keeps moving.",
+						"Title": "معاملات سريعة وسلسة",
+						"Description": "عالِج المدفوعات بسرعة قياسية ليبقى عملاؤك راضين وليستمر تدفقك المالي دون انقطاع.",
 						"Image": "",
 						"Image Alt": ""
 					},
 					{
-						"Title": "Advanced Security You Can Trust",
-						"Description": "Protect every transaction with PCI DSS Level 1 v4 compliance and cutting-edge fraud detection to keep your business and customers safe.",
+						"Title": "أمان متطور يمكنك الوثوق به",
+						"Description": "احمِ كل معاملة مع شهادة الامتثال PCI DSS Level 1 v4 وتقنيات كشف الاحتيال المتطورة لضمان أمان عملك وعملائك.",
 						"Image": "",
 						"Image Alt": ""
 					},
 					{
-						"Title": "100+ Payment Methods, Multiple Currencies",
-						"Description": "Let your customers pay their way, whatever the currency, while you expand globally without the hassle.",
+						"Title": "أكثر من 100 طريقة دفع، بعملات متعددة",
+						"Description": "اسمح للعملاء بالدفع بالطريقة التي تناسبهم، وبأي عملة، بينما تتوسع عالميًا دون أي تعقيدات.",
 						"Image": "",
 						"Image Alt": ""
 					},
 					{
-						"Title": "Build Trust, Boost Satisfaction",
-						"Description": "Offer a reliable, seamless payment experience that keeps your customers coming back.",
+						"Title": "ابنِ الثقة وزِد رضا العملاء",
+						"Description": "قدّم تجربة دفع موثوقة وسلسة تجعل العملاء يعودون إليك دائمًا.",
 						"Image": "",
 						"Image Alt": ""
 					},
 					{
-						"Title": "Powerful Insights, Smarter Decisions",
-						"Description": "Track and analyze your performance with advanced reporting tools, helping you grow confidently",
+						"Title": "رؤى قوية لقرارات أذكى",
+						"Description": "تابع أدائك وحلّله عبر أدوات تقارير متقدمة تساعدك على النمو بثقة.",
 						"Image": "",
 						"Image Alt": ""
 					}
 				]
 			},
 			"Section 3": {
-				"Title": "Powerful Features for a Powerful Business",
+				"Title": "ميزات قوية لتطوير أعمالك",
 				"Description": "",
 				"Cards 1": [
 					{
-						"Title": "Online and Mobile Checkouts",
-						"Description": "Offer seamless, secure checkouts across your website and mobile apps. Let customers complete transactions effortlessly with multiple payment methods, keeping them coming back for more.",
+						"Title": "الدفع عبر الإنترنت وتطبيقات الهاتف",
+						"Description": "قدّم عمليات دفع سلسة وآمنة عبر موقعك وتطبيقاتك. دع العملاء يكملون المعاملة بسهولة عبر طرق دفع متعددة",
 						"Image": "",
 						"Image Alt": "Online and Mobile Checkouts"
 					},
 					{
-						"Title": "Customizable Checkout Options",
-						"Description": "Make every checkout feel like your checkout. Add your branding and create a payment experience that reflects your business and improves conversions.",
+						"Title": "خيارات دفع قابلة للتخصيص",
+						"Description": "اجعل كل عملية دفع تعكس علامتك التجارية لتحسين تجربة العملاء وزيادة التحويلات.",
 						"Image": "",
 						"Image Alt": "Customizable Checkout Options"
 					},
 					{
-						"Title": "Pay by Link",
-						"Description": "Even if you don’t have a website, you can generate secure payment links and share them with your customers through email, SMS, or messaging apps. One click and they’re ready to pay. Fast, easy, and secure.",
+						"Title": "الدفع عبر الرابط",
+						"Description": "حتى دون موقع إلكتروني، يمكنك إنشاء روابط دفع آمنة وإرسالها للعملاء عبر البريد، SMS أو تطبيقات المراسلة. ضغطة واحدة… والدفع يتم فورًا.",
 						"Image": "",
 						"Image Alt": "Pay by Link"
 					},
 					{
-						"Title": "QR Pay",
-						"Description": "Tap, scan, done! Make payments as easy as a scan. Customers simply scan a QR code at checkout to pay instantly, no need for cash or cards. It’s fast, contactless, and super convenient.",
+						"Title": "الدفع عبر QR",
+						"Description": "امسح، ادفع، وانتهى الأمر! يمكن للعملاء الدفع فورًا بمجرد مسح رمز QR. بدون نقد أو بطاقات—طريقة سريعة، آمنة، ولا تلامسية.",
 						"Image": "",
 						"Image Alt": "QR Pay"
 					},
 					{
-						"Title": "Customer Invoice Links",
-						"Description": "Send invoices that do the hard work for you. Professional, branded and easy to pay, they make settling bills quick and secure for you and your customers, and help you keep things moving.",
+						"Title": "روابط الفواتير للعملاء",
+						"Description": "أرسل فواتير احترافية وسهلة الدفع تساعدك أنت وعملاءك على إتمام الدفعات بسرعة وأمان.",
 						"Image": "",
 						"Image Alt": "Customer Invoice Links"
 					},
 					{
-						"Title": "Recurring Billing",
-						"Description": "No more missing payments. Automate payments for subscriptions, memberships, or installment plans. Keep cash flow steady and ensure your customers never miss a payment.",
+						"Title": "الفوترة الدورية",
+						"Description": "لا مزيد من الدفعات المفقودة. قم بأتمتة دفعات الاشتراكات أو العضويات أو الأقساط.",
 						"Image": "",
 						"Image Alt": "Recurring Billing"
 					},
 					{
-						"Title": "Installments",
-						"Description": "Make big buys easier! Let your customers split payments over time with flexible installment options, so they can shop worry-free, and you can boost high-value sales.",
+						"Title": "خدمة التقسيط",
+						"Description": "اجعل عمليات الشراء الكبيرة أسهل! اسمح للعملاء بالدفع على أقساط مرنة لزيادة المبيعات عالية القيمة.",
 						"Image": "",
 						"Image Alt": "Installments"
 					},
 					{
-						"Title": "Smart Routing & Cascading",
-						"Description": "Fast payments, fewer fees. Our smart routing tech chooses the fastest most reliable path for every transaction, saving you time and money while keeping things running smoothly.",
+						"Title": "التوجيه الذكي للمدفوعات",
+						"Description": "مدفوعات أسرع وتكاليف أقل. يختار نظام التوجيه الذكي أفضل مسار لكل معاملة لضمان سرعة أعلى واستقرار أكبر.",
 						"Image": "",
 						"Image Alt": "Smart Routing & Cascading"
 					},
 					{
-						"Title": "Crypto Payments",
-						"Description": "Bitcoin? Ethereum? You name it! Give your customers cool new ways to pay while keeping it fast, secure, and open to a whole new global audience.",
+						"Title": "الدفع بالعملات الرقمية",
+						"Description": "بتكوين؟ إيثيريوم؟ كل ما تريده! أضف خيارات دفع جديدة وآمنة لجذب جمهور عالمي أوسع.",
 						"Image": "",
 						"Image Alt": "Crypto Payments"
 					}
 				]
 			},
 			"Section 4": {
-				"Title": "Fast Integration and Onboarding",
-				"Description": "Get started in no time! Our onboarding process ensures you’re up and running immediately. Focus on growing your business while we handle the heavy lifting behind the scenes.",
-				"Sub Title": "Plugins & SDKs",
+				"Title": "دمج سريع وتشغيل فوري",
+				"Description": "ابدأ خلال وقت قصير جدًا! نحن نتولى المهمة خلف الكواليس لتتفرغ لنمو عملك.",
+				"Sub Title": "الإضافات وواجهات التطوير SDKs",
 				"Cards 1": [
 					{
-						"Title": "Mobile-Ready Checkout",
-						"Description": "Say goodbye to abandoned carts! <br /> Our mobile-ready checkout guarantees a seamless payment process, ensuring customers breeze through their purchases and boosting your conversion rates!",
+						"Title": "الدفع المتوافق مع الهواتف",
+						"Description": "ودّع عربات الشراء المتروكة! يوفّر نظام الدفع المتوافق مع الهواتف تجربة سلسة وسريعة، ليُتمّ عملاؤك مشترياتهم بسهولة تامّة—مما يرفع معدّل التحويل ويعزّز مبيعاتك!",
 						"Image": "",
 						"Image Alt": "Mobile-Ready Checkout"
 					},
 					{
-						"Title": "Host 2 Host Integration",
-						"Description": "Make it your own! <br /> With MontyPay's Host-2-Host integration, merchants can now accept payment information on their personalized payment pages. Tailor your payment experience to match your brand, strengthening the trust with your customers!",
+						"Title": "دمج Host 2 Host",
+						"Description": "اجعلها بطريقتك! مع دمج Host-2-Host من MontyPay، يمكن للتجّار الآن قبول معلومات الدفع عبر صفحات دفع مخصّصة بالكامل. خصّص تجربة الدفع بما يتماشى مع علامتك التجارية لتعزيز ثقة العملاء!",
 						"Image": "",
 						"Image Alt": "Host 2 Host Integration"
 					},
 					{
-						"Title": "Social Commerce",
-						"Description": "MontyPay is not only a secure financial haven but also a thriving marketplace for freelancers and social media enthusiasts. We empower freelancers to receive payments seamlessly through our platform, enhancing convenience and ensuring that the hard work translates into tangible rewards.",
+						"Title": "التجارة عبر وسائل التواصل الاجتماعي",
+						"Description": "MontyPay ليست فقط ملاذًا ماليًا آمنًا، بل أيضًا سوقًا مزدهرًا للمستقلّين وصنّاع المحتوى. نحن نُمكّن المستقلّين من تلقي الدفعات بسلاسة عبر منصّتنا، مما يعزز السهولة ويضمن أن يتحوّل عملهم الجاد إلى مكافآت حقيقية",
 						"Image": "",
 						"Image Alt": "Social Commerce"
 					},
 					{
-						"Title": "CMS Plugins",
-						"Description": "MaNo fuss, just solutions! <br /> Our ready-to-go plugins for popular Content Management Systems (CMS) streamline integration for merchants. Skip the heavy development work and get your payment system up and running with ease.",
+						"Title": "إضافات أنظمة إدارة المحتوى",
+						"Description": "لا تعقيد، فقط حلول! إضافاتنا الجاهزة لأنظمة إدارة المحتوى الشهيرة تسهّل على التجار عملية الدمج. تجنّب العمل البرمجي الثقيل، وابدأ باستقبال المدفوعات بكل سهولة",
 						"Image": "",
 						"Image Alt": "CMS Plugins"
 					},
 					{
-						"Title": "Mobile-Ready Checkout",
-						"Description": "Say goodbye to abandoned carts! <br /> Our mobile-ready checkout guarantees a seamless payment process, ensuring customers breeze through their purchases and boosting your conversion rates!",
+						"Title": "صفحة دفع جاهزة للجوال",
+						"Description": "ودّع عربات التسوّق المتروكة! صفحة الدفع المحسّنة للجوال تضمن عملية دفع سلسة، ما يسمح للعملاء بإتمام مشترياتهم بسهولة ويزيد من معدلات التحويل!",
 						"Image": "",
 						"Image Alt": "Mobile-Ready Checkout"
 					},
 					{
-						"Title": "Platform Integration",
-						"Description": "Our integrations with cutting-edge platforms for loyalty programs, hotel bookings, marks just the beginning of a robust ecosystem, with many exciting partnerships on the horizon.",
+						"Title": "تكامل المنصات",
+						"Description": "تكاملاتنا مع أحدث المنصات الخاصة ببرامج الولاء وحجوزات الفنادق ليست سوى البداية لبناء نظام متكامل وقوي—والمزيد من الشراكات المثيرة قادمة قريبًا.",
 						"Image": "",
 						"Image Alt": "Platform Integration"
 					}
 				]
 			},
 			"Section 5": {
-				"Title": "Merchant Mobile App",
-				"Sub Title 1": "Your Business, Always in Your Hands",
-				"Description 1": "With the MontyPay Merchant Mobile App, you can run your business no matter where you are. Packed with powerful tools and a user-friendly design, it’s like carrying your entire business in your pocket. ",
-				"Sub Title 2": "It Has Everything You Need:",
+				"Title": "تطبيق التاجر على الجوال",
+				"Sub Title 1": "عملك… دائمًا بين يديك",
+				"Description 1": "مع تطبيق MontyPay للتجار، يمكنك إدارة أعمالك أينما كنت. بفضل أدواته القوية وتصميمه السهل الاستخدام، سيكون الأمر أشبه بحمل عملك الكامل في جيبك.",
+				"Sub Title 2": "كل ما تحتاجه في مكان واحد:",
 				"Image": "",
 				"Image Alt": "Merchant Mobile App",
 				"Cards 1": [
 					{
-						"Title": "Track Your Sales",
-						"Description": "Stay updated on your performance in real-time."
+						"Title": "تتبّع المبيعات",
+						"Description": "ابقَ على اطّلاع على أداء عملك لحظة بلحظة"
 					},
 					{
-						"Title": "Manage Transactions",
-						"Description": "View, control, and organize all your payments whenever and wherever."
+						"Title": "إدارة المعاملات",
+						"Description": "راجع ونظّم كل عمليات الدفع في أي وقت ومن أي مكان."
 					},
 					{
-						"Title": "Send Payment Links",
-						"Description": "No delays, create and share payment links with just a few taps."
+						"Title": "إرسال روابط الدفع",
+						"Description": "بدون تأخير—أنشئ وشارك روابط الدفع بلمسة واحدة."
 					},
 					{
-						"Title": "Access Advanced Analytics",
-						"Description": "Dive into detailed insights to understand your sales trends and customer behavior better."
+						"Title": "الوصول إلى التحليلات المتقدمة",
+						"Description": "استكشف البيانات التفصيلية لفهم اتجاهات المبيعات وسلوك العملاء بشكل أعمق."
 					},
 					{
-						"Title": "Stay Connected",
-						"Description": "From the app to the dashboard, switch seamlessly and manage it all with ease."
+						"Title": "ابقَ على تواصل",
+						"Description": "تنقّل بسلاسة بين التطبيق واللوحة الإلكترونية وادِر كل شيء بسهولة."
 					}
 				],
-				"Description 2": "MontyPay’s merchant mobile app ensures you’re always in control. It’s all right there, in the palm of your hand."
+				"Description 2": "يضمن لك تطبيق التاجر من MontyPay أن تبقى دائمًا مسيطرًا على عملك—كل شيء في متناول يدك، أينما كنت."
 			},
 			"Section 6": {
-				"Title 1": "Omnichannel Reporting and Analytics",
-				"Description 1": "Manage your business effortlessly with real-time insights across online and in-store sales. Access a unified dashboard or mobile app to track trends, transactions, and customer behavior for smarter, faster decisions.",
-				"Sub Title": "Your business at a glance",
+				"Title 1": "التحليلات والتقارير متعددة القنوات",
+				"Description 1": "أدِر عملك بسهولة مع رؤى فورية تغطي مبيعاتك عبر الإنترنت وفي المتجر. يمكنك الوصول إلى لوحة تحكّم موحّدة أو تطبيق الهاتف لتتبع الاتجاهات والمعاملات وسلوك العملاء واتخاذ قرارات أسرع وأكثر ذكاءً.",
+				"Sub Title": "عملك… في لمحة واحدة",
 				"Cards 1": [
 					{
-						"Title": "Omnichannel Solution",
+						"Title": "حل متعدد القنوات",
 						"Image": "",
 						"Image Alt": ""
 					},
 					{
-						"Title": "Unified Solution",
+						"Title": "حل موحّد",
 						"Image": "",
 						"Image Alt": ""
 					}
 				],
-				"Title 2": "Unified Solution for In-Store & Online Sales",
-				"Description 2": "Get the power of our Smart POS together with our payment gateway for an all-in-one solution that streamlines your business.",
+				"Title 2": "حل موحّد للمبيعات داخل المتجر وعبر الإنترنت",
+				"Description 2": "احصل على قوة نقطة البيع الذكية Smart POS مع بوابة الدفع في حل شامل واحد يسهّل إدارة عملك.",
 				"Cards 2": [
 					{
-						"Title": "Seamless Sales",
-						"Description": "Accept payments online and offline, covering all customer touchpoints."
+						"Title": "مبيعات سلسة",
+						"Description": "اقبل المدفوعات عبر الإنترنت وخارجها، مع تغطية جميع نقاط تواصل العملاء."
 					},
 					{
-						"Title": "Unified Dashboard",
-						"Description": "Monitor and manage your sales, transactions, and customer data from one place."
+						"Title": "لوحة تحكّم موحّدة",
+						"Description": "راقب وأدِر مبيعاتك ومعاملاتك وبيانات عملائك من مكان واحد."
 					},
 					{
-						"Title": "Effortless Cross-Channel Management",
-						"Description": "Stay in control with real-time insights into your online and offline performance."
+						"Title": "إدارة سهلة عبر جميع القنوات",
+						"Description": "ابقَ مسيطراً مع رؤى لحظية لأداء مبيعاتك على الإنترنت وفي المتجر."
 					}
 				],
-				"Description 3": "A perfect pairing for growing businesses that want simplicity and efficiency across all sales channels."
+				"Description 3": "حل مثالي للأعمال المتنامية التي تبحث عن البساطة والكفاءة عبر جميع قنوات البيع."
 			},
 			"Section 7": {
-				"Title": "More Perks or We Back You Up",
+				"Title": "مزايا إضافية… ونحن دائمًا نساندك",
 				"Description": "",
 				"Image Alt": "More Perks or We Back You Up",
 				"Cards": [
 					{
-						"Title": "Risk Management and Fraud Prevention",
-						"Description": "We’ve got you covered with PCI DSS Level 1 compliance and advanced fraud detection tools. Minimize risks like chargebacks and fraud, so you can focus on running your business with peace of mind."
+						"Title": "إدارة المخاطر ومنع الاحتيال",
+						"Description": "نوفّر لك الحماية الكاملة مع التزامنا بمعيار PCI DSS المستوى الأول وأدوات متقدمة لكشف الاحتيال. قلّل المخاطر مثل عمليات الاسترجاع والاحتيال، وركّز على إدارة عملك براحة بال"
 					},
 					{
-						"Title": "Dedicated Support",
-						"Description": "You’re never alone. Our 24/7 technical support is here to guide you every step of the way. Chat with our support team for instant help while you surf through your dashboard."
+						"Title": "دعم مخصّص",
+						"Description": "أنت لست وحدك. دعمنا التقني متوفر على مدار الساعة وطوال أيام الأسبوع لمساعدتك في كل خطوة. تواصل مع فريق الدعم مباشرة للحصول على مساعدة فورية أثناء تصفحك للوحة التحكّم."
 					},
 					{
-						"Title": "Loyalty and Lending Services",
-						"Description": "Reward your business with every transaction. Our point-based loyalty program lets you earn rewards for online and in-store payments, enjoy cashback offers, and even build a credit score for potential loans."
+						"Title": "خدمات الولاء والإقراض",
+						"Description": "اكسب المزيد مع كل معاملة. يتيح لك برنامج الولاء المبني على النقاط الحصول على مكافآت عند الدفع عبر الإنترنت أو داخل المتجر، والاستفادة من عروض الاسترجاع النقدي، وحتى بناء سجل ائتماني للحصول على قروض مستقبلية."
 					}
 				]
 			},
 			"Section 8": {
-				"Title": "All You Need to Know",
+				"Title": "كل ما تحتاج معرفته",
 				"Description": "",
 				"Cards": [
 					{
-						"Question": "What payment methods does MontyPay support?",
-						"Answer": "MontyPay supports 100+ payment methods, including major credit cards, digital wallets, and local payment options, ensuring flexibility for you and your customers."
+						"Question": "ما هي طرق الدفع التي يدعمها MontyPay؟",
+						"Answer": "يدعم MontyPay أكثر من 100 وسيلة دفع، بما في ذلك البطاقات الائتمانية الرئيسية، المحافظ الرقمية، وطرق الدفع المحلية، مما يوفّر لك ولعملائك مرونة كاملة."
 					},
 					{
-						"Question": "Is MontyPay secure for online transactions?",
-						"Answer": "Absolutely! MontyPay is PCI DSS Level 1 v4 compliant and equipped with advanced fraud detection to ensure the highest level of security."
+						"Question": "هل MontyPay آمن للمعاملات عبر الإنترنت؟",
+						"Answer": "بكل تأكيد! MontyPay حاصل على اعتماد PCI DSS مستوى 1 إصدار v4 ومزوّد بأدوات متقدمة لكشف الاحتيال لضمان أعلى درجات الأمان."
 					},
 					{
-						"Question": "Can MontyPay integrate with my existing website or e-commerce platform?",
-						"Answer": "Yes, integration is simple with our multiple plugins designed for popular CMS platforms. Check out our CMS plugins page for more details."
+						"Question": "هل يمكن دمج MontyPay مع موقعي أو منصّة التجارة الإلكترونية الخاصة بي؟",
+						"Answer": "نعم، عملية الدمج بسيطة وسلسة بفضل إضافاتنا المتعددة المخصّصة لأشهر أنظمة إدارة المحتوى. يمكنك زيارة صفحة إضافات الـCMS لمعرفة المزيد."
 					},
 					{
-						"Question": "How long does it take to process payments?",
-						"Answer": "Payments are processed instantly for a seamless customer experience."
+						"Question": "كم يستغرق الوقت لمعالجة الدفعات؟",
+						"Answer": "تُعالج الدفعات بشكل فوري لضمان تجربة سلسة للعملاء."
 					},
 
 					{
-						"Question": "Does MontyPay support multi-currency payments?",
-						"Answer": "Yes, MontyPay accepts payments in multiple currencies, including crypto, allowing you to expand your business globally without limits."
+						"Question": "هل يدعم MontyPay الدفع بعملات متعددة؟",
+						"Answer": "نعم، يقبل MontyPay المدفوعات بعملات متعددة، بما في ذلك العملات الرقمية، ما يساعدك على التوسع عالميًا دون حدود."
 					},
 					{
-						"Question": "What kind of analytics and reporting does MontyPay offer?",
-						"Answer": "MontyPay provides real-time reporting and insights through a unified dashboard, helping you track transactions, sales trends, and customer behavior with ease."
+						"Question": "ما نوع التحليلات والتقارير التي يقدمها MontyPay؟",
+						"Answer": "يوفر MontyPay تقارير فورية ورؤى تحليلية من خلال لوحة تحكم موحدة، تساعدك على تتبع المعاملات، اتجاهات المبيعات، وسلوك العملاء بسهولة."
 					},
 					{
-						"Question": "Can MontyPay handle recurring payments or subscriptions?",
-						"Answer": "Yes, MontyPay supports automated recurring billing, perfect for subscription services or installment plans."
+						"Question": "هل يستطيع MontyPay إدارة الدفعات المتكرّرة أو الاشتراكات؟",
+						"Answer": "نعم، يدعم MontyPay الفوترة التلقائية للدفعات المتكرّرة، مما يجعله مثالياً لخدمات الاشتراك أو خطط التقسيط."
 					},
 					{
-						"Question": "Does MontyPay offer solutions for in-store payments?",
-						"Answer": "Absolutely! Our omnichannel solution ensures a seamless experience across both online and in-store sales."
+						"Question": "هل يقدم MontyPay حلولاً للدفع داخل المتاجر؟",
+						"Answer": "بالتأكيد! يوفّر حلنا الموحد  تجربة سلسة عبر المبيعات الإلكترونية والداخلية معاً."
 					},
 					{
-						"Question": "How do I get started with MontyPay?",
-						"Answer": "Getting started is quick and easy with our streamlined onboarding process. You’ll be up and running in no time, contact us to begin!"
+						"Question": "كيف يمكنني البدء باستخدام MontyPay؟",
+						"Answer": "البدء سهل وسريع بفضل عملية الانضمام المبسّطة. ستكون جاهزاً للعمل خلال وقت قصير—تواصل معنا للبدء!"
 					}
 				]
+			},
+			"Section 9": {
+				"Title": "لننمو معًا",
+				"Description": "MontyPay هنا ليقدم لك حلول دفع عالمية، آمنة، وسلسة مصممة خصيصًا لاحتياجاتك. سواء كنت شركة ناشئة أو مؤسسة كبيرة، نوفر لك الأدوات اللازمة للنجاح. تواصل معنا الآن لنساعدك في تنمية أعمالك."
 			},
 			"Seo": {
 				"Title": "",

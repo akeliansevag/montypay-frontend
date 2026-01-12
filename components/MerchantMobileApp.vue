@@ -2,13 +2,13 @@
     <section class="relative max-lg:py-10 lg:py-24 bg-[#0F0C22] text-white">
         <img src="/pattern-bg-2.webp" alt="BG Pattern" class="absolute top-0 start-0 object-cover w-full h-full"/>
         <div class="container">
-            <h2 class="text-3xl font-bold">Merchant Mobile App </h2>
-            <h3 class="text-xl font-bold mt-6">Your Business, Always in Your Hands</h3>
-            <p class="lg:w-2/3 text-xl mt-6">With the MontyPay Merchant Mobile App, you can run your business no matter where you are. Packed with powerful tools and a user-friendly design, it’s like carrying your entire business in your pocket. </p>
+            <h2 class="text-3xl font-bold">{{ t('Pages.Online Payments.Section 5.Title')}}</h2>
+            <h3 class="text-xl font-bold mt-6">{{ t('Pages.Online Payments.Section 5.Sub Title 1')}}</h3>
+            <p class="lg:w-2/3 text-xl mt-6">{{ t('Pages.Online Payments.Section 5.Description 1')}}</p>
 
             <div class="flex max-lg:flex-col items-center justify-between gap-10 mt-12">
                 <div class="w-full">
-                    <h3 class="text-xl font-bold">It Has Everything You Need: </h3>
+                    <h3 class="text-xl font-bold">{{ t('Pages.Online Payments.Section 5.Sub Title 2')}}</h3>
                     <div class="flex flex-col gap-7 mt-7">
                         <div class="flex max-lg:flex-col gap-5 p-8 bg-[#FFFFFF0D] rounded-xl backdrop-blur-md" v-for="(need,inx) in needs" :key="inx">
                             <div>
@@ -20,7 +20,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-xl font-normal mt-10"><strong>MontyPay’s merchant mobile app</strong> ensures you’re always in control. It’s all right there, in the <strong>palm of your hand.</strong> </p>
+                    <p class="text-xl font-normal mt-10">{{ t('Pages.Online Payments.Section 5.Description 2') }}</p>
                 </div>
                 <div class="w-full h-full">
                     <div class="">
@@ -42,31 +42,32 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
     const needs = [
         {
             icon: '/track-your-sales.svg',
-            title: 'Track Your Sales',
-            description: 'Stay updated on your performance in real-time. '
+            title: t('Pages.Online Payments.Section 5.Cards 1[0].Title'),
+            description: t('Pages.Online Payments.Section 5.Cards 1[0].Description')
         },
         {
             icon: '/manage-transactions.svg',
-            title: 'Manage Transactions',
-            description: 'View, control, and organize all your payments whenever and wherever.'
+            title: t('Pages.Online Payments.Section 5.Cards 1[1].Title'),
+            description: t('Pages.Online Payments.Section 5.Cards 1[1].Description')
         },
         {
             icon: '/send-payment-links.svg',
-            title: 'Send Payment Links',
-            description: 'No delays, create and share payment links with just a few taps. '
+            title: t('Pages.Online Payments.Section 5.Cards 1[2].Title'),
+            description: t('Pages.Online Payments.Section 5.Cards 1[2].Description')
         },
         {
             icon: '/access-advanced-analytics.svg',
-            title: 'Access Advanced Analytics',
-            description: 'Dive into detailed insights to understand your sales trends and customer behavior better.'
+            title: t('Pages.Online Payments.Section 5.Cards 1[3].Title'),
+            description: t('Pages.Online Payments.Section 5.Cards 1[3].Description')
         },
         {
             icon: '/stay-connected.svg',
-            title: 'Stay Connected',
-            description: 'From the app to the dashboard, switch seamlessly and manage it all with ease. '
+            title: t('Pages.Online Payments.Section 5.Cards 1[4].Title'),
+            description: t('Pages.Online Payments.Section 5.Cards 1[4].Description')
         }
     ]
 
