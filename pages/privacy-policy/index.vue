@@ -1,8 +1,10 @@
 <template lang="">
-    <Page slug="privacy-policy" />
+    <Page v-if="locale == 'en'" slug="privacy-policy" />
+    <Page v-if="locale == 'ar'" slug="privacy-policy-ar" />
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
     useSeoMeta({
         title: 'Privacy Policy | Data Protection & User Rights',
         ogTitle: 'Privacy Policy | Data Protection & User Rights',
