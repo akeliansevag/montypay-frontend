@@ -9,7 +9,7 @@
                     <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">{{ t('Pages.Omnichannel Payments.Banner.Title') }}</h1>
                     <p class="text-xl">{{ t('Pages.Omnichannel Payments.Banner.Description') }}</p>
                     <div class="">
-                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">{{ t('General.Buttons.Request a Demo') }}</NuxtLink>
+                        <NuxtLinkLocale to="/contact-us" class="inline-block mp-button-quaternary">{{ t('General.Buttons.Request a Demo') }}</NuxtLinkLocale>
                     </div>
                 </div>
                 <div class="lg:w-[50%]">

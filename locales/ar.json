@@ -45,90 +45,98 @@
 			"Contact Us": "تواصل معنا",
 			"Request a Demo": "اطلب عرضًا تجريبيًا",
 			"Contact Sales": "تواصل مع فريق المبيعات",
-			"Link": "Link",
-			"Download": "Download",
-			"Connect": "Connect",
-			"Download PDF": "Download PDF"
+			"Link": "رابط",
+			"Download": "تحميل",
+			"Connect": "اتصال",
+			"Download PDF": "تحميل ملف PDF",
+			"Send": "إرسال",
+			"Get Started": "ابدأ الآن",
+			"Submitting": "جارٍ الإرسال..."
 		},
 		"Labels": {
-			"First Name": "First Name",
-			"Last Name": "Last Name",
-			"Email": "Email",
-			"Cover Letter": "Cover Letter",
-			"Upload your CV": "Upload your CV",
-			"Send": "Send",
-			"Work Email": "Work Email",
-			"Phone Number": "Phone Number",
-			"Country": "Country",
-			"Industry": "Industry",
-			"Product": "Product",
-			"Company Name": "Company Name",
-			"Company Size": "Company Size",
-			"Website": "Website",
-			"Message": "Message",
-			"Privacy Policy": "Privacy Policy"
+			"First Name": "الاسم الأول",
+			"Last Name": "اسم العائلة",
+			"Email": "البريد الإلكتروني",
+			"Cover Letter": "رسالة تعريفية",
+			"Upload your CV": "تحميل السيرة الذاتية",
+			"Send": "إرسال",
+			"Work Email": "البريد الإلكتروني للعمل",
+			"Phone Number": "رقم الهاتف",
+			"Country": "الدولة",
+			"Industry": "القطاع",
+			"Product": "المنتج",
+			"Company Name": "اسم الشركة",
+			"Company Size": "حجم الشركة",
+			"Website": "الموقع الإلكتروني",
+			"Message": "الرسالة",
+			"Privacy Policy": "سياسة الخصوصية",
+			"Privacy Policy 2": "أنت توافق على سياسة الخصوصية الخاصة بنا."
 		},
 		"Placeholders": {
-			"First Name": "First Name",
-			"Last Name": "Last Name",
-			"Email": "Email",
-			"Cover Letter": "Cover Letter",
-			"Upload your CV": "Upload your CV",
-			"Work Email": "Work Email",
-			"Phone Number": "Phone Number",
-			"Country": "Select Country",
-			"Industry": "Select Industry",
-			"Product": "Select Product",
-			"Company Name": "Company Name",
-			"Company Size": "Company Size",
-			"Website": "Website",
-			"Message": "Leave us a message..."
+			"First Name": "الاسم الأول",
+			"Last Name": "اسم العائلة",
+			"Email": "البريد الإلكتروني",
+			"Cover Letter": "رسالة تعريفية",
+			"Upload your CV": "تحميل السيرة الذاتية",
+			"Work Email": "البريد الإلكتروني للعمل",
+			"Phone Number": "رقم الهاتف",
+			"Country": "اختر الدولة",
+			"Industry": "اختر القطاع",
+			"Product": "اختر المنتج",
+			"Company Name": "اسم الشركة",
+			"Company Size": "حجم الشركة",
+			"Website": "الموقع الإلكتروني",
+			"Message": "اترك لنا رسالة...",
+			"Privacy Policy 2": "يجب الموافقة على سياسة الخصوصية"
 		},
 		"Messages": {
 			"Errors": {
 				"Required": {
-					"Full Name": "Please enter your full name",
-					"Email": "Please enter your email address",
-					"Position": "Please choose your position",
-					"Code": "Please choose your country code",
-					"Mobile Number": "Please enter your mobile number",
-					"Country": "Please choose your country",
-					"Profession": "Please enter your profession",
-					"Subject": "Please enter your subject",
-					"Message": "Please enter your message",
-					"File": "Please upload at least one valid file",
-					"Phone Number": "Please enter your phone number",
-					"Industry": "Please select an industry",
-					"Product": "Please select a product",
-					"Company Name": "Please enter your company name",
-					"Company Size": "Please enter your company size",
-					"Website": "Please enter your website",
-					"Privacy Policy": "You must agree to our privacy policy"
+					"First Name": "يرجى إدخال الاسم الأول",
+					"Last Name": "يرجى إدخال اسم العائلة",
+					"Full Name": "يرجى إدخال الاسم الكامل",
+					"Email": "يرجى إدخال عنوان البريد الإلكتروني",
+					"Position": "يرجى اختيار المنصب",
+					"Code": "يرجى اختيار رمز الدولة",
+					"Mobile Number": "يرجى إدخال رقم الهاتف المحمول",
+					"Country": "يرجى اختيار الدولة",
+					"Profession": "يرجى إدخال المهنة",
+					"Subject": "يرجى إدخال الموضوع",
+					"Message": "يرجى إدخال الرسالة",
+					"File": "يرجى تحميل ملف صالح واحد على الأقل",
+					"Phone Number": "يرجى إدخال رقم الهاتف",
+					"Industry": "يرجى اختيار القطاع",
+					"Product": "يرجى اختيار المنتج",
+					"Company Name": "يرجى إدخال اسم الشركة",
+					"Company Size": "يرجى إدخال حجم الشركة",
+					"Website": "يرجى إدخال الموقع الإلكتروني",
+					"Privacy Policy": "يجب الموافقة على سياسة الخصوصية"
 				},
-				"Safe": "Your input has invalid value",
-				"Valid Email": "Please enter a valid email address",
-				"Valid Code": "Please enter a valid country code",
-				"Unique Email": "This email address is already subscribed.",
-				"Numeric": "Please enter a valid numeric phone number",
-				"Length": "Please enter a valid phone number between 5 and 12 characters",
-				"File Type": "Invalid file type. Allowed types: pdf, doc, docx, jpg, jpeg, png",
-				"File Max Size": "File size exceeds the limit of 5MB",
-				"Upload Up To": "You can only upload up to",
-				"Files": "files",
-				"You can only upload": "You can only upload",
-				"More Files": "more files",
-				"Confirm Policies": "Please confirm that you've read and accepted our Privacy Policy, Cookie Policy, and Terms & Conditions",
-				"Upload Valid File": "Please upload at least one valid file.",
-				"Validation Failed": "Please ensure all required fields are correctly filled and try submitting again.",
-				"Api Response Validation Failed": "Error in submitting your message. Please try again later",
-				"Api Failed": "Error in submitting your message. Please try again later",
-				"Cover Letter": "Please write a cover letter",
-				"Upload your CV": "Please upload a file"
+				"Safe": "القيمة المدخلة غير صالحة",
+				"Valid Email": "يرجى إدخال عنوان بريد إلكتروني صالح",
+				"Valid Code": "يرجى إدخال رمز دولة صالح",
+				"Unique Email": "عنوان البريد الإلكتروني هذا مسجّل بالفعل.",
+				"Numeric": "يرجى إدخال رقم هاتف رقمي صالح",
+				"Length": "يرجى إدخال رقم هاتف صالح بين 5 و12 خانة",
+				"File Type": "نوع الملف غير صالح. الأنواع المسموح بها: pdf، doc، docx، jpg، jpeg، png",
+				"File Max Size": "حجم الملف يتجاوز الحد الأقصى 5 ميغابايت",
+				"Upload Up To": "يمكنك تحميل ما يصل إلى",
+				"Files": "ملفات",
+				"You can only upload": "يمكنك تحميل",
+				"More Files": "ملفات إضافية",
+				"Confirm Policies": "يرجى تأكيد قراءتك والموافقة على سياسة الخصوصية وسياسة ملفات تعريف الارتباط والشروط والأحكام",
+				"Upload Valid File": "يرجى تحميل ملف صالح واحد على الأقل.",
+				"Validation Failed": "يرجى التأكد من تعبئة جميع الحقول المطلوبة بشكل صحيح ثم المحاولة مرة أخرى.",
+				"Api Response Validation Failed": "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة لاحقًا",
+				"Api Failed": "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة لاحقًا",
+				"Cover Letter": "يرجى كتابة رسالة تعريفية",
+				"Upload your CV": "يرجى تحميل ملف",
+				"URL": "يرجى إدخال رابط صحيح لموقعك الإلكتروني"
 			},
 			"Success": {
-				"Newsletter": "Thank you for subscribing.",
-				"Career": "Thank you for your message, our team will be in touch with you the soonest.",
-				"Contact Us": "Success"
+				"Newsletter": "شكرًا لاشتراكك.",
+				"Career": "شكرًا لرسالتك، سيتواصل معك فريقنا في أقرب وقت ممكن.",
+				"Contact Us": "تم بنجاح"
 			}
 		}
 	},
@@ -1059,134 +1067,134 @@
 		},
 		"QCheck": {
 			"Banner": {
-				"Title": "QCheck Customer Verification",
-				"Description": "Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout tool. Whether guests are scanning to browse your menu or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.",
+				"Title": "تحقق العملاء عبر Qcheck",
+				"Description": "سرّع وتيرة الخدمة واجعل العملاء يعودون مجددًا مع QCheck، أداة الدفع الذاتي المثالية. سواء كان الضيوف يقومون بالمسح للتصفح أو لتسوية الفاتورة، تم تصميم QCheck لتحقيق السرعة والكفاءة ورضا العملاء.",
 				"Image Alt": "QCheck Banner Image",
 				"Image:": "qcheck-banner.webp"
 			},
 			"Section 2": {
-				"Title": "Starts With a Scan. Ends With a Smile.",
+				"Title": "يبدأ بالمسح. وينتهي بابتسامة.",
 				"Items": [
 					{
-						"Title": "Faster Checkout",
-						"Description": "Save up to 17 minutes per table for faster turnover with QCheck's seamless pay-at-table experience.",
+						"Title": "الدفع أسرع",
+						"Description": "وفّر حتى 17 دقيقة لكل طاولة مع تجربة الدفع عند الطاولة السلسة من QCheck لزيادة سرعة التدوير.",
 						"Image": "faster-checkout.webp",
-						"Category": "Faster"
+						"Category": "أسرع"
 					},
 					{
-						"Title": "Seamless Experience",
-						"Description": "Ensure a frictionless journey from menu browsing to bill payment, leaving guests happy and operations smooth.",
+						"Title": "تجربة سلسة",
+						"Description": "ضمان رحلة خالية من العقبات من تصفح القائمة إلى دفع الفاتورة، لتكون تجربة الضيوف ممتعة وعملياتك سلسة",
 						"Image": "seamless-experience.webp",
-						"Category": "Seamless"
+						"Category": "سلس"
 					},
 					{
-						"Title": "Simple and Secure Payments",
-						"Description": "Offer confidence and peace of mind with multiple secure payment options, from mobile wallets to cards.",
+						"Title": "مدفوعات بسيطة وآمنة",
+						"Description": "قدّم الثقة وراحة البال مع خيارات دفع آمنة متعددة، من المحافظ الرقمية إلى البطاقات.",
 						"Image": "simple-and-secure-payments.webp",
-						"Category": "Secure"
+						"Category": "آمن"
 					},
 					{
-						"Title": "Multiple Payment Options",
-						"Description": "Give guests flexibility with wallet payments, card payments, and many more, all in one hassle-free process",
+						"Title": "خيارات دفع متعددة",
+						"Description": "Gامنح الضيوف مرونة الدفع عبر المحافظ الرقمية، البطاقات، والعديد من الخيارات الأخرى، كلها ضمن عملية واحدة سهلة وخالية من التعقيد.",
 						"Image": "multiple-payment-options.webp",
-						"Category": "Flexible"
+						"Category": "مرن"
 					}
 				]
 			},
 			"Section 3": {
-				"Title": "It’s All Just One Scan Away",
-				"Description": "Create a modern, quick, and enjoyable dining experience with QCheck’s intuitive features.",
+				"Title": "كل شيء على بعد مسح واحد فقط",
+				"Description": "ابتكر تجربة تناول طعام عصرية وسريعة وممتعة مع ميزات QCheck البديهية.",
 				"Items": [
 					{
-						"Title": "Scan the QR Code",
-						"Description": "One code, two benefits! Guests can view your menu and pay the bill without waiting",
+						"Title": "امسح رمز الاستجابة السريعة (QR)",
+						"Description": "رمز واحد، فائدة مزدوجة! يمكن للضيوف استعراض قائمتك ودفع الفاتورة دون انتظار.",
 						"Image": "scan-the-qr-code.webp",
-						"Category": "Scan"
+						"Category": "مسح"
 					},
 					{
-						"Title": "Split the Bill",
-						"Description": "Simplify group payments with itemized or equal division options",
+						"Title": "تقسيم الفاتورة",
+						"Description": "بسط عملية الدفع الجماعي مع خيارات التقسيم المتساوي أو حسب البنود.",
 						"Image": "split-the-bill.webp",
-						"Category": "Split"
+						"Category": "تقسيم"
 					},
 					{
-						"Title": "Add a Tip",
-						"Description": "Triple staff tips with an easy in-app tipping option during payment",
+						"Title": "إضافة إكرامية",
+						"Description": "زد إكراميات الطاقم ثلاث مرات من خلال خيار الإكرام السهل داخل التطبيق أثناء الدفع.",
 						"Image": "add-a-tip.webp",
-						"Category": "Tip"
+						"Category": "إكرامية"
 					},
 					{
-						"Title": "Pay the Bill",
-						"Description": "Offer secure and versatile payment methods for fast, smooth transactions",
+						"Title": "دفع الفاتورة",
+						"Description": "قدّم طرق دفع آمنة ومتعددة لتجربة معاملات سريعة وسلسة.",
 						"Image": "pay-the-bill.webp",
-						"Category": "Pay"
+						"Category": "دفع"
 					}
 				]
 			},
 			"Section 4": {
-				"Title": "Integration and Onboarding",
-				"Description": "Getting started with QCheck is quick and hassle-free:",
+				"Title": "التكامل وبدء الاستخدام",
+				"Description": "البدء مع QCheck سريع وخالٍ من التعقيدات:",
 				"Items": [
 					{
-						"Title": "Sync Your POS",
-						"Description": "Our team ensures seamless integration with your existing POS system",
+						"Title": "مزامنة مع نظام نقاط البيع (POS)",
+						"Description": "يضمن فريقنا تكاملاً سلسًا مع نظام نقاط البيع الحالي لديك.",
 						"Image": "integration-1.webp"
 					},
 					{
-						"Title": "Staff Training",
-						"Description": "Comprehensive training equips your team to use QCheck effortlessly.",
+						"Title": "تدريب الطاقم",
+						"Description": "تدريب شامل يجهّز فريقك لاستخدام QCheck بكل سهولة",
 						"Image": "integration-2.webp"
 					},
 					{
-						"Title": "Fast Customer Checkout",
-						"Description": "Your guests can immediately enjoy faster, smoother checkouts.",
+						"Title": "تسريع عملية الدفع للزبائن",
+						"Description": "يستمتع ضيوفك فورًا بعمليات دفع أسرع وأكثر سلاسة.",
 						"Image": "integration-3.webp"
 					}
 				]
 			},
 			"Section 5": {
-				"Title": "Connectors"
+				"Title": "الموصلات"
 			},
 			"Section 6": {
-				"Title": "Why QCheck?",
+				"Title": "لماذا QCheck؟",
 				"Items": [
-					["Feature","QCheck","Traditional Checkout"],
-					["Wait time","Less than 2 minutes","10+ minutes"],
-					["Bill splitting","Division and itemized","Manual"],
-					["Payment options","Diverse","Limited"],
-					["Tipping","Increase tips","Average tips"],
-					["Integration","Seamless POS integration","Basic integration"],
-					["Customer satisfaction","High","Average"]
+					["الميزة","QCheck","الدفع التقليدي"],
+					["مدة الانتظار","أقل من دقيقتين","أكثر من 10 دقائق"],
+					["تقسيم الفاتورة","التقسيم والمتابعة حسب البنود","يدوي"],
+					["خيارات الدفع","متنوعة","محدودة"],
+					["الإكراميات","زيادة الإكراميات","متوسط الإكراميات"],
+					["التكامل","تكامل سلس مع نظام نقاط البيع (POS)","تكامل أساسي"],
+					["رضا العملاء","مرتفع","متوسط"]
 				]
 			},
 			"Section 7": {
-				"Title": "All You Need to Know",
+				"Title": "كل ما تحتاج لمعرفته",
 				"Items": [
 					{
-						"Question": "How does QCheck handle bill splitting?",
-						"Answer": "Guests can divide their bills equally or itemize them with ease."
+						"Question": "كيف يتعامل QCheck مع تقسيم الفاتورة؟",
+						"Answer": "يمكن للضيوف تقسيم فواتيرهم بالتساوي أو تفصيلها حسب البنود بكل سهولة."
 					},
 					{
-						"Question": "What payment methods are supported?",
-						"Answer": "QCheck supports 100+ payment methods, including card and wallet payments."
+						"Question": "ما هي طرق الدفع المدعومة؟",
+						"Answer": "يدعم QCheck أكثر من 100 طريقة دفع، بما في ذلك الدفع بالبطاقات والمحافظ الرقمية."
 					},
 					{
-						"Question": "How secure are the transactions?",
-						"Answer": "QCheck ensures the highest level of security with PCI DSS compliance and encryption."
+						"Question": "ما مدى أمان المعاملات؟",
+						"Answer": "يضمن QCheck أعلى مستوى من الأمان مع الامتثال لمعيار PCI DSS والتشفير."
 					},
 					{
-						"Question": "Does QCheck integrate with existing POS systems?",
-						"Answer": "Yes, it integrates seamlessly for uninterrupted operations."
+						"Question": "هل يتكامل QCheck مع أنظمة نقاط البيع الحالية؟",
+						"Answer": "نعم، يتكامل بسلاسة لضمان استمرار العمليات دون انقطاع."
 					},
 					{
-						"Question": "Is support available for setup and staff training?",
-						"Answer": "Absolutely! We provide complete onboarding and training support to ensure success."
+						"Question": "هل يتوفر دعم للإعداد وتدريب الطاقم؟",
+						"Answer": "بالطبع! نحن نوفر دعم كامل لبدء الاستخدام وتدريب الطاقم لضمان النجاح."
 					}
 				]
 			},
 			"Section 8": {
-				"Title": "It’s All Just One Scan Away",
-				"Description": "Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features",
+				"Title": "كل شيء على بعد مسح واحد فقط",
+				"Description": "ابتكر تجربة طعام عصرية وسريعة وممتعة مع ميزات QCheck البديهية.",
 				"Image": "its-just-one-scan-away.webp"
 			},
 			"Seo": {
@@ -1201,164 +1209,164 @@
 		},
 		"eCommerce Services": {
 			"Banner": {
-				"Title": "E-Commerce Payment Services",
-				"Description": "Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.",
-				"Button Text": "Launch Your eCommerce Website Today!",
+				"Title": "خدمات الدفع للتجارة الإلكترونية",
+				"Description": "أنشئ حضورًا قويًا على الإنترنت مع حلول التجارة الإلكترونية المتخصصة من MontyPay. من التصميم إلى تكامل الدفع، نحن نتولى كل شيء لتحقيق رؤيتك على أرض الواقع.",
+				"Button Text": "أطلق موقع التجارة الإلكترونية الخاص بك اليوم!",
 				"Image Alt": "ecommerce Banner Image",
 				"Image:": "ecommerce-banner.webp"
 			},
 			"Section 2": {
-				"Title": "Reach Your Businesses' Full Potential",
-				"Description": "Stay ahead of the competition with an e-commerce platform that unlocks endless opportunities for your business:",
+				"Title": "حقق الإمكانات الكاملة لعملك",
+				"Description": "ابقَ متقدمًا على المنافسين مع منصة تجارة إلكترونية تفتح آفاقًا لا حصر لها لعملك:",
 				"Items": [
 					{
-						"Title": "24/7 Availability",
-						"Description": "Your store never sleeps, ready to serve customers globally",
+						"Title": "توافر على مدار الساعة",
+						"Description": "متجرك لا ينام أبدًا، جاهز لخدمة العملاء عالميًا.",
 						"Image": "24-7-availability.webp"
 					},
 					{
-						"Title": "Broaden Your Reach",
-						"Description": "Attract a wider audience beyond your local market",
+						"Title": "وسع نطاق وصولك",
+						"Description": "اجذب جمهورًا أوسع يتجاوز السوق المحلي الخاص بك.",
 						"Image": "broaden-your-reach.webp"
 					},
 					{
-						"Title": "Boost Sales",
-						"Description": "Leverage analytics and targeted strategies to convert visitors into loyal customers",
+						"Title": "زيادة المبيعات",
+						"Description": "استفد من التحليلات والاستراتيجيات المستهدفة لتحويل الزوار إلى عملاء دائمين.",
 						"Image": "boost-sales.webp"
 					},
 					{
-						"Title": "Enhanced Brand Visibility",
-						"Description": "Create a memorable online presence that reflects your brand’s unique identity",
+						"Title": "تعزيز وضوح العلامة التجارية",
+						"Description": "أنشئ حضورًا إلكترونيًا مميزًا يعكس هوية علامتك التجارية الفريدة.",
 						"Image": "enhanced-brand-visibility.webp"
 					},
 					{
-						"Title": "Simplified Operations",
-						"Description": "Manage inventory, track orders, and monitor sales in one place.",
+						"Title": "تبسيط العمليات",
+						"Description": "إدارة المخزون، تتبع الطلبات، ومراقبة المبيعات من مكان واحد.",
 						"Image": "simplified-operations.webp"
 					},
 					{
-						"Title": "Delight Your Customers",
-						"Description": "Secure, intuitive, and mobile-friendly shopping tailored to your customers’ needs.",
+						"Title": "إرضاء عملائك",
+						"Description": "تسوق آمن، بديهي، ومتوافق مع الهواتف المحمولة مصمم لتلبية احتياجات عملائك.",
 						"Image": "delight-your-customers.webp"
 					}
 				]
 			},
 			"Section 3": {
-				"Title": "What We Bring to the Table",
-				"Description": "We transform your vision into reality by building custom websites from scratch in less than a month, designed to meet your unique business needs. With full customization options, you can tailor your online store to reflect your brand and cater to global audiences.",
+				"Title": "ما نقدمه لك",
+				"Description": "نحوّل رؤيتك إلى واقع من خلال إنشاء مواقع إلكترونية مخصصة من الصفر في أقل من شهر، مصممة لتلبية احتياجات عملك الفريدة. مع خيارات التخصيص الكاملة، يمكنك تصميم متجرك الإلكتروني ليعكس علامتك التجارية ويلبي احتياجات جمهور عالمي.",
 				"Image": "what-we-bring-to-the-table.webp",
 				"Alt": "What we bring to the table"
 			},
 			"Section 4": {
-				"Title": "Master Your Content",
-				"Description": "Take full control of your website’s content and updates:",
+				"Title": "تحكم بالكامل في محتواك",
+				"Description": "احصل على السيطرة الكاملة على محتوى موقعك وتحديثاته:",
 				"Items": [
 					{
-						"Title": "Enjoy intuitive controls to keep your site fresh and updated",
+						"Title": "استمتع بتحكم بديهي للحفاظ على موقعك محدثًا وجديدًا",
 						"Image": "enjoy-intuitive-controls.webp"
 					},
 					{
-						"Title": "Improve SEO and increase visibility with built-in optimization tools.",
+						"Title": "حسّن تحسين محركات البحث (SEO) وزد من وضوح موقعك باستخدام أدوات التحسين المدمجة",
 						"Image": "improve-seo.webp"
 					},
 					{
-						"Title": "Easily create, edit, and publish content",
+						"Title": "قم بإنشاء وتحرير ونشر المحتوى بسهولة",
 						"Image": "easily-create.webp"
 					}
 				]
 			},
 			"Section 5": {
-				"Title": "Create, Captivate, Convert",
-				"Description": "Pair your e-commerce platform with expert social media services and high-quality visual content:",
-				"Button Text": "Start Selling Online Now",
+				"Title": "أنشئ، اجذب، وحوّل",
+				"Description": "ادمج منصتك للتجارة الإلكترونية مع خدمات احترافية لوسائل التواصل الاجتماعي ومحتوى بصري عالي الجودة:",
+				"Button Text": "ابدأ البيع عبر الإنترنت الآن",
 				"Items": [
 					{
-						"Title": "Develop engaging, brand-aligned content.",
+						"Title": "قم بتطوير محتوى جذاب ومتوافق مع علامتك التجارية.",
 						"Image": "develop-engaging.webp"
 					},
 					{
-						"Title": "Boost visibility and engagement across platforms.",
+						"Title": "زد من وضوحك وتفاعل جمهورك عبر المنصات المختلفة.",
 						"Image": "boost-visibility.webp"
 					},
 					{
-						"Title": "Create marketing assets to tell your story and captivate your audience.",
+						"Title": "أنشئ أدوات تسويقية لسرد قصتك وجذب جمهورك.",
 						"Image": "create-marketing.webp"
 					},
 					{
-						"Title": "Build a photo library showcasing your products in the best light, with professional imagery and videography.",
+						"Title": "ابنِ مكتبة صور تعرض منتجاتك بأفضل شكل، باستخدام تصوير فوتوغرافي وفيديو احترافي.",
 						"Image": "build-a-photo-library.webp"
 					},
 					{
-						"Title": "Engage and convert shoppers with stunning imagery and professional videography.",
+						"Title": "تفاعل مع المتسوقين وحوّلهم إلى عملاء باستخدام صور وفيديوهات مذهلة واحترافية.",
 						"Image": "engage-and-convert.webp"
 					}
 				]
 			},
 			"Section 6": {
-				"Title": "Tap Into the Power of Payments",
-				"Description": "MontyPay’s seamless payment solutions ensure your customers can check out quickly and securely:",
+				"Title": "استفد من قوة المدفوعات",
+				"Description": "تضمن حلول الدفع السلسة من MontyPay أن يتمكن عملاؤك من إتمام عمليات الشراء بسرعة وأمان:",
 				"Items": [
 					{
-						"Title": "Accept over 100 payment options, including cards, wallets, and cryptocurrencies",
+						"Title": "قبول أكثر من 100 طريقة دفع، بما في ذلك البطاقات والمحافظ والعملات المشفرة",
 						"Image": "accept-over-100.webp"
 					},
 					{
-						"Title": "Enable mobile payments for convenience",
+						"Title": "تمكين المدفوعات عبر الهواتف المحمولة للراحة",
 						"Image": "enable-mobile-payments.webp"
 					},
 					{
-						"Title": "Offer flexible payment methods like pay-by-link, QR codes, and recurring billing",
+						"Title": "تقديم طرق دفع مرنة مثل الدفع عبر الرابط، رموز QR، والفوترة المتكررة",
 						"Image": "offer-flexible-payment-methods.webp"
 					},
 					{
-						"Title": "Enjoy reliable, secure transactions backed by PCI DSS compliance",
+						"Title": "الاستمتاع بمعاملات آمنة وموثوقة مدعومة بالامتثال لمعيار PCI DSS",
 						"Image": "enjoy-reliable.webp"
 					},
 					{
-						"Title": "Integrate into your website to start collecting payments immediately.",
+						"Title": "التكامل مع موقعك الإلكتروني لبدء جمع المدفوعات فورًا",
 						"Image": "integrate-into-your-website.webp"
 					}
 				]
 			},
 			"Section 7": {
-				"Title": "All You Need to Know",
+				"Title": "كل ما تحتاج لمعرفته",
 				"Items": [
 					{
-						"Question": "Can I customize the design of my online store?",
-						"Answer": "Absolutely. We build a website that reflects your brand’s personality and vision"
+						"Question": "هل يمكنني تخصيص تصميم متجري الإلكتروني؟",
+						"Answer": "بالطبع. نحن نبني موقعًا يعكس شخصية علامتك التجارية ورؤيتك."
 					},
 					{
-						"Question": "How can I accept payments on my e-commerce store?",
-						"Answer": "With MontyPay’s integrated, secure payment gateway, you can accept payments with ease."
+						"Question": "كيف يمكنني قبول المدفوعات على متجري الإلكتروني؟",
+						"Answer": "مع بوابة الدفع المدمجة والآمنة من MontyPay، يمكنك قبول المدفوعات بسهولة."
 					},
 					{
-						"Question": "Is my checkout secure?",
-						"Answer": "Yes, MontyPay is PCI DSS-certified, ensuring top-tier security."
+						"Question": "هل عملية الدفع آمنة؟",
+						"Answer": "نعم، MontyPay معتمدة من PCI DSS، مما يضمن أعلى مستويات الأمان."
 					},
 					{
-						"Question": "Can I integrate more than one language?",
-						"Answer": "Yes, we offer multi-language support for a truly global reach."
+						"Question": "هل يمكنني دمج أكثر من لغة واحدة؟",
+						"Answer": "نعم، نوفر دعمًا متعدد اللغات للوصول العالمي الحقيقي."
 					},
 					{
-						"Question": "Can I use multiple currencies?",
-						"Answer": "Definitely! We support payments in multiple currencies to cater to customers around the world."
+						"Question": "هل يمكنني استخدام عملات متعددة؟",
+						"Answer": "بالتأكيد! ندعم الدفع بعدة عملات لتلبية احتياجات العملاء حول العالم."
 					},
 					{
-						"Question": "Is the website mobile-friendly?",
-						"Answer": "Absolutely! We ensure your website is fully responsive, providing a seamless experience across all devices."
+						"Question": "هل الموقع متوافق مع الهواتف المحمولة؟",
+						"Answer": "بالطبع! نضمن أن يكون موقعك متجاوبًا بالكامل لتوفير تجربة سلسة على جميع الأجهزة."
 					},
 					{
-						"Question": "How many payment options are supported?",
-						"Answer": "Over 100, including credit cards, digital wallets, and even cryptocurrency."
+						"Question": "كم عدد خيارات الدفع المدعومة؟",
+						"Answer": "أكثر من 100 خيار، بما في ذلك بطاقات الائتمان والمحافظ الرقمية وحتى العملات المشفرة."
 					}
 				]
 			},
 			"Section 8": {
-				"Title": "Our Clients"
+				"Title": "عملاؤنا"
 			},
 			"Section 9": {
-				"Title": "Ready to Transform Your Online Presence?",
-				"Description": "Let’s bring your vision to life! Reach out to us today, and let’s get started building your e-commerce platform with MontyPay. Your future customers are waiting."
+				"Title": "هل أنت مستعد لتحويل حضورك الإلكتروني؟",
+				"Description": "لنحوّل رؤيتك إلى واقع! تواصل معنا اليوم، ولنبدأ ببناء منصة التجارة الإلكترونية الخاصة بك مع MontyPay. عملاؤك المستقبليون في انتظارك."
 			},
 			"Seo": {
 				"Title": "E-Commerce Payment Services for Online Businesses",
@@ -1372,99 +1380,99 @@
 		},
 		"Payment Orchestration Network": {
 			"Banner": {
-				"Title": "Payment Orchestration Network",
-				"Description": "Bring all your payment methods, gateways, and currencies into one easy-to-manage platform. Whether you’re growing globally or streamlining locally, we’re here to help you handle payments like a pro, boost approvals, and keep things running smoothly. Goodbye to payment chaos!",
+				"Title": "شبكة تنظيم المدفوعات",
+				"Description": "اجمع جميع طرق الدفع، البوابات، والعملات في منصة واحدة سهلة الإدارة. سواء كنت توسع أعمالك عالميًا أو تبسط العمليات محليًا، نحن هنا لمساعدتك على إدارة المدفوعات باحتراف، زيادة الموافقات، وضمان سير الأمور بسلاسة. وداعًا لفوضى المدفوعات!",
 				"Image Alt": "Banner Image",
 				"Image:": "payment-orchestration-network-banner.webp"
 			},
 			"Section 2": {
-				"Title": "Go Global Without the Growing Pains",
-				"Description": "Expanding your business should be exciting, not exhausting. MontyPay’s Payment Orchestration Network takes the complexity out of global payments, helping you scale seamlessly, onboard merchants anywhere, and process cross-border transactions like a pro.",
+				"Title": "توسّع عالمي بدون أي عناء",
+				"Description": "يجب أن يكون توسيع عملك تجربة مثيرة، وليس مرهقة. شبكة تنظيم المدفوعات من MontyPay تزيل التعقيدات من المدفوعات العالمية، لتساعدك على التوسع بسلاسة، وتسجيل التجار في أي مكان، ومعالجة المعاملات العابرة للحدود باحتراف.",
 				"Items": [
 					{
-						"Title": "Smarter Payments, Higher Profits",
-						"Description": "Boost your acceptance rates and lower transaction costs with intelligent payment orchestration. By dynamically routing transactions across multiple payment methods and providers in 50+ countries, we optimize every payment for maximum efficiency and profitability.",
+						"Title": "مدفوعات أذكى، أرباح أعلى",
+						"Description": "زد من معدلات القبول وخفّض تكاليف المعاملات من خلال تنظيم المدفوعات الذكي. عبر توجيه المعاملات ديناميكيًا عبر طرق ومزودي دفع متعددين في أكثر من 50 دولة، نقوم بتحسين كل دفعة لتحقيق أقصى كفاءة وربحية.",
 						"Image": "smarter-payments.webp"
 					},
 					{
-						"Title": "Think Global, Transact Local",
-						"Description": "Reduce fees and increase approval rates by routing transactions through MontyPay’s network of local acquirers, ensuring a smooth and compliant payment experience.",
+						"Title": "فكر عالميًا، وتاجر محليًا",
+						"Description": "قلل الرسوم وزد معدلات الموافقة عن طريق توجيه المعاملات عبر شبكة MontyPay من الجهات المحلية المكتسبة، مما يضمن تجربة دفع سلسة ومتوافقة مع القوانين.",
 						"Image": "think-global.webp"
 					},
 					{
-						"Title": "Payments in Every Language",
-						"Description": "With 100+ payment methods, multi-currency support, and region-specific solutions, your business is ready for any market, anywhere. You can cater to diverse customer preferences while optimizing operational efficiency.",
+						"Title": "المدفوعات بكل لغة",
+						"Description": "مع أكثر من 100 طريقة دفع، ودعم متعدد العملات، وحلول مخصصة لكل منطقة، يصبح عملك جاهزًا لأي سوق في أي مكان. يمكنك تلبية تفضيلات العملاء المتنوعة مع تحسين كفاءة العمليات.",
 						"Image": "payments-in-every-language.webp"
 					},
 					{
-						"Description": "Wherever you do business, <strong>frictionless expansion, optimized payments,</strong> and a <strong>seamless merchant experience</strong> are at hand’s reach.",
+						"Description": "أينما تعمل، التوسع السلس، المدفوعات المحسّنة، وتجربة التاجر المتكاملة كلها في متناول يدك.",
 						"Image": "wherever-you-do-business.webp"
 						
 					}
 				]
 			},
 			"Section 3": {
-				"Title": "Payment Orchestration as It Should Be",
+				"Title": "تنظيم المدفوعات كما ينبغي أن يكون",
 				"Items": [
 					{
 						"Image": "everything-in-one-place.webp",
-						"Title": "Everything in One Place",
-						"Description": "No more hopping around! Manage all payments across gateways, currencies, and methods on a single platform."
+						"Title": "كل شيء في مكان واحد",
+						"Description": "لا مزيد من التنقل بين الأنظمة! قم بإدارة جميع المدفوعات عبر البوابات، العملات، والطرق المختلفة على منصة واحدة."
 					},
 					{
 						"Image": "smarter-transactions.webp",
-						"Title": "Smarter Transactions",
-						"Description": "Our intelligent routing sends payments through the best-performing gateways,reducing failures and keeping customers happy."
+						"Title": "معاملات أذكى",
+						"Description": "يقوم التوجيه الذكي لدينا بإرسال المدفوعات عبر أفضل البوابات أداءً، مما يقلل من الفشل ويحافظ على رضا العملاء"
 					},
 					{
 						"Image": "unified-solution.webp",
-						"Title": "Unified Solution",
-						"Description": "A single integration connects your business to our extensive network of payment methods. Simplify your operations, minimize technical challenges, and focus on your growth."
+						"Title": "حل موحّد",
+						"Description": "ربط واحد يوصّل عملك بشبكتنا الواسعة من طرق الدفع. بسّط عملياتك، قلل التحديات التقنية، وركّز على نمو عملك."
 					},
 					{
 						"Image": "security-you-can-count-on.webp",
-						"Title": "Security You Can Count On",
-						"Description": "Advanced fraud detection tools safeguard every transaction, so you can focus on growing your business without worrying about risks."
+						"Title": "أمان موثوق",
+						"Description": "أدوات متقدمة لكشف الاحتيال تحمي كل معاملة، لتتمكن من التركيز على نمو عملك دون القلق بشأن المخاطر."
 					},
 					{
 						"Image": "real-time-insights.webp",
-						"Title": "Real Time Insights",
-						"Description": "Get clear, actionable data on your transactions and performance from analytics and advanced reporting tools to make smarter decisions and drive growth."
+						"Title": "رؤى في الوقت الفعلي",
+						"Description": "احصل على بيانات واضحة وقابلة للتنفيذ حول معاملاتك وأدائك من خلال التحليلات وأدوات التقارير المتقدمة لاتخاذ قرارات أذكى وتعزيز النمو."
 					},
 					{
 						"Image": "/central-point-of-contact.webp",
-						"Title": "Central Point of Contact",
-						"Description": "With MontyPay as your single point of contact, you can leave behind the hassle of managing multiple payment providers. Enjoy a streamlined interface to oversee all your payment operations effortlessly."
+						"Title": "نقطة اتصال مركزية",
+						"Description": "مع MontyPay كنقطة الاتصال الوحيدة الخاصة بك، ودّع عناء إدارة مزودي الدفع المتعددين. استمتع بواجهة مبسطة لمراقبة جميع عمليات الدفع الخاصة بك بسهولة."
 					}
 				]
 			},
 			"Section 4": {
-				"Title": "Optimize Your Entire Payment Ecosystem Today",
-				"Description": "Let MontyPay’s Payment Orchestration Network do the heavy lifting. Manage, optimize, and grow, all from one platform designed to make your life simpler.",
+				"Title": "قم بتحسين منظومة الدفع الخاصة بك بالكامل اليوم",
+				"Description": "دع شبكة تنظيم المدفوعات من MontyPay تتولى الأعمال الثقيلة. قم بالإدارة، التحسين، والنمو، كل ذلك من منصة واحدة صممت لتسهيل حياتك.",
 				"Image": "optimize-your-entire-payment.webp"
 			},
 			"Section 5": {
-				"Title": "All You Need to Know",
+				"Title": "كل ما تحتاج لمعرفته",
 				"Items": [
 					{
-						"Question": "What is payment orchestration?",
-						"Answer": "It’s a way to simplify and optimize your payments. MontyPay’s Payment Orchestration Network manages and processes payments across multiple gateways, currencies, and methods from one place."
+						"Question": "ما هو تنظيم المدفوعات؟",
+						"Answer": "هو طريقة لتبسيط وتحسين عمليات الدفع. تدير شبكة تنظيم المدفوعات من MontyPay المعاملات عبر بوابات متعددة، عملات، وطرق دفع مختلفة من مكان واحد."
 					},
 					{
-						"Question": "How does MontyPay improve payment success rates?",
-						"Answer": "Our intelligent routing picks the best-performing gateway for every transaction, ensuring more approvals and fewer declines."
+						"Question": "كيف تحسن MontyPay معدلات نجاح الدفع؟",
+						"Answer": "يقوم التوجيه الذكي لدينا باختيار أفضل بوابة أداءً لكل معاملة، لضمان المزيد من الموافقات وتقليل الرفض."
 					},
 					{
-						"Question": "What payment methods and currencies are supported?",
-						"Answer": "We’ve got over 100 options for you, including cards, wallets, and multi-currency support."
+						"Question": "ما طرق الدفع والعملات المدعومة؟",
+						"Answer": "نوفر لك أكثر من 100 خيار، بما في ذلك البطاقات، المحافظ الرقمية، ودعم متعدد العملات."
 					},
 					{
-						"Question": "How does the solution help prevent fraud?",
-						"Answer": "Our platform includes advanced fraud detection tools, ensuring transactions are secure and risks are minimized."
+						"Question": "كيف تساعد الحلول على منع الاحتيال؟",
+						"Answer": "تتضمن منصتنا أدوات متقدمة لكشف الاحتيال، لضمان أمان المعاملات وتقليل المخاطر."
 					},
 					{
-						"Question": "How do I get started?",
-						"Answer": "It’s easy! Just reach out to our team, and we’ll guide you through the onboarding process step by step."
+						"Question": "كيف أبدأ؟",
+						"Answer": "الأمر سهل! فقط تواصل مع فريقنا، وسنرشدك خطوة بخطوة خلال عملية بدء الاستخدام."
 					}
 				]
 			},
@@ -1480,137 +1488,137 @@
 		},
 		"Whitelabel For PSP Acquirer": {
 			"Banner": {
-				"Title": "White Label Solutions for PSPs & Acquirers",
-				"Description": "Become a Payment Service Provider (PSP) in as little as 3 weeks",
+				"Title": "حلول العلامة البيضاء لمقدمي خدمات الدفع والجهات المكتسبة",
+				"Description": "أصبح مزود خدمة دفع (PSP) في غضون 3 أسابيع فقط.",
 				"Image Alt": "Banner Image",
 				"Image:": "white-label-for-psp-acquirer"
 			},
 			"Section 2": {
-				"Title": "Become a Payment Service Provider (PSP) in as little as 3 weeks",
+				"Title": "أصبح مزود خدمة دفع (PSP) في غضون 3 أسابيع فقط",
 				"Items": [
-					"Fully brandable", "SaaS white label solution", "170+ connectors", "High-quality support", "Latest technology", "Industry best practices"
+					"قابل للتخصيص بالكامل بعلامتك التجارية", "حل SaaS بالعلامة البيضاء", "أكثر من 170 موصل", "دعم عالي الجودة", "أحدث التقنيات", "أفضل الممارسات في الصناعة"
 				]
 			},
 			"Section 3": {
-				"Title": "Our Solutions",
+				"Title": "حلولنا",
 				"Items": [
-					"Payment<br />Gateway", "Merchant<br />Mobile App", "Merchant<br />Management System", "QR Code Self Service Checkout"
+					"بوابة الدفع", "تطبيق الهاتف المحمول للتاجر", "نظام إدارة التجار", "الدفع الذاتي عبر رمز QR"
 				]
 			},
 			"Section 4": {
-				"Title 1": "Centralized Data Management",
-				"Description 1": "Our one-page, user-friendly data management tool consolidates all your payment channel data into a single, easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management.",
+				"Title 1": "إدارة البيانات المركزية",
+				"Description 1": "أداة إدارة البيانات سهلة الاستخدام في صفحة واحدة تجمع كل بيانات قنوات الدفع الخاصة بك في واجهة واحدة سهلة التنقل. هذا يمكّنك من التحكم في مختلف قنوات الدفع من خلال نقطة وصول موحّدة، مما يبسط عمليات المراقبة والإدارة.",
 				"Items 1": [
 					{
-						"Title": "MontyPay's Merchant Management System offers you unparalleled control and efficiency."
+						"Title": "أداة إدارة البيانات سهلة الاستخدام في صفحة واحدة تجمع كل بيانات قنوات الدفع الخاصة بك في واجهة واحدة سهلة التنقل. هذا يمكّنك من التحكم في مختلف قنوات الدفع من خلال نقطة وصول موحّدة، مما يبسط عمليات المراقبة والإدارة."
 					},
 					{
-						"Title" : "Operational Control",
-						"Description": "Manage and monitor your operations effortlessly, streamlining tasks and processes for maximum efficiency."
+						"Title" : "التحكم التشغيلي",
+						"Description": "قم بإدارة ومراقبة عملياتك بسهولة، مع تبسيط المهام والعمليات لتحقيق أقصى كفاءة."
 					},
 					{
-						"Title": "Data-Driven Insights",
-						"Description": "Manage and monitor your operations effortlessly, streamlining tasks and processes for maximum efficiency."
+						"Title": "رؤى قائمة على البيانات",
+						"Description": "احصل على تحليلات دقيقة لعملياتك وبيانات قابلة للتنفيذ لدعم اتخاذ قرارات أذكى."
 					},
 					{
-						"Title": "Scalability",
-						"Description": "Access the tools needed to scale your business efficiently, adapting to your evolving needs."
+						"Title": "القابلية للتوسع",
+						"Description": "الوصول إلى الأدوات اللازمة لتوسيع عملك بكفاءة، مع التكيف مع احتياجاتك المتطورة."
 					},
 					{
-						"Title": "Customization",
-						"Description": "Tailor the system to your unique business requirements, ensuring it aligns seamlessly with your brand identitys."
+						"Title": "التخصيص",
+						"Description": "خصص النظام وفق متطلبات عملك الفريدة، لضمان توافقه الكامل مع هوية علامتك التجارية."
 					}
 				],
 				"Title 2": "QCheck",
-				"Description 2": "Our one-page, user-friendly data management tool consolidates all your payment channel data into a single, easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management.",
+				"Description 2": "أداة إدارة البيانات سهلة الاستخدام في صفحة واحدة تجمع كل بيانات قنوات الدفع الخاصة بك في واجهة واحدة سهلة التنقل. هذا يمكّنك من التحكم في مختلف قنوات الدفع من خلال نقطة وصول موحّدة، مما يبسط عمليات المراقبة والإدارة.",
 				"Items 2": [
 					{
-						"Title": "MontyPay's QCheck revolutionizes dining experiences."
+						"Title": "تُحدث خدمة QCheck من MontyPay ثورة في تجارب تناول الطعام."
 					},
 					{
-						"Title": "Efficiency Boost",
-						"Description": "Enhance efficiency with seamless bill settlements, reducing table turnover time."
+						"Title": "تعزيز الكفاءة",
+						"Description": "عزّز الكفاءة من خلال تسوية الفواتير بسلاسة، مما يقلّل من وقت إشغال الطاولات."
 					},
 					{
-						"Title": "Bill Splitting",
-						"Description": "Streamline the bill-splitting process, making it easier for groups to divide expenses."
+						"Title": "تقسيم الفاتورة",
+						"Description": "تبسيط عملية تقسيم الفاتورة، مما يجعل من السهل على المجموعات توزيع النفقات."
 					},
 					{
-						"Title": "Increased Tips",
-						"Description": "Witness a significant increase in tips, providing a financial incentive for your staff."
+						"Title": "زيادة الإكراميات",
+						"Description": "اشهد زيادة ملحوظة في الإكراميات، مما يوفر حافزًا ماليًا لموظفيك."
 					},
 					{
-						"Title": "Enhanced Reputation",
-						"Description": "Make your establishment the talk of the town with improved dining experiences."
+						"Title": "تعزيز السمعة",
+						"Description": "اجعل منشأتك حديث الجميع من خلال تحسين تجارب تناول الطعام."
 					}
 					
 				]
 			},
 			"Section 5": {
-				"Title": "Merchant Mobile Application",
-				"Description": "Our merchant mobile application offers a seamless experience, providing access to comprehensive dashboard reporting and analytics. With this app, you can effortlessly:",
+				"Title": "تطبيق الهاتف المحمول للتجار",
+				"Description": "يقدّم تطبيق الهاتف المحمول للتجار تجربة سلسة، مع الوصول إلى لوحة تحكم شاملة للتقارير والتحليلات. باستخدام هذا التطبيق، يمكنك بسهولة:",
 				"Items": [
 					{
-						"Title": "Track transactions and monitor revenue"
+						"Title": "تتبع المعاملات ومراقبة الإيرادات"
 					},
 					{
-						"Title": "Send invoice links"
+						"Title": "إرسال روابط الفواتير"
 					},
 					{
-						"Title": "Utilize the pay-by-link feature for convenient payments  anytime, anywhere"
+						"Title": "استخدام ميزة الدفع عبر الرابط لتسهيل المدفوعات في أي وقت وأي مكان"
 					},
 					{
-						"Title": "Request support"
+						"Title": "طلب الدعم الفني"
 					},
 					{
-						"Title": "Customize payment options based on client needs"
+						"Title": "تخصيص خيارات الدفع وفق احتياجات العملاء"
 					},
 					{
-						"Title": "Display QR codes for efficient payments at your physical location"
+						"Title": "عرض رموز QR لتسهيل المدفوعات في موقعك الفعلي"
 					},
 					{
-						"Title": "Collect payments easily with the QR pay feature"
+						"Title": "جمع المدفوعات بسهولة باستخدام ميزة الدفع عبر QR"
 					}
 				]
 			},
 			"Section 6": {
-				"Title": "Efficient Data Insights",
-				"Description": "Gain valuable insights into your business operations with a centralized area for payments data, reporting, and more. Our rich reporting dashboard offers real-time analytics, transaction insights, and an intuitive interface. Multiple users and administrative roles further enhance your data management capabilities.",
+				"Title": "رؤى بيانات فعّالة",
+				"Description": "احصل على رؤى قيّمة حول عمليات عملك من خلال منطقة مركزية لبيانات المدفوعات، التقارير والمزيد. توفر لوحة التقارير المتقدمة لدينا تحليلات في الوقت الفعلي، معلومات حول المعاملات، وواجهة مستخدم بديهية. كما تعزز الأدوار الإدارية والمستخدمين المتعددين قدراتك في إدارة البيانات.",
 				"Image": "efficient-data-insights.png"
 			},
 			"Section 7": {
-				"Title": "Global Payment Collection",
-				"Description": "Allow your merchants to collect payments globally and instantly through various channels, including telephone sales, email, social media, QR codes, invoices, and messaging. Our platform simplifies recurring and batch payments, streamlining your billing processes and reducing manual effort.",
+				"Title": "جمع المدفوعات عالميًا",
+				"Description": "تمكّن تجارك من جمع المدفوعات عالميًا وفوريًا عبر قنوات متعددة، بما في ذلك المبيعات الهاتفية، البريد الإلكتروني، وسائل التواصل الاجتماعي، رموز QR، الفواتير، والرسائل. تبسط منصتنا المدفوعات المتكررة والمجمعة، مما يسهل عمليات الفوترة ويقلل الجهد اليدوي.",
 				"Image": "global-payment-collection.png"
 			},
 			"Section 8": {
-				"Title": "Flexible Billing and Settlement",
-				"Description": "Customize fees for individual transactions with our premium billing platform features. Easily calculate commissions, merchant settlements, and referral partner rewards, all within a single platform.",
+				"Title": "الفوترة والتسوية المرنة",
+				"Description": "خصص الرسوم لكل معاملة فردية باستخدام ميزات منصة الفوترة المتميزة لدينا. احسب العمولات، تسويات التجار، ومكافآت شركاء الإحالة بسهولة، جميعها ضمن منصة واحدة.",
 				"Image": "flexible-billing-and-settlement.png"
 			},
 			"Section 9": {
-				"Title": "Intelligent Routing",
-				"Description": "Identify cost-effective transaction routes and routes with higher acceptance rates. MontyPay's transactional traffic routing considers multiple factors such as currency, transaction origin,3D-Secure requirements, and more. This intelligent routing optimizes acquirer performance and enhances transaction success.",
+				"Title": "التوجيه الذكي",
+				"Description": "حدد مسارات المعاملات الأكثر توفيرًا والتلك التي تحقق معدلات قبول أعلى. يأخذ توجيه حركة المعاملات من MontyPay في الاعتبار عدة عوامل مثل العملة، مصدر المعاملة، متطلبات 3D-Secure، والمزيد. يساهم هذا التوجيه الذكي في تحسين أداء الجهة المكتسبة وزيادة نجاح المعاملات.",
 				"Image": "intelligent-routing.png"
 			},
 			"Section 10": {
-				"Title": "Live Chat Support",
-				"Description": "Our live chat customer support is available around the clock to address any customer queries, ensuring a seamless and responsive service experience.",
+				"Title": "الدعم عبر الدردشة الحية",
+				"Description": "يتوفر دعم العملاء عبر الدردشة الحية على مدار الساعة للرد على أي استفسارات، مما يضمن تجربة خدمة سلسة وسريعة الاستجابة.",
 				"Image": "live-chat-support.png"
 			},
 			"Section 11": {
-				"Title": "Risk Management",
-				"Description": "MontyPay employs an advanced risk management system that combines in-house and external scoring models to detect, analyze, and prevent potentially fraudulent transactions. Our anti-fraud modules, external risk scoring providers, 3D-Secure 2.0, and customizable anti-fraud plans work together to safeguard your business.",
+				"Title": "إدارة المخاطر",
+				"Description": "توظف MontyPay نظام إدارة مخاطر متقدم يجمع بين نماذج التقييم الداخلية والخارجية للكشف عن المعاملات الاحتيالية المحتملة، تحليلها ومنعها. تعمل وحدات مكافحة الاحتيال، مزودو تقييم المخاطر الخارجيون، 3D-Secure 2.0، وخطط مكافحة الاحتيال القابلة للتخصيص معًا لحماية عملك.",
 				"Image": "risk-management.png"
 			},
 			"Section 12": {
-				"Title": "Cutting-Edge Technology",
-				"Description": "MontyPay leverages the latest technology to support your business expansion into new markets, increase revenue capture, and deliver a seamless checkout experience for your customers.",
+				"Title": "تكنولوجيا متقدمة",
+				"Description": "تستفيد MontyPay من أحدث التقنيات لدعم توسع عملك في الأسواق الجديدة، زيادة الإيرادات، وتقديم تجربة دفع سلسة لعملائك.",
 				"Image": "cutting-edge-technology.png"
 			},
 			"Section 13": {
-				"Title": "Expanded Connectivity",
-				"Description": "With over 170 connectors, MontyPay offers a wide range of pre-made links to banks and payment options, in addition to integrating your existing ones. This extensive network ensures a continuous flow of payments and simplifies integration with banks, retailers, and Alternative Payment Methods (APMs)."
+				"Title": "توسيع الاتصال والتكامل",
+				"Description": "مع أكثر من 170 موصل، توفر MontyPay مجموعة واسعة من الروابط الجاهزة للبنوك وطرق الدفع، بالإضافة إلى دمج تلك الموجودة لديك بالفعل. تضمن هذه الشبكة الواسعة تدفقًا مستمرًا للمدفوعات وتبسط التكامل مع البنوك، التجار، وطرق الدفع البديلة (APMs)."
 			},
 			"Seo": {
 				"Title": "E-Commerce Payment Services for Online Businesses",
@@ -1624,64 +1632,64 @@
 		},
 		"About Us": {
 			"Banner": {
-				"Title": "About MontyPay",
-				"Description": "With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
+				"Title": "عن MontyPay",
+				"Description": "مع تغطيتنا الواسعة، يمكنك توسيع نطاق عملك بثقة وخدمة العملاء في أسواق متنوعة دون أي حواجز."
 			},
 			"Section 2": {
-				"Title": "MontyPay is a global payment service provider",
-				"Description": "Pioneering cutting-edge solutions across the world. Think of us as the unrivaled conductor orchestrating international financial prowess!"
+				"Title": "MontyPay هو مزود خدمات دفع عالمي",
+				"Description": "ريادي في تقديم الحلول المتقدمة حول العالم. فكر بنا كالقائد الفريد الذي يدير القوة المالية الدولية ببراعة!"
 			},
 			"Section 3": {
-				"Title": "Based in the UK",
-				"Description": "Our headquarters are merely the tip of the iceberg. Our payment dominion stretches across the globe, with strategic outposts in Lebanon, Jordan, the UAE, Indonesia, and Nigeria, ensuring our proximity to where currencies clash and transactions flare."
+				"Title": "مقرنا في المملكة المتحدة",
+				"Description": "مقرنا الرئيسي ليس سوى جزء صغير من حضورنا العالمي. تمتد سيطرتنا على المدفوعات حول العالم، مع وجود مواقع استراتيجية في لبنان، الأردن، الإمارات، إندونيسيا، ونيجيريا، لضمان قربنا من الأماكن التي تتقاطع فيها العملات وتشتعل فيها المعاملات."
 			},
 			"Section 4": {
-				"Title": "Our Offices",
-				"Description": "We offer a wide range of 100+ payment methods that cover Middle East, Asia, Europe and America."
+				"Title": "مكاتبنا",
+				"Description": "نقدّم أكثر من 100 طريقة دفع تغطي الشرق الأوسط، آسيا، أوروبا، وأمريكا."
 			},
 			"Section 5": {
-				"Title": "Our secret?",
-				"Description": "Envision a symphony of flawlessly executed online transactions, a choreography of clicks and swipes gliding effortlessly through 50+ countries, embracing payment methods as diverse as a palette of colours.<br /><br />We offer a wide range of 100+ payment methods that cover Middle East, Asia, Europe and America."
+				"Title": "سرنا؟",
+				"Description": "تخيل سيمفونية من المعاملات الإلكترونية المنفذة بلا أخطاء، ورقصة من النقرات والتمريرات تنساب بسهولة عبر أكثر من 50 دولة، مع تبني طرق دفع متنوعة كلوحة ألوان غنية. نقدّم أكثر من 100 طريقة دفع تغطي الشرق الأوسط، آسيا، أوروبا، وأمريكا."
 			},
 			"Section 6": {
-				"Title": "This isn’t just business",
-				"Description": "It's a world of financial finesse! MontyPay doesn't talk the talk; our track record of triumph speaks volumes. While others stumble with their wallets, we elevate your whole payment experience!",
-				"Description 1": "Our services encompass an end-to-end solution, spanning from E-Commerce development, content management, order fulfilment, and social media mastery, all the way to cutting-edge payment solutions and beyond. If you're eager to uncover your business's next stride, connect with us at: info{'@'}montypay.com"
+				"Title": "هذا ليس مجرد عمل",
+				"Description": "إنها عالم من البراعة المالية! MontyPay لا تكتفي بالكلام؛ سجل إنجازاتنا يتحدث عن نفسه. بينما يتعثر الآخرون بمحافظهم الرقمية، نحن نرفع تجربة الدفع بأكملها إلى مستوى جديد!",
+				"Description 1": "تشمل خدماتنا حلاً متكاملاً من البداية للنهاية، بدءًا من تطوير التجارة الإلكترونية، إدارة المحتوى، تلبية الطلبات، وإتقان وسائل التواصل الاجتماعي، وصولًا إلى حلول الدفع المتقدمة وما بعدها.إذا كنت متحمسًا لاكتشاف الخطوة التالية لعملك، تواصل معنا على: info{'@'}montypay.com"
 			},
 			"Section 7": {
-				"Title": "If you're eager to uncover your business's next stride",
-				"Title 1": "Connect with us at",
+				"Title": "إذا كنت متحمسًا لاكتشاف الخطوة التالية لعملك،",
+				"Title 1": "تواصل معنا على:",
 				"Button Text": "info{'@'}montypay.com",
 				"Button Link": "info{'@'}montypay.com"
 			},
 			"Section 8": {
-				"Title 1": "Our vision",
-				"Description 1": "To offer a simple global payment gateway to all merchants. To provide merchants with the best payment gateway experience.",
-				"Title 2": "Our mission",
-				"Description 2": "MontyPay facilitates payments in the simplest, yet most secure way, understanding the merchants’ needs & difficulties, and optimizing the customer experience. MontyPay is here to help all merchants capitalize on their global business by supporting worldwide currencies and different payment types."
+				"Title 1": "رؤيتنا",
+				"Description 1": "تقديم بوابة دفع عالمية بسيطة لجميع التجار، وتوفير أفضل تجربة بوابة دفع لهم.",
+				"Title 2": "مهمتنا",
+				"Description 2": "تسهّل MontyPay المدفوعات بطريقة بسيطة وآمنة، مع فهم احتياجات التجار وصعوباتهم، وتحسين تجربة العملاء. MontyPay هنا لمساعدة جميع التجار على الاستفادة القصوى من أعمالهم العالمية من خلال دعم العملات المختلفة وأنواع الدفع المتعددة."
 			},
 			"Section 9": {
-				"Title": "CORE VALUES",
+				"Title": "القيم الأساسية",
 				"Items": [
 					{
 						"id": 1,
-						"Title": "Transparency",
-						"Description": "We are committed to providing clear, straightforward information, ensuring that our clients have a full understanding of our services, processes, and fees, with no hidden terms."
+						"Title": "الشفافية",
+						"Description": "نلتزم بتقديم معلومات واضحة ومباشرة، لضمان أن يكون لدى عملائنا فهم كامل لخدماتنا وعملياتنا ورسومنا، دون أي شروط مخفية."
 					},
 					{
 						"id": 2,
-						"Title": "Innovation",
-						"Description": "We continuously invest in advanced technologies and provide our clients with cutting-edge, efficient solutions that meet their evolving needs."
+						"Title": "الابتكار",
+						"Description": "نستثمر باستمرار في التقنيات المتقدمة ونقدّم لعملائنا حلولًا مبتكرة وفعّالة تلبي احتياجاتهم المتطورة."
 					},
 					{
 						"id": 3,
-						"Title": "Flexibility",
-						"Description": "We offer flexible solutions tailored to the specific needs of each customer, providing adaptable and scalable options to suit a variety of business and personal financial needs."
+						"Title": "المرونة",
+						"Description": "نقدّم حلولًا مرنة مصممة لتلبية الاحتياجات المحددة لكل عميل، مع خيارات قابلة للتكيف والتوسع لتناسب مجموعة متنوعة من الاحتياجات المالية للأعمال والأفراد."
 					},
 					{
 						"id": 4,
-						"Title": "Honesty & Integrity",
-						"Description": "We are committed to upholding the highest ethical standards, ensuring that every interaction and transaction is conducted with fairness, accountability, and respect for our clients."
+						"Title": "الصدق والنزاهة",
+						"Description": "نلتزم بأعلى المعايير الأخلاقية، لضمان أن تتم كل تفاعل ومعاملة بالعدل والمساءلة والاحترام تجاه عملائنا."
 					}
 				]
 			},
@@ -1697,23 +1705,29 @@
 		},
 		"Careers": {
 			"Banner": {
-				"Title": "MontyPay Careers",
-				"Description": "At MontyPay, your career path is limited only by your ambition, and we are here to support you every step of the way."
+				"Title": "الوظائف في MontyPay",
+				"Description": "في MontyPay، لا يحد مسارك المهني سوى طموحك، ونحن هنا لدعمك في كل خطوة على الطريق."
 			},
 			"Section 2": {
-				"Title": "Join us",
-				"Description": "We are committed to nurturing talent and fostering a culture of continuous learning and growth. Join our dynamic and multicultural team, and you'll embark on a rewarding journey filled with endless opportunities to expand your horizons.<br /><br />Join us and be part of a team that values diversity, encourages collaboration, and empowers you to reach new heights in your career"
+				"Title": "انضم إلينا",
+				"Description": "نلتزم برعاية المواهب وتعزيز ثقافة التعلم والنمو المستمر. انضم إلى فريقنا الديناميكي والمتعدد الثقافات، وابدأ رحلة مهنية مجزية مليئة بالفرص اللامحدودة لتوسيع آفاقك.<br /><br />انضم إلينا وكن جزءًا من فريق يقدّر التنوع، ويشجّع التعاون، ويمكّنك من الوصول إلى آفاق جديدة في مسيرتك المهنية"
 			},
 			"Section 3": {
-				"Title": "We're hiring",
-				"Subtitle": "Submit your CV today and we will reach out to you once we find a position that fits your profile.",
-				"Paragraph": "Be part of a team that values diversity, encourages collaboration, and empowers you to reach new heights in your career.<br><br>At MontyPay, we are committed to nurturing talent and fostering a culture of continuous learning and growth. Join our dynamic and multicultural team, and you'll embark on a rewarding journey filled with endless opportunities to expand your horizons.",
+				"Title": "نحن نوظّف",
+				"Subtitle": "قدّم سيرتك الذاتية اليوم وسنتواصل معك فور توفر وظيفة تناسب ملفك.",
+				"Paragraph": "كن جزءًا من فريق يقدّر التنوع، ويشجّع التعاون، ويمكّنك من الوصول إلى آفاق جديدة في مسيرتك المهنية.<br><br>في MontyPay، نلتزم برعاية المواهب وتعزيز ثقافة التعلم والنمو المستمر. انضم إلى فريقنا الديناميكي والمتعدد الثقافات، وابدأ رحلة مهنية مجزية مليئة بالفرص اللامحدودة لتوسيع آفاقك.",
 				"Image": "join-us.webp"
 			},
 			"Section 4": {
-				"Title": "Our values guide our actions.",
+				"Title": "قيمنا توجّه أعمالنا.",
 				"Items": [
-					"Care","Innovation","Transparency","Honesty","Integrity","Flexibility","Excellence"
+				"الرعاية",
+				"الابتكار",
+				"الشفافية",
+				"الصدق",
+				"النزاهة",
+				"المرونة",
+				"التميّز"
 				]
 			},
 			"Seo": {
@@ -1728,28 +1742,28 @@
 		},
 		"Partners": {
 			"Banner": {
-				"Title": "MontyPay Partnership Programs",
-				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+				"Title": "برامج الشراكة مع MontyPay",
+				"Description": "توفر MontyPay حلاً متكاملاً للمدفوعات للتجار"
 			},
 			"Section 2":{
-				"Title": "ISO Partnership Model",
-				"Description": "MontyPay welcomes partnerships with Acquirers, PSPs, Wallets, and other payment providers to seamlessly integrate their payment connections within the countries they cover. In this model, MontyPay acts as a trusted intermediary between the connectors and merchants. Our platform is already trusted by over 15 global partners, including renowned names such as Stripe, Paypal, and Flutterwave."
+				"Title": "نموذج الشراكة ISO",
+				"Description": "ترحب MontyPay بالشراكات مع الجهات المكتسبة، ومزودي خدمات الدفع (PSPs)، والمحافظ الرقمية، ومقدمي خدمات الدفع الآخرين لدمج وصلاتهم بشكل سلس ضمن الدول التي يغطيونها. في هذا النموذج، تعمل MontyPay كوسيط موثوق بين الموصلات والتجار. تعتمد منصتنا بالفعل من قبل أكثر من 15 شريكًا عالميًا، بما في ذلك أسماء معروفة مثل Stripe وPayPal وFlutterwave."
 			},
 			"Section 3": {
-				"Title": "API Orchestration",
-				"Description": "Acquirers, PSPs, Wallets, and other payment providers can establish partnerships with MontyPay to access our robust payment orchestration via a single API. Partners gain direct entry to our expansive network spanning over 50 countries across different regions, enabling rapid global expansion and access to diverse payment methods through a unified integration."
+				"Title": "تنسيق API",
+				"Description": "يمكن للجهات المكتسبة، مزودي خدمات الدفع (PSPs)، المحافظ الرقمية، ومقدمي خدمات الدفع الآخرين إقامة شراكات مع MontyPay للوصول إلى نظام تنسيق المدفوعات القوي الخاص بنا عبر واجهة برمجة تطبيقات واحدة (API). يحصل الشركاء على وصول مباشر إلى شبكتنا الواسعة التي تمتد عبر أكثر من 50 دولة في مختلف المناطق، مما يتيح التوسع العالمي السريع والوصول إلى طرق دفع متنوعة من خلال تكامل موحد."
 			},
 			"Section 4": {
-				"Title": "Strategic Co-partnership Initiative",
-				"Description": "MontyPay offers a co-partnership model tailored for Acquirers and PSPs seeking strategic collaborations. Partners contribute their licenses and back-office operations, while MontyPay provides technical expertise, sales, and marketing investments.",
+				"Title": "مبادرة الشراكة الاستراتيجية المشتركة",
+				"Description": "تقدّم MontyPay نموذج شراكة مشتركة مصمم خصيصًا للجهات المكتسبة ومزودي خدمات الدفع (PSPs) الذين يسعون لتعاونات استراتيجية. يقدّم الشركاء تراخيصهم وعملياتهم الخلفية، بينما توفر MontyPay الخبرة التقنية والاستثمارات في المبيعات والتسويق.",
 				"Image": "strategic-co-partnership-initiative.png",
-				"Description 2": "Through this synergy, MontyPay delivers cutting-edge payment solutions, leveraging the licensed partner's capabilities to offer leading payment services in the market.<br />This option provides partners with the opportunity to penetrate the market faster and to be part of a global payment provider, thereby increasing their sales."
+				"Description 2": "من خلال هذا التعاون، تقدم MontyPay حلول دفع متقدمة، مستفيدة من قدرات الشريك المرخّص لتقديم خدمات دفع رائدة في السوق.<br />يوفر هذا الخيار للشركاء فرصة دخول السوق بسرعة أكبر وأن يكونوا جزءًا من مزوّد دفع عالمي، مما يزيد من مبيعاتهم."
 			},
 			"Section 5": {
-				"Title": "Referral Reseller Program",
-				"Description": "Entrepreneurs, freelancers, agencies, and businesses of varied sizes have an opportunity to collaborate with MontyPay by referring merchants to our platform. By participating in our referral program, you become a vital part of our network, referring merchants to leverage our suite of payment solutions. As a reseller, you'll receive a share of the profits, making it a mutually beneficial partnership. This model enables you to monetize your connections and networks while empowering merchants with our cutting-edge payment services.",
+				"Title": "برنامج إعادة البيع عبر الإحالة",
+				"Description": "تتاح الفرصة لأصحاب المشاريع، المستقلين، الوكالات، والشركات بمختلف الأحجام للتعاون مع MontyPay من خلال إحالة التجار إلى منصتنا. من خلال المشاركة في برنامج الإحالة لدينا، تصبح جزءًا أساسيًا من شبكتنا، حيث تقوم بإحالة التجار للاستفادة من مجموعة حلول الدفع التي نقدمها.",
 				"Items": [
-					"Entrepreneurs","Freelancers","Agencies","Businesses"
+					"رواد الأعمال","المستقلون","الوكالات","الشركات"
 				]
 			},
 			"Seo": {
@@ -1764,8 +1778,8 @@
 		},
 		"News": {
 			"Banner": {
-				"Title": "Latest News & Announcements",
-				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+				"Title": "آخر الأخبار والإعلانات",
+				"Description": "توفر MontyPay حلاً متكاملاً للمدفوعات للتجار"
 			},
 			"Seo": {
 				"Title": "MontyPay News | Latest Updates & Partnerships",
@@ -1779,7 +1793,7 @@
 		},
 		"Blogs": {
 			"Banner": {
-				"Title": "MontyPay Blog"
+				"Title": "مدونة MontyPay"
 			},
 			"Seo": {
 				"Title": "MontyPay Blog | Payment Trends, Insights & Updates",
@@ -1793,36 +1807,38 @@
 		},
 		"Global Coverage": {
 			"Banner": {
-				"Title": "Global Coverage",
-				"Description": "With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
+				"Title": "التغطية العالمية",
+				"Description": "مع تغطيتنا الواسعة، يمكنك توسيع نطاق عملك بثقة وخدمة العملاء في أسواق متنوعة دون أي حواجز."
 			},
 			"Section 2": {
-				"Title": "Global Coverage",
-				"Description": "Expand Your Business Horizons Worldwide",
-				"Cards": "Cards",
-				"Digital Wallets": "Digital Wallets",
-				"Other": "Other",
-				"eWallet": "eWallet",
-				"Cash": "Cash",
-				"Virtual Account": "Virtual Account",
-				"Direct Debit": "Direct Debit",
-				"Pay Later (BNPL)": "Pay Later (BNPL)",
-				"Lebanon": "Lebanon",
-				"Jordan": "Jordan",
-				"Bahrain": "Bahrain",
-				"UAE": "UAE",
-				"Nigeria": "Nigeria",
-				"EU & UK": "EU & UK",
-				"Canada": "Canada",
-				"USA": "USA",
-				"Kuwait": "Kuwait",
-				"Indonesia": "Indonesia",
-				"LATAM": "LATAM",
-				"Australia": "Australia",
-				"Qatar": "Qatar",
-				"Saudi Arabia": "Saudi Arabia",
-				"Ghana": "Ghana",
-				"South Africa": "South Africa"
+				"Title": "التغطية العالمية",
+				"Description": "وسع آفاق عملك حول العالم",
+				"Cards": "البطاقات",
+				"Digital Wallets": "المحافظ الرقمية",
+				"Other": "أخرى",
+				"eWallet": "محفظة إلكترونية",
+				"Cash": "نقدًا",
+				"Virtual Account": "حساب افتراضي",
+				"Direct Debit": "الخصم المباشر",
+				"Pay Later (BNPL)": "الدفع لاحقًا (اشترِ الآن وادفع لاحقًا)",
+				"Mobile Money": "الأموال عبر الهاتف المحمول",
+				"EFT": "التحويل الإلكتروني للأموال",
+				"Lebanon": "لبنان",
+				"Jordan": "الأردن",
+				"Bahrain": "البحرين",
+				"UAE": "الإمارات",
+				"Nigeria": "نيجيريا",
+				"EU & UK": "الاتحاد الأوروبي والمملكة المتحدة",
+				"Canada": "كندا",
+				"USA": "الولايات المتحدة الأمريكية",
+				"Kuwait": "الكويت",
+				"Indonesia": "إندونيسيا",
+				"LATAM": "أمريكا اللاتينية",
+				"Australia": "أستراليا",
+				"Qatar": "قطر",
+				"Saudi Arabia": "المملكة العربية السعودية",
+				"Ghana": "غانا",
+				"South Africa": "جنوب أفريقيا"
 			},
 			"Seo": {
 				"Title": "Global Payment Coverage for Merchants Worldwide",
@@ -1836,15 +1852,15 @@
 		},
 		"Documentation": {
 			"Banner": {
-				"Title": "Developer Documentation",
-				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+				"Title": "توثيق المطورين",
+				"Description": "توفر MontyPay حلاً متكاملاً للمدفوعات للتجار"
 			},
 			"Section 2": {
-				"Title": "Mobile SDK",
-				"Description": "MontyPay offers implementation of in-app payments for any smart device – smart watches, wearables, smart TV – you name it, with an easy integration into Mobile apps. <br>It allows a simplified payment experience, by allowing clients to pay on the spot while using your application. We’ve implemented all of our extensive payment experience into the development of a smooth mobile-friendly checkout, to decrease your card abandonment rate."
+				"Title": "حزمة تطوير البرمجيات المحمولة (Mobile SDK)",
+				"Description": "توفر MontyPay إمكانية تنفيذ المدفوعات داخل التطبيقات لأي جهاز ذكي – مثل الساعات الذكية، الأجهزة القابلة للارتداء، التلفزيونات الذكية – وغيرها، مع تكامل سهل في تطبيقات الهواتف المحمولة. <br>يتيح هذا تجربة دفع مبسطة، من خلال تمكين العملاء من الدفع فورًا أثناء استخدام التطبيق الخاص بك. لقد دمجنا خبرتنا الواسعة في المدفوعات لتطوير عملية دفع سلسة ومتوافقة مع الأجهزة المحمولة، بهدف تقليل معدل تخلي العملاء عن بطاقاتهم."
 			},
 			"Section 3": {
-				"Title": "Ecommerce Plugins"
+				"Title": "إضافات التجارة الإلكترونية"
 			},
 			"Seo": {
 				"Title": "Developer Documentation | SDKs & API Integration",
@@ -1858,34 +1874,34 @@
 		},
 		"API Reference": {
 			"Banner": {
-				"Title": "API Reference",
-				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+				"Title": "مرجع API",
+				"Description": "توفر MontyPay حلاً متكاملاً للمدفوعات للتجار"
 			},
 			"Section 2": {
 				"Items": [
 					{
-						"Title": "API Integration (POST)",
-						"Paragraph": "This document describes integration procedures and POST protocol usage for e-commerce merchants. POST protocol implements acquiring payments (purchases) using specific API interactions."
+						"Title": "تكامل API (POST)",
+						"Paragraph": "تصف هذه الوثيقة إجراءات التكامل واستخدام بروتوكول POST لتجار التجارة الإلكترونية. يقوم بروتوكول POST بتنفيذ عمليات استلام المدفوعات (المشتريات) باستخدام تفاعلات API محددة."
 						
 					},
 					{
-						"Title": "Generating a Certificate Signing Request",
-						"Paragraph": "Here are the steps or how-to to create a Certificate Signing Request (CSR). The example is given specifically for Centos based systems."
+						"Title": "إنشاء طلب توقيع شهادة (CSR)",
+						"Paragraph": "فيما يلي الخطوات أو طريقة إنشاء طلب توقيع شهادة (CSR). المثال مقدم خصيصًا للأنظمة المعتمدة على CentOS."
 						
 					},
 					{
-						"Title": "Integration API CREDIT_VA",
-						"Paragraph": "This document describes integration procedures and CREDIT2VIRTUAL protocol usage for e-commerce merchants. CREDIT2VIRTUAL protocol implements money transfer transactions to the customer's account, using specific API interactions."
+						"Title": "تكامل API – CREDIT_VA",
+						"Paragraph": "تصف هذه الوثيقة إجراءات التكامل واستخدام بروتوكول CREDIT2VIRTUAL لتجار التجارة الإلكترونية. يقوم بروتوكول CREDIT2VIRTUAL بتنفيذ معاملات تحويل الأموال إلى حساب العميل باستخدام تفاعلات API محددة."
 						
 					},
 					{
-						"Title": "Checkout API",
-						"Paragraph": "Checkout service is a fast and easy way to create a secure payment page. It enables the collection and submission of payments, and their forwarding for processing. To use the checkout service in your Website, you must integrate it using the Checkout API. The API requires to send request data in json format and responds back with json return url string."
+						"Title": "الدفع عبر API",
+						"Paragraph": "خدمة الدفع (Checkout) هي طريقة سريعة وسهلة لإنشاء صفحة دفع آمنة. تتيح جمع المدفوعات وإرسالها ومعالجتها. لاستخدام خدمة الدفع في موقعك الإلكتروني، يجب دمجها باستخدام Checkout API. يتطلب API إرسال بيانات الطلب بصيغة JSON ويستجيب برابط URL للإرجاع بصيغة JSON."
 						
 					},
 					{
-						"Title": "PostMan Request Sending",
-						"Paragraph": "These step-by-step instructions describe how to send authentication requests using Postman. Result if such request is response, which contains “redirect URL”. “redirect URL” is the link used to send user to payment page (Checkout page)."
+						"Title": "إرسال طلبات Postman",
+						"Paragraph": "تصف هذه التعليمات خطوة بخطوة كيفية إرسال طلبات المصادقة باستخدام Postman. تكون النتيجة استجابة تحتوي على 'رابط إعادة التوجيه' (redirect URL). 'رابط إعادة التوجيه' هو الرابط المستخدم لإرسال المستخدم إلى صفحة الدفع (صفحة Checkout)."
 					}
 				]
 			},
@@ -1901,11 +1917,21 @@
 		},
 		"Contact Us": {
 			"Banner": {
-				"Title": "Contact MontyPay",
-				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+				"Title": "تواصل مع MontyPay",
+				"Description": "توفر MontyPay حلاً متكاملاً للمدفوعات للتجار"
 			},
 			"Section 2": {
-				"Title": "Do you have questions?"
+				"Title": "هل لديك أسئلة؟"
+			},
+			"Section 3": {
+				"Title": "وجودنا",
+				"United Kingdom": "المملكة المتحدة",
+				"Nigeria": "نيجيريا",
+				"Lebanon": "لبنان",
+				"Jordan": "الأردن",
+				"United Arab Emirates": "الإمارات العربية المتحدة",
+				"Indonesia": "إندونيسيا",
+				"KSA": "المملكة العربية السعودية"
 			},
 			"Seo": {
 				"Title": "Contact MontyPay | Sales & Support Assistance",
@@ -1919,208 +1945,208 @@
 		},
 		"FAQ": {
 			"Banner": {
-				"Title": "Frequently Asked Questions",
-				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
+				"Title": "الأسئلة المتكررة",
+				"Description": "توفر MontyPay حلاً متكاملاً للمدفوعات للتجار"
 			},
 			"Section 2": {
 				"Items": [
 					{
-						"Title" : "General",
+						"Title" : "عام",
 						"Items" : [
 							{
 								"id": 1,
-								"Question" : "Who can use MontyPay services?",
-								"Answer": "MontyPay allows any registered business to sign up and receive payments through various channels like websites, pay links, and mobile apps. However, businesses engaging in certain activities or failing compliance and risk checks may not be accepted."
+								"Question" : "من يمكنه استخدام خدمات MontyPay؟",
+								"Answer": "تتيح MontyPay لأي شركة مسجلة الاشتراك واستقبال المدفوعات عبر قنوات متعددة مثل المواقع الإلكترونية، روابط الدفع، وتطبيقات الهاتف المحمول. ومع ذلك، قد لا تُقبل الشركات التي تمارس أنشطة معينة أو تفشل في اجتياز فحوصات الامتثال وإدارة المخاطر."
 							},
 							{
 								"id": 2,
-								"Question" : "Do I have to be PCI compliant to accept payments through MontyPay payment services?",
-								"Answer": "No, you can still take payments using MontyPay since our platform is PCI compliant. All transaction data processed through our platform is safeguarded within our secure network."
+								"Question" : "هل يجب أن أكون متوافقًا مع PCI لقبول المدفوعات عبر خدمات MontyPay؟",
+								"Answer": "لا، يمكنك الاستمرار في قبول المدفوعات باستخدام MontyPay لأن منصتنا متوافقة مع PCI. جميع بيانات المعاملات المعالجة عبر منصتنا محمية داخل شبكتنا الآمنة."
 							},
 							{
 								"id": 3,
-								"Question" : "How can I get started with MontyPay Services?",
-								"Answer": "Feel free to reach out by using the 'Contact Us' section on the website or sending an email to info{'@'}montypay.com. Our representatives will get in touch with you for further information."
+								"Question" : "كيف يمكنني البدء في استخدام خدمات MontyPay؟",
+								"Answer": "يمكنك التواصل معنا من خلال قسم  تواصل معنا على الموقع الإلكتروني أو إرسال بريد إلكتروني إلى info{'@'}montypay.com. سيتواصل معك ممثلونا للحصول على مزيد من المعلومات."
 							},
 							{
 								"id": 4,
-								"Question" : "Do you have customer support?",
-								"Answer": "Our customer support is reachable through whatsapp on +44 7496 312110 and support{'@'}montypay.com or through our chat widgets available on the website and merchants dashboard/mobile app."
+								"Question" : "هل تتوفر خدمة دعم العملاء؟",
+								"Answer": "يمكن الوصول إلى دعم العملاء عبر WhatsApp على الرقم +44 7496 312110 وsupport{'@'}montypay.com أو من خلال أدوات الدردشة المتوفرة على الموقع الإلكتروني ولوحة تحكم التجار/تطبيق الهاتف."
 							},
 							{
 								"id": 5,
-								"Question" : "What is a Dashboard and why do I need it?",
-								"Answer": "A dashboard is a live screen providing a complete overview of key performance indicators (KPIs) for your business in real-time."
+								"Question" : "ما هي لوحة التحكم ولماذا أحتاجها؟",
+								"Answer": "لوحة التحكم هي شاشة مباشرة توفر نظرة شاملة على مؤشرات الأداء الرئيسية (KPIs) لعملك في الوقت الفعلي."
 							}
 						]
 					},
 					{
-						"Title" : "Compliance",
+						"Title" : "الامتثال",
 						"Items" : [
 							{
 								"id": 6,
-								"Question" : "How does MontyPay ensure compliance with Anti-Money Laundering (AML) regulations?",
-								"Answer": "MontyPay prioritizes AML compliance through robust procedures, including customer due diligence during onboarding, ongoing transaction monitoring, and reporting of suspicious activities to relevant authorities. Our team undergoes regular AML training, and we continuously update our policies to align with evolving regulatory requirements. By implementing strong AML measures, we strive to maintain a secure and compliant environment for financial transactions."
+								"Question" : "كيف تضمن MontyPay الامتثال للوائح مكافحة غسيل الأموال (AML)؟",
+								"Answer": "تضع MontyPay الامتثال لمكافحة غسيل الأموال كأولوية من خلال إجراءات صارمة، بما في ذلك التحقق من العملاء أثناء الانضمام، ومراقبة المعاملات المستمرة، والإبلاغ عن الأنشطة المشبوهة للسلطات المختصة. يخضع فريقنا لتدريبات منتظمة على AML، ونقوم بتحديث سياساتنا باستمرار لتتماشى مع المتطلبات التنظيمية المتغيرة. من خلال تنفيذ تدابير AML قوية، نسعى للحفاظ على بيئة آمنة ومتوافقة للمعاملات المالية."
 							},
 							{
 								"id": 7,
-								"Question" : "How does MontyPay handle security, protect sensitive information, and ensure compliance with industry regulations and standards?",
-								"Answer": "MontyPay places a high priority on security through the implementation of industry-leading measures. This includes robust encryption protocols, such as SSL, to secure data transmission, multi-layered infrastructure security, and regular security audits. In terms of compliance, we adhere to industry standards like PCI DSS and conduct regular audits to validate our compliance. We stay aligned with regulatory updates, by promptly adjusting our practices to ensure ongoing adherence to all relevant standards and regulations."
+								"Question" : "كيف تتعامل MontyPay مع الأمن وحماية المعلومات الحساسة وضمان الامتثال للوائح والمعايير الصناعية؟",
+								"Answer": "تعطي MontyPay أولوية عالية للأمن من خلال تنفيذ تدابير رائدة في الصناعة، بما في ذلك بروتوكولات التشفير القوية مثل SSL لتأمين نقل البيانات، وأمن البنية التحتية متعدد الطبقات، والتدقيق الأمني المنتظم. من حيث الامتثال، نلتزم بالمعايير الصناعية مثل PCI DSS ونُجري تدقيقات منتظمة للتحقق من امتثالنا. نواكب التحديثات التنظيمية من خلال تعديل ممارساتنا بسرعة لضمان الالتزام المستمر بجميع المعايير واللوائح ذات الصلة."
 							},
 							{
 								"id": 8,
-								"Question" : "What is MontyPay's Acceptable Use Policy?",
-								"Answer": "MontyPay's Acceptable Use Policy outlines activities and products not allowed with its services, as they may appear illegal or inappropriate. If MontyPay suspects a violation of its Customer Acceptance Policy, it may take corrective action, like terminating accounts. For more details, check MontyPay's Customer Acceptance Policy <a href='https://montypay.com/customer-acceptance-policy/'>https://montypay.com/customer-acceptance-policy/</a>"
+								"Question" : "ما هي سياسة الاستخدام المقبول لـ MontyPay؟",
+								"Answer": "توضح سياسة الاستخدام المقبول لـ MontyPay الأنشطة والمنتجات غير المسموح بها ضمن خدماتها، حيث قد تعتبر غير قانونية أو غير مناسبة. إذا اشتبهت MontyPay في انتهاك سياسة قبول العملاء الخاصة بها، فقد تتخذ إجراءات تصحيحية، مثل إنهاء الحسابات. لمزيد من التفاصيل، راجع سياسة قبول العملاء من MontyPay: https://montypay.com/customer-acceptance-policy/"
 							}
 						]
 					},
 					{
-						"Title" : "Onboarding and Payments",
+						"Title" : "الانضمام والمدفوعات",
 						"Items" : [
 							{
 								"id": 9,
-								"Question" : "What’s the next step once I have submitted the complete requirements?",
-								"Answer": "After receiving all the necessary documents, we will check them against our internal policies and share the documentation with the acquiring bank. This process typically takes about 48 hours."
+								"Question" : "ما هي الخطوة التالية بعد تقديم جميع المتطلبات؟",
+								"Answer": "بعد استلام جميع الوثائق اللازمة، سنقوم بمراجعتها وفقًا لسياساتنا الداخلية ومشاركتها مع البنك المكتسب. عادةً ما تستغرق هذه العملية حوالي 48 ساعة."
 							},
 							{
 								"id": 10,
-								"Question" : "How long does the acquiring bank need to review my application and grant the approval?",
-								"Answer": "The application process takes about 10-15 working days when all required documents are submitted. However, in exceptional cases requiring additional risk and compliance review, it might take longer."
+								"Question" : "كم من الوقت يحتاج البنك المكتسب لمراجعة طلبي ومنح الموافقة؟",
+								"Answer": "تستغرق عملية تقديم الطلب حوالي 10-15 يوم عمل عند تقديم جميع الوثائق المطلوبة. ومع ذلك، في الحالات الاستثنائية التي تتطلب مراجعة إضافية للمخاطر والامتثال، قد يستغرق الأمر وقتًا أطول."
 							},
 							{
 								"id": 11,
-								"Question" : "Can I use MontyPay on more than one website under the same legal entity?",
-								"Answer": "You can do so if the activities of the websites align with the entity's policies. If the websites belong to different domains, a distinct onboarding process will be applicable."
+								"Question" : "هل يمكنني استخدام MontyPay على أكثر من موقع ويب تحت نفس الكيان القانوني؟",
+								"Answer": "يمكنك ذلك إذا كانت أنشطة المواقع تتماشى مع سياسات الكيان. إذا كانت المواقع تنتمي إلى نطاقات مختلفة، فسيتم تطبيق عملية انضمام منفصلة."
 							},
 							{
 								"id": 12,
-								"Question" : "Which E-commerce platforms does MontyPay support?",
-								"Answer": "MontyPay is compatible with a variety of E-commerce platforms such as Magento, Woocommerce, Prestashop, nopCommerce, opencart, ecomz, thewebaddicts and easydigitaldownloads. Any other new platform can be assessed and developed."
+								"Question" : "ما هي منصات التجارة الإلكترونية التي تدعمها MontyPay؟",
+								"Answer": "MontyPay متوافق مع مجموعة متنوعة من منصات التجارة الإلكترونية مثل Magento وWoocommerce وPrestashop وnopCommerce وOpencart وEcomz وTheWebAddicts وEasyDigitalDownloads. يمكن تقييم أي منصة جديدة وتطوير التكامل لها."
 							},
 							{
 								"id": 13,
-								"Question" : "Which Mobile SDKs do MontyPay support?",
-								"Answer": "Montypay supports IOS, Android, and Flutter."
+								"Question" : "ما هي حزم تطوير البرمجيات المحمولة (Mobile SDKs) التي تدعمها MontyPay؟",
+								"Answer": "تدعم MontyPay أنظمة iOS وAndroid وFlutter."
 							},
 							{
 								"id": 14,
-								"Question" : "Does MontyPay support Insite/InApp payments?",
-								"Answer": "Yes, both are supported when the merchant website or App are secure."
+								"Question" : "هل تدعم MontyPay المدفوعات داخل الموقع/التطبيق (Insite/InApp)؟",
+								"Answer": "نعم، يتم دعم كلاهما عند تأمين موقع التاجر أو التطبيق."
 							},
 							{
 								"id": 15,
-								"Question" : "Do you provide technical API documentation for initiating integration and testing on my sandbox account?",
-								"Answer": "Documentation is available on MontyPay website through <a href='https://montypay.com/api-reference/'>https://montypay.com/api-reference/</a>"
+								"Question" : "هل توفرون توثيق API تقني لبدء التكامل والاختبار على حسابي التجريبي؟",
+								"Answer": "التوثيق متاح على موقع MontyPay عبر الرابط: https://montypay.com/api-reference/"
 							},
 							{
 								"id": 16,
-								"Question" : "Do you accept non 3DS cards?",
-								"Answer": "Acceptance of non-3DS is restricted to specific merchants and jurisdictions."
+								"Question" : "هل تقبلون البطاقات غير المدعومة بتقنية 3DS؟",
+								"Answer": "يقتصر قبول البطاقات غير المدعومة بتقنية 3DS على بعض التجار والمناطق القضائية المحددة."
 							},
 							{
 								"id": 17,
-								"Question" : "Does MontyPay support Crypto payments?",
-								"Answer": "Yes, it does."
+								"Question" : "هل تدعم MontyPay المدفوعات بالعملات الرقمية (Crypto)؟",
+								"Answer": "نعم، تدعم ذلك."
 							},
 							{
 								"id": 18,
-								"Question" : "Does MontyPay offer multiple payment methods?",
-								"Answer": "MontyPay's worldwide presence enables merchants to accept all local and international payment methods accessible in the country of their incorporation."
+								"Question" : "هل تقدم MontyPay طرق دفع متعددة؟",
+								"Answer": "تمكّن التغطية العالمية لـ MontyPay التجار من قبول جميع طرق الدفع المحلية والدولية المتاحة في بلد تأسيسهم."
 							},
 							{
 								"id": 19,
-								"Question" : "Can I deactivate my account at any time?",
-								"Answer": "The merchant can initiate an account deactivation request at any time, provided all outstanding dues are settled. The merchant will continue to be responsible for processed transactions even after the account is closed. Termination clauses are outlined in the merchant agreement."
+								"Question" : "هل يمكنني تعطيل حسابي في أي وقت؟",
+								"Answer": "يمكن للتاجر تقديم طلب لتعطيل الحساب في أي وقت، شريطة تسوية جميع المستحقات المتبقية. سيظل التاجر مسؤولًا عن المعاملات التي تمت معالجتها حتى بعد إغلاق الحساب. تم توضيح بنود الإنهاء في اتفاقية التاجر."
 							},
 							{
 								"id": 20,
-								"Question" : "Does MontyPay offer the payment links service to the customers?",
-								"Answer": "Yes, it does."
+								"Question" : "هل تقدم MontyPay خدمة روابط الدفع للعملاء؟",
+								"Answer": "نعم، تقدم ذلك."
 							},
 							{
 								"id": 21,
-								"Question" : "Can I deactivate my account at any time?",
-								"Answer": "The merchant can initiate an account deactivation request at any time, provided all outstanding dues are settled. The merchant will continue to be responsible for processed transactions even after the account is closed. Termination clauses are outlined in the merchant agreement."
+								"Question" : "هل يمكنني تعطيل حسابي في أي وقت؟",
+								"Answer": "يمكن للتاجر تقديم طلب لتعطيل الحساب في أي وقت، شريطة تسوية جميع المستحقات المتبقية. سيظل التاجر مسؤولًا عن المعاملات التي تمت معالجتها حتى بعد إغلاق الحساب. تم توضيح بنود الإنهاء في اتفاقية التاجر."
 							},
 							{
 								"id": 22,
-								"Question" : "How easy is to integrate with MontyPay?",
-								"Answer": "MontyPay's payment integration is crafted to accommodate all programming languages, and merchants can receive sample codes in their preferred language."
+								"Question" : "ما مدى سهولة التكامل مع MontyPay؟",
+								"Answer": "تم تصميم تكامل المدفوعات في MontyPay ليتوافق مع جميع لغات البرمجة، ويمكن للتجار الحصول على أكواد نموذجية باللغة التي يفضلونها."
 							},
 							{
 								"id": 23,
-								"Question" : "Does MontyPay provide Tokenization service?",
-								"Answer": "Yes, it does."
+								"Question" : "هل توفر MontyPay خدمة الترميز (Tokenization)؟",
+								"Answer": "نعم، تقدم ذلك."
 							},
 							{
 								"id": 24,
-								"Question" : "Does MontyPay offer recurring services?",
-								"Answer": "Yes, it does."
+								"Question" : "هل تقدم MontyPay خدمات متكررة (Recurring Services)؟",
+								"Answer": "نعم، تقدم ذلك."
 							},
 							{
 								"id": 25,
-								"Question" : "Does MontyPay offer website development and digital services?",
-								"Answer": "Yes, MontyPay offers website development, marketing, and digital services."
+								"Question" : "هل تقدم MontyPay خدمات تطوير المواقع والخدمات الرقمية؟",
+								"Answer": "نعم، تقدم MontyPay خدمات تطوير المواقع والتسويق والخدمات الرقمية."
 							}
 						]
 					},
 					{
-						"Title" : "Refunds & Settlements",
+						"Title" : "المستحقات والمبالغ المستردة",
 						"Items" : [
 							{
 								"id" : 26,
-								"Question" : "How long is the settlement period?",
-								"Answer": "The settlement period will be set depending on the acquirer bank."
+								"Question" : "ما مدة فترة التسوية؟",
+								"Answer": "تحدد فترة التسوية بناءً على البنك المكتسب (Acquirer Bank)."
 							},
 							{
 								"id" : 27,
-								"Question" : "How do I know what my settlement period is?",
-								"Answer": "MontyPay operates in multiple countries, and as a result, the settlement period varies from one country to another. The specific settlement period for each merchant is outlined in their initial proposal."
+								"Question" : "كيف أعرف ما هي فترة التسوية الخاصة بي؟",
+								"Answer": "تعمل MontyPay في عدة دول، وبالتالي تختلف فترة التسوية من بلد لآخر. يتم توضيح فترة التسوية المحددة لكل تاجر في العرض الأولي المقدم له."
 							},
 							{
 								"id" : 28,
-								"Question" : "How long does it take for a refund to reach the customer?",
-								"Answer": "Refunds are expected to be completed within 7 to 15 working days or more depending on the Issuer/Acquirer bank responsiveness."
+								"Question" : "كم من الوقت يستغرق وصول المبلغ المسترد إلى العميل؟",
+								"Answer": "من المتوقع أن تكتمل عمليات الاسترداد خلال 7 إلى 15 يوم عمل أو أكثر، اعتمادًا على سرعة استجابة بنك المصدر/المكتسب."
 							}
 						]
 					},
 					{
-						"Title" : "Website Development",
+						"Title" : "تطوير المواقع الإلكترونية",
 						"Items" : [
 							{
 								"id" : 29,
-								"Question" : "Can you develop and deliver a fully functional website?",
-								"Answer": "Yes, we can."
+								"Question" : "هل يمكنكم تطوير وتسليم موقع ويب كامل الوظائف؟",
+								"Answer": "نعم، يمكننا ذلك."
 							},
 							{
 								"id" : 30,
-								"Question" : "What does MontyPay’s website development process entail?",
-								"Answer": "MontyPay's process for website development begins with an initial consultation to comprehend the merchant's requirements. It then progresses through design mock-ups, development, incorporating client feedback, and concludes with deployment, following thorough testing to guarantee a smooth user experience."
+								"Question" : "ما هي عملية تطوير المواقع لدى MontyPay؟",
+								"Answer": "تبدأ عملية تطوير المواقع في MontyPay بمشاورة أولية لفهم متطلبات التاجر. ثم تتقدم عبر تصميم نماذج أولية، والتطوير، ودمج ملاحظات العميل، وتنتهي بالنشر بعد إجراء اختبارات دقيقة لضمان تجربة مستخدم سلسة."
 							},
 							{
 								"id" : 31,
-								"Question" : "Does MontyPay offer responsive design for mobile devices?",
-								"Answer": "MontyPay’s websites are designed to be fully responsive, ensuring optimal viewing and functionality across various devices including smartphones, tablets, and desktops."
+								"Question" : "هل تقدم MontyPay تصميمًا متجاوبًا للأجهزة المحمولة؟",
+								"Answer": "تم تصميم مواقع MontyPay لتكون متجاوبة بالكامل، مما يضمن عرضًا ووظائف مثالية عبر مختلف الأجهزة بما في ذلك الهواتف الذكية والأجهزة اللوحية وأجهزة الكمبيوتر المكتبية."
 							},
 							{
 								"id" : 32,
-								"Question" : "How does MontyPay ensure the security of the website?",
-								"Answer": "MontyPay prioritizes website security by implementing industry-standard security protocols, SSL certificates, regular updates, and robust measures to protect against vulnerabilities and cyber threats."
+								"Question" : "كيف تضمن MontyPay أمان الموقع الإلكتروني؟",
+								"Answer": "تضع MontyPay أولوية للأمان من خلال تنفيذ بروتوكولات أمان قياسية في الصناعة، وشهادات SSL، والتحديثات المنتظمة، وتدابير قوية للحماية من الثغرات والتهديدات السيبرانية."
 							},
 							{
 								"id" : 33,
-								"Question" : "Can MontyPay integrate e-commerce functionalities into the website?",
-								"Answer": "MontyPay is specialized in e-commerce development and can integrate secure payment gateways, shopping carts, and inventory management systems tailored to your business needs."
+								"Question" : "كيف تضمن MontyPay أمان الموقع الإلكتروني؟",
+								"Answer": "تضع MontyPay أولوية للأمان من خلال تنفيذ بروتوكولات أمان قياسية في الصناعة، وشهادات SSL، والتحديثات المنتظمة، وتدابير قوية للحماية من الثغرات والتهديدات السيبرانية."
 							},
 							{
 								"id" : 34,
-								"Question" : "Does MontyPay offer support after launching the websites?",
-								"Answer": "MontyPay provides comprehensive post-launch support, including training, troubleshooting, and ongoing technical assistance to ensure that the merchants’ websites function optimally."
+								"Question" : "هل تقدم MontyPay الدعم بعد إطلاق المواقع؟",
+								"Answer": "توفر MontyPay دعمًا شاملاً بعد الإطلاق، بما في ذلك التدريب، وحل المشكلات، والمساعدة التقنية المستمرة لضمان عمل مواقع التجار بكفاءة."
 							},
 							{
 								"id" : 35,
-								"Question" : "What sets MontyPay's development services apart from others?",
-								"Answer": "Our team stands out in the industry due to our expertise, unwavering commitment to client satisfaction, meticulous attention to detail, and our pledge to deliver innovative, high-quality websites tailored to the unique requirements of each client."
+								"Question" : "ما الذي يميز خدمات تطوير MontyPay عن الآخرين؟",
+								"Answer": "يتميز فريقنا بخبرته، والتزامه الثابت برضا العملاء، والانتباه الدقيق للتفاصيل، وتعهدنا بتقديم مواقع مبتكرة وعالية الجودة مصممة خصيصًا لتلبية المتطلبات الفريدة لكل عميل."
 							}
 
 						]
@@ -2239,12 +2265,12 @@
 	},
 	"Footer": {
 		"Newsletter": {
-			"Title": "Subscribe to our newsletter"
+			"Title": "اشترك في نشرتنا الإخبارية"
 		},
-		"Get the app": "Get the app",
-		"Download on the": "Download on the",
+		"Get the app": "احصل على التطبيق",
+		"Download on the": "حمّل من",
 		"App Store": "App Store",
-		"Get it on": "Get it on",
+		"Get it on": "احصل عليه من",
 		"Google Play": "Google Play",
 		"Mobile Number": "+ 44 749 631 21 10"
 	}

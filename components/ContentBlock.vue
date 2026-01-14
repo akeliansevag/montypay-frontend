@@ -9,9 +9,9 @@
             <h3 v-if="subtitle">{{ subtitle }}</h3>
         </template>
         <p v-if="paragraph" v-html="paragraph"></p>
-        <NuxtLink v-if="link" :to="link">
+        <NuxtLinkLocale v-if="link" :to="link">
             <button v-if="button" class="mp-button-secondary" :class="{ 'self-center': center === true }">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon rtl:rotate-180 transition-transform" /></button>
-        </NuxtLink>
+        </NuxtLinkLocale>
     </div>
 </template>
 

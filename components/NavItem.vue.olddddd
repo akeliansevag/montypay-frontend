@@ -5,9 +5,9 @@
     'text-primary': $route.path === '/'  || $route.path === '/ar'
   }">
   <Blob />
-    <NuxtLink :external="external" :target="target" exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-8' : layout === 'header' }">
+    <NuxtLinkLocale :external="external" :target="target" exact-active-class="active" v-if="!hasChildren" :to="to" class="nav-link" :class="{'lg:py-8' : layout === 'header' }">
       <h5 class="nav-link">{{ label }}</h5>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <div v-else class="flex justify-between items-center gap-2 cursor-pointer" :class="{'lg:py-8' : layout === 'header' }" @click="isMobile() ? toggleNavItems() :  null">
       <h5>{{ label }}</h5>
@@ -33,12 +33,12 @@
             <span v-if="(section.pages && section.pages.length) && layout === 'header'" class="lg:text-black text-base">{{ section.label }}</span>
             <ul v-if="section.pages && section.pages.length" :class="{ 'mt-2 lg:mt-8': section.label && layout === 'header', 'gap-1.5 lg:gap-4' : layout === 'header', 'gap-2.5' : layout === 'footer'}" class="flex flex-col" >
               <li v-for="(page, pageIndex) in section.pages" :key="pageIndex">
-                <NuxtLink 
+                <NuxtLinkLocale 
                   :to="page.to" 
                   class="nav-link font-normal"
                   exact-active-class="active"
                   :class="{ 'lg:text-black lg:hover:text-[#09bebd]' : layout === 'header'}"><h5 class="nav-link font-normal">{{ page.label }}</h5>
-                </NuxtLink>
+                </NuxtLinkLocale>
               </li>
             </ul>
           </li>

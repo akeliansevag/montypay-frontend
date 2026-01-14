@@ -1,7 +1,7 @@
 <template>
     <li class="flex items-center gap-2 text-primary hover:text-tertiary h-full hover:border-b hover:border-b-tertiary py-5 group/item">
       <template v-if="!hasChildren">
-          <NuxtLink :to="to" class="nav-link">{{ label }}</NuxtLink>
+          <NuxtLinkLocale :to="to" class="nav-link">{{ label }}</NuxtLinkLocale>
       </template>
       <template v-else>
           <span>{{ label }}</span>
@@ -15,7 +15,7 @@
               <span v-if="section.pages && section.pages.length" class="text-black">{{ section.label }}</span>
               <ul v-if="section.pages && section.pages.length" :class="{ 'mt-8': section.label }" class="flex flex-col gap-4">
                 <li v-for="(page, pageIndex) in section.pages" :key="pageIndex">
-                  <NuxtLink :to="page.to" class="text-black hover:text-tertiary">{{ page.label }}</NuxtLink>
+                  <NuxtLinkLocale :to="page.to" class="text-black hover:text-tertiary">{{ page.label }}</NuxtLinkLocale>
                 </li>
               </ul>
             </li>

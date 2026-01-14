@@ -1,8 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            title="Contact MontyPay"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
+            :title="t('Pages.Contact Us.Banner.Title')"
+            :paragraph="t('Pages.Contact Us.Banner.Description')"
             image="contact-us"
             hero="55"
         />
@@ -12,36 +12,36 @@
             
             <div class="container">
                 <ContentBlock 
-                    title="Do you have questions?"
+                    :title="t('Pages.Contact Us.Section 2.Title')"
                 />
 
                 <div class="flex flex-col lg:flex-row lg:justify-between gap-8 mt-10">
                     <div class="flex w-full lg:w-3/5 xl:w-2/5 flex-col gap-6">
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="first_name">First Name</label>
-                                <input v-model="form.first_name" type="text" id="first_name" placeholder="First Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <label for="first_name">{{t('General.Labels.First Name')}}</label>
+                                <input v-model="form.first_name" type="text" id="first_name" :placeholder="t('General.Placeholders.First Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                 <div v-if="errors.first_name" class="text-red-500 text-xs">{{ errors.first_name }}</div>
                             </div>
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="last_name">Last Name</label>
-                                <input v-model="form.last_name" type="text" id="last_name" placeholder="Last Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <label for="last_name">{{t('General.Labels.Last Name')}}</label>
+                                <input v-model="form.last_name" type="text" id="last_name" :placeholder="t('General.Placeholders.Last Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                 <div v-if="errors.last_name" class="text-red-500 text-xs">{{ errors.last_name }}</div>
                             </div>
                         </div> 
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="email">Work Email</label>
-                                <input v-model="form.email" type="text" id="email" placeholder="Work Email" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <label for="email">{{t('General.Labels.Work Email')}}</label>
+                                <input v-model="form.email" type="text" id="email" :placeholder="t('General.Labels.Work Email')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                 <div v-if="errors.email" class="text-red-500 text-xs">{{ errors.email }}</div>
                             </div>
                         </div> 
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="mobile">Phone Number</label>
-                                <input v-model="form.mobile" type="tel" id="mobile" placeholder="Phone Number" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <label for="mobile">{{t('General.Labels.Phone Number')}}</label>
+                                <input v-model="form.mobile" type="tel" id="mobile" :placeholder="t('General.Placeholders.Phone Number')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                 <div v-if="errors.mobile" class="text-red-500 text-xs">{{ errors.mobile }}</div>
                             </div>
                         </div> 
@@ -56,9 +56,9 @@
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="country">Country</label>
+                                <label for="country">{{t('General.Labels.Country')}}</label>
                                 <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
-                                    <option value="">Select Country</option>
+                                    <option value="">{{t('General.Placeholders.Country')}}</option>
                                     <option value="bad6f426-35d7-ef11-8eea-7c1e5229a00a">Abkhazia</option>
                                     <option value="a85e89c2-4d74-ec11-8942-0022488312af">Afghanistan</option>
                                     <option value="3fefc1ba-9391-ed11-aad1-0022487fe028">Aland islands</option>
@@ -344,9 +344,9 @@
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="selected-country">Industry</label>
+                                <label for="selected-country">{{t('General.Labels.Industry')}}</label>
                                 <select ref="industrySelect" v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="custom-select w-full text-base px-4 py-2 bg-primary rounded-lg outline-0">
-                                    <option value="">Select Industry</option>
+                                    <option value="">{{t('General.Placeholders.Industry')}}</option>
                                     <option value="A6236539-7AE8-EF11-9342-000D3A216302">Tobacco</option>
                                     <option value="9C6999E4-5D07-ED11-82E5-000D3A2236D3">Telecommunications</option>
                                     <option value="B2E5A5BB-C774-EF11-A670-000D3A28C269">Manufacturing</option>
@@ -463,9 +463,9 @@
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="product">Product</label>
+                                <label for="product">{{t('General.Labels.Product')}}</label>
                                 <select ref="productSelect" :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
-                                    <option value="">Select Product</option>
+                                    <option value="">{{t('General.Placeholders.Product')}}</option>
                                     <option value="fd4f2661-1f5e-ef11-bfe2-000d3aab2548">MontyPay Point of Sale</option>
                                     <option value="13ca892e-79da-ec11-bb3d-000d3a22e2cf">MontyPay Payment Gateway</option>
                                     <option value="445c00f9-8e97-f011-b4cb-6045bd888ebe">Website Development</option>
@@ -476,32 +476,32 @@
                         </div>
                         <div class="flex gap-8 w-4full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="company">Company Name</label>
-                                <input v-model="form.company" type="text" id="company" placeholder="Company Name" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <label for="company">{{t('General.Labels.Company Name')}}</label>
+                                <input v-model="form.company" type="text" id="company" :placeholder="t('General.Placeholders.Company Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                 <div v-if="errors.company" class="text-red-500 text-xs">{{ errors.company }}</div>
                             </div>
                         </div> 
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="size">Company Size</label>
-                                <input v-model="form.size" type="text" id="size" placeholder="Company Size" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <label for="size">{{t('General.Labels.Company Size')}}</label>
+                                <input v-model="form.size" type="text" id="size" :placeholder="t('General.Placeholders.Company Size')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                 <div v-if="errors.size" class="text-red-500 text-xs">{{ errors.size }}</div>
                             </div>
                         </div> 
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="link">Website</label>
-                                <input v-model="form.link" type="text" id="link" placeholder="Website" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <label for="link">{{t('General.Labels.Website')}}</label>
+                                <input v-model="form.link" type="text" id="link" :placeholder="t('General.Placeholders.Website')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
                                 <div v-if="errors.link" class="text-red-500 text-xs">{{ errors.link }}</div>
                             </div>
                         </div> 
 
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="message">Message</label>
-                                <textarea v-model="form.message" id="message" placeholder="Leave us a message..." class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 resize-none" rows="10"></textarea>
+                                <label for="message">{{t('General.Labels.Message')}}</label>
+                                <textarea v-model="form.message" id="message" :placeholder="t('General.Placeholders.Message')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 resize-none" rows="10"></textarea>
                                 <div v-if="errors.message" class="text-red-500 text-xs">{{ errors.message }}</div>
                             </div>
                         </div> 
@@ -510,7 +510,7 @@
                             <div class="flex-col gap-3 w-full">
                                 <div class="flex gap-3 w-full">
                                     <input v-model="form.acknowledgment" type="checkbox" id="acknowledgment">
-                                    <label for="acknowledgment">You agree to our friendly privacy policy.</label>
+                                    <label for="acknowledgment">{{t('General.Labels.Privacy Policy 2')}}</label>
                                 </div>
                                 <div v-if="errors.acknowledgment" class="text-red-500 text-xs">{{ errors.acknowledgment }}</div>
                             </div>
@@ -518,7 +518,7 @@
 
                         <div class="gap-8 w-full">
                             <div class="flex gap-3 w-full">
-                                <input type="submit" id="submit" class="mp-button-secondary w-full text-base" :value="submitting ? 'Submitting...' : 'Contact Us'" @click.prevent="handleSubmit">
+                                <input type="submit" id="submit" class="mp-button-secondary w-full text-base" :value="submitting ? t('General.Buttons.Submitting') : t('General.Buttons.Contact Us')" @click.prevent="handleSubmit">
                             </div>
                             <div class="mt-5" v-if="submissionMessage">{{submissionMessage}}</div>
                         </div> 
@@ -540,7 +540,7 @@
         <section id="section-3" class="py-16 lg:py-36">
             <div class="container">
                 <ContentBlock 
-                    title="Our Presence"
+                    :title="t('Pages.Contact Us.Section 3.Title')"
                     class="text-center mt-16"
                 />
 
@@ -555,7 +555,7 @@
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
                             <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
-                                <h5>United Kingdom</h5>
+                                <h5>{{t('Pages.Contact Us.Section 3.United Kingdom')}}</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -581,7 +581,7 @@
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
                             <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
-                                <h5>Nigeria</h5>
+                                <h5>{{t('Pages.Contact Us.Section 3.Nigeria')}}</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -607,7 +607,7 @@
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
                             <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
-                                <h5>Lebanon</h5>
+                                <h5>{{t('Pages.Contact Us.Section 3.Lebanon')}}</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -633,7 +633,7 @@
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
                             <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
-                                <h5>Jordan</h5>
+                                <h5>{{t('Pages.Contact Us.Section 3.Jordan')}}</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -659,7 +659,7 @@
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
                             <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
-                                <h5>United Arab Emirates</h5>
+                                <h5>{{t('Pages.Contact Us.Section 3.United Arab Emirates')}}</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -685,7 +685,7 @@
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
                             <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
-                                <h5>Indonesia</h5>
+                                <h5>{{t('Pages.Contact Us.Section 3.Indonesia')}}</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -711,7 +711,7 @@
                                 :imgAttrs="{class:'w-full aspect-auto object-cover'}" 
                             />
                             <div class="location w-full absolute bottom-0 start-0 py-8 px-6 rounded-lg">
-                                <h5>KSA</h5>
+                                <h5>{{t('Pages.Contact Us.Section 3.KSA')}}</h5>
                                 <div class="flex flex-col gap-2 mt-2">
                                     <div class="flex gap-2">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -736,6 +736,7 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n();
     const router = useRouter();
     const emit = defineEmits();
 
@@ -807,57 +808,57 @@
 
     const validationRules = {
         first_name: {
-            required: 'Please enter your first name',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.First Name'),
+            safe: t('General.Messages.Errors.Safe')
         },
         last_name: {
-            required: 'Please enter your last name',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Last Name'),
+            safe: t('General.Messages.Errors.Safe')
         },
         email: {
-            required: 'Please enter your email address',
-            email: 'Please enter a valid email address',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Email'),
+            email: t('General.Messages.Errors.Valid Email'),
+            safe: t('General.Messages.Errors.Safe')
         },
         mobile: {
-            required: 'Please enter your mobile number',
-            numeric: 'Please enter a valid numeric phone number',
-            length: 'Please enter a valid phone number',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Mobile Number'),
+            numeric: t('General.Messages.Errors.Numeric'),
+            length: t('General.Messages.Errors.Length'),
+            safe: t('General.Messages.Errors.Safe')
         },
         country: {
-            required: 'Please select a country',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Country'),
+            safe: t('General.Messages.Errors.Safe')
         },
         industry: {
-            required: 'Please select an industry',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Industry'),
+            safe: t('General.Messages.Errors.Safe')
         },
         product: {
-            required: 'Please select a product',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Product'),
+            safe: t('General.Messages.Errors.Safe')
         },
         company: {
-            required: 'Please enter your company name',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Company Name'),
+            safe: t('General.Messages.Errors.Safe')
         },
         size: {
-            required: 'Please enter your company size',
-            numeric: 'Please enter a valid numeric company size',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Company Size'),
+            numeric: t('General.Messages.Errors.Numeric'),
+            safe: t('General.Messages.Errors.Safe')
         },
         link: {
-            required: 'Please enter your website',
-            url: 'Please enter a valid URL for your website',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Website'),
+            url: t('General.Messages.Errors.URL'),
+            safe: t('General.Messages.Errors.Safe')
         },
         message: {
-            required: 'Please leave us a message',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Message'),
+            safe: t('General.Messages.Errors.Safe')
         },
         acknowledgment: {
-            required: 'You must agree to our privacy policy',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Privacy Policy'),
+            safe: t('General.Messages.Errors.Safe')
         },
     };
 

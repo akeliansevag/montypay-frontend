@@ -3,10 +3,10 @@
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
-                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">Payment Orchestration Network</h1>
-                    <p class="text-xl">Bring all your payment methods, gateways, and currencies into one easy-to-manage platform. Whether you’re growing globally or streamlining locally, we’re here to help you handle payments like a pro, boost approvals, and keep things running smoothly. Goodbye to payment chaos!</p>
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">{{t('Pages.Payment Orchestration Network.Banner.Title')}}</h1>
+                    <p class="text-xl">{{t('Pages.Payment Orchestration Network.Banner.Description')}}</p>
                     <div>
-                        <NuxtLink to="/contact-us" class="inline-block mp-button-quaternary">Request a Demo</NuxtLink>
+                        <NuxtLinkLocale to="/contact-us" class="inline-block mp-button-quaternary">{{t('General.Buttons.Request a Demo')}}</NuxtLinkLocale>
                     </div>
                 </div>
                 <div class="lg:w-[60%]">
@@ -20,15 +20,15 @@
         <img src="/blue-shape-bg.webp" class="absolute z-0 top-0 start-0 w-full h-full object-cover" alt="blue-bg"/>
         <div class="container">
             <div class="max-w-[800px]">
-                <h2 class="text-white text-3xl font-bold">Go Global Without the Growing Pains</h2>
-                <p class="text-xl text-white mt-7">Expanding your business should be exciting, not exhausting. MontyPay’s Payment Orchestration Network takes the complexity out of global payments, helping you scale seamlessly, onboard merchants anywhere, and process cross-border transactions like a pro.</p>   
+                <h2 class="text-white text-3xl font-bold">{{t('Pages.Payment Orchestration Network.Section 2.Title')}}</h2>
+                <p class="text-xl text-white mt-7">{{t('Pages.Payment Orchestration Network.Section 2.Description')}}</p>   
             </div>
 
             <div class="flex max-lg:flex-col gap-7 mt-12">
                 <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between w-full">
                     <div>
-                        <h4 class="text-2xl font-bold mt-4">Smarter Payments, Higher Profits</h4>
-                        <p class="mt-4">Boost your acceptance rates and lower transaction costs with intelligent payment orchestration. By dynamically routing transactions across multiple payment methods and providers in 50+ countries, we optimize every payment for maximum efficiency and profitability.</p>
+                        <h4 class="text-2xl font-bold mt-4">{{t('Pages.Payment Orchestration Network.Section 2.Items[0].Title')}}</h4>
+                        <p class="mt-4">{{t('Pages.Payment Orchestration Network.Section 2.Items[0].Description')}}</p>
                     </div>
                     
                     <div class="bg-[#E6EEF5] rounded-2xl max-lg:h-[200px] lg:h-[300px] p-5 flex items-center justify-center mt-7">
@@ -39,8 +39,8 @@
 
                 <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between w-full">
                     <div>
-                        <h4 class="text-2xl font-bold mt-4">Think Global, Transact Local</h4>
-                        <p class="mt-4">Reduce fees and increase approval rates by routing transactions through MontyPay’s network of local acquirers, ensuring a smooth and compliant payment experience.</p>
+                        <h4 class="text-2xl font-bold mt-4">{{t('Pages.Payment Orchestration Network.Section 2.Items[1].Title')}}</h4>
+                        <p class="mt-4">{{t('Pages.Payment Orchestration Network.Section 2.Items[1].Description')}}</p>
                     </div>
                     
                     <div class="bg-[#E6EEF5] rounded-2xl max-lg:h-[200px] lg:h-[300px] p-5 flex items-center justify-center mt-7">
@@ -51,8 +51,8 @@
 
                 <div class="bg-white p-4 lg:p-8 rounded-xl flex flex-col justify-between w-full">
                     <div>
-                        <h4 class="text-2xl font-bold mt-4">Payments in Every Language</h4>
-                        <p class="mt-4">With 100+ payment methods, multi-currency support, and region-specific solutions, your business is ready for any market, anywhere. You can cater to diverse customer preferences while optimizing operational efficiency.</p>
+                        <h4 class="text-2xl font-bold mt-4">{{t('Pages.Payment Orchestration Network.Section 2.Items[2].Title')}}</h4>
+                        <p class="mt-4">{{t('Pages.Payment Orchestration Network.Section 2.Items[2].Description')}}</p>
                     </div>
                     
                     <div class="bg-[#E6EEF5] rounded-2xl max-lg:h-[200px] lg:h-[300px] p-5 flex items-center justify-center mt-7">
@@ -68,7 +68,7 @@
                         <img class="w-full h-full object-contain" src="/wherever-you-do-business.webp"  />
                     </div>
                     <div class="w-full">
-                        <p class="text-xl lg:p-12">Wherever you do business, <strong>frictionless expansion, optimized payments,</strong> and a <strong>seamless merchant experience</strong> are at hand’s reach.</p>
+                        <p v-html="t('Pages.Payment Orchestration Network.Section 2.Items[3].Description')" class="text-xl lg:p-12" />
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
     <!-- <PinnedSection /> -->
     <section class="relative max-lg:py-16 lg:py-24 bg-white">
         <div class="container">
-            <h2 class="lg:sticky lg:top-32 text-3xl text-center">Payment Orchestration as It Should Be</h2>
+            <h2 class="lg:sticky lg:top-32 text-3xl text-center">{{t('Pages.Payment Orchestration Network.Section 3.Title')}}</h2>
             <div class="max-lg:flex max-lg:flex-col max-lg:gap-7 stack-cards js-stack-cards mt-20">
                 <div v-for="(item, index) in items" :key="index" class="lg:js-stack-cards__item lg:sticky lg:top-[var(--space-sm)] lg:origin-[center_top] bg-[#E9EEF5] flex max-lg:flex-col gap-7 items-center justify-between p-5 rounded-lg">
                     <div class="bg-[#ffffff]/40 p-3 rounded-lg w-full h-full">
@@ -94,12 +94,13 @@
         </div>
     </section>
     
-    <BlueSection title="Optimize Your Entire Payment Ecosystem Today" subtitle="Let MontyPay’s Payment Orchestration Network do the heavy lifting. Manage, optimize, and grow, all from one platform designed to make your life simpler." buttonText="Request a Demo" buttonLink="/contact-us" image="/optimize-your-entire-payment.webp"/>
+    <BlueSection :title="t('Pages.Payment Orchestration Network.Section 4.Title')" :subtitle="t('Pages.Payment Orchestration Network.Section 4.Description')" :buttonText="t('General.Buttons.Request a Demo')" buttonLink="/contact-us" image="/optimize-your-entire-payment.webp"/>
     <PaymentSolutions />
-    <Accordion :data="faq" title="All You Need to Know" /> 
+    <Accordion :data="faq" :title="t('Pages.Payment Orchestration Network.Section 5.Title')" /> 
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
     useSeoMeta({
         title: 'Payment Orchestration Network for Global Businesses',
         ogTitle: 'Payment Orchestration Network for Global Businesses',
@@ -112,56 +113,56 @@
     const items = [
         {
             image: '/everything-in-one-place.webp',
-            title: 'Everything in One Place',
-            description: 'No more hopping around! Manage all payments across gateways, currencies, and methods on a single platform.'
+            title: t('Pages.Payment Orchestration Network.Section 3.Items[0].Title'),
+            description: t('Pages.Payment Orchestration Network.Section 3.Items[0].Description')
         },
         {
             image: '/smarter-transactions.webp',
-            title: 'Smarter Transactions',
-            description: 'Our intelligent routing sends payments through the best-performing gateways,reducing failures and keeping customers happy.'
+            title: t('Pages.Payment Orchestration Network.Section 3.Items[1].Title'),
+            description: t('Pages.Payment Orchestration Network.Section 3.Items[1].Description')
         },
         {
             image: '/unified-solution.webp',
-            title: 'Unified Solution',
-            description: 'A single integration connects your business to our extensive network of payment methods. Simplify your operations, minimize technical challenges, and focus on your growth.'
+            title: t('Pages.Payment Orchestration Network.Section 3.Items[2].Title'),
+            description: t('Pages.Payment Orchestration Network.Section 3.Items[2].Description')
         },
         {
             image: '/security-you-can-count-on.webp',
-            title: 'Security You Can Count On',
-            description: 'Advanced fraud detection tools safeguard every transaction, so you can focus on growing your business without worrying about risks.'
+            title: t('Pages.Payment Orchestration Network.Section 3.Items[3].Title'),
+            description: t('Pages.Payment Orchestration Network.Section 3.Items[3].Description')
         },
         {
             image: '/real-time-insights.webp',
-            title: 'Real Time Insights',
-            description: 'Get clear, actionable data on your transactions and performance from analytics and advanced reporting tools to make smarter decisions and drive growth.'
+            title: t('Pages.Payment Orchestration Network.Section 3.Items[4].Title'),
+            description: t('Pages.Payment Orchestration Network.Section 3.Items[4].Description')
         },
         {
             image: '/central-point-of-contact.webp',
-            title: 'Central Point of Contact',
-            description: 'With MontyPay as your single point of contact, you can leave behind the hassle of managing multiple payment providers. Enjoy a streamlined interface to oversee all your payment operations effortlessly.'
+            title: t('Pages.Payment Orchestration Network.Section 3.Items[5].Title'),
+            description: t('Pages.Payment Orchestration Network.Section 3.Items[5].Description')
         }
     ]
 
     const faq = [
         {
-            question: 'What is payment orchestration?',
-            answer: 'It’s a way to simplify and optimize your payments. MontyPay’s Payment Orchestration Network manages and processes payments across multiple gateways, currencies, and methods from one place.'
+            question: t('Pages.Payment Orchestration Network.Section 5.Items[0].Question'),
+            answer: t('Pages.Payment Orchestration Network.Section 5.Items[0].Answer')
         },
         {
-            question: 'How does MontyPay improve payment success rates?',
-            answer: 'Our intelligent routing picks the best-performing gateway for every transaction, ensuring more approvals and fewer declines.'
+            question: t('Pages.Payment Orchestration Network.Section 5.Items[1].Question'),
+            answer: t('Pages.Payment Orchestration Network.Section 5.Items[1].Answer')
         },
         {
-            question: 'What payment methods and currencies are supported?',
-            answer: 'We’ve got over 100 options for you, including cards, wallets, and multi-currency support.'
+            question: t('Pages.Payment Orchestration Network.Section 5.Items[2].Question'),
+            answer: t('Pages.Payment Orchestration Network.Section 5.Items[2].Answer')
         },
         {
-            question: 'How does the solution help prevent fraud?',
-            answer: 'Our platform includes advanced fraud detection tools, ensuring transactions are secure and risks are minimized.'
+            question: t('Pages.Payment Orchestration Network.Section 5.Items[3].Question'),
+            answer: t('Pages.Payment Orchestration Network.Section 5.Items[3].Answer')
         },
         {
-            question: 'How do I get started?',
-            answer: 'It’s easy! Just reach out to our team, and we’ll guide you through the onboarding process step by step.'
+            question: t('Pages.Payment Orchestration Network.Section 5.Items[4].Question'),
+            answer: t('Pages.Payment Orchestration Network.Section 5.Items[4].Answer')
         },
     ]
 

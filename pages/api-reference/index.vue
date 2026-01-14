@@ -1,8 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            title="API Reference"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
+            :title="t('Pages.API Reference.Banner.Title')"
+            :paragraph="t('Pages.API Reference.Banner.Description')"
             image="api-reference"
             hero="22"
         />
@@ -20,7 +20,7 @@
                                 />
                             </div>
                             <div class="api-item-link-wrapper">
-                                <NuxtLink class="api-item-link" target="_blank" external :to="item.buttonLink">{{item.buttonText}}</NuxtLink>
+                                <NuxtLinkLocale class="api-item-link" target="_blank" external :to="item.buttonLink">{{item.buttonText}}</NuxtLinkLocale>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-
+const { t, locale, setLocale } = useI18n()
 useSeoMeta({
     title: 'API Reference | Developer Integration Guide',
     ogTitle: 'API Reference | Developer Integration Guide',
@@ -43,34 +43,34 @@ useSeoMeta({
 
 const apis = [
     {
-        title: "API Integration (POST)",
-        paragraph: "This document describes integration procedures and POST protocol usage for e-commerce merchants. POST protocol implements acquiring payments (purchases) using specific API interactions.",
+        title: t('Pages.API Reference.Section 2.Items[0].Title'),
+        paragraph: t('Pages.API Reference.Section 2.Items[0].Paragraph'),
         buttonLink: "https://docs.montypay.com/s2s_card",
-        buttonText: "Link",
+        buttonText: t('General.Buttons.Link'),
     },
     {
-        title: "Generating a Certificate Signing Request",
-        paragraph: "Here are the steps or how-to to create a Certificate Signing Request (CSR). The example is given specifically for Centos based systems.",
+        title: t('Pages.API Reference.Section 2.Items[1].Title'),
+        paragraph: t('Pages.API Reference.Section 2.Items[1].Paragraph'),
         buttonLink: "/MontyPay_Generating-a-Certificate-Signing-Request.pdf",
-        buttonText: "Download PDF",
+        buttonText: t('General.Buttons.Download PDF'),
     },
     {
-        title: "Integration API CREDIT_VA",
-        paragraph: "This document describes integration procedures and CREDIT2VIRTUAL protocol usage for e-commerce merchants. CREDIT2VIRTUAL protocol implements money transfer transactions to the customer's account, using specific API interactions.",
+        title: t('Pages.API Reference.Section 2.Items[2].Title'),
+        paragraph: t('Pages.API Reference.Section 2.Items[2].Paragraph'),
         buttonLink: "https://docs.montypay.com/s2s_apm#credit2virtual-request",
-        buttonText: "Link",
+        buttonText: t('General.Buttons.Link'),
     },
     {
-        title: "Checkout API",
-        paragraph: "Checkout service is a fast and easy way to create a secure payment page. It enables the collection and submission of payments, and their forwarding for processing. To use the checkout service in your Website, you must integrate it using the Checkout API. The API requires to send request data in json format and responds back with json return url string.",
+        title: t('Pages.API Reference.Section 2.Items[3].Title'),
+        paragraph: t('Pages.API Reference.Section 2.Items[3].Paragraph'),
         buttonLink: "https://docs.montypay.com/",
-        buttonText: "Link",
+        buttonText: t('General.Buttons.Link'),
     },
     {
-        title: "PostMan Request Sending",
-        paragraph: "These step-by-step instructions describe how to send authentication requests using Postman. Result if such request is response, which contains “redirect URL”. “redirect URL” is the link used to send user to payment page (Checkout page).",
+        title: t('Pages.API Reference.Section 2.Items[4].Title'),
+        paragraph: t('Pages.API Reference.Section 2.Items[4].Paragraph'),
         buttonLink: "/MontyPay_API_Credit_VA_Protocol_v1_1new.pdf",
-        buttonText: "Download PDF",
+        buttonText: t('General.Buttons.Download PDF'),
     },
 ];
 

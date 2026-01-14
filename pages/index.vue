@@ -9,7 +9,7 @@
         />
         
         <!-- <NuxtLinkLocale to="/">{{ t(`Pages.Homepage.Banner.Title`) }}</NuxtLinkLocale>
-        <NuxtLink to="/">{{ $t(`Pages.Homepage.Banner.Title`) }}</NuxtLink> -->
+        <NuxtLinkLocale to="/">{{ $t(`Pages.Homepage.Banner.Title`) }}</NuxtLinkLocale> -->
 
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
             <div class="container">

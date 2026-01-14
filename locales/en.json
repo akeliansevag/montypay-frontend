@@ -48,7 +48,11 @@
 			"Link": "Link",
 			"Download": "Download",
 			"Connect": "Connect",
-			"Download PDF": "Download PDF"
+			"Download PDF": "Download PDF",
+			"Send": "Send",
+			"Get Started": "Get Started",
+			"Submitting": "Submitting..."
+
 		},
 		"Labels": {
 			"First Name": "First Name",
@@ -66,7 +70,8 @@
 			"Company Size": "Company Size",
 			"Website": "Website",
 			"Message": "Message",
-			"Privacy Policy": "Privacy Policy"
+			"Privacy Policy": "Privacy Policy",
+			"Privacy Policy 2": "You agree to our friendly privacy policy."
 		},
 		"Placeholders": {
 			"First Name": "First Name",
@@ -82,11 +87,14 @@
 			"Company Name": "Company Name",
 			"Company Size": "Company Size",
 			"Website": "Website",
-			"Message": "Leave us a message..."
+			"Message": "Leave us a message...",
+			"Privacy Policy 2": "You must agree to our privacy policy"
 		},
 		"Messages": {
 			"Errors": {
 				"Required": {
+					"First Name": "Please enter your first name",
+					"Last Name": "Please enter your last name",
 					"Full Name": "Please enter your full name",
 					"Email": "Please enter your email address",
 					"Position": "Please choose your position",
@@ -123,7 +131,8 @@
 				"Api Response Validation Failed": "Error in submitting your message. Please try again later",
 				"Api Failed": "Error in submitting your message. Please try again later",
 				"Cover Letter": "Please write a cover letter",
-				"Upload your CV": "Please upload a file"
+				"Upload your CV": "Please upload a file",
+				"URL": "Please enter a valid URL for your website"
 			},
 			"Success": {
 				"Newsletter": "Thank you for subscribing.",
@@ -1807,6 +1816,8 @@
 				"Virtual Account": "Virtual Account",
 				"Direct Debit": "Direct Debit",
 				"Pay Later (BNPL)": "Pay Later (BNPL)",
+				"Mobile Money": "Mobile Money",
+				"EFT": "EFT",
 				"Lebanon": "Lebanon",
 				"Jordan": "Jordan",
 				"Bahrain": "Bahrain",
@@ -1906,6 +1917,16 @@
 			},
 			"Section 2": {
 				"Title": "Do you have questions?"
+			},
+			"Section 3": {
+				"Title": "Our Presence",
+				"United Kingdom": "United Kingdom",
+				"Nigeria": "Nigeria",
+				"Lebanon": "Lebanon",
+				"Jordan": "Jordan",
+				"United Arab Emirates": "United Arab Emirates",
+				"Indonesia": "Indonesia",
+				"KSA": "KSA"
 			},
 			"Seo": {
 				"Title": "Contact MontyPay | Sales & Support Assistance",

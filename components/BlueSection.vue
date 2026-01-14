@@ -7,7 +7,7 @@
                     <h2 class="text-3xl" v-if="title">{{ title }}</h2>
                     <p class="text-xl" v-if="subtitle">{{ subtitle }}</p>
                     <div>
-                        <NuxtLink class="mp-button-quaternary inline-block" v-if="buttonText" :target="target ? target : '_self'" :href="buttonLink">{{ buttonText }}</NuxtLink>
+                        <NuxtLinkLocale class="mp-button-quaternary inline-block" v-if="buttonText" :target="target ? target : '_self'" :href="buttonLink">{{ buttonText }}</NuxtLinkLocale>
                     </div>
                     
                 </div>

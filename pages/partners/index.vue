@@ -1,8 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            title="MontyPay Partnership Programs"
-            paragraph="MontyPay provides an End-to-End Payment Solution for Merchants"
+            :title="t('Pages.Partners.Banner.Title')"
+            :paragraph="t('Pages.Partners.Banner.Description')"
             image="partners"
             hero="14"
         />
@@ -12,9 +12,9 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="ISO Partnership Model"
-                            paragraph="MontyPay welcomes partnerships with Acquirers, PSPs, Wallets, and other payment providers to seamlessly integrate their payment connections within the countries they cover. In this model, MontyPay acts as a trusted intermediary between the connectors and merchants. Our platform is already trusted by over 15 global partners, including renowned names such as Stripe, Paypal, and Flutterwave."
-                            button="Get Started"
+                            :title="t('Pages.Partners.Section 2.Title')"
+                            :paragraph="t('Pages.Partners.Section 2.Description')"
+                            :button="t('General.Buttons.Get Started')"
                             :center="true"
                         />
                     </div>
@@ -56,8 +56,8 @@
             <div class="w-full lg:w-3/5 mx-auto bg-quaternary lg:bg-transparent py-14 lg:py-0 lg:-mt-80">
                 <div class="container text-center">
                     <ContentBlock
-                        title="API Orchestration"
-                        paragraph="Acquirers, PSPs, Wallets, and other payment providers can establish partnerships with MontyPay to access our robust payment orchestration via a single API. Partners gain direct entry to our expansive network spanning over 50 countries across different regions, enabling rapid global expansion and access to diverse payment methods through a unified integration."
+                        :title="t('Pages.Partners.Section 3.Title')"
+                        :paragraph="t('Pages.Partners.Section 3.Description')"
                         button="Get Started"
                         :center=true
                     />
@@ -69,8 +69,8 @@
             <div class="container">
                 <div class="flex flex-col w-full lg:w-8/12 mx-auto gap-8 lg:gap-16 text-center">
                     <ContentBlock 
-                        title="Strategic Co-partnership Initiative"
-                        paragraph="MontyPay offers a co-partnership model tailored for Acquirers and PSPs seeking strategic collaborations. Partners contribute their licenses and back-office operations, while MontyPay provides technical expertise, sales, and marketing investments."
+                        :title="t('Pages.Partners.Section 4.Title')"
+                        :paragraph="t('Pages.Partners.Section 4.Description')"
                     />
                     
                     <NuxtPicture 
@@ -81,7 +81,7 @@
                         :imgAttrs="{class:'w-full mx-auto'}" 
                     />
                     <ContentBlock 
-                        paragraph="Through this synergy, MontyPay delivers cutting-edge payment solutions, leveraging the licensed partner's capabilities to offer leading payment services in the market.<br />This option provides partners with the opportunity to penetrate the market faster and to be part of a global payment provider, thereby increasing their sales."
+                        :paragraph="t('Pages.Partners.Section 4.Description 2')"
                     />
                 </div>
             </div>
@@ -92,25 +92,25 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="Referral Reseller Program"
-                            paragraph="Entrepreneurs, freelancers, agencies, and businesses of varied sizes have an opportunity to collaborate with MontyPay by referring merchants to our platform. By participating in our referral program, you become a vital part of our network, referring merchants to leverage our suite of payment solutions. As a reseller, you'll receive a share of the profits, making it a mutually beneficial partnership. This model enables you to monetize your connections and networks while empowering merchants with our cutting-edge payment services."
+                            :title="t('Pages.Partners.Section 5.Title')"
+                            :paragraph="t('Pages.Partners.Section 5.Description')"
                         />
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-start lg:items-center gap-10 mt-6">
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/entrepreneurs1.svg" alt="Entrepreneurs" width="35" height="35" />
-                                Entrepreneurs
+                                {{t('Pages.Partners.Section 5.Items[0]')}}
                             </h4>  
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/freelancers.svg" alt="Freelancers" width="35" height="35" />
-                                Freelancers
+                                {{t('Pages.Partners.Section 5.Items[1]')}}
                             </h4>  
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/agencies.svg" alt="Agencies" width="35" height="35" />
-                                Agencies
+                                {{t('Pages.Partners.Section 5.Items[2]')}}
                             </h4> 
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/businesses.svg" alt="Businesses" width="35" height="35" />
-                                Businesses
+                                {{t('Pages.Partners.Section 5.Items[3]')}}
                             </h4>  
                         </div>
                     </div>
@@ -271,6 +271,7 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
     useSeoMeta({ 
         title: 'Partner Programs | Co-Branding & Payment Partnerships',
         ogTitle: 'Partner Programs | Co-Branding & Payment Partnerships',

@@ -1,8 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            title="Global Coverage"
-            paragraph="With our extensive coverage, you can confidently expand their reach and serve customers in diverse markets without any barriers."
+            :title="t('Pages.Global Coverage.Banner.Title')"
+            :paragraph="t('Pages.Global Coverage.Banner.Description')"
             image="global-coverage"
             hero="99"
         />
@@ -52,8 +52,8 @@
             <div class="container">
                 <div class="w-full lg:w-3/4 mx-auto text-center">
                     <ContentBlock 
-                        title="Global Coverage"
-                        subtitle="Expand Your Business Horizons Worldwide"
+                        :title="t('Pages.Global Coverage.Section 2.Title')"
+                        :subtitle="t('Pages.Global Coverage.Section 2.Description')"
                     />
                 </div>
 
@@ -105,6 +105,7 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
     import { useAuth } from '~/composables/useAuth'
 
     useSeoMeta({
@@ -118,10 +119,10 @@
 
     const paymentData = [
         {
-            country: "Lebanon",
+            country: t('Pages.Global Coverage.Section 2.Lebanon'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { name: "Mastercard", img: "/images/mastercard.svg" },
                         { name: "Visa", img: "/images/visa.svg" },
@@ -129,7 +130,7 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { name: "MyMonty", img: "/images/mymonty.svg" },
                         { name: "Whish", img: "/images/whish.svg" },
@@ -138,7 +139,7 @@
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { name: "Cryptocurrency", img: "/images/crypto.svg" },
                         { name: "OMT", img: "/images/omt.svg" }
@@ -147,10 +148,10 @@
             ]
         },
         {
-            country: "Jordan",
+            country: t('Pages.Global Coverage.Section 2.Jordan'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { name: "Mastercard", img: "/images/mastercard.svg" },
                         { name: "Visa", img: "/images/visa.svg" },
@@ -161,24 +162,24 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { name: "Apple Pay", img: "/images/applepay.svg" },
                         { name: "PayPal", img: "/images/paypal.svg" }
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: []
                     
                 }
             ]
         },
         {
-            country: "Bahrain",
+            country: t('Pages.Global Coverage.Section 2.Bahrain'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { name: "Mastercard", img: "/images/mastercard.svg" },
                         { name: "Visa", img: "/images/visa.svg" },
@@ -190,24 +191,24 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { name: "Apple Pay", img: "/images/applepay.svg" },
                         { name: "PayPal", img: "/images/paypal.svg" }
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: []
                     
                 }
             ]
         },
         {
-            country: "UAE",
+            country: t('Pages.Global Coverage.Section 2.UAE'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -216,7 +217,7 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "Apple Pay", "img": "/images/applepay.svg" },
                         { "name": "PayPal", "img": "/images/paypal.svg" },
@@ -226,7 +227,7 @@
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "BNPL", "img": "/images/bnpl.svg" },
                         { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
@@ -235,10 +236,10 @@
             ]
         },
         {
-            country: "Nigeria",
+            country:t('Pages.Global Coverage.Section 2.Nigeria'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -246,13 +247,13 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "PayPal", "img": "/images/paypal.svg" }
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "Bank Transfers", "img": "/images/bank-transfers.svg" },
                         { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
@@ -261,10 +262,10 @@
             ]
         },
         {
-            country: "EU & UK",
+            country: t('Pages.Global Coverage.Section 2.EU & UK'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -277,7 +278,7 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "Apple Pay", "img": "/images/applepay.svg" },
                         { "name": "PayPal", "img": "/images/paypal.svg" },
@@ -285,7 +286,7 @@
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
                     ]
@@ -293,10 +294,10 @@
             ]
         },
         {
-            country: "Canada",
+            country: t('Pages.Global Coverage.Section 2.Canada'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -307,7 +308,7 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "Apple Pay", "img": "/images/applepay.svg" },
                         { "name": "PayPal", "img": "/images/paypal.svg" },
@@ -315,7 +316,7 @@
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
                     ]
@@ -323,10 +324,10 @@
             ]
         },
         {
-            country: "USA",
+            country: t('Pages.Global Coverage.Section 2.USA'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -337,7 +338,7 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "Apple Pay", "img": "/images/applepay.svg" },
                         { "name": "PayPal", "img": "/images/paypal.svg" },
@@ -345,7 +346,7 @@
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
                     ]
@@ -353,10 +354,10 @@
             ]
         },
         {
-            country: "Kuwait",
+            country: t('Pages.Global Coverage.Section 2.Kuwait'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -366,23 +367,23 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "Apple Pay", "img": "/images/applepay.svg" },
                         { "name": "PayPal", "img": "/images/paypal.svg" }
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: []
                 }
             ]
         },
         {
-            country: "Indonesia",
+            country: t('Pages.Global Coverage.Section 2.Indonesia'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "", "img": "/images/mastercard.svg" },
                         { "name": "", "img": "/images/visa.svg" },
@@ -391,7 +392,7 @@
                     ]
                 },
                 {
-                    title: "eWallet",
+                    title: t('Pages.Global Coverage.Section 2.eWallet'),
                     items: [
                         { "name": "", "img": "/images/doku.svg" },
                         { "name": "", "img": "/images/e-wallets.svg" },
@@ -403,7 +404,7 @@
                     ]
                 },
                 {
-                    title: "Cash",
+                    title: t('Pages.Global Coverage.Section 2.Cash'),
                     items: [
                         { "name": "", "img": "/images/alfa-mart.svg" },
                         { "name": "", "img": "/images/indomaret.svg" },
@@ -413,7 +414,7 @@
                     ]
                 },
                 {
-                    title: "Virtual Account",
+                    title: t('Pages.Global Coverage.Section 2.Virtual Account'),
                     items: [
                         { "name": "", "img": "/images/bca.svg" },
                         { "name": "", "img": "/images/mandiri.svg" },
@@ -428,7 +429,7 @@
                     ]
                 },
                 {
-                    title: "Direct Debit",
+                    title: t('Pages.Global Coverage.Section 2.Direct Debit'),
                     items: [
                         { "name": "", "img": "/images/bri.svg" },
                         { "name": "", "img": "/images/allo-bank.svg" },
@@ -437,7 +438,7 @@
                     ]
                 },
                 {
-                    title: "Pay Later (BNPL)",
+                    title: t('Pages.Global Coverage.Section 2.Pay Later (BNPL)'),
                     items: [
                         { "name": "", "img": "/images/ceria.svg" },
                         { "name": "", "img": "/images/kredivo.svg" },
@@ -448,10 +449,10 @@
             ]
         },
         {
-            country: "LATAM",
+            country: t('Pages.Global Coverage.Section 2.LATAM'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -461,13 +462,13 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "PayPal", "img": "/images/paypal.svg" }
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "Cash Payments", "img": "/images/cash-payments.svg" },
                         { "name": "E-Wallets", "img": "/images/ewallets.svg" },
@@ -478,10 +479,10 @@
             ]
         },
         {
-            country: "Australia",
+            country: t('Pages.Global Coverage.Section 2.Australia'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -490,13 +491,13 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "PayPal", "img": "/images/paypal.svg" }
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
                     ]
@@ -504,10 +505,10 @@
             ]
         },
         {
-            country: "Qatar",
+            country: t('Pages.Global Coverage.Section 2.Qatar'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -515,13 +516,13 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "Apple Pay", "img": "/images/applepay.svg" },
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
                     ]
@@ -529,10 +530,10 @@
             ]
         },
         {
-            country: "Saudi Arabia",
+            country: t('Pages.Global Coverage.Section 2.Saudi Arabia'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -541,24 +542,24 @@
                     ]
                 },
                 {
-                    title: "Digital Wallets",
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
                     items: [
                         { "name": "Apple Pay", "img": "/images/applepay.svg" },
                         { "name": "Google Pay", "img": "/images/googlepay.svg" }
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                     ]
                 }
             ]
         },
         {
-            country: "Ghana",
+            country: t('Pages.Global Coverage.Section 2.Ghana'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -566,7 +567,7 @@
                     ]
                 },
                 {
-                    title: "Mobile Money",
+                    title: t('Pages.Global Coverage.Section 2.Mobile Money'),
                     items: [
                         { "name": "Airtel Money", "img": "/images/airtel-money.svg" },
                         { "name": "Tigo", "img": "/images/tigo.svg" },
@@ -576,17 +577,17 @@
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                     ]
                 }
             ]
         },
         {
-            country: "South Africa",
+            country: t('Pages.Global Coverage.Section 2.South Africa'),
             categories: [
                 {
-                    title: "Cards",
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
                     items: [
                         { "name": "Mastercard", "img": "/images/mastercard.svg" },
                         { "name": "Visa", "img": "/images/visa.svg" },
@@ -594,13 +595,13 @@
                     ]
                 },
                 {
-                    title: "EFT",
+                    title: t('Pages.Global Coverage.Section 2.EFT'),
                     items: [
                         { "name": "Electronic Funds Transfer", "img": "/images/eft.svg" },
                     ]
                 },
                 {
-                    title: "Other",
+                    title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                     ]
                 }

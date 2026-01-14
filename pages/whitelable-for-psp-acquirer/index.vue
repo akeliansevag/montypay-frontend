@@ -1,8 +1,8 @@
 <template lang="">
     <div>
         <Hero 
-            title="White Label Solutions for PSPs & Acquirers"
-            paragraph="Become a Payment Service Provider (PSP) in as little as 3 weeks"
+            :title="t('Pages.Whitelabel For PSP Acquirer.Banner.Title')"
+            :paragraph="t('Pages.Whitelabel For PSP Acquirer.Banner.Description')"
             image="white-label-for-psp-acquirer"
             hero="12"
         />
@@ -12,7 +12,7 @@
                 <div class="flex flex-col text-center">
                     <div class="w-full md:w-3/4 mx-auto">
                         <ContentBlock 
-                            title="Become a Payment Service Provider (PSP) in as little as 3 weeks"
+                            :title="t('Pages.Whitelabel For PSP Acquirer.Section 2.Title')"
                         />
                     </div>
                 </div>
@@ -22,37 +22,37 @@
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
                                 <img src="/images/smart-routing.svg" alt="Fully brandable" width="30" height="30" />
-                                Fully brandable
+                                {{t('Pages.Whitelabel For PSP Acquirer.Section 2.Items[0]')}}
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
                                 <img src="/images/link.svg" alt="SaaS white label solution" width="30" height="30" />
-                                SaaS white label solution
+                                {{t('Pages.Whitelabel For PSP Acquirer.Section 2.Items[1]')}}
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
                                 <img src="/images/invoice.svg" alt="170+ connectors" width="30" height="30" />
-                                170+ connectors
+                                {{t('Pages.Whitelabel For PSP Acquirer.Section 2.Items[2]')}}
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
                                 <img src="/images/calendar.svg" alt="High-quality support" width="30" height="30" />
-                                High-quality support
+                                {{t('Pages.Whitelabel For PSP Acquirer.Section 2.Items[3]')}}
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
                                 <img src="/images/qr-code.svg" alt="Latest technology" width="30" height="30" />
-                                Latest technology
+                                {{t('Pages.Whitelabel For PSP Acquirer.Section 2.Items[4]')}}
                             </div>
                         </div>
                         <div class="border rounded-lg h-auto py-8 px-6">
                             <div class="flex flex-col gap-20">
                                 <img src="/images/check.svg" alt="Industry best practices" width="30" height="30" />
-                                Industry best practices
+                                {{t('Pages.Whitelabel For PSP Acquirer.Section 2.Items[5]')}}
                             </div>
                         </div>
                     </div>
@@ -69,34 +69,27 @@
                     
                     <div class="max-lg:bg-quaternary max-lg:py-16 max-lg:rounded-lg lg:absolute lg:top-0 lg:start-0 lg:w-full lg:h-full flex flex-col justify-center items-center z-10">
                         <ContentBlock 
-                            title="Our Solutions"
+                            :title="t('Pages.Whitelabel For PSP Acquirer.Section 3.Title')"
                             class="text-white"
                         />
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 lg:gap-4 mt-16 px-60">
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">1</div>
-                                <div class="flex flex-col gap-20">
-                                    Payment<br />Gateway
-                                </div>
+                                <div v-html="t('Pages.Whitelabel For PSP Acquirer.Section 3.Items[0]')" class="flex flex-col gap-20" />
+                                    
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">2</div>
-                                <div class="flex flex-col gap-20">
-                                    Merchant<br />Mobile App
-                                </div>
+                                 <div v-html="t('Pages.Whitelabel For PSP Acquirer.Section 3.Items[1]')" class="flex flex-col gap-20" />
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">3</div>
-                                <div class="flex flex-col gap-20">
-                                    Merchant<br />Management System
-                                </div>
+                                <div v-html="t('Pages.Whitelabel For PSP Acquirer.Section 3.Items[2]')" class="flex flex-col gap-20" />
                             </div>
                             <div class="bg-white rounded-lg h-auto py-8 px-6">
                                 <div class="absolute top-0 start-1/2 -translate-y-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 w-[50px] h-[50px] bg-secondary rounded-full flex justify-center items-center font-bold">4</div>
-                                <div class="flex flex-col gap-20">
-                                    QR Code Self Service Checkout
-                                </div>
+                                 <div v-html="t('Pages.Whitelabel For PSP Acquirer.Section 3.Items[3]')" class="flex flex-col gap-20" />
                             </div>
                         </div>
                     </div>
@@ -109,13 +102,13 @@
                 <div class="w-full lg:w-4/5 mx-auto">
                 <div class="flex justify-between">
                     <ContentBlock 
-                        title="Centralized Data Management"
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Title 1')"
                         class="cursor-pointer"
                         :class="activeTab === 0 ? 'text-primary' : 'text-primary/20'"
                         @click="show(0)"
                     />
                     <ContentBlock 
-                        title="QCheck"
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Title 2')"
                         class="cursor-pointer"
                         :class="activeTab === 1 ? 'text-primary' : 'text-primary/20'"
                         @click="show(1)"
@@ -126,13 +119,13 @@
                     :class="{ 'absolute invisible opacity-0': activeTab !== 0 }"
                 >
                     <ContentBlock 
-                        paragraph="Our one-page, user-friendly data management tool consolidates all your payment channel data into a single, easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management."
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Description 1')"
                         class="text-primary mt-5"
                     />
                     <div class="grid lg:grid-cols-3 gap-7 mt-16">
                         <div class="bg-primary/5 p-10 rounded-lg lg:col-span-2 text-primary flex items-center">
                             <!-- <ContentBlock title="MontyPay's Merchant Management System offers you unparalleled control and efficiency." /> -->
-                            <h2 class="text-[32px]">MontyPay's Merchant Management System offers you unparalleled control and efficiency.</h2>
+                            <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[0].Title')}}</h2>
                         </div>
 
                         <div class="bg-primary/5 p-10 rounded-lg">
@@ -153,8 +146,8 @@
                             <!-- <ContentBlock title="Operational Control" paragraph="Manage and monitor your operations effortlessly, streamlining tasks and processes for maximum efficiency."  class="text-primary mt-5" /> -->
                             
                             <div class="text-primary mt-5">
-                                <h2 class="text-[32px]">Operational Control</h2>
-                                <p>Manage and monitor your operations effortlessly, streamlining tasks and processes for maximum efficiency.</p>
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[1].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[1].Description')}}</p>
                             </div>
                         </div>
 
@@ -185,8 +178,8 @@
                                 </svg>
                             </div>
                             <div class="text-primary mt-5">
-                                <h2 class="text-[32px]">Data-Driven Insights</h2>
-                                <p>Manage and monitor your operations effortlessly, streamlining tasks and processes for maximum efficiency.</p>
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[2].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[2].Description')}}</p>
                             </div>
                         </div>
 
@@ -207,8 +200,8 @@
                                 </svg>
                             </div>
                             <div class="text-primary mt-5">
-                                <h2 class="text-[32px]">Scalability</h2>
-                                <p>Access the tools needed to scale your business efficiently, adapting to your evolving needs.</p>
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[3].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[3].Description')}}</p>
                             </div>
                         </div>
 
@@ -225,8 +218,8 @@
                                 </svg>
                             </div>
                             <div class="text-primary mt-5">
-                                <h2 class="text-[32px]">Customization</h2>
-                                <p>Tailor the system to your unique business requirements, ensuring it aligns seamlessly with your brand identitys.</p>
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[4].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 1[4].Description')}}</p>
                             </div>
                         </div>
                     </div>
@@ -237,13 +230,13 @@
                     :class="{ 'absolute invisible opacity-0': activeTab !== 1 }"
                 >
                     <ContentBlock 
-                        paragraph="Our one-page, user-friendly data management tool consolidates all your payment channel data into a single, easy-to-navigate interface. This empowers you to maintain control over various payment channels through a unified access point, streamlining monitoring and management."
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Description 2')"
                         class="text-primary mt-5"
                     />
                     <div class="grid lg:grid-cols-3 gap-7 mt-16">
                         <div class="bg-primary/5 p-10 rounded-lg lg:col-span-2 text-primary flex items-center">
                             <ContentBlock 
-                                title="MontyPay's QCheck revolutionizes dining experiences."
+                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[0].Title')"
                             />
                         </div>
 
@@ -263,8 +256,8 @@
                                 </svg>
                             </div>
                             <ContentBlock
-                                title="Efficiency Boost"
-                                paragraph="Enhance efficiency with seamless bill settlements, reducing table turnover time." 
+                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[1].Title')"
+                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[1].Description')" 
                                 class="text-primary mt-5"
                             />
                         </div>
@@ -292,8 +285,8 @@
 
                             </div>
                             <ContentBlock 
-                                title="Bill Splitting"
-                                paragraph="Streamline the bill-splitting process, making it easier for groups to divide expenses." 
+                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[2].Title')"
+                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[2].Description')" 
                                 class="text-primary mt-5"
                             />
                         </div>
@@ -315,8 +308,8 @@
                                 </svg>
                             </div>
                             <ContentBlock
-                                title="Increased Tips" 
-                                paragraph="Witness a significant increase in tips, providing a financial incentive for your staff." 
+                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[3].Title')" 
+                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[3].Description')" 
                                 class="text-primary mt-5"
                             />
                         </div>
@@ -334,8 +327,8 @@
                                 </svg>
                             </div>
                             <ContentBlock 
-                                title="Enhanced Reputation" 
-                                paragraph="Make your establishment the talk of the town with improved dining experiences." 
+                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[4].Title')" 
+                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[4].Description')" 
                                 class="text-primary mt-5"
                             />
                         </div>
@@ -349,8 +342,8 @@
         <section id="section-4" class="mt-16 lg:mt-36">
             <div class="container">
                 <ContentBlock 
-                    title="Merchant Mobile Application" 
-                    paragraph="Our merchant mobile application offers a seamless experience, providing access to comprehensive dashboard reporting and analytics. With this app, you can effortlessly:" 
+                    :title="t('Pages.Whitelabel For PSP Acquirer.Section 5.Title')" 
+                    :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 5.Description')" 
                     class="text-center lg:w-1/2 mx-auto" 
                 />
                 <div class="my-16">
@@ -392,8 +385,8 @@
             <div class="container flex flex-col gap-16 lg:gap-36">
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
-                        title="Efficient Data Insights"
-                        paragraph="Gain valuable insights into your business operations with a centralized area for payments data, reporting, and more. Our rich reporting dashboard offers real-time analytics, transaction insights, and an intuitive interface. Multiple users and administrative roles further enhance your data management capabilities."
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 6.Title')"
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 6.Description')"
                         class="flex-1"
                     />
                     <div class="flex-1 w-full">
@@ -407,8 +400,8 @@
                 </div>
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
-                        title="Global Payment Collection"
-                        paragraph="Allow your merchants to collect payments globally and instantly through various channels, including telephone sales, email, social media, QR codes, invoices, and messaging. Our platform simplifies recurring and batch payments, streamlining your billing processes and reducing manual effort."
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 7.Title')"
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 7.Description')"
                         class="flex-1 lg:order-1"
                     />
                     <div class="flex-1 w-full">
@@ -422,8 +415,8 @@
                 </div>
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
-                        title="Flexible Billing and Settlement"
-                        paragraph="Customize fees for individual transactions with our premium billing platform features. Easily calculate commissions, merchant settlements, and referral partner rewards, all within a single platform."
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 8.Title')"
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 8.Description')"
                         class="flex-1"
                     />
                     <div class="flex-1 w-full">
@@ -441,8 +434,8 @@
                 <div class="container flex flex-col gap-16 lg:gap-36">
                     <div class="flex flex-col gap-8 justify-center items-center">
                         <ContentBlock 
-                            title="Intelligent Routing"
-                            paragraph="Identify cost-effective transaction routes and routes with higher acceptance rates. MontyPay's transactional traffic routing considers multiple factors such as currency, transaction origin,3D-Secure requirements, and more. This intelligent routing optimizes acquirer performance and enhances transaction success."
+                            :title="t('Pages.Whitelabel For PSP Acquirer.Section 9.Title')"
+                            :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 9.Description')"
                             class="text-center"
                         />
                         <div class="w-1/2">
@@ -460,8 +453,8 @@
             <div class="container flex flex-col gap-16 lg:gap-36 mt-16 lg:mt-36">
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
-                        title="Live Chat Support"
-                        paragraph="Our live chat customer support is available around the clock to address any customer queries, ensuring a seamless and responsive service experience."
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 10.Title')"
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 10.Description')"
                         class="flex-1"
                     />
                     <div class="flex-1 w-full">
@@ -475,8 +468,8 @@
                 </div>
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
-                        title="Risk Management"
-                        paragraph="MontyPay employs an advanced risk management system that combines in-house and external scoring models to detect, analyze, and prevent potentially fraudulent transactions. Our anti-fraud modules, external risk scoring providers, 3D-Secure 2.0, and customizable anti-fraud plans work together to safeguard your business."
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 11.Title')"
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 11.Description')"
                         class="flex-1 lg:order-1"
                     />
                     <div class="flex-1 w-full">
@@ -506,8 +499,8 @@
                 </div> -->
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center items-center">
                     <ContentBlock 
-                        title="Cutting-Edge Technology"
-                        paragraph="MontyPay leverages the latest technology to support your business expansion into new markets, increase revenue capture, and deliver a seamless checkout experience for your customers."
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 12.Title')"
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 12.Description')"
                         class="flex-1"
                     />
                     <div class="flex-1 w-full">
@@ -521,8 +514,8 @@
                 </div>
                 <div class="flex flex-col gap-8 justify-center items-center">
                     <ContentBlock 
-                        title="Expanded Connectivity"
-                        paragraph="With over 170 connectors, MontyPay offers a wide range of pre-made links to banks and payment options, in addition to integrating your existing ones. This extensive network ensures a continuous flow of payments and simplifies integration with banks, retailers, and Alternative Payment Methods (APMs)."
+                        :title="t('Pages.Whitelabel For PSP Acquirer.Section 13.Title')"
+                        :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 13.Description')"
                         class="text-center"
                     />
                 </div>
@@ -532,7 +525,7 @@
 </template>
 
 <script setup>
-
+const { t, locale, setLocale } = useI18n()
 import { register } from 'swiper/element/bundle';
 register();
 
@@ -562,25 +555,25 @@ const solutions_items = [
 
 const merchant_items = [
     {
-        title: 'Track transactions and monitor revenue'
+        title: t('Pages.Whitelabel For PSP Acquirer.Section 5.Items[0].Title')
     },
     {
-        title: 'Send invoice links'
+        title: t('Pages.Whitelabel For PSP Acquirer.Section 5.Items[1].Title')
     },
     {
-        title: 'Utilize the pay-by-link feature for convenient payments  anytime, anywhere'
+        title: t('Pages.Whitelabel For PSP Acquirer.Section 5.Items[2].Title')
     },
     {
-        title: 'Request support'
+        title: t('Pages.Whitelabel For PSP Acquirer.Section 5.Items[3].Title')
     },
     {
-        title: 'Customize payment options based on client needs'
+        title: t('Pages.Whitelabel For PSP Acquirer.Section 5.Items[4].Title')
     },
     {
-        title: 'Display QR codes for efficient payments at your physical location'
+        title: t('Pages.Whitelabel For PSP Acquirer.Section 5.Items[5].Title')
     },
     {
-        title: 'Collect payments easily with the QR pay feature'
+        title: t('Pages.Whitelabel For PSP Acquirer.Section 5.Items[6].Title')
     },
 ]
 

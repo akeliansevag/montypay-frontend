@@ -15,9 +15,9 @@
             <div class="flex lg:flex-1 flex-col lg:flex-row justify-between lg:items-end w-full">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-col lg:flex-row items-center flex-wrap gap-4 mt-10">
-                        <h4 class="text-3xl font-medium">Get the app</h4>
-                        <CtaBoxes link="https://apps.apple.com/us/app/montypay/id1626442406" subtitle="Download on the" title="App Store" icon="fa6-brands:apple" class="py-2 px-3 flex-1 rounded-lg" />
-                        <CtaBoxes link="https://play.google.com/store/search?q=montypay&c=apps" subtitle="Get it on" title="Google Play" icon="fa6-brands:google-play" class="py-2 px-3 flex-1 rounded-lg" />
+                        <h4 class="text-3xl font-medium">{{t('Footer.Get the app')}}</h4>
+                        <CtaBoxes link="https://apps.apple.com/us/app/montypay/id1626442406" :subtitle="t('Footer.Download on the')" title="App Store" icon="fa6-brands:apple" class="py-2 px-3 flex-1 rounded-lg" />
+                        <CtaBoxes link="https://play.google.com/store/search?q=montypay&c=apps" :subtitle="t('Footer.Get it on')" title="Google Play" icon="fa6-brands:google-play" class="py-2 px-3 flex-1 rounded-lg" />
                     </div>
                 </div>
 
@@ -44,6 +44,7 @@
 </template>
 
 <script setup>
+     const { t, locale, setLocale } = useI18n()
     const props = defineProps(['pageName'])
 </script>
 

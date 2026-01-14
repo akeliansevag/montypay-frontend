@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <section class="pb-16">
-            <NuxtLink :to="`/${backPath}`" class="py-10 block"> 
+            <NuxtLinkLocale :to="`/${backPath}`" class="py-10 block"> 
                 <span> < </span> 
                 <span>Back to {{backPath}}</span>
-            </Nuxtlink>
+            </NuxtLinkLocale>
             <div v-if="pending">
                 <div class="animate-pulse flex flex-col gap-7">
                     <div class="rounded-md h-[500px] w-full bg-[#f2f2f2]"></div>

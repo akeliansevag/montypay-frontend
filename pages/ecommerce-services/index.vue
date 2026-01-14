@@ -6,10 +6,10 @@
         <div class="ms-container-align with-padding">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
-                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">E-Commerce Payment Services</h1>
-                    <p class="text-xl">Create a powerful online presence with MontyPay’s expert e-commerce solutions. From design to payment integration, we handle it all to bring your vision to life.</p>
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">{{ t('Pages.eCommerce Services.Banner.Title') }}</h1>
+                    <p class="text-xl">{{ t('Pages.eCommerce Services.Banner.Description') }}</p>
                     <div>
-                        <NuxtLink to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">Launch Your eCommerce Website Today!</NuxtLink>  
+                        <NuxtLinkLocale to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">{{ t('Pages.eCommerce Services.Banner.Button Text') }}</NuxtLinkLocale>  
                     </div>
                 </div>
                 <div class="lg:w-[50%]">
@@ -19,7 +19,7 @@
         </div>
     </section>
 
-    <FadeSwiper :reverse="true" :data="sliderOne" title="Reach Your Businesses' Full Potential" subtitle="Stay ahead of the competition with an e-commerce platform that unlocks endless opportunities for your business:"/>
+    <FadeSwiper :reverse="true" :data="sliderOne" :title="t('Pages.eCommerce Services.Section 2.Title')" :subtitle="t('Pages.eCommerce Services.Section 2.Description')"/>
 
     <div class="container">
         <div class="separator"></div>
@@ -27,8 +27,8 @@
 
     <section>
         <div class="container">
-            <h2 class="text-3xl">What We Bring to the Table</h2>
-            <p class="text-xl mt-4">We transform your vision into reality by building custom websites from scratch in less than a month, designed to meet your unique business needs. With full customization options, you can tailor your online store to reflect your brand and cater to global audiences.</p>
+            <h2 class="text-3xl">{{t('Pages.eCommerce Services.Section 3.Title')}}</h2>
+            <p class="text-xl mt-4">{{ t('Pages.eCommerce Services.Section 3.Description') }}</p>
             <img class="mt-12 mx-auto drop-shadow-2xl" src="/what-we-bring-to-the-table.webp" alt="What we bring to the table" />
         </div>
     </section>
@@ -37,29 +37,29 @@
         <div class="separator"></div>
     </div>
 
-    <FadeSwiper :reverse="true" :data="sliderTwo" :noPadding="true" title="Master Your Content" subtitle="Take full control of your website’s content and updates:"/>
+    <FadeSwiper :reverse="true" :data="sliderTwo" :noPadding="true" :title="t('Pages.eCommerce Services.Section 4.Title')" :subtitle="t('Pages.eCommerce Services.Section 4.Description')"/>
 
     <div class="container">
         <div class="separator"></div>
     </div>
 
-    <PaddingSlider :data="sliderThree" title="Create, Captivate, Convert" subtitle="Pair your e-commerce platform with expert social media services and high-quality visual content:"/>
+    <PaddingSlider :data="sliderThree" :title="t('Pages.eCommerce Services.Section 5.Title')" :subtitle="t('Pages.eCommerce Services.Section 5.Description')"/>
     <div class="container mt-12">
-        <NuxtLink to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">Start Selling Online Now</NuxtLink>  
+        <NuxtLinkLocale to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">{{t('Pages.eCommerce Services.Section 5.Button Text')}}</NuxtLinkLocale>  
     </div>
 
     <div class="container">
         <div class="separator"></div>
     </div>
 
-    <FadeSwiper :reverse="true" :data="sliderFour" :noPadding="true" title="Tap Into the Power of Payments" subtitle="MontyPay’s seamless payment solutions ensure your customers can check out quickly and securely:"/>
+    <FadeSwiper :reverse="true" :data="sliderFour" :noPadding="true" :title="t('Pages.eCommerce Services.Section 6.Title')" :subtitle="t('Pages.eCommerce Services.Section 6.Description')"/>
 
     <div class="separator mb-0"></div>
 
-    <Accordion :data="faq" title="All You Need to Know" /> 
+    <Accordion :data="faq" :title="t('Pages.eCommerce Services.Section 7.Title')" /> 
     <div class="lg:py-16 max-lg:py-10">
         <div class="container">
-            <h2 class="text-2xl font-bold text-center">Our Clients</h2>
+            <h2 class="text-2xl font-bold text-center">{{t('Pages.eCommerce Services.Section 8.Title')}}</h2>
 
             <div class="marquee1 overflow-hidden mt-10">
                 <div class="wrapper grid grid-flow-col auto-cols-[8rem] lg:auto-cols-[18rem] justify-items-center items-center mt-10 animate-[marquee1_20s_linear_infinite] lg:animate-[marquee1lg_20s_linear_infinite]">
@@ -73,12 +73,13 @@
         
     </div>
     
-    <BlueSection title="Ready to Transform Your Online Presence?" subtitle="Let’s bring your vision to life! Reach out to us today, and let’s get started building your e-commerce platform with MontyPay. Your future customers are waiting." buttonText="Request a Demo" buttonLink="https://prechecklist.montypay.com/website" target="_blank" image="/ready-to-transform.webp"/>
+    <BlueSection :title="t('Pages.eCommerce Services.Section 9.Title')" :subtitle="t('Pages.eCommerce Services.Section 9.Description')" :buttonText="t('General.Buttons.Request a Demo')" buttonLink="https://prechecklist.montypay.com/website" target="_blank" image="/ready-to-transform.webp"/>
     
     <PaymentSolutions />
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
 useSeoMeta({
     title: 'E-Commerce Payment Services for Online Businesses',
     ogTitle: 'E-Commerce Payment Services for Online Businesses',
@@ -107,64 +108,64 @@ useHead({
 
 const faq = [
     {
-        question: 'Can I customize the design of my online store?',
-        answer: 'Absolutely. We build a website that reflects your brand’s personality and vision'
+        question: t('Pages.eCommerce Services.Section 7.Items[0].Question'),
+        answer: t('Pages.eCommerce Services.Section 7.Items[0].Question')
     },
     {
-        question: 'How can I accept payments on my e-commerce store?',
-        answer: 'With MontyPay’s integrated, secure payment gateway, you can accept payments with ease.'
+        question: t('Pages.eCommerce Services.Section 7.Items[1].Question'),
+        answer: t('Pages.eCommerce Services.Section 7.Items[1].Question')
     },
     {
-        question: 'Is my checkout secure?',
-        answer: 'Yes, MontyPay is PCI DSS-certified, ensuring top-tier security.'
+        question: t('Pages.eCommerce Services.Section 7.Items[2].Question'),
+        answer: t('Pages.eCommerce Services.Section 7.Items[2].Question')
     },
     {
-        question: 'Can I integrate more than one language?',
-        answer: 'Yes, we offer multi-language support for a truly global reach.'
+        question: t('Pages.eCommerce Services.Section 7.Items[3].Question'),
+        answer: t('Pages.eCommerce Services.Section 7.Items[3].Question')
     },
     {
-        question: 'Can I use multiple currencies?',
-        answer: 'Definitely! We support payments in multiple currencies to cater to customers around the world.'
+        question: t('Pages.eCommerce Services.Section 7.Items[4].Question'),
+        answer: t('Pages.eCommerce Services.Section 7.Items[4].Question')
     },
     {
-        question: 'Is the website mobile-friendly?',
-        answer: 'Absolutely! We ensure your website is fully responsive, providing a seamless experience across all devices.'
+        question: t('Pages.eCommerce Services.Section 7.Items[5].Question'),
+        answer: t('Pages.eCommerce Services.Section 7.Items[5].Question')
     },
     {
-        question: 'How many payment options are supported?',
-        answer: 'Over 100, including credit cards, digital wallets, and even cryptocurrency.'
+        question: t('Pages.eCommerce Services.Section 7.Items[6].Question'),
+        answer: t('Pages.eCommerce Services.Section 7.Items[6].Question')
     }
 ]
 
 const sliderOne = [
     {
-        title: '24/7 Availability',
-        description: 'Your store never sleeps, ready to serve customers globally',
+        title: t('Pages.eCommerce Services.Section 2.Items[0].Title'),
+        description: t('Pages.eCommerce Services.Section 2.Items[0].Description'),
         image: '/24-7-availability.webp',
     },
     {
-        title: 'Broaden Your Reach',
-        description: 'Attract a wider audience beyond your local market',
+        title: t('Pages.eCommerce Services.Section 2.Items[1].Title'),
+        description: t('Pages.eCommerce Services.Section 2.Items[1].Description'),
         image: '/broaden-your-reach.webp',
     },
     {
-        title: 'Boost Sales',
-        description: 'Leverage analytics and targeted strategies to convert visitors into loyal customers',
+        title: t('Pages.eCommerce Services.Section 2.Items[2].Title'),
+        description: t('Pages.eCommerce Services.Section 2.Items[2].Description'),
         image: '/boost-sales.webp',
     },
     {
-        title: 'Enhanced Brand Visibility',
-        description: 'Create a memorable online presence that reflects your brand’s unique identity',
+        title: t('Pages.eCommerce Services.Section 2.Items[3].Title'),
+        description: t('Pages.eCommerce Services.Section 2.Items[3].Description'),
         image: '/enhanced-brand-visibility.webp',
     },
     {
-        title: 'Simplified Operations',
-        description: 'Manage inventory, track orders, and monitor sales in one place.',
+        title: t('Pages.eCommerce Services.Section 2.Items[4].Title'),
+        description: t('Pages.eCommerce Services.Section 2.Items[4].Description'),
         image: '/simplified-operations.webp',
     },
     {
-        title: 'Delight Your Customers',
-        description: 'Secure, intuitive, and mobile-friendly shopping tailored to your customers’ needs.',
+        title: t('Pages.eCommerce Services.Section 2.Items[5].Title'),
+        description: t('Pages.eCommerce Services.Section 2.Items[5].Description'),
         image: '/delight-your-customers.webp',
     },
     
@@ -172,38 +173,38 @@ const sliderOne = [
 
 const sliderTwo = [
     {
-        title: 'Enjoy intuitive controls to keep your site fresh and updated',
+        title: t('Pages.eCommerce Services.Section 4.Items[0].Title'),
         image: '/enjoy-intuitive-controls.webp',
     },
     {
-        title: 'Improve SEO and increase visibility with built-in optimization tools.',
+        title: t('Pages.eCommerce Services.Section 4.Items[1].Title'),
         image: '/improve-seo.webp',
     },
     {
-        title: 'Easily create, edit, and publish content',
+        title: t('Pages.eCommerce Services.Section 2.Items[2].Title'),
         image: '/easily-create.webp',
     },
 ];
 
 const sliderThree = [
     {
-        title: 'Develop engaging, brand-aligned content.',
+        title: t('Pages.eCommerce Services.Section 5.Items[0].Title'),
         image: '/develop-engaging.webp',
     },
     {
-        title: 'Boost visibility and engagement across platforms.',
+        title: t('Pages.eCommerce Services.Section 5.Items[1].Title'),
         image: '/boost-visibility.webp',
     },
     {
-        title: 'Create marketing assets to tell your story and captivate your audience.',
+        title: t('Pages.eCommerce Services.Section 5.Items[2].Title'),
         image: '/create-marketing.webp',
     },
     {
-        title: 'Build a photo library showcasing your products in the best light, with professional imagery and videography.',
+        title: t('Pages.eCommerce Services.Section 5.Items[3].Title'),
         image: '/build-a-photo-library.webp',
     },
     {
-        title: 'Engage and convert shoppers with stunning imagery and professional videography.',
+        title: t('Pages.eCommerce Services.Section 5.Items[4].Title'),
         image: '/engage-and-convert.webp',
     }
 
@@ -211,23 +212,23 @@ const sliderThree = [
 
 const sliderFour = [
     {
-        title: 'Accept over 100 payment options, including cards, wallets, and cryptocurrencies',
+        title: t('Pages.eCommerce Services.Section 6.Items[0].Title'),
         image: '/accept-over-100.webp',
     },
     {
-        title: 'Enable mobile payments for convenience',
+        title: t('Pages.eCommerce Services.Section 6.Items[1].Title'),
         image: '/enable-mobile-payments.webp',
     },
     {
-        title: 'Offer flexible payment methods like pay-by-link, QR codes, and recurring billing',
+        title: t('Pages.eCommerce Services.Section 6.Items[2].Title'),
         image: '/offer-flexible-payment-methods.webp',
     },
     {
-        title: 'Enjoy reliable, secure transactions backed by PCI DSS compliance',
+        title: t('Pages.eCommerce Services.Section 6.Items[3].Title'),
         image: '/enjoy-reliable.webp',
     },
     {
-        title: 'Integrate into your website to start collecting payments immediately.',
+        title: t('Pages.eCommerce Services.Section 6.Items[4].Title'),
         image: '/integrate-into-your-website.webp',
     }
 

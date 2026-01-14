@@ -1,9 +1,9 @@
 <template lang="">
     <div>
-        <h4>Subscribe to our newsletter</h4>
+        <h4>{{t('Footer.Newsletter.Title')}}</h4>
         <div class="flex flex-column gap-8 w-full">
             <div class="flex gap-8 w-full">
-                <input v-model="form.newsletterEmail" type="text" id="newsletter-email" class="w-full py-5 bg-transparent border-b border-b-primary outline-0" placeholder="Write your email here" />
+                <input v-model="form.newsletterEmail" type="text" id="newsletter-email" class="w-full py-5 bg-transparent border-b border-b-primary outline-0" :placeholder="t('General.Placeholders.Email')" />
                 <Icon @click.prevent="handleSubmit" id="submit" name="fa7-solid:arrow-right" class="icon absolute top-1/2 end-0 -translate-y-1/2 text-xl rtl:rotate-180 transition-transform" />
             </div>
         </div>
@@ -13,6 +13,7 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
     const submissionMessage = ref('');
 
     const form = ref({
@@ -25,9 +26,9 @@
 
     const validationRules = {
         newsletterEmail: {
-            required: 'Please enter your email address',
-            email: 'Please enter a valid email address',
-            safe: 'Your input has invalid value'
+            required: t('General.Messages.Errors.Required.Email'),
+            email: t('General.Messages.Errors.Valid Email'),
+            safe: t('General.Messages.Errors.Safe'),
         },
     }
 

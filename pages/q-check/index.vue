@@ -6,8 +6,8 @@
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[50%] flex flex-col gap-6 lg:gap-12">
-                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">QCheck Customer Verification</h1>
-                    <p class="text-xl">Flip the floor faster and keep them coming back with QCheck, the ultimate self-service checkout tool. Whether guests are scanning to browse your menu or settling their bill, QCheck is designed for speed, efficiency, and satisfaction.</p>
+                    <h1 class="text-3xl !leading-[1.3] lg:text-5xl lg:!leading-[1.5]">{{t('Pages.QCheck.Banner.Title')}}</h1>
+                    <p class="text-xl">{{t('Pages.QCheck.Banner.Description')}}</p>
                     <!-- <div class="relative">
                         <input required type="text" placeholder="" class="border border-[#D9D9D9] w-full rounded-xl px-5 py-4 lg:pe-[170px] shadow-md" />
                         <button class="mp-button-quaternary lg:absolute max-lg:mt-1 max-lg:w-full lg:end-1 lg:h-[85%] lg:top-1/2 lg:-translate-y-1/2 max-lg:mt-4">Request a Demo</button>
@@ -20,25 +20,25 @@
         </div>
     </section>
 
-    <FadeSlider :data="sliderOne" title="Starts With a Scan. Ends With a Smile."/>
+    <FadeSlider :data="sliderOne" :title="t('Pages.QCheck.Section 2.Title')"/>
     <div class="container">
         <div class="separator"></div>
     </div>
 
-    <FadeSlider :data="sliderTwo" noPadding="true" subtitle="Create a modern, quick, and enjoyable dining experience with QCheck’s intuitive features." title="It’s All Just One Scan Away" reverse="true"/>
+    <FadeSlider :data="sliderTwo" noPadding="true" :subtitle="t('Pages.QCheck.Section 3.Description')" :title="t('Pages.QCheck.Section 3.Title')" reverse="true"/>
     <div class="container">
         <div class="separator"></div>
     </div>
 
 
-    <FadeSliderTwo :data="sliderThree" title="Integration and Onboarding" subtitle="Getting started with QCheck is quick and hassle-free:"/>
+    <FadeSliderTwo :data="sliderThree" :title="t('Pages.QCheck.Section 4.Title')" :subtitle="t('Pages.QCheck.Section 4.Description')"/>
     <div class="container">
         <div class="separator"></div>
     </div>
     
     <section class="max-lg:pb-10 lg:pb-20">
         <div class="container">
-            <h2 class="text-2xl">Connectors</h2>
+            <h2 class="text-2xl">{{t('Pages.QCheck.Section 5.Title')}}</h2>
 
             <div class="marquee overflow-hidden">
                 <div class="wrapper grid grid-flow-col auto-cols-[12rem] lg:auto-cols-[15rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
@@ -52,7 +52,7 @@
     
     <section class="max-lg:pb-10 lg:pb-20">
         <div class="container">
-            <h2 class="text-2xl">Why QCheck?</h2>
+            <h2 class="text-2xl">{{t('Pages.QCheck.Section 6.Title')}}</h2>
             <div>
                 <div class="table-wrapper">
                     <table class="custom-table">
@@ -71,14 +71,15 @@
         </div>
     </section>
     
-    <Accordion :data="faq" title="All You Need to Know" /> 
+    <Accordion :data="faq" :title="t('Pages.QCheck.Section 7.Title')" /> 
     
-    <BlueSection title="It’s All Just One Scan Away" subtitle="Create a modern, quick, and enjoyable dining experience with Qcheck’s intuitive features" buttonText="Request a Demo" buttonLink="/contact-us" image="/its-just-one-scan-away.webp"/>
+    <BlueSection :title="t('Pages.QCheck.Section 8.Title')" :subtitle="t('Pages.QCheck.Section 8.Description')" :buttonText="t('General.Buttons.Request a Demo')" buttonLink="/contact-us" image="/its-just-one-scan-away.webp"/>
     
     <PaymentSolutions />
 </template>
 
 <script setup>
+const { t, locale, setLocale } = useI18n()
 useSeoMeta({
     title: 'QCheck Verification | Secure Customer Screening',
     ogTitle: 'QCheck Verification | Secure Customer Screening',
@@ -90,35 +91,35 @@ useSeoMeta({
 
 const faq = [
     {
-        question: 'How does QCheck handle bill splitting?',
-        answer: 'Guests can divide their bills equally or itemize them with ease.'
+        question: t('Pages.QCheck.Section 7.Items[0].Question'),
+        answer: t('Pages.QCheck.Section 7.Items[0].Answer')
     },
     {
-        question: 'What payment methods are supported?',
-        answer: 'QCheck supports 100+ payment methods, including card and wallet payments.'
+        question: t('Pages.QCheck.Section 7.Items[1].Question'),
+        answer: t('Pages.QCheck.Section 7.Items[1].Answer')
     },
     {
-        question: 'How secure are the transactions?',
-        answer: 'QCheck ensures the highest level of security with PCI DSS compliance and encryption.'
+        question: t('Pages.QCheck.Section 7.Items[2].Question'),
+        answer: t('Pages.QCheck.Section 7.Items[2].Answer')
     },
     {
-        question: 'Does QCheck integrate with existing POS systems?',
-        answer: 'Yes, it integrates seamlessly for uninterrupted operations.'
+        question: t('Pages.QCheck.Section 7.Items[3].Question'),
+        answer: t('Pages.QCheck.Section 7.Items[3].Answer')
     },
     {
-        question: 'Is support available for setup and staff training?',
-        answer: 'Absolutely! We provide complete onboarding and training support to ensure success.'
+        question: t('Pages.QCheck.Section 7.Items[4].Question'),
+        answer: t('Pages.QCheck.Section 7.Items[4].Answer')
     }
 ]
 
 const why = [
-    ['Feature','QCheck','Traditional Checkout'],
-    ['Wait time','Less than 2 minutes','10+ minutes'],
-    ['Bill splitting','Division and itemized','Manual'],
-    ['Payment options','Diverse','Limited'],
-    ['Tipping','Increase tips','Average tips'],
-    ['Integration','Seamless POS integration','Basic integration'],
-    ['Customer satisfaction','High','Average']
+    [t('Pages.QCheck.Section 6.Items[0][0]'),t('Pages.QCheck.Section 6.Items[0][1]'),t('Pages.QCheck.Section 6.Items[0][2]')],
+    [t('Pages.QCheck.Section 6.Items[1][0]'),t('Pages.QCheck.Section 6.Items[1][1]'),t('Pages.QCheck.Section 6.Items[1][2]')],
+    [t('Pages.QCheck.Section 6.Items[2][0]'),t('Pages.QCheck.Section 6.Items[2][1]'),t('Pages.QCheck.Section 6.Items[2][2]')],
+    [t('Pages.QCheck.Section 6.Items[3][0]'),t('Pages.QCheck.Section 6.Items[3][1]'),t('Pages.QCheck.Section 6.Items[3][2]')],
+    [t('Pages.QCheck.Section 6.Items[4][0]'),t('Pages.QCheck.Section 6.Items[4][1]'),t('Pages.QCheck.Section 6.Items[4][2]')],
+    [t('Pages.QCheck.Section 6.Items[5][0]'),t('Pages.QCheck.Section 6.Items[5][1]'),t('Pages.QCheck.Section 6.Items[5][2]')],
+    [t('Pages.QCheck.Section 6.Items[6][0]'),t('Pages.QCheck.Section 6.Items[6][1]'),t('Pages.QCheck.Section 6.Items[6][2]')]
 ]
 const connectors = [
     {
@@ -155,72 +156,72 @@ const duplicatedMarqueeList = computed(() => [...connectors, ...connectors, ...c
 
 const sliderOne = [
     {
-        title: 'Faster Checkout',
-        description: 'Save up to 17 minutes per table for faster turnover with QCheck\'s seamless pay-at-table experience.',
+        title: t('Pages.QCheck.Section 2.Items[0].Title'),
+        description: t('Pages.QCheck.Section 2.Items[0].Description'),
         image: '/faster-checkout.webp',
-        category: 'Faster',
+        category: t('Pages.QCheck.Section 2.Items[0].Category'),
     },
     {
-        title: 'Seamless Experience',
-        description: 'Ensure a frictionless journey from menu browsing to bill payment, leaving guests happy and operations smooth.',
+        title: t('Pages.QCheck.Section 2.Items[1].Title'),
+        description: t('Pages.QCheck.Section 2.Items[1].Description'),
         image: '/seamless-experience.webp',
-        category: 'Seamless',
+        category: t('Pages.QCheck.Section 2.Items[1].Category'),
     },
     {
-        title: 'Simple and Secure Payments',
-        description: 'Offer confidence and peace of mind with multiple secure payment options, from mobile wallets to cards.',
+        title: t('Pages.QCheck.Section 2.Items[2].Title'),
+        description: t('Pages.QCheck.Section 2.Items[2].Description'),
         image: '/simple-and-secure-payments.webp',
-        category: 'Secure',
+        category: t('Pages.QCheck.Section 2.Items[2].Category'),
     },
     {
-        title: 'Multiple Payment Options',
-        description: 'Give guests flexibility with wallet payments, card payments, and many more, all in one hassle-free process',
+        title: t('Pages.QCheck.Section 2.Items[3].Title'),
+        description: t('Pages.QCheck.Section 2.Items[3].Description'),
         image: '/multiple-payment-options.webp',
-        category: 'Flexible',
+        category: t('Pages.QCheck.Section 2.Items[3].Category'),
     },
 ];
 
 const sliderTwo = [
     {
-        title: 'Scan the QR Code',
-        description: 'One code, two benefits! Guests can view your menu and pay the bill without waiting',
+        title: t('Pages.QCheck.Section 3.Items[0].Title'),
+        description: t('Pages.QCheck.Section 3.Items[0].Description'),
         image: '/scan-the-qr-code.webp',
-        category: 'Scan',
+        category: t('Pages.QCheck.Section 3.Items[0].Category'),
     },
     {
-        title: 'Split the Bill',
-        description: 'Simplify group payments with itemized or equal division options',
+        title: t('Pages.QCheck.Section 3.Items[1].Title'),
+        description: t('Pages.QCheck.Section 3.Items[1].Description'),
         image: '/split-the-bill.webp',
-        category: 'Split',
+        category: t('Pages.QCheck.Section 3.Items[1].Category'),
     },
     {
-        title: 'Add a Tip',
-        description: 'Triple staff tips with an easy in-app tipping option during payment',
+        title: t('Pages.QCheck.Section 3.Items[2].Title'),
+        description: t('Pages.QCheck.Section 3.Items[2].Description'),
         image: '/add-a-tip.webp',
-        category: 'Tip',
+        category: t('Pages.QCheck.Section 3.Items[2].Category'),
     },
     {
-        title: 'Pay the Bill',
-        description: 'Offer secure and versatile payment methods for fast, smooth transactions',
+        title: t('Pages.QCheck.Section 3.Items[3].Title'),
+        description: t('Pages.QCheck.Section 3.Items[3].Description'),
         image: '/pay-the-bill.webp',
-        category: 'Pay',
+        category: t('Pages.QCheck.Section 3.Items[3].Category'),
     },
 ];
 
 const sliderThree = [
     {
-        title: 'Sync Your POS',
-        description: 'Our team ensures seamless integration with your existing POS system',
+        title: t('Pages.QCheck.Section 4.Items[0].Title'),
+        description: t('Pages.QCheck.Section 4.Items[0].Description'),
         image: '/integration-1.webp',
     },
     {
-        title: 'Staff Training',
-        description: 'Comprehensive training equips your team to use QCheck effortlessly. ',
+        title: t('Pages.QCheck.Section 4.Items[1].Title'),
+        description: t('Pages.QCheck.Section 4.Items[1].Description'),
         image: '/integration-2.webp',
     },
     {
-        title: 'Fast Customer Checkout',
-        description: 'Your guests can immediately enjoy faster, smoother checkouts.',
+        title: t('Pages.QCheck.Section 4.Items[2].Title'),
+        description: t('Pages.QCheck.Section 4.Items[2].Description'),
         image: '/integration-3.webp',
     }
 ];

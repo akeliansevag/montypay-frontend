@@ -4,7 +4,7 @@
     <nav class="breadcrumbs">
         <ul>
             <li v-for="(breadcrumb, index) in breadcrumbs" :key="index">
-                <NuxtLink :to="breadcrumb.to">{{ breadcrumb.text }}</NuxtLink>
+                <NuxtLinkLocale :to="breadcrumb.to">{{ breadcrumb.text }}</NuxtLinkLocale>
             </li>
         </ul>
     </nav>

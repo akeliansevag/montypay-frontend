@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Hero breadcrumbs="Solutions / Payment Services" title="MontyPay Blog"
+        <Hero breadcrumbs="Solutions / Payment Services" :title="t('Pages.Blogs.Banner.Title')"
             paragraph="" button="Get Started"
             image="omnichannel" hero="33"/>
     </div>
@@ -8,6 +8,7 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
 useSeoMeta({
     title: 'MontyPay Blog | Payment Trends, Insights & Updates',
     ogTitle: 'MontyPay Blog | Payment Trends, Insights & Updates',
