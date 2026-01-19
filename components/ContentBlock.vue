@@ -8,7 +8,10 @@
             <h2 v-if="title" v-html="title"></h2>
             <h3 v-if="subtitle">{{ subtitle }}</h3>
         </template>
-        <p v-if="paragraph" v-html="paragraph"></p>
+        <div class="rtl:max-w-[500px]" :class="{'mx-auto': centerParagraph === true}">
+            <p v-if="paragraph" v-html="paragraph"></p>
+        </div>
+        
         <NuxtLinkLocale v-if="link" :to="link">
             <button v-if="button" class="mp-button-secondary" :class="{ 'self-center': center === true }">{{ button }} <Icon name="fa6-solid:arrow-right" class="icon rtl:rotate-180 transition-transform" /></button>
         </NuxtLinkLocale>
@@ -16,7 +19,7 @@
 </template>
 
 <script setup>
-    const props = defineProps(['isBanner', 'subtitle', 'title', 'paragraph', 'button', 'center','link']);
+    const props = defineProps(['isBanner', 'subtitle', 'title', 'paragraph', 'button', 'center','link', 'centerParagraph']);
 </script>
 
 <style lang="">

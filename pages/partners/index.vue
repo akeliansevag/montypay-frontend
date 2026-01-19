@@ -16,6 +16,7 @@
                             :paragraph="t('Pages.Partners.Section 2.Description')"
                             :button="t('General.Buttons.Get Started')"
                             :center="true"
+                            :centerParagraph="true"
                         />
                     </div>
                     <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center lg:items-center gap:10 lg:gap-32 w-full md:w-3/5 mx-auto mt-6">
@@ -60,6 +61,7 @@
                         :paragraph="t('Pages.Partners.Section 3.Description')"
                         button="Get Started"
                         :center=true
+                        :centerParagraph="true"
                     />
                 </div>
             </div>
@@ -71,6 +73,7 @@
                     <ContentBlock 
                         :title="t('Pages.Partners.Section 4.Title')"
                         :paragraph="t('Pages.Partners.Section 4.Description')"
+                        :centerParagraph="true"
                     />
                     
                     <NuxtPicture 
@@ -82,6 +85,7 @@
                     />
                     <ContentBlock 
                         :paragraph="t('Pages.Partners.Section 4.Description 2')"
+                        :centerParagraph="true"
                     />
                 </div>
             </div>
@@ -94,23 +98,24 @@
                         <ContentBlock 
                             :title="t('Pages.Partners.Section 5.Title')"
                             :paragraph="t('Pages.Partners.Section 5.Description')"
+                            :centerParagraph="true"
                         />
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-start lg:items-center gap-10 mt-6">
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/entrepreneurs1.svg" alt="Entrepreneurs" width="35" height="35" />
-                                {{t('Pages.Partners.Section 5.Items[0]')}}
+                                <span class="whitespace-nowrap">{{t('Pages.Partners.Section 5.Items[0]')}}</span>
                             </h4>  
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/freelancers.svg" alt="Freelancers" width="35" height="35" />
-                                {{t('Pages.Partners.Section 5.Items[1]')}}
+                                <span>{{t('Pages.Partners.Section 5.Items[1]')}}</span>
                             </h4>  
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/agencies.svg" alt="Agencies" width="35" height="35" />
-                                {{t('Pages.Partners.Section 5.Items[2]')}}
+                                <span>{{t('Pages.Partners.Section 5.Items[2]')}}</span>
                             </h4> 
                             <h4 class="flex flex-col justify-center items-center gap-2 bg-quaternary rounded-full font-semibold text-xl text-white py-6 px-14">
                                 <img src="/images/businesses.svg" alt="Businesses" width="35" height="35" />
-                                {{t('Pages.Partners.Section 5.Items[3]')}}
+                                <span>{{t('Pages.Partners.Section 5.Items[3]')}}</span>
                             </h4>  
                         </div>
                     </div>

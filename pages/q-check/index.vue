@@ -1,7 +1,7 @@
 <template>
     <section class="relative max-lg:py-10 lg:py-20">
 
-        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 end-0" />
+        <img src="/pattern.svg" alt="pattern" class="max-lg:hidden absolute -z-10 end-0 rtl:rotate-180" />
 
         <div class="container">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
@@ -41,7 +41,7 @@
             <h2 class="text-2xl">{{t('Pages.QCheck.Section 5.Title')}}</h2>
 
             <div class="marquee overflow-hidden">
-                <div class="wrapper grid grid-flow-col auto-cols-[12rem] lg:auto-cols-[15rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
+                <div class="wrapper grid grid-flow-col auto-cols-[12rem] lg:auto-cols-[15rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite] rtl:[animation-direction:reverse]">
                     <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
                         <img :src="marquee.image" :alt="marquee.title" />
                     </template>

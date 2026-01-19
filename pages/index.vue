@@ -14,7 +14,7 @@
         <section id="section-2" class="py-16 lg:py-36 bg-quaternary text-primary">
             <div class="container">
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
-                    <div class="flex flex-col gap-8 mt-16">
+                    <div class="flex flex-col gap-8">
                         <ContentBlock
                             :title="t('Pages.Homepage.Section 2.Title')"
                             :paragraph="t('Pages.Homepage.Section 2.Description')"
@@ -86,6 +86,7 @@
                     :title="t('Pages.Homepage.Section 3.Title')"
                     :paragraph="t('Pages.Homepage.Section 3.Description')"
                     class="text-center"
+                    :centerParagraph="true"
                 />
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0 items-start place-items-center mt-16 max-w-[1000px] mx-auto">
@@ -256,7 +257,7 @@
                         :imgAttrs="{class:'w-full h-full object-cover'}" 
                     />
 
-                    <div class="order-1 md:order-2 flex flex-col gap-8 mt-16">
+                    <div class="order-1 md:order-2 flex flex-col gap-8">
                         <ContentBlock
                             :title="t('Pages.Homepage.Section 6.Title')"
                             :paragraph="t('Pages.Homepage.Section 6.Description')"
@@ -398,12 +399,12 @@
                         </ClientOnly>
 
                         
-                        <div class="swiper-button-prev absolute top-1/2 -translate-y-1/2 start-0 rotate-180">
+                        <div class="swiper-button-prev absolute top-1/2 -translate-y-1/2 start-0 rotate-180 rtl:rotate-0">
                             <svg width="33" height="59" viewBox="0 0 33 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.80566 55.6069L29.2062 29.2064L2.80566 2.80593" stroke="white" stroke-width="5.61176" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <div class="swiper-button-next absolute top-1/2 -translate-y-1/2 end-0">
+                        <div class="swiper-button-next absolute top-1/2 -translate-y-1/2 end-0 rtl:rotate-180">
                             <svg width="33" height="59" viewBox="0 0 33 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.80566 55.6069L29.2062 29.2064L2.80566 2.80593" stroke="white" stroke-width="5.61176" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -436,80 +437,80 @@
     const testimonials = [
         { 
             icon: 'leia-k',
-            name: 'Leïa Khalaf',
-            position: 'Founder and Creative Director',
+            name: t("Pages.Homepage.Section 8.Items[0].Name"),
+            position: t("Pages.Homepage.Section 8.Items[0].Position"),
             stars: 5,
-            paragraph: '"I’m the founder and Creative Director of Leïa K, an everyday fine jewelry brand. My website is hosted by Montypay, and they’ve been exceptional, consistently delivering excellent service. Their team is proactive, responsive, and quick to resolve any issues."',
+            paragraph: t("Pages.Homepage.Section 8.Items[0].Paragraph"),
         },
         { 
             icon: 'cali-fragrances',
-            name: 'Carla Simonian',
-            position: 'Owner',
+            name: t("Pages.Homepage.Section 8.Items[1].Name"),
+            position: t("Pages.Homepage.Section 8.Items[1].Position"),
             stars: 5,
-            paragraph: '"It was an amazing experience so far. Thank you so much, and special thanks to the team for always assisting me."',
+            paragraph: t("Pages.Homepage.Section 8.Items[1].Paragraph"),
         },
         { 
             icon: 'dr-charles-shaer',
-            name: 'Charles Shaer',
-            position: 'Owner',
+            name: t("Pages.Homepage.Section 8.Items[2].Name"),
+            position: t("Pages.Homepage.Section 8.Items[2].Position"),
             stars: 5,
-            paragraph: '"MontyPay is very professional providing the best rates, flawless transactions, no issues or impediments using all their payment solutions online, locally, and internationally, and they facilitate everything down to the core.<br />Must also note that the customer support and client relations are exceptional, management and staff help make the whole experience smooth."',
+            paragraph: t("Pages.Homepage.Section 8.Items[2].Paragraph"),
         },
         { 
             icon: 'padel-house',
-            name: 'Rayan Aouad',
-            position: 'Chairman of the Board of Directors',
+            name: t("Pages.Homepage.Section 8.Items[3].Name"),
+            position: t("Pages.Homepage.Section 8.Items[3].Position"),
             stars: 5,
-            paragraph: '"Easy to use<br />Friendly employees<br />Easy on boarding"',
+            paragraph: t("Pages.Homepage.Section 8.Items[3].Paragraph"),
         },
         { 
             icon: 'high-motion-tourism-llc',
-            name: 'Olga Utkina',
-            position: 'General Manager',
+            name: t("Pages.Homepage.Section 8.Items[4].Name"),
+            position: t("Pages.Homepage.Section 8.Items[4].Position"),
             stars: 5,
-            paragraph: '"My company uses Monty pay for a long time. It’s very useful and convenient app. Fast customer support makes me feel safe."',
+            paragraph: t("Pages.Homepage.Section 8.Items[4].Paragraph"),
         },
         { 
             icon: 'drops',
-            name: 'Nada el Hassan',
-            position: 'Owner',
+            name: t("Pages.Homepage.Section 8.Items[5].Name"),
+            position: t("Pages.Homepage.Section 8.Items[5].Position"),
             stars: 5,
-            paragraph: '"MontyPay is fantastic!<br />The platform is easy to use, secure and accessible for all types of businesses. Their customer service is top-notch too. I highly recommend"',
+            paragraph: t("Pages.Homepage.Section 8.Items[5].Paragraph"),
         },
         { 
             icon: 'tania-travel',
-            name: 'Patricia Mougharbel',
-            position: 'Marketing Manager at Garo Boyadijian',
+            name: t("Pages.Homepage.Section 8.Items[6].Name"),
+            position: t("Pages.Homepage.Section 8.Items[6].Position"),
             stars: 5,
-            paragraph: '"The customer service at Monty Pay is exceptional, and their mobile app offers a seamless experience, providing clear explanations for all transactions. The team is incredibly helpful and responsive, always ready to address any questions. We are glad to be working together."',
+            paragraph: t("Pages.Homepage.Section 8.Items[6].Paragraph"),
         },
         { 
             icon: 'default',
-            name: 'Candice Wu',
-            position: 'Head of Design, Layers',
+            name: t("Pages.Homepage.Section 8.Items[7].Name"),
+            position: t("Pages.Homepage.Section 8.Items[7].Position"),
             stars: 5,
-            paragraph: '"Since 2014 when I started hosting events I was using paypal as a #payment #gateway to tickets which was the only quick option but I was always suffering from having people buying tickets online using #creditcards. I have certainly lost a lot of opportunities. I was always looking for new options but with no luck. TODAY, indeed our life became much easier with #fintech and #payments gateways #startups in the region. In less than a second I can be integrated and start selling online. Thanks Network International and MontyPay for your help today"',
+            paragraph: t("Pages.Homepage.Section 8.Items[7].Paragraph"),
         },
         { 
             icon: 'radulf',
-            name: 'Ralph Medawar',
-            position: 'Founder and Owner of Radulf',
+            name: t("Pages.Homepage.Section 8.Items[8].Name"),
+            position: t("Pages.Homepage.Section 8.Items[8].Position"),
             stars: 5,
-            paragraph: '"Montypay payment gateway has been an absolute game-changer for my online business. The flexibility and support from their staff made the integration process a breeze. Unlike other payment gateways, Montypay offers better deals and lower fees, which was a huge relief for me, especially coming from PayPal with its high fees. Living in Lebanon, finding a reliable and affordable payment gateway was a challenge, but Montypay exceeded my expectations. After two years of searching for a simpler and more cost-effective solution, I\'m thrilled to have finally found Montypay. I highly recommend Montypay to any business looking for a seamless payment processing experience."',
+            paragraph: t("Pages.Homepage.Section 8.Items[8].Paragraph"),
         },
         { 
             icon: 'cinqo-media',
-            name: 'Nawaf Alshafei',
-            position: 'Owner & Managing Director of Cinqo Media, Bahrain',
+            name: t("Pages.Homepage.Section 8.Items[9].Name"),
+            position: t("Pages.Homepage.Section 8.Items[9].Position"),
             stars: 5,
-            paragraph: '"I wanted to extend my sincere appreciation for the exceptional service and support you\'ve provided us. Your communication has been impeccable, making every interaction seamless and enjoyable. I\'m continually impressed by the quality of your products and services. MontyPay consistently exceeds expectations, the seamless integration, user-friendly interface, and reliability of your platform have significantly contributed to the efficiency and success of our operations. In a world where exceptional service is rare, MontyPay stands out as a beacon of excellence. Thank you for your dedication to excellence. We look forward to continuing our partnership and exploring new opportunities together."',
+            paragraph: t("Pages.Homepage.Section 8.Items[9].Paragraph"),
         },
         { 
             icon: 'default',
-            name: 'Moments Innovation',
-            position: 'Ayman Irshaid, Founder & CEO at Moments Innovation   ',
+            name: t("Pages.Homepage.Section 8.Items[10].Name"),
+            position: t("Pages.Homepage.Section 8.Items[10].Position"),
             stars: 5,
-            paragraph: '"Since 2014 when I started hosting events I was using paypal as a #payment #gateway to tickets which was the only quick option but I was always suffering from having people buying tickets online using #creditcards. I have certainly lost a lot of opportunities. I was always looking for new options but with no luck. TODAY, indeed our life became much easier with #fintech and #payments gateways #startups in the region. In less than a second I can be integrated and start selling online. Thanks Network International and MontyPay for your help today"',
+            paragraph: t("Pages.Homepage.Section 8.Items[10].Paragraph"),
         },
     ]
 

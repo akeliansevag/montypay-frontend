@@ -46,7 +46,7 @@
         </div>
     </Section>
     <Section class="relative">
-        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 end-0 -z-10 opacity-30" src="/images/smart-pos/bg.svg" alt="" />
+        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 end-0 -z-10 opacity-30 rtl:rotate-180 rtl:-scale-y-100" src="/images/smart-pos/bg.svg" alt="" />
         <div class="container">
             <div class="lg:1/2">
                     <SmallContent 
@@ -83,7 +83,7 @@
         </div>
     </Section>
     <section class="max-lg:pb-10 lg:pb-24 relative">
-        <img src="/images/smart-pos/bg2.svg" alt="" class="absolute max-lg:hidden lg:-top-1/3 start-0 -z-10 opacity-30">   
+        <img src="/images/smart-pos/bg2.svg" alt="" class="absolute max-lg:hidden lg:-top-1/3 start-0 -z-10 opacity-30 rtl:rotate-180 rtl:-scale-y-100">   
         <div class="container">
             <div class="flex max-lg:flex-col-reverse gap-10">
                 <div class="lg:w-1/2">
@@ -155,7 +155,7 @@
     </section>
 
     <Section class="relative">
-        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 end-0 -z-10 opacity-40" src="/images/smart-pos/bg.svg" alt="" />
+        <img class="absolute max-lg:top-auto max-lg:bottom-0 lg:-top-1/2 end-0 -z-10 opacity-40 rtl:rotate-180 rtl:-scale-y-100" src="/images/smart-pos/bg.svg" alt="" />
         <div class="container">
             <div class="flex max-lg:flex-col gap-10 lg:justify-between lg:items-center">
                 <div class="lg:w-1/2">

@@ -7,7 +7,7 @@
                     <div @click="setOpenIndex(index)" class="px-7 pt-5 pb-3 cursor-pointer flex justify-between gap-10 items-center">
                         <h4 class="text-xl font-bold">{{ item.question }}</h4>
                         <div class="w-5 h-5 shrink-0 rounded-full border-[2px] border-[#98A2B3] text-[#98A2B3] text-xl leading-none text-center flex items-center justify-center">
-                            <span :class="openIndex===index && '-mt-[2px]'">{{openIndex===index ? '-' : '+'}}</span>
+                            <span class="rtl:-mt-[2px]" :class="openIndex===index && 'ltr:-mt-[2px]'">{{openIndex===index ? '-' : '+'}}</span>
                         </div>
                     </div>
                     <div ref="answers" :style="getStyle(index)" class="px-7 overflow-hidden transition-all">

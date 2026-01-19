@@ -1,4 +1,4 @@
-<template lang="" dir="ltr">
+<template lang="">
 	<div class="circular-progress text-center text-base lg:text-base 2xl:text-xl mx-auto">
 		<div class="circular-progress-circle lg:w-[40vw] lg:h-[40vw]">
 			<!-- 51.42deg -->
@@ -18,11 +18,11 @@
 			<img src="/images/all-in-one-solution.svg" alt="Agencies" width="35" height="35" />
 			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 3') }}</span>
 		</div>
-		<div class="segment-item absolute top-[30%] left-[68%] z-10 flex flex-col items-center justify-center gap-4" count="6">
+		<div class="segment-item absolute top-[30%] left-[68%] rtl:top-[25%] rtl:left-[72%] z-10 flex flex-col items-center justify-center gap-4" count="6">
 			<img src="/images/higher-acceptance.svg" alt="Agencies" width="35" height="35" />
 			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 4') }}</span>
 		</div>
-		<div class="segment-item absolute top-[56%] left-[68%] z-10 flex flex-col items-center justify-center gap-4" count="0">
+		<div class="segment-item absolute top-[56%] left-[68%] rtl:top-[58%] rtl:left-[72%] z-10 flex flex-col items-center justify-center gap-4" count="0">
 			<img src="/images/global-coverage.svg" alt="Agencies" width="35" height="35" />
 			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 5') }}</span>
 		</div>
@@ -34,7 +34,7 @@
 			<img src="/images/24-7-support.svg" alt="Agencies" width="35" height="35" />
 			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 7') }}</span>
 		</div>
-		<div class="segment-item absolute top-[43%] left-[6%] z-10 flex flex-col items-center justify-center gap-4" count="3">
+		<div class="segment-item absolute top-[43%] left-[6%] rtl:left-[10%] z-10 flex flex-col items-center justify-center gap-4" count="3">
 			<img src="/images/loyalty-program-1.svg" alt="Agencies" width="35" height="35" />
 			<span>{{ t('Pages.Homepage.Section 7.List Items 1.Item 1') }}</span>
 		</div>

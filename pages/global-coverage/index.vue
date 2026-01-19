@@ -57,7 +57,7 @@
                     />
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-2 lg:gap-5 w-full lg:w-9/12 mt-16 lg:mt-36 mx-auto">
+                <div class="flex flex-wrap justify-center gap-2 lg:gap-5 w-full lg:w-9/12 mt-16 mx-auto">
                     <div
                         v-for="(country, index) in paymentData"
                         :key="index"

@@ -15,7 +15,7 @@
       :class="{ 'lg:py-8' : layout === 'header' }"
     >
       <div class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"></div>
-      <h5 class="nav-link">{{ label }}</h5>
+      <h5 class="nav-link whitespace-nowrap">{{ label }}</h5>
     </NuxtLinkLocale>
 
     <!-- Render <a> tag for external links (like PDFs) -->
@@ -53,8 +53,8 @@
     <!-- Handling child sections -->
     <ul
       v-if="hasChildren && navItemsVisible"
-      class="navigation flex flex-col gap-8 shadow-md"
-      :class="{ 'lg:absolute lg:top-full lg:start-0 lg:flex-row lg:w-max xl:ltr:-translate-x-1/2 rtl:translate-x-1/2 lg:translate-y-px lg:py-8 lg:px-4 ms-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible' : layout === 'header',
+      class="navigation flex flex-col gap-8"
+      :class="{ 'lg:absolute lg:top-full lg:start-0 lg:flex-row lg:w-max xl:ltr:-translate-x-[50px] xl:rtl:translate-x-[50px] lg:translate-y-px lg:py-8 lg:px-4 ms-4 xl:rounded-b-lg lg:invisible lg:group/edit lg:group-hover/item:visible shadow-md' : layout === 'header',
       '' : layout === 'footer'}"
     >
       <li v-for="(child, index) in children" :key="index">

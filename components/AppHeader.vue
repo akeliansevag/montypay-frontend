@@ -7,9 +7,9 @@
                 </NuxtLinkLocale>  
                 <div class="flex items-center gap-4 lg:gap-7">
                     <nav aria-label="Primary" class="nav hidden lg:block">
-                        <NavItemsWrapper layout="header" class="flex gap-8" />
+                        <NavItemsWrapper layout="header" class="flex max-xl:gap-4 xl:gap-8" />
                     </nav>
-                    <ul class="flex gap-2">
+                    <ul class="flex gap-2 max-lg:hidden">
                         <li class="flex items-center nav-link">
                             <NuxtLinkLocale class="nav-link bg-secondary rounded-lg px-4 py-2" to="https://portal.montypay.com/" target="_blank">
                                 <h5 class="nav-link">{{ t('General.Buttons.Log In')}}</h5>
@@ -22,15 +22,15 @@
                             v-for="lang in otherLocale"
                             :key="lang"
                             @click="changeLocale(lang)"
-                            class="language_switcher flex items-center nav-link cursor-pointer font-bold"
+                            class="language_switcher flex items-center px-4 py-2 hover:bg-secondary transition bg-white text-black rounded-lg nav-link cursor-pointer font-bold"
                             
                         >
-                            | {{ lang === 'en' ? 'EN' : 'AR' }}
+                            {{ lang === 'en' ? 'EN' : 'AR' }}
                         </h5>
                     </div>
 
                     <div @click="toggleNav" class="menu-btn block lg:hidden pt-1.5 pb-2.5 text-3xl cursor-pointer">
-                        <Icon v-if="!navVisible" name="fa7-solid:bars" class="icon text-lg" :class="$route.path !== '/' ? 'text-black': 'text-primary'" />
+                        <Icon v-if="!navVisible" name="fa7-solid:bars" class="icon text-lg" :class="($route.path !== '/' && $route.path !=='/ar') ? 'text-black': 'text-primary'" />
                         <Icon v-if="navVisible" name="fa7-solid:x" class="icon text-lg text-primary" />
                     </div>
                 </div>

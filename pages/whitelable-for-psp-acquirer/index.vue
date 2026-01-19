@@ -104,13 +104,13 @@
                     <ContentBlock 
                         :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Title 1')"
                         class="cursor-pointer"
-                        :class="activeTab === 0 ? 'text-primary' : 'text-primary/20'"
+                        :class="activeTab === 0 ? 'text-primary' : 'text-gray-700'"
                         @click="show(0)"
                     />
                     <ContentBlock 
                         :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Title 2')"
                         class="cursor-pointer"
-                        :class="activeTab === 1 ? 'text-primary' : 'text-primary/20'"
+                        :class="activeTab === 1 ? 'text-primary' : 'text-gray-700'"
                         @click="show(1)"
                     />
                 </div>
@@ -233,11 +233,9 @@
                         :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Description 2')"
                         class="text-primary mt-5"
                     />
-                    <div class="grid lg:grid-cols-3 gap-7 mt-16">
+                    <div class="grid lg:grid-cols-3 gap-7 mt-16 text-white">
                         <div class="bg-primary/5 p-10 rounded-lg lg:col-span-2 text-primary flex items-center">
-                            <ContentBlock 
-                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[0].Title')"
-                            />
+                            <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[0].Title')}}</h2>                          
                         </div>
 
                         <div class="bg-primary/5 p-10 rounded-lg">
@@ -255,11 +253,11 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <ContentBlock
-                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[1].Title')"
-                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[1].Description')" 
-                                class="text-primary mt-5"
-                            />
+                            <div class="text-primary mt-5">
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[1].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[1].Description')}}</p>
+                            </div>
+                           
                         </div>
 
                         <div class="bg-primary/5 p-10 rounded-lg">
@@ -284,11 +282,12 @@
                                 </svg>
 
                             </div>
-                            <ContentBlock 
-                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[2].Title')"
-                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[2].Description')" 
-                                class="text-primary mt-5"
-                            />
+                            <div class="text-primary mt-5">
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[2].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[2].Description')}}</p>
+                            </div>
+                            
+                            
                         </div>
 
                         <div class="bg-primary/5 p-10 rounded-lg">
@@ -307,11 +306,11 @@
                                     <path d="M46.9408 5.31455C46.7867 4.85242 46.4016 4.54433 45.9395 4.4673L42.3965 3.92814L40.779 0.693203C40.5479 0.231068 40.1628 0 39.6237 0C39.1615 0 38.6994 0.231068 38.4683 0.693203L36.8508 3.92814L33.3078 4.4673C32.8457 4.54433 32.4606 4.85242 32.3065 5.31455C32.1525 5.77668 32.3065 6.23882 32.6146 6.62393L35.1564 9.08865L34.5402 12.6317C34.4632 13.0938 34.6172 13.556 35.0023 13.864C35.3874 14.1721 35.9266 14.1721 36.3117 13.9411L39.4696 12.2466L42.6275 13.9411C42.7816 14.0181 43.0126 14.0951 43.2437 14.0951C43.4748 14.0951 43.7829 14.0181 44.0139 13.864C44.399 13.556 44.6301 13.0938 44.4761 12.6317L43.8599 9.08865L46.4016 6.62393C46.9408 6.23882 47.0948 5.77668 46.9408 5.31455Z" fill="#00DFDF"/>
                                 </svg>
                             </div>
-                            <ContentBlock
-                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[3].Title')" 
-                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[3].Description')" 
-                                class="text-primary mt-5"
-                            />
+                            <div class="text-primary mt-5">
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[3].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[3].Description')}}</p>
+                            </div>
+                           
                         </div>
 
                         <div class="bg-primary/5 p-10 rounded-lg">
@@ -326,11 +325,10 @@
                                     <path d="M43.1373 15.5523H23.6776C23.365 14.2237 22.1927 13.2078 20.8642 13.2078C19.3011 13.2078 17.9726 14.5363 17.9726 16.0994V29.6977C17.9726 30.0103 17.6599 30.3229 17.3473 30.3229C17.2692 30.3229 17.1129 30.3229 17.0347 30.0885C16.8784 29.7759 16.7221 29.307 16.5658 28.838C16.4095 28.4473 16.2532 28.1347 16.1751 27.8221C15.628 26.1809 13.8305 25.3212 12.1112 25.712C12.033 25.712 11.9549 25.712 11.8767 25.712C10.7826 26.0246 10.2356 27.1187 10.5482 28.1347V28.2128C11.4078 30.4011 12.033 32.5893 12.502 34.6212L13.3616 39.154C13.7524 40.6389 14.4557 41.8893 15.4717 42.9053L16.4877 43.8431V46.8129C16.4877 47.2818 16.8784 47.6725 17.3473 47.6725C17.8162 47.6725 18.207 47.2818 18.207 46.8129V43.4524C18.207 43.2179 18.1289 42.9834 17.9726 42.8271L16.7221 41.6549C15.9406 40.8734 15.3936 39.8574 15.081 38.7633L14.2213 34.3086C13.8305 32.1204 13.1272 29.9322 12.2675 27.6658C12.2675 27.5876 12.2675 27.4313 12.4238 27.4313C12.502 27.4313 12.502 27.4313 12.5801 27.4313C13.3616 27.1969 14.4557 27.5095 14.6902 28.4473C14.8465 28.838 15.0028 29.1506 15.081 29.5414C15.2373 30.0103 15.4717 30.5574 15.628 30.87C15.628 30.87 15.628 30.9481 15.7062 30.9481C16.2532 31.8859 17.0347 32.0423 17.5818 32.0423C18.8322 32.0423 19.9263 30.9481 19.9263 29.6977V16.1775C19.9263 15.5523 20.4734 15.0052 21.0986 15.0052C21.7238 15.0052 22.2709 15.5523 22.2709 16.1775V24.696V25.4775V28.4473C22.2709 28.9162 22.6616 29.307 23.1305 29.307C23.5995 29.307 23.9902 28.9162 23.9902 28.4473V25.4775V24.696C23.9902 24.3053 24.3028 23.9927 24.6936 23.9927H25.8658C26.1785 23.9927 26.4129 24.2271 26.4129 24.5397V26.1027C26.3348 26.259 26.3348 26.4935 26.3348 26.728V30.3229C26.3348 30.7918 26.7255 31.1826 27.1944 31.1826C27.6633 31.1826 28.0541 30.7918 28.0541 30.3229V28.9162C27.8196 28.6817 27.8196 28.6036 27.8196 28.4473V26.3372C27.8978 26.1809 28.0541 26.1027 28.2104 26.1027H29.539C29.8516 26.1027 30.086 26.3372 30.086 26.6498V29.1506V32.1204V32.9019C30.086 33.3708 30.4768 33.7616 30.9457 33.7616C31.4146 33.7616 31.8054 33.3708 31.8054 32.9019V32.1204V29.1506C31.8054 28.7599 32.118 28.4473 32.5087 28.4473H33.681C33.9936 28.4473 34.228 28.6817 34.228 28.9943V37.5128C34.228 39.3103 33.6028 41.1078 32.4306 42.4364L31.9617 42.9053C31.2583 43.6868 30.8675 44.7028 30.8675 45.7187V46.891C30.8675 47.3599 31.2583 47.7507 31.7272 47.7507C32.1961 47.7507 32.5869 47.3599 32.5869 46.891V45.7187C32.5869 44.9372 32.9776 44.3902 33.2121 44.0776L33.681 43.6087C35.1659 41.8893 35.9474 39.7011 35.9474 37.5128V28.9943C35.9474 27.7439 35.0096 26.8061 33.7591 26.8061H32.5087C32.2743 26.8061 32.0398 26.8843 31.8054 26.8843V26.6498C31.8054 25.3994 30.8675 24.4616 29.6171 24.4616H28.2885C28.1322 24.4616 27.9759 24.4616 27.8196 24.5397C27.8196 23.2893 26.8037 22.3515 25.6314 22.3515H24.4591C24.2247 22.3515 23.9902 22.4296 23.7558 22.4296V17.2716H43.1373C43.6062 17.2716 43.997 16.8809 43.997 16.412C43.997 15.9431 43.6062 15.5523 43.1373 15.5523Z" fill="#0F0C22"/>
                                 </svg>
                             </div>
-                            <ContentBlock 
-                                :title="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[4].Title')" 
-                                :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[4].Description')" 
-                                class="text-primary mt-5"
-                            />
+                            <div class="text-primary mt-5">
+                                <h2 class="text-[32px]">{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[4].Title')}}</h2>
+                                <p>{{t('Pages.Whitelabel For PSP Acquirer.Section 4.Items 2[4].Description')}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -344,7 +342,8 @@
                 <ContentBlock 
                     :title="t('Pages.Whitelabel For PSP Acquirer.Section 5.Title')" 
                     :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 5.Description')" 
-                    class="text-center lg:w-1/2 mx-auto" 
+                    class="text-center lg:w-1/2 mx-auto"
+                    :centerParagraph="true"
                 />
                 <div class="my-16">
                     <swiper-container
@@ -517,6 +516,7 @@
                         :title="t('Pages.Whitelabel For PSP Acquirer.Section 13.Title')"
                         :paragraph="t('Pages.Whitelabel For PSP Acquirer.Section 13.Description')"
                         class="text-center"
+                        :centerParagraph="true"
                     />
                 </div>
             </div>

@@ -36,55 +36,56 @@
 </template>
 
 <script setup>
+    const { t, locale, setLocale } = useI18n()
     import { register } from 'swiper/element/bundle';
     register(); 
     const our_offices = [
         {
             icon: 'LB',
-            location: 'Beirut, Lebanon',
-            address: '3rd Floor, Bloc A, <br />Gefinor Center, Beirut, Lebanon',
+            location: t('Map.Items[0].Location'),
+            address: t('Map.Items[0].Address'),
             top: '39.8',
             left: '57.7',
         },
         {
             icon: 'UK',
-            location: 'London, UK',
-            address: 'Beaumont Bridge House, <br /> 181 Queen Victoria Street',
+            location: t('Map.Items[1].Location'),
+            address: t('Map.Items[1].Address'),
             top: '26',
             left: '47.8',
         },
         {
             icon: 'JO',
-            location: 'Amman, Jordan',
-            address: 'Office 501, Campbell Grey Living, <br /> Land Number 851, Al-Waibdeh <br /> - Al- Wastani Basin',
+            location: t('Map.Items[2].Location'),
+            address: t('Map.Items[2].Address'),
             top: '41.5',
             left: '58.3',
         },
         {
             icon: 'AE',
-            location: 'Dubai, UAE',
-            address: 'Unit 30, floor 20, <br /> Central Park Tower, DIFC',
+            location: t('Map.Items[3].Location'),
+            address: t('Map.Items[3].Address'),
             top: '46',
             left: '63.2',
         },
         {
             icon: 'ID',
-            location: 'Jakarta, Indonesia',
-            address: '9th Floor Noble House Building, <br /> Lingkar Mega Kuningan, Kuningan, <br /> Kuningan Timur, Setiabudi, <br /> Jakarta Selatan, Jakarta 12950',
+            location: t('Map.Items[4].Location'),
+            address: t('Map.Items[4].Address'),
             top: '62',
             left: '77',
         },
         {
             icon: 'NG',
-            location: 'Lagos, Nigeria',
-            address: '1st floor, Sigma Base, <br /> 7/9 Molade Okoya Thomas Street, <br /> Victoria Island, Lagos State, Nigeria.',
+            location: t('Map.Items[5].Location'),
+            address: t('Map.Items[5].Address'),
             top: '54.9',
             left: '49.8',
         },
         {
             icon: 'SA',
-            location: 'Riyadh, KSA',
-            address: 'Al Olaya Street, Building #62, <br /> 1st Floor, Riyadh, KSA',
+            location: t('Map.Items[6].Location'),
+            address: t('Map.Items[6].Address'),
             top: '50',
             left: '61',
         }

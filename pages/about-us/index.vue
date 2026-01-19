@@ -10,7 +10,7 @@
         <section id="section-2" class="pt-16 lg:pt-36">
             <div class="container">
                 <div class="flex flex-col">
-                    <div class="w-full lg:w-2/3 ps-0 lg:ps-28">
+                    <div class="w-full lg:w-2/3 ps-0">
                         <ContentBlock 
                             :title="t('Pages.About Us.Section 2.Title')"
                             :paragraph="t('Pages.About Us.Section 2.Description')"
@@ -31,6 +31,7 @@
                     class="text-center lg:w-1/2 mx-auto"
                     :title="t('Pages.About Us.Section 4.Title')"
                     :paragraph="t('Pages.About Us.Section 4.Description')"
+                    :centerParagraph="true"
                 />
             </div>
             <div class="w-full md:w-3/4 mx-auto mt-16 lg:mt-32">
@@ -41,10 +42,11 @@
         <section id="section-5" class="pt-16 lg:pt-36">
             <div class="container">
                 <div class="flex flex-col">
-                    <div class="w-full lg:w-2/3 ps-0 lg:ps-28">
+                    <div class="w-full lg:w-2/3 ps-0">
                         <ContentBlock 
                             :title="t('Pages.About Us.Section 5.Title')"
                             :paragraph="t('Pages.About Us.Section 5.Description')"
+
                         />
                         <ContentBlock
                             class="mt-10"
@@ -79,6 +81,7 @@
                             class="lg:w-1/2"
                             :title="t('Pages.About Us.Section 8.Title 1')"
                             :paragraph="t('Pages.About Us.Section 8.Description 1')"
+                            :centerParagraph="true"
                         />
                     </div>
                     <div class="group w-full bg-[#f6f6f6] p-10 rounded-lg text-center flex flex-col gap-5 items-center hover:bg-quaternary hover:text-white">

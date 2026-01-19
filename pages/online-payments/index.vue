@@ -167,13 +167,13 @@
             <div class="flex max-lg:flex-col gap-7 lg:mt-24 max-lg:mt-10">
                 <div class="w-full bg-[#E9ECF4D9] lg:min-h-[360px] rounded-md p-8 items-center justify-center flex">
                     <div class="flex flex-col gap-10">
-                        <img class="mx-auto max-w-[400px] drop-shadow-xl w-full" src="/omnichannel-solution.webp" alt="Omnichannel Solution">
+                        <img class="mx-auto h-[100px] drop-shadow-xl w-full" src="/omnichannel-solution.webp" alt="Omnichannel Solution">
                         <h3 class="text-2xl text-center font-bold">{{t('Pages.Online Payments.Section 6.Cards 1[0].Title')}}</h3>
                     </div>
                 </div>
-                <div class="w-full bg-[#E9ECF4D9] lg:min-h-[360px] rounded-md p-8 items-center justify-center flex">
+                <div class="w-full bg-[#E9ECF4D9] lg:min-h-[360px]  rounded-md p-8 items-center justify-center flex">
                     <div class="flex flex-col gap-10">
-                        <img class="mx-auto max-w-[400px] w-full" src="/unified-solution2.webp" alt="Unified Solution">
+                        <img class="mx-auto h-[100px] w-full" src="/unified-solution2.webp" alt="Unified Solution">
                         <h3 class="text-2xl text-center font-bold">{{t('Pages.Online Payments.Section 6.Cards 1[1].Title')}}</h3>
                     </div>
                 </div>

@@ -10,7 +10,7 @@
 			"Omnichannel Solutions": "Omnichannel Solutions",
 			"Online Payments": "Online Payments",
 			"Smart Pos": "Smart Pos",
-			"Soft Pos": "soft Pos",
+			"Soft Pos": "Soft Pos",
 			"Qcheck": "Qcheck",
 			"Digital services": "Digital services",
 			"eCommerce Services": "eCommerce Services",
@@ -251,7 +251,64 @@
 				}
 			},
 			"Section 8": {
-				"Title": "Customer Stories"
+				"Title": "Customer Stories",
+				"Items": [
+					{ 
+						"Name": "Leïa Khalaf",
+						"Position": "Founder and Creative Director",
+						"Paragraph": "\"I’m the founder and Creative Director of Leïa K, an everyday fine jewelry brand. My website is hosted by Montypay, and they’ve been exceptional, consistently delivering excellent service. Their team is proactive, responsive, and quick to resolve any issues.\""
+					},
+					{ 
+						"Name": "Carla Simonian",
+						"Position": "Owner",
+						"Paragraph": "\"It was an amazing experience so far. Thank you so much, and special thanks to the team for always assisting me.\""
+					},
+					{ 
+						"Name": "Charles Shaer",
+						"Position": "Owner",
+						"Paragraph": "\"MontyPay is very professional providing the best rates, flawless transactions, no issues or impediments using all their payment solutions online, locally, and internationally, and they facilitate everything down to the core.<br />Must also note that the customer support and client relations are exceptional, management and staff help make the whole experience smooth.\""
+					},
+					{ 
+						"Name": "Rayan Aouad",
+						"Position": "Chairman of the Board of Directors",
+						"Paragraph": "\"Easy to use<br />Friendly employees<br />Easy on boarding\""
+					},
+					{ 
+						"Name": "Olga Utkina",
+						"Position": "General Manager",
+						"Paragraph": "\"My company uses Monty pay for a long time. It’s very useful and convenient app. Fast customer support makes me feel safe.\""
+					},
+					{ 
+						"Name": "Nada el Hassan",
+						"Position": "Owner",
+						"Paragraph": "\"MontyPay is fantastic!<br />The platform is easy to use, secure and accessible for all types of businesses. Their customer service is top-notch too. I highly recommend\""
+					},
+					{ 
+						"Name": "Patricia Mougharbel",
+						"Position": "Marketing Manager at Garo Boyadijian",
+						"Paragraph": "\"The customer service at Monty Pay is exceptional, and their mobile app offers a seamless experience, providing clear explanations for all transactions. The team is incredibly helpful and responsive, always ready to address any questions. We are glad to be working together.\""
+					},
+					{ 
+						"Name": "Candice Wu",
+						"Position": "Head of Design, Layers",
+						"Paragraph": "\"Since 2014 when I started hosting events I was using paypal as a #payment #gateway to tickets which was the only quick option but I was always suffering from having people buying tickets online using #creditcards. I have certainly lost a lot of opportunities. I was always looking for new options but with no luck. TODAY, indeed our life became much easier with #fintech and #payments gateways #startups in the region. In less than a second I can be integrated and start selling online. Thanks Network International and MontyPay for your help today\""
+					},
+					{ 
+						"Name": "Ralph Medawar",
+						"Position": "Founder and Owner of Radulf",
+						"Paragraph": "\"Montypay payment gateway has been an absolute game-changer for my online business. The flexibility and support from their staff made the integration process a breeze. Unlike other payment gateways, Montypay offers better deals and lower fees, which was a huge relief for me, especially coming from PayPal with its high fees. Living in Lebanon, finding a reliable and affordable payment gateway was a challenge, but Montypay exceeded my expectations. After two years of searching for a simpler and more cost-effective solution, I\"m thrilled to have finally found Montypay. I highly recommend Montypay to any business looking for a seamless payment processing experience.\""
+					},
+					{ 
+						"Name": "Nawaf Alshafei",
+						"Position": "Owner & Managing Director of Cinqo Media, Bahrain",
+						"Paragraph": "\"I wanted to extend my sincere appreciation for the exceptional service and support you\"ve provided us. Your communication has been impeccable, making every interaction seamless and enjoyable. I\"m continually impressed by the quality of your products and services. MontyPay consistently exceeds expectations, the seamless integration, user-friendly interface, and reliability of your platform have significantly contributed to the efficiency and success of our operations. In a world where exceptional service is rare, MontyPay stands out as a beacon of excellence. Thank you for your dedication to excellence. We look forward to continuing our partnership and exploring new opportunities together.\""
+					},
+					{ 
+						"Name": "Moments Innovation",
+						"Position": "Ayman Irshaid, Founder & CEO at Moments Innovation   ",
+						"Paragraph": "\"Since 2014 when I started hosting events I was using paypal as a #payment #gateway to tickets which was the only quick option but I was always suffering from having people buying tickets online using #creditcards. I have certainly lost a lot of opportunities. I was always looking for new options but with no luck. TODAY, indeed our life became much easier with #fintech and #payments gateways #startups in the region. In less than a second I can be integrated and start selling online. Thanks Network International and MontyPay for your help today\""
+					}
+				]
 			},
 			"Seo": {
 				"Title": "All-in-One Payment Platform | Global Payment Solutions",

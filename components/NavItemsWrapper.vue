@@ -7,6 +7,12 @@
         <NavItem :header="true" :footer="true" :layout="layout" to="/contact-us" :label="t('General.Links.Contact')" />
         <NavItem :header="true" :footer="true" :layout="layout" to="/faq" :label="t('General.Links.FAQ')" />
         <NavItem v-if="layout=='footer'" :header="false" :footer="true" :layout="layout" :label="t('General.Links.Legal')" :children="legalSections" />
+        <div class="lg:hidden">
+            <NuxtLinkLocale class="nav-link inline-block bg-secondary rounded-lg px-4 py-2" to="https://portal.montypay.com/" target="_blank">
+                <h5 class="nav-link">{{ t('General.Buttons.Log In')}}</h5>
+            </NuxtLinkLocale>
+        </div>
+        
     </ul>
 </template>
 

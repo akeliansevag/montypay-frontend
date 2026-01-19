@@ -11,6 +11,7 @@
             <ContentBlock 
                 :title="t('Pages.Documentation.Section 2.Title')"
                 :paragraph="t('Pages.Documentation.Section 2.Description')"
+                :centerParagraph="true"
             />
             <NuxtLinkLocale class="mt-5 inline-block text-[#00DFDF] underline" to="https://github.com/MontyPayAPI" target="_blank" external>https://github.com/MontyPayAPI </NuxtLinkLocale>
         </div>
