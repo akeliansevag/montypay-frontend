@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="lg:w-[50%]">
-                    <img src="/accept-payments-anywhere-banner.webp" alt="QCheck Banner Image" />
+                    <img src="/online-payments-banner.webp" alt="QCheck Banner Image" />
                 </div>
             </div>
         </div>
