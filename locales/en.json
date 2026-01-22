@@ -1436,6 +1436,151 @@
 				"Default Message": ""
 			}
 		},
+		"eCommerce": {
+			"Banner": {
+				"Title": "Build Your Brand Online  With Your Trusted <i>shopify</i> Partner",
+				"Description": "End-to-end solutions for startups, growing brands, and large enterprises looking to strengthen their online presence.",
+				"Button Text": "Get a Free Audit"
+			},
+			"Section 2": {
+				"Title": "Building Strong Online Brands with Seamless Payments",
+				"Description": "MontyPay delivers complete eCommerce solutions designed for performance, scalability, and global reach. From early-stage startups to established enterprises, MontyPay equips every business with the tools needed to build, launch, and scale."
+			},
+			"Section 3": {
+				"Title": "",
+				"Description": "",
+				"Items": [
+					{
+						"Title": "Custom Shopify theme design"
+					},
+					{
+						"Title": "User-friendly layout and navigation "
+					},
+					{
+						"Title": "Mobile-optimized structure "
+					},
+					{
+						"Title": "High-performance product pages "
+					},
+					{
+						"Title": "Tailored Checkout that converts "
+					},
+					{
+						"Title": "Localization for international markets "
+					}
+				]
+			},
+			"Section 4": {
+				"Title": "Payment Gateway Integration",
+				"Description": "Seamless, secure, and multi-currency payments powered by MontyPay. Businesses can accept card and wallet payments globally with a fully integrated MontyPay  checkout designed for speed, reliability, and increased conversions.",
+				"Items": [
+					{
+						"Title": "Multi-currency support "
+					},
+					{
+						"Title": "Fast processing & real-time reporting "
+					},
+					{
+						"Title": "Fraud protection "
+					},
+					{
+						"Title": "Local & international payment methods "
+					},
+					{
+						"Title": "Smooth integration with Shopify and custom websites "
+					}
+				]
+			},
+			"Section 5": {
+				"Title": "Website Audit & Cost Analysis ",
+				"Description": "Comprehensive evaluation to understand business needs, platform requirements, and cost structure. MontyPay provides clear, data-backed insights to help businesses plan their eCommerce scale efficiently. ",
+				"Items": [
+					{
+						"Title": "UX & design recommendations "
+					},
+					{
+						"Title": "Performance & speed checks "
+					},
+					{
+						"Title": "SEO readiness "
+					},
+					{
+						"Title": "TCO Analysis"
+					},
+					{
+						"Title": "Cost breakdown & timeline guidance "
+					}
+				]
+			},
+			"Section 6": {
+				"Title": "Full-Service Digital Growth",
+				"Description": "End-to-end digital marketing solutions to grow online visibility and convert more customers.",
+				"Items": [
+					{
+						"Title": "Performance marketing"
+					},
+					{
+						"Title": "Content creation & brand storytelling"
+					},
+					{
+						"Title": "SEO strategy & implementation"
+					},
+					{
+						"Title": "Social media management"
+					},
+					{
+						"Title": "Campaign performance reporting"
+					}
+				]
+			},
+			"Section 7": {
+				"Title": "Designed to increase traffic, strengthen brand presence, and boost online sales."
+			},
+			"Section 8": {
+				"Title": "One Partner Tailoring Solutions For Your Business",
+				"Description": "MontyPay offers a fully connected ecosystem that brings eCommerce, payments, and digital growth together."
+			},
+			"Section 9": {
+				"Title": "Our Clients"
+			},
+			"Section 10": {
+				"Title": "All You Need to Know",
+				"Items": [
+					{
+						"Question": "Can I customize the design of my online store?",
+						"Answer": "Absolutely. We build a website that reflects your brand’s personality and vision"
+					},
+					{
+						"Question": "How can I accept payments on my e-commerce store?",
+						"Answer": "With MontyPay’s integrated, secure payment gateway, you can accept payments with ease."
+					},
+					{
+						"Question": "Is my checkout secure?",
+						"Answer": "Yes, MontyPay is PCI DSS-certified, ensuring top-tier security."
+					},
+					{
+						"Question": "Can I integrate more than one language?",
+						"Answer": "Yes, we offer multi-language support for a truly global reach."
+					},
+					{
+						"Question": "Can I use multiple currencies?",
+						"Answer": "Definitely! We support payments in multiple currencies to cater to customers around the world."
+					},
+					{
+						"Question": "Is the website mobile-friendly?",
+						"Answer": "Absolutely! We ensure your website is fully responsive, providing a seamless experience across all devices."
+					},
+					{
+						"Question": "How many payment options are supported?",
+						"Answer": "Over 100, including credit cards, digital wallets, and even cryptocurrency."
+					}
+				]
+			},
+			"Section 11": {
+				"Title": "Unified Dashboard for eCommerce Performance",
+				"Description": "All website transactions, analytics, and payment activity accessible through MontyPay’s unified dashboard. Businesses gain clear insight into their online performance in real time, accessible via web and mobile for full flexibility."
+			}
+		},
 		"Payment Orchestration Network": {
 			"Banner": {
 				"Title": "Payment Orchestration Network",

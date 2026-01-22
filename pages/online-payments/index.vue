@@ -204,7 +204,7 @@
                     <p class="text-xl font-normal mt-10">{{t('Pages.Online Payments.Section 6.Description 3')}}</p>
                 </div>
                 <div class="w-full">
-                    <img class="w-full" src="/unified-solution-for.webp" alt="Unified Solution">
+                    <img class="" src="/unified-solution-for.webp" alt="Unified Solution">
                 </div>
             </div>
         </div>

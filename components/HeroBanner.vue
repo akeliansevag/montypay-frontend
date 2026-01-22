@@ -8,7 +8,7 @@
                 <NuxtPicture priority
                     format="webp" 
                     :src="`/images/${ image }.webp`" 
-                    :imgAttrs="{class:'w-full lg:h-full lg:w-auto'}" 
+                    :imgAttrs="{class:'w-full lg:h-full'}" 
                 />
             </div>
             <div class="flex w-full lg:w-1/2">

@@ -45,7 +45,7 @@
 
                     <NuxtPicture priority
                         format="webp" 
-                        src="/images/all-in-one-platform.png" 
+                        src="/images/all-in-one-platform.webp" 
                         class="w-full lg:w-3/5"
                         :imgAttrs="{class:'w-full h-full object-cover'}" 
                     />

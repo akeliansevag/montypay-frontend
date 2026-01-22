@@ -392,7 +392,7 @@
                         <NuxtPicture 
                             priority
                             format="webp" 
-                            src="/images/efficient-data-insights.png" 
+                            src="/images/efficient-data-insights.webp" 
                             :imgAttrs="{class:'w-full mx-auto'}" 
                         />
                     </div>
