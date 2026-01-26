@@ -6,10 +6,10 @@
         <div class="ms-container-align with-padding">
             <div class="flex max-lg:flex-col max-lg:gap-8 items-center lg:justify-between">
                 <div class="lg:w-[40%] flex flex-col gap-6 lg:gap-12">
-                    <h1 class="text-3xl lg:text-5xl leading-[1.3] lg:!leading-[1.5]">Build Your Brand Online  With Your Trusted <i>shopify</i> Partner </h1>
-                    <p class="text-xl">End-to-end solutions for startups, growing brands, and large enterprises looking to strengthen their online presence. </p>
+                    <h1 class="text-3xl lg:text-5xl leading-[1.3] lg:!leading-[1.5]" v-html="t('Pages.eCommerce.Banner.Title')" />
+                    <p class="text-xl">{{ t('Pages.eCommerce.Banner.Description') }}</p>
                     <div>
-                        <NuxtLinkLocale to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">Get a Free Audit</NuxtLinkLocale>  
+                        <NuxtLinkLocale to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">{{ t('Pages.eCommerce.Banner.Button Text') }}</NuxtLinkLocale>  
                     </div>
                 </div>
                 <div class="lg:w-[50%]">
@@ -22,8 +22,8 @@
     <section>
         <div class="container">
             <div class="max-w-[1130px]">
-                <h2 class="text-3xl mb-2">Building Strong Online Brands with Seamless Payments </h2>
-                <p>MontyPay delivers complete eCommerce solutions designed for performance, scalability, and global reach. From early-stage startups to established enterprises, MontyPay equips every business with the tools needed to build, launch, and scale. </p> 
+                <h2 class="text-3xl mb-2">{{ t('Pages.eCommerce.Section 2.Title') }}</h2>
+                <p>{{ t('Pages.eCommerce.Section 2.Description') }}</p> 
             </div>
            
         </div>
@@ -63,7 +63,7 @@
                 <img src="/ecommerce-section-bg.webp" class="w-full h-full absolute top-0 left-0 object-cover"/>
                 <div class="bg-[#003383]/75 backdrop-blur-[4px] absolute w-full h-full z-10"></div>
                 <div class="relative z-20 lg:max-w-[80%]">
-                    <h2 class="text-white text-center font-medium text-balance text-3xl">Designed to increase traffic, strengthen brand presence, and boost online sales. </h2>
+                    <h2 class="text-white text-center font-medium text-balance text-3xl">{{ t('Pages.eCommerce.Section 7.Title') }}</h2>
                 </div>
             </div>
         </div>
@@ -72,8 +72,8 @@
     <section class="pb-16 pt-10">
         <div class="container">
             <div class="max-w-[800px] mx-auto text-center">
-                <h3 class="text-2xl font-bold mb-2 text-balance">One Partner Tailoring Solutions For Your Business </h3>
-                <p>MontyPay offers a fully connected ecosystem that brings eCommerce, payments, and digital growth together. </p>
+                <h3 class="text-2xl font-bold mb-2 text-balance">{{ t('Pages.eCommerce.Section 8.Title') }}</h3>
+                <p>{{ t('Pages.eCommerce.Section 8.Description') }}</p>
             </div>
             <img class="mx-auto mt-16" src="/one-partner.webp" />
             
@@ -82,7 +82,7 @@
 
     <div class="lg:py-16 max-lg:py-10">
         <div class="container">
-            <h2 class="text-2xl font-bold text-center">{{t('Pages.eCommerce Services.Section 8.Title')}}</h2>
+            <h2 class="text-2xl font-bold text-center">{{t('Pages.eCommerce.Section 9.Title')}}</h2>
 
             <div class="marquee1 overflow-hidden mt-10">
                 <div class="wrapper grid grid-flow-col auto-cols-[8rem] lg:auto-cols-[18rem] justify-items-center items-center mt-10 animate-[marquee1_20s_linear_infinite] lg:animate-[marquee1lg_20s_linear_infinite] rtl:[animation-direction:reverse]"">
@@ -97,10 +97,10 @@
     </div>
     <div class="separator mb-0"></div>
 
-    <Accordion :data="faq" :title="t('Pages.eCommerce Services.Section 7.Title')" /> 
+    <Accordion :data="faq" :title="t('Pages.eCommerce.Section 10.Title')" /> 
     
     
-    <BlueSection title="Unified Dashboard for eCommerce Performance " subtitle="All website transactions, analytics, and payment activity accessible through MontyPay’s unified dashboard. Businesses gain clear insight into their online performance in real time, accessible via web and mobile for full flexibility." :buttonText="t('General.Buttons.Request a Demo')" buttonLink="https://prechecklist.montypay.com/website" target="_blank" image="/unified-dashboard.webp"/>
+    <BlueSection :title="t('Pages.eCommerce.Section 11.Title')" :subtitle="t('Pages.eCommerce.Section 11.Description')" :buttonText="t('General.Buttons.Request a Demo')" buttonLink="https://prechecklist.montypay.com/website" target="_blank" image="/unified-dashboard.webp"/>
     
     <PaymentSolutions />
 </template>
@@ -135,114 +135,114 @@ useHead({
 
 const items = [
     {
-        title: 'Shopify Website Design & Development ',
-        description: 'Modern, responsive, and conversion-focused eCommerce stores built for both B2B and B2C. MontyPay creates scalable online stores that reflect each brand’s identity and deliver smooth shopping experiences across all channels. ',
+        title: t('Pages.eCommerce.Section 3.Title'),
+        description: t('Pages.eCommerce.Section 3.Description'),
         image: '/shopify-website.webp',
         items: [
             {
                 svg: '/shopify-website-1.svg',
-                title: 'Custom Shopify theme design'
+                title: t('Pages.eCommerce.Section 3.Items[0].Title')
             },
             {
                 svg: '/shopify-website-2.svg',
-                title: 'User-friendly layout and navigation '
+                title: t('Pages.eCommerce.Section 3.Items[1].Title')
             },
             {
                 svg: '/shopify-website-3.svg',
-                title: 'Mobile-optimized structure '
+                title: t('Pages.eCommerce.Section 3.Items[2].Title')
             },
             {
                 svg: '/shopify-website-4.svg',
-                title: 'High-performance product pages '
+                title: t('Pages.eCommerce.Section 3.Items[3].Title')
             },
             {
                 svg: '/shopify-website-5.svg',
-                title: 'Tailored Checkout that converts '
+                title: t('Pages.eCommerce.Section 3.Items[4].Title')
             },
             {
                 svg: '/shopify-website-6.svg',
-                title: 'Localization for international markets '
+                title: t('Pages.eCommerce.Section 3.Items[5].Title')
             }
         ]
     },
     {
-        title: 'Payment Gateway Integration ',
-        description: 'Seamless, secure, and multi-currency payments powered by MontyPay. Businesses can accept card and wallet payments globally with a fully integrated MontyPay  checkout designed for speed, reliability, and increased conversions. ',
+        title: t('Pages.eCommerce.Section 4.Title'),
+        description: t('Pages.eCommerce.Section 4.Description'),
         image: '/payment-gateway-integration.webp',
         items: [
             {
                 svg: '/payment-gateway-integration-1.svg',
-                title: 'Multi-currency support '
+                title: t('Pages.eCommerce.Section 4.Items[0].Title')
             },
             {
                 svg: '/payment-gateway-integration-2.svg',
-                title: 'Fast processing & real-time reporting '
+                title: t('Pages.eCommerce.Section 4.Items[1].Title')
             },
             {
                 svg: '/payment-gateway-integration-3.svg',
-                title: 'Fraud protection '
+                title: t('Pages.eCommerce.Section 4.Items[2].Title')
             },
             {
                 svg: '/payment-gateway-integration-5.svg',
-                title: 'Local & international payment methods '
+                title: t('Pages.eCommerce.Section 4.Items[3].Title')
             },
             {
                 svg: '/payment-gateway-integration-6.svg',
-                title: 'Smooth integration with Shopify and custom websites '
+                title: t('Pages.eCommerce.Section 4.Items[4].Title')
             }
         ]
     },
     {
-        title: 'Website Audit & Cost Analysis ',
-        description: 'Comprehensive evaluation to understand business needs, platform requirements, and cost structure. MontyPay provides clear, data-backed insights to help businesses plan their eCommerce scale efficiently. ',
+        title: t('Pages.eCommerce.Section 5.Title'),
+        description: t('Pages.eCommerce.Section 5.Description'),
         image: '/website-audit.webp',
         items: [
             {
                 svg: '/website-audit-1.svg',
-                title: 'UX & design recommendations '
+                title: t('Pages.eCommerce.Section 5.Items[0].Title')
             },
             {
                 svg: '/website-audit-2.svg',
-                title: 'Performance & speed checks '
+                title: t('Pages.eCommerce.Section 5.Items[1].Title')
             },
             {
                 svg: '/website-audit-3.svg',
-                title: 'SEO readiness '
+                title: t('Pages.eCommerce.Section 5.Items[2].Title')
             },
             {
                 svg: '/website-audit-4.svg',
-                title: 'TCO Analysis'
+                title: t('Pages.eCommerce.Section 5.Items[3].Title')
             },
             {
                 svg: '/website-audit-5.svg',
-                title: 'Cost breakdown & timeline guidance '
+                title: t('Pages.eCommerce.Section 5.Items[4].Title')
             }
         ]
     },
     {
-        title: 'Full-Service Digital Growth ',
-        description: 'End-to-end digital marketing solutions to grow online visibility and convert more customers. ',
+        title: t('Pages.eCommerce.Section 6.Title'),
+        description: t('Pages.eCommerce.Section 6.Description'),
         image: '/full-service-digital-growth.webp',
         items: [
             {
                 svg: '/full-service-digital-growth-1.svg',
-                title: 'Performance marketing '
+                title: t('Pages.eCommerce.Section 6.Items[0].Title')
             },
             {
                 svg: '/full-service-digital-growth-2.svg',
-                title: 'Content creation & brand storytelling '
+                title: t('Pages.eCommerce.Section 6.Items[1].Title')
             },
             {
                 svg: '/full-service-digital-growth-3.svg',
-                title: 'SEO strategy & implementation '
+                title: t('Pages.eCommerce.Section 6.Items[2].Title')
             },
             {
                 svg: '/full-service-digital-growth-4.svg',
-                title: 'Social media management '
+                title: t('Pages.eCommerce.Section 6.Items[3].Title')
             },
             {
                 svg: '/full-service-digital-growth-5.svg',
-                title: 'Campaign performance reporting '
+                title: t('Pages.eCommerce.Section 6.Items[4].Title')
             }
         ]
     }
@@ -250,68 +250,34 @@ const items = [
 
 const faq = [
     {
-        question: t('Pages.eCommerce Services.Section 7.Items[0].Question'),
-        answer: t('Pages.eCommerce Services.Section 7.Items[0].Answer')
+        question: t('Pages.eCommerce.Section 10.Items[0].Question'),
+        answer: t('Pages.eCommerce.Section 10.Items[0].Answer')
     },
     {
-        question: t('Pages.eCommerce Services.Section 7.Items[1].Question'),
-        answer: t('Pages.eCommerce Services.Section 7.Items[1].Answer')
+        question: t('Pages.eCommerce.Section 10.Items[1].Question'),
+        answer: t('Pages.eCommerce.Section 10.Items[1].Answer')
     },
     {
-        question: t('Pages.eCommerce Services.Section 7.Items[2].Question'),
-        answer: t('Pages.eCommerce Services.Section 7.Items[2].Answer')
+        question: t('Pages.eCommerce.Section 10.Items[2].Question'),
+        answer: t('Pages.eCommerce.Section 10.Items[2].Answer')
     },
     {
-        question: t('Pages.eCommerce Services.Section 7.Items[3].Question'),
-        answer: t('Pages.eCommerce Services.Section 7.Items[3].Answer')
+        question: t('Pages.eCommerce.Section 10.Items[3].Question'),
+        answer: t('Pages.eCommerce.Section 10.Items[3].Answer')
     },
     {
-        question: t('Pages.eCommerce Services.Section 7.Items[4].Question'),
-        answer: t('Pages.eCommerce Services.Section 7.Items[4].Answer')
+        question: t('Pages.eCommerce.Section 10.Items[4].Question'),
+        answer: t('Pages.eCommerce.Section 10.Items[4].Answer')
     },
     // {
     //     question: t('Pages.eCommerce Services.Section 7.Items[5].Question'),
     //     answer: t('Pages.eCommerce Services.Section 7.Items[5].Answer')
     // },
     {
-        question: t('Pages.eCommerce Services.Section 7.Items[6].Question'),
-        answer: t('Pages.eCommerce Services.Section 7.Items[6].Answer')
+        question: t('Pages.eCommerce.Section 10.Items[6].Question'),
+        answer: t('Pages.eCommerce.Section 10.Items[6].Answer')
     }
 ]
-
-const sliderOne = [
-    {
-        title: t('Pages.eCommerce Services.Section 2.Items[0].Title'),
-        description: t('Pages.eCommerce Services.Section 2.Items[0].Description'),
-        image: '/24-7-availability.webp',
-    },
-    {
-        title: t('Pages.eCommerce Services.Section 2.Items[1].Title'),
-        description: t('Pages.eCommerce Services.Section 2.Items[1].Description'),
-        image: '/broaden-your-reach.webp',
-    },
-    {
-        title: t('Pages.eCommerce Services.Section 2.Items[2].Title'),
-        description: t('Pages.eCommerce Services.Section 2.Items[2].Description'),
-        image: '/boost-sales.webp',
-    },
-    {
-        title: t('Pages.eCommerce Services.Section 2.Items[3].Title'),
-        description: t('Pages.eCommerce Services.Section 2.Items[3].Description'),
-        image: '/enhanced-brand-visibility.webp',
-    },
-    {
-        title: t('Pages.eCommerce Services.Section 2.Items[4].Title'),
-        description: t('Pages.eCommerce Services.Section 2.Items[4].Description'),
-        image: '/simplified-operations.webp',
-    },
-    {
-        title: t('Pages.eCommerce Services.Section 2.Items[5].Title'),
-        description: t('Pages.eCommerce Services.Section 2.Items[5].Description'),
-        image: '/delight-your-customers.webp',
-    },
-    
-];
 
 const clients = [
     '/ozey.webp','/leiak.webp','/marios.webp', '/lost.webp', '/beydee.webp'
