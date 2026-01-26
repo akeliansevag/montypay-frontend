@@ -18,7 +18,7 @@
                             </li>
                             
                         </ul>
-                        <div :class="{'text-primary': $route.path === '/' || $route.path === '/ar'}">
+                        <!-- <div :class="{'text-primary': $route.path === '/' || $route.path === '/ar'}">
                             <h5
                                 v-for="lang in otherLocale"
                                 :key="lang"
@@ -28,7 +28,7 @@
                             >
                                 {{ lang === 'en' ? 'EN' : 'AR' }}
                             </h5>
-                        </div>
+                        </div> -->
                     </div>
                    
 
