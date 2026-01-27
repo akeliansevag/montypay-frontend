@@ -12,7 +12,7 @@
                         <NuxtLinkLocale to="https://prechecklist.montypay.com/website/" target="_blank" class="inline-block mp-button-quaternary">{{ t('Pages.eCommerce.Banner.Button Text') }}</NuxtLinkLocale>  
                     </div>
                 </div>
-                <div class="lg:w-[50%]">
+                <div class="lg:w-[45%] lg:me-20">
                     <img src="/ecommerce-banner-2.webp" alt="ecommerce Banner Image" />
                 </div>
             </div>
@@ -47,9 +47,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="w-full">
-                        <div class="px-10 py-20 w-full h-full bg-[linear-gradient(89.6deg,_rgba(0,51,131,0.1)_5.21%,_rgba(0,223,223,0.1)_134.35%)]">
-                            <img :src="item.image" />
+                    <div class="w-full lg:aspect-square">
+                        <div class="px-10 py-14 w-full h-full bg-[linear-gradient(89.6deg,_rgba(0,51,131,0.1)_5.21%,_rgba(0,223,223,0.1)_134.35%)] overflow-hidden">
+                            <img class="h-full mx-auto" :src="item.image" />
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                 <h3 class="text-2xl font-bold mb-2 text-balance">{{ t('Pages.eCommerce.Section 8.Title') }}</h3>
                 <p>{{ t('Pages.eCommerce.Section 8.Description') }}</p>
             </div>
-            <img class="mx-auto mt-16" :src="t('Pages.eCommerce.Section 8.Image')" />
+            <img class="mx-auto mt-16 max-w-[800px]" :src="t('Pages.eCommerce.Section 8.Image')" />
             
         </div>
     </section>
