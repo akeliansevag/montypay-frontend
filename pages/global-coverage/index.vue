@@ -418,7 +418,7 @@
                         { "name": "", "img": "/images/bca.svg" },
                         { "name": "", "img": "/images/mandiri.svg" },
                         { "name": "", "img": "/maybank.webp" },
-                        { "name": "", "img": "/btn.webp" },
+                        { "name": "", "img": "/btn-2.webp" },
                         { "name": "", "img": "/alto.webp" },
                         { "name": "", "img": "/bersama.webp" },
                         { "name": "", "img": "/prima.webp" },
@@ -462,7 +462,7 @@
                         { "name": "", "img": "/images/permata-bank.svg" },
                         { "name": "", "img": "/images/bri.svg" },
                         { "name": "", "img": "/images/cimb-niaga.svg" },
-                        { "name": "", "img": "/ocbc.webp" },
+                        { "name": "", "img": "/ocbc-2.webp" },
                     ]
                 },
             ]
