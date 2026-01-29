@@ -394,7 +394,7 @@
                 {
                     title: t('Pages.Global Coverage.Section 2.eWallet'),
                     items: [
-                        { "name": "", "img": "/gopay.webp" },
+                        { "name": "", "img": "/gopay-2.webp" },
                         { "name": "", "img": "/images/doku.svg" },
                         { "name": "", "img": "/images/linkaja.svg" },
                         { "name": "", "img": "/images/shopeepay.svg" },
