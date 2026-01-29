@@ -2413,6 +2413,8 @@
 				"Cash": "Cash",
 				"Virtual Account": "Virtual Account",
 				"Direct Debit": "Direct Debit",
+				"WebPay Providers": "WebPay Providers",
+				"QR Code Payments": "QR Code Payments",
 				"Pay Later (BNPL)": "Pay Later (BNPL)",
 				"Mobile Money": "Mobile Money",
 				"EFT": "EFT",

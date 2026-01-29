@@ -3207,6 +3207,8 @@
 				"Cash": "نقدًا",
 				"Virtual Account": "حساب افتراضي",
 				"Direct Debit": "الخصم المباشر",
+				"WebPay Providers": "مزودو WebPay",
+				"QR Code Payments": "الدفع بالـ QR",
 				"Pay Later (BNPL)": "الدفع لاحقًا (اشترِ الآن وادفع لاحقًا)",
 				"Mobile Money": "الأموال عبر الهاتف المحمول",
 				"EFT": "التحويل الإلكتروني للأموال",
