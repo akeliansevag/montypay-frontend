@@ -135,14 +135,15 @@
                         { name: "MyMonty", img: "/images/mymonty.svg" },
                         { name: "Whish", img: "/images/whish.svg" },
                         { name: "Mojo", img: "/images/mojo.svg" },
-                        { name: "Matensa", img: "/images/matensa.svg" }
+                        { name: "Matensa", img: "/images/matensa.svg" },
+                        { name: "OMT", img: "/images/omt.svg" }
                     ]
                 },
                 {
                     title: t('Pages.Global Coverage.Section 2.Other'),
                     items: [
                         { name: "Cryptocurrency", img: "/images/crypto.svg" },
-                        { name: "OMT", img: "/images/omt.svg" }
+                        
                     ]
                 }
             ]
@@ -262,6 +263,26 @@
             ]
         },
         {
+            country:t('Pages.Global Coverage.Section 2.Oman'),
+            categories: [
+                {
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "AMEX", "img": "/images/amex.svg" },
+                        { "name": "OmanNet", "img": "/omannet-4.svg" },
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
+                    items: [
+                        { "name": "ApplePay", "img": "/images/applepay.svg" }
+                    ]
+                }
+            ]
+        },
+        {
             country: t('Pages.Global Coverage.Section 2.EU & UK'),
             categories: [
                 {
@@ -273,8 +294,8 @@
                         { "name": "Diners", "img": "/images/diners.svg" },
                         { "name": "Discover", "img": "/images/discover.svg" },
                         { "name": "JCB", "img": "/images/jcb.svg" },
-                        { "name": "Mada", "img": "/images/mada.svg" },
-                        { "name": "Knet", "img": "/images/knet.svg" }
+                        // { "name": "Mada", "img": "/images/mada.svg" },
+                        // { "name": "Knet", "img": "/images/knet.svg" }
                     ]
                 },
                 {
