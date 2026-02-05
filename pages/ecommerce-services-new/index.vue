@@ -75,7 +75,7 @@
                 <h3 class="text-2xl font-bold mb-2 text-balance">{{ t('Pages.eCommerce.Section 8.Title') }}</h3>
                 <p>{{ t('Pages.eCommerce.Section 8.Description') }}</p>
             </div>
-            <img class="mx-auto mt-16 w-full lg:max-w-[800px]" :src="t('Pages.eCommerce.Section 8.Image')" />
+            <img class="mx-auto mt-16 w-full md:max-w-[800px]" :src="t('Pages.eCommerce.Section 8.Image')" />
             
         </div>
     </section>

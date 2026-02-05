@@ -609,7 +609,7 @@
 				}
 			},
 			"Section 6": {
-				"Title": "Build Your Brand Online With <br /> Your Trusted <img style='display:inline;margin-top:-16px;margin-left:8px;margin-right:8px;' src='/images/shopify-logo.svg' alt='Shopify Logo' width='184' height='53' /> Partner ",
+				"Title": "Build Your Brand Online With <br /> Your Trusted <img class='shopify-logo' style='display:inline;margin-left:8px;margin-right:8px;' src='/images/shopify-logo.svg' alt='Shopify Logo' width='184' height='53' /> Partner ",
 				"Description": "MontyPay brings merchants and businesses online by creating powerful commerce experiences that grow brand presence and make it accessible to customers worldwide.",
 				"Image Alt": "",
 				"List Items 1": [
