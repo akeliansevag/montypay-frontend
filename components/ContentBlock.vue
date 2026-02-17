@@ -5,7 +5,7 @@
             <h1 v-if="title" v-html="title"></h1>
         </template>
         <template v-else>
-            <h2 v-if="title" v-html="title"></h2>
+            <h2 v-if="title" v-html="title "></h2>
             <h3 v-if="subtitle">{{ subtitle }}</h3>
         </template>
         <div class="rtl:max-w-[500px]" :class="{'mx-auto': centerParagraph === true}">
