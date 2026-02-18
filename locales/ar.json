@@ -11,7 +11,7 @@
 			"Online Payments": "المدفوعات عبر الإنترنت",
 			"Smart Pos": "نقاط البيع الذكية (Smart POS)",
 			"Soft Pos": "نقاط البيع عبر الهاتف الذكيّ",
-			"Qcheck": "Qcheck",
+			"Qcheck": "QCheck",
 			"Digital services": "الخدمات الرقمية",
 			"MontyLab": "خدمات التجارة الإلكترونية",
 			"Tech services": "الخدمات التقنية",
@@ -1425,7 +1425,7 @@
 			},
 			"Section 5": {
 				"Title": "QCheck",
-				"Description": "تغيير قواعد اللعبة في صناعة الضيافة!",
+				"Description": "تغيير قواعد اللعبة في قطاع المطاعم والفندقية!",
 				"Image Alt": "",
 				"List Items 1": {
 					"Item 1": "تسجيل الخروج السريع - وفر 17 دقيقة لكل طاولة",
@@ -1439,7 +1439,7 @@
 				}
 			},
 			"Section 6": {
-				"Title": "ابنِ علامتك التجارية عبر الإنترنت مع شريكك الموثوق <img style='display:inline;' src='/images/shopify-logo.svg' alt='Shopify Logo' width='170' />",
+				"Title": "ابنِ علامتك التجارية عبر الإنترنت مع شريك شبفي الموثوق <img style='display:inline;' src='/images/shopify-logo.svg' alt='Shopify Logo' width='170' />",
 				"Description": "تساعد MontyPay التجار والشركات على التواجد عبر الإنترنت من خلال إنشاء تجارب تجارية قوية تعزّز حضور العلامة التجارية وتجعلها متاحة للعملاء حول العالم.",
 				"Image Alt": "",
 				"List Items 1": [
@@ -1463,11 +1463,11 @@
 			},
 			"Section 7": {
 				"Title": "لماذا MontyPay؟",
-				"Description": "تتجاوز MontyPay المدفوعات لتقدم للتجار خدمات متكاملة 360° لا ترفع الإيرادات فحسب، بل تبني علامتك التجارية استراتيجياً وتزودها بجميع المكونات اللازمة للتفوق في سوق اليوم الرقمي.",
+				"Description": "تتجاوز MontyPay المدفوعات لتقدم للتجار خدمات متكاملة 360°. لا ترفع الإيرادات فحسب، بل تبني علامتك التجارية استراتيجياً وتزودها بجميع المكونات اللازمة للتفوق في سوق اليوم الرقمي.",
 				"Image Alt": "",
 				"List Items 1": {
 					"Item 1": "برنامج ولاء",
-					"Item 2": "خدمات الإقراض",
+					"Item 2": "خدمات القروض",
 					"Item 3": "حل شامل",
 					"Item 4": "قبول أعلى",
 					"Item 5": "تغطية عالمية",
@@ -1476,7 +1476,7 @@
 				}
 			},
 			"Section 8": {
-				"Title": "قصص العملاء",
+				"Title": "شهادات العملاء ",
 				"Items": [
 					{ 
 					"Name": "ليا خلف",
@@ -1934,7 +1934,7 @@
 				"Image Alt": "Merchant Mobile App",
 				"Cards 1": [
 					{
-						"Title": "تتبّع المبيعات",
+						"Title": "متابعة المبيعات",
 						"Description": "ابقَ على اطّلاع على أداء عملك لحظة بلحظة"
 					},
 					{
@@ -1991,7 +1991,7 @@
 				"Description 3": "حل مثالي للأعمال المتنامية التي تبحث عن البساطة والكفاءة عبر جميع قنوات البيع."
 			},
 			"Section 7": {
-				"Title": "مزايا إضافية… ونحن دائمًا نساندك",
+				"Title": "فوائد إضافية… ونحن دائمًا نساندك",
 				"Description": "",
 				"Image Alt": "More Perks or We Back You Up",
 				"Cards": [
@@ -2079,7 +2079,7 @@
 				"Cards 1": [
 					{
 						"Title": "فرص التمويل",
-						"Description": "احصل على إمكانية الوصول إلى التمويل بعد بناء سجل لمدة 6 أشهر مع MontyPay، مما يساعدك على الاستثمار في النمو وإدارة التدفق النقدي."
+						"Description": "احصل على تمويل بعد بناء تاريخ لمدة 6 أشهر مع MontyPay، مما يساعدك على الاستثمار في النمو وإدارة التدفق النقدي."
 					},
 					{
 						"Title": "مدفوعات مرنة",
@@ -2280,7 +2280,7 @@
 			},
 			"Section 3": {
 				"Title": "الأجهزة المتوافقة",
-				"Description": "تتيح لك خاصية الدفع عبر الهاتف الذكي من MontyPay إجراء مدفوعات سلسة عبر تقنية اللاتلامس على أجهزة iOS وAndroid، مع دعم محافظ NFC مثل Apple Pay وGoogle Pay وSamsung Pay، بالإضافة إلى بطاقات Visa وMastercard وAmerican Express",
+				"Description": "تتيح لك خاصية الدفع عبر الهاتف الذكي من MontyPay إجراء مدفوعات سلسة عبر تقنية اللاتلامس على أجهزة iOS و Android، مع دعم محافظ NFC مثل Apple Pay و Google Pay و Samsung Pay، بالإضافة إلى بطاقات Visa و Mastercard و American Express",
 				"Image Alt": "Unified Solution for In-Store & Online Sales",
 				"Filter iPhone": "iPhone",
 				"Filter Android": "Android",
@@ -2350,7 +2350,7 @@
 		},
 		"QCheck": {
 			"Banner": {
-				"Title": "تحقق العملاء عبر Qcheck",
+				"Title": "تحقق العملاء عبر QCheck",
 				"Description": "سرّع وتيرة الخدمة واجعل العملاء يعودون مجددًا مع QCheck، أداة الدفع الذاتي المثالية. سواء كان الضيوف يقومون بالمسح للتصفح أو لتسوية الفاتورة، تم تصميم QCheck لتحقيق السرعة والكفاءة ورضا العملاء.",
 				"Image Alt": "QCheck Banner Image",
 				"Image:": "qcheck-banner.webp"
@@ -2722,7 +2722,7 @@
 			"Section 8": {
 				"Title": "شريك واحد يقدّم حلولًا مخصّصة لعملك",
 				"Description": "تقدّم MontyPay منظومة مترابطة بالكامل تجمع بين التجارة الإلكترونية، وحلول الدفع، والنمو الرقمي في منصة واحدة متكاملة.",
-				"Image": "/one-partner-ar.webp"
+				"Image": "/one-partner-2-ar.webp"
 			},
 			"Section 9": {
 				"Title": "عملاؤنا"
@@ -3593,7 +3593,7 @@
 				"Image Alt": ""
 			},
 			{
-				"Title": "Qcheck",
+				"Title": "QCheck",
 				"Description": "الدفع على الطاولة",
 				"Image": "",
 				"Image Alt": ""
