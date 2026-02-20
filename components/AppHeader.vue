@@ -9,7 +9,7 @@
                     <nav aria-label="Primary" class="nav hidden lg:block">
                         <NavItemsWrapper layout="header" class="flex max-xl:gap-4 xl:gap-8" />
                     </nav>
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
                          <ul class="flex gap-2 max-lg:hidden">
                             <li class="flex items-center nav-link">
                                 <NuxtLinkLocale class="nav-link bg-secondary rounded-lg px-4 py-2" to="https://portal.montypay.com/" target="_blank">
