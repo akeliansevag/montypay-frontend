@@ -2240,7 +2240,7 @@
 			},
 			"Section 3": {
 				"Title": "Based in the UK",
-				"Description": "Our headquarters are merely the tip of the iceberg. Our payment dominion stretches across the globe, with strategic outposts in Lebanon, Jordan, the UAE, Indonesia, and Nigeria, ensuring our proximity to where currencies clash and transactions flare."
+				"Description": "Our headquarters are merely the tip of the iceberg. Our payment dominion stretches across the globe, with strategic outposts in Lebanon, Jordan, the UAE, UK, and USA ensuring our proximity to where currencies clash and transactions flare."
 			},
 			"Section 4": {
 				"Title": "Our Offices",
@@ -2514,7 +2514,7 @@
 		"Contact Us": {
 			"Banner": {
 				"Title": "Contact MontyPay",
-				"Description": "MontyPay provides End-to-End Payment Solutions & Website Development for businesses."
+				"Description": "MontyPay provides an End-to-End Payment Solution for Merchants"
 			},
 			"Section 2": {
 				"Title": "Do you have questions?"

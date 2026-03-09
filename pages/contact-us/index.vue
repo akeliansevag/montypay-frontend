@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <!-- <div>
                             <NuxtPicture 
                                 priority
                                 format="webp" 
@@ -223,7 +223,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div>
                             <NuxtPicture 
                                 priority
@@ -302,7 +302,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <!-- <div>
                             <NuxtPicture 
                                 priority
                                 format="webp" 
@@ -327,7 +327,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div>
                             <NuxtPicture 
                                 priority
