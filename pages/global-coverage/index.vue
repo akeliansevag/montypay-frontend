@@ -236,32 +236,32 @@
                 }
             ]
         },
-        // {
-        //     country:t('Pages.Global Coverage.Section 2.Nigeria'),
-        //     categories: [
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.Cards'),
-        //             items: [
-        //                 { "name": "Mastercard", "img": "/images/mastercard.svg" },
-        //                 { "name": "Visa", "img": "/images/visa.svg" },
-        //                 { "name": "Verve", "img": "/images/verve.svg" }
-        //             ]
-        //         },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
-        //             items: [
-        //                 { "name": "PayPal", "img": "/images/paypal.svg" }
-        //             ]
-        //         },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.Other'),
-        //             items: [
-        //                 { "name": "Bank Transfers", "img": "/images/bank-transfers.svg" },
-        //                 { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
-        //             ]
-        //         }
-        //     ]
-        // },
+        {
+            country:t('Pages.Global Coverage.Section 2.Nigeria'),
+            categories: [
+                {
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
+                    items: [
+                        { "name": "Mastercard", "img": "/images/mastercard.svg" },
+                        { "name": "Visa", "img": "/images/visa.svg" },
+                        { "name": "Verve", "img": "/images/verve.svg" }
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.Digital Wallets'),
+                    items: [
+                        { "name": "PayPal", "img": "/images/paypal.svg" }
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.Other'),
+                    items: [
+                        { "name": "Bank Transfers", "img": "/images/bank-transfers.svg" },
+                        { "name": "Cryptocurrency", "img": "/images/crypto.svg" }
+                    ]
+                }
+            ]
+        },
         {
             country:t('Pages.Global Coverage.Section 2.Oman'),
             categories: [
@@ -400,94 +400,94 @@
                 }
             ]
         },
-        // {
-        //     country: t('Pages.Global Coverage.Section 2.Indonesia'),
-        //     categories: [
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.Cards'),
-        //             items: [
-        //                 { "name": "", "img": "/images/mastercard.svg" },
-        //                 { "name": "", "img": "/images/visa.svg" },
-        //                 { "name": "T&Cs apply", "img": "/images/amex.svg" },
-        //                 { "name": "", "img": "/images/jcb.svg" },
-        //             ]
-        //         },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.eWallet'),
-        //             items: [
-        //                 { "name": "", "img": "/gopay-2.webp" },
-        //                 { "name": "", "img": "/images/doku.svg" },
-        //                 { "name": "", "img": "/images/linkaja.svg" },
-        //                 { "name": "", "img": "/images/shopeepay.svg" },
-        //                 { "name": "", "img": "/images/ovo.svg" },
-        //                 { "name": "", "img": "/images/dana.svg" },
-        //             ]
-        //         },
-        //         // {
-        //         //     title: t('Pages.Global Coverage.Section 2.Cash'),
-        //         //     items: [
-        //         //         { "name": "", "img": "/images/alfa-mart.svg" },
-        //         //         { "name": "", "img": "/images/indomaret.svg" },
-        //         //         { "name": "", "img": "/images/alfa-midi.svg" },
-        //         //         { "name": "", "img": "/images/lawson.svg" },
-        //         //         { "name": "", "img": "/images/dandan.svg" },
-        //         //     ]
-        //         // },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.Virtual Account'),
-        //             items: [
-        //                 { "name": "", "img": "/images/bca.svg" },
-        //                 { "name": "", "img": "/images/mandiri.svg" },
-        //                 { "name": "", "img": "/maybank.webp" },
-        //                 { "name": "", "img": "/btn-2.webp" },
-        //                 { "name": "", "img": "/alto.webp" },
-        //                 { "name": "", "img": "/bersama.webp" },
-        //                 { "name": "", "img": "/prima.webp" },
-        //                 // { "name": "", "img": "/images/bank-bri.svg" },
-        //                 { "name": "", "img": "/images/bni.svg" },
-        //                 // { "name": "", "img": "/images/doku.svg" },
-        //                 { "name": "", "img": "/images/permata-bank.svg" },
-        //                 // { "name": "", "img": "/images/bnc.svg" },
-        //                 { "name": "", "img": "/images/danamon.svg" },
-        //                 // { "name": "", "img": "/images/bsi.svg" },
-        //                 { "name": "", "img": "/images/cimb-niaga.svg" },
-        //             ]
-        //         },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.Direct Debit'),
-        //             items: [
-        //                 { "name": "", "img": "/images/bri.svg" },
-        //                 { "name": "", "img": "/images/allo-bank.svg" },
-        //                 { "name": "", "img": "/images/mandiri.svg" },
-        //                 { "name": "", "img": "/images/octo-cash.svg" },
-        //             ]
-        //         },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.WebPay Providers'),
-        //             items: [
-        //                 { "name": "", "img": "/images/kredivo.svg" },
-        //                 { "name": "", "img": "/images/akulaku.svg" },
-        //             ]
-        //         },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.QR Code Payments'),
-        //             items: [
-        //                 { "name": "", "img": "/images/qris.svg" },
-        //             ]
-        //         },
-        //         {
-        //             title: t('Pages.Global Coverage.Section 2.Pay Later (BNPL)'),
-        //             items: [
-        //                 { "name": "", "img": "/images/bca.svg" },
-        //                 { "name": "", "img": "/images/mandiri.svg" },
-        //                 { "name": "", "img": "/images/permata-bank.svg" },
-        //                 { "name": "", "img": "/images/bri.svg" },
-        //                 { "name": "", "img": "/images/cimb-niaga.svg" },
-        //                 { "name": "", "img": "/ocbc-2.webp" },
-        //             ]
-        //         },
-        //     ]
-        // },
+        {
+            country: t('Pages.Global Coverage.Section 2.Indonesia'),
+            categories: [
+                {
+                    title: t('Pages.Global Coverage.Section 2.Cards'),
+                    items: [
+                        { "name": "", "img": "/images/mastercard.svg" },
+                        { "name": "", "img": "/images/visa.svg" },
+                        { "name": "T&Cs apply", "img": "/images/amex.svg" },
+                        { "name": "", "img": "/images/jcb.svg" },
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.eWallet'),
+                    items: [
+                        { "name": "", "img": "/gopay-2.webp" },
+                        { "name": "", "img": "/images/doku.svg" },
+                        { "name": "", "img": "/images/linkaja.svg" },
+                        { "name": "", "img": "/images/shopeepay.svg" },
+                        { "name": "", "img": "/images/ovo.svg" },
+                        { "name": "", "img": "/images/dana.svg" },
+                    ]
+                },
+                // {
+                //     title: t('Pages.Global Coverage.Section 2.Cash'),
+                //     items: [
+                //         { "name": "", "img": "/images/alfa-mart.svg" },
+                //         { "name": "", "img": "/images/indomaret.svg" },
+                //         { "name": "", "img": "/images/alfa-midi.svg" },
+                //         { "name": "", "img": "/images/lawson.svg" },
+                //         { "name": "", "img": "/images/dandan.svg" },
+                //     ]
+                // },
+                {
+                    title: t('Pages.Global Coverage.Section 2.Virtual Account'),
+                    items: [
+                        { "name": "", "img": "/images/bca.svg" },
+                        { "name": "", "img": "/images/mandiri.svg" },
+                        { "name": "", "img": "/maybank.webp" },
+                        { "name": "", "img": "/btn-2.webp" },
+                        { "name": "", "img": "/alto.webp" },
+                        { "name": "", "img": "/bersama.webp" },
+                        { "name": "", "img": "/prima.webp" },
+                        // { "name": "", "img": "/images/bank-bri.svg" },
+                        { "name": "", "img": "/images/bni.svg" },
+                        // { "name": "", "img": "/images/doku.svg" },
+                        { "name": "", "img": "/images/permata-bank.svg" },
+                        // { "name": "", "img": "/images/bnc.svg" },
+                        { "name": "", "img": "/images/danamon.svg" },
+                        // { "name": "", "img": "/images/bsi.svg" },
+                        { "name": "", "img": "/images/cimb-niaga.svg" },
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.Direct Debit'),
+                    items: [
+                        { "name": "", "img": "/images/bri.svg" },
+                        { "name": "", "img": "/images/allo-bank.svg" },
+                        { "name": "", "img": "/images/mandiri.svg" },
+                        { "name": "", "img": "/images/octo-cash.svg" },
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.WebPay Providers'),
+                    items: [
+                        { "name": "", "img": "/images/kredivo.svg" },
+                        { "name": "", "img": "/images/akulaku.svg" },
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.QR Code Payments'),
+                    items: [
+                        { "name": "", "img": "/images/qris.svg" },
+                    ]
+                },
+                {
+                    title: t('Pages.Global Coverage.Section 2.Pay Later (BNPL)'),
+                    items: [
+                        { "name": "", "img": "/images/bca.svg" },
+                        { "name": "", "img": "/images/mandiri.svg" },
+                        { "name": "", "img": "/images/permata-bank.svg" },
+                        { "name": "", "img": "/images/bri.svg" },
+                        { "name": "", "img": "/images/cimb-niaga.svg" },
+                        { "name": "", "img": "/ocbc-2.webp" },
+                    ]
+                },
+            ]
+        },
         {
             country: t('Pages.Global Coverage.Section 2.LATAM'),
             categories: [
