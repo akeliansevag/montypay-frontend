@@ -15,6 +15,7 @@
                 </div>
 
                 <div class="lg:w-3/5 flex flex-col gap-6 rounded-3xl bg-[#2A4187] py-12 px-8">
+                    
                     <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <input v-model="form.first_name" type="text" id="first_name"
@@ -30,7 +31,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-8 w-full">
+                    <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'"
                                 v-model="form.country" name="country"
@@ -54,7 +55,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-8 w-full">
+                    <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <input v-model="form.company" type="text" id="company"
                                 :placeholder="t('General.Placeholders.Company Name')"
@@ -70,7 +71,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-8 w-full">
+                    <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <input v-model="form.title" type="text" id="title"
                                 :placeholder="t('General.Placeholders.Title')"
@@ -128,7 +129,7 @@
                     </div>
 
                     <!-- Platform input (ONLY if yes) -->
-                    <div v-if="form.has_website === 'yes'" class="flex gap-8 w-full">
+                    <div v-if="form.has_website === 'yes'" class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <input v-model="form.link" type="text" id="link"
                                 :placeholder="t('General.Placeholders.Platform')"
@@ -137,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-8 w-full">
+                    <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <select ref="revenueSelect" :class="form.revenue === '' ? 'text-gray-400' : 'text-black'"
                                 v-model="form.revenue" name="revenue"
@@ -154,7 +155,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-8 w-full">
+                    <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <textarea v-model="form.message" id="message"
                                 :placeholder="t('General.Placeholders.Message')"
