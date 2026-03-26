@@ -2,7 +2,7 @@ export const stickyNav = () => {
     window.addEventListener("scroll", () => {
         let offset = window.scrollY;
         const sticky = document.querySelector("header");
-        console.log("!")
+        // console.log("!")
         if (offset > 10) {
             document.body.classList.add("dark-header");
             sticky.classList.add("bg-quaternary");

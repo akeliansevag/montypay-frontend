@@ -51,7 +51,8 @@
 			"Download PDF": "تحميل ملف PDF",
 			"Send": "إرسال",
 			"Get Started": "ابدأ الآن",
-			"Submitting": "جارٍ الإرسال..."
+			"Submitting": "جارٍ الإرسال...",
+			"Submit": "إرسال"
 		},
 		"Labels": {
 			"First Name": "الاسم الأول",
@@ -68,6 +69,7 @@
 			"Company Name": "اسم الشركة",
 			"Company Size": "حجم الشركة",
 			"Website": "الموقع الإلكتروني",
+			"Platform": "إذا كانت الإجابة بنعم، يرجى تحديد المنصة",
 			"Message": "الرسالة",
 			"Privacy Policy": "سياسة الخصوصية",
 			"Privacy Policy 2": "أنت توافق على سياسة الخصوصية الخاصة بنا."
@@ -86,6 +88,8 @@
 			"Company Name": "اسم الشركة",
 			"Company Size": "حجم الشركة",
 			"Website": "الموقع الإلكتروني",
+			"Title": "Title",
+			"Revenue": "Revenue",
 			"Message": "اترك لنا رسالة...",
 			"Privacy Policy 2": "يجب الموافقة على سياسة الخصوصية"
 		},
@@ -110,6 +114,9 @@
 					"Company Name": "يرجى إدخال اسم الشركة",
 					"Company Size": "يرجى إدخال حجم الشركة",
 					"Website": "يرجى إدخال الموقع الإلكتروني",
+					"Has Website": "يرجى تحديد ما إذا كان لديك موقع الكتروني",
+					"Title": "الرجاء إدخال عنوانك",
+					"Revenue": "يرجى تحديد إيراداتك",
 					"Privacy Policy": "يجب الموافقة على سياسة الخصوصية"
 				},
 				"Safe": "القيمة المدخلة غير صالحة",
@@ -1364,6 +1371,32 @@
 			{"Value": "fd4f2661-1f5e-ef11-bfe2-000d3aab2548", "Title": "نقطة بيع MontyPay"},
 			{"Value": "13ca892e-79da-ec11-bb3d-000d3a22e2cf", "Title": "بوابة دفع الإلكترونية"},
 			{"Value": "445c00f9-8e97-f011-b4cb-6045bd888ebe", "Title": "بناء المواقع الإلكترونية"}
+		],
+		"Montylab Industries": [
+			{"Value": "", "Title": "Apparel & accessories"},
+			{"Value": "", "Title": "Automotive & transportation"},
+			{"Value": "", "Title": "Baby Furniture and Accessories"},
+			{"Value": "", "Title": "Baby Gear"},
+			{"Value": "", "Title": "Consumer electronics"},
+			{"Value": "", "Title": "Energy & chemicals"},
+			{"Value": "", "Title": "Food & beverage"},
+			{"Value": "", "Title": "Furniture"},
+			{"Value": "", "Title": "Gift, novelty, and souvenir"},
+			{"Value": "", "Title": "Health & beauty"},
+			{"Value": "", "Title": "Home & garden"},
+			{"Value": "", "Title": "Industrial manufacturing & distribution"},
+			{"Value": "", "Title": "Media & entertainment"},
+			{"Value": "", "Title": "Pet supplies"},
+			{"Value": "", "Title": "Sporting Goods"},
+			{"Value": "", "Title": "Sports & recreation"},
+			{"Value": "", "Title": "Toys, crafts & gifts"},
+			{"Value": "", "Title": "Travel & on-the-go"}
+		],
+		"Revenues": [
+			{"Value": "", "Title": "$0 - 10k"},
+			{"Value": "", "Title": "$10k-100k"},
+			{"Value": "", "Title": "$100k-1M"},
+			{"Value": "", "Title": "$1M"}
 		]
 	},
 	"Pages": {
@@ -2659,6 +2692,13 @@
 				"Twitter Title": "",
 				"Twitter Description": "",
 				"Default Message": ""
+			}
+		},
+		"MontyLab": {
+			"Banner": {
+				"Title": "هيا بنا نبني شيئاً عظيماً معاً!",
+				"Description": "هل لديك مشروع في ذهنك أو تحتاج إلى مساعدة في تطوير المواقع الإلكترونية؟ املأ النموذج أدناه وسيتواصل معك فريق MontyLab لمناقشة كيف يمكننا مساعدتك في تحويل أفكارك إلى واقع.",
+				"Image": ""
 			}
 		},
 		"eCommerce": {

@@ -51,8 +51,8 @@
 			"Download PDF": "Download PDF",
 			"Send": "Send",
 			"Get Started": "Get Started",
-			"Submitting": "Submitting..."
-
+			"Submitting": "Submitting...",
+			"Submit": "Submit"
 		},
 		"Labels": {
 			"First Name": "First Name",
@@ -87,6 +87,9 @@
 			"Company Name": "Company Name",
 			"Company Size": "Company Size",
 			"Website": "Website",
+			"Platform": "If yes please specify which platform",
+			"Title": "Title",
+			"Revenue": "Online Revenue Band ",
 			"Message": "Leave us a message...",
 			"Privacy Policy 2": "You must agree to our privacy policy"
 		},
@@ -111,6 +114,9 @@
 					"Company Name": "Please enter your company name",
 					"Company Size": "Please enter your company size",
 					"Website": "Please enter your website",
+					"Has Website": "Please choose if you have website",
+					"Title": "Please enter your title",
+					"Revenue": "Please select you revenue",
 					"Privacy Policy": "You must agree to our privacy policy"
 				},
 				"Safe": "Your input has invalid value",
@@ -534,6 +540,32 @@
 			{"Value": "fd4f2661-1f5e-ef11-bfe2-000d3aab2548", "Title": "MontyPay Point of Sale"},
 			{"Value": "13ca892e-79da-ec11-bb3d-000d3a22e2cf", "Title": "MontyPay Payment Gateway"},
 			{"Value": "445c00f9-8e97-f011-b4cb-6045bd888ebe", "Title": "Website Development"}
+		],
+		"Montylab Industries": [
+			{"Value": "", "Title": "Apparel & accessories"},
+			{"Value": "", "Title": "Automotive & transportation"},
+			{"Value": "", "Title": "Baby Furniture and Accessories"},
+			{"Value": "", "Title": "Baby Gear"},
+			{"Value": "", "Title": "Consumer electronics"},
+			{"Value": "", "Title": "Energy & chemicals"},
+			{"Value": "", "Title": "Food & beverage"},
+			{"Value": "", "Title": "Furniture"},
+			{"Value": "", "Title": "Gift, novelty, and souvenir"},
+			{"Value": "", "Title": "Health & beauty"},
+			{"Value": "", "Title": "Home & garden"},
+			{"Value": "", "Title": "Industrial manufacturing & distribution"},
+			{"Value": "", "Title": "Media & entertainment"},
+			{"Value": "", "Title": "Pet supplies"},
+			{"Value": "", "Title": "Sporting Goods"},
+			{"Value": "", "Title": "Sports & recreation"},
+			{"Value": "", "Title": "Toys, crafts & gifts"},
+			{"Value": "", "Title": "Travel & on-the-go"}
+		],
+		"Revenues": [
+			{"Value": "", "Title": "$0 - 10k"},
+			{"Value": "", "Title": "$10k-100k"},
+			{"Value": "", "Title": "$100k-1M"},
+			{"Value": "", "Title": "$1M"}
 		]
 	},
 	"Pages": {
@@ -1829,6 +1861,13 @@
 				"Twitter Title": "",
 				"Twitter Description": "",
 				"Default Message": ""
+			}
+		},
+		"MontyLab": {
+			"Banner": {
+				"Title": "Let’s build something great together!",
+				"Description": "Have a project in mind or need help with web development? Fill out the form below and the MontyLab team will get back to you to discuss how we can help bring your ideas to life.",
+				"Image": ""
 			}
 		},
 		"eCommerce": {

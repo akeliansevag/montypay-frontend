@@ -20,12 +20,12 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="first_name">{{t('General.Labels.First Name')}}</label>
-                                <input v-model="form.first_name" type="text" id="first_name" :placeholder="t('General.Placeholders.First Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.first_name" type="text" id="first_name" :placeholder="t('General.Placeholders.First Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.first_name" class="text-red-500 text-xs">{{ errors.first_name }}</div>
                             </div>
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="last_name">{{t('General.Labels.Last Name')}}</label>
-                                <input v-model="form.last_name" type="text" id="last_name" :placeholder="t('General.Placeholders.Last Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.last_name" type="text" id="last_name" :placeholder="t('General.Placeholders.Last Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.last_name" class="text-red-500 text-xs">{{ errors.last_name }}</div>
                             </div>
                         </div> 
@@ -33,7 +33,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="email">{{t('General.Labels.Work Email')}}</label>
-                                <input v-model="form.email" type="text" id="email" :placeholder="t('General.Labels.Work Email')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.email" type="text" id="email" :placeholder="t('General.Labels.Work Email')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.email" class="text-red-500 text-xs">{{ errors.email }}</div>
                             </div>
                         </div> 
@@ -41,7 +41,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="mobile">{{t('General.Labels.Phone Number')}}</label>
-                                <input v-model="form.mobile" type="tel" id="mobile" :placeholder="t('General.Placeholders.Phone Number')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.mobile" type="tel" id="mobile" :placeholder="t('General.Placeholders.Phone Number')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.mobile" class="text-red-500 text-xs">{{ errors.mobile }}</div>
                             </div>
                         </div> 
@@ -49,7 +49,7 @@
                         <!-- <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="country">Country</label>
-                                <input v-model="form.country" type="text" id="country" placeholder="Country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.country" type="text" id="country" placeholder="Country" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.country" class="text-red-500 text-xs">{{ errors.country }}</div>
                             </div>
                         </div> -->
@@ -57,7 +57,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="country">{{t('General.Labels.Country')}}</label>
-                                <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'" v-model="form.country" name="country" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                     <option value="">{{t('General.Placeholders.Country')}}</option>
                                     <option :value="rt(country.Value)" v-for="country in countries" :key="rt(country.Value)">
                                         {{
@@ -73,7 +73,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="selected-country">{{t('General.Labels.Industry')}}</label>
-                                <select ref="industrySelect" v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="custom-select w-full text-base px-4 py-2 bg-primary rounded-lg outline-0">
+                                <select ref="industrySelect" v-model="form.industry" name="industry" :class="form.industry === '' ? 'text-gray-400' : 'text-black'"  class="custom-select w-full text-base px-4 py-2 bg-primary rounded-lg outline-none border border-[#ccc]">
                                     <option value="">{{t('General.Placeholders.Industry')}}</option>
                                     <option :value="rt(industry.Value)" v-for="industry in industries" :key="rt(industry.Value)">
                                         {{
@@ -88,7 +88,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="product">{{t('General.Labels.Product')}}</label>
-                                <select ref="productSelect" :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <select ref="productSelect" :class="form.product === '' ? 'text-gray-400' : 'text-black'" v-model="form.product" name="product" class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                     <option value="">{{t('General.Placeholders.Product')}}</option>
                                     <option :value="rt(product.Value)" v-for="product in products" :key="rt(product.Value)">
                                         {{
@@ -103,7 +103,7 @@
                         <div class="flex gap-8 w-4full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="company">{{t('General.Labels.Company Name')}}</label>
-                                <input v-model="form.company" type="text" id="company" :placeholder="t('General.Placeholders.Company Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.company" type="text" id="company" :placeholder="t('General.Placeholders.Company Name')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.company" class="text-red-500 text-xs">{{ errors.company }}</div>
                             </div>
                         </div> 
@@ -111,7 +111,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="size">{{t('General.Labels.Company Size')}}</label>
-                                <input v-model="form.size" type="text" id="size" :placeholder="t('General.Placeholders.Company Size')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.size" type="text" id="size" :placeholder="t('General.Placeholders.Company Size')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.size" class="text-red-500 text-xs">{{ errors.size }}</div>
                             </div>
                         </div> 
@@ -119,7 +119,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="link">{{t('General.Labels.Website')}}</label>
-                                <input v-model="form.link" type="text" id="link" :placeholder="t('General.Placeholders.Website')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0">
+                                <input v-model="form.link" type="text" id="link" :placeholder="t('General.Placeholders.Website')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <div v-if="errors.link" class="text-red-500 text-xs">{{ errors.link }}</div>
                             </div>
                         </div> 
@@ -127,7 +127,7 @@
                         <div class="flex gap-8 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <label for="message">{{t('General.Labels.Message')}}</label>
-                                <textarea v-model="form.message" id="message" :placeholder="t('General.Placeholders.Message')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-0 resize-none" rows="10"></textarea>
+                                <textarea v-model="form.message" id="message" :placeholder="t('General.Placeholders.Message')" class="w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc] resize-none" rows="10"></textarea>
                                 <div v-if="errors.message" class="text-red-500 text-xs">{{ errors.message }}</div>
                             </div>
                         </div> 
