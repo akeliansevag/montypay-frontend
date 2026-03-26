@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="lg:w-3/5 flex flex-col gap-6 rounded-3xl bg-[#2A4187] py-12 px-8">
-                    <div class="flex gap-8 w-full">
+                    <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
                             <input v-model="form.first_name" type="text" id="first_name"
                                 :placeholder="t('General.Placeholders.First Name')"
