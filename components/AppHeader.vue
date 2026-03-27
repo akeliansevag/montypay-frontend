@@ -38,7 +38,7 @@
             :class="{
               'text-primary': $route.path === '/' || $route.path === '/ar',
             }"
-            class="lg:py-[2rem] group cursor pointer"
+            class="lg:py-[1rem] group cursor pointer"
           >
             <div
               class="language_switcher flex items-center px-3 py-2 transition bg-[#19459F] rounded-lg nav-link drop-shadow-lg h-[38px]"
@@ -78,7 +78,7 @@
                 </svg>
               </span>
               <div
-                class="bg-white hidden absolute ltr:max-lg:top-[calc(100%+8px)] ltr:lg:top-[calc(100%+32px)] rtl:lg:top-[calc(100%+32px)] rtl:max-lg:top-[calc(100%+8px)] ltr:right-0 rtl:left-0 text-center rounded-lg drop-shadow-lg overflow-hidden group-hover:block"
+                class="bg-white hidden absolute ltr:max-lg:top-[calc(100%+8px)] ltr:lg:top-[calc(100%+24px)] rtl:lg:top-[calc(100%+24px)] rtl:max-lg:top-[calc(100%+8px)] ltr:right-0 rtl:left-0 text-center rounded-lg drop-shadow-lg overflow-hidden group-hover:block"
               >
                 <div
                   :class="locale == 'en' ? 'bg-gray-200' : ''"
