@@ -38,7 +38,7 @@
             :class="{
               'text-primary': $route.path === '/' || $route.path === '/ar',
             }"
-            class="lg:py-[1.5rem] group bg-red-300 cursor pointer"
+            class="lg:py-[1.5rem] group cursor pointer"
           >
             <div
               class="language_switcher flex items-center px-3 py-2 transition bg-[#19459F] rounded-lg nav-link drop-shadow-lg h-[38px]"
