@@ -17,7 +17,7 @@
       <div
         class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"
       ></div>
-      <h5 class="nav-link whitespace-nowrap text-base">{{ label }}</h5>
+      <h5 class="nav-link whitespace-nowrap text-[15px]">{{ label }}</h5>
     </NuxtLinkLocale>
 
     <!-- Render <a> tag for external links (like PDFs) -->
@@ -26,22 +26,22 @@
       :href="to"
       target="_blank"
       rel="noopener noreferrer"
-      class="relative nav-link text-base"
+      class="relative nav-link text-[15px]"
       :class="{ 'lg:py-8': layout === 'header' }"
     >
       <div
         class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"
       ></div>
-      <h5 class="nav-link text-base">{{ label }}</h5>
+      <h5 class="nav-link text-[15px]">{{ label }}</h5>
     </a>
 
     <div
       v-else
-      class="relative flex justify-between items-center gap-2 cursor-pointer"
+      class="relative flex justify-between items-center gap-1 cursor-pointer"
       :class="{ 'lg:py-8': layout === 'header' }"
       @click="isMobile() ? toggleNavItems() : null"
     >
-      <h5 class="text-base">{{ label }}</h5>
+      <h5 class="text-[15px]">{{ label }}</h5>
       <div
         class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100"
       ></div>
@@ -49,7 +49,7 @@
         <Icon
           v-if="layout === 'header' || (layout === 'footer' && isMobile())"
           name="fa7-solid:angle-down"
-          class="icon text-sm transition-transform duration-300 ease-in-out"
+          class="icon text-[15px] transition-transform duration-300 ease-in-out"
           :class="{ 'rotate-180': navItemsVisible && isMobile() }"
         />
       </ClientOnly>
@@ -60,7 +60,7 @@
       <noscript>
         <a
           :href="to"
-          class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 text-base"
+          class="max-lg:hidden link-line absolute bottom-[-1px] start-0 w-full h-[3px] invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 text-[15px]"
           >{{ label }}</a
         >
       </noscript>
@@ -92,7 +92,7 @@
               v-if="
                 section.pages && section.pages.length && layout === 'header'
               "
-              class="link-color flex items-center gap-2 text-base"
+              class="link-color flex items-center gap-2 text-[15px]"
               :class="{ 'px-4': section.label }"
             >
               <span v-html="section.icon" class="no-fill"></span>
@@ -126,7 +126,7 @@
                   <Icon
                     v-if="layout === 'header'"
                     name="fa7-solid:angle-right"
-                    class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 rtl:rotate-180 transition-transform"
+                    class="icon text-[15px] invisible opacity-0 group-hover:visible group-hover:opacity-100 rtl:rotate-180 transition-transform"
                   />
                 </NuxtLinkLocale>
 
@@ -146,7 +146,7 @@
                   <Icon
                     v-if="layout === 'header'"
                     name="fa7-solid:angle-right"
-                    class="icon text-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 rtl:rotate-180 transition-transform"
+                    class="icon text-[15px] invisible opacity-0 group-hover:visible group-hover:opacity-100 rtl:rotate-180 transition-transform"
                   />
                 </a>
 
