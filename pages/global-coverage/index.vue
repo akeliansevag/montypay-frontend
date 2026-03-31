@@ -141,10 +141,7 @@
                 },
                 {
                     title: t('Pages.Global Coverage.Section 2.Other'),
-                    items: [
-                        { name: "Cryptocurrency", img: "/images/crypto.svg" },
-                        
-                    ]
+                    items: []
                 }
             ]
         },

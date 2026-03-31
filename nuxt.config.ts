@@ -142,50 +142,50 @@ export default defineNuxtConfig({
     https: false,
   },
   i18n: {
-        legacy: false,
-        // baseUrl: 'http://92.205.130.62:5000',
-        locales: [
-            {
-                code: 'en',
-                iso: 'en',
-                region: 'Europe',
-                language: 'English',
-                icon: 'eu',
+    legacy: false,
+    // baseUrl: 'http://92.205.130.62:5000',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en',
+        region: 'Europe',
+        language: 'English',
+        icon: 'eu',
         dir: 'ltr',
-                file: 'en.json',
-                native: true,
-                hideLanguages: false,
-            },
-            {
-                code: 'ar',
-                iso: 'ar',
-                region: 'Asia',
-                language: 'العربية',
-                icon: 'ar',
+        file: 'en.json',
+        native: true,
+        hideLanguages: false,
+      },
+      {
+        code: 'ar',
+        iso: 'ar',
+        region: 'Asia',
+        language: 'العربية',
+        icon: 'ar',
         dir: 'rtl',
-                file: 'ar.json',
-                native: true,
-                hideLanguages: false,
-            },
-        ],
-        restructureDir: './',
-        // lazy: true, // If false, this will show the translation not yet translate.
-        langDir: './locales/', // Ensure this directory exists
-        defaultLocale: 'en',
-        detectBrowserLanguage: false,
-        // detectBrowserLanguage: {
-        // 	useCookie: true,  // Store the detected locale in a cookie
-        // 	cookieKey: 'i18n_redirected', // Name of the cookie
-        // 	alwaysRedirect: true, // Always redirect to the user's browser language if not set
-        // 	fallbackLocale: 'en-EU'
-        // },
-        compilation: {
-            strictMessage: false,
-            // escapeHtml: true,
-        },
-        strategy: 'prefix_except_default',
-        // // //  {{ $t('Header.' + locale.language) }} or {{ $t('Header.Features) }}
+        file: 'ar.json',
+        native: true,
+        hideLanguages: false,
+      },
+    ],
+    restructureDir: './',
+    // lazy: true, // If false, this will show the translation not yet translate.
+    langDir: './locales/', // Ensure this directory exists
+    defaultLocale: 'en',
+    detectBrowserLanguage: false,
+    // detectBrowserLanguage: {
+    // 	useCookie: true,  // Store the detected locale in a cookie
+    // 	cookieKey: 'i18n_redirected', // Name of the cookie
+    // 	alwaysRedirect: true, // Always redirect to the user's browser language if not set
+    // 	fallbackLocale: 'en-EU'
+    // },
+    compilation: {
+      strictMessage: false,
+      // escapeHtml: true,
     },
+    strategy: 'prefix_except_default',
+    // // //  {{ $t('Header.' + locale.language) }} or {{ $t('Header.Features) }}
+  },
   swiper: {
     // Swiper options
     //----------------------

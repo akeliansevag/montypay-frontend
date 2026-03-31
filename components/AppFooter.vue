@@ -34,11 +34,15 @@
                 </div>
                 
             </div>
-            
 
             <hr class="border-[#e9edf422] mt-10" />
 
-            <p class="text-center mt-10">© MontyPay {{ new Date().getFullYear() }}</p>
+            <p class="opacity-30 text-base pb-20 mt-10">
+                © {{ new Date().getFullYear() }} Monty Finance SAL<br/><br/>
+                montypay.com provides information about payment acceptance products and services provided by Monty Finance SAL in Lebanon. It also provides information about other services offered in Lebanon and in other jurisdictions by affiliate companies, for which the relevant affiliates remain responsible.<br/><br/>
+                Monty Finance SAL is registered in Lebanon (Beirut Register of Commerce No. 73215), Gefinor Center, Clemenceau St., Hamra, Beirut, Lebanon and is authorized by the Central Bank of Lebanon (“BDL”) to operate as a financial institution and payment service provider. Monty Finance SAL is listed on the BDL List of Financial Institutions under no. 23.<br/><br/>
+                Information contained on montypay.com should not be construed as an offer, solicitation, advertisement, or promotion of financial products and services in any country where such offer, solicitation, advertisement, or promotion is not permitted under applicable local law.
+            </p>
         </div>
     </footer>
 </template>

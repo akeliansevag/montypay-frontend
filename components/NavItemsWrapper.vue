@@ -153,10 +153,10 @@ const legalSections = computed(() => [
             label: t("General.Links.Terms & Conditions"),
           },
           { to: "/privacy-policy", label: t("General.Links.Privacy Policy") },
-          {
-            to: "/customer-acceptance-policy",
-            label: t("General.Links.Customer Acceptance Policy"),
-          },
+          // {
+          //   to: "/customer-acceptance-policy",
+          //   label: t("General.Links.Customer Acceptance Policy"),
+          // },
           {
             to: "/Data-Processing-Agreement.pdf",
             label: t("General.Links.Data Processing Agreement"),
