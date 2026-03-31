@@ -42,13 +42,13 @@
       to="/faq"
       :label="t('General.Links.FAQ')"
     />
-    <NavItem
+    <!-- <NavItem
       :header="true"
       :footer="true"
       :layout="layout"
       to="https://montypay-portal-demo.montypaydev.com/psp-dashboard"
       :label="t('General.Links.Demo')"
-    />
+    /> -->
     <NavItem
       v-if="layout == 'footer'"
       :header="false"
