@@ -17,6 +17,14 @@ useSeoMeta({
     ogImage: 'https://example.com/image.png',
     twitterCard: 'summary_large_image',
 })
+
+onMounted(() => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-17262217251/jX-xCKyd8pccEKOQoqdA'
+    })
+  }
+})
 </script>
 
 <style lang="scss" scoped>

@@ -241,19 +241,6 @@
 
     useHead({
         script: [
-            {
-                src: 'https://www.googletagmanager.com/gtag/js?id=AW-17262217251',
-                async: true
-            },
-            {
-                children: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'AW-17262217251');
-                `
-            },
-            // reCAPTCHA v3
             { src: `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`, async: true, defer: true }
         ]
     })
