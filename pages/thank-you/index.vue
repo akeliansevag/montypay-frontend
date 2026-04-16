@@ -19,7 +19,7 @@ useSeoMeta({
 })
 
 onMounted(() => {
-  if (typeof window !== 'undefined' && window.gtag) {
+  if (process.client && window.gtag) {
     window.gtag('event', 'conversion', {
       send_to: 'AW-17262217251/jX-xCKyd8pccEKOQoqdA'
     })

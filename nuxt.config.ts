@@ -54,17 +54,6 @@ export default defineNuxtConfig({
           async: true
         },
         {
-          hid: 'ga4-inline',
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-NY9X93T6HL');
-          `,
-          type: 'text/javascript',
-          charset: 'utf-8'
-        },
-        {
           hid: 'gtm',
           innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -103,11 +92,18 @@ export default defineNuxtConfig({
           async: true
         },
         {
-          hid: 'google-ads-inline',
+          hid: 'gtag-unified',
           innerHTML: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+
             gtag('js', new Date());
+
+            // GA4
+            gtag('config', 'G-NY9X93T6HL');
+
+            // Google Ads
             gtag('config', 'AW-17262217251');
           `,
           type: 'text/javascript',
@@ -130,10 +126,7 @@ export default defineNuxtConfig({
     //pageTransition: { name: 'page', mode: 'out-in' }
   },
   pages: true,
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxt/image', 'nuxt-swiper', '@nuxt/icon', '@nuxtjs/i18n'],
-  gtag: {
-    id: 'G-L7YK1FPHZ1'
-  },
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-swiper', '@nuxt/icon', '@nuxtjs/i18n'],
   image: {
     // dir: 'assets/images'
   },
