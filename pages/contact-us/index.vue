@@ -360,13 +360,42 @@ async function getRecaptchaToken() {
 }
 
 const handleGtagConversion = () =>  {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+    };
     gtag('event', 'conversion', {
         'send_to': 'AW-17262217251/nxqICPWuj50cEKOQoqdA',
         'value': 1.0,
         'currency': 'USD',
         'event_callback': callback
     });
+    return false;
 }
+
+const fireGtagConversion = () => {
+    return new Promise((resolve) => {
+        if (typeof window === 'undefined' || typeof window.gtag !== 'function') {
+            resolve();
+            return;
+        }
+
+        const callback = function () {
+            resolve(); // ensure we continue after gtag finishes
+        };
+
+        window.gtag('event', 'conversion', {
+            send_to: 'AW-17262217251/nxqICPWuj50cEKOQoqdA',
+            value: 1.0,
+            currency: 'USD',
+            event_callback: callback
+        });
+
+        // fallback in case callback never fires
+        setTimeout(resolve, 1000);
+    });
+};
 
 const handleSubmit = async () => {
     if (validateForm(form, errors, validationRules)) {
@@ -444,7 +473,8 @@ const handleSubmit = async () => {
             submitting.value = false;
             resetForm();
 
-            handleGtagConversion();
+            await fireGtagConversion();
+            
             router.push('/thank-you');
 
         } catch (error) {
