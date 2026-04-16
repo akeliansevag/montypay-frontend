@@ -376,13 +376,17 @@ const handleGtagConversion = () =>  {
 
 const fireGtagConversion = () => {
     return new Promise((resolve) => {
-        if (typeof window === 'undefined' || typeof window.gtag !== 'function') {
+        if (typeof window === 'undefined' || !window.gtag) {
             resolve();
             return;
         }
 
-        const callback = function () {
-            resolve(); // ensure we continue after gtag finishes
+        let done = false;
+
+        const callback = () => {
+            if (done) return;
+            done = true;
+            resolve();
         };
 
         window.gtag('event', 'conversion', {
@@ -392,8 +396,13 @@ const fireGtagConversion = () => {
             event_callback: callback
         });
 
-        // fallback in case callback never fires
-        setTimeout(resolve, 1000);
+        // HARD fallback (important for Tag Assistant + SPA navigation)
+        setTimeout(() => {
+            if (!done) {
+                done = true;
+                resolve();
+            }
+        }, 1500);
     });
 };
 
@@ -473,8 +482,12 @@ const handleSubmit = async () => {
             submitting.value = false;
             resetForm();
 
+            // wait for gtag to actually fire
             await fireGtagConversion();
-            
+
+            // small buffer BEFORE navigation (important)
+            await new Promise(r => setTimeout(r, 300));
+
             router.push('/thank-you');
 
         } catch (error) {
