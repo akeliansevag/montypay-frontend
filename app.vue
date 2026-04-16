@@ -18,8 +18,11 @@
 </template>
 
 <script setup>
-  import { ref, watch } from 'vue'
-  import { useRoute, useRouter } from 'vue-router'
+  const { detectCountry } = useCountry()
+
+  onMounted(() => {
+    detectCountry()
+  })
 
   const pageName = ref('')
 

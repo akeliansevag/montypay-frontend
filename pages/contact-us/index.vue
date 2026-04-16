@@ -217,247 +217,253 @@
 </template>
 
 <script setup>
-    const { t, tm, rt, locale, setLocale } = useI18n();
-    const countries = computed(() => tm('General.Countries') || []);
-    const industries = computed(() => tm('General.Industries') || []);
-    const products = computed(() => tm('General.Products') || []);
-    const router = useRouter();
-    const emit = defineEmits();
+const { t, tm, rt, locale, setLocale } = useI18n();
+const countries = computed(() => tm('General.Countries') || []);
+const industries = computed(() => tm('General.Industries') || []);
+const products = computed(() => tm('General.Products') || []);
+const router = useRouter();
+const emit = defineEmits();
 
-    const RECAPTCHA_SITE_KEY = '6Le6TscrAAAAAIzSW6d0-jC_oUhqcFGAkXRb87Mc';
-    const MP_API_URL = 'https://mm-apis.montypay.com/core/api/v1/MPContactUs';
-    const MP_API_HEADERS = {
-        Tenant: 'd2ed2d13-09ea-4311-923e-21fae0f7c063',
-        LanguageCode: 'en'
-    };
-    useSeoMeta({ 
-        title: 'Contact MontyPay | Sales & Support Assistance',
-        ogTitle: 'Contact MontyPay | Sales & Support Assistance',
-        description: 'Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.',
-        ogDescription: 'Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.',
-        ogImage: 'https://example.com/image.png',
-        twitterCard: 'summary_large_image',
-    })
+const RECAPTCHA_SITE_KEY = '6Le6TscrAAAAAIzSW6d0-jC_oUhqcFGAkXRb87Mc';
+const MP_API_URL = 'https://mm-apis.montypay.com/core/api/v1/MPContactUs';
+const MP_API_HEADERS = {
+    Tenant: 'd2ed2d13-09ea-4311-923e-21fae0f7c063',
+    LanguageCode: 'en'
+};
+useSeoMeta({
+    title: 'Contact MontyPay | Sales & Support Assistance',
+    ogTitle: 'Contact MontyPay | Sales & Support Assistance',
+    description: 'Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.',
+    ogDescription: 'Get in touch with MontyPay for sales inquiries, technical support, partnerships, or merchant onboarding assistance.',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 
-    useHead({
-        script: [
-            { src: `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`, async: true, defer: true }
-        ]
-    })
-    
-    const submissionMessage = ref('');
-    const submitting = ref(false);
-    const form = ref({
-        first_name: '',
-        last_name: '',
-        email: '',
-        mobile: '',
-        country: '',
-        industry: '',
-        product: '',
-        company: '',
-        size: '',
-        link: '',
-        message: '',
-        acknowledgment: false,
-    });
+useHead({
+    script: [
+        { src: `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`, async: true, defer: true }
+    ]
+})
 
-    const errors = ref({
-        first_name: '',
-        last_name: '',
-        email: '',
-        mobile: '',
-        country: '',
-        industry: '',
-        product: '',
-        company: '',
-        size: '',
-        link: '',
-        message: '',
-        acknowledgment: '',
-    });
+const submissionMessage = ref('');
+const submitting = ref(false);
+const form = ref({
+    first_name: '',
+    last_name: '',
+    email: '',
+    mobile: '',
+    country: '',
+    industry: '',
+    product: '',
+    company: '',
+    size: '',
+    link: '',
+    message: '',
+    acknowledgment: false,
+});
 
-    const validationRules = {
-        first_name: {
-            required: t('General.Messages.Errors.Required.First Name'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        last_name: {
-            required: t('General.Messages.Errors.Required.Last Name'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        email: {
-            required: t('General.Messages.Errors.Required.Email'),
-            email: t('General.Messages.Errors.Valid Email'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        mobile: {
-            required: t('General.Messages.Errors.Required.Mobile Number'),
-            numeric: t('General.Messages.Errors.Numeric'),
-            length: t('General.Messages.Errors.Length'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        country: {
-            required: t('General.Messages.Errors.Required.Country'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        industry: {
-            required: t('General.Messages.Errors.Required.Industry'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        product: {
-            required: t('General.Messages.Errors.Required.Product'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        company: {
-            required: t('General.Messages.Errors.Required.Company Name'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        size: {
-            required: t('General.Messages.Errors.Required.Company Size'),
-            numeric: t('General.Messages.Errors.Numeric'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        link: {
-            required: t('General.Messages.Errors.Required.Website'),
-            url: t('General.Messages.Errors.URL'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        message: {
-            required: t('General.Messages.Errors.Required.Message'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-        acknowledgment: {
-            required: t('General.Messages.Errors.Required.Privacy Policy'),
-            safe: t('General.Messages.Errors.Safe')
-        },
-    };
+const errors = ref({
+    first_name: '',
+    last_name: '',
+    email: '',
+    mobile: '',
+    country: '',
+    industry: '',
+    product: '',
+    company: '',
+    size: '',
+    link: '',
+    message: '',
+    acknowledgment: '',
+});
 
-    const countrySelect = ref(null)
-    const productSelect = ref(null)
-    const industrySelect = ref(null)
+const validationRules = {
+    first_name: {
+        required: t('General.Messages.Errors.Required.First Name'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    last_name: {
+        required: t('General.Messages.Errors.Required.Last Name'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    email: {
+        required: t('General.Messages.Errors.Required.Email'),
+        email: t('General.Messages.Errors.Valid Email'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    mobile: {
+        required: t('General.Messages.Errors.Required.Mobile Number'),
+        numeric: t('General.Messages.Errors.Numeric'),
+        length: t('General.Messages.Errors.Length'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    country: {
+        required: t('General.Messages.Errors.Required.Country'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    industry: {
+        required: t('General.Messages.Errors.Required.Industry'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    product: {
+        required: t('General.Messages.Errors.Required.Product'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    company: {
+        required: t('General.Messages.Errors.Required.Company Name'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    size: {
+        required: t('General.Messages.Errors.Required.Company Size'),
+        numeric: t('General.Messages.Errors.Numeric'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    link: {
+        required: t('General.Messages.Errors.Required.Website'),
+        url: t('General.Messages.Errors.URL'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    message: {
+        required: t('General.Messages.Errors.Required.Message'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+    acknowledgment: {
+        required: t('General.Messages.Errors.Required.Privacy Policy'),
+        safe: t('General.Messages.Errors.Safe')
+    },
+};
 
-    // very small validator (feel free to swap with your existing one)
-    
-    async function getRecaptchaToken() {
-        // waits until the script is ready
-        await new Promise((resolve) => {
-            if (window.grecaptcha && window.grecaptcha.ready) return resolve();
-            const check = setInterval(() => {
+const countrySelect = ref(null)
+const productSelect = ref(null)
+const industrySelect = ref(null)
+
+// very small validator (feel free to swap with your existing one)
+
+async function getRecaptchaToken() {
+    // waits until the script is ready
+    await new Promise((resolve) => {
+        if (window.grecaptcha && window.grecaptcha.ready) return resolve();
+        const check = setInterval(() => {
             if (window.grecaptcha && window.grecaptcha.ready) {
                 clearInterval(check);
                 resolve();
             }
-            }, 50);
-        });
-        return new Promise((resolve, reject) => {
-            window.grecaptcha.ready(() => {
+        }, 50);
+    });
+    return new Promise((resolve, reject) => {
+        window.grecaptcha.ready(() => {
             window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'contact' })
                 .then(resolve)
                 .catch(reject);
+        });
+    });
+}
+const handleSubmit = async () => {
+    if (validateForm(form, errors, validationRules)) {
+        try {
+            submitting.value = true;
+            const WP_API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
+
+            // Get labels from selected options via refs
+            const countryLabel = countrySelect.value.options[countrySelect.value.selectedIndex]?.text || '';
+            const productLabel = productSelect.value.options[productSelect.value.selectedIndex]?.text || '';
+            const industryLabel = industrySelect.value.options[industrySelect.value.selectedIndex]?.text || '';
+
+            // Prepare WordPress form data
+            const formData = new FormData();
+            formData.append('first_name', form.value.first_name);
+            formData.append('last_name', form.value.last_name);
+            formData.append('work_email', form.value.email);
+            formData.append('phone_number', form.value.mobile);
+            formData.append('country', countryLabel);
+            formData.append('industry', industryLabel);
+            formData.append('product', productLabel);
+            formData.append('company_name', form.value.company);
+            formData.append('company_size', form.value.size);
+            formData.append('website', form.value.link);
+            formData.append('message', form.value.message);
+            formData.append('_wpcf7_unit_tag', 'rte');
+
+            // 1. Submit to WordPress Headless
+            const wpResponse = await fetch(WP_API_ENDPOINT, {
+                method: 'POST',
+                body: formData,
             });
-        });
+
+            if (!wpResponse.ok) {
+                throw new Error('WordPress submission failed');
+            }
+
+            const wpData = await wpResponse.json();
+            // WordPress submission successful
+
+
+            // 2) Get reCAPTCHA token and submit to MontyPay API with IDs
+            const recaptchaToken = await getRecaptchaToken();
+            const apiPayload = {
+                CampaignId: '',
+                FirstName: form.value.first_name,
+                LastName: form.value.last_name,
+                WorkEmail: form.value.email,
+                PhoneNumber: form.value.mobile,
+                Country: form.value.country,     // ID value
+                CompanyName: form.value.company,
+                CompanySize: form.value.size,
+                Industry: form.value.industry,   // ID value
+                Website: form.value.link,
+                Message: form.value.message,
+                Product: form.value.product      // ID (or string for "Website Development")
+            };
+
+            const apiRes = await fetch(MP_API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    ...MP_API_HEADERS,
+                    RecaptchaToken: recaptchaToken
+                },
+                body: JSON.stringify(apiPayload)
+            });
+
+            if (!apiRes.ok) {
+                const msg = await safeText(apiRes);
+                throw new Error(`MontyPay API error: ${apiRes.status} ${msg}`);
+            }
+
+            submissionMessage.value = "Thank you for your message.";
+            submitting.value = false;
+            resetForm();
+
+            if (window.gtag) {
+                window.gtag('event', 'conversion', {
+                    send_to: 'AW-17262217251/jX-xCKyd8pccEKOQoqdA'
+                })
+            }
+            router.push('/thank-you');
+
+        } catch (error) {
+            console.error("Form submission error:", error);
+            submissionMessage.value = "Error in submitting your message.";
+            submitting.value = false;
+            resetForm();
+        }
     }
-    const handleSubmit = async () => {
-  if (validateForm(form, errors, validationRules)) {
-    try {
-      submitting.value = true;
-      const WP_API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
-
-      // Get labels from selected options via refs
-      const countryLabel = countrySelect.value.options[countrySelect.value.selectedIndex]?.text || '';
-      const productLabel = productSelect.value.options[productSelect.value.selectedIndex]?.text || '';
-      const industryLabel = industrySelect.value.options[industrySelect.value.selectedIndex]?.text || '';
-
-      // Prepare WordPress form data
-      const formData = new FormData();
-      formData.append('first_name', form.value.first_name);
-      formData.append('last_name', form.value.last_name);
-      formData.append('work_email', form.value.email);
-      formData.append('phone_number', form.value.mobile);
-      formData.append('country', countryLabel);
-      formData.append('industry', industryLabel); 
-      formData.append('product', productLabel);
-      formData.append('company_name', form.value.company);
-      formData.append('company_size', form.value.size);
-      formData.append('website', form.value.link);
-      formData.append('message', form.value.message);
-      formData.append('_wpcf7_unit_tag', 'rte');
-
-      // 1. Submit to WordPress Headless
-      const wpResponse = await fetch(WP_API_ENDPOINT, {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!wpResponse.ok) {
-        throw new Error('WordPress submission failed');
-      }
-
-      const wpData = await wpResponse.json();
-      // WordPress submission successful
-
-
-      // 2) Get reCAPTCHA token and submit to MontyPay API with IDs
-      const recaptchaToken = await getRecaptchaToken();
-      const apiPayload = {
-        CampaignId: '',
-        FirstName: form.value.first_name,
-        LastName: form.value.last_name,
-        WorkEmail: form.value.email,
-        PhoneNumber: form.value.mobile,
-        Country: form.value.country,     // ID value
-        CompanyName: form.value.company,
-        CompanySize: form.value.size,
-        Industry: form.value.industry,   // ID value
-        Website: form.value.link,
-        Message: form.value.message,
-        Product: form.value.product      // ID (or string for "Website Development")
-     };
-
-     const apiRes = await fetch(MP_API_URL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            ...MP_API_HEADERS,
-            RecaptchaToken: recaptchaToken
-        },
-        body: JSON.stringify(apiPayload)
-        });
-
-        if (!apiRes.ok) {
-            const msg = await safeText(apiRes);
-            throw new Error(`MontyPay API error: ${apiRes.status} ${msg}`);
-    }
-
-      submissionMessage.value = "Thank you for your message.";
-      submitting.value = false;
-      resetForm();
-      router.push('/thank-you');
-
-    } catch (error) {
-      console.error("Form submission error:", error);
-      submissionMessage.value = "Error in submitting your message.";
-      submitting.value = false;
-      resetForm();
-    }
-  }
 };
-    const resetForm = () => {
-        form.value.first_name="";
-        form.value.last_name="";
-        form.value.email="";
-        form.value.mobile="";
-        form.value.country="";
-        form.value.industry="";
-        form.value.product="";
-        form.value.company="";
-        form.value.size="";
-        form.value.link="";
-        form.value.message="";
-    }
+const resetForm = () => {
+    form.value.first_name = "";
+    form.value.last_name = "";
+    form.value.email = "";
+    form.value.mobile = "";
+    form.value.country = "";
+    form.value.industry = "";
+    form.value.product = "";
+    form.value.company = "";
+    form.value.size = "";
+    form.value.link = "";
+    form.value.message = "";
+}
 
-    const locations = [
+const locations = [
     {
         key: 'lebanon',
         titleKey: 'Pages.Contact Us.Section 3.Lebanon',
@@ -498,7 +504,7 @@
         phoneHref: '00441174090583',
         phoneLabel: '00 44 117 409 0583',
     },
-    ];
+];
 </script>
 
 <style lang="sass" scoped>
