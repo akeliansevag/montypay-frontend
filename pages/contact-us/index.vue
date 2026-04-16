@@ -358,6 +358,22 @@ async function getRecaptchaToken() {
         });
     });
 }
+
+const handleGtagConversion = () =>  {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17262217251/nxqICPWuj50cEKOQoqdA',
+        'value': 1.0,
+        'currency': 'USD',
+        'event_callback': callback
+    });
+    return false;
+}
+
 const handleSubmit = async () => {
     if (validateForm(form, errors, validationRules)) {
         try {
@@ -434,11 +450,7 @@ const handleSubmit = async () => {
             submitting.value = false;
             resetForm();
 
-            if (window.gtag) {
-                window.gtag('event', 'conversion', {
-                    send_to: 'AW-17262217251/jX-xCKyd8pccEKOQoqdA'
-                })
-            }
+            handleGtagConversion()
             router.push('/thank-you');
 
         } catch (error) {
