@@ -19,10 +19,27 @@ useSeoMeta({
 })
 
 onMounted(() => {
-  if (process.client && window.gtag) {
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-17262217251/jX-xCKyd8pccEKOQoqdA'
-    })
+  const fireConversion = () => {
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17262217251/jX-xCKyd8pccEKOQoqdA'
+      })
+      return true
+    }
+    return false
+  }
+
+  // Try immediately
+  if (!fireConversion()) {
+    // Retry until gtag is ready
+    const interval = setInterval(() => {
+      if (fireConversion()) {
+        clearInterval(interval)
+      }
+    }, 300)
+
+    // Stop after 5s (safety)
+    setTimeout(() => clearInterval(interval), 5000)
   }
 })
 </script>
