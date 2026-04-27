@@ -33,15 +33,20 @@
 
                     <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
-                            <select ref="countrySelect" :class="form.country === '' ? 'text-gray-400' : 'text-black'"
-                                v-model="form.country" name="country"
-                                class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
+                            <select
+                                ref="countrySelect"
+                                :class="form.country === '' ? 'text-gray-400' : 'text-black'"
+                                v-model="form.country"
+                                name="country"
+                                class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]"
+                            >
                                 <option value="">{{ t('General.Placeholders.Country') }}</option>
-                                <option :value="rt(country.Value)" v-for="country in countries"
-                                    :key="rt(country.Value)">
-                                    {{
-                                        rt(country.Title)
-                                    }}
+                                <option
+                                    :value="country.Value"
+                                    v-for="country in countries"
+                                    :key="country.Value"
+                                >
+                                    {{ country.Label }}
                                 </option>
                             </select>
                             <div v-if="errors.country" class="text-red-500 text-xs">{{ errors.country }}</div>
@@ -80,15 +85,20 @@
                         </div>
 
                         <div class="flex flex-col gap-1 w-full">
-                            <select ref="industrySelect" v-model="form.industry" name="industry"
-                                :class="form.industry === '' ? 'text-gray-400' : 'text-black'"
-                                class="custom-select w-full text-base px-4 py-2 bg-primary rounded-lg outline-none border border-[#ccc">
+                            <select
+                                    ref="industrySelect"
+                                    v-model="form.industry"
+                                    name="industry"
+                                    :class="form.industry === '' ? 'text-gray-400' : 'text-black'"
+                                    class="custom-select w-full text-base px-4 py-2 bg-primary rounded-lg outline-none border border-[#ccc]"
+                                >
                                 <option value="">{{ t('General.Placeholders.Industry') }}</option>
-                                <option :value="rt(industry.Value)" v-for="industry in industries"
-                                    :key="rt(industry.Value)">
-                                    {{
-                                        rt(industry.Title)
-                                    }}
+                                <option
+                                    :value="industry.Value"
+                                    v-for="industry in industries"
+                                    :key="industry.Value"
+                                >
+                                   {{ industry.Label }}
                                 </option>
                             </select>
                             <div v-if="errors.industry" class="text-red-500 text-xs">{{ errors.industry }}</div>
@@ -98,7 +108,7 @@
                     <div class="flex gap-8 w-full">
                         <!-- Question -->
                         <div class="flex items-center justify-between w-full">
-                            <p class="text-white text-lg">Do you have a website?</p>
+                            <p class="text-white text-lg">{{ t('General.Placeholders.Do you have a website?') }}</p>
 
                             <div class="flex gap-6">
                             <!-- Yes -->
@@ -109,7 +119,7 @@
                                     v-model="form.has_website"
                                     class="w-5 h-5"
                                 />
-                                <span class="text-white">Yes</span>
+                                <span class="text-white">{{ t('General.Yes') }}</span>
                             </label>
 
                             <!-- No -->
@@ -120,12 +130,10 @@
                                     v-model="form.has_website"
                                     class="w-5 h-5"
                                 />
-                                <span class="text-white">No</span>
+                                <span class="text-white">{{ t('General.No') }}</span>
                             </label>
                             </div>
                         </div>
-
-                        
                     </div>
 
                     <!-- Platform input (ONLY if yes) -->
@@ -140,16 +148,14 @@
 
                     <div class="flex max-lg:flex-col gap-8 w-full">
                         <div class="flex flex-col gap-1 w-full">
-                            <select ref="revenueSelect" :class="form.revenue === '' ? 'text-gray-400' : 'text-black'"
+                            <select :class="form.revenue === '' ? 'text-gray-400' : 'text-black'"
                                 v-model="form.revenue" name="revenue"
                                 class="custom-select w-full text-base px-4 py-2 bg-primary text-black rounded-lg outline-none border border-[#ccc]">
                                 <option value="">{{ t('General.Placeholders.Revenue') }}</option>
-                                <option :value="rt(revenue.Value)" v-for="revenue in revenues" :key="rt(revenue.Value)">
-                                    {{
-                                        rt(revenue.Title)
-                                    }}
-                                </option>
-
+                                <option value="1">$0 - 10k</option>
+                                <option value="2">$10k - 100k</option>
+                                <option value="3">$100k - 1M</option>
+                                <option value="4">$1M</option>
                             </select>
                             <div v-if="errors.revenue" class="text-red-500 text-xs">{{ errors.revenue }}</div>
                         </div>
@@ -201,11 +207,45 @@
         twitterCard: 'summary_large_image',
     })
 
-    const countries = computed(() => tm('General.Countries') || []);
-    const industries = computed(() => tm('General.Montylab Industries') || []);
-    const revenues = computed(() => tm('General.Revenues') || []);
     const router = useRouter();
     const emit = defineEmits();
+
+    const countries = ref([])
+    const industries = ref([])
+
+    onMounted(async () => {
+        try {
+            const [countriesRes, industriesRes] = await Promise.all([
+            fetch(import.meta.env.VITE_MONTYLAB_COUNTRIES_API_URL, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json', 's-key': import.meta.env.VITE_MONTYLAB_COUNTRIES_API_KEY },
+            }),
+            fetch(import.meta.env.VITE_MONTYLAB_INDUSTRIES_API_URL, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json', 's-key': import.meta.env.VITE_MONTYLAB_INDUSTRIES_API_KEY },
+            }),
+            ])
+
+            const [countriesJson, industriesJson] = await Promise.all([
+                countriesRes.json(),
+                industriesRes.json(),
+            ])
+
+            countries.value = countriesJson.data.map(c => ({
+                Title: c.name, 
+                Value: c.id,
+                Label: t(`General.Montylab Countries.${c.name}`, c.name)
+            }))
+            industries.value = industriesJson.data.map(i => ({ 
+                Title: i.Name, 
+                Value: i.Industry,
+                Label: t(`General.Montylab Industries.${i.Name}`, i.Name)
+            }))
+
+        } catch (error) {
+            console.error('Failed to fetch dropdown data:', error)
+        }
+    })
 
     // const RECAPTCHA_SITE_KEY = '6Le6TscrAAAAAIzSW6d0-jC_oUhqcFGAkXRb87Mc';
     // const MP_API_URL = 'https://mm-apis.montypay.com/core/api/v1/MPContactUs';
@@ -309,12 +349,6 @@
         },
     }));
 
-    const countrySelect = ref(null)
-    const revenueSelect = ref(null)
-    const industrySelect = ref(null)
-
-    // very small validator (feel free to swap with your existing one)
-
     async function getRecaptchaToken() {
         // waits until the script is ready
         await new Promise((resolve) => {
@@ -334,34 +368,34 @@
             });
         });
     }
+
     const handleSubmit = async () => {
         if (validateForm(form, errors, validationRules.value)) {
             try {
                 submitting.value = true;
+
+                // Helper to get Label from Value for dropdowns
+                const countryLabel = countries.value.find(c => c.Value === form.value.country)?.Label || form.value.country
+                const industryLabel = industries.value.find(i => i.Value === form.value.industry)?.Label || form.value.industry
+
                 const WP_API_ENDPOINT = 'https://backend.montypay.com/wp-json/contact-form-7/v1/contact-forms/9/feedback';
 
-                // Get labels from selected options via refs
-                const countryLabel = countrySelect.value.options[countrySelect.value.selectedIndex]?.text || '';
-                const revenueLabel = revenueSelect.value.options[revenueSelect.value.selectedIndex]?.text || '';
-                const industryLabel = industrySelect.value.options[industrySelect.value.selectedIndex]?.text || '';
-
-                // Prepare WordPress form data
+                // 1. WordPress — uses Labels for dropdowns
                 const formData = new FormData();
                 formData.append('first_name', form.value.first_name);
                 formData.append('last_name', form.value.last_name);
-                formData.append('country', countryLabel);
+                formData.append('country', countryLabel);        // 👈 Label
                 formData.append('phone_number', form.value.mobile);
                 formData.append('company_name', form.value.company);
                 formData.append('work_email', form.value.email);
                 formData.append('title', form.value.title);
-                formData.append('industry', industryLabel);
+                formData.append('industry', industryLabel);      // 👈 Label
                 formData.append('has_website', form.value.has_website);
                 formData.append('website', form.value.link);
-                formData.append('revenue', revenueLabel);
+                formData.append('revenue', form.value.revenue);
                 formData.append('message', form.value.message);
                 formData.append('_wpcf7_unit_tag', 'rte');
 
-                // 1. Submit to WordPress Headless
                 const wpResponse = await fetch(WP_API_ENDPOINT, {
                     method: 'POST',
                     body: formData,
@@ -371,28 +405,25 @@
                     throw new Error('WordPress submission failed');
                 }
 
-                const wpData = await wpResponse.json();
-                // WordPress submission successful
+                // 2. CRM — uses GUIDs for dropdowns
+                const recaptchaToken = await getRecaptchaToken();
+                const apiPayload = {
+                    firstName: form.value.first_name,
+                    lastName: form.value.last_name,
+                    country: form.value.country,               // 👈 GUID Value
+                    phoneNumber: form.value.mobile,
+                    companyName: form.value.company,
+                    workEmail: form.value.email,
+                    title: form.value.title,
+                    industry: form.value.industry,             // 👈 GUID Value
+                    hasWebsite: form.value.has_website === 'yes', // 👈 boolean
+                    onlineRevenueBand: Number(form.value.revenue), // 👈 integer (1/2/3/4)
+                    message: form.value.message,
+                    'marketing source of contact': '9a7c9282-7ad6-ec11-a7b5-6045bd951f1b',
+                    marketingcampaign: '',
+                };
 
-
-                // // 2) Get reCAPTCHA token and submit to MontyPay API with IDs
-                // const recaptchaToken = await getRecaptchaToken();
-                // const apiPayload = {
-                //     CampaignId: '',
-                //     FirstName: form.value.first_name,
-                //     LastName: form.value.last_name,
-                //     WorkEmail: form.value.email,
-                //     PhoneNumber: form.value.mobile,
-                //     Country: form.value.country,     // ID value
-                //     CompanyName: form.value.company,
-                //     CompanySize: form.value.size,
-                //     Industry: form.value.industry,   // ID value
-                //     Website: form.value.link,
-                //     Message: form.value.message,
-                //     Product: form.value.product      // ID (or string for "Website Development")
-                // };
-
-                const apiRes = await fetch(MP_API_URL, {
+                const apiRes = await fetch(import.meta.env.VITE_MP_API_URL, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -403,7 +434,7 @@
                 });
 
                 if (!apiRes.ok) {
-                    const msg = await safeText(apiRes);
+                    const msg = await apiRes.text();
                     throw new Error(`MontyPay API error: ${apiRes.status} ${msg}`);
                 }
 
@@ -416,10 +447,10 @@
                 console.error("Form submission error:", error);
                 submissionMessage.value = "Error in submitting your message.";
                 submitting.value = false;
-                resetForm();
             }
         }
     };
+    
     const resetForm = () => {
         form.value.first_name = "";
         form.value.last_name = "";

@@ -359,53 +359,6 @@ async function getRecaptchaToken() {
     });
 }
 
-const handleGtagConversion = () =>  {
-    var callback = function () {
-        if (typeof(url) != 'undefined') {
-        window.location = url;
-        }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17262217251/nxqICPWuj50cEKOQoqdA',
-        'value': 1.0,
-        'currency': 'USD',
-        'event_callback': callback
-    });
-    return false;
-}
-
-const fireGtagConversion = () => {
-    return new Promise((resolve) => {
-        if (typeof window === 'undefined' || !window.gtag) {
-            resolve();
-            return;
-        }
-
-        let done = false;
-
-        const callback = () => {
-            if (done) return;
-            done = true;
-            resolve();
-        };
-
-        window.gtag('event', 'conversion', {
-            send_to: 'AW-17262217251/nxqICPWuj50cEKOQoqdA',
-            value: 1.0,
-            currency: 'USD',
-            event_callback: callback
-        });
-
-        // HARD fallback (important for Tag Assistant + SPA navigation)
-        setTimeout(() => {
-            if (!done) {
-                done = true;
-                resolve();
-            }
-        }, 1500);
-    });
-};
-
 const handleSubmit = async () => {
     if (validateForm(form, errors, validationRules)) {
         try {
@@ -478,15 +431,17 @@ const handleSubmit = async () => {
                 throw new Error(`MontyPay API error: ${apiRes.status} ${msg}`);
             }
 
+            // ✅ Fire GTM event — both submissions succeeded
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'form_submission_success',
+                form_name: 'contact_form',
+                // product: productLabel,
+            });
+
             submissionMessage.value = "Thank you for your message.";
             submitting.value = false;
             resetForm();
-
-            // wait for gtag to actually fire
-            await fireGtagConversion();
-
-            // small buffer BEFORE navigation (important)
-            await new Promise(r => setTimeout(r, 300));
 
             router.push('/thank-you');
 
@@ -498,6 +453,7 @@ const handleSubmit = async () => {
         }
     }
 };
+
 const resetForm = () => {
     form.value.first_name = "";
     form.value.last_name = "";

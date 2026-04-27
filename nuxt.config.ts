@@ -48,18 +48,16 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#00DFDF' }
       ],
       script: [
-        {
-          hid: 'ga4-src',
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-NY9X93T6HL',
-          async: true
-        },
+        // ✅ Google Tag Manager
         {
           hid: 'gtm',
           innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-M75G7JM7');`
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5GF46VB3');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'snap-pixel',
@@ -87,40 +85,25 @@ export default defineNuxtConfig({
           charset: 'utf-8'
         },
         {
-          hid: 'google-ads-src',
-          src: 'https://www.googletagmanager.com/gtag/js?id=AW-17262217251',
-          async: true
-        },
-        {
-          hid: 'gtag-unified',
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
-
-            gtag('js', new Date());
-
-            // GA4
-            gtag('config', 'G-NY9X93T6HL');
-
-            // Google Ads
-            gtag('config', 'AW-17262217251');
-          `,
-          type: 'text/javascript',
-          charset: 'utf-8'
-        },
-        {
           hid: 'ahrefs-analytics',
           src: 'https://analytics.ahrefs.com/analytics.js',
           'data-key': 'DeLgwDhxUECTmZwzhIc7KA',
           async: true
         }
       ],
+      // ✅ GTM noscript iframe in body
+      noscript: [
+        {
+          hid: 'gtm-noscript',
+          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GF46VB3" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          pbody: true  // places it at the top of <body>
+        }
+      ],
       __dangerouslyDisableSanitizersByTagID: {
+        'gtm': ['innerHTML'],
+        'gtm-noscript': ['innerHTML'],
         'snap-pixel': ['innerHTML'],
         'metricool': ['innerHTML'],
-        'google-ads-inline': ['innerHTML'],
-        gtm: ['innerHTML']
       }
     },
     //pageTransition: { name: 'page', mode: 'out-in' }
